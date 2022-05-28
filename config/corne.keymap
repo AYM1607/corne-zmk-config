@@ -44,7 +44,7 @@
    &kp TAB    &kp EXCL       &kp AT       &kp HASH       &kp DLLR       &kp PRCNT         &kp CARET   &kp AMPS   &kp STAR &kp MINUS  &trans &kp BSPC
    &kp GRAVE &trans &trans &trans &trans &kp PLUS        &kp HOME &kp LBRC &kp RBRC &kp END &kp BSLH &kp RET
    &kp ESC   &trans &trans &trans &trans &kp MINUS        &kp LBKT   &kp LPAR   &kp RPAR &kp RBKT &trans &to ARROWS_L
-                     &kp LCMD &kp LSHFT &to DEFAULT_L     &tran &kp SPACE  &to NUMBERS_L
+                     &kp LCMD &kp LSHFT &to DEFAULT_L     &trans &kp SPACE  &to NUMBERS_L
                         >;
                 };
 
