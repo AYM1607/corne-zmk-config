@@ -32,36 +32,36 @@
 
                 default_layer {
                         bindings = <
-   &kp TAB   &kp Q &kp W &kp F &kp P &kp B   &kp J &kp L  &kp U     &kp Y   &kp EQUAL    &kp BSPC
+   &kp ESC   &kp Q &kp W &kp F &kp P &kp B   &kp J &kp L  &kp U     &kp Y   &kp EQUAL    &kp BSPC
    &kp SQT   &kp A &kp R &kp S &hm LCMD T &kp G   &kp M &hm LCMD N  &kp E     &kp I   &kp O       &kp RET
-   &kp ESC &kp Z &kp X &kp C &kp D &kp V   &kp K &kp H  &kp COMMA &kp DOT   &kp SEMI   &kp FSLH 
+   &kp TAB &kp Z &kp X &kp C &kp D &kp V   &kp K &kp H  &kp COMMA &kp DOT   &kp SEMI   &kp FSLH 
                   &kp LCMD &kp LSHFT &kp LCTRL   &to SYMBOLS_L &kp SPACE &to NUMBERS_L
                         >;
                 };
 
                 symbols_layer {
                         bindings = <
-   &kp TAB    &kp EXCL       &kp AT       &kp HASH       &kp DLLR       &kp PRCNT         &kp CARET   &kp AMPS   &kp STAR &kp MINUS  &trans &kp BSPC
+   &kp ESC    &kp EXCL       &kp AT       &kp HASH       &kp DLLR       &kp PRCNT         &kp CARET   &kp AMPS   &kp STAR &kp MINUS  &trans &kp BSPC
    &kp GRAVE &trans &trans &trans &trans &kp PLUS        &kp HOME &kp LBRC &kp RBRC &kp END &kp BSLH &kp RET
-   &kp ESC   &trans &trans &trans &trans &kp MINUS        &kp LBKT   &kp LPAR   &kp RPAR &kp RBKT &trans &to ARROWS_L
+   &kp TAB   &trans &trans &trans &trans &kp MINUS        &kp LBKT   &kp LPAR   &kp RPAR &kp RBKT &trans &to ARROWS_L
                      &kp LCMD &kp LSHFT &to DEFAULT_L     &trans &kp SPACE  &to NUMBERS_L
                         >;
                 };
 
                 arrows_layer {
                         bindings = <
-   &kp  TAB  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR            &trans &trans &trans &trans &trans &kp BSPC
+   &kp ESC  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR            &trans &trans &trans &trans &trans &kp BSPC
    &trans &trans   &kp C_PP &kp C_VOL_DN &kp C_VOL_UP &kp C_BRI_UP                     &kp LEFT &kp DOWN &kp UP  &kp RIGHT &trans &kp RET
-   &trans &trans   &trans   &kp C_PREV &kp C_NEXT &kp C_BRI_DN                         &trans &trans &trans &trans &trans &trans 
+   &kp TAB &trans   &trans   &kp C_PREV &kp C_NEXT &kp C_BRI_DN                         &trans &trans &trans &trans &trans &trans 
                     	     &kp LCMD &kp LSHFT   &to DEFAULT_L                        &to SYMBOLS_L &kp SPACE    &to NUMBERS_L
                         >;
                 };
 
                 numbers_layer {
                         bindings = <
-   &kp  TAB   &trans &trans &trans &trans &trans                 &trans &hm F7 N7      &hm F8 N8      &hm F9 N9 &trans &kp BSPC
+   &kp ESC  &trans &trans &trans &trans &trans                 &trans &hm F7 N7      &hm F8 N8      &hm F9 N9 &trans &kp BSPC
    &trans   &trans &trans   &trans   &kp STAR &kp PLUS           &kp EQUAL &hm F4 N4      &hm F5 N5      &hm F6 N6 &kp DOT &kp RET
-   &trans &trans   &trans   &trans      &kp FSLH &kp MINUS       &hm F10 N0		&hm F1 N1      &hm F2 N2      &hm F3 N3 &kp COMMA &to ARROWS_L
+   &kp TAB &trans   &trans   &trans      &kp FSLH &kp MINUS       &hm F10 N0		&hm F1 N1      &hm F2 N2      &hm F3 N3 &kp COMMA &to ARROWS_L
                     	     &kp LCMD &kp LSHFT   &to DEFAULT_L  &to SYMBOLS_L &kp SPACE    &trans
                         >;
                 };
