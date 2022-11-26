@@ -5,7 +5,7 @@
 # the `include` property, e.g:
 #
 # board: [ "nice_nano_v2" ]
-# shield: [ "swept_left", "swept_right" ]
+# shield: [ "corne_left", "corne_right" ]
 # include:
 #   - board: bdn9_rev2
 #   - board: nice_nano_v2
@@ -14,8 +14,8 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: swept_left
+    shield: corne_left
   - board: nice_nano_v2
-    shield: swept_right
+    shield: corne_right
   - board: nice_nano_v2
     shield: settings_reset
