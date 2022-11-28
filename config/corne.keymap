@@ -40,7 +40,7 @@
     macros {
         accent_a_macro: accent_a_macro {
             compatible = "zmk,behavior-macro";
-            label = "new_macro";
+            label = "accent_a_macro";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
