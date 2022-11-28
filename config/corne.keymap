@@ -32,7 +32,7 @@
         compatible = "zmk,combos";
 
         accent_a_combo {
-            bindings = <&kp RIGHT_ALT>;
+            bindings = <RA(&kp NUMBER_2 &kp NUMBER_2 &kp NUMBER_5)>;
             key-positions = <20 13>;
         };
     };
