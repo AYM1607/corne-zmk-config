@@ -31,7 +31,7 @@
     combos {
         compatible = "zmk,combos";
 
-        new_combo {
+        accent_a_combo {
             bindings = <&accent_a_macro>;
             key-positions = <20 13>;
         };
