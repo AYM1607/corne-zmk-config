@@ -31,17 +31,23 @@
     combos {
         compatible = "zmk,combos";
 
-        accent_ {
-            á_combo
-
-            bindings = <&macro_press &kp LALT &macro_tap &kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N5 &macro_release &kp LALT>;
+        accent_a_combo {
+            bindings
+                = <&macro_press   &kp LALT>
+                , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N5>
+                , <&macro_release &kp LALT>
+            ;
             key-positions = <20 13>;
         };
 
-        accent_ {
-            Á_combo
-
-            bindings = <&macro_press &kp LALT &macro_press &kp SALT &macro_tap &kp KP_N0 &kp KP_N1 &kp KP_N9 &kp KP_N3 &macro_release &kp SALT &macro_release &kp LALT>;
+        accent_A_combo {
+            bindings
+                = <&macro_press   &kp LALT>
+                , <&macro_press   &kp LSHFT>
+                , <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N6 &kp KP_N3>
+                , <&macro_release &kp LSHFT>
+                , <&macro_release &kp LALT>
+            ;
             key-positions = <20 13 19>;
         };
     };
