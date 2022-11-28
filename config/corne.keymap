@@ -28,15 +28,24 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        accent_a_combo {
+            bindings = <&kp RIGHT_ALT>;
+            key-positions = <20 13>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
- &kp ESC        &kp Q         &kp W       &kp F        &kp P      &kp B           &kp J         &kp L       &kp U        &kp Y   &kp EQUAL  &kp BSPC
- &kp SQT   &hm LCMD A   &hm LCTRL R  &hm LALT S  &hm LSHFT T      &kp G           &kp M  &hm RSHIFT N  &hm RALT E  &hm RCTRL I  &hm RCMD O  &kp RET
- &kp TAB        &kp Z         &kp X       &kp C        &kp D      &kp V           &kp K         &kp H   &kp COMMA      &kp DOT    &kp SEMI  &kp FSLH
-                                       &kp LCMD    &kp LSHFT  &kp LCTRL           &to 1     &kp SPACE       &to 3
+ &kp ESC       &kp Q        &kp W       &kp F        &kp P      &kp B           &kp J         &kp L       &kp U        &kp Y   &kp EQUAL  &kp BSPC
+ &kp SQT  &hm LCMD A  &hm LCTRL R  &hm LALT S  &hm LSHFT T      &kp G           &kp M  &hm RSHIFT N  &hm RALT E  &hm RCTRL I  &hm RCMD O   &kp RET
+ &kp TAB       &kp Z        &kp X       &kp C        &kp D      &kp V           &kp K         &kp H   &kp COMMA      &kp DOT    &kp SEMI  &kp FSLH
+                                     &kp LCMD    &kp LSHFT  &kp LCTRL           &to 1     &kp SPACE       &to 3
             >;
         };
 
