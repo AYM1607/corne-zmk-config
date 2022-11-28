@@ -8,11 +8,23 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
+
 /* Navigation Keys */
+
+&mt {
+    flavor = "tap-preferred";
+    tapping-term-ms = <220>;
+    quick-tap-ms = <220>;              // repeat on tap-into-hold
+    hold-trigger-key-positions = <0>;  // tap on interrupt
+};
+
 #define NAV_LEFT  &mt HOME     LEFT    // tap: left  | long-tap: beginning of line
 #define NAV_RIGHT &mt END      RIGHT   // tap: right | long-tap: end       of line
 #define NAV_UP    &mt LC(HOME) UP      // tap: up    | long-tap: beginning of document
 #define NAV_DOWN  &mt LC(END)  DOWN    // tap: down  | long-tap: end       of document
+
+
+/* Layers */
 
 #define DEFAULT_L 0
 #define SYMBOLS_L 1
