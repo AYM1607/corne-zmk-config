@@ -77,6 +77,126 @@
                 <&macro_release>,
                 <&kp RSHFT &kp RALT>;
         };
+        ma_e: ma_e {
+            compatible = "zmk,behavior-macro";
+            label = "ma_e";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N2 &kp KP_N3 &kp KP_N3>,
+                <&macro_release>,
+                <&kp RALT>;
+        };
+        ma_E: ma_E {
+            compatible = "zmk,behavior-macro";
+            label = "ma_E";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RALT &kp RSHFT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N1>,
+                <&macro_release>,
+                <&kp RSHFT &kp RALT>;
+        };
+        ma_i: ma_i {
+            compatible = "zmk,behavior-macro";
+            label = "ma_i";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N2 &kp KP_N3 &kp KP_N7>,
+                <&macro_release>,
+                <&kp RALT>;
+        };
+        ma_I: ma_I {
+            compatible = "zmk,behavior-macro";
+            label = "ma_I";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RALT &kp RSHFT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N5>,
+                <&macro_release>,
+                <&kp RSHFT &kp RALT>;
+        };
+        ma_o: ma_o {
+            compatible = "zmk,behavior-macro";
+            label = "ma_o";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N3>,
+                <&macro_release>,
+                <&kp RALT>;
+        };
+        ma_O: ma_O {
+            compatible = "zmk,behavior-macro";
+            label = "ma_O";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RALT &kp RSHFT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N2 &kp KP_N1 &kp KP_N1>,
+                <&macro_release>,
+                <&kp RSHFT &kp RALT>;
+        };
+        ma_u: ma_u {
+            compatible = "zmk,behavior-macro";
+            label = "ma_u";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N2 &kp KP_N5 &kp KP_N0>,
+                <&macro_release>,
+                <&kp RALT>;
+        };
+        ma_U: ma_U {
+            compatible = "zmk,behavior-macro";
+            label = "ma_U";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RALT &kp RSHFT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N2 &kp KP_N1 &kp KP_N8>,
+                <&macro_release>,
+                <&kp RSHFT &kp RALT>;
+        };
+        ma_n: ma_n {
+            compatible = "zmk,behavior-macro";
+            label = "ma_n";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N1>,
+                <&macro_release>,
+                <&kp RALT>;
+        };
+        ma_N: ma_N {
+            compatible = "zmk,behavior-macro";
+            label = "ma_N";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RALT &kp RSHFT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N9>,
+                <&macro_release>,
+                <&kp RSHFT &kp RALT>;
+        };
     };
 
     keymap {
