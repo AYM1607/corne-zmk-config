@@ -41,7 +41,7 @@
     combos {
         compatible = "zmk,combos";
 
-        accent_a_combo {
+        ca_a {
             bindings = <&ma_a>;
             key-positions = <20 13>;
         };
@@ -53,9 +53,9 @@
     };
 
     macros {
-        accent_a_macro: accent_a_macro {
+        ma_a: ma_a {
             compatible = "zmk,behavior-macro";
-            label = "accent_a_macro";
+            label = "ma_a";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
@@ -67,13 +67,13 @@
         };
         ma_A: ma_A {
             compatible = "zmk,behavior-macro";
-            label = "new_macro";
+            label = "ma_A";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
                 <&kp RALT &kp RSHFT>,
                 <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N5>,
+                <&kp KP_N0 &kp KP_N1 &kp KP_N9 &kp KP_N3>,
                 <&macro_release>,
                 <&kp RSHFT &kp RALT>;
         };
