@@ -7,13 +7,18 @@
         "FSLH",
         "homerow",
         "keymap",
+        "LALT",
         "LBKT",
         "LBRC",
         "LCMD",
         "LCTRL",
         "LSHFT",
         "PRCNT",
+        "RALT",
         "RBKT",
-        "RBRC"
+        "RBRC",
+        "RCMD",
+        "RCTRL",
+        "RSHFT"
     ]
 }
