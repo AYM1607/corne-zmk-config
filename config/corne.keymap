@@ -50,6 +50,56 @@
             bindings = <&ma_A>;
             key-positions = <13 20 19>;
         };
+
+        ca_e {
+            bindings = <&ma_e>;
+            key-positions = <>;
+        };
+
+        ca_E {
+            bindings = <&ma_E>;
+            key-positions = <>;
+        };
+
+        ca_i {
+            bindings = <&ma_i>;
+            key-positions = <>;
+        };
+
+        ca_I {
+            bindings = <&ma_I>;
+            key-positions = <>;
+        };
+
+        ca_o {
+            bindings = <&ma_o>;
+            key-positions = <>;
+        };
+
+        ca_O {
+            bindings = <&ma_O>;
+            key-positions = <>;
+        };
+
+        ca_u {
+            bindings = <&ma_u>;
+            key-positions = <>;
+        };
+
+        ca_U {
+            bindings = <&ma_U>;
+            key-positions = <>;
+        };
+
+        ca_n {
+            bindings = <&ma_n>;
+            key-positions = <>;
+        };
+
+        ca_N {
+            bindings = <&ma_N>;
+            key-positions = <>;
+        };
     };
 
     macros {
