@@ -45,6 +45,11 @@
             bindings = <&ma_a>;
             key-positions = <20 13>;
         };
+
+        ca_A {
+            bindings = <&ma_A>;
+            key-positions = <13 20 19>;
+        };
     };
 
     macros {
