@@ -53,52 +53,52 @@
 
         ca_e {
             bindings = <&ma_e>;
-            key-positions = <>;
+            key-positions = <20 15>;
         };
 
         ca_E {
             bindings = <&ma_E>;
-            key-positions = <>;
+            key-positions = <20 16 15>;
         };
 
         ca_i {
             bindings = <&ma_i>;
-            key-positions = <>;
+            key-positions = <21 15>;
         };
 
         ca_I {
             bindings = <&ma_I>;
-            key-positions = <>;
+            key-positions = <21 15 16>;
         };
 
         ca_o {
             bindings = <&ma_o>;
-            key-positions = <>;
+            key-positions = <22 15>;
         };
 
         ca_O {
             bindings = <&ma_O>;
-            key-positions = <>;
+            key-positions = <22 15 16>;
         };
 
         ca_u {
             bindings = <&ma_u>;
-            key-positions = <>;
+            key-positions = <9 15>;
         };
 
         ca_U {
             bindings = <&ma_U>;
-            key-positions = <>;
+            key-positions = <9 15 16>;
         };
 
         ca_n {
             bindings = <&ma_n>;
-            key-positions = <>;
+            key-positions = <19 15>;
         };
 
         ca_N {
             bindings = <&ma_N>;
-            key-positions = <>;
+            key-positions = <19 15 16>;
         };
     };
 
