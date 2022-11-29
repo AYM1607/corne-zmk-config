@@ -18,14 +18,6 @@
     hold-trigger-key-positions = <0>;  // tap on interrupt
 };
 
-#define NAV_LEFT  &mt HOME     LEFT    // tap: left  | long-tap: beginning of line
-#define NAV_RIGHT &mt END      RIGHT   // tap: right | long-tap: end       of line
-#define NAV_UP    &mt LC(HOME) UP      // tap: up    | long-tap: beginning of document
-#define NAV_DOWN  &mt LC(END)  DOWN    // tap: down  | long-tap: end       of document
-#define NAV_BSPC  &mt LC(BSPC) BSPC    // tap: bspc  | long-tap: delete word backward
-#define NAV_DEL   &mt LC(DEL)  DEL     // tap: del   | long-tap: delete word forward
-
-
 /* Layers */
 
 #define DEFAULT_L 0
@@ -77,36 +69,36 @@
 
         default_layer {
             bindings = <
- &kp ESC       &kp Q        &kp W       &kp F        &kp P      &kp B           &kp J        &kp L       &kp U        &kp Y   &kp EQUAL  NAV_BSPC
- &kp SQT  &hm LCMD A  &hm LCTRL R  &hm LALT S  &hm LSHFT T      &kp G           &kp M  &hm RSHFT N  &hm RALT E  &hm RCTRL I  &hm RCMD O   &kp RET
- &kp TAB       &kp Z        &kp X       &kp C        &kp D      &kp V           &kp K        &kp H   &kp COMMA      &kp DOT    &kp SEMI  &kp FSLH
+ &kp ESC       &kp Q        &kp W       &kp F        &kp P      &kp B           &kp J        &kp L       &kp U        &kp Y   &kp EQUAL  &mt LC(BSPC) BSPC
+ &kp SQT  &hm LCMD A  &hm LCTRL R  &hm LALT S  &hm LSHFT T      &kp G           &kp M  &hm RSHFT N  &hm RALT E  &hm RCTRL I  &hm RCMD O            &kp RET
+ &kp TAB       &kp Z        &kp X       &kp C        &kp D      &kp V           &kp K        &kp H   &kp COMMA      &kp DOT    &kp SEMI           &kp FSLH
                                      &kp LCMD    &kp LSHFT  &kp LCTRL           &to 1    &kp SPACE       &to 3
             >;
         };
 
         symbols_layer {
             bindings = <
-   &kp ESC  &kp EXCL  &kp AT  &kp HASH   &kp DLLR  &kp PRCNT          &kp CARET   &kp AMPS  &kp STAR  &kp MINUS     &none  NAV_BSPC
- &kp GRAVE     &none   &none     &none      &none   &kp PLUS           &kp HOME   &kp LBRC  &kp RBRC    &kp END  &kp BSLH   &kp RET
-   &kp TAB     &none   &none     &none      &none  &kp MINUS           &kp LBKT   &kp LPAR  &kp RPAR   &kp RBKT     &none     &to 2
+   &kp ESC  &kp EXCL  &kp AT  &kp HASH   &kp DLLR  &kp PRCNT          &kp CARET   &kp AMPS  &kp STAR  &kp MINUS     &none  &mt LC(BSPC) BSPC
+ &kp GRAVE     &none   &none     &none      &none   &kp PLUS           &kp HOME   &kp LBRC  &kp RBRC    &kp END  &kp BSLH            &kp RET
+   &kp TAB     &none   &none     &none      &none  &kp MINUS           &kp LBKT   &kp LPAR  &kp RPAR   &kp RBKT     &none              &to 2
                               &kp LCMD  &kp LSHFT      &to 0              &none  &kp SPACE     &to 3
             >;
         };
 
         arrows_layer {
             bindings = <
- &kp ESC  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_CLR             &none      &none   &none      &none   &none  NAV_BSPC
-   &none         &none      &kp C_PP  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_BRI_UP          NAV_LEFT   NAV_DOWN  NAV_UP  NAV_RIGHT   &none   &kp RET
- &kp TAB         &none         &none    &kp C_PREV    &kp C_NEXT  &kp C_BRI_DN             &none      &none   &none      &none   &none     &none
-                                          &kp LCMD     &kp LSHFT         &to 0             &to 1  &kp SPACE   &to 3
+ &kp ESC  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_CLR                  &none              &none            &none          &none   &none  &mt LC(BSPC) BSPC
+   &none         &none      &kp C_PP  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_BRI_UP          &mt HOME LEFT   &mt LC(END) DOWN  &mt LC(HOME) UP  &mt END RIGHT   &none            &kp RET
+ &kp TAB         &none         &none    &kp C_PREV    &kp C_NEXT  &kp C_BRI_DN                  &none              &none            &none          &none   &none    &mt LC(DEL) DEL
+                                          &kp LCMD     &kp LSHFT         &to 0                  &to 1          &kp SPACE            &to 3
             >;
         };
 
         numbers_layer {
             bindings = <
- &kp ESC   &none   &none     &none      &none      &none               &none  &hm F7 N7  &hm F8 N8  &hm F9 N9      &none  NAV_BSPC
-   &none   &none   &none     &none   &kp STAR   &kp PLUS           &kp EQUAL  &hm F4 N4  &hm F5 N5  &hm F6 N6    &kp DOT   &kp RET
- &kp TAB   &none   &none     &none   &kp FSLH  &kp MINUS          &hm F10 N0  &hm F1 N1  &hm F2 N2  &hm F3 N3  &kp COMMA     &to 2
+ &kp ESC   &none   &none     &none      &none      &none               &none  &hm F7 N7  &hm F8 N8  &hm F9 N9      &none  &mt LC(BSPC) BSPC
+   &none   &none   &none     &none   &kp STAR   &kp PLUS           &kp EQUAL  &hm F4 N4  &hm F5 N5  &hm F6 N6    &kp DOT            &kp RET
+ &kp TAB   &none   &none     &none   &kp FSLH  &kp MINUS          &hm F10 N0  &hm F1 N1  &hm F2 N2  &hm F3 N3  &kp COMMA              &to 2
                           &kp LCMD  &kp LSHFT      &to 0               &to 1  &kp SPACE      &none
             >;
         };
