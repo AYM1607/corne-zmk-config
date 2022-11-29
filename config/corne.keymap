@@ -71,11 +71,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp RALT &kp RSHFT>,
+                <&kp RALT>,
                 <&macro_tap>,
                 <&kp KP_N0 &kp KP_N1 &kp KP_N9 &kp KP_N3>,
                 <&macro_release>,
-                <&kp RSHFT &kp RALT>;
+                <&kp RALT>;
         };
         ma_e: ma_e {
             compatible = "zmk,behavior-macro";
@@ -95,11 +95,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp RALT &kp RSHFT>,
+                <&kp RALT>,
                 <&macro_tap>,
                 <&kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N1>,
                 <&macro_release>,
-                <&kp RSHFT &kp RALT>;
+                <&kp RALT>;
         };
         ma_i: ma_i {
             compatible = "zmk,behavior-macro";
@@ -119,11 +119,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp RALT &kp RSHFT>,
+                <&kp RALT>,
                 <&macro_tap>,
                 <&kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N5>,
                 <&macro_release>,
-                <&kp RSHFT &kp RALT>;
+                <&kp RALT>;
         };
         ma_o: ma_o {
             compatible = "zmk,behavior-macro";
@@ -143,11 +143,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp RALT &kp RSHFT>,
+                <&kp RALT>,
                 <&macro_tap>,
                 <&kp KP_N0 &kp KP_N2 &kp KP_N1 &kp KP_N1>,
                 <&macro_release>,
-                <&kp RSHFT &kp RALT>;
+                <&kp RALT>;
         };
         ma_u: ma_u {
             compatible = "zmk,behavior-macro";
@@ -167,11 +167,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp RALT &kp RSHFT>,
+                <&kp RALT>,
                 <&macro_tap>,
                 <&kp KP_N0 &kp KP_N2 &kp KP_N1 &kp KP_N8>,
                 <&macro_release>,
-                <&kp RSHFT &kp RALT>;
+                <&kp RALT>;
         };
         ma_n: ma_n {
             compatible = "zmk,behavior-macro";
@@ -191,11 +191,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp RALT &kp RSHFT>,
+                <&kp RALT>,
                 <&macro_tap>,
                 <&kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N9>,
                 <&macro_release>,
-                <&kp RSHFT &kp RALT>;
+                <&kp RALT>;
         };
     };
 
