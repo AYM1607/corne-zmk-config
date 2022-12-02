@@ -69,6 +69,16 @@
                 <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N5>,
                 <&macro_release &kp RALT>;
         };
+
+        ma_a_shift: macro_accent-a-shift {
+            compatible = "zmk,behavior-macro";
+            label = "ma_a_shift";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press   &kp RALT>,
+                <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N9 &kp KP_N3>,
+                <&macro_release &kp RALT>;
+        };
     };
 
     keymap {
