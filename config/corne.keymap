@@ -110,6 +110,26 @@
             bindings = <&m_e>;
             key-positions = <20 15>;
         };
+
+        combo_accent-i {
+            bindings = <&m_i>;
+            key-positions = <21 15>;
+        };
+
+        combo_accent-o {
+            bindings = <&m_o>;
+            key-positions = <22 15>;
+        };
+
+        combo_accent-u {
+            bindings = <&m_u>;
+            key-positions = <9 15>;
+        };
+
+        combo_accent-n {
+            bindings = <&m_n>;
+            key-positions = <19 15>;
+        };
     };
 
     macros {
