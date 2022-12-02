@@ -43,19 +43,27 @@
             #binding-cells = <0>;
             continue-list = <UNDERSCORE MINUS BACKSPACE>;
         };
+
+        m_a: morph_a {
+            compatible = "zmk,behavior-mod-morph";
+            label = "m_a";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            bindings = <&ma_a>, <&ma_a_shift>;
+        };
     };
 
     combos {
         compatible = "zmk,combos";
 
-        combo_accent-a {
-            bindings = <&ma_a>;
-            key-positions = <13 20>;
-        };
-
         combo_caps-word {
             bindings = <&cw>;
             key-positions = <16 19>;
+        };
+
+        combo_accent-a {
+            bindings = <&m_a>;
+            key-positions = <13 20>;
         };
     };
 
