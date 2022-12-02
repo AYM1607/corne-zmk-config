@@ -51,6 +51,14 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
             bindings = <&ma_a>, <&ma_a_shift>;
         };
+
+        m_e: morph_e {
+            compatible = "zmk,behavior-mod-morph";
+            label = "m_e";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            bindings = <&ma_e>, <&ma_e_shift>;
+        };
     };
 
     combos {
@@ -64,6 +72,11 @@
         combo_accent-a {
             bindings = <&m_a>;
             key-positions = <13 20>;
+        };
+
+        combo_accent-e {
+            bindings = <&m_e>;
+            key-positions = <20 15>;
         };
     };
 
