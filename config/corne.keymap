@@ -120,6 +120,86 @@
                 <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N1>,
                 <&macro_release &kp RALT>;
         };
+
+        ma_i: macro_accent_i {
+            compatible = "zmk,behavior-macro";
+            label = "ma_i";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press   &kp RALT>,
+                <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N3 &kp KP_N7>,
+                <&macro_release &kp RALT>;
+        };
+
+        ma_i_shift: macro_accent_i_shift {
+            compatible = "zmk,behavior-macro";
+            label = "ma_i_shift";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press   &kp RALT>,
+                <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N5>,
+                <&macro_release &kp RALT>;
+        };
+
+        ma_o: macro_accent_o {
+            compatible = "zmk,behavior-macro";
+            label = "ma_o";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press   &kp RALT>,
+                <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N3>,
+                <&macro_release &kp RALT>;
+        };
+
+        ma_o_shift: macro_accent_o_shift {
+            compatible = "zmk,behavior-macro";
+            label = "ma_o_shift";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press   &kp RALT>,
+                <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N1 &kp KP_N1>,
+                <&macro_release &kp RALT>;
+        };
+
+        ma_u: macro_accent_u {
+            compatible = "zmk,behavior-macro";
+            label = "ma_u";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press   &kp RALT>,
+                <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N5 &kp KP_N0>,
+                <&macro_release &kp RALT>;
+        };
+
+        ma_u_shift: macro_accent_u_shift {
+            compatible = "zmk,behavior-macro";
+            label = "ma_u_shift";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press   &kp RALT>,
+                <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N1 &kp KP_N8>,
+                <&macro_release &kp RALT>;
+        };
+
+        ma_n: macro_accent_n {
+            compatible = "zmk,behavior-macro";
+            label = "ma_n";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press   &kp RALT>,
+                <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N1>,
+                <&macro_release &kp RALT>;
+        };
+
+        ma_n_shift: macro_accent_n_shift {
+            compatible = "zmk,behavior-macro";
+            label = "ma_n_shift";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press   &kp RALT>,
+                <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N9>,
+                <&macro_release &kp RALT>;
+        };
     };
 
     keymap {
