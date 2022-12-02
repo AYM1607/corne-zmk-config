@@ -43,13 +43,21 @@
             #binding-cells = <0>;
             continue-list = <UNDERSCORE MINUS BACKSPACE>;
         };
+
+        m_a: morph_accent-a {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ma_a";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            bindings = <&ma_a>, <&ma_A>;
+        };
     };
 
     combos {
         compatible = "zmk,combos";
 
         combo_accent-a {
-            bindings = <&ma_a>;
+            bindings = <&m_a>;
             key-positions = <13 20>;
         };
 
@@ -81,126 +89,6 @@
                 <&kp RALT>,
                 <&macro_tap>,
                 <&kp KP_N0 &kp KP_N1 &kp KP_N9 &kp KP_N3>,
-                <&macro_release>,
-                <&kp RALT>;
-        };
-        ma_e: macro_accent-e {
-            compatible = "zmk,behavior-macro";
-            label = "ma_e";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp RALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N3 &kp KP_N3>,
-                <&macro_release>,
-                <&kp RALT>;
-        };
-        ma_E: macro_accent-E {
-            compatible = "zmk,behavior-macro";
-            label = "ma_E";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp RALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N1>,
-                <&macro_release>,
-                <&kp RALT>;
-        };
-        ma_i: macro_accent-i {
-            compatible = "zmk,behavior-macro";
-            label = "ma_i";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp RALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N3 &kp KP_N7>,
-                <&macro_release>,
-                <&kp RALT>;
-        };
-        ma_I: macro_accent-I {
-            compatible = "zmk,behavior-macro";
-            label = "ma_I";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp RALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N5>,
-                <&macro_release>,
-                <&kp RALT>;
-        };
-        ma_o: macro_accent-o {
-            compatible = "zmk,behavior-macro";
-            label = "ma_o";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp RALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N3>,
-                <&macro_release>,
-                <&kp RALT>;
-        };
-        ma_O: macro_accent-O {
-            compatible = "zmk,behavior-macro";
-            label = "ma_O";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp RALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N1 &kp KP_N1>,
-                <&macro_release>,
-                <&kp RALT>;
-        };
-        ma_u: macro_accent-u {
-            compatible = "zmk,behavior-macro";
-            label = "ma_u";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp RALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N5 &kp KP_N0>,
-                <&macro_release>,
-                <&kp RALT>;
-        };
-        ma_U: macro_accent-U {
-            compatible = "zmk,behavior-macro";
-            label = "ma_U";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp RALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N1 &kp KP_N8>,
-                <&macro_release>,
-                <&kp RALT>;
-        };
-        ma_n: macro_accent-n {
-            compatible = "zmk,behavior-macro";
-            label = "ma_n";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp RALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N1>,
-                <&macro_release>,
-                <&kp RALT>;
-        };
-        ma_N: macro_accent-N {
-            compatible = "zmk,behavior-macro";
-            label = "ma_N";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp RALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N9>,
                 <&macro_release>,
                 <&kp RALT>;
         };
