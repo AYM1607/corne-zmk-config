@@ -49,7 +49,7 @@
             label = "m_a";
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            bindings = <&ma_a>, <&ma_a-shift>;
+            bindings = <&ma_a>, <&ma_a_shift>;
         };
     };
 
@@ -68,7 +68,7 @@
     };
 
     macros {
-        ma_a: macro_accent-a {
+        ma_a: macro_accent_a {
             compatible = "zmk,behavior-macro";
             label = "ma_a";
             #binding-cells = <0>;
@@ -78,9 +78,9 @@
                 <&macro_release &kp RALT>;
         };
 
-        ma_a-shift: macro_accent-a-shift {
+        ma_a_shift: macro_accent_a_shift {
             compatible = "zmk,behavior-macro";
-            label = "ma_a-shift";
+            label = "ma_a_shift";
             #binding-cells = <0>;
             bindings =
                 <&macro_press   &kp RALT>,
