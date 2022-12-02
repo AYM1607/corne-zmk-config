@@ -81,7 +81,7 @@
             label = "m_u";
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            bindings = <&m_au>, <&m_au_shift>;
+            bindings = <&mt &m_uu &m_au>, <&mt &m_uu_shift &m_au_shift>;
         };
 
         m_n: morph_n {
