@@ -36,79 +36,86 @@
                 <&kp>,
                 <&kp>;
         };
+
+        cw: caps_word {
+            compatible = "zmk,behavior-caps-word";
+            label = "PROG_CAPS";
+            #binding-cells = <0>;
+            continue-list = <UNDERSCORE MINUS BACKSPACE>;
+        };
     };
 
     combos {
         compatible = "zmk,combos";
 
-        ca_a {
+        combo_accent-a {
             bindings = <&ma_a>;
             key-positions = <13 20>;
         };
 
-        ca_A {
+        combo_accent-A {
             bindings = <&ma_A>;
             key-positions = <13 20 19>;
         };
 
-        ca_e {
+        combo_accent-e {
             bindings = <&ma_e>;
             key-positions = <20 15>;
         };
 
-        ca_E {
+        combo_accent-E {
             bindings = <&ma_E>;
             key-positions = <20 16 15>;
         };
 
-        ca_i {
+        combo_accent-i {
             bindings = <&ma_i>;
             key-positions = <21 15>;
         };
 
-        ca_I {
+        combo_accent-I {
             bindings = <&ma_I>;
             key-positions = <21 15 16>;
         };
 
-        ca_o {
+        combo_accent-o {
             bindings = <&ma_o>;
             key-positions = <22 15>;
         };
 
-        ca_O {
+        combo_accent-O {
             bindings = <&ma_O>;
             key-positions = <22 15 16>;
         };
 
-        ca_u {
+        combo_accent-u {
             bindings = <&ma_u>;
             key-positions = <9 15>;
         };
 
-        ca_U {
+        combo_accent-U {
             bindings = <&ma_U>;
             key-positions = <9 15 16>;
         };
 
-        ca_n {
+        combo_accent-n {
             bindings = <&ma_n>;
             key-positions = <19 15>;
         };
 
-        ca_N {
+        combo_accent-N {
             bindings = <&ma_N>;
             key-positions = <19 15 16>;
         };
 
-        new_combo {
-            bindings = <&caps_word>;
+        combo_caps-word {
+            bindings = <&cw>;
             key-positions = <16 19>;
         };
     };
 
     macros {
-        ma_a: ma_a {
+        ma_a: macro_accent-a {
             compatible = "zmk,behavior-macro";
             label = "ma_a";
             #binding-cells = <0>;
@@ -120,7 +127,7 @@
                 <&macro_release>,
                 <&kp RALT>;
         };
-        ma_A: ma_A {
+        ma_A: macro_accent-A {
             compatible = "zmk,behavior-macro";
             label = "ma_A";
             #binding-cells = <0>;
@@ -132,7 +139,7 @@
                 <&macro_release>,
                 <&kp RALT>;
         };
-        ma_e: ma_e {
+        ma_e: macro_accent-e {
             compatible = "zmk,behavior-macro";
             label = "ma_e";
             #binding-cells = <0>;
@@ -144,7 +151,7 @@
                 <&macro_release>,
                 <&kp RALT>;
         };
-        ma_E: ma_E {
+        ma_E: macro_accent-E {
             compatible = "zmk,behavior-macro";
             label = "ma_E";
             #binding-cells = <0>;
@@ -156,7 +163,7 @@
                 <&macro_release>,
                 <&kp RALT>;
         };
-        ma_i: ma_i {
+        ma_i: macro_accent-i {
             compatible = "zmk,behavior-macro";
             label = "ma_i";
             #binding-cells = <0>;
@@ -168,7 +175,7 @@
                 <&macro_release>,
                 <&kp RALT>;
         };
-        ma_I: ma_I {
+        ma_I: macro_accent-I {
             compatible = "zmk,behavior-macro";
             label = "ma_I";
             #binding-cells = <0>;
@@ -180,7 +187,7 @@
                 <&macro_release>,
                 <&kp RALT>;
         };
-        ma_o: ma_o {
+        ma_o: macro_accent-o {
             compatible = "zmk,behavior-macro";
             label = "ma_o";
             #binding-cells = <0>;
@@ -192,7 +199,7 @@
                 <&macro_release>,
                 <&kp RALT>;
         };
-        ma_O: ma_O {
+        ma_O: macro_accent-O {
             compatible = "zmk,behavior-macro";
             label = "ma_O";
             #binding-cells = <0>;
@@ -204,7 +211,7 @@
                 <&macro_release>,
                 <&kp RALT>;
         };
-        ma_u: ma_u {
+        ma_u: macro_accent-u {
             compatible = "zmk,behavior-macro";
             label = "ma_u";
             #binding-cells = <0>;
@@ -216,7 +223,7 @@
                 <&macro_release>,
                 <&kp RALT>;
         };
-        ma_U: ma_U {
+        ma_U: macro_accent-U {
             compatible = "zmk,behavior-macro";
             label = "ma_U";
             #binding-cells = <0>;
@@ -228,7 +235,7 @@
                 <&macro_release>,
                 <&kp RALT>;
         };
-        ma_n: ma_n {
+        ma_n: macro_accent-n {
             compatible = "zmk,behavior-macro";
             label = "ma_n";
             #binding-cells = <0>;
@@ -240,7 +247,7 @@
                 <&macro_release>,
                 <&kp RALT>;
         };
-        ma_N: ma_N {
+        ma_N: macro_accent-N {
             compatible = "zmk,behavior-macro";
             label = "ma_N";
             #binding-cells = <0>;
@@ -252,17 +259,6 @@
                 <&macro_release>,
                 <&kp RALT>;
         };
-    };
-
-    prog_caps: behavior_prog_caps_word {
-        compatible = "zmk,behavior-caps-word";
-        label = "PROG_CAPS";
-        #binding-cells = <0>;
-        continue-list = <UNDERSCORE>;
-    };
-
-    &caps_word {
-        continue-list = <UNDERSCORE MINUS BACKSPACE>;
     };
 
     keymap {
