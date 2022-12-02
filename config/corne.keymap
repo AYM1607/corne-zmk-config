@@ -41,24 +41,24 @@
     combos {
         compatible = "zmk,combos";
 
-        accent_a_combo {
-            bindings = <&accent_a_macro>;
-            key-positions = <20 13>;
+        combo_accent-a {
+            bindings = <&ma_a>;
+            key-positions = <13 20>;
         };
     };
 
     macros {
-        accent_a_macro: accent_a_macro {
+        ma_a: macro_accent-a {
             compatible = "zmk,behavior-macro";
-            label = "accent_a_macro";
+            label = "ma_a";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp RALT &kp RSHFT>,
+                <&kp RALT>,
                 <&macro_tap>,
                 <&kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N5>,
                 <&macro_release>,
-                <&kp RSHFT &kp RALT>;
+                <&kp RALT>;
         };
     };
 
@@ -94,14 +94,14 @@
 
         numbers_layer {
             bindings = <
- &kp ESC   &none   &none     &none      &none      &none               &none  &hm F7 N7  &hm F8 N8  &hm F9 N9      &none  &mt LC(BSPC) BSPC
-   &none   &none   &none     &none   &kp STAR   &kp PLUS           &kp EQUAL  &hm F4 N4  &hm F5 N5  &hm F6 N6    &kp DOT            &kp RET
- &kp TAB   &none   &none     &none   &kp FSLH  &kp MINUS          &hm F10 N0  &hm F1 N1  &hm F2 N2  &hm F3 N3  &kp COMMA              &to 2
+ &kp ESC   &none   &none     &none      &none      &none               &none  &mt F7 N7  &mt F8 N8  &mt F9 N9      &none  &mt LC(BSPC) BSPC
+   &none   &none   &none     &none   &kp STAR   &kp PLUS           &kp EQUAL  &mt F4 N4  &mt F5 N5  &mt F6 N6    &kp DOT            &kp RET
+ &kp TAB   &none   &none     &none   &kp FSLH  &kp MINUS          &mt F10 N0  &mt F1 N1  &mt F2 N2  &mt F3 N3  &kp COMMA              &to 2
                           &kp LCMD  &kp LSHFT      &to 0               &to 1  &kp SPACE      &none
             >;
         };
 
-        BLUETOOTH_LAYER {
+        bluetooth_layer {
             bindings = <
  &bootloader  &trans  &trans  &trans  &bt BT_CLR  &bt BT_SEL 0          &bt BT_SEL 3  &bt BT_CLR  &trans  &trans  &trans  &bootloader
       &trans  &trans  &trans  &trans      &trans  &bt BT_SEL 1          &bt BT_SEL 4      &trans  &trans  &trans  &trans       &trans
