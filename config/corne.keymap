@@ -59,6 +59,38 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
             bindings = <&ma_e>, <&ma_e_shift>;
         };
+
+        m_i: morph_i {
+            compatible = "zmk,behavior-mod-morph";
+            label = "m_i";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            bindings = <&ma_i>, <&ma_i_shift>;
+        };
+
+        m_o: morph_o {
+            compatible = "zmk,behavior-mod-morph";
+            label = "m_o";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            bindings = <&ma_o>, <&ma_o_shift>;
+        };
+
+        m_u: morph_u {
+            compatible = "zmk,behavior-mod-morph";
+            label = "m_u";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            bindings = <&ma_u>, <&ma_u_shift>;
+        };
+
+        m_n: morph_n {
+            compatible = "zmk,behavior-mod-morph";
+            label = "m_n";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            bindings = <&ma_n>, <&ma_n_shift>;
+        };
     };
 
     combos {

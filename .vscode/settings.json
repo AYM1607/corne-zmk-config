@@ -12,6 +12,7 @@
         "LBRC",
         "LCMD",
         "LCTRL",
+        "LSFT",
         "LSHFT",
         "PRCNT",
         "RALT",
@@ -19,6 +20,7 @@
         "RBRC",
         "RCMD",
         "RCTRL",
+        "RSFT",
         "RSHFT"
     ]
 }
