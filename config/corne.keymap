@@ -100,6 +100,11 @@
             bindings = <&ma_N>;
             key-positions = <19 15 16>;
         };
+
+        new_combo {
+            bindings = <&caps_word>;
+            key-positions = <16 19>;
+        };
     };
 
     macros {
@@ -255,7 +260,6 @@
         #binding-cells = <0>;
         continue-list = <UNDERSCORE>;
     };
-
 
     &caps_word {
         continue-list = <UNDERSCORE MINUS BACKSPACE>;
