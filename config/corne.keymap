@@ -241,6 +241,26 @@
                 <&macro_release &kp RALT>;
         };
 
+        m_uu: macro_umlaut_u {
+            compatible = "zmk,behavior-macro";
+            label = "m_uu";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press   &kp RALT>,
+                <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N5 &kp KP_N2>,
+                <&macro_release &kp RALT>;
+        };
+
+        m_uu_shift: macro_umlaut_u_shift {
+            compatible = "zmk,behavior-macro";
+            label = "m_uu_shift";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press   &kp RALT>,
+                <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N0>,
+                <&macro_release &kp RALT>;
+        };
+
         m_an: macro_accent_n {
             compatible = "zmk,behavior-macro";
             label = "m_an";
