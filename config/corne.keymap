@@ -36,228 +36,29 @@
                 <&kp>,
                 <&kp>;
         };
-
-        cw: caps_word {
-            compatible = "zmk,behavior-caps-word";
-            label = "PROG_CAPS";
-            #binding-cells = <0>;
-            continue-list = <UNDERSCORE MINUS BACKSPACE>;
-        };
     };
 
     combos {
         compatible = "zmk,combos";
 
-        combo_accent-a {
-            bindings = <&ma_a>;
-            key-positions = <13 20>;
-        };
-
-        combo_accent-A {
-            bindings = <&ma_A>;
-            key-positions = <13 20 19>;
-        };
-
-        combo_accent-e {
-            bindings = <&ma_e>;
-            key-positions = <20 15>;
-        };
-
-        combo_accent-E {
-            bindings = <&ma_E>;
-            key-positions = <20 16 15>;
-        };
-
-        combo_accent-i {
-            bindings = <&ma_i>;
-            key-positions = <21 15>;
-        };
-
-        combo_accent-I {
-            bindings = <&ma_I>;
-            key-positions = <21 15 16>;
-        };
-
-        combo_accent-o {
-            bindings = <&ma_o>;
-            key-positions = <22 15>;
-        };
-
-        combo_accent-O {
-            bindings = <&ma_O>;
-            key-positions = <22 15 16>;
-        };
-
-        combo_accent-u {
-            bindings = <&ma_u>;
-            key-positions = <9 15>;
-        };
-
-        combo_accent-U {
-            bindings = <&ma_U>;
-            key-positions = <9 15 16>;
-        };
-
-        combo_accent-n {
-            bindings = <&ma_n>;
-            key-positions = <19 15>;
-        };
-
-        combo_accent-N {
-            bindings = <&ma_N>;
-            key-positions = <19 15 16>;
-        };
-
-        combo_caps-word {
-            bindings = <&cw>;
-            key-positions = <16 19>;
+        accent_a_combo {
+            bindings = <&accent_a_macro>;
+            key-positions = <20 13>;
         };
     };
 
     macros {
-        ma_a: macro_accent-a {
+        accent_a_macro: accent_a_macro {
             compatible = "zmk,behavior-macro";
-            label = "ma_a";
+            label = "accent_a_macro";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp RALT>,
+                <&kp RALT &kp RSHFT>,
                 <&macro_tap>,
                 <&kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N5>,
                 <&macro_release>,
-                <&kp RALT>;
-        };
-        ma_A: macro_accent-A {
-            compatible = "zmk,behavior-macro";
-            label = "ma_A";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp RALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N1 &kp KP_N9 &kp KP_N3>,
-                <&macro_release>,
-                <&kp RALT>;
-        };
-        ma_e: macro_accent-e {
-            compatible = "zmk,behavior-macro";
-            label = "ma_e";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp RALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N3 &kp KP_N3>,
-                <&macro_release>,
-                <&kp RALT>;
-        };
-        ma_E: macro_accent-E {
-            compatible = "zmk,behavior-macro";
-            label = "ma_E";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp RALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N1>,
-                <&macro_release>,
-                <&kp RALT>;
-        };
-        ma_i: macro_accent-i {
-            compatible = "zmk,behavior-macro";
-            label = "ma_i";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp RALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N3 &kp KP_N7>,
-                <&macro_release>,
-                <&kp RALT>;
-        };
-        ma_I: macro_accent-I {
-            compatible = "zmk,behavior-macro";
-            label = "ma_I";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp RALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N5>,
-                <&macro_release>,
-                <&kp RALT>;
-        };
-        ma_o: macro_accent-o {
-            compatible = "zmk,behavior-macro";
-            label = "ma_o";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp RALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N3>,
-                <&macro_release>,
-                <&kp RALT>;
-        };
-        ma_O: macro_accent-O {
-            compatible = "zmk,behavior-macro";
-            label = "ma_O";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp RALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N1 &kp KP_N1>,
-                <&macro_release>,
-                <&kp RALT>;
-        };
-        ma_u: macro_accent-u {
-            compatible = "zmk,behavior-macro";
-            label = "ma_u";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp RALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N5 &kp KP_N0>,
-                <&macro_release>,
-                <&kp RALT>;
-        };
-        ma_U: macro_accent-U {
-            compatible = "zmk,behavior-macro";
-            label = "ma_U";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp RALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N1 &kp KP_N8>,
-                <&macro_release>,
-                <&kp RALT>;
-        };
-        ma_n: macro_accent-n {
-            compatible = "zmk,behavior-macro";
-            label = "ma_n";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp RALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N1>,
-                <&macro_release>,
-                <&kp RALT>;
-        };
-        ma_N: macro_accent-N {
-            compatible = "zmk,behavior-macro";
-            label = "ma_N";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp RALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N9>,
-                <&macro_release>,
-                <&kp RALT>;
+                <&kp RSHFT &kp RALT>;
         };
     };
 
@@ -293,14 +94,14 @@
 
         numbers_layer {
             bindings = <
- &kp ESC   &none   &none     &none      &none      &none               &none  &mt F7 N7  &mt F8 N8  &mt F9 N9      &none  &mt LC(BSPC) BSPC
-   &none   &none   &none     &none   &kp STAR   &kp PLUS           &kp EQUAL  &mt F4 N4  &mt F5 N5  &mt F6 N6    &kp DOT            &kp RET
- &kp TAB   &none   &none     &none   &kp FSLH  &kp MINUS          &mt F10 N0  &mt F1 N1  &mt F2 N2  &mt F3 N3  &kp COMMA              &to 2
+ &kp ESC   &none   &none     &none      &none      &none               &none  &hm F7 N7  &hm F8 N8  &hm F9 N9      &none  &mt LC(BSPC) BSPC
+   &none   &none   &none     &none   &kp STAR   &kp PLUS           &kp EQUAL  &hm F4 N4  &hm F5 N5  &hm F6 N6    &kp DOT            &kp RET
+ &kp TAB   &none   &none     &none   &kp FSLH  &kp MINUS          &hm F10 N0  &hm F1 N1  &hm F2 N2  &hm F3 N3  &kp COMMA              &to 2
                           &kp LCMD  &kp LSHFT      &to 0               &to 1  &kp SPACE      &none
             >;
         };
 
-        bluetooth_layer {
+        BLUETOOTH_LAYER {
             bindings = <
  &bootloader  &trans  &trans  &trans  &bt BT_CLR  &bt BT_SEL 0          &bt BT_SEL 3  &bt BT_CLR  &trans  &trans  &trans  &bootloader
       &trans  &trans  &trans  &trans      &trans  &bt BT_SEL 1          &bt BT_SEL 4      &trans  &trans  &trans  &trans       &trans
