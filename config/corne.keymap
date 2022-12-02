@@ -36,6 +36,13 @@
                 <&kp>,
                 <&kp>;
         };
+
+        cw: caps_word {
+            compatible = "zmk,behavior-caps-word";
+            label = "PROG_CAPS";
+            #binding-cells = <0>;
+            continue-list = <UNDERSCORE MINUS BACKSPACE>;
+        };
     };
 
     combos {
@@ -44,6 +51,11 @@
         combo_accent-a {
             bindings = <&ma_a>;
             key-positions = <13 20>;
+        };
+    
+    combo_caps-word {
+            bindings = <&cw>;
+            key-positions = <16 19>;
         };
     };
 
