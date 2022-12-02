@@ -49,7 +49,7 @@
             label = "m_a";
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            bindings = <&ma_a>, <&ma_a_shift>;
+            bindings = <&m_aa>, <&m_aa_shift>;
         };
 
         m_e: morph_e {
@@ -57,7 +57,7 @@
             label = "m_e";
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            bindings = <&ma_e>, <&ma_e_shift>;
+            bindings = <&m_ae>, <&m_ae_shift>;
         };
 
         m_i: morph_i {
@@ -65,7 +65,7 @@
             label = "m_i";
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            bindings = <&ma_i>, <&ma_i_shift>;
+            bindings = <&m_ai>, <&m_ai_shift>;
         };
 
         m_o: morph_o {
@@ -73,7 +73,7 @@
             label = "m_o";
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            bindings = <&ma_o>, <&ma_o_shift>;
+            bindings = <&m_ao>, <&m_ao_shift>;
         };
 
         m_u: morph_u {
@@ -81,7 +81,7 @@
             label = "m_u";
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            bindings = <&ma_u>, <&ma_u_shift>;
+            bindings = <&m_au>, <&m_au_shift>;
         };
 
         m_n: morph_n {
@@ -89,7 +89,7 @@
             label = "m_n";
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            bindings = <&ma_n>, <&ma_n_shift>;
+            bindings = <&m_an>, <&m_an_shift>;
         };
     };
 
@@ -133,9 +133,9 @@
     };
 
     macros {
-        ma_a: macro_accent_a {
+        m_aa: macro_accent_a {
             compatible = "zmk,behavior-macro";
-            label = "ma_a";
+            label = "m_aa";
             #binding-cells = <0>;
             bindings =
                 <&macro_press   &kp RALT>,
@@ -143,9 +143,9 @@
                 <&macro_release &kp RALT>;
         };
 
-        ma_a_shift: macro_accent_a_shift {
+        m_aa_shift: macro_accent_a_shift {
             compatible = "zmk,behavior-macro";
-            label = "ma_a_shift";
+            label = "m_aa_shift";
             #binding-cells = <0>;
             bindings =
                 <&macro_press   &kp RALT>,
@@ -153,9 +153,9 @@
                 <&macro_release &kp RALT>;
         };
 
-        ma_e: macro_accent-e {
+        m_ae: macro_accent-e {
             compatible = "zmk,behavior-macro";
-            label = "ma_e";
+            label = "m_ae";
             #binding-cells = <0>;
             bindings =
                 <&macro_press   &kp RALT>,
@@ -163,9 +163,9 @@
                 <&macro_release &kp RALT>;
         };
 
-        ma_e_shift: macro_accent_e_shift {
+        m_ae_shift: macro_accent_e_shift {
             compatible = "zmk,behavior-macro";
-            label = "ma_e_shift";
+            label = "m_ae_shift";
             #binding-cells = <0>;
             bindings =
                 <&macro_press   &kp RALT>,
@@ -173,9 +173,9 @@
                 <&macro_release &kp RALT>;
         };
 
-        ma_i: macro_accent_i {
+        m_ai: macro_accent_i {
             compatible = "zmk,behavior-macro";
-            label = "ma_i";
+            label = "m_ai";
             #binding-cells = <0>;
             bindings =
                 <&macro_press   &kp RALT>,
@@ -183,9 +183,9 @@
                 <&macro_release &kp RALT>;
         };
 
-        ma_i_shift: macro_accent_i_shift {
+        m_ai_shift: macro_accent_i_shift {
             compatible = "zmk,behavior-macro";
-            label = "ma_i_shift";
+            label = "m_ai_shift";
             #binding-cells = <0>;
             bindings =
                 <&macro_press   &kp RALT>,
@@ -193,9 +193,9 @@
                 <&macro_release &kp RALT>;
         };
 
-        ma_o: macro_accent_o {
+        m_ao: macro_accent_o {
             compatible = "zmk,behavior-macro";
-            label = "ma_o";
+            label = "m_ao";
             #binding-cells = <0>;
             bindings =
                 <&macro_press   &kp RALT>,
@@ -203,9 +203,9 @@
                 <&macro_release &kp RALT>;
         };
 
-        ma_o_shift: macro_accent_o_shift {
+        m_ao_shift: macro_accent_o_shift {
             compatible = "zmk,behavior-macro";
-            label = "ma_o_shift";
+            label = "m_ao_shift";
             #binding-cells = <0>;
             bindings =
                 <&macro_press   &kp RALT>,
@@ -213,9 +213,9 @@
                 <&macro_release &kp RALT>;
         };
 
-        ma_u: macro_accent_u {
+        m_au: macro_accent_u {
             compatible = "zmk,behavior-macro";
-            label = "ma_u";
+            label = "m_au";
             #binding-cells = <0>;
             bindings =
                 <&macro_press   &kp RALT>,
@@ -223,9 +223,9 @@
                 <&macro_release &kp RALT>;
         };
 
-        ma_u_shift: macro_accent_u_shift {
+        m_au_shift: macro_accent_u_shift {
             compatible = "zmk,behavior-macro";
-            label = "ma_u_shift";
+            label = "m_au_shift";
             #binding-cells = <0>;
             bindings =
                 <&macro_press   &kp RALT>,
@@ -233,9 +233,9 @@
                 <&macro_release &kp RALT>;
         };
 
-        ma_n: macro_accent_n {
+        m_an: macro_accent_n {
             compatible = "zmk,behavior-macro";
-            label = "ma_n";
+            label = "m_an";
             #binding-cells = <0>;
             bindings =
                 <&macro_press   &kp RALT>,
@@ -243,9 +243,9 @@
                 <&macro_release &kp RALT>;
         };
 
-        ma_n_shift: macro_accent_n_shift {
+        m_an_shift: macro_accent_n_shift {
             compatible = "zmk,behavior-macro";
-            label = "ma_n_shift";
+            label = "m_an_shift";
             #binding-cells = <0>;
             bindings =
                 <&macro_press   &kp RALT>,
