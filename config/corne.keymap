@@ -21,7 +21,7 @@
 #define SYMBOLS_L 1
 #define ARROWS_L  2
 #define NUMBERS_L 3
-#define BLUETOOTH_L 4
+#define SETTINGS_L 4
 
 / {
     behaviors {
@@ -321,12 +321,12 @@
             >;
         };
 
-        bluetooth_layer {
+        settings_layer {
             bindings = <
- &bootloader  &trans  &trans  &trans  &bt BT_CLR  &bt BT_SEL 0          &bt BT_SEL 3  &bt BT_CLR  &trans  &trans  &trans  &bootloader
-      &trans  &trans  &trans  &trans      &trans  &bt BT_SEL 1          &bt BT_SEL 4      &trans  &trans  &trans  &trans       &trans
-      &trans  &trans  &trans  &trans      &trans  &bt BT_SEL 2          &bt BT_SEL 5      &trans  &trans  &trans  &trans       &trans
-                              &trans      &trans        &trans                &trans      &trans  &trans
+ &bootloader  &none    &bt BT_PRV    &bt BT_CLR    &bt BT_NXT  &none          &none  &kp C_VOL_DN     &kp C_MUTE  &kp C_VOL_UP  &none  &bootloader
+      &none   &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none          &none    &kp C_PREV       &kp C_PP    &kp C_NEXT  &none        &none
+      &none   &none  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 5  &none          &none  &kp C_BRI_UP  &kp C_SHUFFLE  &kp C_BRI_DN  &none        &none
+                                          &none         &none  &none          &to 0         &none          &none
             >;
         };
     };
