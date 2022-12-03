@@ -3,6 +3,7 @@
         "bootloader",
         "BSLH",
         "BSPC",
+        "CLCK",
         "DLLR",
         "dtsi",
         "FSLH",
