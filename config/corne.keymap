@@ -329,10 +329,10 @@
 
         settings_layer {
             bindings = <
- &bootloader  &none    &bt BT_PRV    &bt BT_CLR    &bt BT_NXT  &none          &none  &kp C_VOL_DN     &kp C_MUTE  &kp C_VOL_UP  &none  &bootloader
-      &none   &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none          &none    &kp C_PREV       &kp C_PP    &kp C_NEXT  &none        &none
-      &none   &none  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 5  &none          &none  &kp C_BRI_UP  &kp C_SHUFFLE  &kp C_BRI_DN  &none        &none
-                                          &none         &none  &none          &to 0         &none          &none
+ &bootloader  &none    &bt BT_PRV    &bt BT_CLR    &bt BT_NXT  RC(SH(+))          &kp C_VOL_UP         &none     &kp C_STOP       &none  &none  &bootloader
+      &none   &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  RC(SH(0))            &kp C_MUTE    &kp C_PREV       &kp C_PP  &kp C_NEXT  &none        &none
+      &none   &none  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 5  RC(SH(-))          &kp C_VOL_DN         &none  &kp C_SHUFFLE       &none  &none        &none
+                                          &none  &kp C_BRI_DN      &to 0                 &to 0  &kp C_BRI_UP          &none
             >;
         };
     };
