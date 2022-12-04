@@ -35,7 +35,7 @@
     behaviors {
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
+            label = "HOMEROW MODS";
             #binding-cells = <2>;
             tapping-term-ms = <300>;
             quick-tap-ms = <200>;
@@ -47,14 +47,14 @@
 
         cw: caps_word {
             compatible = "zmk,behavior-caps-word";
-            label = "cw";
+            label = "CAPS WORD";
             #binding-cells = <0>;
             continue-list = <UNDERSCORE MINUS BACKSPACE DEL>;
         };
 
         mp_a: morph_a {
             compatible = "zmk,behavior-mod-morph";
-            label = "mp_a";
+            label = "MORPH A";
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             bindings = <&m_aa>, <&m_aa_shift>;
@@ -62,7 +62,7 @@
 
         mp_e: morph_e {
             compatible = "zmk,behavior-mod-morph";
-            label = "mp_e";
+            label = "MORPH E";
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             bindings = <&m_ae>, <&m_ae_shift>;
@@ -70,7 +70,7 @@
 
         mp_i: morph_i {
             compatible = "zmk,behavior-mod-morph";
-            label = "mp_i";
+            label = "MORPH I";
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             bindings = <&m_ai>, <&m_ai_shift>;
@@ -78,7 +78,7 @@
 
         mp_o: morph_o {
             compatible = "zmk,behavior-mod-morph";
-            label = "mp_o";
+            label = "MORPH O";
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             bindings = <&m_ao>, <&m_ao_shift>;
@@ -86,7 +86,7 @@
 
         mp_u: morph_u {
             compatible = "zmk,behavior-mod-morph";
-            label = "mp_u";
+            label = "MORPH U";
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             bindings = <&mt &m_uu &m_au>, <&mt &m_uu_shift &m_au_shift>;
@@ -94,7 +94,7 @@
 
         mp_n: morph_n {
             compatible = "zmk,behavior-mod-morph";
-            label = "mp_n";
+            label = "MORPH Ñ";
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             bindings = <&m_an>, <&m_an_shift>;
