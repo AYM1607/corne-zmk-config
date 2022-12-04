@@ -31,6 +31,7 @@
                 compatible = "zmk,keymap";
 
                 default_layer {
+			label = "DEF";
                         bindings = <
    &kp ESC   &kp Q &kp W &kp F &kp P &kp B   &kp J &kp L  &kp U     &kp Y   &kp EQUAL    &kp BSPC
    &kp SQT   &kp A &kp R &kp S &hm LCMD T &kp G   &kp M &hm LCMD N  &kp E     &kp I   &kp O       &kp RET
@@ -40,6 +41,7 @@
                 };
 
                 symbols_layer {
+			label = "SYMB";
                         bindings = <
    &kp ESC    &kp EXCL       &kp AT       &kp HASH       &kp DLLR       &kp PRCNT         &kp CARET   &kp AMPS   &kp STAR &kp MINUS  &none &kp BSPC
    &kp GRAVE &none &none &none &none &kp PLUS        &kp HOME &kp LBRC &kp RBRC &kp END &kp BSLH &kp RET
@@ -49,6 +51,7 @@
                 };
 
                 arrows_layer {
+			label = "NAV";
                         bindings = <
    &kp ESC  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR            &none &none &none &none &none &kp BSPC
    &none &none   &kp C_PP &kp C_VOL_DN &kp C_VOL_UP &kp C_BRI_UP                     &kp LEFT &kp DOWN &kp UP  &kp RIGHT &none &kp RET
@@ -58,6 +61,7 @@
                 };
 
                 numbers_layer {
+			label = "NUM";
                         bindings = <
    &kp ESC  &none &none &none &none &none                 &none &hm F7 N7      &hm F8 N8      &hm F9 N9 &none &kp BSPC
    &none   &none &none   &none   &kp STAR &kp PLUS           &kp EQUAL &hm F4 N4      &hm F5 N5      &hm F6 N6 &kp DOT &kp RET
