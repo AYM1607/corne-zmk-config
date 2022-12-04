@@ -347,6 +347,14 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
             bindings = <&kp PLUS>, <&m_d_dp>;
         };
+
+        mp_d_m: morph_money {
+            compatible = "zmk,behavior-mod-morph";
+            label = "$ €";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            bindings = <&kp DLLR>, <&m_euro>;
+        };
     };
 
     combos {
@@ -736,6 +744,16 @@
             bindings =
                 <&macro_tap     &kp PLUS &kp EQUAL>;
         };
+
+        m_euro: macro_euro {
+            compatible = "zmk,behavior-macro";
+            label = "€";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press   &kp RALT>,
+                <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N2 &kp KP_N8>,
+                <&macro_release &kp RALT>;
+        };
     };
 
     keymap {
@@ -752,7 +770,7 @@
 
         dev_layer {
             bindings = <
-   &kp ESC  &kp AT  &kp POUND     &none    &mp_d_p    &kp DQT          &kp TILDE      &none  &kp UNDER  &kp PRCNT  &kp CARET       &mp_bd
+   &kp ESC  &kp AT  &kp POUND   &mp_d_m    &mp_d_p    &kp DQT          &kp TILDE      &none  &kp UNDER  &kp PRCNT  &kp CARET       &mp_bd
     &mp_bc   &none   &kp LBRC  &kp RBRC      &none    &kp SQT          &kp GRAVE      &none   &kp LBKT   &kp RBKT      &none   &mt F2 RET
    &kp TAB  &mp_kn   &mp_d_la  &mp_d_ra    &mp_d_a   &kp BSLH           &kp FSLH      &none   &kp LPAR   &kp RPAR      &none  &key_repeat
                                &mp_d_cs  &kp SPACE      &to 2              &to 0  &kp SPACE   &mp_d_dc
