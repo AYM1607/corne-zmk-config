@@ -168,12 +168,6 @@
             key-positions = <19 15>;
             layers = <0>;
         };
-
-        combo_quotes {
-            bindings = <&mp_bt>;
-            key-positions = <36 20>;
-            layers = <0>;
-        };
     };
 
     macros {
