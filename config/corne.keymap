@@ -300,70 +300,76 @@
             key-positions = <16 19>;
         };
 
-        l0_combo_accent-a {
+        l0_combo_accent_a_alt {
             bindings = <&mp_a>;
             key-positions = <13 20>;
             layers = <0>;
         };
 
-        l0_combo_accent-e {
+        l0_combo_accent_e_alt {
             bindings = <&mp_e>;
             key-positions = <20 15>;
             layers = <0>;
         };
 
-        l0_combo_accent-i {
+        l0_combo_accent_i_alt {
             bindings = <&mp_i>;
             key-positions = <21 15>;
             layers = <0>;
         };
 
-        l0_combo_accent-o {
+        l0_combo_accent_o_alt {
             bindings = <&mp_o>;
             key-positions = <22 15>;
             layers = <0>;
         };
 
-        l0_combo_accent-u {
+        l0_combo_accent_u_alt {
             bindings = <&mp_u>;
             key-positions = <9 15>;
             layers = <0>;
         };
 
-        l0_combo_accent-n {
+        l0_combo_accent_n_alt {
             bindings = <&mp_n>;
             key-positions = <19 15>;
             layers = <0>;
         };
 
-        l0_combo_quotes {
+        l0_combo_quotes_alt {
             bindings = <&mp_kq_alt>;
             key-positions = <36 20>;
             layers = <0>;
         };
 
-        l0_combo_operators {
+        l0_combo_operators_alt {
             bindings = <&mp_ko_alt>;
             key-positions = <10 15>;
             layers = <0>;
         };
 
-        l0_combo_logic {
+        l0_combo_logic_alt {
             bindings = <&mp_kl_alt>;
             key-positions = <34 15>;
             layers = <0>;
         };
 
-        l0_combo_brackets {
+        l0_combo_brackets_alt {
             bindings = <&mp_kb_alt>;
             key-positions = <35 15>;
             layers = <0>;
         };
 
-        l0_combo_brackets_ctrl {
+        l0_combo_brackets_alt_ctrl {
             bindings = <&m_ba_r>;
             key-positions = <35 14 15>;
             layers = <0>;
+        };
+
+        l1_combo_brackets_alt_ctrl {
+            bindings = <&m_ba_r>;
+            key-positions = <26 20 21>;
+            layers = <1>;
         };
     };
 
@@ -388,7 +394,7 @@
                 <&macro_release &kp RALT>;
         };
 
-        m_ae: macro_accent-e {
+        m_ae: macro_accent_e_alt {
             compatible = "zmk,behavior-macro";
             label = "m_ae";
             #binding-cells = <0>;
