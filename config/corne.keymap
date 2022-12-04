@@ -397,10 +397,15 @@
     combos {
         compatible = "zmk,combos";
 
+        /* Shared */
+
         combo_caps-word {
             bindings = <&cw>; /* Label: CAPS WORD*/
             key-positions = <L_SHFT R_SHFT>;
         };
+
+
+        /* Vowels and Accents */
 
         l0_combo_accent_a_alt {
             bindings = <&mp_a>; /* Label: á Á*/
@@ -438,6 +443,9 @@
             layers = <0>;
         };
 
+
+        /* Base Layer */
+
         l0_combo_quotes_alt {
             bindings = <&mp_kq_alt>; /* Label: ` ~ */
             key-positions = <36 R_ALT>;
@@ -467,6 +475,9 @@
             key-positions = <35 L_CTRL L_ALT>;
             layers = <0>;
         };
+
+
+        /* Dev Layer */
 
         l1_combo_dev_left_angle_alt {
             bindings = <&mp_d_la_alt>; /* Label: <= </> */
@@ -512,6 +523,8 @@
     };
 
     macros {
+        /* Vowels and Accents */
+
         m_aa: macro_accent_a {
             compatible = "zmk,behavior-macro";
             label = "á";
@@ -652,6 +665,9 @@
                 <&macro_release &kp RALT>;
         };
 
+
+        /* Numbers Layer */
+
         m_no: macro_number_ordinal {
             compatible = "zmk,behavior-macro";
             label = "°";
@@ -671,6 +687,19 @@
                 <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N7 &kp KP_N6>,
                 <&macro_release &kp RALT>;
         };
+
+        m_d_euro: macro_euro {
+            compatible = "zmk,behavior-macro";
+            label = "€";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press   &kp RALT>,
+                <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N2 &kp KP_N8>,
+                <&macro_release &kp RALT>;
+        };
+
+
+        /* Dev Layer */
 
         m_ba_h: macro_brackets_angle_html {
             compatible = "zmk,behavior-macro";
@@ -786,16 +815,6 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_tap     &kp PLUS &kp EQUAL>;
-        };
-
-        m_d_euro: macro_euro {
-            compatible = "zmk,behavior-macro";
-            label = "€";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press   &kp RALT>,
-                <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N2 &kp KP_N8>,
-                <&macro_release &kp RALT>;
         };
 
         m_d_se: macro_dev_triple_equal {
