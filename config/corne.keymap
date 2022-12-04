@@ -374,7 +374,7 @@
         };
 
         l0_combo_logic_alt {
-            bindings = <&mp_kl_alt>; /* Label: */
+            bindings = <&mp_kl_alt>; /* Label: ? | */
             key-positions = <34 L_ALT>;
             layers = <0>;
         };
