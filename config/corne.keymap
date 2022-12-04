@@ -463,10 +463,10 @@
 
         act_num_layer {
             bindings = <
- &kp ESC   &none           &none   &mt LC(HOME) UP           &none      &none               &none  &mt F7 N7  &mt F8 N8  &mt F9 N9      &none       &mp_bd
-  &mp_bc   &none   &mt HOME LEFT  &mt LC(END) DOWN   &mt END RIGHT   &kp PLUS           &kp EQUAL  &mt F4 N4  &mt F5 N5  &mt F6 N6    &kp DOT   &mt F2 RET
- &kp TAB   &none           &none             &none        &kp FSLH  &kp MINUS          &mt F10 N0  &mt F1 N1  &mt F2 N2  &mt F3 N3  &kp COMMA  &key_repeat
-                                          &kp LCMD       &kp SPACE      &to 1               &to 0  &kp SPACE      &none
+ &kp ESC       &none           &none   &mt LC(HOME) UP                &none      &none               &none  &mt F7 N7  &mt F8 N8  &mt F9 N9      &none       &mp_bd
+  &mp_bc       &none   &mt HOME LEFT  &mt LC(END) DOWN        &mt END RIGHT   &kp PLUS           &kp EQUAL  &mt F4 N4  &mt F5 N5  &mt F6 N6    &kp DOT   &mt F2 RET
+ &kp TAB   &kp RC(Z)       &kp RC(X)         &kp RC(C)  &mt RC(V) RC(RS(V))  &kp RC(Y)          &mt F10 N0  &mt F1 N1  &mt F2 N2  &mt F3 N3  &kp COMMA  &key_repeat
+                                              &kp LCMD            &kp SPACE      &to 1               &to 0  &kp SPACE      &none
             >;
         };
 
