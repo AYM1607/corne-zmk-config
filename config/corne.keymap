@@ -155,22 +155,6 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
             bindings = <&kp QMARK>, <&kp PIPE>;
         };
-
-        mp_kb: morph_key_brackets {
-            compatible = "zmk,behavior-mod-morph";
-            label = "mp_kb";
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-            bindings = <&ma_ba_c>, <&ma_ba_h>;
-        };
-
-        mp_kb_alt: morph_key_brackets_alt {
-            compatible = "zmk,behavior-mod-morph";
-            label = "mp_kb_alt";
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-            bindings = <&ma_ba_s>, <&ma_ba_r>;
-        };
     };
 
     combos {
@@ -435,7 +419,7 @@
             bindings = <
  &kp ESC       &kp Q        &kp W       &kp F        &kp P  &kp B           &kp J        &kp L       &kp U        &kp Y      &mp_ko       &mp_bd
   &mp_bc  &hm LCMD A  &hm LCTRL R  &hm LALT S  &hm LSHFT T  &kp G           &kp M  &hm RSHFT N  &hm RALT E  &hm RCTRL I  &hm RCMD O   &mt F2 RET
- &kp TAB       &kp Z        &kp X       &kp C        &kp D  &kp V           &kp K        &kp H   &kp COMMA      &kp DOT      &mp_kl       &mp_kb
+ &kp TAB       &kp Z        &kp X       &kp C        &kp D  &kp V           &kp K        &kp H   &kp COMMA      &kp DOT      &mp_kl        &none
                                        &mp_kq    &kp SPACE  &to 2           &to 1    &kp SPACE       &to 3
             >;
         };
