@@ -39,9 +39,9 @@
 
         cw: caps_word {
             compatible = "zmk,behavior-caps-word";
-            label = "PROG_CAPS";
+            label = "cw";
             #binding-cells = <0>;
-            continue-list = <UNDERSCORE MINUS BACKSPACE>;
+            continue-list = <UNDERSCORE MINUS BACKSPACE DEL>;
         };
 
         mp_a: morph_a {
