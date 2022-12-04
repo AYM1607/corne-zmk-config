@@ -389,13 +389,23 @@
                 <&macro_release &kp RALT>;
         };
 
-        m_an_shift: macro_accent_n_shift {
+        m_no: macro_number_ordinal {
             compatible = "zmk,behavior-macro";
-            label = "m_an_shift";
+            label = "m_no";
             #binding-cells = <0>;
             bindings =
                 <&macro_press   &kp RALT>,
-                <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N9>,
+                <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N7 &kp KP_N0>,
+                <&macro_release &kp RALT>;
+        };
+
+        m_nd: macro_number_degree {
+            compatible = "zmk,behavior-macro";
+            label = "m_nd";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press   &kp RALT>,
+                <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N7 &kp KP_N6>,
                 <&macro_release &kp RALT>;
         };
 
