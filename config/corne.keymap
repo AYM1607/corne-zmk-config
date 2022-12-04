@@ -33,6 +33,8 @@
 
 / {
     behaviors {
+        /* Shared */
+
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW MODS";
@@ -51,6 +53,93 @@
             #binding-cells = <0>;
             continue-list = <UNDERSCORE MINUS BACKSPACE DEL>;
         };
+
+        mp_bd: morph_backspace_del {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BACKSPACE DELETE";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            bindings = <&mt LC(BSPC) BSPC>, <&mt LC(DEL) DEL>;
+        };
+
+        mp_bc: morph_backspace_caps {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BACKSPACE CAPS_LOCK";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            bindings = <&mt LC(BSPC) BSPC>, <&kp CLCK>;
+        };
+
+
+
+        /* Base Layer */
+
+        mp_kq: morph_key_quote {
+            compatible = "zmk,behavior-mod-morph";
+            label = "' ''";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            bindings = <&kp SQT>, <&kp DQT>;
+        };
+
+        mp_kq_alt: morph_key_quote_alt {
+            compatible = "zmk,behavior-mod-morph";
+            label = "` ~";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            bindings = <&kp GRAVE>, <&kp TILDE>;
+        };
+
+        mp_ko: morph_key_operator {
+            compatible = "zmk,behavior-mod-morph";
+            label = "- +";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            bindings = <&kp MINUS>, <&kp PLUS>;
+        };
+
+        mp_ko_alt: morph_key_operator_alt {
+            compatible = "zmk,behavior-mod-morph";
+            label = "= *";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            bindings = <&kp EQUAL>, <&kp ASTRK>;
+        };
+
+        mp_kl: morph_key_logic {
+            compatible = "zmk,behavior-mod-morph";
+            label = "/ &";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            bindings = <&kp FSLH>, <&kp AMPS>;
+        };
+
+        mp_kl_alt: morph_key_logic_alt {
+            compatible = "zmk,behavior-mod-morph";
+            label = "? |";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            bindings = <&kp QMARK>, <&kp PIPE>;
+        };
+
+        mp_kb: morph_key_brackets {
+            compatible = "zmk,behavior-mod-morph";
+            label = "{} </>";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            bindings = <&m_bc>, <&m_ba_h>;
+        };
+
+        mp_kb_alt: morph_key_brackets_alt {
+            compatible = "zmk,behavior-mod-morph";
+            label = "[] ()";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            bindings = <&m_bs>, <&m_br>;
+        };
+
+
+        /* Vowels and Accents */
 
         mp_a: morph_a {
             compatible = "zmk,behavior-mod-morph";
@@ -99,6 +188,10 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
             bindings = <&m_an>, <&m_an_shift>;
         };
+
+
+
+        /* Numbers Layer */
 
         mp_kn: morph_key_numbers {
             compatible = "zmk,behavior-mod-morph";
@@ -204,6 +297,18 @@
             bindings = <&kp KP_MULTIPLY>, <&kp F12>;
         };
 
+        mp_k_m: morph_key_minus {
+            compatible = "zmk,behavior-mod-morph";
+            label = "- _";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            bindings = <&kp KP_MINUS>, <&kp UNDER>;
+        };
+
+
+
+        /* Actions Layer */
+
         mp_kbd: morph_key_browser_debug {
             compatible = "zmk,behavior-mod-morph";
             label = "MORPH KEY BROWSER: CTRL+SHIFT_R CTRL+SHIFT+I";
@@ -212,85 +317,9 @@
             bindings = <&kp RC(RS(R))>, <&kp RC(RS(I))>;
         };
 
-        mp_bd: morph_backspace_del {
-            compatible = "zmk,behavior-mod-morph";
-            label = "BACKSPACE DELETE";
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-            bindings = <&mt LC(BSPC) BSPC>, <&mt LC(DEL) DEL>;
-        };
 
-        mp_bc: morph_backspace_caps {
-            compatible = "zmk,behavior-mod-morph";
-            label = "BACKSPACE CAPS_LOCK";
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-            bindings = <&mt LC(BSPC) BSPC>, <&kp CLCK>;
-        };
 
-        mp_kq: morph_key_quote {
-            compatible = "zmk,behavior-mod-morph";
-            label = "' ''";
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-            bindings = <&kp SQT>, <&kp DQT>;
-        };
-
-        mp_kq_alt: morph_key_quote_alt {
-            compatible = "zmk,behavior-mod-morph";
-            label = "` ~";
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-            bindings = <&kp GRAVE>, <&kp TILDE>;
-        };
-
-        mp_ko: morph_key_operator {
-            compatible = "zmk,behavior-mod-morph";
-            label = "- +";
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-            bindings = <&kp MINUS>, <&kp PLUS>;
-        };
-
-        mp_ko_alt: morph_key_operator_alt {
-            compatible = "zmk,behavior-mod-morph";
-            label = "= *";
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-            bindings = <&kp EQUAL>, <&kp ASTRK>;
-        };
-
-        mp_kl: morph_key_logic {
-            compatible = "zmk,behavior-mod-morph";
-            label = "/ &";
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-            bindings = <&kp FSLH>, <&kp AMPS>;
-        };
-
-        mp_kl_alt: morph_key_logic_alt {
-            compatible = "zmk,behavior-mod-morph";
-            label = "? |";
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-            bindings = <&kp QMARK>, <&kp PIPE>;
-        };
-
-        mp_kb: morph_key_brackets {
-            compatible = "zmk,behavior-mod-morph";
-            label = "{} </>";
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-            bindings = <&m_bc>, <&m_ba_h>;
-        };
-
-        mp_kb_alt: morph_key_brackets_alt {
-            compatible = "zmk,behavior-mod-morph";
-            label = "[] ()";
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-            bindings = <&m_bs>, <&m_br>;
-        };
+        /* Dev Layer */
 
         mp_d_la: morph_dev_left_angle {
             compatible = "zmk,behavior-mod-morph";
@@ -337,7 +366,7 @@
             label = "* **";
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            bindings = <&kp ASTRK>, <&m_d_da>;
+            bindings = <&kp ASTRK>, <&m_d_eo>;
         };
 
         mp_d_p: morph_dev_plus {
@@ -345,7 +374,7 @@
             label = "+ ++";
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            bindings = <&kp PLUS>, <&m_d_dp>;
+            bindings = <&kp PLUS>, <&m_d_io>;
         };
 
         mp_d_e: morph_dev_equal {
@@ -356,12 +385,12 @@
             bindings = <&kp EQUAL>, <&m_d_a>;
         };
 
-        mp_d_m: morph_money {
+        mp_d_m: morph_dev_money {
             compatible = "zmk,behavior-mod-morph";
             label = "$ €";
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            bindings = <&kp DLLR>, <&m_euro>;
+            bindings = <&kp DLLR>, <&m_d_euro>;
         };
     };
 
@@ -719,7 +748,7 @@
                 <&macro_tap     &kp GT &kp EQUAL>;
         };
 
-        m_d_da: macro_dev_double_asterisk {
+        m_d_eo: macro_dev_exponentiation_operator {
             compatible = "zmk,behavior-macro";
             label = "**";
             #binding-cells = <0>;
@@ -743,7 +772,7 @@
                 <&macro_tap     &kp FSLH &kp EQUAL>;
         };
 
-        m_d_dp: macro_dev_double_plus {
+        m_d_io: macro_dev_increment_operator {
             compatible = "zmk,behavior-macro";
             label = "++";
             #binding-cells = <0>;
@@ -759,7 +788,7 @@
                 <&macro_tap     &kp PLUS &kp EQUAL>;
         };
 
-        m_euro: macro_euro {
+        m_d_euro: macro_euro {
             compatible = "zmk,behavior-macro";
             label = "€";
             #binding-cells = <0>;
@@ -810,7 +839,7 @@
         act_num_layer {
             bindings = <
  &kp ESC   &kp PG_DN   &kp RC(PG_DN)   &mt LC(HOME) UP        &kp RC(PG_UP)  &kp PG_UP            &kp KP_PLUS  &mp_kn_f9  &mp_kn_f10  &mp_kn_f11  &mp_kn_f12       &mp_bd
-  &mp_bc   &kp PSCRN   &mt HOME LEFT  &mt LC(END) DOWN        &mt END RIGHT    &mp_kbd           &kp KP_MINUS  &mp_kn_f5   &mp_kn_f6   &mp_kn_f7   &mp_kn_f8   &mt F2 RET
+  &mp_bc   &kp PSCRN   &mt HOME LEFT  &mt LC(END) DOWN        &mt END RIGHT    &mp_kbd                &mp_k_m  &mp_kn_f5   &mp_kn_f6   &mp_kn_f7   &mp_kn_f8   &mt F2 RET
  &kp TAB   &kp RC(Z)       &kp RC(X)         &kp RC(C)  &mt RC(V) RC(RS(V))  &kp RC(Y)              &kp KP_N0  &mp_kn_f1   &mp_kn_f2   &mp_kn_f3   &mp_kn_f4  &key_repeat
                                                 &mp_kn            &kp SPACE      &to 1                  &to 0  &kp SPACE  &kp KP_DOT
             >;
