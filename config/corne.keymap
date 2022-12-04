@@ -382,15 +382,15 @@
             layers = <0>;
         };
 
-        l1_combo_dev_left_angle_alt_ctrl {
-            bindings = <&m_ba_r>;
-            key-positions = <26 20 21>;
-            layers = <1>;
-        };
-
         l1_combo_dev_left_angle_alt {
             bindings = <&mp_d_la_alt>;
             key-positions = <26 20>;
+            layers = <1>;
+        };
+
+        l1_combo_dev_left_angle_alt_ctrl {
+            bindings = <&m_ba_r>;
+            key-positions = <26 20 21>;
             layers = <1>;
         };
     };
