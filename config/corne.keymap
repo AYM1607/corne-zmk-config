@@ -17,11 +17,10 @@
 
 /* Layers */
 
-#define BASE_L  0
-#define SYMBOLS_L  1
-#define ARROWS_L   2
-#define NUMBERS_L  3
-#define SETTINGS_L 4
+#define BASE     0
+#define DEV      1
+#define ACT_NUM  2
+#define SETTINGS 3
 
 / {
     behaviors {
