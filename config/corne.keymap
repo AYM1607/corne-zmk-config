@@ -230,7 +230,7 @@
 
         mp_kq: morph_key_quote {
             compatible = "zmk,behavior-mod-morph";
-            label = "MORPH KEY: ' \\"";
+            label = "MORPH KEY: ' ''";
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             bindings = <&kp SQT>, <&kp DQT>;
