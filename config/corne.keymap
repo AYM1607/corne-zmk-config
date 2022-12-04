@@ -262,7 +262,7 @@
 
         mp_kl: morph_key_logic {
             compatible = "zmk,behavior-mod-morph";
-            label = "mp_kl";
+            label = "MORPH KEY: / &";
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             bindings = <&kp FSLH>, <&kp AMPS>;
@@ -270,7 +270,7 @@
 
         mp_kl_alt: morph_key_logic_alt {
             compatible = "zmk,behavior-mod-morph";
-            label = "mp_kl_alt";
+            label = "MORPH KEY: ? |";
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             bindings = <&kp QMARK>, <&kp PIPE>;
@@ -278,7 +278,7 @@
 
         mp_kb: morph_key_brackets {
             compatible = "zmk,behavior-mod-morph";
-            label = "mp_kb";
+            label = "MORPH KEY: {} </>";
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             bindings = <&m_bc>, <&m_ba_h>;
@@ -286,7 +286,7 @@
 
         mp_kb_alt: morph_key_brackets_alt {
             compatible = "zmk,behavior-mod-morph";
-            label = "mp_kb_alt";
+            label = "MORPH KEY: [] ()";
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             bindings = <&m_bs>, <&m_br>;
@@ -294,7 +294,7 @@
 
         mp_d_la: morph_dev_left_angle {
             compatible = "zmk,behavior-mod-morph";
-            label = "mp_d_la";
+            label = "MORPH KEY: < «";
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             bindings = <&kp LT>, <&m_lda>;
@@ -302,7 +302,7 @@
 
         mp_d_la_alt: morph_dev_left_angle_alt {
             compatible = "zmk,behavior-mod-morph";
-            label = "mp_d_la_alt";
+            label = "MORPH KEY: <= </>";
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             bindings = <&m_ldae>, <&m_ba_h>;
