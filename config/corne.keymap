@@ -97,7 +97,7 @@
             label = "mp_kn";
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            bindings = <&m_no>, <&m_nd>;
+            bindings = <&m_nd>, <&m_no>;
         };
 
         mp_bd: morph_backspace_del {
