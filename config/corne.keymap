@@ -234,18 +234,6 @@
             key-positions = <34 15>;
             layers = <0>;
         };
-
-        combo_brackets {
-            bindings = <&mp_kb_alt>;
-            key-positions = <35 15>;
-            layers = <0>;
-        };
-
-        combo_brackets_ctrl {
-            bindings = <&m_ba_r>;
-            key-positions = <35 14 15>;
-            layers = <0>;
-        };
     };
 
     macros {
