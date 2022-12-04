@@ -316,79 +316,79 @@
             key-positions = <16 19>;
         };
 
-        combo_accent-a {
+        l0_combo_accent-a {
             bindings = <&mp_a>;
             key-positions = <13 20>;
             layers = <0>;
         };
 
-        combo_accent-e {
+        l0_combo_accent-e {
             bindings = <&mp_e>;
             key-positions = <20 15>;
             layers = <0>;
         };
 
-        combo_accent-i {
+        l0_combo_accent-i {
             bindings = <&mp_i>;
             key-positions = <21 15>;
             layers = <0>;
         };
 
-        combo_accent-o {
+        l0_combo_accent-o {
             bindings = <&mp_o>;
             key-positions = <22 15>;
             layers = <0>;
         };
 
-        combo_accent-u {
+        l0_combo_accent-u {
             bindings = <&mp_u>;
             key-positions = <9 15>;
             layers = <0>;
         };
 
-        combo_accent-n {
+        l0_combo_accent-n {
             bindings = <&mp_n>;
             key-positions = <19 15>;
             layers = <0>;
         };
 
-        combo_quotes {
+        l0_combo_quotes {
             bindings = <&mp_kq_alt>;
             key-positions = <36 20>;
             layers = <0>;
         };
 
-        combo_operators {
+        l0_combo_operators {
             bindings = <&mp_ko_alt>;
             key-positions = <10 15>;
             layers = <0>;
         };
 
-        combo_logic {
+        l0_combo_logic {
             bindings = <&mp_kl_alt>;
             key-positions = <34 15>;
             layers = <0>;
         };
 
-        combo_brackets {
+        l0_combo_brackets {
             bindings = <&mp_kb_alt>;
             key-positions = <35 15>;
             layers = <0>;
         };
 
-        combo_brackets_ctrl {
+        l0_combo_brackets_ctrl {
             bindings = <&m_ba_r>;
             key-positions = <35 14 15>;
             layers = <0>;
         };
 
-        combo_brackets_ctrl {
+        l1_combo_brackets_ctrl {
             bindings = <&m_ba_r>;
             key-positions = <26 20 21>;
             layers = <1>;
         };
 
-        combo_brackets_ctrl {
+        l1_combo_brackets_ctrl {
             bindings = <&m_rdae>;
             key-positions = <27 20>;
             layers = <1>;
