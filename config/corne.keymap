@@ -99,6 +99,102 @@
             bindings = <&m_nd>, <&m_no>;
         };
 
+        mp_kn_f1: morph_key_numbers_f1 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "mp_kn_f1";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            bindings = <&kp KP_N1>, <&kp F1>;
+        };
+
+        mp_kn_f2: morph_key_numbers_f2 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "mp_kn_f2";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            bindings = <&kp KP_N2>, <&kp F2>;
+        };
+
+        mp_kn_f3: morph_key_numbers_f3 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "mp_kn_f3";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            bindings = <&kp KP_N3>, <&kp F3>;
+        };
+
+        mp_kn_f4: morph_key_numbers_f4 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "mp_kn_f4";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            bindings = <&kp KP_EQUAL>, <&kp F4>;
+        };
+
+        mp_kn_f5: morph_key_numbers_f5 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "mp_kn_f5";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            bindings = <&kp KP_N4>, <&kp F5>;
+        };
+
+        mp_kn_f6: morph_key_numbers_f6 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "mp_kn_f6";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            bindings = <&kp KP_N5>, <&kp F6>;
+        };
+
+        mp_kn_f7: morph_key_numbers_f7 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "mp_kn_f7";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            bindings = <&kp KP_N6>, <&kp F7>;
+        };
+
+        mp_kn_f8: morph_key_numbers_f8 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "mp_kn_f8";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            bindings = <&kp KP_DIVIDE>, <&kp F8>;
+        };
+
+        mp_kn_f9: morph_key_numbers_f9 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "mp_kn_f9";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            bindings = <&kp KP_N7>, <&kp F9>;
+        };
+
+        mp_kn_f10: morph_key_numbers_f10 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "mp_kn_f10";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            bindings = <&kp KP_N8>, <&kp F10>;
+        };
+
+        mp_kn_f11: morph_key_numbers_f11 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "mp_kn_f11";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            bindings = <&kp KP_N9>, <&kp F11>;
+        };
+
+        mp_kn_f12: morph_key_numbers_f12 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "mp_kn_f12";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            bindings = <&kp KP_MULTIPLY>, <&kp F12>;
+        };
+
         mp_kbd: morph_key_browser_debug {
             compatible = "zmk,behavior-mod-morph";
             label = "mp_kbd";
@@ -106,8 +202,6 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
             bindings = <&kp RC(RS(R))>, <&kp RC(RS(I))>;
         };
-
-
 
         mp_bd: morph_backspace_del {
             compatible = "zmk,behavior-mod-morph";
@@ -490,10 +584,10 @@
 
         act_num_layer {
             bindings = <
- &kp ESC   &kp PG_DN   &kp RC(PG_DN)   &mt LC(HOME) UP        &kp RC(PG_UP)       &kp PG_UP               &none  &mt F7 N7  &mt F8 N8  &mt F9 N9      &none       &mp_bd
-  &mp_bc   &kp PSCRN   &mt HOME LEFT  &mt LC(END) DOWN        &mt END RIGHT         &mp_kbd           &kp EQUAL  &mt F4 N4  &mt F5 N5  &mt F6 N6    &kp DOT   &mt F2 RET
- &kp TAB   &kp RC(Z)       &kp RC(X)         &kp RC(C)  &mt RC(V) RC(RS(V))       &kp RC(Y)          &mt F10 N0  &mt F1 N1  &mt F2 N2  &mt F3 N3  &kp COMMA  &key_repeat
-                                                &mp_kn            &kp SPACE           &to 1               &to 0  &kp SPACE    &kp DOT
+ &kp ESC   &kp PG_DN   &kp RC(PG_DN)   &mt LC(HOME) UP        &kp RC(PG_UP)       &kp PG_UP            &kp KP_PLUS  &mp_kn_f9  &mp_kn_f10  &mp_kn_f11  &mp_kn_f12       &mp_bd
+  &mp_bc   &kp PSCRN   &mt HOME LEFT  &mt LC(END) DOWN        &mt END RIGHT         &mp_kbd           &kp KP_MINUS  &mp_kn_f5   &mp_kn_f6   &mp_kn_f7   &mp_kn_f8   &mt F2 RET
+ &kp TAB   &kp RC(Z)       &kp RC(X)         &kp RC(C)  &mt RC(V) RC(RS(V))       &kp RC(Y)              &kp KP_N0  &mp_kn_f1   &mp_kn_f2   &mp_kn_f3   &mp_kn_f4  &key_repeat
+                                                &mp_kn            &kp SPACE           &to 1                  &to 0  &kp SPACE  &kp KP_DOT
             >;
         };
 
