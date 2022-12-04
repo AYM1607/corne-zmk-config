@@ -139,6 +139,22 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
             bindings = <&kp EQUAL>, <&kp ASTRK>;
         };
+
+        mp_kl: morph_key_logic {
+            compatible = "zmk,behavior-mod-morph";
+            label = "mp_kl";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            bindings = <&kp FSLH>, <&kp AMPS>;
+        };
+
+        mp_kl_alt: morph_key_logic_alt {
+            compatible = "zmk,behavior-mod-morph";
+            label = "mp_kl_alt";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            bindings = <&kp QMARK>, <&kp PIPE>;
+        };
     };
 
     combos {
@@ -194,6 +210,12 @@
         combo_operators {
             bindings = <&mp_ko_alt>;
             key-positions = <10 15>;
+            layers = <0>;
+        };
+
+        combo_logic {
+            bindings = <&mp_kl_alt>;
+            key-positions = <34 15>;
             layers = <0>;
         };
     };
@@ -347,7 +369,7 @@
             bindings = <
  &kp ESC       &kp Q        &kp W       &kp F        &kp P  &kp B           &kp J        &kp L       &kp U        &kp Y      &mp_ko       &mp_bd
   &mp_bc  &hm LCMD A  &hm LCTRL R  &hm LALT S  &hm LSHFT T  &kp G           &kp M  &hm RSHFT N  &hm RALT E  &hm RCTRL I  &hm RCMD O   &mt F2 RET
- &kp TAB       &kp Z        &kp X       &kp C        &kp D  &kp V           &kp K        &kp H   &kp COMMA      &kp DOT    &kp SEMI  &key_repeat
+ &kp TAB       &kp Z        &kp X       &kp C        &kp D  &kp V           &kp K        &kp H   &kp COMMA      &kp DOT      &mp_kl  &key_repeat
                                        &mp_kq    &kp SPACE  &to 2           &to 1    &kp SPACE       &to 3
             >;
         };
