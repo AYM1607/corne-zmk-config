@@ -339,6 +339,14 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
             bindings = <&kp ASTRK>, <&m_d_da>;
         };
+
+        mp_d_p: morph_dev_plus {
+            compatible = "zmk,behavior-mod-morph";
+            label = "+ ++";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            bindings = <&kp PLUS>, <&m_d_dp>;
+        };
     };
 
     combos {
@@ -442,6 +450,12 @@
         l1_combo_dev_divide {
             bindings = <&m_d_dao>; /* Label: /= */
             key-positions = <30 L_ALT>;
+            layers = <1>;
+        };
+
+        l1_combo_dev_sum {
+            bindings = <&m_d_sao>; /* Label: += */
+            key-positions = <4 L_ALT>;
             layers = <1>;
         };
     };
@@ -706,6 +720,22 @@
             bindings =
                 <&macro_tap     &kp FSLH &kp EQUAL>;
         };
+
+        m_d_dp: macro_dev_double_plus {
+            compatible = "zmk,behavior-macro";
+            label = "++";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap     &kp PLUS &kp PLUS>;
+        };
+
+        m_d_sao: macro_dev_sum_assignment_operator {
+            compatible = "zmk,behavior-macro";
+            label = "+=";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap     &kp PLUS &kp EQUAL>;
+        };
     };
 
     keymap {
@@ -722,7 +752,7 @@
 
         dev_layer {
             bindings = <
-   &kp ESC  &kp AT  &kp POUND     &none      &none    &kp DQT          &kp TILDE      &none  &kp UNDER  &kp PRCNT  &kp CARET       &mp_bd
+   &kp ESC  &kp AT  &kp POUND     &none    &mp_d_p    &kp DQT          &kp TILDE      &none  &kp UNDER  &kp PRCNT  &kp CARET       &mp_bd
     &mp_bc   &none   &kp LBRC  &kp RBRC      &none    &kp SQT          &kp GRAVE      &none   &kp LBKT   &kp RBKT      &none   &mt F2 RET
    &kp TAB  &mp_kn   &mp_d_la  &mp_d_ra    &mp_d_a   &kp BSLH           &kp FSLH      &none   &kp LPAR   &kp RPAR      &none  &key_repeat
                                &mp_d_cs  &kp SPACE      &to 2              &to 0  &kp SPACE   &mp_d_dc
