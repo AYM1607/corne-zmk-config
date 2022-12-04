@@ -107,22 +107,6 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
             bindings = <&mt LC(BSPC) BSPC>, <&kp CLCK>;
         };
-
-        mp_sq: morph_single_quote {
-            compatible = "zmk,behavior-mod-morph";
-            label = "mp_sq";
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-            bindings = <&kp SQT>, <&kp DQT>;
-        }
-
-        mp_bt: morph_backtick {
-            compatible = "zmk,behavior-mod-morph";
-            label = "mp_bc";
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-            bindings = <&kp GRAVE>, <&kp TILDE>;
-        }
     };
 
     combos {
