@@ -108,33 +108,33 @@
             bindings = <&mt LC(BSPC) BSPC>, <&kp CLCK>;
         };
 
-        mp_q: morph_quote {
+        mp_kq: morph_key_quote {
             compatible = "zmk,behavior-mod-morph";
-            label = "mp_q";
+            label = "mp_kq";
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             bindings = <&kp SQT>, <&kp DQT>;
         };
 
-        mp_q_alt: morph_quote_alt {
+        mp_kq_alt: morph_key_quote_alt {
             compatible = "zmk,behavior-mod-morph";
-            label = "mp_q_alt";
+            label = "mp_kq_alt";
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             bindings = <&kp GRAVE>, <&kp TILDE>;
         };
 
-        mp_o: morph_operator {
+        mp_ko: morph_key_operator {
             compatible = "zmk,behavior-mod-morph";
-            label = "mp_o";
+            label = "mp_ko";
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             bindings = <&kp MINUS>, <&kp PLUS>;
         };
 
-        mp_o_alt: morph_operator_alt {
+        mp_ko_alt: morph_key_operator_alt {
             compatible = "zmk,behavior-mod-morph";
-            label = "mp_o_alt";
+            label = "mp_ko_alt";
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             bindings = <&kp EQUAL>, <&kp ASTRK>;
@@ -186,13 +186,13 @@
         };
 
         combo_quotes {
-            bindings = <&mp_q_alt>;
+            bindings = <&mp_kq_alt>;
             key-positions = <36 20>;
             layers = <0>;
         };
 
         combo_operators {
-            bindings = <&mp_o_alt>;
+            bindings = <&mp_ko_alt>;
             key-positions = <10 15>;
             layers = <0>;
         };
@@ -345,10 +345,10 @@
 
         base_layer {
             bindings = <
- &kp ESC       &kp Q        &kp W       &kp F        &kp P  &kp B           &kp J        &kp L       &kp U        &kp Y       &mp_o       &mp_bd
+ &kp ESC       &kp Q        &kp W       &kp F        &kp P  &kp B           &kp J        &kp L       &kp U        &kp Y      &mp_ko       &mp_bd
   &mp_bc  &hm LCMD A  &hm LCTRL R  &hm LALT S  &hm LSHFT T  &kp G           &kp M  &hm RSHFT N  &hm RALT E  &hm RCTRL I  &hm RCMD O   &mt F2 RET
  &kp TAB       &kp Z        &kp X       &kp C        &kp D  &kp V           &kp K        &kp H   &kp COMMA      &kp DOT    &kp SEMI  &key_repeat
-                                        &mp_q    &kp SPACE  &to 2           &to 1    &kp SPACE       &to 3
+                                       &mp_kq    &kp SPACE  &to 2           &to 1    &kp SPACE       &to 3
             >;
         };
 
