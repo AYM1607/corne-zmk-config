@@ -559,6 +559,42 @@
             bindings =
                 <&macro_tap     &kp LPAR &kp RPAR &kp LEFT>;
         };
+
+        m_lda: macro_left_double_angle {
+            compatible = "zmk,behavior-macro";
+            label = "m_lda";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press   &kp RALT>,
+                <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N7 &kp KP_N1>,
+                <&macro_release &kp RALT>;
+        };
+
+        m_rda: macro_right_double_angle {
+            compatible = "zmk,behavior-macro";
+            label = "m_rda";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press   &kp RALT>,
+                <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N8 &kp KP_N7>,
+                <&macro_release &kp RALT>;
+        };
+
+        m_ldae: macro_left_double_angle_equal {
+            compatible = "zmk,behavior-macro";
+            label = "m_ldae";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap     &kp LT &kp EQUAL>;
+        };
+
+        m_rdae: macro_right_double_angle_equal {
+            compatible = "zmk,behavior-macro";
+            label = "m_rdae";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap     &kp GT &kp EQUAL>;
+        };
     };
 
     keymap {
