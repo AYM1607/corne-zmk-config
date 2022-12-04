@@ -393,6 +393,12 @@
             key-positions = <26 20 21>;
             layers = <1>;
         };
+
+        l1_combo_dev_right_angle_alt {
+            bindings = <&m_rdae>;
+            key-positions = <27 20>;
+            layers = <1>;
+        };
     };
 
     macros {
