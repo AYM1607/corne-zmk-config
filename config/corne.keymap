@@ -310,7 +310,7 @@
 
         mp_d_ra: morph_dev_right_angle {
             compatible = "zmk,behavior-mod-morph";
-            label = "mp_d_ra";
+            label = "MORPH KEY: > »";
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             bindings = <&kp GT>, <&m_rda>;
