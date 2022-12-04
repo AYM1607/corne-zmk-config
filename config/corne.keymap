@@ -282,6 +282,30 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
             bindings = <&m_bs>, <&m_br>;
         };
+
+        mp_d_la: morph_dev_left_angle {
+            compatible = "zmk,behavior-mod-morph";
+            label = "mp_d_la";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            bindings = <&kp LT>, <&m_lda>;
+        };
+
+        mp_d_ra: morph_dev_right_angle {
+            compatible = "zmk,behavior-mod-morph";
+            label = "mp_d_ra";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            bindings = <&kp GT>, <&m_rda>;
+        };
+
+        mp_d_la: morph_dev_left_angle_alt {
+            compatible = "zmk,behavior-mod-morph";
+            label = "mp_d_la";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            bindings = <&m_ldae>, <&m_ba_h>;
+        };
     };
 
     combos {
@@ -361,6 +385,12 @@
         combo_brackets_ctrl {
             bindings = <&m_ba_r>;
             key-positions = <26 20 21>;
+            layers = <1>;
+        };
+
+        combo_brackets_ctrl {
+            bindings = <&m_rdae>;
+            key-positions = <27 20>;
             layers = <1>;
         };
     };
@@ -585,6 +615,22 @@
                 <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N8 &kp KP_N7>,
                 <&macro_release &kp RALT>;
         };
+
+        m_ldae: macro_left_double_angle_equal {
+            compatible = "zmk,behavior-macro";
+            label = "m_ldae";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap     &kp LT &kp EQUAL>;
+        };
+
+        m_rdae: macro_right_double_angle_equal {
+            compatible = "zmk,behavior-macro";
+            label = "m_rdae";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap     &kp GT &kp EQUAL>;
+        };
     };
 
     keymap {
@@ -603,7 +649,7 @@
             bindings = <
    &kp ESC  &kp AT  &kp POUND     &none      &none    &kp DQT          &kp TILDE      &none  &kp UNDER  &kp PRCNT  &kp CARET       &mp_bd
     &mp_bc   &none   &kp LBRC  &kp RBRC      &none    &kp SQT          &kp GRAVE      &none   &kp LBKT   &kp RBKT      &none   &mt F2 RET
-   &kp TAB  &mp_kn      &none     &none      &none   &kp BSLH              &none      &none   &kp LPAR   &kp RPAR      &none  &key_repeat
+   &kp TAB  &mp_kn   &mp_d_la  &mp_d_ra      &none   &kp BSLH              &none      &none   &kp LPAR   &kp RPAR      &none  &key_repeat
                                &kp LCMD  &kp SPACE      &to 2              &to 0  &kp SPACE      &to 3
             >;
         };
