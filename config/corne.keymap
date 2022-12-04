@@ -323,6 +323,14 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
             bindings = <&kp COMMA>, <&kp SEMI>;
         };
+
+        mp_d_dc: morph_dev_dot_colon {
+            compatible = "zmk,behavior-mod-morph";
+            label = ". :";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            bindings = <&kp DOT>, <&kp COLON>;
+        };
     };
 
     combos {
@@ -673,7 +681,7 @@
    &kp ESC  &kp AT  &kp POUND     &none      &none    &kp DQT          &kp TILDE      &none  &kp UNDER  &kp PRCNT  &kp CARET       &mp_bd
     &mp_bc   &none   &kp LBRC  &kp RBRC      &none    &kp SQT          &kp GRAVE      &none   &kp LBKT   &kp RBKT      &none   &mt F2 RET
    &kp TAB  &mp_kn   &mp_d_la  &mp_d_ra      &none   &kp BSLH              &none      &none   &kp LPAR   &kp RPAR      &none  &key_repeat
-                               &mp_d_cs  &kp SPACE      &to 2              &to 0  &kp SPACE      &to 3
+                               &mp_d_cs  &kp SPACE      &to 2              &to 0  &kp SPACE   &mp_d_dc
             >;
         };
 
