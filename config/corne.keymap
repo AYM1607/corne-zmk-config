@@ -282,6 +282,14 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
             bindings = <&m_bs>, <&m_br>;
         };
+
+        mp_d_la: morph_dev_left_angle {
+            compatible = "zmk,behavior-mod-morph";
+            label = "mp_d_la";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            bindings = <&kp LT>, <&m_lda>;
+        };
     };
 
     combos {
@@ -613,7 +621,7 @@
             bindings = <
    &kp ESC  &kp AT  &kp POUND     &none      &none    &kp DQT          &kp TILDE      &none  &kp UNDER  &kp PRCNT  &kp CARET       &mp_bd
     &mp_bc   &none   &kp LBRC  &kp RBRC      &none    &kp SQT          &kp GRAVE      &none   &kp LBKT   &kp RBKT      &none   &mt F2 RET
-   &kp TAB  &mp_kn      &none     &none      &none   &kp BSLH              &none      &none   &kp LPAR   &kp RPAR      &none  &key_repeat
+   &kp TAB  &mp_kn   &mp_d_la     &none      &none   &kp BSLH              &none      &none   &kp LPAR   &kp RPAR      &none  &key_repeat
                                &kp LCMD  &kp SPACE      &to 2              &to 0  &kp SPACE      &to 3
             >;
         };
