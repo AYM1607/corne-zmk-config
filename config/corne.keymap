@@ -155,6 +155,22 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
             bindings = <&kp QMARK>, <&kp PIPE>;
         };
+
+        mp_kb: morph_key_brackets {
+            compatible = "zmk,behavior-mod-morph";
+            label = "mp_kb";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            bindings = <&m_bc>, <&m_ba_h>;
+        };
+
+        mp_kb_alt: morph_key_brackets_alt {
+            compatible = "zmk,behavior-mod-morph";
+            label = "mp_kb_alt";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            bindings = <&m_bs>, <&m_br>;
+        };
     };
 
     combos {
