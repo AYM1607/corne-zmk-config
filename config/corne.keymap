@@ -687,10 +687,10 @@
 
         m_d_mao: macro_dev_multiply_assignment_operator {
             compatible = "zmk,behavior-macro";
-            label = "**=";
+            label = "*=";
             #binding-cells = <0>;
             bindings =
-                <&macro_tap     &kp ASTRK &kp ASTRK &kp EQUAL>;
+                <&macro_tap     &kp ASTRK &kp EQUAL>;
         };
     };
 
