@@ -305,7 +305,7 @@
             label = "<= </>";
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            bindings = <&m_ldae>, <&m_ba_h>;
+            bindings = <&m_ltoe>, <&m_ba_h>;
         };
 
         mp_d_ra: morph_dev_right_angle {
@@ -452,8 +452,7 @@
         };
 
         l1_combo_dev_right_angle_alt {
-            bindings = <&m_rdae>; /* Label: >= */
-            key-positions = <27 R_ALT>;
+            bindings = <&m_gtoe>; /* Lagreater>than or     key-positions = <27 R_ALT>;
             layers = <1>;
         };
 
@@ -470,13 +469,13 @@
         };
 
         l1_combo_dev_sum {
-            bindings = <&m_d_sao>; /* Label: += */
+            bindings = <&m_d_aao>; /* Label: += */
             key-positions = <3 L_ALT>;
             layers = <1>;
         };
 
         l1_combo_dev_equal {
-            bindings = <&m_d_te>; /* Label: === */
+            bindings = <&m_d_se>; /* Label: === */
             key-positions = <4 L_ALT>;
             layers = <1>;
         };
@@ -703,7 +702,7 @@
                 <&macro_release &kp RALT>;
         };
 
-        m_ldae: macro_left_double_angle_equal {
+        m_ltoe: macro_less_than_or_equal {
             compatible = "zmk,behavior-macro";
             label = "<=";
             #binding-cells = <0>;
@@ -711,7 +710,7 @@
                 <&macro_tap     &kp LT &kp EQUAL>;
         };
 
-        m_rdae: macro_right_double_angle_equal {
+        m_gtoe: macro_greater_than_or_equal {
             compatible = "zmk,behavior-macro";
             label = ">=";
             #binding-cells = <0>;
@@ -727,7 +726,7 @@
                 <&macro_tap     &kp ASTRK &kp ASTRK>;
         };
 
-        m_d_mao: macro_dev_multiply_assignment_operator {
+        m_d_mao: macro_dev_multiplication_assignment_operator {
             compatible = "zmk,behavior-macro";
             label = "*=";
             #binding-cells = <0>;
@@ -735,7 +734,7 @@
                 <&macro_tap     &kp ASTRK &kp EQUAL>;
         };
 
-        m_d_dao: macro_dev_divide_assignment_operator {
+        m_d_dao: macro_dev_division_assignment_operator {
             compatible = "zmk,behavior-macro";
             label = "/=";
             #binding-cells = <0>;
@@ -751,7 +750,7 @@
                 <&macro_tap     &kp PLUS &kp PLUS>;
         };
 
-        m_d_sao: macro_dev_sum_assignment_operator {
+        m_d_aao: macro_dev_addition_assignment_operator {
             compatible = "zmk,behavior-macro";
             label = "+=";
             #binding-cells = <0>;
@@ -769,7 +768,7 @@
                 <&macro_release &kp RALT>;
         };
 
-        m_d_te: macro_dev_triple_equal {
+        m_d_se: macro_dev_triple_equal {
             compatible = "zmk,behavior-macro";
             label = "===";
             #binding-cells = <0>;
