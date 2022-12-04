@@ -28,6 +28,7 @@
         "RCTRL",
         "rdae",
         "RSFT",
-        "RSHFT"
+        "RSHFT",
+        "SHFT"
     ]
 }
