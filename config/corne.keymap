@@ -360,6 +360,56 @@
                 <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N9>,
                 <&macro_release &kp RALT>;
         };
+
+        m_an_shift: macro_accent_n_shift {
+            compatible = "zmk,behavior-macro";
+            label = "m_an_shift";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press   &kp RALT>,
+                <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N9>,
+                <&macro_release &kp RALT>;
+        };
+
+        m_ba_h: macro_brackets_angle_html {
+            compatible = "zmk,behavior-macro";
+            label = "m_ba_h";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap     &kp LT &kp FSLH &kp GT &kp LEFT>;
+        };
+
+        m_ba_r: macro_brackets_angle_react {
+            compatible = "zmk,behavior-macro";
+            label = "m_ba_r";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap     &kp LT &kp FSLH &kp GT &kp LEFT &kp LEFT>;
+        };
+
+        m_bs: macro_brackets_square {
+            compatible = "zmk,behavior-macro";
+            label = "m_bs";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap     &kp LBKT &kp RBKT &kp LEFT>;
+        };
+
+        m_bc: macro_brackets_curly {
+            compatible = "zmk,behavior-macro";
+            label = "m_bc";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap     &kp LBRC &kp RBRC &kp LEFT>;
+        };
+
+        m_br: macro_brackets_round {
+            compatible = "zmk,behavior-macro";
+            label = "m_br";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap     &kp LPAR &kp RPAR &kp LEFT>;
+        };
     };
 
     keymap {
