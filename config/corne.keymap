@@ -290,6 +290,22 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
             bindings = <&kp LT>, <&m_lda>;
         };
+
+        mp_d_la_alt: morph_dev_left_angle_alt {
+            compatible = "zmk,behavior-mod-morph";
+            label = "mp_d_la_alt";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            bindings = <&m_ldae>, <&m_ba_h>;
+        };
+
+        mp_d_ra: morph_dev_right_angle {
+            compatible = "zmk,behavior-mod-morph";
+            label = "mp_d_ra";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            bindings = <&kp GT>, <&m_rda>;
+        };
     };
 
     combos {
@@ -366,9 +382,15 @@
             layers = <0>;
         };
 
-        l1_combo_brackets_alt_ctrl {
+        l1_combo_dev_left_angle_alt_ctrl {
             bindings = <&m_ba_r>;
             key-positions = <26 20 21>;
+            layers = <1>;
+        };
+
+        l1_combo_dev_left_angle_alt {
+            bindings = <&mp_d_la_alt>;
+            key-positions = <26 20>;
             layers = <1>;
         };
     };
@@ -627,7 +649,7 @@
             bindings = <
    &kp ESC  &kp AT  &kp POUND     &none      &none    &kp DQT          &kp TILDE      &none  &kp UNDER  &kp PRCNT  &kp CARET       &mp_bd
     &mp_bc   &none   &kp LBRC  &kp RBRC      &none    &kp SQT          &kp GRAVE      &none   &kp LBKT   &kp RBKT      &none   &mt F2 RET
-   &kp TAB  &mp_kn   &mp_d_la     &none      &none   &kp BSLH              &none      &none   &kp LPAR   &kp RPAR      &none  &key_repeat
+   &kp TAB  &mp_kn   &mp_d_la  &mp_d_ra      &none   &kp BSLH              &none      &none   &kp LPAR   &kp RPAR      &none  &key_repeat
                                &kp LCMD  &kp SPACE      &to 2              &to 0  &kp SPACE      &to 3
             >;
         };
