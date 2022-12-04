@@ -452,7 +452,8 @@
         };
 
         l1_combo_dev_right_angle_alt {
-            bindings = <&m_gtoe>; /* Lagreater>than or     key-positions = <27 R_ALT>;
+            bindings = <&m_gtoe>; /* Label: >= */
+            key-positions = <27 R_ALT>;
             layers = <1>;
         };
 
