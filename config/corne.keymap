@@ -22,6 +22,15 @@
 #define ACT_NUM  2
 #define SETTINGS 3
 
+/* Modifier Keys */
+
+#define L_CTRL    0
+#define L_ALT     0
+#define L_SHFT    16
+#define R_SHFT    19
+#define R_ALT     0
+#define R_CTRL    0
+
 / {
     behaviors {
         hm: homerow_mods {
@@ -313,7 +322,7 @@
 
         combo_caps-word {
             bindings = <&cw>;
-            key-positions = <16 19>;
+            key-positions = <L_SHFT R_SHFT>;
         };
 
         l0_combo_accent_a_alt {
