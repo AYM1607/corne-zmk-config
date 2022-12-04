@@ -471,13 +471,13 @@
 
         l1_combo_dev_sum {
             bindings = <&m_d_sao>; /* Label: += */
-            key-positions = <4 L_ALT>;
+            key-positions = <3 L_ALT>;
             layers = <1>;
         };
 
         l1_combo_dev_equal {
             bindings = <&m_d_te>; /* Label: === */
-            key-positions = <5 L_ALT>;
+            key-positions = <4 L_ALT>;
             layers = <1>;
         };
     };
