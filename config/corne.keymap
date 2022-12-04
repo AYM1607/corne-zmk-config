@@ -575,10 +575,10 @@
 
         dev_layer {
             bindings = <
-   &kp ESC  &kp EXCL  &kp AT  &kp HASH   &kp DLLR  &kp PRCNT          &kp CARET   &kp AMPS  &kp STAR  &kp MINUS     &none       &mp_bd
-    &mp_bc     &none   &none     &none      &none   &kp PLUS           &kp HOME   &kp LBRC  &kp RBRC    &kp END  &kp BSLH   &mt F2 RET
-   &kp TAB     &none   &none     &none      &none  &kp MINUS           &kp LBKT   &kp LPAR  &kp RPAR   &kp RBKT     &none  &key_repeat
-                              &kp LCMD  &kp SPACE      &to 2              &to 0  &kp SPACE     &to 3
+   &kp ESC  &kp AT  &kp POUND     &none      &none    &kp DQT          &kp TILDE      &none  &kp UNDER  &kp PRCNT  &kp CARET       &mp_bd
+    &mp_bc   &none   &kp LBRC  &kp RBRC      &none    &kp SQT          &kp GRAVE      &none   &kp LBKT   &kp RBKT      &none   &mt F2 RET
+   &kp TAB  &mp_kn      &none     &none      &none   &kp BSLH              &none      &none   &kp LPAR   &kp RPAR      &none  &key_repeat
+                               &kp LCMD  &kp SPACE      &to 2              &to 0  &kp SPACE      &to 3
             >;
         };
 
