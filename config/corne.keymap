@@ -54,7 +54,7 @@
 
         mp_a: morph_a {
             compatible = "zmk,behavior-mod-morph";
-            label = "MORPH A";
+            label = "MORPH KEY: á Á";
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             bindings = <&m_aa>, <&m_aa_shift>;
@@ -62,7 +62,7 @@
 
         mp_e: morph_e {
             compatible = "zmk,behavior-mod-morph";
-            label = "MORPH E";
+            label = "MORPH KEY: é É";
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             bindings = <&m_ae>, <&m_ae_shift>;
@@ -70,7 +70,7 @@
 
         mp_i: morph_i {
             compatible = "zmk,behavior-mod-morph";
-            label = "MORPH I";
+            label = "MORPH KEY: í Í";
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             bindings = <&m_ai>, <&m_ai_shift>;
@@ -78,7 +78,7 @@
 
         mp_o: morph_o {
             compatible = "zmk,behavior-mod-morph";
-            label = "MORPH O";
+            label = "MORPH KEY: ó Ó";
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             bindings = <&m_ao>, <&m_ao_shift>;
@@ -86,7 +86,7 @@
 
         mp_u: morph_u {
             compatible = "zmk,behavior-mod-morph";
-            label = "MORPH U";
+            label = "MORPH KEY: ú Ú";
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             bindings = <&mt &m_uu &m_au>, <&mt &m_uu_shift &m_au_shift>;
@@ -94,7 +94,7 @@
 
         mp_n: morph_n {
             compatible = "zmk,behavior-mod-morph";
-            label = "MORPH Ñ";
+            label = "MORPH KEY: ñ Ñ";
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             bindings = <&m_an>, <&m_an_shift>;
@@ -102,7 +102,7 @@
 
         mp_kn: morph_key_numbers {
             compatible = "zmk,behavior-mod-morph";
-            label = "mp_kn";
+            label = "MORPH KEY: ° ª";
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             bindings = <&m_nd>, <&m_no>;
@@ -110,7 +110,7 @@
 
         mp_kn_f1: morph_key_numbers_f1 {
             compatible = "zmk,behavior-mod-morph";
-            label = "mp_kn_f1";
+            label = "MORPH KEY: 1 F1";
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             bindings = <&kp KP_N1>, <&kp F1>;
@@ -118,7 +118,7 @@
 
         mp_kn_f2: morph_key_numbers_f2 {
             compatible = "zmk,behavior-mod-morph";
-            label = "mp_kn_f2";
+            label = "MORPH KEY: 2 F2";
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             bindings = <&kp KP_N2>, <&kp F2>;
@@ -126,7 +126,7 @@
 
         mp_kn_f3: morph_key_numbers_f3 {
             compatible = "zmk,behavior-mod-morph";
-            label = "mp_kn_f3";
+            label = "MORPH KEY: 3 F3";
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             bindings = <&kp KP_N3>, <&kp F3>;
@@ -134,7 +134,7 @@
 
         mp_kn_f4: morph_key_numbers_f4 {
             compatible = "zmk,behavior-mod-morph";
-            label = "mp_kn_f4";
+            label = "MORPH KEY: = F4";
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             bindings = <&kp KP_EQUAL>, <&kp F4>;
@@ -142,7 +142,7 @@
 
         mp_kn_f5: morph_key_numbers_f5 {
             compatible = "zmk,behavior-mod-morph";
-            label = "mp_kn_f5";
+            label = "MORPH KEY: 4 F5";
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             bindings = <&kp KP_N4>, <&kp F5>;
@@ -150,7 +150,7 @@
 
         mp_kn_f6: morph_key_numbers_f6 {
             compatible = "zmk,behavior-mod-morph";
-            label = "mp_kn_f6";
+            label = "MORPH KEY: 5 F6";
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             bindings = <&kp KP_N5>, <&kp F6>;
@@ -158,7 +158,7 @@
 
         mp_kn_f7: morph_key_numbers_f7 {
             compatible = "zmk,behavior-mod-morph";
-            label = "mp_kn_f7";
+            label = "MORPH KEY: 6 F7";
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             bindings = <&kp KP_N6>, <&kp F7>;
@@ -166,7 +166,7 @@
 
         mp_kn_f8: morph_key_numbers_f8 {
             compatible = "zmk,behavior-mod-morph";
-            label = "mp_kn_f8";
+            label = "MORPH KEY: / F8";
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             bindings = <&kp KP_DIVIDE>, <&kp F8>;
@@ -174,7 +174,7 @@
 
         mp_kn_f9: morph_key_numbers_f9 {
             compatible = "zmk,behavior-mod-morph";
-            label = "mp_kn_f9";
+            label = "MORPH KEY: 7 F9";
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             bindings = <&kp KP_N7>, <&kp F9>;
@@ -182,7 +182,7 @@
 
         mp_kn_f10: morph_key_numbers_f10 {
             compatible = "zmk,behavior-mod-morph";
-            label = "mp_kn_f10";
+            label = "MORPH KEY: 8 F10";
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             bindings = <&kp KP_N8>, <&kp F10>;
@@ -190,7 +190,7 @@
 
         mp_kn_f11: morph_key_numbers_f11 {
             compatible = "zmk,behavior-mod-morph";
-            label = "mp_kn_f11";
+            label = "MORPH KEY: 9 F11";
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             bindings = <&kp KP_N9>, <&kp F11>;
@@ -198,7 +198,7 @@
 
         mp_kn_f12: morph_key_numbers_f12 {
             compatible = "zmk,behavior-mod-morph";
-            label = "mp_kn_f12";
+            label = "MORPH KEY: * F12";
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             bindings = <&kp KP_MULTIPLY>, <&kp F12>;
@@ -206,7 +206,7 @@
 
         mp_kbd: morph_key_browser_debug {
             compatible = "zmk,behavior-mod-morph";
-            label = "mp_kbd";
+            label = "MORPH KEY BROWSER: CTRL+SHIFT_R CTRL+SHIFT+I";
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             bindings = <&kp RC(RS(R))>, <&kp RC(RS(I))>;
@@ -214,7 +214,7 @@
 
         mp_bd: morph_backspace_del {
             compatible = "zmk,behavior-mod-morph";
-            label = "mp_bd";
+            label = "MORPH KEY: BACKSPACE DELETE";
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             bindings = <&mt LC(BSPC) BSPC>, <&mt LC(DEL) DEL>;
@@ -222,7 +222,7 @@
 
         mp_bc: morph_backspace_caps {
             compatible = "zmk,behavior-mod-morph";
-            label = "mp_bc";
+            label = "MORPH KEY: BACKSPACE CAPS_LOCK";
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             bindings = <&mt LC(BSPC) BSPC>, <&kp CLCK>;
@@ -230,7 +230,7 @@
 
         mp_kq: morph_key_quote {
             compatible = "zmk,behavior-mod-morph";
-            label = "mp_kq";
+            label = "MORPH KEY: ' ''";
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             bindings = <&kp SQT>, <&kp DQT>;
@@ -238,7 +238,7 @@
 
         mp_kq_alt: morph_key_quote_alt {
             compatible = "zmk,behavior-mod-morph";
-            label = "mp_kq_alt";
+            label = "MORPH KEY: ` ~";
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             bindings = <&kp GRAVE>, <&kp TILDE>;
@@ -246,7 +246,7 @@
 
         mp_ko: morph_key_operator {
             compatible = "zmk,behavior-mod-morph";
-            label = "mp_ko";
+            label = "MORPH KEY: - +";
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             bindings = <&kp MINUS>, <&kp PLUS>;
@@ -254,7 +254,7 @@
 
         mp_ko_alt: morph_key_operator_alt {
             compatible = "zmk,behavior-mod-morph";
-            label = "mp_ko_alt";
+            label = "MORPH KEY: = *";
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             bindings = <&kp EQUAL>, <&kp ASTRK>;
