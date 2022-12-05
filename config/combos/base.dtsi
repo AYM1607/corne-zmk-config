@@ -1,0 +1,29 @@
+l0_combo_quotes_alt {
+    bindings = <&mp_kq_alt>; /* Label: ` ~ */
+    key-positions = <36 R_ALT>;
+    layers = <0>;
+};
+
+l0_combo_operators_alt {
+    bindings = <&mp_ko_alt>; /* Label: = * */
+    key-positions = <10 L_ALT>;
+    layers = <0>;
+};
+
+l0_combo_logic_alt {
+    bindings = <&mp_kl_alt>; /* Label: ? | */
+    key-positions = <34 L_ALT>;
+    layers = <0>;
+};
+
+l0_combo_brackets_alt {
+    bindings = <&mp_kb_alt>; /* Label: [] () */
+    key-positions = <35 L_ALT>;
+    layers = <0>;
+};
+
+l0_combo_brackets_alt_ctrl {
+    bindings = <&m_ba_r>; /* Label: <█/> */
+    key-positions = <35 L_CTRL L_ALT>;
+    layers = <0>;
+};

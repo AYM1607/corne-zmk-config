@@ -1,0 +1,41 @@
+l1_combo_dev_left_angle_alt {
+    bindings = <&mp_d_la_alt>; /* Label: <= </> */
+    key-positions = <26 R_ALT>;
+    layers = <1>;
+};
+
+l1_combo_dev_left_angle_alt_ctrl {
+    bindings = <&m_ba_r>; /* Label: <█/> */
+    key-positions = <26 R_ALT R_CTRL>;
+    layers = <1>;
+};
+
+l1_combo_dev_right_angle_alt {
+    bindings = <&m_gtoe>; /* Label: >= */
+    key-positions = <27 R_ALT>;
+    layers = <1>;
+};
+
+l1_combo_dev_multiply {
+    bindings = <&m_d_mao>; /* Label: *= */
+    key-positions = <28 R_ALT>;
+    layers = <1>;
+};
+
+l1_combo_dev_divide {
+    bindings = <&m_d_dao>; /* Label: /= */
+    key-positions = <30 L_ALT>;
+    layers = <1>;
+};
+
+l1_combo_dev_sum {
+    bindings = <&m_d_aao>; /* Label: += */
+    key-positions = <3 L_ALT>;
+    layers = <1>;
+};
+
+l1_combo_dev_equal {
+    bindings = <&m_d_se>; /* Label: === */
+    key-positions = <4 L_ALT>;
+    layers = <1>;
+};

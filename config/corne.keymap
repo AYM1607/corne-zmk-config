@@ -22,14 +22,7 @@
 #define ACT_NUM  2
 #define SETTINGS 3
 
-/* Modifier Keys */
 
-#define L_CTRL    14
-#define L_ALT     15
-#define L_SHFT    16
-#define R_SHFT    19
-#define R_ALT     20
-#define R_CTRL    21
 
 / {
     behaviors {
@@ -397,124 +390,18 @@
     combos {
         compatible = "zmk,combos";
 
+        /* Modifier Keys */
+        #define L_CTRL    14
+        #define L_ALT     15
+        #define L_SHFT    16
+        #define R_SHFT    19
+        #define R_ALT     20
+        #define R_CTRL    21
+
         #include "./combos/shared.dtsi"
-
-
-        /* Vowels and Accents */
-
-        l0_combo_accent_a_alt {
-            bindings = <&mp_a>; /* Label: á Á*/
-            key-positions = <13 R_ALT>;
-            layers = <0>;
-        };
-
-        l0_combo_accent_e_alt {
-            bindings = <&mp_e>; /* Label: é É*/
-            key-positions = <20 L_ALT>;
-            layers = <0>;
-        };
-
-        l0_combo_accent_i_alt {
-            bindings = <&mp_i>; /* Label: í Í*/
-            key-positions = <21 L_ALT>;
-            layers = <0>;
-        };
-
-        l0_combo_accent_o_alt {
-            bindings = <&mp_o>; /* Label: ó Ó*/
-            key-positions = <22 L_ALT>;
-            layers = <0>;
-        };
-
-        l0_combo_accent_u_alt {
-            bindings = <&mp_u>; /* Label: ú Ú ü Ü */
-            key-positions = <9 L_ALT>;
-            layers = <0>;
-        };
-
-        l0_combo_accent_n_alt {
-            bindings = <&mp_n>; /* Label: ñ Ñ */
-            key-positions = <19 L_ALT>;
-            layers = <0>;
-        };
-
-
-        /* Base Layer */
-
-        l0_combo_quotes_alt {
-            bindings = <&mp_kq_alt>; /* Label: ` ~ */
-            key-positions = <36 R_ALT>;
-            layers = <0>;
-        };
-
-        l0_combo_operators_alt {
-            bindings = <&mp_ko_alt>; /* Label: = * */
-            key-positions = <10 L_ALT>;
-            layers = <0>;
-        };
-
-        l0_combo_logic_alt {
-            bindings = <&mp_kl_alt>; /* Label: ? | */
-            key-positions = <34 L_ALT>;
-            layers = <0>;
-        };
-
-        l0_combo_brackets_alt {
-            bindings = <&mp_kb_alt>; /* Label: [] () */
-            key-positions = <35 L_ALT>;
-            layers = <0>;
-        };
-
-        l0_combo_brackets_alt_ctrl {
-            bindings = <&m_ba_r>; /* Label: <█/> */
-            key-positions = <35 L_CTRL L_ALT>;
-            layers = <0>;
-        };
-
-
-        /* Dev Layer */
-
-        l1_combo_dev_left_angle_alt {
-            bindings = <&mp_d_la_alt>; /* Label: <= </> */
-            key-positions = <26 R_ALT>;
-            layers = <1>;
-        };
-
-        l1_combo_dev_left_angle_alt_ctrl {
-            bindings = <&m_ba_r>; /* Label: <█/> */
-            key-positions = <26 R_ALT R_CTRL>;
-            layers = <1>;
-        };
-
-        l1_combo_dev_right_angle_alt {
-            bindings = <&m_gtoe>; /* Label: >= */
-            key-positions = <27 R_ALT>;
-            layers = <1>;
-        };
-
-        l1_combo_dev_multiply {
-            bindings = <&m_d_mao>; /* Label: *= */
-            key-positions = <28 R_ALT>;
-            layers = <1>;
-        };
-
-        l1_combo_dev_divide {
-            bindings = <&m_d_dao>; /* Label: /= */
-            key-positions = <30 L_ALT>;
-            layers = <1>;
-        };
-
-        l1_combo_dev_sum {
-            bindings = <&m_d_aao>; /* Label: += */
-            key-positions = <3 L_ALT>;
-            layers = <1>;
-        };
-
-        l1_combo_dev_equal {
-            bindings = <&m_d_se>; /* Label: === */
-            key-positions = <4 L_ALT>;
-            layers = <1>;
-        };
+        #include "./combos/accents.dtsi"
+        #include "./combos/base.dtsi"
+        #include "./combos/dev.dtsi"
     };
 
     macros {
