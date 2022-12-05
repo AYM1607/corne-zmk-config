@@ -129,3 +129,19 @@ m_d_a: macro_dev_arrow {
     bindings =
         <&macro_tap     &kp EQUAL &kp GT>;
 };
+
+m_d_la: macro_dev_logical_and {
+    compatible = "zmk,behavior-macro";
+    label = "&&";
+    #binding-cells = <0>;
+    bindings =
+        <&macro_tap     &kp AMPS &kp AMPS>;
+};
+
+m_d_laao: macro_dev_logical_and_assignment_operator {
+    compatible = "zmk,behavior-macro";
+    label = "&&=";
+    #binding-cells = <0>;
+    bindings =
+        <&macro_tap     &kp AMPS &kp AMPS &kp EQUAL>;
+};
