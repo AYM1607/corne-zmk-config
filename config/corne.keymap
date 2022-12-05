@@ -22,7 +22,30 @@
 #define ACT_NUM  2
 #define SETTINGS 3
 
+/* Keys */
+#define NAV_LEFT    &mt HOME     LEFT    // tap: left      | long-tap: beginning of line
+#define NAV_RIGHT   &mt END      RIGHT   // tap: right     | long-tap: end       of line
+#define NAV_UP      &mt LC(HOME) UP      // tap: up        | long-tap: beginning of document
+#define NAV_DOWN    &mt LC(END)  DOWN    // tap: down      | long-tap: end       of document
+#define NAV_BSPC    &mt LC(BSPC) BSPC    // tap: bspc      | long-tap: delete word backward
+#define NAV_DEL     &mt LC(DEL)  DEL     // tap: del       | long-tap: delete word forward
+#define NAV_PREV    &mt RC(PG_UP) PG_DN  // tap: page down | long-tap: previous tab
+#define NAV_NEXT    &mt RC(PG_DN) PG_UP  // tap: page up   | long-tap: next     tab
 
+#define KEY_UNDO    &kp RC(Z)            // tap: undo
+#define KEY_REDO    &kp RC(Y)            // tap: redo
+#define KEY_CUT     &kp RC(X)            // tap: cut
+#define KEY_COPY    &kp RC(C)            // tap: copy
+#define KEY_PASTE   &mt RC(V) RC(RS(V))  // tap: paste  | long-tap: paste without format
+#define KEY_RET     &mt F2 RET           // tap: return | long-tap: rename (like macOs)
+
+#define ZOOM_IN     &kp RC(PLUS)         // tap: zoom in
+#define ZOOM_RST    &kp RC(N0)           // tap: zoom reset
+#define ZOOM_OUT    &kp RC(MINUS)        // tap: zoom out
+
+#define CANCEL      &kp K_CANCEL         // cancel caps-word and num-word
+#define DSK_PREV    &kp LG(LC(LEFT))     // previous desktop
+#define DSK_NEXT    &kp LG(LC(RIGHT))    // next     desktop
 
 / {
     behaviors {
@@ -60,33 +83,11 @@
     keymap {
         compatible = "zmk,keymap";
 
-        /* Keys */
-        #define NAV_LEFT    &mt HOME     LEFT    // tap: left  | long-tap: beginning of line
-        #define NAV_RIGHT   &mt END      RIGHT   // tap: right | long-tap: end       of line
-        #define NAV_UP      &mt LC(HOME) UP      // tap: up    | long-tap: beginning of document
-        #define NAV_DOWN    &mt LC(END)  DOWN    // tap: down  | long-tap: end       of document
-        #define NAV_BSPC    &mt LC(BSPC) BSPC    // tap: bspc  | long-tap: delete word backward
-        #define NAV_DEL     &mt LC(DEL)  DEL     // tap: del   | long-tap: delete word forward
-
-        #define KEY_UNDO    &kp RC(Z)            // tap: undo
-        #define KEY_REDO    &kp RC(Y)            // tap: redo
-        #define KEY_CUT     &kp RC(X)            // tap: cut
-        #define KEY_COPY    &kp RC(C)            // tap: copy
-        #define KEY_PASTE   &mt RC(V) RC(RS(V))  // tap: paste | long-tap: paste without format
-
-        #define ZOOM_IN     &kp RC(PLUS)         // tap: zoom in
-        #define ZOOM_RST    &kp RC(N0)           // tap: zoom reset
-        #define ZOOM_OUT    &kp RC(MINUS)        // tap: zoom out
-
-        #define CANCEL      &kp K_CANCEL         // cancel caps-word and num-word
-        #define DSK_PREV    &kp LG(LC(LEFT))     // previous desktop
-        #define DSK_NEXT    &kp LG(LC(RIGHT))    // next     desktop
-
         base_layer {
             bindings = <
- &kp ESC       &kp Q        &kp W       &kp F        &kp P  &kp B           &kp J        &kp L       &kp U        &kp Y      &mp_ko       &mp_bd
-  &mp_bc  &hm LCMD A  &hm LCTRL R  &hm LALT S  &hm LSHFT T  &kp G           &kp M  &hm RSHFT N  &hm RALT E  &hm RCTRL I  &hm RCMD O   &mt F2 RET
- &kp TAB       &kp Z        &kp X       &kp C        &kp D  &kp V           &kp K        &kp H   &kp COMMA      &kp DOT      &mp_kl       &mp_kb
+ &kp ESC       &kp Q        &kp W       &kp F        &kp P  &kp B           &kp J        &kp L       &kp U        &kp Y      &mp_ko   &mp_bd
+  &mp_bc  &hm LCMD A  &hm LCTRL R  &hm LALT S  &hm LSHFT T  &kp G           &kp M  &hm RSHFT N  &hm RALT E  &hm RCTRL I  &hm RCMD O  KEY_RET
+ &kp TAB       &kp Z        &kp X       &kp C        &kp D  &kp V           &kp K        &kp H   &kp COMMA      &kp DOT      &mp_kl   &mp_kb
                                        &mp_kq    &kp SPACE  &to 2           &to 1    &kp SPACE       &to 3
             >;
         };
@@ -94,7 +95,7 @@
         dev_layer {
             bindings = <
    &kp ESC  &kp AT  &kp POUND   &mp_d_m    &mp_d_p    &kp DQT          &kp TILDE      &none  &kp UNDER  &kp PRCNT  &kp CARET       &mp_bd
-    &mp_bc   &none   &kp LBRC  &kp RBRC    &mp_d_e    &kp SQT          &kp GRAVE      &none   &kp LBKT   &kp RBKT      &none   &mt F2 RET
+    &mp_bc   &none   &kp LBRC  &kp RBRC    &mp_d_e    &kp SQT          &kp GRAVE      &none   &kp LBKT   &kp RBKT      &none      KEY_RET
    &kp TAB  &mp_kn   &mp_d_la  &mp_d_ra    &mp_d_a   &kp BSLH           &kp FSLH      &none   &kp LPAR   &kp RPAR      &none  &key_repeat
                                &mp_d_cs  &kp SPACE      &to 2              &to 0  &kp SPACE   &mp_d_dc
             >;
@@ -102,10 +103,10 @@
 
         act_num_layer {
             bindings = <
- &kp ESC   &kp PG_DN   &kp RC(PG_DN)    NAV_UP  &kp RC(PG_UP)  &kp PG_UP            &kp KP_PLUS  &mp_kn_f9  &mp_kn_f10  &mp_kn_f11  &mp_kn_f12       &mp_bd
-  &mp_bc   &kp PSCRN        NAV_LEFT  NAV_DOWN      NAV_RIGHT    &mp_kbd                &mp_k_m  &mp_kn_f5   &mp_kn_f6   &mp_kn_f7   &mp_kn_f8   &mt F2 RET
- &kp TAB    KEY_UNDO         KEY_CUT  KEY_COPY      KEY_PASTE   KEY_REDO              &kp KP_N0  &mp_kn_f1   &mp_kn_f2   &mp_kn_f3   &mp_kn_f4  &key_repeat
-                                        &mp_kn      &kp SPACE      &to 1                  &to 0  &kp SPACE  &kp KP_DOT
+ &kp ESC    NAV_PREV  DSK_PREV    NAV_UP   DSK_NEXT   NAV_NEXT            &kp KP_PLUS  &mp_kn_f9  &mp_kn_f10  &mp_kn_f11  &mp_kn_f12       &mp_bd
+  &mp_bc   &kp PSCRN  NAV_LEFT  NAV_DOWN  NAV_RIGHT    &mp_kbd                &mp_k_m  &mp_kn_f5   &mp_kn_f6   &mp_kn_f7   &mp_kn_f8      KEY_RET
+ &kp TAB    KEY_UNDO   KEY_CUT  KEY_COPY  KEY_PASTE   KEY_REDO              &kp KP_N0  &mp_kn_f1   &mp_kn_f2   &mp_kn_f3   &mp_kn_f4  &key_repeat
+                                  &mp_kn  &kp SPACE      &to 1                  &to 0  &kp SPACE  &kp KP_DOT
             >;
         };
 
@@ -113,7 +114,7 @@
             bindings = <
  &bootloader  &none    &bt BT_PRV    &bt BT_CLR    &bt BT_NXT   ZOOM_IN          &kp C_VOL_UP         &none     &kp C_STOP       &none  &none  &bootloader
       &none   &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  ZOOM_RST            &kp C_MUTE    &kp C_PREV       &kp C_PP  &kp C_NEXT  &none        &none
-      &none   &none  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 5  ZOOM_OUT         &kp C_VOL_DN         &none  &kp C_SHUFFLE       &none  &none        &none
+      &none   &none  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 5  ZOOM_OUT          &kp C_VOL_DN         &none  &kp C_SHUFFLE       &none  &none        &none
                                           &none  &kp C_BRI_DN     &to 0                 &to 0  &kp C_BRI_UP          &none
             >;
         };

@@ -1,7 +1,7 @@
 mp_kbd: morph_key_browser_debug {
     compatible = "zmk,behavior-mod-morph";
-    label = "MORPH KEY BROWSER: CTRL+SHIFT_R CTRL+SHIFT+I";
+    label = "CTRL+R CTRL+SHIFT+R";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&kp RC(RS(R))>, <&kp RC(RS(I))>;
+    bindings = <&kp RC(R)>, <&kp RC(RS(R))>;
 };
