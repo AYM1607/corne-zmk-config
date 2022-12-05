@@ -1,16 +1,16 @@
 l1_combo_dev_less_than_alt {
-    bindings = <&mp_d_lt_alt>; /* Label: <= </> */
-    key-positions = <26 R_ALT>;
+    bindings = <&mp_d_lt_alt>; /* Label: <= </░> */
+    key-positions = <32 L_ALT>;
     layers = <1>;
 };
 
-l1_combo_dev_left_angle_alt_ctrl {
-    bindings = <&m_ba_r>; /* Label: <█/> */
-    key-positions = <26 R_ALT R_CTRL>;
+l1_combo_dev_brackets_angular_ctrl_shift {
+    bindings = <&m_ba_r>; /* Label: <░/> */
+    key-positions = <32 L_CTRL L_SHFT>;
     layers = <1>;
 };
 
-l1_combo_dev_right_angle_alt {
+l1_combo_dev_greater_than_alt {
     bindings = <&m_gtoe>; /* Label: >= */
     key-positions = <27 R_ALT>;
     layers = <1>;
