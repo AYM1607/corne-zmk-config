@@ -22,6 +22,22 @@ mp_d_ra: morph_dev_right_angle {
     bindings = <&kp GT>, <&m_rda>;
 };
 
+mp_d_cs: morph_dev_comma_semi {
+    compatible = "zmk,behavior-mod-morph";
+    label = ", ;";
+    #binding-cells = <0>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+    bindings = <&kp COMMA>, <&kp SEMI>;
+};
+
+mp_d_dc: morph_dev_dot_colon {
+    compatible = "zmk,behavior-mod-morph";
+    label = ". :";
+    #binding-cells = <0>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+    bindings = <&kp DOT>, <&kp COLON>;
+};
+
 mp_d_a: morph_dev_asterisk {
     compatible = "zmk,behavior-mod-morph";
     label = "* **";

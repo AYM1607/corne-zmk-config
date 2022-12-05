@@ -22,7 +22,7 @@
 #define ACT_NUM  2
 #define SETTINGS 3
 
-/* Custom Keys */
+/* Keys */
 #define NAV_LEFT    &mt HOME     LEFT    // tap: left      | long-tap: beginning of line
 #define NAV_RIGHT   &mt END      RIGHT   // tap: right     | long-tap: end       of line
 #define NAV_UP      &mt LC(HOME) UP      // tap: up        | long-tap: beginning of document
@@ -87,7 +87,7 @@
             bindings = <
  &kp ESC       &kp Q        &kp W       &kp F        &kp P  &kp B           &kp J        &kp L       &kp U        &kp Y      &mp_ko   &mp_bd
   &mp_bc  &hm LCMD A  &hm LCTRL R  &hm LALT S  &hm LSHFT T  &kp G           &kp M  &hm RSHFT N  &hm RALT E  &hm RCTRL I  &hm RCMD O  KEY_RET
- &kp TAB       &kp Z        &kp X       &kp C        &kp D  &kp V           &kp K        &kp H    &mp_d_cs     &mp_d_dc      &mp_kl   &mp_kb
+ &kp TAB       &kp Z        &kp X       &kp C        &kp D  &kp V           &kp K        &kp H   &kp COMMA      &kp DOT      &mp_kl   &mp_kb
                                        &mp_kq    &kp SPACE  &to 2           &to 1    &kp SPACE       &to 3
             >;
         };

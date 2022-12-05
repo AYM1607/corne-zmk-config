@@ -1,6 +1,6 @@
 m_ba_h: macro_brackets_angle_html {
     compatible = "zmk,behavior-macro";
-    label = "</░>";
+    label = "</█>";
     #binding-cells = <0>;
     bindings =
         <&macro_tap     &kp LT &kp FSLH &kp GT &kp LEFT>;
@@ -8,7 +8,7 @@ m_ba_h: macro_brackets_angle_html {
 
 m_ba_r: macro_brackets_angle_react {
     compatible = "zmk,behavior-macro";
-    label = "<░/>";
+    label = "<█/>";
     #binding-cells = <0>;
     bindings =
         <&macro_tap     &kp LT &kp FSLH &kp GT &kp LEFT &kp LEFT>;
@@ -16,7 +16,7 @@ m_ba_r: macro_brackets_angle_react {
 
 m_bs: macro_brackets_square {
     compatible = "zmk,behavior-macro";
-    label = "[░]";
+    label = "[█]";
     #binding-cells = <0>;
     bindings =
         <&macro_tap     &kp LBKT &kp RBKT &kp LEFT>;
@@ -24,7 +24,7 @@ m_bs: macro_brackets_square {
 
 m_bc: macro_brackets_curly {
     compatible = "zmk,behavior-macro";
-    label = "{░}";
+    label = "{█}";
     #binding-cells = <0>;
     bindings =
         <&macro_tap     &kp LBRC &kp RBRC &kp LEFT>;
@@ -32,7 +32,7 @@ m_bc: macro_brackets_curly {
 
 m_br: macro_brackets_round {
     compatible = "zmk,behavior-macro";
-    label = "(░)";
+    label = "(█)";
     #binding-cells = <0>;
     bindings =
         <&macro_tap     &kp LPAR &kp RPAR &kp LEFT>;
