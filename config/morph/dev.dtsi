@@ -53,3 +53,11 @@ mp_d_m: morph_dev_money {
     mods = <(MOD_LSFT|MOD_RSFT)>;
     bindings = <&kp DLLR>, <&m_d_euro>;
 };
+
+mp_d_la: morph_dev_logical_and {
+    compatible = "zmk,behavior-mod-morph";
+    label = "& &&";
+    #binding-cells = <0>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+    bindings = <&kp AMPS>, <&m_d_la>;
+};
