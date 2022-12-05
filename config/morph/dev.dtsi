@@ -1,0 +1,71 @@
+mp_d_la: morph_dev_left_angle {
+    compatible = "zmk,behavior-mod-morph";
+    label = "< «";
+    #binding-cells = <0>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+    bindings = <&kp LT>, <&m_lda>;
+};
+
+mp_d_la_alt: morph_dev_left_angle_alt {
+    compatible = "zmk,behavior-mod-morph";
+    label = "<= </>";
+    #binding-cells = <0>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+    bindings = <&m_ltoe>, <&m_ba_h>;
+};
+
+mp_d_ra: morph_dev_right_angle {
+    compatible = "zmk,behavior-mod-morph";
+    label = "> »";
+    #binding-cells = <0>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+    bindings = <&kp GT>, <&m_rda>;
+};
+
+mp_d_cs: morph_dev_comma_semi {
+    compatible = "zmk,behavior-mod-morph";
+    label = ", ;";
+    #binding-cells = <0>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+    bindings = <&kp COMMA>, <&kp SEMI>;
+};
+
+mp_d_dc: morph_dev_dot_colon {
+    compatible = "zmk,behavior-mod-morph";
+    label = ". :";
+    #binding-cells = <0>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+    bindings = <&kp DOT>, <&kp COLON>;
+};
+
+mp_d_a: morph_dev_asterisk {
+    compatible = "zmk,behavior-mod-morph";
+    label = "* **";
+    #binding-cells = <0>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+    bindings = <&kp ASTRK>, <&m_d_eo>;
+};
+
+mp_d_p: morph_dev_plus {
+    compatible = "zmk,behavior-mod-morph";
+    label = "+ ++";
+    #binding-cells = <0>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+    bindings = <&kp PLUS>, <&m_d_io>;
+};
+
+mp_d_e: morph_dev_equal {
+    compatible = "zmk,behavior-mod-morph";
+    label = "= =>";
+    #binding-cells = <0>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+    bindings = <&kp EQUAL>, <&m_d_a>;
+};
+
+mp_d_m: morph_dev_money {
+    compatible = "zmk,behavior-mod-morph";
+    label = "$ €";
+    #binding-cells = <0>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+    bindings = <&kp DLLR>, <&m_d_euro>;
+};
