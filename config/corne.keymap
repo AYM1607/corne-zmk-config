@@ -94,9 +94,9 @@
 
         dev_layer {
             bindings = <
-   &kp ESC  &kp AT  &kp POUND   &mp_d_m    &mp_d_p    &kp DQT          &kp TILDE      &none  &kp UNDER  &kp PRCNT  &kp CARET       &mp_bd
-    &mp_bc   &none   &kp LBRC  &kp RBRC    &mp_d_e    &kp SQT          &kp GRAVE      &none   &kp LBKT   &kp RBKT      &none      KEY_RET
-   &kp TAB  &mp_kn   &mp_d_la  &mp_d_ra    &mp_d_a   &kp BSLH           &kp FSLH      &none   &kp LPAR   &kp RPAR      &none  &key_repeat
+   &kp ESC    &kp AT  &kp POUND   &mp_d_m    &mp_d_p    &kp DQT          &kp TILDE      &none  &kp UNDER  &kp PRCNT  &kp CARET       &mp_bd
+    &mp_bc  &mp_d_la   &kp LBRC  &kp RBRC    &mp_d_e    &kp SQT          &kp GRAVE      &none   &kp LBKT   &kp RBKT      &none      KEY_RET
+   &kp TAB    &mp_kn   &mp_d_la  &mp_d_ra    &mp_d_a   &kp BSLH           &kp FSLH      &none   &kp LPAR   &kp RPAR      &none  &key_repeat
                                &mp_d_cs  &kp SPACE      &to 2              &to 0  &kp SPACE   &mp_d_dc
             >;
         };
