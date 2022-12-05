@@ -1,4 +1,4 @@
-mp_d_la: morph_dev_left_angle {
+mp_d_lt: morph_dev_less_than {
     compatible = "zmk,behavior-mod-morph";
     label = "< «";
     #binding-cells = <0>;
@@ -6,7 +6,7 @@ mp_d_la: morph_dev_left_angle {
     bindings = <&kp LT>, <&m_lda>;
 };
 
-mp_d_la_alt: morph_dev_left_angle_alt {
+mp_d_lt_alt: morph_dev_less_than_alt {
     compatible = "zmk,behavior-mod-morph";
     label = "<= </>";
     #binding-cells = <0>;

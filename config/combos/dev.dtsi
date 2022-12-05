@@ -1,5 +1,5 @@
-l1_combo_dev_left_angle_alt {
-    bindings = <&mp_d_la_alt>; /* Label: <= </> */
+l1_combo_dev_less_than_alt {
+    bindings = <&mp_d_lt_alt>; /* Label: <= </> */
     key-positions = <26 R_ALT>;
     layers = <1>;
 };
