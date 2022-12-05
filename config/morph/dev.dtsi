@@ -14,7 +14,7 @@ mp_d_lt_alt: morph_dev_less_than_alt {
     bindings = <&m_ltoe>, <&m_ba_h>;
 };
 
-mp_d_ra: morph_dev_right_angle {
+mp_d_gt: morph_dev_greater_than {
     compatible = "zmk,behavior-mod-morph";
     label = "> »";
     #binding-cells = <0>;
