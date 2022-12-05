@@ -96,7 +96,7 @@
             bindings = <
    &kp ESC     &kp AT  &kp POUND   &mp_d_m    &mp_d_p    &kp DQT          &kp TILDE      &none  &kp UNDER  &kp PRCNT  &kp CARET       &mp_bd
     &mp_bc  &mp_d_lao   &kp LBRC  &kp RBRC    &mp_d_e    &kp SQT          &kp GRAVE      &none   &kp LBKT   &kp RBKT      &none      KEY_RET
-   &kp TAB     &mp_kn   &mp_d_lt  &mp_d_gt    &mp_d_a   &kp BSLH           &kp FSLH      &none   &kp LPAR   &kp RPAR      &none  &key_repeat
+   &kp TAB     &mp_kn   &kp LPAR  &kp RPAR    &mp_d_a   &kp BSLH           &kp FSLH      &none   &mp_d_lt   &mp_d_gt      &none  &key_repeat
                                &mp_d_cs  &kp SPACE      &to 2              &to 0  &kp SPACE   &mp_d_dc
             >;
         };
