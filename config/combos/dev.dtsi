@@ -1,12 +1,12 @@
-l1_combo_dev_left_angle_alt {
-    bindings = <&mp_d_la_alt>; /* Label: <= </> */
+l1_combo_dev_less_than_alt {
+    bindings = <&mp_d_lt_alt>; /* Label: <= </> */
     key-positions = <26 R_ALT>;
     layers = <1>;
 };
 
-l1_combo_dev_left_angle_alt_ctrl {
-    bindings = <&m_ba_r>; /* Label: <█/> */
-    key-positions = <26 R_ALT R_CTRL>;
+l1_combo_dev_react {
+    bindings = <&m_ba_r>; /* Label: <░/> */
+    key-positions = <26 R_CTRL R_SHIFT>;
     layers = <1>;
 };
 
