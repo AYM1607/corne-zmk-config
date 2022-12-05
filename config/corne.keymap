@@ -26,43 +26,7 @@
 
 / {
     behaviors {
-        /* Shared */
-
-        hm: homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW MODS";
-            #binding-cells = <2>;
-            tapping-term-ms = <300>;
-            quick-tap-ms = <200>;
-            flavor = "tap-preferred";
-            bindings =
-                <&kp>,
-                <&kp>;
-        };
-
-        cw: caps_word {
-            compatible = "zmk,behavior-caps-word";
-            label = "CAPS WORD";
-            #binding-cells = <0>;
-            continue-list = <UNDERSCORE MINUS BACKSPACE DEL>;
-        };
-
-        mp_bd: morph_backspace_del {
-            compatible = "zmk,behavior-mod-morph";
-            label = "BACKSPACE DELETE";
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-            bindings = <&mt LC(BSPC) BSPC>, <&mt LC(DEL) DEL>;
-        };
-
-        mp_bc: morph_backspace_caps {
-            compatible = "zmk,behavior-mod-morph";
-            label = "BACKSPACE CAPS_LOCK";
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-            bindings = <&mt LC(BSPC) BSPC>, <&kp CLCK>;
-        };
-
+        #include "./morph/shared.dtsi"
 
 
         /* Base Layer */
