@@ -1,4 +1,4 @@
-l0_combo_accent_a_alt {
+combo_actions_dev_tools {
     bindings = <&kp RC(RS(I))>; /* Label: open dev tools */
     key-positions = <17 R_ALT>;
     layers = <2>;
