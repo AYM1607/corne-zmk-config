@@ -54,7 +54,7 @@ mp_d_m: morph_dev_money {
     bindings = <&kp DLLR>, <&m_d_euro>;
 };
 
-mp_d_la: morph_dev_logical_and {
+mp_d_lao: morph_dev_logical_and_operator {
     compatible = "zmk,behavior-mod-morph";
     label = "& &&";
     #binding-cells = <0>;

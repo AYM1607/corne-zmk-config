@@ -39,3 +39,9 @@ l1_combo_dev_equal {
     key-positions = <4 L_ALT>;
     layers = <1>;
 };
+
+l1_combo_dev_logical_and {
+    bindings = <&m_d_laao>; /* Label: &&= */
+    key-positions = <13 R_ALT>;
+    layers = <1>;
+};
