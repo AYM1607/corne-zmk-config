@@ -48,16 +48,16 @@ mp_kl_alt: morph_key_logic_alt {
 
 mp_kb: morph_key_brackets {
     compatible = "zmk,behavior-mod-morph";
-    label = "{} </>";
+    label = "{} ()";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&m_bc>, <&m_ba_h>;
+    bindings = <&m_bc>, <&m_br>;
 };
 
 mp_kb_alt: morph_key_brackets_alt {
     compatible = "zmk,behavior-mod-morph";
-    label = "[] ()";
+    label = "[] </░>";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&m_bs>, <&m_br>;
+    bindings = <&m_bs>, <&m_ba_h>;
 };
