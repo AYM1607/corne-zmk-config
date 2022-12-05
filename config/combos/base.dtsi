@@ -17,13 +17,13 @@ l0_combo_logic_alt {
 };
 
 l0_combo_brackets_alt {
-    bindings = <&mp_kb_alt>; /* Label: [] </░> */
+    bindings = <&mp_kb_alt>; /* Label: [] () */
     key-positions = <35 L_ALT>;
     layers = <0>;
 };
 
-l0_combo_brackets_ctrl_shift {
-    bindings = <&m_ba_r>; /* Label: <░/> */
-    key-positions = <35 L_CTRL L_SHIFT>;
+l0_combo_brackets_alt_ctrl {
+    bindings = <&m_ba_r>; /* Label: <█/> */
+    key-positions = <35 L_CTRL L_ALT>;
     layers = <0>;
 };
