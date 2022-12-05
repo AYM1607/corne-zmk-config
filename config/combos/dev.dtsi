@@ -1,46 +1,46 @@
-l1_combo_dev_less_than_alt {
+combo_dev_less_than_alt {
     bindings = <&mp_d_lt_alt>; /* Label: <= </░> */
     key-positions = <32 L_ALT>;
     layers = <1>;
 };
 
-l1_combo_dev_brackets_angular_ctrl_shift {
+combo_dev_brackets_angular_ctrl_shift {
     bindings = <&m_ba_r>; /* Label: <░/> */
     key-positions = <32 L_CTRL L_SHFT>;
     layers = <1>;
 };
 
-l1_combo_dev_greater_than_alt {
+combo_dev_greater_than_alt {
     bindings = <&m_gtoe>; /* Label: >= */
     key-positions = <27 R_ALT>;
     layers = <1>;
 };
 
-l1_combo_dev_multiply {
+combo_dev_multiply {
     bindings = <&m_d_mao>; /* Label: *= */
     key-positions = <28 R_ALT>;
     layers = <1>;
 };
 
-l1_combo_dev_divide {
+combo_dev_divide {
     bindings = <&m_d_dao>; /* Label: /= */
     key-positions = <30 L_ALT>;
     layers = <1>;
 };
 
-l1_combo_dev_sum {
+combo_dev_sum {
     bindings = <&m_d_aao>; /* Label: += */
     key-positions = <3 L_ALT>;
     layers = <1>;
 };
 
-l1_combo_dev_equal {
+combo_dev_equal {
     bindings = <&m_d_se>; /* Label: === */
     key-positions = <4 L_ALT>;
     layers = <1>;
 };
 
-l1_combo_dev_logical_and {
+combo_dev_logical_and {
     bindings = <&m_d_laao>; /* Label: &&= */
     key-positions = <13 R_ALT>;
     layers = <1>;
