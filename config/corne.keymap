@@ -61,23 +61,26 @@
         compatible = "zmk,keymap";
 
         /* Keys */
-        #define NAV_LEFT  &mt HOME     LEFT    // tap: left  | long-tap: beginning of line
-        #define NAV_RIGHT &mt END      RIGHT   // tap: right | long-tap: end       of line
-        #define NAV_UP    &mt LC(HOME) UP      // tap: up    | long-tap: beginning of document
-        #define NAV_DOWN  &mt LC(END)  DOWN    // tap: down  | long-tap: end       of document
-        #define NAV_BSPC  &mt LC(BSPC) BSPC    // tap: bspc  | long-tap: delete word backward
-        #define NAV_DEL   &mt LC(DEL)  DEL     // tap: del   | long-tap: delete word forward
+        #define NAV_LEFT    &mt HOME     LEFT    // tap: left  | long-tap: beginning of line
+        #define NAV_RIGHT   &mt END      RIGHT   // tap: right | long-tap: end       of line
+        #define NAV_UP      &mt LC(HOME) UP      // tap: up    | long-tap: beginning of document
+        #define NAV_DOWN    &mt LC(END)  DOWN    // tap: down  | long-tap: end       of document
+        #define NAV_BSPC    &mt LC(BSPC) BSPC    // tap: bspc  | long-tap: delete word backward
+        #define NAV_DEL     &mt LC(DEL)  DEL     // tap: del   | long-tap: delete word forward
 
-        #define KEY_UNDO  &kp RC(Z)            // tap: undo
-        #define KEY_REDO  &kp RC(Y)            // tap: redo
+        #define KEY_UNDO    &kp RC(Z)            // tap: undo
+        #define KEY_REDO    &kp RC(Y)            // tap: redo
+        #define KEY_CUT     &kp RC(X)            // tap: cut
+        #define KEY_COPY    &kp RC(C)            // tap: copy
+        #define KEY_PASTE   &mt RC(V) RC(RS(V))  // tap: paste | long-tap: paste without format
 
-        #define KEY_CUT   &kp RC(X)            // tap: cut
-        #define KEY_COPY  &kp RC(C)            // tap: copy
-        #define KEY_PASTE &mt RC(V) RC(RS(V))  // tap: paste | long-tap: paste without format
+        #define ZOOM_IN     &kp RC(PLUS)         // tap: zoom in
+        #define ZOOM_RST    &kp RC(N0)           // tap: zoom reset
+        #define ZOOM_OUT    &kp RC(MINUS)        // tap: zoom out
 
-        #define CANCEL      &kp K_CANCEL       // cancel caps-word and num-word
-        #define DSK_PREV    &kp LG(LC(LEFT))   // previous desktop
-        #define DSK_NEXT    &kp LG(LC(RIGHT))  // next     desktop
+        #define CANCEL      &kp K_CANCEL         // cancel caps-word and num-word
+        #define DSK_PREV    &kp LG(LC(LEFT))     // previous desktop
+        #define DSK_NEXT    &kp LG(LC(RIGHT))    // next     desktop
 
         base_layer {
             bindings = <
