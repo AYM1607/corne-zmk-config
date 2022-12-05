@@ -22,8 +22,8 @@ l0_combo_brackets_alt {
     layers = <0>;
 };
 
-l0_combo_brackets_alt_ctrl {
-    bindings = <&m_ba_r>; /* Label: <█/> */
-    key-positions = <35 L_CTRL L_ALT>;
+l0_combo_brackets_ctrl_shift {
+    bindings = <&m_ba_r>; /* Label: <░/> */
+    key-positions = <35 L_CTRL L_SHIFT>;
     layers = <0>;
 };
