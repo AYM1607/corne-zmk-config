@@ -26,12 +26,12 @@
 
 / {
     behaviors {
-        #include "./morph/shared.dtsi"
-        #include "./morph/base.dtsi"
-        #include "./morph/accents.dtsi"
-        #include "./morph/num.dtsi"
-        #include "./morph/actions.dtsi"
-        #include "./morph/dev.dtsi"
+        #include "morph/shared.dtsi"
+        #include "morph/base.dtsi"
+        #include "morph/accents.dtsi"
+        #include "morph/num.dtsi"
+        #include "morph/actions.dtsi"
+        #include "morph/dev.dtsi"
     };
 
     combos {
@@ -45,16 +45,16 @@
         #define R_ALT     20
         #define R_CTRL    21
 
-        #include "./combos/shared.dtsi"
-        #include "./combos/accents.dtsi"
-        #include "./combos/base.dtsi"
-        #include "./combos/dev.dtsi"
+        #include "combos/shared.dtsi"
+        #include "combos/accents.dtsi"
+        #include "combos/base.dtsi"
+        #include "combos/dev.dtsi"
     };
 
     macros {
-        #include "./macros/accents.dtsi"
-        #include "./macros/num.dtsi"
-        #include "./macros/dev.dtsi"
+        #include "macros/accents.dtsi"
+        #include "macros/num.dtsi"
+        #include "macros/dev.dtsi"
     };
 
     keymap {
