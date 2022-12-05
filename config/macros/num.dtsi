@@ -1,0 +1,29 @@
+m_no: macro_number_ordinal {
+    compatible = "zmk,behavior-macro";
+    label = "°";
+    #binding-cells = <0>;
+    bindings =
+        <&macro_press   &kp RALT>,
+        <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N7 &kp KP_N0>,
+        <&macro_release &kp RALT>;
+};
+
+m_nd: macro_number_degree {
+    compatible = "zmk,behavior-macro";
+    label = "ª";
+    #binding-cells = <0>;
+    bindings =
+        <&macro_press   &kp RALT>,
+        <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N7 &kp KP_N6>,
+        <&macro_release &kp RALT>;
+};
+
+m_d_euro: macro_euro {
+    compatible = "zmk,behavior-macro";
+    label = "€";
+    #binding-cells = <0>;
+    bindings =
+        <&macro_press   &kp RALT>,
+        <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N2 &kp KP_N8>,
+        <&macro_release &kp RALT>;
+};
