@@ -32,3 +32,19 @@ mp_bc: morph_backspace_caps {
     mods = <(MOD_LSFT|MOD_RSFT)>;
     bindings = <NAV_BSPC>, <&kp CLCK>;
 };
+
+mp_d_cs: morph_dev_comma_semi {
+    compatible = "zmk,behavior-mod-morph";
+    label = ", ;";
+    #binding-cells = <0>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+    bindings = <&kp COMMA>, <&kp SEMI>;
+};
+
+mp_d_dc: morph_dev_dot_colon {
+    compatible = "zmk,behavior-mod-morph";
+    label = ". :";
+    #binding-cells = <0>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+    bindings = <&kp DOT>, <&kp COLON>;
+};
