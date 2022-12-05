@@ -75,10 +75,6 @@
         #define KEY_COPY  &kp RC(C)            // tap: copy
         #define KEY_PASTE &mt RC(V) RC(RS(V))  // tap: paste | long-tap: paste without format
 
-
-        #define --- &none
-        #define ___ &trans
-
         #define CANCEL      &kp K_CANCEL       // cancel caps-word and num-word
         #define DSK_PREV    &kp LG(LC(LEFT))   // previous desktop
         #define DSK_NEXT    &kp LG(LC(RIGHT))  // next     desktop
@@ -103,10 +99,10 @@
 
         act_num_layer {
             bindings = <
- &kp ESC   &kp PG_DN  &kp RC(PG_DN)     NAV_UP  &kp RC(PG_UP)  &kp PG_UP            &kp KP_PLUS  &mp_kn_f9  &mp_kn_f10  &mp_kn_f11  &mp_kn_f12       &mp_bd
-  &mp_bc   &kp PSCRN       NAV_LEFT   NAV_DOWN      NAV_RIGHT    &mp_kbd                &mp_k_m  &mp_kn_f5   &mp_kn_f6   &mp_kn_f7   &mp_kn_f8   &mt F2 RET
- &kp TAB    KEY_UNDO        KEY_CUT   KEY_COPY      KEY_PASTE   KEY_REDO              &kp KP_N0  &mp_kn_f1   &mp_kn_f2   &mp_kn_f3   &mp_kn_f4  &key_repeat
-                                        &mp_kn      &kp SPACE      &to 1                  &to 0  &kp SPACE  &kp KP_DOT
+ &kp ESC   &kp PG_DN   &kp RC(PG_DN)   &mt LC(HOME) UP        &kp RC(PG_UP)  &kp PG_UP            &kp KP_PLUS  &mp_kn_f9  &mp_kn_f10  &mp_kn_f11  &mp_kn_f12       &mp_bd
+  &mp_bc   &kp PSCRN   &mt HOME LEFT  &mt LC(END) DOWN        &mt END RIGHT    &mp_kbd                &mp_k_m  &mp_kn_f5   &mp_kn_f6   &mp_kn_f7   &mp_kn_f8   &mt F2 RET
+ &kp TAB   &kp RC(Z)       &kp RC(X)         &kp RC(C)  &mt RC(V) RC(RS(V))  &kp RC(Y)              &kp KP_N0  &mp_kn_f1   &mp_kn_f2   &mp_kn_f3   &mp_kn_f4  &key_repeat
+                                                &mp_kn            &kp SPACE      &to 1                  &to 0  &kp SPACE  &kp KP_DOT
             >;
         };
 
