@@ -8,7 +8,7 @@ mp_d_lt: morph_dev_less_than {
 
 mp_d_lt_alt: morph_dev_less_than_alt {
     compatible = "zmk,behavior-mod-morph";
-    label = "<= </░>";
+    label = "<= </>";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
     bindings = <&m_ltoe>, <&m_ba_h>;
