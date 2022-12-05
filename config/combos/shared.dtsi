@@ -1,0 +1,4 @@
+combo_caps-word {
+    bindings = <&cw>; /* Label: CAPS WORD*/
+    key-positions = <L_SHFT R_SHFT>;
+};
