@@ -85,10 +85,10 @@
 
         base_layer {
             bindings = <
- &kp ESC       &kp Q        &kp W       &kp F        &kp P  &kp B           &kp J        &kp L       &kp U        &kp Y      &mp_ko   &mp_bd
-  &mp_bc  &hm LCMD A  &hm LCTRL R  &hm LALT S  &hm LSHFT T  &kp G           &kp M  &hm RSHFT N  &hm RALT E  &hm RCTRL I  &hm RCMD O  KEY_RET
- &kp TAB       &kp Z        &kp X       &kp C        &kp D  &kp V           &kp K        &kp H    &mp_d_cs     &mp_d_dc      &mp_kl   &mp_kb
-                                       &mp_kq    &kp SPACE  &to 2           &to 1    &kp SPACE       &to 3
+ &kp ESC       &kp Q        &kp W       &kp F        &kp P    &kp B            &kp J        &kp L       &kp U        &kp Y      &mp_ko   &mp_bd
+  &mp_bc  &hm LCMD A  &hm LCTRL R  &hm LALT S  &hm LSHFT T    &kp G            &kp M  &hm RSHFT N  &hm RALT E  &hm RCTRL I  &hm RCMD O  KEY_RET
+ &kp TAB       &kp Z        &kp X       &kp C        &kp D    &kp V            &kp K        &kp H    &mp_d_cs     &mp_d_dc      &mp_kl   &mp_kb
+                                       &mp_kq    &kp SPACE  &to DEV          &to A+N    &kp SPACE     &to STG
             >;
         };
 
@@ -97,7 +97,7 @@
    &kp ESC     &kp AT  &kp POUND   &mp_d_m    &mp_d_p    &kp DQT          &kp TILDE    &mp_k_m  &kp UNDER  &kp PRCNT  &kp CARET       &mp_bd
     &mp_bc  &mp_d_lao   &kp LBRC  &kp RBRC    &mp_d_e    &kp SQT          &kp GRAVE      &none   &kp LBKT   &kp RBKT  &mp_d_loo      KEY_RET
    &kp TAB     &mp_kn   &kp LPAR  &kp RPAR    &mp_d_a   &kp BSLH           &kp FSLH      &none   &mp_d_lt   &mp_d_gt      &none  &key_repeat
-                                  &mp_d_cs  &kp SPACE      &to 2              &to 0  &kp SPACE   &mp_d_dc
+                                  &mp_d_cs  &kp SPACE    &to DEF            &to A+N  &kp SPACE   &mp_d_dc
             >;
         };
 
@@ -106,7 +106,7 @@
  &kp ESC    NAV_PREV  DSK_PREV    NAV_UP   DSK_NEXT   NAV_NEXT            &kp KP_PLUS  &mp_kn_f9  &mp_kn_f10  &mp_kn_f11  &mp_kn_f12       &mp_bd
   &mp_bc   &kp PSCRN  NAV_LEFT  NAV_DOWN  NAV_RIGHT    &mp_kbd                &mp_k_m  &mp_kn_f5   &mp_kn_f6   &mp_kn_f7   &mp_kn_f8      KEY_RET
  &kp TAB    KEY_UNDO   KEY_CUT  KEY_COPY  KEY_PASTE   KEY_REDO              &kp KP_N0  &mp_kn_f1   &mp_kn_f2   &mp_kn_f3   &mp_kn_f4  &key_repeat
-                                  &mp_kn  &kp SPACE      &to 1                  &to 0  &kp SPACE  &kp KP_DOT
+                                  &mp_kn  &kp SPACE    &to DEF                &to DEV  &kp SPACE  &kp KP_DOT
             >;
         };
 
@@ -115,7 +115,7 @@
  &bootloader  &none    &bt BT_PRV    &bt BT_CLR    &bt BT_NXT   ZOOM_IN          &kp C_VOL_UP         &none     &kp C_STOP       &none  &none  &bootloader
       &none   &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  ZOOM_RST            &kp C_MUTE    &kp C_PREV       &kp C_PP  &kp C_NEXT  &none        &none
       &none   &none  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 5  ZOOM_OUT          &kp C_VOL_DN         &none  &kp C_SHUFFLE       &none  &none        &none
-                                          &none  &kp C_BRI_DN     &to 0                 &to 0  &kp C_BRI_UP          &none
+                                          &none  &kp C_BRI_DN   &to DEF               &to DEV  &kp C_BRI_UP        &to A+N
             >;
         };
     };
