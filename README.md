@@ -106,6 +106,14 @@ Letters, accents for Spanish language and quick shortcuts for most used symbols 
 
 ![Base Layer](./.github/images/0-layer.png)
 
+**Modifiers**
+
+| Combinations                             | Actions               |
+| ---------------------------------------- | --------------------- |
+| <kbd>⇪⌫</kbd>                           | delete word backward   |
+| <kbd>⇪⌦</kbd>                           | delete word forward    |
+| <kbd>⇪⏎</kbd>                           | rename (like macOS)    |
+
 **Spanish**
 
 | Combinations                                        | Key |
@@ -124,14 +132,6 @@ Letters, accents for Spanish language and quick shortcuts for most used symbols 
 | <kbd>⌥</kbd>+<kbd>⇧</kbd>+<kbd>⇪u</kbd>             | Ü   |
 | <kbd>⌥</kbd>+<kbd>n</kbd>                           | ñ   |
 | <kbd>⌥</kbd>+<kbd>⇧</kbd>+<kbd>n</kbd>              | Ñ   |
-
-**Modifiers**
-
-| Combinations                             | Actions               |
-| ---------------------------------------- | --------------------- |
-| <kbd>⇪⌫</kbd>                           | delete word backward   |
-| <kbd>⇪⌦</kbd>                           | delete word forward    |
-| <kbd>⇪⏎</kbd>                           | rename (like macOS)    |
 
 **Symbols**
 
