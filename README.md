@@ -100,7 +100,7 @@ Key modifiers Description
 
 ### Layouts
 
-#### 🔠 0. Base
+#### 0. Base 🔠
 
 Letters, accents for Spanish language and quick shortcuts for most used symbols to "avoid" changing layers.
 
@@ -160,19 +160,19 @@ Letters, accents for Spanish language and quick shortcuts for most used symbols 
 | <kbd>⌥</kbd>+<kbd>⇧</kbd>+<kbd>{}</kbd>              | </░>   |
 | <kbd>^</kbd>+<kbd>⇧</kbd>+<kbd>{}</kbd>              | <░/>   |
 
-#### 🔣 1. Dev
+#### 1. Dev 🔣
 
 Symbols and dev shortcuts for JS/TS.
 
 ![Dev Layer](./.github/images/1-layer.png)
 
-#### 🔢 2. Actions/Numbers
+#### 2. Actions/Numbers 🔢
 
 Quick navigation actions and numbers.
 
 ![Actions/Number Layer](./.github/images/2-layer.png)
 
-#### ⚙️ 3. Settings
+#### 3. Settings ⚙️
 
 Dedicated to Bluetooth and media controls.
 
