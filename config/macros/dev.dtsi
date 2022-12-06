@@ -153,3 +153,19 @@ m_d_laao: macro_dev_logical_and_assignment_operator {
     bindings =
         <&macro_tap     &kp AMPS &kp AMPS &kp EQUAL>;
 };
+
+m_d_lo: macro_dev_logical_or {
+    compatible = "zmk,behavior-macro";
+    label = "||";
+    #binding-cells = <0>;
+    bindings =
+        <&macro_tap     &kp PIPE &kp PIPE>;
+};
+
+m_d_loao: macro_dev_logical_or_assignment_operator {
+    compatible = "zmk,behavior-macro";
+    label = "||=";
+    #binding-cells = <0>;
+    bindings =
+        <&macro_tap     &kp PIPE &kp PIPE &kp EQUAL>;
+};
