@@ -101,3 +101,11 @@ mp_d_es_alt: morph_dev_exclamation_symbol_alt {
     mods = <(MOD_LSFT|MOD_RSFT)>;
     bindings = <&m_d_si>, <&m_d_ce>;
 };
+
+mp_d_ql: morph_dev_question_logical {
+    compatible = "zmk,behavior-mod-morph";
+    label = "?. ?░:░";
+    #binding-cells = <0>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+    bindings = <&m_d_oco>, <&m_d_cto>;
+};
