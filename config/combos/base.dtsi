@@ -1,3 +1,9 @@
+combo_base_at_alt {
+    bindings = <&kp AT>; /* Label: @ */
+    key-positions = <1 R_ALT>;
+    layers = <0>;
+};
+
 combo_base_quotes_alt {
     bindings = <&mp_kq_alt>; /* Label: ` ~ */
     key-positions = <36 R_ALT>;
