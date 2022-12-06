@@ -9,9 +9,17 @@ This is a WIP layout based on Colemak DHm for using on Windows, taking in mind s
 ## Menu
 
 - [Usage](#usage)
+  - [Turn on/off](#turn-onoff)
+  - [Charge](#charge)
+  - [Reset](#reset)
+  - [Configure](#configure)
 - [Keyboard](#keyboard)
   - [Conventions](#conventions)
   - [Layouts](#layouts)
+    - [0. Base](#0-base)
+    - [1. Dev](#1-dev)
+    - [2. Actions/Numbers](2-actionsnumbers)
+    - [0. Settings](#3-settings)
 - [About](#about)
 
 ---
