@@ -51,3 +51,15 @@ combo_dev_logical_or {
     key-positions = <22 L_ALT>;
     layers = <1>;
 };
+
+combo_dev_exclamation_alt {
+    bindings = <&mp_d_es_alt>; /* Label: !== ¡ */
+    key-positions = <19 R_ALT>;
+    layers = <1>;
+};
+
+combo_dev_question_alt {
+    bindings = <&mp_d_qs_alt>; /* Label: ??= ¿ */
+    key-positions = <31 R_ALT>;
+    layers = <1>;
+};
