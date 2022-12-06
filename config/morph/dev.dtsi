@@ -61,3 +61,11 @@ mp_d_lao: morph_dev_logical_and_operator {
     mods = <(MOD_LSFT|MOD_RSFT)>;
     bindings = <&kp AMPS>, <&m_d_la>;
 };
+
+mp_d_loo: morph_dev_logical_or_operator {
+    compatible = "zmk,behavior-mod-morph";
+    label = "| ||";
+    #binding-cells = <0>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+    bindings = <&kp PIPE>, <&m_d_lo>;
+};
