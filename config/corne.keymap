@@ -16,7 +16,6 @@
 };
 
 /* Layers */
-
 #define DEF  0
 #define DEV  1
 #define A+N  2

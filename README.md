@@ -16,7 +16,7 @@ This is a WIP layout based on Colemak DHm for using on Windows, taking in mind s
 - [Keyboard](#keyboard)
   - [Conventions](#conventions)
   - [Layouts](#layouts)
-    - [0. Base](#0-base-)
+    - [0. Default](#0-default-)
     - [1. Dev](#1-dev-)
     - [2. Actions/Numbers](#2-actionsnumbers-)
     - [3. Settings](#3-settings-)
@@ -54,20 +54,21 @@ The wireless version of the Swept use ZMK as their firmware, you can find out mo
 
 These pages will guide you to create your own keymap (follow them after your user-setup) [customization](https://zmk.dev/docs/customization) and [keymaps](https://zmk.dev/docs/features/keymaps)
 
-Once you make changes to your keymap, you can download the firmware from the github actions tab of your repo. Since the keyboards come pre-flashed by me, you only need to flash the left half to change your keymaps. You can do it by following these steps:
+Once you make changes to your keymap, you can download the firmware from the github actions tab of your repo. Since the keyboards come pre-flashed, you only need to flash the left half to change your keymaps. You can do it by following these steps:
 
-1. Turn off both halves.
+1. Turn off both halves
 
 2. Plug in the left half into your computer (without turning it on)
 
 3. "Double tap" the reset button, play around with the timing between taps since this might not work the first time. If you have trouble with this step, re-plug your board and try again, you might even need to use a different cable or port on your computer. You know this works if you see a blue light fading on and off coming from the nice nano.
 
-4. After the previous step you should see a new storage device in your computer called nice!nano, as shown in the picture below. Drag and drop (or copy and paste) the firmware file `corne_left-nice_nano_v2-zmk.uf2`  which you should have generated and downloaded by following the guides linked above.
+4. After the previous step you should see a new storage device in your computer called nice!nano, as shown in the picture below. Drag and drop (or copy and paste) the firmware file `corne_left-nice_nano_v2-zmk.uf2` which you should have generated and downloaded by following the guides linked above.
 
 5. Wait until the storage device automatically disappears from your computer, this should not take longer than a few seconds.
 
 6. Unplug the board from your computer
-Follow the procedure in "How to turn my keyboard on?"
+
+7. Follow the procedure in [How to turn my keyboard on?](#turn-onoff)
 
 ⇧ [Back to menu](#menu)
 
@@ -94,25 +95,29 @@ Icons used to describe some modifiers and actions
 | ⇪ | [Hold Tap](https://zmk.dev/docs/behaviors/hold-tap#hold-tap) |
 | 🔁 | [Key Repeat](https://zmk.dev/docs/behaviors/key-repeat) |
 
-Key modifiers Description
-
-![Key Map](./.github/images/key-map.png)
-
-### Layouts
-
-#### 0. Base 🔠
-
-Letters, accents for Spanish language and quick shortcuts for most used symbols to "avoid" changing layers.
-
-![Base Layer](./.github/images/0-layer.png)
-
-**Modifiers**
+**Shared Modifiers**
 
 | Combinations                             | Actions               |
 | ---------------------------------------: | --------------------- |
 | <kbd>⇪⌫</kbd>                           | delete word backward   |
 | <kbd>⇪⌦</kbd>                           | delete word forward    |
-| <kbd>⇪⏎</kbd>                           | rename (like macOS)    |
+| <kbd>⇪⏎</kbd>                            | rename (like macOS)    |
+| <kbd>⇪⏎</kbd>                            | rename (like macOS)    |
+| <kbd>⇧</kbd>+<kbd>⌫</kbd>               | caps lock              |
+| <kbd>L⇧</kbd>+<kbd>L⇧</kbd>              | caps word              |
+| <kbd>L^</kbd>+<kbd>L^</kbd>              | cancel caps            |
+
+![Key Map](./.github/images/key-map.png)
+
+Shared combinations
+
+### Layouts
+
+#### 0. Default 🔠
+
+Letters, accents for Spanish language and quick shortcuts for most used symbols to "avoid" changing layers.
+
+![Base Layer](./.github/images/0-layer.png)
 
 **Spanish**
 
@@ -154,11 +159,11 @@ Letters, accents for Spanish language and quick shortcuts for most used symbols 
 
 | Combinations                                        | Key |
 | --------------------------------------------------: | :-: |
-| <kbd>{}</kbd>                                       | {░}   |
-| <kbd>⇧</kbd>+<kbd>{}</kbd>                           | (░)   |
-| <kbd>⌥</kbd>+<kbd>{}</kbd>                           | [░]   |
-| <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>{}</kbd>              | </░>   |
-| <kbd>⇧</kbd>+<kbd>^</kbd>+<kbd>{}</kbd>              | <░/>   |
+| <kbd>{}</kbd>                                       | {░} |
+| <kbd>⇧</kbd>+<kbd>{}</kbd>                          | (░) |
+| <kbd>⌥</kbd>+<kbd>{}</kbd>                         | [░] |
+| <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>{}</kbd>            | </░> |
+| <kbd>⇧</kbd>+<kbd>^</kbd>+<kbd>{}</kbd>             | <░/> |
 
 #### 1. Dev 🔣
 
