@@ -69,3 +69,35 @@ mp_d_loo: morph_dev_logical_or_operator {
     mods = <(MOD_LSFT|MOD_RSFT)>;
     bindings = <&kp PIPE>, <&m_d_lo>;
 };
+
+mp_d_qs: morph_dev_question_symbol {
+    compatible = "zmk,behavior-mod-morph";
+    label = "? ??";
+    #binding-cells = <0>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+    bindings = <&kp QMARK>, <&m_d_nco>;
+};
+
+mp_d_qs_alt: morph_dev_question_symbol_alt {
+    compatible = "zmk,behavior-mod-morph";
+    label = "??= ¿";
+    #binding-cells = <0>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+    bindings = <&m_d_ncao>, <&m_d_cqm>;
+};
+
+mp_d_es: morph_dev_exclamation_symbol {
+    compatible = "zmk,behavior-mod-morph";
+    label = "! !!";
+    #binding-cells = <0>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+    bindings = <&kp EXCL>, <&m_d_bo>;
+};
+
+mp_d_es_alt: morph_dev_exclamation_symbol_alt {
+    compatible = "zmk,behavior-mod-morph";
+    label = "!== ¡";
+    #binding-cells = <0>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+    bindings = <&m_d_si>, <&m_d_ce>;
+};
