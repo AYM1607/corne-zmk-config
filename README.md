@@ -119,19 +119,19 @@ Letters, accents for Spanish language and quick shortcuts for most used symbols 
 | Combinations                                        | Key |
 | --------------------------------------------------: | :-: |
 | <kbd>⌥</kbd>+<kbd>a</kbd>                           | á   |
-| <kbd>⌥</kbd>+<kbd>⇧</kbd>+<kbd>a</kbd>              | Á   |
+| <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>a</kbd>              | Á   |
 | <kbd>⌥</kbd>+<kbd>e</kbd>                           | é   |
-| <kbd>⌥</kbd>+<kbd>⇧</kbd>+<kbd>e</kbd>              | É   |
+| <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>e</kbd>              | É   |
 | <kbd>⌥</kbd>+<kbd>i</kbd>                           | í   |
-| <kbd>⌥</kbd>+<kbd>⇧</kbd>+<kbd>i</kbd>              | Í   |
+| <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>i</kbd>              | Í   |
 | <kbd>⌥</kbd>+<kbd>o</kbd>                           | ó   |
-| <kbd>⌥</kbd>+<kbd>⇧</kbd>+<kbd>o</kbd>              | Ó   |
+| <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>o</kbd>              | Ó   |
 | <kbd>⌥</kbd>+<kbd>u</kbd>                           | ú   |
-| <kbd>⌥</kbd>+<kbd>⇧</kbd>+<kbd>u</kbd>              | Ú   |
+| <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>u</kbd>              | Ú   |
 | <kbd>⌥</kbd>+<kbd>⇪u</kbd>                          | ü   |
-| <kbd>⌥</kbd>+<kbd>⇧</kbd>+<kbd>⇪u</kbd>             | Ü   |
+| <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>⇪u</kbd>             | Ü   |
 | <kbd>⌥</kbd>+<kbd>n</kbd>                           | ñ   |
-| <kbd>⌥</kbd>+<kbd>⇧</kbd>+<kbd>n</kbd>              | Ñ   |
+| <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>n</kbd>              | Ñ   |
 
 **Symbols**
 
