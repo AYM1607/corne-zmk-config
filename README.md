@@ -10,6 +10,8 @@ This is a WIP layout based on Colemak DHm for using on Windows, taking in mind s
 
 - [Usage](#usage)
 - [Keyboard](#keyboard)
+  - [Conventions](#conventions)
+  - [Layouts](#layouts)
 - [About](#about)
 
 ---
@@ -69,8 +71,8 @@ Follow the procedure in "How to turn my keyboard on?"
 
 Icons used to describe some modifiers and actions
 
-|Key|Description|
-|:-:|-----------|
+| Key | Description |
+| :-: | ----------- |
 | ◆ | Win/GUI |
 | ⌃ | Control |
 | ⌥ | Alt |
@@ -88,13 +90,83 @@ Key modifiers Description
 
 ![Key Map](./.github/images/key-map.png)
 
-### Layout
+### Layouts
+
+#### 0. Base
+
+Letters, accents for Spanish language and quick shortcuts for most used symbols to "avoid" changing layers.
 
 ![Base Layer](./.github/images/0-layer.png)
 
+**Spanish**
+
+| Combinations                                        | Key |
+| --------------------------------------------------- | :-: |
+| <kbd>⌥</kbd>+<kbd>a</kbd>                           | á   |
+| <kbd>⌥</kbd>+<kbd>⇧</kbd>+<kbd>a</kbd>              | Á   |
+| <kbd>⌥</kbd>+<kbd>e</kbd>                           | é   |
+| <kbd>⌥</kbd>+<kbd>⇧</kbd>+<kbd>e</kbd>              | É   |
+| <kbd>⌥</kbd>+<kbd>i</kbd>                           | í   |
+| <kbd>⌥</kbd>+<kbd>⇧</kbd>+<kbd>i</kbd>              | Í   |
+| <kbd>⌥</kbd>+<kbd>o</kbd>                           | ó   |
+| <kbd>⌥</kbd>+<kbd>⇧</kbd>+<kbd>o</kbd>              | Ó   |
+| <kbd>⌥</kbd>+<kbd>u</kbd>                           | ú   |
+| <kbd>⌥</kbd>+<kbd>⇧</kbd>+<kbd>u</kbd>              | Ú   |
+| <kbd>⌥</kbd>+<kbd>⇪u</kbd>                          | ü   |
+| <kbd>⌥</kbd>+<kbd>⇧</kbd>+<kbd>⇪u</kbd>             | Ü   |
+| <kbd>⌥</kbd>+<kbd>n</kbd>                           | ñ   |
+| <kbd>⌥</kbd>+<kbd>⇧</kbd>+<kbd>n</kbd>              | Ñ   |
+
+**Modifiers**
+
+| Combinations                             | Actions               |
+| ---------------------------------------- | --------------------- |
+| <kbd>⇪⌫</kbd>                           | delete word backward   |
+| <kbd>⇪⌦</kbd>                           | delete word forward    |
+| <kbd>⇪⏎</kbd>                           | rename (like macOS)    |
+
+**Symbols**
+
+| Combinations                                        | Key |
+| --------------------------------------------------- | :-: |
+| <kbd>⌥</kbd>+<kbd>q</kbd>                          | @   |
+| <kbd>⇧</kbd>+<kbd>,</kbd>                           | ;   |
+| <kbd>⇧</kbd>+<kbd>.</kbd>                           | :   |
+| <kbd>⇧</kbd>+<kbd>-</kbd>                           | +   |
+| <kbd>⌥</kbd>+<kbd>-</kbd>                           | =   |
+| <kbd>⌥</kbd>+<kbd>⇧</kbd>+<kbd>-</kbd>              | *   |
+| <kbd>⇧</kbd>+<kbd>/</kbd>                           | &   |
+| <kbd>⌥</kbd>+<kbd>/</kbd>                           | ?   |
+| <kbd>⌥</kbd>+<kbd>⇧</kbd>+<kbd>/</kbd>              | \|   |
+| <kbd>⇧</kbd>+<kbd>'</kbd>                           | "   |
+| <kbd>⌥</kbd>+<kbd>'</kbd>                           | `   |
+| <kbd>⌥</kbd>+<kbd>⇧</kbd>+<kbd>'</kbd>              | ~   |
+
+**Brackets**
+
+| Combinations                                        | Key |
+| --------------------------------------------------- | :-: |
+| <kbd>{}</kbd>                                       | {░}   |
+| <kbd>⇧</kbd>+<kbd>{}</kbd>                           | (░)   |
+| <kbd>⌥</kbd>+<kbd>{}</kbd>                           | [░]   |
+| <kbd>⌥</kbd>+<kbd>⇧</kbd>+<kbd>{}</kbd>              | </░>   |
+| <kbd>^</kbd>+<kbd>⇧</kbd>+<kbd>{}</kbd>              | <░/>   |
+
+#### 1. Dev
+
+Symbols and dev shortcuts for JS/TS.
+
 ![Dev Layer](./.github/images/1-layer.png)
 
+#### 2. Actions/Numbers
+
+Quick navigation actions and numbers.
+
 ![Actions/Number Layer](./.github/images/2-layer.png)
+
+#### 3. Settings
+
+Dedicated to Bluetooth and media controls.
 
 ![Settings](./.github/images/3-layer.png)
 
