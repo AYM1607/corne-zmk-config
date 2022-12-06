@@ -6,12 +6,15 @@
         "bspc",
         "BSPC",
         "CLCK",
+        "Colemak",
+        "corne",
         "DLLR",
         "dtsi",
         "FSLH",
         "gtoe",
         "homerow",
         "keymap",
+        "keymaps",
         "laao",
         "LALT",
         "LBKT",
@@ -33,6 +36,7 @@
         "rdae",
         "RSFT",
         "RSHFT",
-        "SHFT"
+        "SHFT",
+        "Sweept"
     ]
 }
