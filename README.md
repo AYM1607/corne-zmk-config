@@ -100,7 +100,7 @@ Key modifiers Description
 
 ### Layouts
 
-#### 0. Base
+#### 🔠 0. Base
 
 Letters, accents for Spanish language and quick shortcuts for most used symbols to "avoid" changing layers.
 
