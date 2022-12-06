@@ -45,3 +45,9 @@ combo_dev_logical_and {
     key-positions = <13 R_ALT>;
     layers = <1>;
 };
+
+combo_dev_logical_or {
+    bindings = <&m_d_loao>; /* Label: ||= */
+    key-positions = <22 L_ALT>;
+    layers = <1>;
+};
