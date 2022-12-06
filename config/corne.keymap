@@ -17,10 +17,10 @@
 
 /* Layers */
 
-#define BASE     0
-#define DEV      1
-#define ACT_NUM  2
-#define SETTINGS 3
+#define DEF  0
+#define DEV  1
+#define A+N  2
+#define STG  3
 
 /* Custom Keys */
 #define NAV_LEFT    &mt HOME     LEFT    // tap: left      | long-tap: beginning of line
