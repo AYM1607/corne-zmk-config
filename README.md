@@ -157,8 +157,8 @@ Letters, accents for Spanish language and quick shortcuts for most used symbols 
 | <kbd>{}</kbd>                                       | {░}   |
 | <kbd>⇧</kbd>+<kbd>{}</kbd>                           | (░)   |
 | <kbd>⌥</kbd>+<kbd>{}</kbd>                           | [░]   |
-| <kbd>⌥</kbd>+<kbd>⇧</kbd>+<kbd>{}</kbd>              | </░>   |
-| <kbd>^</kbd>+<kbd>⇧</kbd>+<kbd>{}</kbd>              | <░/>   |
+| <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>{}</kbd>              | </░>   |
+| <kbd>⇧</kbd>+<kbd>^</kbd>+<kbd>{}</kbd>              | <░/>   |
 
 #### 1. Dev 🔣
 
