@@ -28,7 +28,7 @@ combo_dev_divide {
     layers = <1>;
 };
 
-combo_dev_sum {
+combo_dev_increment {
     bindings = <&m_d_aao>; /* Label: += */
     key-positions = <3 L_ALT>;
     layers = <1>;

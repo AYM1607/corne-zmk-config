@@ -114,6 +114,14 @@ m_d_aao: macro_dev_addition_assignment_operator {
         <&macro_tap     &kp PLUS &kp EQUAL>;
 };
 
+m_d_sao: macro_dev_subtraction_assignment_operator {
+    compatible = "zmk,behavior-macro";
+    label = "-=";
+    #binding-cells = <0>;
+    bindings =
+        <&macro_tap     &kp MINUS &kp EQUAL>;
+};
+
 m_d_se: macro_dev_triple_equal {
     compatible = "zmk,behavior-macro";
     label = "===";
