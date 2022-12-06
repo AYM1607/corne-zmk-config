@@ -122,7 +122,7 @@ m_d_sao: macro_dev_subtraction_assignment_operator {
         <&macro_tap     &kp MINUS &kp EQUAL>;
 };
 
-m_d_se: macro_dev_triple_equal {
+m_d_se: macro_dev_strict_equal {
     compatible = "zmk,behavior-macro";
     label = "===";
     #binding-cells = <0>;
@@ -168,4 +168,72 @@ m_d_loao: macro_dev_logical_or_assignment_operator {
     #binding-cells = <0>;
     bindings =
         <&macro_tap     &kp PIPE &kp PIPE &kp EQUAL>;
+};
+
+m_d_cqm: macro_close_question_mark {
+    compatible = "zmk,behavior-macro";
+    label = "¿";
+    #binding-cells = <0>;
+    bindings =
+        <&macro_press   &kp RALT>,
+        <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N9 &kp KP_N1>,
+        <&macro_release &kp RALT>;
+};
+
+m_d_cto: macro_conditional_ternary_operator {
+    compatible = "zmk,behavior-macro";
+    label = "?░:░";
+    #binding-cells = <0>;
+    bindings =
+        <&macro_tap     &kp QMARK &kp COLON &kp LEFT>;
+};
+
+m_d_oco: macro_optional_chaining_operator {
+    compatible = "zmk,behavior-macro";
+    label = "?.";
+    #binding-cells = <0>;
+    bindings =
+        <&macro_tap     &kp QMARK &kp DOT>;
+};
+
+m_d_nco: macro_nullish_coalescing_operator {
+    compatible = "zmk,behavior-macro";
+    label = "??";
+    #binding-cells = <0>;
+    bindings =
+        <&macro_tap     &kp QMARK &kp QMARK>;
+};
+
+m_d_ncao: macro_dev_nullish_coalescing_assignment_operator {
+    compatible = "zmk,behavior-macro";
+    label = "??=";
+    #binding-cells = <0>;
+    bindings =
+        <&macro_tap     &kp QMARK &kp QMARK &kp EQUAL>;
+};
+
+m_d_ce: macro_close_exclamation {
+    compatible = "zmk,behavior-macro";
+    label = "¡";
+    #binding-cells = <0>;
+    bindings =
+        <&macro_press   &kp RALT>,
+        <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N6 &kp KP_N1>,
+        <&macro_release &kp RALT>;
+};
+
+m_d_bo: macro_bolean_operator {
+    compatible = "zmk,behavior-macro";
+    label = "!!";
+    #binding-cells = <0>;
+    bindings =
+        <&macro_tap     &kp EXCL &kp EXCL>;
+};
+
+m_d_si: macro_dev_strict_inequality {
+    compatible = "zmk,behavior-macro";
+    label = "!==";
+    #binding-cells = <0>;
+    bindings =
+        <&macro_tap     &kp EXCL &kp EQUAL &kp EQUAL>;
 };
