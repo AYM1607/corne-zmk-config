@@ -109,7 +109,7 @@ Letters, accents for Spanish language and quick shortcuts for most used symbols 
 **Modifiers**
 
 | Combinations                             | Actions               |
-| ---------------------------------------- | --------------------- |
+| ---------------------------------------: | --------------------- |
 | <kbd>⇪⌫</kbd>                           | delete word backward   |
 | <kbd>⇪⌦</kbd>                           | delete word forward    |
 | <kbd>⇪⏎</kbd>                           | rename (like macOS)    |
@@ -117,7 +117,7 @@ Letters, accents for Spanish language and quick shortcuts for most used symbols 
 **Spanish**
 
 | Combinations                                        | Key |
-| --------------------------------------------------- | :-: |
+| --------------------------------------------------: | :-: |
 | <kbd>⌥</kbd>+<kbd>a</kbd>                           | á   |
 | <kbd>⌥</kbd>+<kbd>⇧</kbd>+<kbd>a</kbd>              | Á   |
 | <kbd>⌥</kbd>+<kbd>e</kbd>                           | é   |
@@ -136,7 +136,7 @@ Letters, accents for Spanish language and quick shortcuts for most used symbols 
 **Symbols**
 
 | Combinations                                        | Key |
-| --------------------------------------------------- | :-: |
+| --------------------------------------------------: | :-: |
 | <kbd>⌥</kbd>+<kbd>q</kbd>                          | @   |
 | <kbd>⇧</kbd>+<kbd>,</kbd>                           | ;   |
 | <kbd>⇧</kbd>+<kbd>.</kbd>                           | :   |
@@ -153,7 +153,7 @@ Letters, accents for Spanish language and quick shortcuts for most used symbols 
 **Brackets**
 
 | Combinations                                        | Key |
-| --------------------------------------------------- | :-: |
+| --------------------------------------------------: | :-: |
 | <kbd>{}</kbd>                                       | {░}   |
 | <kbd>⇧</kbd>+<kbd>{}</kbd>                           | (░)   |
 | <kbd>⌥</kbd>+<kbd>{}</kbd>                           | [░]   |
