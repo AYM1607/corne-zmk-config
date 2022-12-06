@@ -16,10 +16,10 @@ This is a WIP layout based on Colemak DHm for using on Windows, taking in mind s
 - [Keyboard](#keyboard)
   - [Conventions](#conventions)
   - [Layouts](#layouts)
-    - [0. Base](#0-base)
-    - [1. Dev](#1-dev)
-    - [2. Actions/Numbers](2-actionsnumbers)
-    - [3. Settings](#3-settings)
+    - [0. Base](-#0-base)
+    - [1. Dev](-#1-dev)
+    - [2. Actions/Numbers](-#2-actionsnumbers)
+    - [3. Settings](-#3-settings)
 - [About](#about)
 
 ---
@@ -160,19 +160,19 @@ Letters, accents for Spanish language and quick shortcuts for most used symbols 
 | <kbd>⌥</kbd>+<kbd>⇧</kbd>+<kbd>{}</kbd>              | </░>   |
 | <kbd>^</kbd>+<kbd>⇧</kbd>+<kbd>{}</kbd>              | <░/>   |
 
-#### 1. Dev
+#### 🔣 1. Dev
 
 Symbols and dev shortcuts for JS/TS.
 
 ![Dev Layer](./.github/images/1-layer.png)
 
-#### 2. Actions/Numbers
+#### 🔢 2. Actions/Numbers
 
 Quick navigation actions and numbers.
 
 ![Actions/Number Layer](./.github/images/2-layer.png)
 
-#### 3. Settings
+#### ⚙️ 3. Settings
 
 Dedicated to Bluetooth and media controls.
 
