@@ -97,21 +97,20 @@ Icons used to describe some modifiers and actions
 | ⇪ | [Hold Tap](https://zmk.dev/docs/behaviors/hold-tap#hold-tap) |
 | 🔁 | [Key Repeat](https://zmk.dev/docs/behaviors/key-repeat) |
 
+#### Positional modifiers
+
+![Key Map](./.github/images/key-map.png)
+
 #### Shared Modifiers
 
 | Combinations                             | Actions               |
 | ---------------------------------------: | --------------------- |
-| <kbd>⇪⌫</kbd>                           | delete word backward   |
-| <kbd>⇪⌦</kbd>                           | delete word forward    |
-| <kbd>⇪⏎</kbd>                            | rename (like macOS)    |
-| <kbd>⇪⏎</kbd>                            | rename (like macOS)    |
-| <kbd>⇧</kbd>+<kbd>⌫</kbd>               | caps lock              |
-| <kbd>L⇧</kbd>+<kbd>L⇧</kbd>              | caps word              |
-| <kbd>L^</kbd>+<kbd>L^</kbd>              | cancel caps            |
-
-![Key Map](./.github/images/key-map.png)
-
-Shared combinations
+| <kbd>⇪⌫</kbd>                           | Delete word backward   |
+| <kbd>⇪⌦</kbd>                           | Delete word forward    |
+| <kbd>⇪⏎</kbd>                            | Rename (like macOS)    |
+| <kbd>⇧</kbd>+<kbd>⌫</kbd>               | Caps lock              |
+| <kbd>L⇧</kbd>+<kbd>L⇧</kbd>              | [Caps word](https://zmk.dev/docs/behaviors/caps-word)              |
+| <kbd>L^</kbd>+<kbd>L^</kbd>              | Cancel caps            |
 
 ### Layouts
 
@@ -219,6 +218,30 @@ Symbols and dev shortcuts for JS/TS.
 Quick navigation actions and numbers.
 
 ![Actions/Number Layer](./.github/images/2-layer.png)
+
+##### Navigation
+
+| Key           | Action   | Combination     | Actions               |
+| ------------: | -------- | --------------- | --------------------- |
+| <kbd>△</kbd>  | Up       | <kbd>⇪△</kbd>  | Beginning of document |
+| <kbd>▽</kbd>  | Down     | <kbd>⇪▽</kbd>  | End of document       |
+| <kbd>◁</kbd>  | Left     | <kbd>⇪◁</kbd>  | Beginning of line     |
+| <kbd>▷</kbd>  | Right    | <kbd>⇪▷</kbd>  | End of line           |
+| <kbd>⇞</kbd>  | Page Up   | <kbd>⇪⇞</kbd>  | Next tab              |
+| <kbd>⇟</kbd>  | Page Down | <kbd>⇪⇟</kbd>  | Previous Tab          |
+
+##### Actions
+
+| Key           | Action               |
+| ------------: | -------------------- |
+| <kbd>⎙</kbd>  | Print Screen         |
+| <kbd>🗀</kbd>  | File Explorer        |
+| <kbd>↶</kbd>  | Undo                 |
+| <kbd>↷</kbd>  | Redo                 |
+| <kbd>⬚</kbd>  | Cut                  |
+| <kbd>⧉</kbd>  | Copy                 |
+| <kbd>■</kbd>  | Paste                 |
+| <kbd>⇪■</kbd>  | Paste without format |
 
 #### 3. Settings
 
