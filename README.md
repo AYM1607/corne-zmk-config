@@ -16,10 +16,10 @@ This is a WIP layout based on Colemak DHm for using on Windows, taking in mind s
 - [Keyboard](#keyboard)
   - [Conventions](#conventions)
   - [Layouts](#layouts)
-    - [0. Default](#0-default-)
-    - [1. Dev](#1-dev-)
-    - [2. Actions/Numbers](#2-actionsnumbers-)
-    - [3. Settings](#3-settings-)
+    - [0. Default](#0-default)
+    - [1. Dev](#1-dev)
+    - [2. Actions/Numbers](#2-actionsnumbers)
+    - [3. Settings](#3-settings)
 - [About](#about)
 
 ---
@@ -78,6 +78,8 @@ Once you make changes to your keymap, you can download the firmware from the git
 
 ### Conventions
 
+#### Icons
+
 Icons used to describe some modifiers and actions
 
 | Key | Description |
@@ -95,7 +97,7 @@ Icons used to describe some modifiers and actions
 | ⇪ | [Hold Tap](https://zmk.dev/docs/behaviors/hold-tap#hold-tap) |
 | 🔁 | [Key Repeat](https://zmk.dev/docs/behaviors/key-repeat) |
 
-**Shared Modifiers**
+#### Shared Modifiers
 
 | Combinations                             | Actions               |
 | ---------------------------------------: | --------------------- |
@@ -113,49 +115,49 @@ Shared combinations
 
 ### Layouts
 
-#### 0. Default 🔠
+#### 0. Default
 
 Letters, accents for Spanish language and quick shortcuts for most used symbols to "avoid" changing layers.
 
 ![Base Layer](./.github/images/0-layer.png)
 
-**Spanish**
+##### Spanish
 
 | Combinations                                        | Key |
 | --------------------------------------------------: | :-: |
-| <kbd>⌥</kbd>+<kbd>a</kbd>                           | á   |
-| <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>a</kbd>              | Á   |
-| <kbd>⌥</kbd>+<kbd>e</kbd>                           | é   |
-| <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>e</kbd>              | É   |
-| <kbd>⌥</kbd>+<kbd>i</kbd>                           | í   |
-| <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>i</kbd>              | Í   |
-| <kbd>⌥</kbd>+<kbd>o</kbd>                           | ó   |
-| <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>o</kbd>              | Ó   |
-| <kbd>⌥</kbd>+<kbd>u</kbd>                           | ú   |
-| <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>u</kbd>              | Ú   |
-| <kbd>⌥</kbd>+<kbd>⇪u</kbd>                          | ü   |
-| <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>⇪u</kbd>             | Ü   |
-| <kbd>⌥</kbd>+<kbd>n</kbd>                           | ñ   |
-| <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>n</kbd>              | Ñ   |
+| <kbd>⌥</kbd>+<kbd>a</kbd>                           | á |
+| <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>a</kbd>              | Á |
+| <kbd>⌥</kbd>+<kbd>e</kbd>                           | é |
+| <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>e</kbd>              | É |
+| <kbd>⌥</kbd>+<kbd>i</kbd>                           | í |
+| <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>i</kbd>              | Í |
+| <kbd>⌥</kbd>+<kbd>o</kbd>                           | ó |
+| <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>o</kbd>              | Ó |
+| <kbd>⌥</kbd>+<kbd>u</kbd>                           | ú |
+| <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>u</kbd>              | Ú |
+| <kbd>⌥</kbd>+<kbd>⇪u</kbd>                          | ü |
+| <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>⇪u</kbd>             | Ü |
+| <kbd>⌥</kbd>+<kbd>n</kbd>                           | ñ |
+| <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>n</kbd>              | Ñ |
 
-**Symbols**
+##### Symbols
 
 | Combinations                                        | Key |
 | --------------------------------------------------: | :-: |
-| <kbd>⌥</kbd>+<kbd>q</kbd>                          | @   |
-| <kbd>⇧</kbd>+<kbd>,</kbd>                           | ;   |
-| <kbd>⇧</kbd>+<kbd>.</kbd>                           | :   |
-| <kbd>⇧</kbd>+<kbd>-</kbd>                           | +   |
-| <kbd>⌥</kbd>+<kbd>-</kbd>                           | =   |
-| <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>-</kbd>              | *   |
-| <kbd>⇧</kbd>+<kbd>/</kbd>                           | &   |
-| <kbd>⌥</kbd>+<kbd>/</kbd>                           | ?   |
-| <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>/</kbd>              | \|   |
-| <kbd>⇧</kbd>+<kbd>'</kbd>                           | "   |
-| <kbd>⌥</kbd>+<kbd>'</kbd>                           | `   |
-| <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>'</kbd>              | ~   |
+| <kbd>⌥</kbd>+<kbd>q</kbd>                          | @ |
+| <kbd>⇧</kbd>+<kbd>,</kbd>                           | ; |
+| <kbd>⇧</kbd>+<kbd>.</kbd>                           | : |
+| <kbd>⇧</kbd>+<kbd>-</kbd>                           | + |
+| <kbd>⌥</kbd>+<kbd>-</kbd>                          | = |
+| <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>-</kbd>             | * |
+| <kbd>⇧</kbd>+<kbd>/</kbd>                           | & |
+| <kbd>⌥</kbd>+<kbd>/</kbd>                          | ? |
+| <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>/</kbd>             | \| |
+| <kbd>⇧</kbd>+<kbd>'</kbd>                           | " |
+| <kbd>⌥</kbd>+<kbd>'</kbd>                          | ` |
+| <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>'</kbd>             | ~ |
 
-**Brackets**
+##### Auto Brackets
 
 | Combinations                                        | Key |
 | --------------------------------------------------: | :-: |
@@ -165,19 +167,60 @@ Letters, accents for Spanish language and quick shortcuts for most used symbols 
 | <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>{}</kbd>            | </░> |
 | <kbd>⇧</kbd>+<kbd>^</kbd>+<kbd>{}</kbd>             | <░/> |
 
-#### 1. Dev 🔣
+#### 1. Dev
 
 Symbols and dev shortcuts for JS/TS.
 
 ![Dev Layer](./.github/images/1-layer.png)
 
-#### 2. Actions/Numbers 🔢
+##### Symbols
+
+| Combinations                                        | Key |
+| --------------------------------------------------: | :-: |
+| <kbd>⇧</kbd>+<kbd>$</kbd>                          | € |
+| <kbd>⇧</kbd>+<kbd>°</kbd>                          | ª |
+| <kbd>⇧</kbd>+<kbd><</kbd>                          | « |
+| <kbd>⌥</kbd>+<kbd><</kbd>                          | <= |
+| <kbd>⇧</kbd>+<kbd>></kbd>                          | » |
+| <kbd>⌥</kbd>+<kbd>></kbd>                          | >= |
+| <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>!</kbd>            | ¡ |
+| <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>?</kbd>            | ¿ |
+
+##### JS/TS
+
+| Combinations                                        | Key |
+| --------------------------------------------------: | :-: |
+| <kbd>⇧</kbd>+<kbd>+</kbd>                           | [++](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment) |
+| <kbd>⌥</kbd>+<kbd>+</kbd>                          | [+=](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Addition_assignment) |
+| <kbd>⇧</kbd>+<kbd>-</kbd>                           | [--](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Decrement) |
+| <kbd>⌥</kbd>+<kbd>-</kbd>                          | [-=](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Subtraction_assignment) |
+| <kbd>⇧</kbd>+<kbd>*</kbd>                           | [**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Exponentiation) |
+| <kbd>⌥</kbd>+<kbd>*</kbd>                          | [*=](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Multiplication_assignment) |
+| <kbd>⌥</kbd>+<kbd>/</kbd>                          | [/=](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Division_assignment) |
+| <kbd>⇧</kbd>+<kbd>&</kbd>                           | [&&](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND) |
+| <kbd>⌥</kbd>+<kbd>&</kbd>                          | [&&=](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND_assignment) |
+| <kbd>⇧</kbd>+<kbd>\|</kbd>                           | [\|\|](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR) |
+| <kbd>⌥</kbd>+<kbd>\|</kbd>                          | [\|\|=](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR_assignment) | <kbd>⇧</kbd>+<kbd>?</kbd>                           | [??](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing) |
+| <kbd>⌥</kbd>+<kbd>?</kbd>                          | [??=](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_assignment) |
+| <kbd>⇧</kbd>+<kbd>=</kbd>                           | [=>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) |
+| <kbd>⌥</kbd>+<kbd>=</kbd>                          | [===](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Strict_equality) |
+| <kbd>⇧</kbd>+<kbd>!</kbd>                           | [!!](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_NOT#double_not_!!) |
+| <kbd>⌥</kbd>+<kbd>!</kbd>                          | [!==](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Strict_inequality) |
+
+##### Auto Brackets
+
+| Combinations                                        | Key |
+| --------------------------------------------------: | :-: |
+| <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>{}</kbd>            | </░> |
+| <kbd>⇧</kbd>+<kbd>^</kbd>+<kbd>{}</kbd>             | <░/> |
+
+#### 2. Actions/Numbers
 
 Quick navigation actions and numbers.
 
 ![Actions/Number Layer](./.github/images/2-layer.png)
 
-#### 3. Settings ⚙️
+#### 3. Settings
 
 Dedicated to Bluetooth and media controls.
 
@@ -189,10 +232,13 @@ Dedicated to Bluetooth and media controls.
 
 ## About
 
+### Fork
+
+- [corne-zmk-config](https://github.com/AYM1607/corne-zmk-config) - ZMK Colemak DHm layout
+
 ### Built With
 
 - [VS Code](https://code.visualstudio.com/) - Code editing redefined.
-- [corne-zmk-config](https://github.com/AYM1607/corne-zmk-config) - Colemak DHm layout
 - [ZMK Docs](https://zmk.dev/docs) - Modern, open source keyboard firmware
 - [Keymap Editor](https://nickcoutsos.github.io/keymap-editor) - GUI ZMK Keymap Editor
 - [Colemak Mods](https://colemakmods.github.io/mod-dh/keyboards.html#matrix-keyboards) - Colemak-DH for a non-traditional, ergonomic keyboard

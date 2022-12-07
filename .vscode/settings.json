@@ -41,5 +41,8 @@
         "RSHFT",
         "SHFT",
         "Sweept"
-    ]
+    ],
+    "markdownlint.config": {
+        "MD033": false
+    },
 }
