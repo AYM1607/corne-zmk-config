@@ -63,12 +63,12 @@
         compatible = "zmk,combos";
 
         /* Modifier Keys */
-        #define L_CTRL    14
-        #define L_ALT     15
-        #define L_SHFT    16
-        #define R_SHFT    19
-        #define R_ALT     20
-        #define R_CTRL    21
+        #define L_CTRL  14
+        #define L_ALT   15
+        #define L_SHFT  16
+        #define R_SHFT  19
+        #define R_ALT   20
+        #define R_CTRL  21
 
         #include "combos/shared.dtsi"
         #include "combos/accents.dtsi"
@@ -94,13 +94,11 @@
             >;
         };
 
-        #define D13      &hn_d_lcmd LSHFT 0
-
         dev_layer {
             bindings = <
-   &kp ESC  &kp AT  &kp POUND   &mp_d_m    &mp_d_p    &kp DQT          &kp TILDE    &mp_k_m  &kp UNDER  &kp PRCNT  &kp CARET   &mp_bd
-    &mp_bc     D13   &kp LBRC  &kp RBRC    &mp_d_e    &kp SQT          &kp GRAVE   &mp_d_es   &kp LBKT   &kp RBKT  &mp_d_loo  KEY_RET
-   &kp TAB  &mp_kn   &kp LPAR  &kp RPAR    &mp_d_a   &kp BSLH           &kp FSLH   &mp_d_qs   &mp_d_lt   &mp_d_gt   &mp_d_ql  &mp_kbd
+   &kp ESC              &kp AT  &kp POUND   &mp_d_m    &mp_d_p    &kp DQT          &kp TILDE    &mp_k_m  &kp UNDER  &kp PRCNT  &kp CARET   &mp_bd
+    &mp_bc  &hn_d_lcmd LSHFT 0   &kp LBRC  &kp RBRC    &mp_d_e    &kp SQT          &kp GRAVE   &mp_d_es   &kp LBKT   &kp RBKT  &mp_d_loo  KEY_RET
+   &kp TAB              &mp_kn   &kp LPAR  &kp RPAR    &mp_d_a   &kp BSLH           &kp FSLH   &mp_d_qs   &mp_d_lt   &mp_d_gt   &mp_d_ql  &mp_kbd
                                   &mp_d_cs  &kp SPACE    &to DEF            &to A_N  &kp SPACE   &mp_d_dc
             >;
         };
