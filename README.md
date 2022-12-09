@@ -213,6 +213,14 @@ Symbols and dev shortcuts for JS/TS.
 | <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>{}</kbd>            | </░> |
 | <kbd>⇧</kbd>+<kbd>^</kbd>+<kbd>{}</kbd>             | <░/> |
 
+##### Browser DevTools
+
+| Key | Combinations                                        | Action |
+| --- | --------------------------------------------------: | :-: |
+| ↻   | <kbd>↻</kbd>               | Refresh |
+| ⟳   | <kbd>⇧</kbd>+<kbd>↻</kbd>  | Hard refresh (clean cache) |
+| ⩸   | <kbd>⌥</kbd>+<kbd>↻</kbd>  | Open DevTools               |
+
 #### 2. Actions/Numbers
 
 Quick navigation actions and numbers.
