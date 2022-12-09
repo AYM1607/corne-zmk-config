@@ -93,7 +93,7 @@
             >;
         };
 
-        #define D13      &hn_d_lcmd LSHIFT 0
+        #define D13      &hn_d_lcmd LSHFT 0
 
         dev_layer {
             bindings = <
