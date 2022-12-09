@@ -48,15 +48,15 @@
 
 / {
     behaviors {
-        #include "hold/shared.dtsi"
-        #include "hold/dev.dtsi"
-
         #include "morph/shared.dtsi"
         #include "morph/base.dtsi"
         #include "morph/accents.dtsi"
         #include "morph/num.dtsi"
         #include "morph/actions.dtsi"
         #include "morph/dev.dtsi"
+
+        #include "hold/shared.dtsi"
+        #include "hold/dev.dtsi"
     };
 
     combos {
