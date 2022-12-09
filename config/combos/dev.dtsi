@@ -63,3 +63,9 @@ combo_dev_question_alt {
     key-positions = <31 R_ALT>;
     layers = <1>;
 };
+
+combo_actions_dev_tools {
+    bindings = <&kp RC(RS(I))>; /* Label: open dev tools */
+    key-positions = <35 R_ALT>;
+    layers = <1>;
+};
