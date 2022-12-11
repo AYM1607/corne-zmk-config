@@ -130,11 +130,14 @@
             #define D21  &hm        RCTRL   RBKT
             #define D22  &hm_d_rcmd RSHFT   0
 
+            #define D38  &to DEF
+            #define D39  &to A_N
+
             bindings = <
     KEY_ESC  &kp AT  &kp POUND   &mp_d_m  &mp_d_p    &kp DQT          &kp TILDE   &mp_k_m  &kp UNDER  &kp PRCNT  &kp CARET  KEY_BSD
     KEY_BSC     D13        D14       D15      D16    &kp SQT          &kp GRAVE       D19        D20        D21        D22  KEY_RET
     KEY_TAB  &mp_kn   &kp LPAR  &kp RPAR  &mp_d_a   &kp BSLH           &kp FSLH  &mp_d_qs   &mp_d_lt   &mp_d_gt   &mp_d_ql  &mp_kbd
-                                &mp_d_cs  KEY_SPC    &to DEF            &to A_N   KEY_SPC   &mp_d_dc
+                                &mp_d_cs  KEY_SPC        D38                D39   KEY_SPC   &mp_d_dc
             >;
         };
 
