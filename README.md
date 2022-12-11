@@ -8,11 +8,6 @@ This is a WIP layout based on Colemak DHm for using on Windows, taking in mind s
 
 ## Menu
 
-- [Usage](#usage)
-  - [Turn on/off](#turn-onoff)
-  - [Charge](#charge)
-  - [Reset](#reset)
-  - [Configure](#configure)
 - [Keyboard](#keyboard)
   - [Conventions](#conventions)
   - [Layouts](#layouts)
@@ -20,57 +15,12 @@ This is a WIP layout based on Colemak DHm for using on Windows, taking in mind s
     - [1. Dev](#1-dev)
     - [2. Actions/Numbers](#2-actionsnumbers)
     - [3. Settings](#3-settings)
+- [Usage](#usage)
+  - [Turn on/off](#turn-onoff)
+  - [Charge](#charge)
+  - [Reset](#reset)
+  - [Configure](#configure)
 - [About](#about)
-
----
-
-## Usage
-
-### Turn on/off
-
-There's a small slider switch right underneath the USB-C connector which controls power. The keyboard is **OFF** when the sliders on both halves are on the left positions as shown in the following picture:
-
-TODO: add picture
-
-The keyboard is **ON** when the switch is slided to the right on both halves as shown in the following picture. Please note that for the halves to connect correctly, the both must be turned on as closely to THE SAME TIME as possible; it's okay if there's one or two seconds of difference but try to keep it to a minimum.
-
-TODO: add picture
-
-### Charge
-
-To charge your boards you must put the half you want to charge in the ON position and connect it to a power source (it can be your computer) through the USB port.
-
-You know it's charging if you see an orange light like the one in the following picture. The light turns off when charging is done.
-
-TODO: add picture
-
-### Reset
-
-TODO: add picture
-
-### Configure
-
-The wireless version of the Swept use ZMK as their firmware, you can find out more at [ZMK docs](https://zmk.dev/docs)
-
-These pages will guide you to create your own keymap (follow them after your user-setup) [customization](https://zmk.dev/docs/customization) and [keymaps](https://zmk.dev/docs/features/keymaps)
-
-Once you make changes to your keymap, you can download the firmware from the github actions tab of your repo. Since the keyboards come pre-flashed, you only need to flash the left half to change your keymaps. You can do it by following these steps:
-
-1. Turn off both halves
-
-2. Plug in the left half into your computer (without turning it on)
-
-3. "Double tap" the reset button, play around with the timing between taps since this might not work the first time. If you have trouble with this step, re-plug your board and try again, you might even need to use a different cable or port on your computer. You know this works if you see a blue light fading on and off coming from the nice nano.
-
-4. After the previous step you should see a new storage device in your computer called nice!nano, as shown in the picture below. Drag and drop (or copy and paste) the firmware file `corne_left-nice_nano_v2-zmk.uf2` which you should have generated and downloaded by following the guides linked above.
-
-5. Wait until the storage device automatically disappears from your computer, this should not take longer than a few seconds.
-
-6. Unplug the board from your computer
-
-7. Follow the procedure in [How to turn my keyboard on?](#turn-onoff)
-
-⇧ [Back to menu](#menu)
 
 ---
 
@@ -229,34 +179,95 @@ Quick navigation actions and numbers.
 
 ##### Navigation
 
-| Key           | Action   | Combination                 | Actions               |
-| ------------: | -------- | ----------------------------| --------------------- |
-| <kbd>△</kbd>  | Up       | <kbd>⌥</kbd>+<kbd>△</kbd>  | Beginning of document |
-| <kbd>▽</kbd>  | Down     | <kbd>⌥</kbd>+<kbd>▽</kbd>  | End of document       |
-| <kbd>◁</kbd>  | Left     | <kbd>⌥</kbd>+<kbd>◁</kbd>  | Beginning of line     |
-| <kbd>▷</kbd>  | Right    | <kbd>⌥</kbd>+<kbd>▷</kbd>  | End of line           |
-| <kbd>⇺</kbd>  | Prev Tab  | <kbd>⇧</kbd>+<kbd>⇺</kbd>  | Prev desktop          |
-| <kbd>⇻</kbd>  | Next Tab  | <kbd>⇧</kbd>+<kbd>⇻</kbd>  | Next desktop          |
+| Key           | Combination                | Action               |
+| ------------: | -------------------------- | -------------------- |
+| <kbd>△</kbd>  |                            | Up                   |
+| <kbd>▽</kbd>  |                            | Down                 |
+| <kbd>◁</kbd>  |                            | Left                 |
+| <kbd>▷</kbd>  |                            | Right                |
+| <kbd>⤒</kbd>  | <kbd>⌥</kbd>+<kbd>△</kbd> | Beginning of document |
+| <kbd>⤓</kbd>  | <kbd>⌥</kbd>+<kbd>▽</kbd> | End of document       |
+| <kbd>⇤</kbd>  | <kbd>⌥</kbd>+<kbd>◁</kbd> | Beginning of line     |
+| <kbd>⇥</kbd>  | <kbd>⌥</kbd>+<kbd>▷</kbd> | End of line           |
+| <kbd>⇺</kbd>  |                            | Prev Tab              |
+| <kbd>⇻</kbd>  |                            | Next Tab              |
+| <kbd>⎗</kbd>  | <kbd>⇧</kbd>+<kbd>⇺</kbd> | Prev desktop          |
+| <kbd>⎘</kbd>  | <kbd>⇧</kbd>+<kbd>⇻</kbd> | Next desktop          |
 
 ##### Actions
 
-| Key           | Action               | Combination                | Actions               |
-| ------------: | -------------------- | -------------------------- | --------------------- |
-| <kbd>ⓘ</kbd>  | System Info          |                            |                       |
-| <kbd>⛨</kbd>  | Windows Security     |                            |                       |
-| <kbd>▣</kbd>  | Print Screen         |                            |                       |
-| <kbd>⎎</kbd>  | File Explorer        |                            |                       |
-| <kbd>↶</kbd>  | Undo                 |                            |                       |
-| <kbd>↷</kbd>  | Redo                 |                            |                       |
-| <kbd>⬚</kbd>  | Cut                  |                            |                       |
-| <kbd>⿻</kbd>  | Copy                 |                            |                       |
-| <kbd>⏍</kbd>  | Paste                | <kbd>⇧</kbd>+<kbd>⏍</kbd> | Paste without format |
+| Key           | Combination                | Action               |
+| ------------: | -------------------------- | -------------------- |
+| <kbd>ⓘ</kbd> |                            | System Info          |
+| <kbd>⛨</kbd> |                            | Windows Security     |
+| <kbd>▣</kbd> |                            | Print Screen         |
+| <kbd>⎎</kbd> |                            | File Explorer        |
+| <kbd>↶</kbd> |                            | Undo                 |
+| <kbd>↷</kbd> |                            | Redo                 |
+| <kbd>⬚</kbd> |                            | Cut                  |
+| <kbd>⿻</kbd> |                            | Copy                 |
+| <kbd>⏍</kbd> |                            | Paste                |
+| <kbd>⛶</kbd> | <kbd>⇧</kbd>+<kbd>⏍</kbd> | Paste without format |
 
 #### 3. Settings
 
 Dedicated to Bluetooth and media controls.
 
 ![Settings](./.github/images/3-layer.png)
+
+⇧ [Back to menu](#menu)
+
+---
+
+## Usage
+
+### Turn on/off
+
+There's a small slider switch right underneath the USB-C connector which controls power. The keyboard is **OFF** when the sliders on both halves are on the **left** positions as shown in the following picture:
+
+TODO: add picture
+
+The keyboard is **ON** when the switch is slided to the **right** on both halves as shown in the following picture. Please note that for the halves to connect correctly, the both must be turned on as closely to THE SAME TIME as possible; it's okay if there's one or two seconds of difference but try to keep it to a minimum.
+
+TODO: add picture
+
+### Charge
+
+To charge your boards you must put the half you want to charge in the ON position and connect it to a power source (it can be your computer) through the USB port.
+
+You know it's charging if you see an orange light like the one in the following picture. The light turns off when charging is done.
+
+TODO: add picture
+
+### Reset
+
+Pressing it once resets the keyboard (power cycle so essentially equivalent to turning it off and then back on).
+
+Pressing it twice quickly puts into programming mode, if you plug it into your computer it shows up as a USB device instead of a keyboard; you can then drag and drop or copy and paste your firmware file to update your keymap.
+
+TODO: add picture
+
+### Configure
+
+The wireless version of the Swept use ZMK as their firmware, you can find out more at [ZMK docs](https://zmk.dev/docs)
+
+These pages will guide you to create your own keymap (follow them after your user-setup) [customization](https://zmk.dev/docs/customization) and [keymaps](https://zmk.dev/docs/features/keymaps)
+
+Once you make changes to your keymap, you can download the firmware from the github actions tab of your repo. Since the keyboards come pre-flashed, you only need to flash the left half to change your keymaps. You can do it by following these steps:
+
+1. Turn off both halves
+
+2. Plug in the left half into your computer (without turning it on)
+
+3. "Double tap" the reset button, play around with the timing between taps since this might not work the first time. If you have trouble with this step, re-plug your board and try again, you might even need to use a different cable or port on your computer. You know this works if you see a blue light fading on and off coming from the nice nano.
+
+4. After the previous step you should see a new storage device in your computer called nice!nano, as shown in the picture below. Drag and drop (or copy and paste) the firmware file `corne_left-nice_nano_v2-zmk.uf2` which you should have generated and downloaded by following the guides linked above.
+
+5. Wait until the storage device automatically disappears from your computer, this should not take longer than a few seconds.
+
+6. Unplug the board from your computer
+
+7. Follow the procedure in [How to turn my keyboard on?](#turn-onoff)
 
 ⇧ [Back to menu](#menu)
 
