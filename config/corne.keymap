@@ -46,7 +46,7 @@
 #define KEY_REDO    &kp RC(Y)            // tap: redo
 #define KEY_CUT     &kp RC(X)            // tap: cut
 #define KEY_COPY    &kp RC(C)            // tap: copy
-#define KEY_PASTE   &mt RC(V) RC(RS(V))  // tap: paste     | long-tap: paste without format
+#define KEY_PASTE   &mp_a_paste_alt      // tap: paste     | shift: paste without format
 #define ZOOM_IN     &kp RC(PLUS)         // tap: zoom in
 #define ZOOM_RST    &kp RC(N0)           // tap: zoom reset
 #define ZOOM_OUT    &kp RC(MINUS)        // tap: zoom out

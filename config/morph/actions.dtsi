@@ -1,0 +1,7 @@
+mp_a_paste_alt: morph_action_paste_alt {
+    compatible = "zmk,behavior-mod-morph";
+    label = "⏍ ⛶";
+    #binding-cells = <0>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+    bindings = <&kp RC(V)>, <&kp RC(RS(V))>;
+};
