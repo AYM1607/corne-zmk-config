@@ -223,6 +223,7 @@ Dedicated to Bluetooth and media controls.
 | <kbd>♾️</kbd>   | Bootloader               |
 | <kbd>BT⏮️</kbd> | Prev device              |
 | <kbd>BT⏭️</kbd> | Next device              |
+| <kbd>BT#️⃣</kbd> | Jump to #️⃣ device        |
 | <kbd>BT❌</kbd> | Cleat current device     |
 | <kbd>🔎+</kbd>  | Zoom in                  |
 | <kbd>🔎R</kbd>  | Zoom reset               |
