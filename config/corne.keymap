@@ -32,12 +32,6 @@
 #define NAV_BSPC    &mt LC(BSPC)  BSPC   // tap: bspc      | long-tap: delete word backward
 #define NAV_DEL     &mt LC(DEL)   DEL    // tap: del       | long-tap: delete word forward
 
-
-/* Custom Keys */
-#define ZOOM_IN     &kp RC(PLUS)         // tap: zoom in
-#define ZOOM_RST    &kp RC(N0)           // tap: zoom reset
-#define ZOOM_OUT    &kp RC(MINUS)        // tap: zoom out
-
 / {
     behaviors {
         #include "morph/shared.dtsi"
@@ -155,6 +149,10 @@
         };
 
         settings_layer {
+            #define ZOOM_IN     &kp RC(PLUS)         // tap: zoom in
+            #define ZOOM_RST    &kp RC(N0)           // tap: zoom reset
+            #define ZOOM_OUT    &kp RC(MINUS)        // tap: zoom out
+
             bindings = <
     KEY_BL   &none    &bt BT_PRV    &bt BT_CLR    &bt BT_NXT   ZOOM_IN          &kp C_VOL_UP         &none     &kp C_STOP       &none  &none  KEY_BL
      &none   &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  ZOOM_RST            &kp C_MUTE    &kp C_PREV       &kp C_PP  &kp C_NEXT  &none   &none
