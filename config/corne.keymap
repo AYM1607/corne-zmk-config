@@ -29,6 +29,7 @@
 #define KEY_BSD     &mp_bd               // tap: bspc      | shift: delete
 #define KEY_RET     &mt F2 RET           // tap: return    | long-tap: rename (like macOs)
 #define KEY_BL      &bootloader
+#define KEY_SPC     &kp SPACE
 
 
 /* Custom Keys */
@@ -96,21 +97,21 @@
         compatible = "zmk,keymap";
 
         base_layer {
-            #define D13  &hm LCMD A
-            #define D14  &hm LCTRL R
-            #define D15  &hm LALT S
-            #define D16  &hm LSHFT T
+            #define D13  &hm LCMD   A
+            #define D14  &hm LCTRL  R
+            #define D15  &hm LALT   S
+            #define D16  &hm LSHFT  T
 
-            #define D19  &hm RSHFT N
-            #define D20  &hm RALT E
-            #define D21  &hm RCTRL I
-            #define D22  &hm RCMD O
+            #define D19  &hm RSHFT  N
+            #define D20  &hm RALT   E
+            #define D21  &hm RCTRL  I
+            #define D22  &hm RCMD   O
 
             bindings = <
-    KEY_ESC  &kp Q  &kp W  &kp F      &kp P           &kp B             &kp J      &kp L     &kp U     &kp Y  &mp_ko  KEY_BSD
-    KEY_BSC    D13    D14    D15        D16           &kp G             &kp M        D19       D20       D21     D22  KEY_RET
-    KEY_TAB  &kp Z  &kp X  &kp C      &kp D           &kp V             &kp K      &kp H  &mp_d_cs  &mp_d_dc  &mp_kl   &mp_kb
-                          &mp_kq  &kp SPACE  &mo_to A_N DEV           &to A_N  &kp SPACE   &to STG
+    KEY_ESC  &kp Q  &kp W  &kp F    &kp P           &kp B             &kp J    &kp L     &kp U     &kp Y  &mp_ko  KEY_BSD
+    KEY_BSC    D13    D14    D15      D16           &kp G             &kp M      D19       D20       D21     D22  KEY_RET
+    KEY_TAB  &kp Z  &kp X  &kp C    &kp D           &kp V             &kp K    &kp H  &mp_d_cs  &mp_d_dc  &mp_kl   &mp_kb
+                          &mp_kq  KEY_SPC  &mo_to A_N DEV           &to A_N  KEY_SPC   &to STG
             >;
         };
 
@@ -126,10 +127,10 @@
             #define D22  &hm_d_rcmd RSHFT   0
 
             bindings = <
-    KEY_ESC  &kp AT  &kp POUND   &mp_d_m    &mp_d_p    &kp DQT          &kp TILDE    &mp_k_m  &kp UNDER  &kp PRCNT  &kp CARET  KEY_BSD
-    KEY_BSC     D13        D14       D15        D16    &kp SQT          &kp GRAVE        D19        D20        D21        D22  KEY_RET
-    KEY_TAB  &mp_kn   &kp LPAR  &kp RPAR    &mp_d_a   &kp BSLH           &kp FSLH   &mp_d_qs   &mp_d_lt   &mp_d_gt   &mp_d_ql  &mp_kbd
-                                &mp_d_cs  &kp SPACE    &to DEF            &to A_N  &kp SPACE   &mp_d_dc
+    KEY_ESC  &kp AT  &kp POUND   &mp_d_m  &mp_d_p    &kp DQT          &kp TILDE   &mp_k_m  &kp UNDER  &kp PRCNT  &kp CARET  KEY_BSD
+    KEY_BSC     D13        D14       D15      D16    &kp SQT          &kp GRAVE       D19        D20        D21        D22  KEY_RET
+    KEY_TAB  &mp_kn   &kp LPAR  &kp RPAR  &mp_d_a   &kp BSLH           &kp FSLH  &mp_d_qs   &mp_d_lt   &mp_d_gt   &mp_d_ql  &mp_kbd
+                                &mp_d_cs  KEY_SPC    &to DEF            &to A_N   KEY_SPC   &mp_d_dc
             >;
         };
 
@@ -138,7 +139,7 @@
     KEY_ESC    NAV_PREV  DSK_PREV    NAV_UP   DSK_NEXT   NAV_NEXT            &kp KP_PLUS  &mp_kn_f9  &mp_kn_f10  &mp_kn_f11  &mp_kn_f12      KEY_BSD
     KEY_BSC   &kp PSCRN  NAV_LEFT  NAV_DOWN  NAV_RIGHT      &none                &mp_k_m  &mp_kn_f5   &mp_kn_f6   &mp_kn_f7   &mp_kn_f8      KEY_RET
     KEY_TAB    KEY_UNDO   KEY_CUT  KEY_COPY  KEY_PASTE   KEY_REDO              &kp KP_N0  &mp_kn_f1   &mp_kn_f2   &mp_kn_f3   &mp_kn_f4  &key_repeat
-                                     &mp_kn  &kp SPACE    &to DEF                &to DEV  &kp SPACE  &kp KP_DOT
+                                     &mp_kn    KEY_SPC    &to DEF                &to DEV    KEY_SPC  &kp KP_DOT
             >;
         };
 
