@@ -1,4 +1,4 @@
-mp_a_paste_alt: morph_action_paste_alt {
+mp_a_paste: morph_action_paste {
     compatible = "zmk,behavior-mod-morph";
     label = "⏍ ⛶";
     #binding-cells = <0>;

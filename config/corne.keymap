@@ -24,22 +24,16 @@
 
 /* Shared Keys */
 #define KEY_ESC     &kp ESC
-#define KEY_BSC     &mp_bc               // tap: bspc      | shift: caps lock
 #define KEY_TAB     &kp TAB
-#define KEY_BSD     &mp_bd               // tap: bspc      | shift: delete
 #define KEY_RET     &mt F2 RET           // tap: return    | long-tap: rename (like macOs)
 #define KEY_SPC     &kp SPACE
 #define KEY_BL      &bootloader
 #define KEY_CXL     &kp K_CANCEL         // cancel caps-word and num-word
+#define NAV_BSPC    &mt LC(BSPC)  BSPC   // tap: bspc      | long-tap: delete word backward
+#define NAV_DEL     &mt LC(DEL)   DEL    // tap: del       | long-tap: delete word forward
 
 
 /* Custom Keys */
-#define NAV_LEFT    &mt HOME      LEFT   // tap: left      | long-tap: beginning of line
-#define NAV_RIGHT   &mt END       RIGHT  // tap: right     | long-tap: end       of line
-#define NAV_UP      &mt LC(HOME)  UP     // tap: up        | long-tap: beginning of document
-#define NAV_DOWN    &mt LC(END)   DOWN   // tap: down      | long-tap: end       of document
-#define NAV_BSPC    &mt LC(BSPC)  BSPC   // tap: bspc      | long-tap: delete word backward
-#define NAV_DEL     &mt LC(DEL)   DEL    // tap: del       | long-tap: delete word forward
 #define NAV_PREV    &mt RC(PG_UP) PG_DN  // tap: page down | long-tap: previous tab
 #define NAV_NEXT    &mt RC(PG_DN) PG_UP  // tap: page up   | long-tap: next     tab
 #define ZOOM_IN     &kp RC(PLUS)         // tap: zoom in
@@ -76,6 +70,7 @@
         #include "combos/accents.dtsi"
         #include "combos/base.dtsi"
         #include "combos/dev.dtsi"
+        #include "combos/actions.dtsi"
     };
 
     macros {
@@ -103,8 +98,8 @@
             #define B41  &to STG
 
             bindings = <
-    KEY_ESC  &kp Q  &kp W  &kp F    &kp P  &kp B             &kp J    &kp L     &kp U     &kp Y  &mp_ko  KEY_BSD
-    KEY_BSC    B13    B14    B15      B16  &kp G             &kp M      B19       B20       B21     B22  KEY_RET
+    KEY_ESC  &kp Q  &kp W  &kp F    &kp P  &kp B             &kp J    &kp L     &kp U     &kp Y  &mp_ko   &mp_bd
+     &mp_bc    B13    B14    B15      B16  &kp G             &kp M      B19       B20       B21     B22  KEY_RET
     KEY_TAB  &kp Z  &kp X  &kp C    &kp D  &kp V             &kp K    &kp H  &mp_d_cs  &mp_d_dc  &mp_kl   &mp_kb
                           &mp_kq  KEY_SPC    B38               B39  KEY_SPC       B41
             >;
@@ -125,23 +120,36 @@
             #define D39  &to A_N
 
             bindings = <
-    KEY_ESC  &kp AT  &kp POUND   &mp_d_m  &mp_d_p    &kp DQT          &kp TILDE   &mp_k_m  &kp UNDER  &kp PRCNT  &kp CARET  KEY_BSD
-    KEY_BSC     D13        D14       D15      D16    &kp SQT          &kp GRAVE       D19        D20        D21        D22  KEY_RET
+    KEY_ESC  &kp AT  &kp POUND   &mp_d_m  &mp_d_p    &kp DQT          &kp TILDE   &mp_k_m  &kp UNDER  &kp PRCNT  &kp CARET   &mp_bd
+     &mp_bc     D13        D14       D15      D16    &kp SQT          &kp GRAVE       D19        D20        D21        D22  KEY_RET
     KEY_TAB  &mp_kn   &kp LPAR  &kp RPAR  &mp_d_a   &kp BSLH           &kp FSLH  &mp_d_qs   &mp_d_lt   &mp_d_gt   &mp_d_ql  &mp_kbd
                                 &mp_d_cs  KEY_SPC        D38                D39   KEY_SPC   &mp_d_dc
             >;
         };
 
         act_num_layer {
+            #define A01  &kp LG(PAUSE_BREAK) /* System Info */
+            #define A13  &hm LCMD    PSCRN
+            #define A14  &hm LCTRL   LEFT
+            #define A15  &hm LALT    DOWN
+            #define A16  &hm LSHFT   RIGHT
+            #define A17  &kp LC(LA(DEL)) /* Windows Security */
+
+            // #define A19  &hm_d_rshf RCMD    0
+            // #define A20  &hm        RALT    LBKT
+            // #define A21  &hm        RCTRL   RBKT
+            // #define A22  &hm_d_rcmd RSHFT   0
+
             #define KEY_UNDO    &kp RC(Z)            // tap: undo
             #define KEY_REDO    &kp RC(Y)            // tap: redo
             #define KEY_CUT     &kp RC(X)            // tap: cut
             #define KEY_COPY    &kp RC(C)            // tap: copy
-            #define KEY_PASTE   &mp_a_paste_alt      // tap: paste     | shift: paste without format
+            #define KEY_PASTE   &mp_a_paste          // tap: paste     | shift: paste without format
+
 
             bindings = <
-    KEY_ESC    NAV_PREV  DSK_PREV    NAV_UP   DSK_NEXT   NAV_NEXT            &kp KP_PLUS  &mp_kn_f9  &mp_kn_f10  &mp_kn_f11  &mp_kn_f12      KEY_BSD
-    KEY_BSC   &kp PSCRN  NAV_LEFT  NAV_DOWN  NAV_RIGHT      &none                &mp_k_m  &mp_kn_f5   &mp_kn_f6   &mp_kn_f7   &mp_kn_f8      KEY_RET
+    KEY_ESC         A01  DSK_PREV    &kp UP   DSK_NEXT   NAV_NEXT            &kp KP_PLUS  &mp_kn_f9  &mp_kn_f10  &mp_kn_f11  &mp_kn_f12       &mp_bd
+     &mp_bc         A13       A14       A15        A16        A17                &mp_k_m  &mp_kn_f5   &mp_kn_f6   &mp_kn_f7   &mp_kn_f8      KEY_RET
     KEY_TAB    KEY_UNDO   KEY_CUT  KEY_COPY  KEY_PASTE   KEY_REDO              &kp KP_N0  &mp_kn_f1   &mp_kn_f2   &mp_kn_f3   &mp_kn_f4  &key_repeat
                                      &mp_kn    KEY_SPC    &to DEF                &to DEV    KEY_SPC  &kp KP_DOT
             >;

@@ -1,0 +1,23 @@
+combo_accent_nav_up_alt {
+    bindings = <&kp LC(HOME)>; /* beginning of document */
+    key-positions = <3 L_ALT>;
+    layers = <0>;
+};
+
+combo_accent_nav_left_alt {
+    bindings = <&kp HOME>;
+    key-positions = <14 L_ALT>;
+    layers = <0>;
+};
+
+combo_accent_nav_left_down {
+    bindings = <&kp LC(END)>; /* end of document */
+    key-positions = <15 L_ALT>;
+    layers = <0>;
+};
+
+combo_accent_nav_left_right {
+    bindings = <&kp RIGHT>;
+    key-positions = <16 L_ALT>;
+    layers = <0>;
+};
