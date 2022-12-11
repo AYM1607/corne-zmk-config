@@ -216,6 +216,30 @@ Dedicated to Bluetooth and media controls.
 
 ![Settings](./.github/images/3-layer.png)
 
+##### Actions
+
+| Label           | Action                   |
+| --------------: |  ----------------------- |
+| <kbd>♾️</kbd>   | Bootloader               |
+| <kbd>BT⏮️</kbd> | Prev device              |
+| <kbd>BT⏭️</kbd> | Next device              |
+| <kbd>BT❌</kbd> | Cleat current device     |
+| <kbd>🔎+</kbd>  | Zoom in                  |
+| <kbd>🔎R</kbd>  | Zoom reset               |
+| <kbd>🔎-</kbd>  | Zoom out                 |
+| <kbd>🔅</kbd>   | Bright down              |
+| <kbd>🔆</kbd>   | Bright up                |
+
+##### Media
+
+| Label         | Action     |
+| ------------: |  --------- |
+| <kbd>⏹️</kbd> | Stop       |
+| <kbd>⏮️</kbd> | Prev       |
+| <kbd>⏯️</kbd> | Play/Pause |
+| <kbd>⏭️</kbd> | Next       |
+| <kbd>🔀</kbd> | Shuffle    |
+
 ⇧ [Back to menu](#menu)
 
 ---
