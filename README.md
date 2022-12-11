@@ -229,27 +229,28 @@ Quick navigation actions and numbers.
 
 ##### Navigation
 
-| Key           | Action   | Combination     | Actions               |
-| ------------: | -------- | --------------- | --------------------- |
-| <kbd>△</kbd>  | Up       | <kbd>⇪△</kbd>  | Beginning of document |
-| <kbd>▽</kbd>  | Down     | <kbd>⇪▽</kbd>  | End of document       |
-| <kbd>◁</kbd>  | Left     | <kbd>⇪◁</kbd>  | Beginning of line     |
-| <kbd>▷</kbd>  | Right    | <kbd>⇪▷</kbd>  | End of line           |
-| <kbd>⇞</kbd>  | Page Up   | <kbd>⇪⇞</kbd>  | Next tab              |
-| <kbd>⇟</kbd>  | Page Down | <kbd>⇪⇟</kbd>  | Previous Tab          |
+| Key           | Action   | Combination                 | Actions               |
+| ------------: | -------- | ----------------------------| --------------------- |
+| <kbd>△</kbd>  | Up       | <kbd>⌥</kbd>+<kbd>△</kbd>  | Beginning of document |
+| <kbd>▽</kbd>  | Down     | <kbd>⌥</kbd>+<kbd>▽</kbd>  | End of document       |
+| <kbd>◁</kbd>  | Left     | <kbd>⌥</kbd>+<kbd>◁</kbd>  | Beginning of line     |
+| <kbd>▷</kbd>  | Right    | <kbd>⌥</kbd>+<kbd>▷</kbd>  | End of line           |
+| <kbd>⇺</kbd>  | Prev Tab  | <kbd>⇧</kbd>+<kbd>⇺</kbd>  | Prev desktop          |
+| <kbd>⇻</kbd>  | Next Tab  | <kbd>⇧</kbd>+<kbd>⇻</kbd>  | Next desktop          |
 
 ##### Actions
 
-| Key           | Action               |
-| ------------: | -------------------- |
-| <kbd>⎙</kbd>  | Print Screen         |
-| <kbd>🗀</kbd>  | File Explorer        |
-| <kbd>↶</kbd>  | Undo                 |
-| <kbd>↷</kbd>  | Redo                 |
-| <kbd>⬚</kbd>  | Cut                  |
-| <kbd>⧉</kbd>  | Copy                 |
-| <kbd>■</kbd>  | Paste                 |
-| <kbd>⇪■</kbd>  | Paste without format |
+| Key           | Action               | Combination                | Actions               |
+| ------------: | -------------------- | -------------------------- | --------------------- |
+| <kbd>ⓘ</kbd>  | System Info          |                            |                       |
+| <kbd>⛨</kbd>  | Windows Security     |                            |                       |
+| <kbd>▣</kbd>  | Print Screen         |                            |                       |
+| <kbd>⎎</kbd>  | File Explorer        |                            |                       |
+| <kbd>↶</kbd>  | Undo                 |                            |                       |
+| <kbd>↷</kbd>  | Redo                 |                            |                       |
+| <kbd>⬚</kbd>  | Cut                  |                            |                       |
+| <kbd>⿻</kbd>  | Copy                 |                            |                       |
+| <kbd>⏍</kbd>  | Paste                | <kbd>⇧</kbd>+<kbd>⏍</kbd> | Paste without format |
 
 #### 3. Settings
 
