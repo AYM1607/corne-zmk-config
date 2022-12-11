@@ -6,3 +6,12 @@ hm_d_lcmd: behavior_dev_lcmd {
     tapping-term-ms = <200>;
     bindings = <&kp>, <&mp_d_lao>;
 };
+
+hm_d_lshf: behavior_dev_lshf {
+    compatible = "zmk,behavior-hold-tap";
+    label = "hm_d_lshf";
+    #binding-cells = <2>;
+    flavor = "hold-preferred";
+    tapping-term-ms = <200>;
+    bindings = <&kp>, <&mp_d_e>;
+};
