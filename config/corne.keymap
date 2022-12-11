@@ -21,6 +21,15 @@
 #define A_N  2
 #define STG  3
 
+/* Shared Keys */
+#define KEY_ESC     &kp ESC
+#define KEY_BSC     &mp_bc               // tap: bspc      | shift: caps lock
+#define KEY_TAB     &kp TAB
+#define KEY_BSD     &mp_bd               // tap: bspc      | shift: delete
+#define KEY_RET     &mt F2 RET           // tap: return    | long-tap: rename (like macOs)
+
+
+
 /* Custom Keys */
 #define NAV_LEFT    &mt HOME     LEFT    // tap: left      | long-tap: beginning of line
 #define NAV_RIGHT   &mt END      RIGHT   // tap: right     | long-tap: end       of line
@@ -35,8 +44,8 @@
 #define KEY_REDO    &kp RC(Y)            // tap: redo
 #define KEY_CUT     &kp RC(X)            // tap: cut
 #define KEY_COPY    &kp RC(C)            // tap: copy
-#define KEY_PASTE   &mt RC(V) RC(RS(V))  // tap: paste  | long-tap: paste without format
-#define KEY_RET     &mt F2 RET           // tap: return | long-tap: rename (like macOs)
+#define KEY_PASTE   &mt RC(V) RC(RS(V))  // tap: paste     | long-tap: paste without format
+
 
 #define ZOOM_IN     &kp RC(PLUS)         // tap: zoom in
 #define ZOOM_RST    &kp RC(N0)           // tap: zoom reset
@@ -97,10 +106,10 @@
             #define D22  &hm RCMD O
 
             bindings = <
-    &kp ESC  &kp Q  &kp W       &kp F           &kp P           &kp B             &kp J        &kp L       &kp U        &kp Y      &mp_ko   &mp_bd
-     &mp_bc    D13    D14         D15             D16           &kp G             &kp M          D19         D20          D21         D22  KEY_RET
-    &kp TAB  &kp Z  &kp X       &kp C           &kp D           &kp V             &kp K        &kp H    &mp_d_cs     &mp_d_dc      &mp_kl   &mp_kb
-                               &mp_kq       &kp SPACE  &mo_to A_N DEV           &to A_N    &kp SPACE     &to STG
+    KEY_ESC  &kp Q  &kp W  &kp F      &kp P           &kp B             &kp J      &kp L     &kp U     &kp Y  &mp_ko  KEY_BSD
+    KEY_BSC    D13    D14    D15        D16           &kp G             &kp M        D19       D20       D21     D22  KEY_RET
+    KEY_TAB  &kp Z  &kp X  &kp C      &kp D           &kp V             &kp K      &kp H  &mp_d_cs  &mp_d_dc  &mp_kl   &mp_kb
+                          &mp_kq  &kp SPACE  &mo_to A_N DEV           &to A_N  &kp SPACE   &to STG
             >;
         };
 
@@ -116,18 +125,18 @@
             #define D22  &hm_d_rcmd RSHFT   0
 
             bindings = <
-    &kp ESC  &kp AT  &kp POUND   &mp_d_m    &mp_d_p    &kp DQT          &kp TILDE    &mp_k_m  &kp UNDER  &kp PRCNT  &kp CARET   &mp_bd
-     &mp_bc     D13        D14       D15        D16    &kp SQT          &kp GRAVE        D19        D20        D21        D22  KEY_RET
-    &kp TAB  &mp_kn   &kp LPAR  &kp RPAR    &mp_d_a   &kp BSLH           &kp FSLH   &mp_d_qs   &mp_d_lt   &mp_d_gt   &mp_d_ql  &mp_kbd
+    KEY_ESC  &kp AT  &kp POUND   &mp_d_m    &mp_d_p    &kp DQT          &kp TILDE    &mp_k_m  &kp UNDER  &kp PRCNT  &kp CARET  KEY_BSD
+    KEY_BSC     D13        D14       D15        D16    &kp SQT          &kp GRAVE        D19        D20        D21        D22  KEY_RET
+    KEY_TAB  &mp_kn   &kp LPAR  &kp RPAR    &mp_d_a   &kp BSLH           &kp FSLH   &mp_d_qs   &mp_d_lt   &mp_d_gt   &mp_d_ql  &mp_kbd
                                 &mp_d_cs  &kp SPACE    &to DEF            &to A_N  &kp SPACE   &mp_d_dc
             >;
         };
 
         act_num_layer {
             bindings = <
-    &kp ESC    NAV_PREV  DSK_PREV    NAV_UP   DSK_NEXT   NAV_NEXT            &kp KP_PLUS  &mp_kn_f9  &mp_kn_f10  &mp_kn_f11  &mp_kn_f12       &mp_bd
-     &mp_bc   &kp PSCRN  NAV_LEFT  NAV_DOWN  NAV_RIGHT      &none                &mp_k_m  &mp_kn_f5   &mp_kn_f6   &mp_kn_f7   &mp_kn_f8      KEY_RET
-    &kp TAB    KEY_UNDO   KEY_CUT  KEY_COPY  KEY_PASTE   KEY_REDO              &kp KP_N0  &mp_kn_f1   &mp_kn_f2   &mp_kn_f3   &mp_kn_f4  &key_repeat
+    KEY_ESC    NAV_PREV  DSK_PREV    NAV_UP   DSK_NEXT   NAV_NEXT            &kp KP_PLUS  &mp_kn_f9  &mp_kn_f10  &mp_kn_f11  &mp_kn_f12      KEY_BSD
+    KEY_BSC   &kp PSCRN  NAV_LEFT  NAV_DOWN  NAV_RIGHT      &none                &mp_k_m  &mp_kn_f5   &mp_kn_f6   &mp_kn_f7   &mp_kn_f8      KEY_RET
+    KEY_TAB    KEY_UNDO   KEY_CUT  KEY_COPY  KEY_PASTE   KEY_REDO              &kp KP_N0  &mp_kn_f1   &mp_kn_f2   &mp_kn_f3   &mp_kn_f4  &key_repeat
                                      &mp_kn  &kp SPACE    &to DEF                &to DEV  &kp SPACE  &kp KP_DOT
             >;
         };
