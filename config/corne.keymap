@@ -86,19 +86,19 @@
         compatible = "zmk,keymap";
 
         base_layer {
-            #define B13  &hm LCMD A
-            #define B14  &hm LCTRL R
-            #define B15  &hm LALT S
-            #define B16  &hm LSHFT T
+            #define D13  &hm LCMD A
+            #define D14  &hm LCTRL R
+            #define D15  &hm LALT S
+            #define D16  &hm LSHFT T
 
-            #define B19  &hm RSHFT N
-            #define B20  &hm RALT E
-            #define B21  &hm RCTRL I
-            #define B22  &hm RCMD O
+            #define D19  &hm RSHFT N
+            #define D20  &hm RALT E
+            #define D21  &hm RCTRL I
+            #define D22  &hm RCMD O
 
             bindings = <
     &kp ESC  &kp Q  &kp W       &kp F           &kp P           &kp B             &kp J        &kp L       &kp U        &kp Y      &mp_ko   &mp_bd
-     &mp_bc    B13    B14         B15             B16           &kp G             &kp M          B19         B20          B21         B22  KEY_RET
+     &mp_bc    D13    D14         D15             D16           &kp G             &kp M          D19         D20          D21         D22  KEY_RET
     &kp TAB  &kp Z  &kp X       &kp C           &kp D           &kp V             &kp K        &kp H    &mp_d_cs     &mp_d_dc      &mp_kl   &mp_kb
                                &mp_kq       &kp SPACE  &mo_to A_N DEV           &to A_N    &kp SPACE     &to STG
             >;
