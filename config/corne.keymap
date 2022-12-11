@@ -11,8 +11,8 @@
 &mt {
     flavor = "tap-preferred";
     tapping-term-ms = <220>;
-    quick-tap-ms = <220>;// repeat on tap-into-hold
-    hold-trigger-key-positions = <0>;// tap on interrupt
+    quick-tap-ms = <220>;               // repeat on tap-into-hold
+    hold-trigger-key-positions = <0>;   // tap on interrupt
 };
 
 /* Layers */
@@ -33,12 +33,12 @@
 
 
 /* Custom Keys */
-#define NAV_LEFT    &mt HOME     LEFT    // tap: left      | long-tap: beginning of line
-#define NAV_RIGHT   &mt END      RIGHT   // tap: right     | long-tap: end       of line
-#define NAV_UP      &mt LC(HOME) UP      // tap: up        | long-tap: beginning of document
-#define NAV_DOWN    &mt LC(END)  DOWN    // tap: down      | long-tap: end       of document
-#define NAV_BSPC    &mt LC(BSPC) BSPC    // tap: bspc      | long-tap: delete word backward
-#define NAV_DEL     &mt LC(DEL)  DEL     // tap: del       | long-tap: delete word forward
+#define NAV_LEFT    &mt HOME      LEFT   // tap: left      | long-tap: beginning of line
+#define NAV_RIGHT   &mt END       RIGHT  // tap: right     | long-tap: end       of line
+#define NAV_UP      &mt LC(HOME)  UP     // tap: up        | long-tap: beginning of document
+#define NAV_DOWN    &mt LC(END)   DOWN   // tap: down      | long-tap: end       of document
+#define NAV_BSPC    &mt LC(BSPC)  BSPC   // tap: bspc      | long-tap: delete word backward
+#define NAV_DEL     &mt LC(DEL)   DEL    // tap: del       | long-tap: delete word forward
 #define NAV_PREV    &mt RC(PG_UP) PG_DN  // tap: page down | long-tap: previous tab
 #define NAV_NEXT    &mt RC(PG_DN) PG_UP  // tap: page up   | long-tap: next     tab
 
@@ -97,21 +97,25 @@
         compatible = "zmk,keymap";
 
         base_layer {
-            #define D13  &hm LCMD   A
-            #define D14  &hm LCTRL  R
-            #define D15  &hm LALT   S
-            #define D16  &hm LSHFT  T
+            #define B13  &hm LCMD   A
+            #define B14  &hm LCTRL  R
+            #define B15  &hm LALT   S
+            #define B16  &hm LSHFT  T
 
-            #define D19  &hm RSHFT  N
-            #define D20  &hm RALT   E
-            #define D21  &hm RCTRL  I
-            #define D22  &hm RCMD   O
+            #define B19  &hm RSHFT  N
+            #define B20  &hm RALT   E
+            #define B21  &hm RCTRL  I
+            #define B22  &hm RCMD   O
+
+            #define B38  &mo_to A_N DEV
+            #define B39  &to A_N
+            #define B41  &to STG
 
             bindings = <
-    KEY_ESC  &kp Q  &kp W  &kp F    &kp P           &kp B             &kp J    &kp L     &kp U     &kp Y  &mp_ko  KEY_BSD
-    KEY_BSC    D13    D14    D15      D16           &kp G             &kp M      D19       D20       D21     D22  KEY_RET
-    KEY_TAB  &kp Z  &kp X  &kp C    &kp D           &kp V             &kp K    &kp H  &mp_d_cs  &mp_d_dc  &mp_kl   &mp_kb
-                          &mp_kq  KEY_SPC  &mo_to A_N DEV           &to A_N  KEY_SPC   &to STG
+    KEY_ESC  &kp Q  &kp W  &kp F    &kp P  &kp B             &kp J    &kp L     &kp U     &kp Y  &mp_ko  KEY_BSD
+    KEY_BSC    B13    B14    B15      B16  &kp G             &kp M      B19       B20       B21     B22  KEY_RET
+    KEY_TAB  &kp Z  &kp X  &kp C    &kp D  &kp V             &kp K    &kp H  &mp_d_cs  &mp_d_dc  &mp_kl   &mp_kb
+                          &mp_kq  KEY_SPC    B38               B39  KEY_SPC       B41
             >;
         };
 
