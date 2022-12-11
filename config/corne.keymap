@@ -42,11 +42,6 @@
 #define NAV_DEL     &mt LC(DEL)   DEL    // tap: del       | long-tap: delete word forward
 #define NAV_PREV    &mt RC(PG_UP) PG_DN  // tap: page down | long-tap: previous tab
 #define NAV_NEXT    &mt RC(PG_DN) PG_UP  // tap: page up   | long-tap: next     tab
-#define KEY_UNDO    &kp RC(Z)            // tap: undo
-#define KEY_REDO    &kp RC(Y)            // tap: redo
-#define KEY_CUT     &kp RC(X)            // tap: cut
-#define KEY_COPY    &kp RC(C)            // tap: copy
-#define KEY_PASTE   &mp_a_paste_alt      // tap: paste     | shift: paste without format
 #define ZOOM_IN     &kp RC(PLUS)         // tap: zoom in
 #define ZOOM_RST    &kp RC(N0)           // tap: zoom reset
 #define ZOOM_OUT    &kp RC(MINUS)        // tap: zoom out
@@ -138,6 +133,12 @@
         };
 
         act_num_layer {
+            #define KEY_UNDO    &kp RC(Z)            // tap: undo
+            #define KEY_REDO    &kp RC(Y)            // tap: redo
+            #define KEY_CUT     &kp RC(X)            // tap: cut
+            #define KEY_COPY    &kp RC(C)            // tap: copy
+            #define KEY_PASTE   &mp_a_paste_alt      // tap: paste     | shift: paste without format
+
             bindings = <
     KEY_ESC    NAV_PREV  DSK_PREV    NAV_UP   DSK_NEXT   NAV_NEXT            &kp KP_PLUS  &mp_kn_f9  &mp_kn_f10  &mp_kn_f11  &mp_kn_f12      KEY_BSD
     KEY_BSC   &kp PSCRN  NAV_LEFT  NAV_DOWN  NAV_RIGHT      &none                &mp_k_m  &mp_kn_f5   &mp_kn_f6   &mp_kn_f7   &mp_kn_f8      KEY_RET
