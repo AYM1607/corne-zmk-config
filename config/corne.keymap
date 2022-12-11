@@ -43,6 +43,7 @@
 
         #include "hold/shared.dtsi"
         #include "hold/dev.dtsi"
+        #include "hold/num.dtsi"
     };
 
     combos {
