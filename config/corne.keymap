@@ -128,27 +128,28 @@
         };
 
         act_num_layer {
-            #define A01  &kp LG(PAUSE_BREAK) /* System Info */
+            #define A01  &kp LG(PAUSE_BREAK)    // tap: system info
+            #define A05  &kp LC(LA(DEL))        // tap: windows security
             #define A13  &hm LCMD    PSCRN
             #define A14  &hm LCTRL   LEFT
             #define A15  &hm LALT    DOWN
             #define A16  &hm LSHFT   RIGHT
-            #define A17  &kp LC(LA(DEL)) /* Windows Security */
+            #define A17  &kp LG(E)              // tap: file explorer
 
             // #define A19  &hm_d_rshf RCMD    0
             // #define A20  &hm        RALT    LBKT
             // #define A21  &hm        RCTRL   RBKT
             // #define A22  &hm_d_rcmd RSHFT   0
 
-            #define KEY_UNDO    &kp RC(Z)            // tap: undo
-            #define KEY_REDO    &kp RC(Y)            // tap: redo
-            #define KEY_CUT     &kp RC(X)            // tap: cut
-            #define KEY_COPY    &kp RC(C)            // tap: copy
-            #define KEY_PASTE   &mp_a_paste          // tap: paste     | shift: paste without format
+            #define KEY_UNDO    &kp RC(Z)       // tap: undo
+            #define KEY_REDO    &kp RC(Y)       // tap: redo
+            #define KEY_CUT     &kp RC(X)       // tap: cut
+            #define KEY_COPY    &kp RC(C)       // tap: copy
+            #define KEY_PASTE   &mp_a_paste     // tap: paste     | shift: paste without format
 
 
             bindings = <
-    KEY_ESC         A01  DSK_PREV    &kp UP   DSK_NEXT   NAV_NEXT            &kp KP_PLUS  &mp_kn_f9  &mp_kn_f10  &mp_kn_f11  &mp_kn_f12       &mp_bd
+    KEY_ESC         A01  DSK_PREV    &kp UP   DSK_NEXT        A05            &kp KP_PLUS  &mp_kn_f9  &mp_kn_f10  &mp_kn_f11  &mp_kn_f12       &mp_bd
      &mp_bc         A13       A14       A15        A16        A17                &mp_k_m  &mp_kn_f5   &mp_kn_f6   &mp_kn_f7   &mp_kn_f8      KEY_RET
     KEY_TAB    KEY_UNDO   KEY_CUT  KEY_COPY  KEY_PASTE   KEY_REDO              &kp KP_N0  &mp_kn_f1   &mp_kn_f2   &mp_kn_f3   &mp_kn_f4  &key_repeat
                                      &mp_kn    KEY_SPC    &to DEF                &to DEV    KEY_SPC  &kp KP_DOT
