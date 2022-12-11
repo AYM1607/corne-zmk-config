@@ -28,7 +28,7 @@
 #define KEY_TAB     &kp TAB
 #define KEY_BSD     &mp_bd               // tap: bspc      | shift: delete
 #define KEY_RET     &mt F2 RET           // tap: return    | long-tap: rename (like macOs)
-#define KEY_BTL      &bootloader
+#define KEY_BTL     &bootloader
 #define KEY_SPC     &kp SPACE
 #define KEY_CXL     &kp K_CANCEL         // cancel caps-word and num-word
 
