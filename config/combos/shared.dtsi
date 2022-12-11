@@ -4,6 +4,6 @@ combo_caps-word {
 };
 
 combo_cancel-caps {
-    bindings = <CANCEL>; /* Label: CANCEL CAPS*/
+    bindings = <KEY_CXL>; /* Label: CANCEL CAPS*/
     key-positions = <L_CTRL R_CTRL>;
 };
