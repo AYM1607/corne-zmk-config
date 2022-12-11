@@ -62,7 +62,7 @@
     combos {
         compatible = "zmk,combos";
 
-        /* Modifier Keys */
+        /* Modifier Keys Position */
         #define L_CTRL  14
         #define L_ALT   15
         #define L_SHFT  16
@@ -100,9 +100,14 @@
             #define D15  &hm        LALT    RBRC
             #define D16  &hm_d_lshf LSHFT   0
 
+            #define D19  &hm_d_rshf RCMD    0
+            #define D20  &hm        RALT    LBKT
+            #define D21  &hm        RCTRL   RBKT
+            #define D22  &hm_d_rcmd RSHFT   0
+
             bindings = <
    &kp ESC  &kp AT  &kp POUND   &mp_d_m    &mp_d_p    &kp DQT          &kp TILDE    &mp_k_m  &kp UNDER  &kp PRCNT  &kp CARET   &mp_bd
-    &mp_bc     D13        D14       D15        D16    &kp SQT          &kp GRAVE   &mp_d_es   &kp LBKT   &kp RBKT  &mp_d_loo  KEY_RET
+    &mp_bc     D13        D14       D15        D16    &kp SQT          &kp GRAVE        D19        D20        D21        D22  KEY_RET
    &kp TAB  &mp_kn   &kp LPAR  &kp RPAR    &mp_d_a   &kp BSLH           &kp FSLH   &mp_d_qs   &mp_d_lt   &mp_d_gt   &mp_d_ql  &mp_kbd
                                &mp_d_cs  &kp SPACE    &to DEF            &to A_N  &kp SPACE   &mp_d_dc
             >;

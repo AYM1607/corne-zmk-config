@@ -15,3 +15,21 @@ hm_d_lshf: behavior_dev_lshf {
     tapping-term-ms = <200>;
     bindings = <&kp>, <&mp_d_e>;
 };
+
+hm_d_rshf: behavior_dev_rshf {
+    compatible = "zmk,behavior-hold-tap";
+    label = "hm_d_rshf";
+    #binding-cells = <2>;
+    flavor = "hold-preferred";
+    tapping-term-ms = <200>;
+    bindings = <&kp>, <&mp_d_es>;
+};
+
+hm_d_rcmd: behavior_dev_rcmd {
+    compatible = "zmk,behavior-hold-tap";
+    label = "hm_d_rcmd";
+    #binding-cells = <2>;
+    flavor = "hold-preferred";
+    tapping-term-ms = <200>;
+    bindings = <&kp>, <&mp_d_loo>;
+};
