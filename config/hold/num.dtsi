@@ -1,0 +1,35 @@
+hm_n_rshf: behavior_num_rshf {
+    compatible = "zmk,behavior-hold-tap";
+    label = "hm_n_rshf";
+    #binding-cells = <2>;
+    flavor = "hold-preferred";
+    tapping-term-ms = <200>;
+    bindings = <&kp>, <&mp_kn_f5>;
+};
+
+hm_n_ralt: behavior_num_ralt {
+    compatible = "zmk,behavior-hold-tap";
+    label = "hm_n_ralt";
+    #binding-cells = <2>;
+    flavor = "hold-preferred";
+    tapping-term-ms = <200>;
+    bindings = <&kp>, <&mp_kn_f6>;
+};
+
+hm_n_rctrl: behavior_num_rctrl {
+    compatible = "zmk,behavior-hold-tap";
+    label = "hm_n_rctrl";
+    #binding-cells = <2>;
+    flavor = "hold-preferred";
+    tapping-term-ms = <200>;
+    bindings = <&kp>, <&mp_kn_f7>;
+};
+
+hm_n_rcmd: behavior_num_rcmd {
+    compatible = "zmk,behavior-hold-tap";
+    label = "hm_n_rcmd";
+    #binding-cells = <2>;
+    flavor = "hold-preferred";
+    tapping-term-ms = <200>;
+    bindings = <&kp>, <&mp_kn_f8>;
+};
