@@ -53,7 +53,7 @@
 #define ZOOM_RST    &kp RC(N0)           // tap: zoom reset
 #define ZOOM_OUT    &kp RC(MINUS)        // tap: zoom out
 
-#define CANCEL      &kp K_CANCEL         // cancel caps-word and num-word
+#define KEY_CXL     &kp K_CANCEL         // cancel caps-word and num-word
 #define DSK_PREV    &kp LG(LC(LEFT))     // previous desktop
 #define DSK_NEXT    &kp LG(LC(RIGHT))    // next     desktop
 
