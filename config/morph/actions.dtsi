@@ -5,3 +5,19 @@ mp_a_paste: morph_action_paste {
     mods = <(MOD_LSFT|MOD_RSFT)>;
     bindings = <&kp RC(V)>, <&kp RC(RS(V))>;
 };
+
+mp_a_prev: morph_action_prev {
+    compatible = "zmk,behavior-mod-morph";
+    label = "⇺ ⎗";
+    #binding-cells = <0>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+    bindings = <&kp RC(PG_DN)>, <&kp LG(LC(LEFT))>;
+};
+
+mp_a_next: morph_action_next {
+    compatible = "zmk,behavior-mod-morph";
+    label = "⇻ ⎘";
+    #binding-cells = <0>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+    bindings = <&kp RC(PG_UP)>, <&kp LG(LC(RIGHT))>;
+};

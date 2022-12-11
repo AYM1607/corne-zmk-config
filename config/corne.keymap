@@ -34,13 +34,9 @@
 
 
 /* Custom Keys */
-#define NAV_PREV    &mt RC(PG_UP) PG_DN  // tap: page down | long-tap: previous tab
-#define NAV_NEXT    &mt RC(PG_DN) PG_UP  // tap: page up   | long-tap: next     tab
 #define ZOOM_IN     &kp RC(PLUS)         // tap: zoom in
 #define ZOOM_RST    &kp RC(N0)           // tap: zoom reset
 #define ZOOM_OUT    &kp RC(MINUS)        // tap: zoom out
-#define DSK_PREV    &kp LG(LC(LEFT))     // previous desktop
-#define DSK_NEXT    &kp LG(LC(RIGHT))    // next     desktop
 
 / {
     behaviors {
@@ -149,10 +145,10 @@
 
 
             bindings = <
-    KEY_ESC         A01  DSK_PREV    &kp UP   DSK_NEXT        A05            &kp KP_PLUS  &mp_kn_f9  &mp_kn_f10  &mp_kn_f11  &mp_kn_f12       &mp_bd
-     &mp_bc         A13       A14       A15        A16        A17                &mp_k_m  &mp_kn_f5   &mp_kn_f6   &mp_kn_f7   &mp_kn_f8      KEY_RET
-    KEY_TAB    KEY_UNDO   KEY_CUT  KEY_COPY  KEY_PASTE   KEY_REDO              &kp KP_N0  &mp_kn_f1   &mp_kn_f2   &mp_kn_f3   &mp_kn_f4  &key_repeat
-                                     &mp_kn    KEY_SPC    &to DEF                &to DEV    KEY_SPC  &kp KP_DOT
+    KEY_ESC         A01  &mp_a_prev    &kp UP  &mp_a_next        A05            &kp KP_PLUS  &mp_kn_f9  &mp_kn_f10  &mp_kn_f11  &mp_kn_f12       &mp_bd
+     &mp_bc         A13         A14       A15         A16        A17                &mp_k_m  &mp_kn_f5   &mp_kn_f6   &mp_kn_f7   &mp_kn_f8      KEY_RET
+    KEY_TAB    KEY_UNDO     KEY_CUT  KEY_COPY   KEY_PASTE   KEY_REDO              &kp KP_N0  &mp_kn_f1   &mp_kn_f2   &mp_kn_f3   &mp_kn_f4  &key_repeat
+                                       &mp_kn     KEY_SPC    &to DEF                &to DEV    KEY_SPC  &kp KP_DOT
             >;
         };
 
