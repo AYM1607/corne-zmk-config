@@ -88,6 +88,7 @@
             #define B39  &to A_N
             #define B41  &to STG
 
+            label = "DEFAULT";
             bindings = <
     KEY_ESC  &kp Q  &kp W  &kp F    &kp P  &kp B             &kp J    &kp L     &kp U     &kp Y  &mp_ko   &mp_bd
      &mp_bc    B13    B14    B15      B16  &kp G             &kp M      B19       B20       B21     B22  KEY_RET
@@ -110,6 +111,7 @@
             #define D38  &to DEF
             #define D39  &to A_N
 
+            label = "DEV";
             bindings = <
     KEY_ESC  &kp AT  &kp POUND   &mp_d_m  &mp_d_p    &kp DQT          &kp TILDE   &mp_k_m  &kp UNDER  &kp PRCNT  &kp CARET   &mp_bd
      &mp_bc     D13        D14       D15      D16    &kp SQT          &kp GRAVE       D19        D20        D21        D22  KEY_RET
@@ -141,6 +143,7 @@
             #define KEY_COPY    &kp RC(C)       // tap: copy
             #define KEY_PASTE   &mp_a_paste     // tap: paste     | shift: paste without format
 
+            label = "ACTIONS / NUMBERS";
             bindings = <
     KEY_ESC         A01  &mp_a_prev    &kp UP  &mp_a_next        A05            &kp KP_PLUS  &mp_kn_f9  &mp_kn_f10  &mp_kn_f11  &mp_kn_f12       &mp_bd
      &mp_bc         A13         A14       A15         A16        A17                &mp_k_m        A19         A20         A21         A22      KEY_RET
@@ -154,6 +157,7 @@
             #define ZOOM_RST    &kp RC(N0)           // tap: zoom reset
             #define ZOOM_OUT    &kp RC(MINUS)        // tap: zoom out
 
+            label = "SETTINGS";
             bindings = <
     KEY_BL   &none    &bt BT_PRV    &bt BT_CLR    &bt BT_NXT   ZOOM_IN          &kp C_VOL_UP         &none     &kp C_STOP       &none  &none  KEY_BL
      &none   &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  ZOOM_RST            &kp C_MUTE    &kp C_PREV       &kp C_PP  &kp C_NEXT  &none   &none
