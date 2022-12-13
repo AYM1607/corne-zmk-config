@@ -5,19 +5,19 @@ combo_accent_nav_up_alt {
 };
 
 combo_accent_nav_left_alt {
-    bindings = <&kp HOME>;
+    bindings = <&kp HOME>; /* beginning of line */
     key-positions = <14 L_ALT>;
     layers = <0>;
 };
 
-combo_accent_nav_left_down {
+combo_accent_nav_down_alt {
     bindings = <&kp LC(END)>; /* end of document */
     key-positions = <15 L_ALT>;
     layers = <0>;
 };
 
-combo_accent_nav_left_right {
-    bindings = <&kp RIGHT>;
+combo_accent_nav_right_alt {
+    bindings = <&kp END>; /* end of line */
     key-positions = <16 L_ALT>;
     layers = <0>;
 };
