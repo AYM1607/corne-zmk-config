@@ -24,8 +24,8 @@
 
 /* Shared Keys */
 #define KEY_ESC     &kp ESC
-#define KEY_TAB     &kp TAB
-#define KEY_RET     &mt F2 RET           // tap: return    | long-tap: rename (like macOs)
+#define KEY_TAB     &mt LEFT      TAB    // tap: tab       | long-tap: left (terminal autocompletion)
+#define KEY_RET     &mt F2        RET    // tap: return    | long-tap: rename (like macOs)
 #define KEY_SPC     &kp SPACE
 #define KEY_BL      &bootloader
 #define KEY_CXL     &kp K_CANCEL         // cancel caps-word and num-word
@@ -85,7 +85,7 @@
             #define B22  &hm RCMD   O
 
             #define B38  &mo_to A_N DEV
-            #define B39  &to A_N
+            #define B39  &mo_to A_N A_N
             #define B41  &to STG
 
             label = "DEFAULT";
