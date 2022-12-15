@@ -58,6 +58,7 @@ Icons used to describe some modifiers and actions
 | <kbd>\|⌫</kbd> | <kbd>⇪⌫</kbd>                          | Delete word backward                                  |
 | <kbd>⌦\|</kbd> | <kbd>⇧</kbd>+<kbd>⇪⌫</kbd>             | Delete word forward                                   |
 | <kbd>F2</kbd>   | <kbd>⇪⏎</kbd>                           | Rename (like macOS)                                   |
+| <kbd>▷</kbd>   | <kbd>⇪↹</kbd>                            | left (terminal autocompletion)                        |
 | <kbd>🄰</kbd>   | <kbd>⇧</kbd>+<kbd>⌫</kbd>               | Caps lock                                             |
 | <kbd>⇧⇧</kbd>  | <kbd>L⇧</kbd>+<kbd>L⇧</kbd>              | [Caps word](https://zmk.dev/docs/behaviors/caps-word) |
 | <kbd>^^</kbd>  | <kbd>L^</kbd>+<kbd>L^</kbd>              | Cancel caps                                           |
