@@ -222,7 +222,6 @@ Dedicated to Bluetooth and media controls.
 
 | Label           | Action                   |
 | --------------: |  ----------------------- |
-| <kbd>♾️</kbd>   | Bootloader               |
 | <kbd>BT⏮️</kbd> | Prev device              |
 | <kbd>BT⏭️</kbd> | Next device              |
 | <kbd>BT#️⃣</kbd> | Jump to #️⃣ device        |
