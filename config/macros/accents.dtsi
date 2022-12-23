@@ -4,7 +4,7 @@ m_aa: macro_accent_a {
     #binding-cells = <0>;
     bindings =
         <&macro_press   &kp RALT>,
-        <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N5>,
+        <&macro_tap     &kp KP_N2 &kp KP_N2 &kp KP_N5>,
         <&macro_release &kp RALT>;
 };
 
@@ -14,7 +14,7 @@ m_aa_shift: macro_accent_a_shift {
     #binding-cells = <0>;
     bindings =
         <&macro_press   &kp RALT>,
-        <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N9 &kp KP_N3>,
+        <&macro_tap     &kp KP_N1 &kp KP_N9 &kp KP_N3>,
         <&macro_release &kp RALT>;
 };
 
@@ -24,7 +24,7 @@ m_ae: macro_accent_e_alt {
     #binding-cells = <0>;
     bindings =
         <&macro_press   &kp RALT>,
-        <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N3 &kp KP_N3>,
+        <&macro_tap     &kp KP_N2 &kp KP_N3 &kp KP_N3>,
         <&macro_release &kp RALT>;
 };
 
@@ -34,7 +34,7 @@ m_ae_shift: macro_accent_e_shift {
     #binding-cells = <0>;
     bindings =
         <&macro_press   &kp RALT>,
-        <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N1>,
+        <&macro_tap     &kp KP_N2 &kp KP_N0 &kp KP_N1>,
         <&macro_release &kp RALT>;
 };
 
@@ -44,7 +44,7 @@ m_ai: macro_accent_i {
     #binding-cells = <0>;
     bindings =
         <&macro_press   &kp RALT>,
-        <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N3 &kp KP_N7>,
+        <&macro_tap     &kp KP_N2 &kp KP_N3 &kp KP_N7>,
         <&macro_release &kp RALT>;
 };
 
@@ -54,7 +54,7 @@ m_ai_shift: macro_accent_i_shift {
     #binding-cells = <0>;
     bindings =
         <&macro_press   &kp RALT>,
-        <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N5>,
+        <&macro_tap     &kp KP_N2 &kp KP_N0 &kp KP_N5>,
         <&macro_release &kp RALT>;
 };
 
@@ -64,7 +64,7 @@ m_ao: macro_accent_o {
     #binding-cells = <0>;
     bindings =
         <&macro_press   &kp RALT>,
-        <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N3>,
+        <&macro_tap     &kp KP_N2 &kp KP_N4 &kp KP_N3>,
         <&macro_release &kp RALT>;
 };
 
@@ -74,7 +74,7 @@ m_ao_shift: macro_accent_o_shift {
     #binding-cells = <0>;
     bindings =
         <&macro_press   &kp RALT>,
-        <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N1 &kp KP_N1>,
+        <&macro_tap     &kp KP_N2 &kp KP_N1 &kp KP_N1>,
         <&macro_release &kp RALT>;
 };
 
@@ -84,7 +84,7 @@ m_au: macro_accent_u {
     #binding-cells = <0>;
     bindings =
         <&macro_press   &kp RALT>,
-        <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N5 &kp KP_N0>,
+        <&macro_tap     &kp KP_N2 &kp KP_N5 &kp KP_N0>,
         <&macro_release &kp RALT>;
 };
 

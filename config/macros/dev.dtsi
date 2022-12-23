@@ -44,7 +44,7 @@ m_lda: macro_left_double_angle {
     #binding-cells = <0>;
     bindings =
         <&macro_press   &kp RALT>,
-        <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N7 &kp KP_N1>,
+        <&macro_tap     &kp KP_N1 &kp KP_N7 &kp KP_N1>,
         <&macro_release &kp RALT>;
 };
 
@@ -54,7 +54,7 @@ m_rda: macro_right_double_angle {
     #binding-cells = <0>;
     bindings =
         <&macro_press   &kp RALT>,
-        <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N8 &kp KP_N7>,
+        <&macro_tap     &kp KP_N1 &kp KP_N8 &kp KP_N7>,
         <&macro_release &kp RALT>;
 };
 
@@ -184,7 +184,7 @@ m_d_cqm: macro_close_question_mark {
     #binding-cells = <0>;
     bindings =
         <&macro_press   &kp RALT>,
-        <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N9 &kp KP_N1>,
+        <&macro_tap     &kp KP_N1 &kp KP_N9 &kp KP_N1>,
         <&macro_release &kp RALT>;
 };
 
@@ -226,7 +226,7 @@ m_d_ce: macro_close_exclamation {
     #binding-cells = <0>;
     bindings =
         <&macro_press   &kp RALT>,
-        <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N6 &kp KP_N1>,
+        <&macro_tap     &kp KP_N1 &kp KP_N6 &kp KP_N1>,
         <&macro_release &kp RALT>;
 };
 

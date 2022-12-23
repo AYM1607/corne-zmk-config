@@ -12,7 +12,7 @@ combo_dev_brackets_angular_ctrl_shift {
 
 combo_dev_greater_than_alt {
     bindings = <&m_gtoe>; /* Label: >= */
-    key-positions = <27 R_ALT>;
+    key-positions = <32 R_ALT>;
     layers = <1>;
 };
 
@@ -30,7 +30,7 @@ combo_dev_divide {
 
 combo_dev_increment {
     bindings = <&m_d_aao>; /* Label: += */
-    key-positions = <3 L_ALT>;
+    key-positions = <4 R_ALT>;
     layers = <1>;
 };
 
