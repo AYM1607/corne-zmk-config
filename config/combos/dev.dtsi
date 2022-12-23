@@ -34,6 +34,12 @@ combo_dev_increment {
     layers = <1>;
 };
 
+combo_dev_decrement {
+    bindings = <&m_d_sao>; /* Label: -= */
+    key-positions = <7 L_ALT>;
+    layers = <1>;
+};
+
 combo_dev_equal {
     bindings = <&m_d_se>; /* Label: === */
     key-positions = <4 L_ALT>;
