@@ -20,6 +20,7 @@ This is a WIP layout based on Colemak DHm for using on Windows, taking in mind s
   - [Charge](#charge)
   - [Reset](#reset)
   - [Configure](#configure)
+  - [Led Indicators](#led-indicators)
 - [About](#about)
 
 ---
@@ -254,7 +255,9 @@ There's a small slider switch right underneath the USB-C connector which control
 
 ![Turn off](.github/images/off.jpg)
 
-The keyboard is **ON** when the switch is slided to the **right** on both halves as shown in the following picture. Please note that for the halves to connect correctly, the both must be turned on as closely to THE SAME TIME as possible; it's okay if there's one or two seconds of difference but try to keep it to a minimum.
+The keyboard is **ON** when the switch is slided to the **right** on both halves as shown in the following picture (a few blue led flashing fast indicate two halves are paring each other).
+
+Please note that for the halves to connect correctly, the both must be turned on as closely to THE SAME TIME as possible; it's okay if there's one or two seconds of difference but try to keep it to a minimum.
 
 ![Turn on](.github/images/on.jpg)
 
@@ -262,7 +265,7 @@ The keyboard is **ON** when the switch is slided to the **right** on both halves
 
 To charge your boards you must put the half you want to charge in the ON position and connect it to a power source (it can be your computer) through the USB port.
 
-You know it's charging if you see an orange light like the one in the following picture. The light turns off when charging is done.
+You know it's charging if you see an orange led like the one in the following picture. The light turns off when charging is done.
 
 ![Charging](.github/images/charging.jpg)
 
@@ -286,7 +289,7 @@ Once you make changes to your keymap, you can download the firmware from the git
 
 2. Plug in the left half into your computer (without turning it on)
 
-3. "Double tap" the reset button, play around with the timing between taps since this might not work the first time. If you have trouble with this step, re-plug your board and try again, you might even need to use a different cable or port on your computer. You know this works if you see a blue light fading on and off coming from the nice nano.
+3. "Double tap" the reset button (blue led pulsing slowly), play around with the timing between taps since this might not work the first time. If you have trouble with this step, re-plug your board and try again, you might even need to use a different cable or port on your computer. You know this works if you see a blue light fading on and off coming from the nice nano.
 
 4. After the previous step you should see a new storage device in your computer called nice!nano, as shown in the picture below. Drag and drop (or copy and paste) the firmware file `corne_left-nice_nano_v2-zmk.uf2` which you should have generated and downloaded by following the guides linked above.
 
@@ -295,6 +298,14 @@ Once you make changes to your keymap, you can download the firmware from the git
 6. Unplug the board from your computer
 
 7. Follow the procedure in [How to turn my keyboard on?](#turn-onoff)
+
+### Led Indicators
+
+| Color  | Mode           | Action                                                  |
+| ------ | -------------- | ------------------------------------------------------- |
+| Blue   | Pulsing slowly | bootloader mode (enter by double pressing reset button) |
+| Blue   | Flashing fast  | halves are paring each other                            |
+| Orange |                | Charging                                                |
 
 ⇧ [Back to menu](#menu)
 
