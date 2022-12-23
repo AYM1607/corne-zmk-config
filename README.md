@@ -234,13 +234,15 @@ Dedicated to Bluetooth and media controls.
 
 ##### Media
 
-| Label         | Action     |
-| ------------: |  --------- |
-| <kbd>⏹️</kbd> | Stop       |
-| <kbd>⏮️</kbd> | Prev       |
-| <kbd>⏯️</kbd> | Play/Pause |
-| <kbd>⏭️</kbd> | Next       |
-| <kbd>🔀</kbd> | Shuffle    |
+| Label         | Action       |
+| ------------: |  ----------- |
+| <kbd>⏹️</kbd> | Stop         |
+| <kbd>⏪</kbd> | Fast reverse |
+| <kbd>⏮️</kbd> | Prev         |
+| <kbd>⏯️</kbd> | Play/Pause   |
+| <kbd>⏭️</kbd> | Next         |
+| <kbd>⏩</kbd> | Fast Forward |
+| <kbd>🔀</kbd> | Shuffle      |
 
 ⇧ [Back to menu](#menu)
 
