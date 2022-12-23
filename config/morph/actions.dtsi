@@ -3,7 +3,7 @@ mp_a_paste: morph_action_paste {
     label = "⏍ ⛶";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&kp RC(V)>, <&kp LC(RS(V))>;
+    bindings = <&kp RC(V)>, <&kp LC(V)>;
 };
 
 mp_a_prev: morph_action_prev {
