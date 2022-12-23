@@ -35,7 +35,7 @@ mp_kn_f4: morph_key_numbers_f4 {
     label = "= F4";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&kp KP_EQUAL>, <&kp F4>;
+    bindings = <&kp EQUAL>, <&kp F4>;
 };
 
 mp_kn_f5: morph_key_numbers_f5 {

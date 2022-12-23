@@ -147,7 +147,7 @@
     KEY_ESC         A01  &mp_a_prev    &kp UP  &mp_a_next        A05            &kp KP_PLUS  &mp_kn_f9  &mp_kn_f10  &mp_kn_f11  &mp_kn_f12       &mp_bd
      &mp_bc         A13         A14       A15         A16        A17                &mp_k_m        A19         A20         A21         A22      KEY_RET
     KEY_TAB    KEY_UNDO     KEY_CUT  KEY_COPY   KEY_PASTE   KEY_REDO              &kp    N0  &mp_kn_f1   &mp_kn_f2   &mp_kn_f3   &mp_kn_f4  &key_repeat
-                                       &mp_kn     KEY_SPC        A38                    A39    KEY_SPC  &kp KP_DOT
+                                       &mp_kn     KEY_SPC        A38                    A39    KEY_SPC     &kp DOT
             >;
         };
 
