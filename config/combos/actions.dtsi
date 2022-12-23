@@ -1,23 +1,23 @@
 combo_accent_nav_up_alt {
     bindings = <&kp LC(HOME)>; /* beginning of document */
-    key-positions = <3 R_ALT>;
+    key-positions = <3 L_ALT>;
     layers = <0>;
 };
 
 combo_accent_nav_left_alt {
     bindings = <&kp HOME>; /* beginning of line */
-    key-positions = <14 R_ALT>;
+    key-positions = <14 L_ALT>;
     layers = <0>;
 };
 
 combo_accent_nav_down_alt {
     bindings = <&kp LC(END)>; /* end of document */
-    key-positions = <15 R_ALT>;
+    key-positions = <15 L_ALT>;
     layers = <0>;
 };
 
 combo_accent_nav_right_alt {
     bindings = <&kp END>; /* end of line */
-    key-positions = <16 R_ALT>;
+    key-positions = <16 L_ALT>;
     layers = <0>;
 };
