@@ -43,7 +43,8 @@
         "rshf",
         "RSHFT",
         "SHFT",
-        "Sweept"
+        "Sweept",
+        "zmkfirmware"
     ],
     "markdownlint.config": {
         "MD033": false
