@@ -102,10 +102,10 @@
             #define D15  &hm        LALT    RBRC
             #define D16  &hm_d_lshf LSHFT   0
 
-            #define D19  &hm_d_rshf RCMD    0
+            #define D19  &hm_d_rshf RSHFT   0
             #define D20  &hm        RALT    LBKT
             #define D21  &hm        RCTRL   RBKT
-            #define D22  &hm_d_rcmd RSHFT   0
+            #define D22  &hm_d_rcmd RCMD    0
 
             #define D38  &to DEF
             #define D39  &to A_N
