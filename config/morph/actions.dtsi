@@ -3,7 +3,7 @@ mp_a_paste: morph_action_paste {
     label = "⏍ ⛶";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&kp RC(V)>, <&kp RC(RS(V))>;
+    bindings = <&kp RC(V)>, <&kp LC(RS(V))>;
 };
 
 mp_a_prev: morph_action_prev {
@@ -11,7 +11,7 @@ mp_a_prev: morph_action_prev {
     label = "⇺ ⎗";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&kp RC(PG_UP)>, <&kp LG(LC(LEFT))>;
+    bindings = <&kp RC(PG_UP)>, <&kp LC(LG(LEFT))>;
 };
 
 mp_a_next: morph_action_next {
@@ -19,5 +19,5 @@ mp_a_next: morph_action_next {
     label = "⇻ ⎘";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&kp RC(PG_DN)>, <&kp LG(LC(RIGHT))>;
+    bindings = <&kp RC(PG_DN)>, <&kp LC(LG(RIGHT))>;
 };
