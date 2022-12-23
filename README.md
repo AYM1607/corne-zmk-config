@@ -252,11 +252,11 @@ Dedicated to Bluetooth and media controls.
 
 There's a small slider switch right underneath the USB-C connector which controls power. The keyboard is **OFF** when the sliders on both halves are on the **left** positions as shown in the following picture:
 
-TODO: add picture
+![Turn off](.github/images/off.jpg)
 
 The keyboard is **ON** when the switch is slided to the **right** on both halves as shown in the following picture. Please note that for the halves to connect correctly, the both must be turned on as closely to THE SAME TIME as possible; it's okay if there's one or two seconds of difference but try to keep it to a minimum.
 
-TODO: add picture
+![Turn on](.github/images/on.jpg)
 
 ### Charge
 
@@ -264,7 +264,7 @@ To charge your boards you must put the half you want to charge in the ON positio
 
 You know it's charging if you see an orange light like the one in the following picture. The light turns off when charging is done.
 
-TODO: add picture
+![Charging](.github/images/charging.jpg)
 
 ### Reset
 
