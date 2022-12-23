@@ -272,7 +272,7 @@ Pressing it once resets the keyboard (power cycle so essentially equivalent to t
 
 Pressing it twice quickly puts into programming mode, if you plug it into your computer it shows up as a USB device instead of a keyboard; you can then drag and drop or copy and paste your firmware file to update your keymap.
 
-TODO: add picture
+![Reset](.github/images/reset.jpg)
 
 ### Configure
 
