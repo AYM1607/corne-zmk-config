@@ -6,3 +6,12 @@ mo_to: behavior_mo_to {
     tapping-term-ms = <200>;
     bindings = <&mo>, <&to>;
 };
+
+to_kp: behavior_to_kp {
+    compatible = "zmk,behavior-hold-tap";
+    label = "to_kp";
+    #binding-cells = <2>;
+    flavor = "hold-preferred";
+    tapping-term-ms = <200>;
+    bindings = <&to>, <&kp>;
+};
