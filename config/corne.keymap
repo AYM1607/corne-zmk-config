@@ -128,10 +128,10 @@
             #define A16  &hm LSHFT   RIGHT
             #define A17  &kp LG(E)              // tap: file explorer
 
-            #define A19  &hm_n_rshf  RCMD    0
-            #define A20  &hm_n_ralt  RALT    0
-            #define A21  &hm_n_rctrl RCTRL   0
-            #define A22  &hm_n_rcmd  RSHFT   0
+            #define A19  &hm_n_rshf  RSHFT  0
+            #define A20  &hm_n_ralt  RALT   0
+            #define A21  &hm_n_rctrl RCTRL  0
+            #define A22  &hm_n_rcmd  RCMD   0
 
             #define A38  &to DEF
             #define A39  &to DEV
