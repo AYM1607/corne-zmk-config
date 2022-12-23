@@ -5,9 +5,7 @@ hm: homerow_mods {
     tapping-term-ms = <300>;
     quick-tap-ms = <200>;
     flavor = "tap-preferred";
-    bindings =
-        <&kp>,
-        <&kp>;
+    bindings = <&kp>, <&kp>;
 };
 
 cw: caps_word {
