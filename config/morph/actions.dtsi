@@ -11,7 +11,7 @@ mp_a_prev: morph_action_prev {
     label = "⇺ ⎗";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&kp RC(PG_DN)>, <&kp LG(LC(LEFT))>;
+    bindings = <&kp RC(PG_UP)>, <&kp LG(LC(LEFT))>;
 };
 
 mp_a_next: morph_action_next {
@@ -19,5 +19,5 @@ mp_a_next: morph_action_next {
     label = "⇻ ⎘";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&kp RC(PG_UP)>, <&kp LG(LC(RIGHT))>;
+    bindings = <&kp RC(PG_DN)>, <&kp LG(LC(RIGHT))>;
 };
