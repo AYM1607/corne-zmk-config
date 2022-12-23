@@ -86,7 +86,7 @@
 
             #define B38  &mo_to A_N DEV
             #define B39  &mo_to A_N A_N
-            #define B41  &to STG
+            #define B41  &mo_to STG STG
 
             label = "DEFAULT";
             bindings = <
