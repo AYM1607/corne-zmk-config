@@ -11,7 +11,7 @@ mp_kn_f1: morph_key_numbers_f1 {
     label = "1 F1";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&kp N1>, <&kp F1>;
+    bindings = <&kp KP_N1>, <&kp F1>;
 };
 
 mp_kn_f2: morph_key_numbers_f2 {
@@ -19,7 +19,7 @@ mp_kn_f2: morph_key_numbers_f2 {
     label = "2 F2";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&kp N2>, <&kp F2>;
+    bindings = <&kp KP_N2>, <&kp F2>;
 };
 
 mp_kn_f3: morph_key_numbers_f3 {
@@ -27,7 +27,7 @@ mp_kn_f3: morph_key_numbers_f3 {
     label = "3 F3";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&kp N3>, <&kp F3>;
+    bindings = <&kp KP_N3>, <&kp F3>;
 };
 
 mp_kn_f4: morph_key_numbers_f4 {
@@ -43,7 +43,7 @@ mp_kn_f5: morph_key_numbers_f5 {
     label = "4 F5";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&kp N4>, <&kp F5>;
+    bindings = <&kp KP_N4>, <&kp F5>;
 };
 
 mp_kn_f6: morph_key_numbers_f6 {
@@ -51,7 +51,7 @@ mp_kn_f6: morph_key_numbers_f6 {
     label = "5 F6";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&kp N5>, <&kp F6>;
+    bindings = <&kp KP_N5>, <&kp F6>;
 };
 
 mp_kn_f7: morph_key_numbers_f7 {
@@ -59,7 +59,7 @@ mp_kn_f7: morph_key_numbers_f7 {
     label = "6 F7";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&kp N6>, <&kp F7>;
+    bindings = <&kp KP_N6>, <&kp F7>;
 };
 
 mp_kn_f8: morph_key_numbers_f8 {
@@ -75,7 +75,7 @@ mp_kn_f9: morph_key_numbers_f9 {
     label = "7 F9";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&kp N7>, <&kp F9>;
+    bindings = <&kp KP_N7>, <&kp F9>;
 };
 
 mp_kn_f10: morph_key_numbers_f10 {
@@ -83,7 +83,7 @@ mp_kn_f10: morph_key_numbers_f10 {
     label = "8 F10";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&kp N8>, <&kp F10>;
+    bindings = <&kp KP_N8>, <&kp F10>;
 };
 
 mp_kn_f11: morph_key_numbers_f11 {
@@ -91,7 +91,7 @@ mp_kn_f11: morph_key_numbers_f11 {
     label = "9 F11";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&kp N9>, <&kp F11>;
+    bindings = <&kp KP_N9>, <&kp F11>;
 };
 
 mp_kn_f12: morph_key_numbers_f12 {
