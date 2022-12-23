@@ -1,11 +1,3 @@
-mp_a_paste: morph_action_paste {
-    compatible = "zmk,behavior-mod-morph";
-    label = "⏍ ⛶";
-    #binding-cells = <0>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&kp RC(V)>, <&kp LC(V)>;
-};
-
 mp_a_prev: morph_action_prev {
     compatible = "zmk,behavior-mod-morph";
     label = "⇺ ⎗";

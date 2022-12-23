@@ -140,7 +140,7 @@
             #define KEY_REDO    &kp RC(Y)       // tap: redo
             #define KEY_CUT     &kp RC(X)       // tap: cut
             #define KEY_COPY    &kp RC(C)       // tap: copy
-            #define KEY_PASTE   &mp_a_paste     // tap: paste     | shift: paste without format
+            #define KEY_PASTE   &kp LC(V)       // tap: paste     | shift: paste without format
 
             label = "ACTIONS / NUMBERS";
             bindings = <
