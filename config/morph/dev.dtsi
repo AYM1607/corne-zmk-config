@@ -10,7 +10,7 @@ mp_d_lt_alt: morph_dev_less_than_alt {
     compatible = "zmk,behavior-mod-morph";
     label = "<= </>";
     #binding-cells = <0>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
+    mods = <(MOD_LSFT|MOD_RSFT|MOD_LALT|MOD_RALT)>;
     bindings = <&m_ltoe>, <&m_ba_h>;
 };
 
@@ -90,7 +90,7 @@ mp_d_qs_alt: morph_dev_question_symbol_alt {
     compatible = "zmk,behavior-mod-morph";
     label = "??= ¿";
     #binding-cells = <0>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
+    mods = <(MOD_LSFT|MOD_RSFT|MOD_LALT|MOD_RALT)>;
     bindings = <&m_d_ncao>, <&m_d_cqm>;
 };
 
@@ -106,7 +106,7 @@ mp_d_es_alt: morph_dev_exclamation_symbol_alt {
     compatible = "zmk,behavior-mod-morph";
     label = "!== ¡";
     #binding-cells = <0>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
+    mods = <(MOD_LSFT|MOD_RSFT|MOD_LALT|MOD_RALT)>;
     bindings = <&m_d_si>, <&m_d_ce>;
 };
 
@@ -118,10 +118,3 @@ mp_d_ql: morph_dev_question_logical {
     bindings = <&m_d_oco>, <&m_d_cto>;
 };
 
-mp_kbd: morph_key_browser_debug {
-    compatible = "zmk,behavior-mod-morph";
-    label = "CTRL+R CTRL+SHIFT+R";
-    #binding-cells = <0>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&kp RC(R)>, <&kp RC(RS(R))>;
-};

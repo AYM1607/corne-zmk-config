@@ -10,7 +10,7 @@ mp_kq_alt: morph_key_quote_alt {
     compatible = "zmk,behavior-mod-morph";
     label = "` ~";
     #binding-cells = <0>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
+    mods = <(MOD_LSFT|MOD_RSFT|MOD_LALT|MOD_RALT)>;
     bindings = <&kp GRAVE>, <&kp TILDE>;
 };
 
@@ -26,7 +26,7 @@ mp_ko_alt: morph_key_operator_alt {
     compatible = "zmk,behavior-mod-morph";
     label = "= *";
     #binding-cells = <0>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
+    mods = <(MOD_LSFT|MOD_RSFT|MOD_LALT|MOD_RALT)>;
     bindings = <&kp EQUAL>, <&kp ASTRK>;
 };
 
@@ -42,7 +42,7 @@ mp_kl_alt: morph_key_logic_alt {
     compatible = "zmk,behavior-mod-morph";
     label = "? |";
     #binding-cells = <0>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
+    mods = <(MOD_LSFT|MOD_RSFT|MOD_LALT|MOD_RALT)>;
     bindings = <&kp QMARK>, <&kp PIPE>;
 };
 
@@ -58,6 +58,6 @@ mp_kb_alt: morph_key_brackets_alt {
     compatible = "zmk,behavior-mod-morph";
     label = "[] </░>";
     #binding-cells = <0>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
+    mods = <(MOD_LSFT|MOD_RSFT|MOD_LALT|MOD_RALT)>;
     bindings = <&m_bs>, <&m_ba_h>;
 };
