@@ -2,7 +2,7 @@ mp_a: morph_a {
     compatible = "zmk,behavior-mod-morph";
     label = "á Á";
     #binding-cells = <0>;
-    mods = <(MOD_LSFT|MOD_RSFT|MOD_LALT|MOD_RALT)>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
     bindings = <&m_aa>, <&m_aa_shift>;
 };
 
@@ -10,7 +10,7 @@ mp_e: morph_e {
     compatible = "zmk,behavior-mod-morph";
     label = "é É";
     #binding-cells = <0>;
-    mods = <(MOD_LSFT|MOD_RSFT|MOD_LALT|MOD_RALT)>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
     bindings = <&m_ae>, <&m_ae_shift>;
 };
 
@@ -18,7 +18,7 @@ mp_i: morph_i {
     compatible = "zmk,behavior-mod-morph";
     label = "í Í";
     #binding-cells = <0>;
-    mods = <(MOD_LSFT|MOD_RSFT|MOD_LALT|MOD_RALT)>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
     bindings = <&m_ai>, <&m_ai_shift>;
 };
 
@@ -26,7 +26,7 @@ mp_o: morph_o {
     compatible = "zmk,behavior-mod-morph";
     label = "ó Ó";
     #binding-cells = <0>;
-    mods = <(MOD_LSFT|MOD_RSFT|MOD_LALT|MOD_RALT)>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
     bindings = <&m_ao>, <&m_ao_shift>;
 };
 
@@ -34,7 +34,7 @@ mp_u: morph_u {
     compatible = "zmk,behavior-mod-morph";
     label = "ú Ú ü Ü";
     #binding-cells = <0>;
-    mods = <(MOD_LSFT|MOD_RSFT|MOD_LALT|MOD_RALT)>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
     bindings = <&mt &m_uu &m_au>, <&mt &m_uu_shift &m_au_shift>;
 };
 
@@ -42,6 +42,6 @@ mp_n: morph_n {
     compatible = "zmk,behavior-mod-morph";
     label = "ñ Ñ";
     #binding-cells = <0>;
-    mods = <(MOD_LSFT|MOD_RSFT|MOD_LALT|MOD_RALT)>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
     bindings = <&m_an>, <&m_an_shift>;
 };
