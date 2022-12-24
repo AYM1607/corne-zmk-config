@@ -17,16 +17,17 @@
 
 /* Layers */
 #define DEF  0
-#define DEV  1
-#define A_N  2
-#define STG  3
+#define ACC  1
+#define DEV  2
+#define A_N  3
+#define STG  4
 
 
 /* Shared Keys */
 #define KEY_ESC     &to_kp  DEF       ESC    // tap: esc       | long-tap: DEF layer
 #define KEY_TAB     &mt     RIGHT     TAB    // tap: tab       | long-tap: right (terminal autocompletion)
 #define KEY_RET     &mt     F2        RET    // tap: return    | long-tap: rename (like macOs)
-#define KEY_SPC     &tr_kp  0         SPACE  // tap: space     | long-tap: macro key
+#define KEY_SPC     &mo_kp  ACC       SPACE  // tap: space     | long-tap: macro key
 #define KEY_CXL     &kp     K_CANCEL         // cancel caps-word and num-word
 #define NAV_BSPC    &mt     LC(BSPC)  BSPC   // tap: bspc      | long-tap: delete word backward
 #define NAV_DEL     &mt     LC(DEL)   DEL    // tap: del       | long-tap: delete word forward
@@ -86,11 +87,36 @@
             #define B21  &hm RCTRL  I
             #define B22  &hm RCMD   O
 
+            #define B37  &mo_to A_N DEV
             #define B38  &mo_to A_N DEV
             #define B39  &mo_to A_N A_N
             #define B41  &mo_to STG STG
 
             label = "DEFAULT";
+            bindings = <
+    KEY_ESC  &kp Q  &kp W  &kp F    &kp P  &kp B             &kp J    &kp L     &kp U     &kp Y  &mp_ko   &mp_bd
+     &mp_bc    B13    B14    B15      B16  &kp G             &kp M      B19       B20       B21     B22  KEY_RET
+    KEY_TAB  &kp Z  &kp X  &kp C    &kp D  &kp V             &kp K    &kp H  &mp_d_cs  &mp_d_dc  &mp_kl   &mp_kb
+                          &mp_kq  KEY_SPC    B38               B39  KEY_SPC       B41
+            >;
+        };
+
+        accents_layer {
+            #define B13  &mp_a
+            #define B14  &hm LCTRL  R
+            #define B15  &hm LALT   S
+            #define B16  &hm LSHFT  T
+
+            #define B19  &hm RSHFT  N
+            #define B20  &hm RALT   E
+            #define B21  &hm RCTRL  I
+            #define B22  &hm RCMD   O
+
+            #define B38  &mo_to A_N DEV
+            #define B39  &mo_to A_N A_N
+            #define B41  &mo_to STG STG
+
+            label = "ACCENTS";
             bindings = <
     KEY_ESC  &kp Q  &kp W  &kp F    &kp P  &kp B             &kp J    &kp L     &kp U     &kp Y  &mp_ko   &mp_bd
      &mp_bc    B13    B14    B15      B16  &kp G             &kp M      B19       B20       B21     B22  KEY_RET
