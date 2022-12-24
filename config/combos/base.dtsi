@@ -1,30 +1,30 @@
 combo_base_at_alt {
     bindings = <&kp AT>; /* Label: @ */
-    key-positions = <1 R_ALT>;
+    key-positions = <1 R_THUMB>;
     layers = <DEF>;
 };
 
 combo_base_quotes_alt {
     bindings = <&mp_kq_alt>; /* Label: ` ~ */
-    key-positions = <36 R_ALT>;
+    key-positions = <36 R_THUMB>;
     layers = <DEF>;
 };
 
 combo_base_operators_alt {
     bindings = <&mp_ko_alt>; /* Label: = * */
-    key-positions = <10 L_ALT>;
+    key-positions = <10 L_THUMB>;
     layers = <DEF>;
 };
 
 combo_base_logic_alt {
-    bindings = <&mp_kl_alt>; /* Label: ? | */
-    key-positions = <34 L_ALT>;
+    bindings = <&mp_kL_THUMB>; /* Label: ? | */
+    key-positions = <34 L_THUMB>;
     layers = <DEF>;
 };
 
 combo_base_brackets_alt {
     bindings = <&mp_kb_alt>; /* Label: [] </░> */
-    key-positions = <35 L_ALT>;
+    key-positions = <35 L_THUMB>;
     layers = <DEF>;
 };
 

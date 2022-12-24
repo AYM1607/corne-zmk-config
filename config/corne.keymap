@@ -59,12 +59,11 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_base_at_alt {
-            bindings = <&kp AT>;
-            key-positions = <1 R_THUMB>;
-            slow-release;
-            layers = <DEF>;
-        };
+        #include "combos/shared.dtsi"
+        #include "combos/accents.dtsi"
+        #include "combos/base.dtsi"
+        #include "combos/dev.dtsi"
+        #include "combos/actions.dtsi"
     };
 
     macros {
