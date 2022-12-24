@@ -2,40 +2,40 @@ combo_accent_a_alt {
     bindings = <&mp_a>; /* Label: á Á*/
     key-positions = <13 R_ALT>;
     slow-release;
-    layers = <0>;
+    layers = <DEF>;
 };
 
 combo_accent_e_alt {
     bindings = <&mp_e>; /* Label: é É*/
     key-positions = <20 L_ALT>;
     slow-release;
-    layers = <0>;
+    layers = <DEF>;
 };
 
 combo_accent_i_alt {
     bindings = <&mp_i>; /* Label: í Í*/
     key-positions = <21 L_ALT>;
     slow-release;
-    layers = <0>;
+    layers = <DEF>;
 };
 
 combo_accent_o_alt {
     bindings = <&mp_o>; /* Label: ó Ó*/
     key-positions = <22 L_ALT>;
     slow-release;
-    layers = <0>;
+    layers = <DEF>;
 };
 
 combo_accent_u_alt {
     bindings = <&mp_u>; /* Label: ú Ú ü Ü */
     key-positions = <9 L_ALT>;
     slow-release;
-    layers = <0>;
+    layers = <DEF>;
 };
 
 combo_accent_n_alt {
     bindings = <&mp_n>; /* Label: ñ Ñ */
     key-positions = <19 L_ALT>;
     slow-release;
-    layers = <0>;
+    layers = <DEF>;
 };
