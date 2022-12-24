@@ -59,7 +59,7 @@
 
         combo_base_at_alt {
             bindings = <&kp AT>;
-            key-positions = <1 L_ALT>;
+            key-positions = <1 10>;
             slow-release;
             layers = <DEF>;
         };
