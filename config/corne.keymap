@@ -26,7 +26,7 @@
 #define KEY_ESC     &to_kp  DEF       ESC    // tap: esc       | long-tap: DEF layer
 #define KEY_TAB     &mt     RIGHT     TAB    // tap: tab       | long-tap: right (terminal autocompletion)
 #define KEY_RET     &mt     F2        RET    // tap: return    | long-tap: rename (like macOs)
-#define KEY_SPC     &mo_kp  ACC       SPACE  // tap: space     | long-tap: macro key
+#define KEY_SPC     &kp     SPACE
 #define KEY_CXL     &kp     K_CANCEL         // cancel caps-word and num-word
 #define NAV_BSPC    &mt     LC(BSPC)  BSPC   // tap: bspc      | long-tap: delete word backward
 #define NAV_DEL     &mt     LC(DEL)   DEL    // tap: del       | long-tap: delete word forward
