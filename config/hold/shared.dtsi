@@ -15,3 +15,12 @@ to_kp: behavior_to_kp {
     tapping-term-ms = <200>;
     bindings = <&to>, <&kp>;
 };
+
+tr_kp: behavior_to_kp {
+    compatible = "zmk,behavior-hold-tap";
+    label = "tr_kp";
+    #binding-cells = <2>;
+    flavor = "hold-preferred";
+    tapping-term-ms = <200>;
+    bindings = <&trans>, <&kp>;
+};
