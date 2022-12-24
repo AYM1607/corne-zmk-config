@@ -1,90 +1,78 @@
 combo_dev_increment {
     bindings = <&m_d_aao>; /* Label: += */
     key-positions = <4 R_ALT>;
-    slow-release = true;
     layers = <1>;
 };
 
 combo_dev_logical_and {
     bindings = <&m_d_laao>; /* Label: &&= */
     key-positions = <13 R_ALT>;
-    slow-release = true;
     layers = <1>;
 };
 
 combo_dev_equal {
     bindings = <&m_d_se>; /* Label: === */
     key-positions = <16 R_ALT>;
-    slow-release = true;
     layers = <1>;
 };
 
 combo_dev_multiply {
     bindings = <&m_d_mao>; /* Label: *= */
     key-positions = <28 R_ALT>;
-    slow-release = true;
     layers = <1>;
 };
+
 
 combo_dev_decrement {
     bindings = <&m_d_sao>; /* Label: -= */
     key-positions = <7 L_ALT>;
-    slow-release = true;
     layers = <1>;
 };
 
 combo_dev_exclamation_alt {
     bindings = <&mp_d_es_alt>; /* Label: !== ¡ */
     key-positions = <19 L_ALT>;
-    slow-release = true;
     layers = <1>;
 };
 
 combo_dev_logical_or {
     bindings = <&m_d_loao>; /* Label: ||= */
     key-positions = <22 L_ALT>;
-    slow-release = true;
     layers = <1>;
 };
 
 combo_dev_divide {
     bindings = <&m_d_dao>; /* Label: /= */
     key-positions = <30 L_ALT>;
-    slow-release = true;
     layers = <1>;
 };
 
 combo_dev_question_alt {
     bindings = <&mp_d_qs_alt>; /* Label: ??= ¿ */
     key-positions = <31 L_ALT>;
-    slow-release = true;
     layers = <1>;
 };
 
 combo_dev_less_than_alt {
     bindings = <&mp_d_lt_alt>; /* Label: <= </░> */
     key-positions = <32 L_ALT>;
-    slow-release = true;
     layers = <1>;
 };
 
 combo_dev_brackets_angular_ctrl_shift {
     bindings = <&m_ba_r>; /* Label: <░/> */
     key-positions = <32 L_CTRL L_SHFT>;
-    slow-release = true;
     layers = <1>;
 };
 
 combo_dev_greater_than_alt {
     bindings = <&m_gtoe>; /* Label: >= */
     key-positions = <33 R_ALT>;
-    slow-release = true;
     layers = <1>;
 };
 
 combo_actions_dev_tools {
     bindings = <&kp F12>; /* Label: open dev tools */
     key-positions = <35 L_ALT>;
-    slow-release = true;
     layers = <1>;
 };
