@@ -72,7 +72,7 @@ combo_dev_greater_than_alt {
 };
 
 combo_actions_dev_tools {
-    bindings = <&kp RC(RS(I))>; /* Label: open dev tools */
+    bindings = <&kp F12>; /* Label: open dev tools */
     key-positions = <35 L_ALT>;
     layers = <1>;
 };
