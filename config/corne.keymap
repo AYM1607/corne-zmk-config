@@ -36,6 +36,8 @@
 #define L_CTRL  14
 #define L_ALT   15
 #define L_SHFT  16
+#define L_THUMB 37
+#define R_THUMB 40
 #define R_SHFT  19
 #define R_ALT   20
 #define R_CTRL  21
@@ -59,7 +61,7 @@
 
         combo_base_at_alt {
             bindings = <&kp AT>;
-            key-positions = <1 10>;
+            key-positions = <1 R_THUMB>;
             slow-release;
             layers = <DEF>;
         };
