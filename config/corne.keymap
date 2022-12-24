@@ -24,7 +24,7 @@
 
 /* Shared Keys */
 #define KEY_ESC     &to_kp  DEF       ESC    // tap: esc       | long-tap: DEF layer
-#define KEY_TAB     &mt     LEFT      TAB    // tap: tab       | long-tap: left (terminal autocompletion)
+#define KEY_TAB     &mt     RIGTH     TAB    // tap: tab       | long-tap: rigth (terminal autocompletion)
 #define KEY_RET     &mt     F2        RET    // tap: return    | long-tap: rename (like macOs)
 #define KEY_SPC     &kp     SPACE
 #define KEY_CXL     &kp     K_CANCEL         // cancel caps-word and num-word
