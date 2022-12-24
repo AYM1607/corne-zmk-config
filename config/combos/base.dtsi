@@ -17,7 +17,7 @@ combo_base_operators_alt {
 };
 
 combo_base_logic_alt {
-    bindings = <&mp_kmp_kL_THUMB>; /* Label: ? | */
+    bindings = <&mp_kmp_kl_alt>; /* Label: ? | */
     key-positions = <34 L_THUMB>;
     layers = <DEF>;
 };
