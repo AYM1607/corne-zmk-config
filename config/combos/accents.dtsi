@@ -1,6 +1,7 @@
 combo_accent_a_alt {
     bindings = <&mp_a>; /* Label: á Á*/
     key-positions = <13 R_ALT>;
+    slow-release = false;
     layers = <0>;
 };
 
