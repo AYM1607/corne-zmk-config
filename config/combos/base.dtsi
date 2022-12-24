@@ -1,35 +1,41 @@
 combo_base_at_alt {
-    bindings = <&kp AT>; /* Label: @ */
+    bindings = <&kp AT>;
     key-positions = <1 R_ALT>;
+    slow-release = true;
     layers = <0>;
 };
 
 combo_base_quotes_alt {
-    bindings = <&mp_kq_alt>; /* Label: ` ~ */
+    bindings = <&mp_kq_alt>;
     key-positions = <36 R_ALT>;
+    slow-release = true;
     layers = <0>;
 };
 
 combo_base_operators_alt {
     bindings = <&mp_ko_alt>; /* Label: = * */
     key-positions = <10 L_ALT>;
+    slow-release = true;
     layers = <0>;
 };
 
 combo_base_logic_alt {
     bindings = <&mp_kl_alt>; /* Label: ? | */
     key-positions = <34 L_ALT>;
+    slow-release = true;
     layers = <0>;
 };
 
 combo_base_brackets_alt {
     bindings = <&mp_kb_alt>; /* Label: [] </░> */
     key-positions = <35 L_ALT>;
+    slow-release = true;
     layers = <0>;
 };
 
 combo_base_brackets_angular_ctrl_shift {
     bindings = <&m_ba_r>; /* Label: <░/> */
     key-positions = <35 L_CTRL L_SHFT>;
+    slow-release = true;
     layers = <0>;
 };
