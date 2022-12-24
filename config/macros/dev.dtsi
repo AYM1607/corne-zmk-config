@@ -2,49 +2,66 @@ m_ba_h: macro_brackets_angle_html {
     compatible = "zmk,behavior-macro";
     label = "</░>";
     #binding-cells = <0>;
+    wait-ms = <WAIT>;
+    tap-ms = <TAP>;
     bindings =
-        <&macro_tap     &kp LT &kp FSLH &kp GT &kp LEFT>;
+        <&kp LT &kp FSLH &kp GT>,
+        <&kp LEFT>;
 };
 
 m_ba_r: macro_brackets_angle_react {
     compatible = "zmk,behavior-macro";
     label = "<░/>";
     #binding-cells = <0>;
+    wait-ms = <WAIT>;
+    tap-ms = <TAP>;
     bindings =
-        <&macro_tap     &kp LT &kp FSLH &kp GT &kp LEFT &kp LEFT>;
+        <&kp LT &kp FSLH &kp GT>,
+        <&kp LEFT &kp LEFT>;
 };
 
 m_bs: macro_brackets_square {
     compatible = "zmk,behavior-macro";
     label = "[░]";
     #binding-cells = <0>;
+    wait-ms = <WAIT>;
+    tap-ms = <TAP>;
     bindings =
-        <&macro_tap     &kp LBKT &kp RBKT &kp LEFT>;
+        <&kp LBKT &kp RBKT>,
+        <&kp LEFT>;
 };
 
 m_bc: macro_brackets_curly {
     compatible = "zmk,behavior-macro";
     label = "{░}";
     #binding-cells = <0>;
+    wait-ms = <WAIT>;
+    tap-ms = <TAP>;
     bindings =
-        <&macro_tap     &kp LBRC &kp RBRC &kp LEFT>;
+        <&kp LBRC &kp RBRC>,
+        <&kp LEFT>;
 };
 
 m_br: macro_brackets_round {
     compatible = "zmk,behavior-macro";
     label = "(░)";
     #binding-cells = <0>;
+    wait-ms = <WAIT>;
+    tap-ms = <TAP>;
     bindings =
-        <&macro_tap     &kp LPAR &kp RPAR &kp LEFT>;
+        <&kp LPAR &kp RPAR>,
+        <&kp LEFT>;
 };
 
 m_lda: macro_left_double_angle {
     compatible = "zmk,behavior-macro";
     label = "«";
     #binding-cells = <0>;
+    wait-ms = <WAIT>;
+    tap-ms = <TAP>;
     bindings =
         <&macro_press   &kp RALT>,
-        <&macro_tap     &kp KP_N1 &kp KP_N7 &kp KP_N1>,
+        <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N7 &kp KP_N1>,
         <&macro_release &kp RALT>;
 };
 
@@ -52,9 +69,11 @@ m_rda: macro_right_double_angle {
     compatible = "zmk,behavior-macro";
     label = "»";
     #binding-cells = <0>;
+    wait-ms = <WAIT>;
+    tap-ms = <TAP>;
     bindings =
         <&macro_press   &kp RALT>,
-        <&macro_tap     &kp KP_N1 &kp KP_N8 &kp KP_N7>,
+        <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N8 &kp KP_N7>,
         <&macro_release &kp RALT>;
 };
 
@@ -62,126 +81,158 @@ m_ltoe: macro_less_than_or_equal {
     compatible = "zmk,behavior-macro";
     label = "<=";
     #binding-cells = <0>;
+    wait-ms = <WAIT>;
+    tap-ms = <TAP>;
     bindings =
-        <&macro_tap     &kp LT &kp EQUAL>;
+        <&kp LT &kp EQUAL>;
 };
 
 m_gtoe: macro_greater_than_or_equal {
     compatible = "zmk,behavior-macro";
     label = ">=";
     #binding-cells = <0>;
+    wait-ms = <WAIT>;
+    tap-ms = <TAP>;
     bindings =
-        <&macro_tap     &kp GT &kp EQUAL>;
+        <&kp GT &kp EQUAL>;
 };
 
 m_d_eo: macro_dev_exponentiation_operator {
     compatible = "zmk,behavior-macro";
     label = "**";
     #binding-cells = <0>;
+    wait-ms = <WAIT>;
+    tap-ms = <TAP>;
     bindings =
-        <&macro_tap     &kp ASTRK &kp ASTRK>;
+        <&kp ASTRK &kp ASTRK>;
 };
 
 m_d_mao: macro_dev_multiplication_assignment_operator {
     compatible = "zmk,behavior-macro";
     label = "*=";
     #binding-cells = <0>;
+    wait-ms = <WAIT>;
+    tap-ms = <TAP>;
     bindings =
-        <&macro_tap     &kp ASTRK &kp EQUAL>;
+        <&kp ASTRK &kp EQUAL>;
 };
 
 m_d_dao: macro_dev_division_assignment_operator {
     compatible = "zmk,behavior-macro";
     label = "/=";
     #binding-cells = <0>;
+    wait-ms = <WAIT>;
+    tap-ms = <TAP>;
     bindings =
-        <&macro_tap     &kp FSLH &kp EQUAL>;
+        <&kp FSLH &kp EQUAL>;
 };
 
 m_d_io: macro_dev_increment_operator {
     compatible = "zmk,behavior-macro";
     label = "++";
     #binding-cells = <0>;
+    wait-ms = <WAIT>;
+    tap-ms = <TAP>;
     bindings =
-        <&macro_tap     &kp PLUS &kp PLUS>;
+        <&kp PLUS &kp PLUS>;
 };
 
 m_d_aao: macro_dev_addition_assignment_operator {
     compatible = "zmk,behavior-macro";
     label = "+=";
     #binding-cells = <0>;
+    wait-ms = <WAIT>;
+    tap-ms = <TAP>;
     bindings =
-        <&macro_tap     &kp PLUS &kp EQUAL>;
+        <&kp PLUS &kp EQUAL>;
 };
 
 m_d_do: macro_dev_decrement_operator {
     compatible = "zmk,behavior-macro";
     label = "--";
     #binding-cells = <0>;
+    wait-ms = <WAIT>;
+    tap-ms = <TAP>;
     bindings =
-        <&macro_tap     &kp MINUS &kp MINUS>;
+        <&kp MINUS &kp MINUS>;
 };
 
 m_d_sao: macro_dev_subtraction_assignment_operator {
     compatible = "zmk,behavior-macro";
     label = "-=";
     #binding-cells = <0>;
+    wait-ms = <WAIT>;
+    tap-ms = <TAP>;
     bindings =
-        <&macro_tap     &kp MINUS &kp EQUAL>;
+        <&kp MINUS &kp EQUAL>;
 };
 
 m_d_se: macro_dev_strict_equal {
     compatible = "zmk,behavior-macro";
     label = "===";
     #binding-cells = <0>;
+    wait-ms = <WAIT>;
+    tap-ms = <TAP>;
     bindings =
-        <&macro_tap     &kp EQUAL &kp EQUAL &kp EQUAL>;
+        <&kp EQUAL &kp EQUAL &kp EQUAL>;
 };
 
 m_d_a: macro_dev_arrow {
     compatible = "zmk,behavior-macro";
     label = "=>";
     #binding-cells = <0>;
+    wait-ms = <WAIT>;
+    tap-ms = <TAP>;
     bindings =
-        <&macro_tap     &kp EQUAL &kp GT>;
+        <&kp EQUAL &kp GT>;
 };
 
 m_d_la: macro_dev_logical_and {
     compatible = "zmk,behavior-macro";
     label = "&&";
     #binding-cells = <0>;
+    wait-ms = <WAIT>;
+    tap-ms = <TAP>;
     bindings =
-        <&macro_tap     &kp AMPS &kp AMPS>;
+        <&kp AMPS &kp AMPS>;
 };
 
 m_d_laao: macro_dev_logical_and_assignment_operator {
     compatible = "zmk,behavior-macro";
     label = "&&=";
     #binding-cells = <0>;
+    wait-ms = <WAIT>;
+    tap-ms = <TAP>;
     bindings =
-        <&macro_tap     &kp AMPS &kp AMPS &kp EQUAL>;
+        <&kp AMPS &kp AMPS &kp EQUAL>;
 };
 
 m_d_lo: macro_dev_logical_or {
     compatible = "zmk,behavior-macro";
     label = "||";
     #binding-cells = <0>;
+    wait-ms = <WAIT>;
+    tap-ms = <TAP>;
     bindings =
-        <&macro_tap     &kp PIPE &kp PIPE>;
+        <&kp PIPE &kp PIPE>;
 };
 
 m_d_loao: macro_dev_logical_or_assignment_operator {
     compatible = "zmk,behavior-macro";
     label = "||=";
     #binding-cells = <0>;
+    wait-ms = <WAIT>;
+    tap-ms = <TAP>;
     bindings =
-        <&macro_tap     &kp PIPE &kp PIPE &kp EQUAL>;
+        <&kp PIPE &kp PIPE &kp EQUAL>;
 };
 
 m_d_cqm: macro_close_question_mark {
     compatible = "zmk,behavior-macro";
     label = "¿";
     #binding-cells = <0>;
+    wait-ms = <WAIT>;
+    tap-ms = <TAP>;
     bindings =
         <&macro_press   &kp RALT>,
         <&macro_tap     &kp KP_N1 &kp KP_N9 &kp KP_N1>,
@@ -192,56 +243,82 @@ m_d_cto: macro_conditional_ternary_operator {
     compatible = "zmk,behavior-macro";
     label = "?░:░";
     #binding-cells = <0>;
+    wait-ms = <WAIT>;
+    tap-ms = <TAP>;
     bindings =
-        <&macro_tap     &kp QMARK &kp COLON &kp LEFT>;
+        <&kp QMARK &kp COLON &kp LEFT>;
 };
 
 m_d_oco: macro_optional_chaining_operator {
     compatible = "zmk,behavior-macro";
     label = "?.";
     #binding-cells = <0>;
+    wait-ms = <WAIT>;
+    tap-ms = <TAP>;
     bindings =
-        <&macro_tap     &kp QMARK &kp DOT>;
+        <&kp QMARK &kp DOT>;
 };
 
 m_d_nco: macro_nullish_coalescing_operator {
     compatible = "zmk,behavior-macro";
     label = "??";
     #binding-cells = <0>;
+    wait-ms = <WAIT>;
+    tap-ms = <TAP>;
     bindings =
-        <&macro_tap     &kp QMARK &kp QMARK>;
+        <&kp QMARK &kp QMARK>;
 };
 
 m_d_ncao: macro_dev_nullish_coalescing_assignment_operator {
     compatible = "zmk,behavior-macro";
     label = "??=";
     #binding-cells = <0>;
+    wait-ms = <WAIT>;
+    tap-ms = <TAP>;
     bindings =
-        <&macro_tap     &kp QMARK &kp QMARK &kp EQUAL>;
+        <&kp QMARK &kp QMARK &kp EQUAL>;
 };
 
 m_d_ce: macro_close_exclamation {
     compatible = "zmk,behavior-macro";
     label = "¡";
     #binding-cells = <0>;
+    wait-ms = <WAIT>;
+    tap-ms = <TAP>;
     bindings =
         <&macro_press   &kp RALT>,
-        <&macro_tap     &kp KP_N1 &kp KP_N6 &kp KP_N1>,
+        <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N6 &kp KP_N1>,
         <&macro_release &kp RALT>;
 };
 
-m_d_bo: macro_bolean_operator {
+m_d_bo: macro_boolean_operator {
     compatible = "zmk,behavior-macro";
     label = "!!";
     #binding-cells = <0>;
+    wait-ms = <WAIT>;
+    tap-ms = <TAP>;
     bindings =
-        <&macro_tap     &kp EXCL &kp EXCL>;
+        <&kp EXCL &kp EXCL>;
 };
 
 m_d_si: macro_dev_strict_inequality {
     compatible = "zmk,behavior-macro";
     label = "!==";
     #binding-cells = <0>;
+    wait-ms = <WAIT>;
+    tap-ms = <TAP>;
     bindings =
-        <&macro_tap     &kp EXCL &kp EQUAL &kp EQUAL>;
+        <&kp EXCL &kp EQUAL &kp EQUAL>;
+};
+
+m_d_euro: macro_euro {
+    compatible = "zmk,behavior-macro";
+    label = "€";
+    #binding-cells = <0>;
+    wait-ms = <WAIT>;
+    tap-ms = <TAP>;
+    bindings =
+        <&macro_press   &kp RALT>,
+        <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N2 &kp KP_N8>,
+        <&macro_release &kp RALT>;
 };
