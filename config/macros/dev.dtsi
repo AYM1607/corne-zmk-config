@@ -43,26 +43,6 @@ m_br: macro_brackets_round {
         <&kp LEFT>;
 };
 
-m_lda: macro_left_double_angle {
-    compatible = "zmk,behavior-macro";
-    label = "«";
-    #binding-cells = <0>;
-    bindings =
-        <&macro_press   &kp RALT>,
-        <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N7 &kp KP_N1>,
-        <&macro_release &kp RALT>;
-};
-
-m_rda: macro_right_double_angle {
-    compatible = "zmk,behavior-macro";
-    label = "»";
-    #binding-cells = <0>;
-    bindings =
-        <&macro_press   &kp RALT>,
-        <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N8 &kp KP_N7>,
-        <&macro_release &kp RALT>;
-};
-
 m_ltoe: macro_less_than_or_equal {
     compatible = "zmk,behavior-macro";
     label = "<=";
