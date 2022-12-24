@@ -68,11 +68,13 @@ combo_dev_brackets_angular_ctrl_shift {
 combo_dev_greater_than_alt {
     bindings = <&m_gtoe>; /* Label: >= */
     key-positions = <33 R_ALT>;
+    slow-release;
     layers = <1>;
 };
 
 combo_actions_dev_tools {
     bindings = <&kp F12>; /* Label: open dev tools */
     key-positions = <35 L_ALT>;
+    slow-release;
     layers = <1>;
 };

@@ -31,5 +31,6 @@ combo_base_brackets_alt {
 combo_base_brackets_angular_ctrl_shift {
     bindings = <&m_ba_r>; /* Label: <░/> */
     key-positions = <35 L_CTRL L_SHFT>;
+    slow-release;
     layers = <0>;
 };

@@ -1,9 +1,11 @@
 combo_caps-word {
     bindings = <&cw>; /* Label: CAPS WORD*/
     key-positions = <L_SHFT R_SHFT>;
+    slow-release;
 };
 
 combo_cancel-caps {
     bindings = <KEY_CXL>; /* Label: CANCEL CAPS*/
     key-positions = <L_CTRL R_CTRL>;
+    slow-release;
 };
