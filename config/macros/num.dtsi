@@ -2,7 +2,6 @@ m_no: macro_number_ordinal {
     compatible = "zmk,behavior-macro";
     label = "°";
     #binding-cells = <0>;
-    wait-ms = <WAIT>;
     bindings =
         <&macro_press   &kp RALT>,
         <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N7 &kp KP_N6>,
@@ -13,7 +12,6 @@ m_nd: macro_number_degree {
     compatible = "zmk,behavior-macro";
     label = "ª";
     #binding-cells = <0>;
-    wait-ms = <WAIT>;
     bindings =
         <&macro_press   &kp RALT>,
         <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N7 &kp KP_N0>,

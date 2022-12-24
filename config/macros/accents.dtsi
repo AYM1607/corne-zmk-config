@@ -2,7 +2,6 @@ m_aa: macro_accent_a {
     compatible = "zmk,behavior-macro";
     label = "á";
     #binding-cells = <0>;
-    wait-ms = <WAIT>;
     bindings =
         <&macro_press   &kp RALT>,
         <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N5>,
@@ -13,7 +12,6 @@ m_aa_shift: macro_accent_a_shift {
     compatible = "zmk,behavior-macro";
     label = "Á";
     #binding-cells = <0>;
-    wait-ms = <WAIT>;
     bindings =
         <&macro_press   &kp RALT>,
         <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N9 &kp KP_N3>,
@@ -24,7 +22,6 @@ m_ae: macro_accent_e_alt {
     compatible = "zmk,behavior-macro";
     label = "é";
     #binding-cells = <0>;
-    wait-ms = <WAIT>;
     bindings =
         <&macro_press   &kp RALT>,
         <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N3 &kp KP_N3>,
@@ -35,7 +32,6 @@ m_ae_shift: macro_accent_e_shift {
     compatible = "zmk,behavior-macro";
     label = "É";
     #binding-cells = <0>;
-    wait-ms = <WAIT>;
     bindings =
         <&macro_press   &kp RALT>,
         <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N1>,
@@ -46,7 +42,6 @@ m_ai: macro_accent_i {
     compatible = "zmk,behavior-macro";
     label = "í";
     #binding-cells = <0>;
-    wait-ms = <WAIT>;
     bindings =
         <&macro_press   &kp RALT>,
         <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N3 &kp KP_N7>,
@@ -57,7 +52,6 @@ m_ai_shift: macro_accent_i_shift {
     compatible = "zmk,behavior-macro";
     label = "Í";
     #binding-cells = <0>;
-    wait-ms = <WAIT>;
     bindings =
         <&macro_press   &kp RALT>,
         <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N5>,
@@ -68,7 +62,6 @@ m_ao: macro_accent_o {
     compatible = "zmk,behavior-macro";
     label = "ó";
     #binding-cells = <0>;
-    wait-ms = <WAIT>;
     bindings =
         <&macro_press   &kp RALT>,
         <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N3>,
@@ -79,7 +72,6 @@ m_ao_shift: macro_accent_o_shift {
     compatible = "zmk,behavior-macro";
     label = "Ó";
     #binding-cells = <0>;
-    wait-ms = <WAIT>;
     bindings =
         <&macro_press   &kp RALT>,
         <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N1 &kp KP_N1>,
@@ -90,7 +82,6 @@ m_au: macro_accent_u {
     compatible = "zmk,behavior-macro";
     label = "ú";
     #binding-cells = <0>;
-    wait-ms = <WAIT>;
     bindings =
         <&macro_press   &kp RALT>,
         <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N5 &kp KP_N0>,
@@ -101,7 +92,6 @@ m_au_shift: macro_accent_u_shift {
     compatible = "zmk,behavior-macro";
     label = "Ú";
     #binding-cells = <0>;
-    wait-ms = <WAIT>;
     bindings =
         <&macro_press   &kp RALT>,
         <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N1 &kp KP_N8>,
@@ -112,7 +102,6 @@ m_uu: macro_umlaut_u {
     compatible = "zmk,behavior-macro";
     label = "ü";
     #binding-cells = <0>;
-    wait-ms = <WAIT>;
     bindings =
         <&macro_press   &kp RALT>,
         <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N5 &kp KP_N2>,
@@ -123,7 +112,6 @@ m_uu_shift: macro_umlaut_u_shift {
     compatible = "zmk,behavior-macro";
     label = "Ü";
     #binding-cells = <0>;
-    wait-ms = <WAIT>;
     bindings =
         <&macro_press   &kp RALT>,
         <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N0>,
@@ -134,7 +122,6 @@ m_an: macro_accent_n {
     compatible = "zmk,behavior-macro";
     label = "ñ";
     #binding-cells = <0>;
-    wait-ms = <WAIT>;
     bindings =
         <&macro_press   &kp RALT>,
         <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N1>,
@@ -145,7 +132,6 @@ m_an_shift: macro_accent_n_shift {
     compatible = "zmk,behavior-macro";
     label = "Ñ";
     #binding-cells = <0>;
-    wait-ms = <WAIT>;
     bindings =
         <&macro_press   &kp RALT>,
         <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N9>,
