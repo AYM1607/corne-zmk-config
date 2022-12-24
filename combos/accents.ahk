@@ -24,39 +24,14 @@ Menu, Tray, Icon, icons/ahk-blue.ico
 +#!o:: Send {Asc 0211}  ; Shift+Win+Alt+o    Ó
  #!u:: Send {Asc 0250}  ;       Win+Alt+u    ú
 +#!u:: Send {Asc 0218}  ; Shift+Win+Alt+u    Ú
- #^u:: Send {Asc 0252}  ;       Win+Alt+u    ü
-+#^u:: Send {Asc 0220}  ; Shift+Win+Alt+u    Ü
+ #^u:: Send {Asc 0252}  ;       Win+Ctrl+u   ü
++#^u:: Send {Asc 0220}  ; Shift+Win+Ctrl+u   Ü
  #!n:: Send {Asc 0241}  ;       Win+Alt+n    ñ
 +#!n:: Send {Asc 0209}  ; Shift+Win+Alt+n    Ñ
 
 ; Symbols
-#/:: Send {Asc 0191}{Asc 63}{left 1}  ; Win+/   ¿?
-#1:: Send {Asc 0161}{Asc 33}{left 1}  ; Win+1   ¡!
-#if GetKeyState("CapsLock", "T")
-    #,:: Send {Asc 174}                   ; Win+,   «
-    #.:: Send {Asc 175}                   ; Win+.   »
-#if
-
-; Swap Numbers Row "NumLock" or "NumLock"
-; #if GetKeyState("NumLock", "T")
-;     *1::!
-;     *2::@
-;     *3::#
-;     *4::$
-;     *5::Send `%
-;     *6::^
-;     *7::&
-;     *8::Send `*
-;     *9::(
-;     *0::)
-;     $+1::Send 1
-;     $+2::Send 2
-;     $+3::Send 3
-;     $+4::Send 4
-;     $+5::Send 5
-;     $+6::Send 6
-;     $+7::Send 7
-;     $+8::Send 8
-;     $+9::Send 9
-;     $+0::Send 0
-; #if
+ #!q:: Send {@}           ;       Win+Alt+q  @
++#^/:: Send {Asc 0191}    ; Shift+Win+Alt+/  ¿
++#^1:: Send {Asc 0161}    ; Shift+Win+Alt+1  ¡
+  +,:: Send {Asc 0174}    ;         Shift+,  «
+  +.:: Send {Asc 0175}    ;         Shift+.  »

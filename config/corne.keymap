@@ -31,6 +31,15 @@
 #define NAV_BSPC    &mt     LC(BSPC)  BSPC   // tap: bspc      | long-tap: delete word backward
 #define NAV_DEL     &mt     LC(DEL)   DEL    // tap: del       | long-tap: delete word forward
 
+/* Combo Modifier Keys Position */
+#define L_CTRL  14
+#define L_ALT   15
+#define L_SHFT  16
+#define L_THUMB 37
+#define R_THUMB 40
+#define R_SHFT  19
+#define R_ALT   20
+#define R_CTRL  21
 
 / {
     behaviors {
