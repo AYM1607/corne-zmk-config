@@ -3,7 +3,6 @@ m_ba_h: macro_brackets_angle_html {
     label = "</░>";
     #binding-cells = <0>;
     wait-ms = <WAIT>;
-    tap-ms = <TAP>;
     bindings =
         <&kp LT &kp FSLH &kp GT>,
         <&kp LEFT>;
@@ -14,7 +13,6 @@ m_ba_r: macro_brackets_angle_react {
     label = "<░/>";
     #binding-cells = <0>;
     wait-ms = <WAIT>;
-    tap-ms = <TAP>;
     bindings =
         <&kp LT &kp FSLH &kp GT>,
         <&kp LEFT &kp LEFT>;
@@ -25,7 +23,6 @@ m_bs: macro_brackets_square {
     label = "[░]";
     #binding-cells = <0>;
     wait-ms = <WAIT>;
-    tap-ms = <TAP>;
     bindings =
         <&kp LBKT &kp RBKT>,
         <&kp LEFT>;
@@ -36,7 +33,6 @@ m_bc: macro_brackets_curly {
     label = "{░}";
     #binding-cells = <0>;
     wait-ms = <WAIT>;
-    tap-ms = <TAP>;
     bindings =
         <&kp LBRC &kp RBRC>,
         <&kp LEFT>;
@@ -47,7 +43,6 @@ m_br: macro_brackets_round {
     label = "(░)";
     #binding-cells = <0>;
     wait-ms = <WAIT>;
-    tap-ms = <TAP>;
     bindings =
         <&kp LPAR &kp RPAR>,
         <&kp LEFT>;
@@ -58,7 +53,6 @@ m_lda: macro_left_double_angle {
     label = "«";
     #binding-cells = <0>;
     wait-ms = <WAIT>;
-    tap-ms = <TAP>;
     bindings =
         <&macro_press   &kp RALT>,
         <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N7 &kp KP_N1>,
@@ -70,7 +64,6 @@ m_rda: macro_right_double_angle {
     label = "»";
     #binding-cells = <0>;
     wait-ms = <WAIT>;
-    tap-ms = <TAP>;
     bindings =
         <&macro_press   &kp RALT>,
         <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N8 &kp KP_N7>,
@@ -82,7 +75,6 @@ m_ltoe: macro_less_than_or_equal {
     label = "<=";
     #binding-cells = <0>;
     wait-ms = <WAIT>;
-    tap-ms = <TAP>;
     bindings =
         <&kp LT &kp EQUAL>;
 };
@@ -92,7 +84,6 @@ m_gtoe: macro_greater_than_or_equal {
     label = ">=";
     #binding-cells = <0>;
     wait-ms = <WAIT>;
-    tap-ms = <TAP>;
     bindings =
         <&kp GT &kp EQUAL>;
 };
@@ -102,7 +93,6 @@ m_d_eo: macro_dev_exponentiation_operator {
     label = "**";
     #binding-cells = <0>;
     wait-ms = <WAIT>;
-    tap-ms = <TAP>;
     bindings =
         <&kp ASTRK &kp ASTRK>;
 };
@@ -112,7 +102,6 @@ m_d_mao: macro_dev_multiplication_assignment_operator {
     label = "*=";
     #binding-cells = <0>;
     wait-ms = <WAIT>;
-    tap-ms = <TAP>;
     bindings =
         <&kp ASTRK &kp EQUAL>;
 };
@@ -122,7 +111,6 @@ m_d_dao: macro_dev_division_assignment_operator {
     label = "/=";
     #binding-cells = <0>;
     wait-ms = <WAIT>;
-    tap-ms = <TAP>;
     bindings =
         <&kp FSLH &kp EQUAL>;
 };
@@ -132,7 +120,6 @@ m_d_io: macro_dev_increment_operator {
     label = "++";
     #binding-cells = <0>;
     wait-ms = <WAIT>;
-    tap-ms = <TAP>;
     bindings =
         <&kp PLUS &kp PLUS>;
 };
@@ -142,7 +129,6 @@ m_d_aao: macro_dev_addition_assignment_operator {
     label = "+=";
     #binding-cells = <0>;
     wait-ms = <WAIT>;
-    tap-ms = <TAP>;
     bindings =
         <&kp PLUS &kp EQUAL>;
 };
@@ -152,7 +138,6 @@ m_d_do: macro_dev_decrement_operator {
     label = "--";
     #binding-cells = <0>;
     wait-ms = <WAIT>;
-    tap-ms = <TAP>;
     bindings =
         <&kp MINUS &kp MINUS>;
 };
@@ -162,7 +147,6 @@ m_d_sao: macro_dev_subtraction_assignment_operator {
     label = "-=";
     #binding-cells = <0>;
     wait-ms = <WAIT>;
-    tap-ms = <TAP>;
     bindings =
         <&kp MINUS &kp EQUAL>;
 };
@@ -172,7 +156,6 @@ m_d_se: macro_dev_strict_equal {
     label = "===";
     #binding-cells = <0>;
     wait-ms = <WAIT>;
-    tap-ms = <TAP>;
     bindings =
         <&kp EQUAL &kp EQUAL &kp EQUAL>;
 };
@@ -182,7 +165,6 @@ m_d_a: macro_dev_arrow {
     label = "=>";
     #binding-cells = <0>;
     wait-ms = <WAIT>;
-    tap-ms = <TAP>;
     bindings =
         <&kp EQUAL &kp GT>;
 };
@@ -192,7 +174,6 @@ m_d_la: macro_dev_logical_and {
     label = "&&";
     #binding-cells = <0>;
     wait-ms = <WAIT>;
-    tap-ms = <TAP>;
     bindings =
         <&kp AMPS &kp AMPS>;
 };
@@ -202,7 +183,6 @@ m_d_laao: macro_dev_logical_and_assignment_operator {
     label = "&&=";
     #binding-cells = <0>;
     wait-ms = <WAIT>;
-    tap-ms = <TAP>;
     bindings =
         <&kp AMPS &kp AMPS &kp EQUAL>;
 };
@@ -212,7 +192,6 @@ m_d_lo: macro_dev_logical_or {
     label = "||";
     #binding-cells = <0>;
     wait-ms = <WAIT>;
-    tap-ms = <TAP>;
     bindings =
         <&kp PIPE &kp PIPE>;
 };
@@ -222,7 +201,6 @@ m_d_loao: macro_dev_logical_or_assignment_operator {
     label = "||=";
     #binding-cells = <0>;
     wait-ms = <WAIT>;
-    tap-ms = <TAP>;
     bindings =
         <&kp PIPE &kp PIPE &kp EQUAL>;
 };
@@ -232,7 +210,6 @@ m_d_cqm: macro_close_question_mark {
     label = "¿";
     #binding-cells = <0>;
     wait-ms = <WAIT>;
-    tap-ms = <TAP>;
     bindings =
         <&macro_press   &kp RALT>,
         <&macro_tap     &kp KP_N1 &kp KP_N9 &kp KP_N1>,
@@ -244,7 +221,6 @@ m_d_cto: macro_conditional_ternary_operator {
     label = "?░:░";
     #binding-cells = <0>;
     wait-ms = <WAIT>;
-    tap-ms = <TAP>;
     bindings =
         <&kp QMARK &kp COLON &kp LEFT>;
 };
@@ -254,7 +230,6 @@ m_d_oco: macro_optional_chaining_operator {
     label = "?.";
     #binding-cells = <0>;
     wait-ms = <WAIT>;
-    tap-ms = <TAP>;
     bindings =
         <&kp QMARK &kp DOT>;
 };
@@ -264,7 +239,6 @@ m_d_nco: macro_nullish_coalescing_operator {
     label = "??";
     #binding-cells = <0>;
     wait-ms = <WAIT>;
-    tap-ms = <TAP>;
     bindings =
         <&kp QMARK &kp QMARK>;
 };
@@ -274,7 +248,6 @@ m_d_ncao: macro_dev_nullish_coalescing_assignment_operator {
     label = "??=";
     #binding-cells = <0>;
     wait-ms = <WAIT>;
-    tap-ms = <TAP>;
     bindings =
         <&kp QMARK &kp QMARK &kp EQUAL>;
 };
@@ -284,7 +257,6 @@ m_d_ce: macro_close_exclamation {
     label = "¡";
     #binding-cells = <0>;
     wait-ms = <WAIT>;
-    tap-ms = <TAP>;
     bindings =
         <&macro_press   &kp RALT>,
         <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N6 &kp KP_N1>,
@@ -296,7 +268,6 @@ m_d_bo: macro_boolean_operator {
     label = "!!";
     #binding-cells = <0>;
     wait-ms = <WAIT>;
-    tap-ms = <TAP>;
     bindings =
         <&kp EXCL &kp EXCL>;
 };
@@ -306,7 +277,6 @@ m_d_si: macro_dev_strict_inequality {
     label = "!==";
     #binding-cells = <0>;
     wait-ms = <WAIT>;
-    tap-ms = <TAP>;
     bindings =
         <&kp EXCL &kp EQUAL &kp EQUAL>;
 };
@@ -316,7 +286,6 @@ m_d_euro: macro_euro {
     label = "€";
     #binding-cells = <0>;
     wait-ms = <WAIT>;
-    tap-ms = <TAP>;
     bindings =
         <&macro_press   &kp RALT>,
         <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N2 &kp KP_N8>,

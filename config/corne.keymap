@@ -65,8 +65,7 @@
 
     macros {
         /* Time in Miliseconds */
-        #define WAIT  0
-        #define TAP   0
+        #define WAIT  30
 
         #include "macros/accents.dtsi"
         #include "macros/num.dtsi"
