@@ -1,0 +1,20 @@
+to_0: to_0_layer {
+    compatible = "zmk,behavior-macro";
+    label = "to_0";
+    #binding-cells = <0>;
+    bindings =
+        <&to DEF &kp F_DEF>;
+};
+
+mo_2to0: momentary_2to0 {
+    compatible = "zmk,behavior-macro";
+    label = "mo_2to0";
+    #binding-cells = <0>;
+    wait-ms = <0>;
+    bindings
+        = <&macro_press &mo A&N &kp F_A&N>
+        , <&macro_pause_for_release>
+        , <&macro_release &mo A&N &kp F_DEF>;
+};
+
+

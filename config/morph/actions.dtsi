@@ -6,7 +6,7 @@ mp_a_prev: morph_action_prev {
     bindings = <&kp RC(PG_UP)>, <&kp LC(LG(LEFT))>;
 };
 
-mp_a_next: morph_action_next {
+mp_A&Next: morph_action_next {
     compatible = "zmk,behavior-mod-morph";
     label = "⇻ ⎘";
     #binding-cells = <0>;
