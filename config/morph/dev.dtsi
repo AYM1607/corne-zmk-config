@@ -38,14 +38,6 @@ mp_d_e: morph_dev_equal {
     bindings = <&kp EQUAL>, <&m_d_a>;
 };
 
-mp_d_c: morph_dev_currency {
-    compatible = "zmk,behavior-mod-morph";
-    label = "$ €";
-    #binding-cells = <0>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&kp DLLR>, <&m_d_euro>;
-};
-
 mp_d_lao: morph_dev_logical_and_operator {
     compatible = "zmk,behavior-mod-morph";
     label = "& &&";
