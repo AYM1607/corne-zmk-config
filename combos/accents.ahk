@@ -35,9 +35,5 @@ Menu, Tray, Icon, icons/ahk-blue.ico
 ^+#/:: Send {Asc 0191}{Asc 63}{left 1} ;  Win+Ctrl+?  ¿?
 +!#1:: Send {Asc 0161}                 ;   Win+Alt+!  ¡
 ^+#1:: Send {Asc 0161}{Asc 33}{left 1} ;  Win+Ctrl+!  ¡!
-  +,:: Send {Asc 0174}                 ;     Shift+<  «
-  +.:: Send {Asc 0175}                 ;     Shift+>  »
-
-
-  #/::   ; Win+/   ¿?
-#1::   ; Win+1   ¡!
+ ^+,:: Send {Asc 0174}                 ;      Ctrl+<  «
+ ^+.:: Send {Asc 0175}                 ;      Ctrl+>  »
