@@ -245,6 +245,8 @@ m_lda: macro_left_double_angle {
     compatible = "zmk,behavior-macro";
     label = "«";
     #binding-cells = <0>;
+    wait-ms = <40>;
+    tap-ms = <40>;
     bindings =
         <&macro_press   &kp RALT>,
         <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N7 &kp KP_N1>,
@@ -255,6 +257,8 @@ m_rda: macro_right_double_angle {
     compatible = "zmk,behavior-macro";
     label = "»";
     #binding-cells = <0>;
+    wait-ms = <40>;
+    tap-ms = <40>;
     bindings =
         <&macro_press   &kp RALT>,
         <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N8 &kp KP_N7>,
