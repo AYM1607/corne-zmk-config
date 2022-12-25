@@ -102,18 +102,3 @@ mp_d_ql: morph_dev_question_logical {
     bindings = <&m_d_oco>, <&m_d_cto>;
 };
 
-mp_d_lt: morph_dev_less_than {
-    compatible = "zmk,behavior-mod-morph";
-    label = "< «";
-    #binding-cells = <0>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&kp LT>, <&m_lda>;
-};
-
-mp_d_gt: morph_dev_greater_than {
-    compatible = "zmk,behavior-mod-morph";
-    label = "> »";
-    #binding-cells = <0>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&kp GT>, <&m_rda>;
-};
