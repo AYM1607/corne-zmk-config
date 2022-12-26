@@ -56,8 +56,8 @@ mp_kb: morph_key_brackets {
 
 mp_kb_alt: morph_key_brackets_alt {
     compatible = "zmk,behavior-mod-morph";
-    label = "[] </░>";
+    label = "[] <>";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&m_bs>, <&m_ba_h>;
+    bindings = <&m_bs>, <&m_ba>;
 };
