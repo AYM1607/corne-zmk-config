@@ -30,9 +30,9 @@ to_STG: to_STG_layer {
         <&to STG &kp F_STG>;
 };
 
-mo_AYNto0: momentary_2to0 {
+mo_AYN_to_DEF: momentary_AYN_to_DEF {
     compatible = "zmk,behavior-macro";
-    label = "mo_2to0";
+    label = "mo_AYN_to_DEF";
     #binding-cells = <0>;
     wait-ms = <0>;
     bindings
@@ -41,4 +41,24 @@ mo_AYNto0: momentary_2to0 {
         , <&macro_release &mo AYN &kp F_DEF>;
 };
 
+mo_AYN_to_DEV: momentary_AYN_to_DEV {
+    compatible = "zmk,behavior-macro";
+    label = "mo_AYN_to_DEV";
+    #binding-cells = <0>;
+    wait-ms = <0>;
+    bindings
+        = <&macro_press &mo AYN &kp F_AYN>
+        , <&macro_pause_for_release>
+        , <&macro_release &mo AYN &kp F_DEV>;
+};
 
+mo_STG_to_DEF: momentary_STG_to_DEF {
+    compatible = "zmk,behavior-macro";
+    label = "mo_STG_to_DEF";
+    #binding-cells = <0>;
+    wait-ms = <0>;
+    bindings
+        = <&macro_press &mo STG &kp F_STG>
+        , <&macro_pause_for_release>
+        , <&macro_release &mo STG &kp F_DEF>;
+};

@@ -15,3 +15,30 @@ to_DEF_kp: behavior_to_kp {
     tapping-term-ms = <200>;
     bindings = <&to_DEF>, <&kp>;
 };
+
+mo_AYNDEF_to_DEV: behavior_mo_to {
+    compatible = "zmk,behavior-hold-tap";
+    label = "mo_AYN_DEF_to_DEV";
+    #binding-cells = <2>;
+    flavor = "hold-preferred";
+    tapping-term-ms = <200>;
+    bindings = <&mo_AYN_to_DEF>, <&toDEV>;
+};
+
+mo_AYNDEF_to_AYN: behavior_mo_to {
+    compatible = "zmk,behavior-hold-tap";
+    label = "mo_AYN_DEF_to_AYN";
+    #binding-cells = <2>;
+    flavor = "hold-preferred";
+    tapping-term-ms = <200>;
+    bindings = <&mo_AYN_to_DEF>, <&toAYN>;
+};
+
+mo_STGDEF_to_STG: behavior_mo_to {
+    compatible = "zmk,behavior-hold-tap";
+    label = "mo_STG_DEF_to_STG";
+    #binding-cells = <2>;
+    flavor = "hold-preferred";
+    tapping-term-ms = <200>;
+    bindings = <&mo_STG_to_DEF>, <&toSTG>;
+};

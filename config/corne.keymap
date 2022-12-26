@@ -82,10 +82,9 @@
             #define B21  &hm RCTRL  I
             #define B22  &hm RCMD   O
 
-            #define B36  &mo_to STG STG
-            #define B37  &mo_to AYN DEV
-            #define B38  &mo_to AYN DEV
-            #define B39  &mo_to AYN AYN
+            #define B36  &mo_STGDEF_to_STG 0 0
+            #define B38  &mo_AYNDEF_to_DEV 0 0
+            #define B39  &mo_AYNDEF_to_AYN 0 0
             #define B41  &mp_kq
 
             label = "DEFAULT";
