@@ -63,7 +63,6 @@
 
         #include "combos/shared.dtsi"
         #include "combos/base.dtsi"
-        #include "combos/dev.dtsi"
         #include "combos/actions.dtsi"
     };
 
@@ -116,10 +115,10 @@
 
             label = "DEV";
             bindings = <
-    KEY_ESC  &kp AT  &kp POUND  &kp DLLR  &mp_d_p    &kp DQT          &kp TILDE   &mp_d_m  &kp UNDER  &kp PRCNT  &kp CARET     &mp_bd
-     &mp_bc     D13        D14       D15      D16    &kp SQT          &kp GRAVE       D19        D20        D21        D22    KEY_RET
-    KEY_TAB  &mp_kn   &kp LPAR  &kp RPAR  &mp_d_a   &kp BSLH           &kp FSLH  &mp_d_qs     &kp LT     &kp GT   &mp_d_ql  &kp LC(R)
-                                &mp_d_cs  KEY_SPC        D38                D39   KEY_SPC   &mp_d_dc
+    KEY_ESC     &kp AT  &kp POUND  &kp DLLR  &mp_d_p    &kp DQT          &kp TILDE   &mp_d_m  &kp UNDER  &kp PRCNT  &kp CARET     &mp_bd
+     &mp_bc        D13        D14       D15      D16    &kp SQT          &kp GRAVE       D19        D20        D21        D22    KEY_RET
+    KEY_TAB  &kp LC(R)   &kp LPAR  &kp RPAR  &mp_d_a   &kp BSLH           &kp FSLH  &mp_d_qs     &kp LT     &kp GT   &mp_d_ql    &kp F12
+                                   &mp_d_cs  KEY_SPC        D38                D39   KEY_SPC   &mp_d_dc
             >;
         };
 

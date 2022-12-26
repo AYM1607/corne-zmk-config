@@ -1,6 +1,0 @@
-combo_actions_dev_tools {
-    bindings = <&kp F12>; /* Label: open dev tools */
-    key-positions = <35 L_THUMB>;
-    slow-release;
-    layers = <DEV>;
-};
