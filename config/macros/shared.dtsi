@@ -35,6 +35,7 @@ mo_AYN_to_DEF: momentary_AYN_to_DEF {
     label = "mo_AYN_to_DEF";
     #binding-cells = <0>;
     wait-ms = <0>;
+    tap-ms = <0>;
     bindings
         = <&macro_press &mo AYN>
         , <&macro_tap &kp F_AYN>
@@ -48,6 +49,7 @@ mo_AYN_to_DEV: momentary_AYN_to_DEV {
     label = "mo_AYN_to_DEV";
     #binding-cells = <0>;
     wait-ms = <0>;
+    tap-ms = <0>;
     bindings
         = <&macro_press &mo AYN>
         , <&macro_tap &kp F_AYN>
@@ -61,6 +63,7 @@ mo_STG_to_DEF: momentary_STG_to_DEF {
     label = "mo_STG_to_DEF";
     #binding-cells = <0>;
     wait-ms = <0>;
+    tap-ms = <0>;
     bindings
         = <&macro_press &mo STG>
         , <&macro_tap &kp F_STG>
