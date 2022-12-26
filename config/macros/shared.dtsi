@@ -3,7 +3,7 @@ to_DEF: to_DEF_layer {
     label = "to_DEF";
     #binding-cells = <0>;
     bindings =
-        <&to DEF &kp F_DEF>;
+        <&to DEF &kp F5>;
 };
 
 to_DEV: to_DEV_layer {
