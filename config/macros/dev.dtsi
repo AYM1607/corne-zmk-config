@@ -1,39 +1,3 @@
-m_bs: macro_brackets_square {
-    compatible = "zmk,behavior-macro";
-    label = "[░]";
-    #binding-cells = <0>;
-    bindings =
-        <&kp LBKT &kp RBKT>,
-        <&kp LEFT>;
-};
-
-m_bc: macro_brackets_curly {
-    compatible = "zmk,behavior-macro";
-    label = "{░}";
-    #binding-cells = <0>;
-    bindings =
-        <&kp LBRC &kp RBRC>,
-        <&kp LEFT>;
-};
-
-m_br: macro_brackets_round {
-    compatible = "zmk,behavior-macro";
-    label = "(░)";
-    #binding-cells = <0>;
-    bindings =
-        <&kp LPAR &kp RPAR>,
-        <&kp LEFT>;
-};
-
-m_ba: macro_brackets_angular {
-    compatible = "zmk,behavior-macro";
-    label = "<░>";
-    #binding-cells = <0>;
-    bindings =
-        <&kp LT &kp GT>,
-        <&kp LEFT>;
-};
-
 m_d_eo: macro_dev_exponentiation_operator {
     compatible = "zmk,behavior-macro";
     label = "**";
@@ -82,16 +46,6 @@ m_d_lo: macro_dev_logical_or {
         <&kp PIPE &kp PIPE>;
 };
 
-m_d_cqm: macro_close_question_mark {
-    compatible = "zmk,behavior-macro";
-    label = "¿";
-    #binding-cells = <0>;
-    bindings =
-        <&macro_press   &kp RALT>,
-        <&macro_tap     &kp KP_N1 &kp KP_N9 &kp KP_N1>,
-        <&macro_release &kp RALT>;
-};
-
 m_d_cto: macro_conditional_ternary_operator {
     compatible = "zmk,behavior-macro";
     label = "?░:░";
@@ -115,16 +69,6 @@ m_d_nco: macro_nullish_coalescing_operator {
     #binding-cells = <0>;
     bindings =
         <&kp QMARK &kp QMARK>;
-};
-
-m_d_ce: macro_close_exclamation {
-    compatible = "zmk,behavior-macro";
-    label = "¡";
-    #binding-cells = <0>;
-    bindings =
-        <&macro_press   &kp RALT>,
-        <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N6 &kp KP_N1>,
-        <&macro_release &kp RALT>;
 };
 
 m_d_bo: macro_boolean_operator {

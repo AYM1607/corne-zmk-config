@@ -31,7 +31,6 @@
 #define KEY_TAB     &mt     RIGHT     TAB    // tap: tab       | long-tap: right (terminal autocompletion)
 #define KEY_RET     &mt     F2        RET    // tap: return    | long-tap: rename (like macOs)
 #define KEY_SPC     &kp     SPACE
-#define KEY_CXL     &kp     K_CANCEL         // cancel caps-word and num-word
 #define NAV_BSPC    &mt     LC(BSPC)  BSPC   // tap: bspc      | long-tap: delete word backward
 #define NAV_DEL     &mt     LC(DEL)   DEL    // tap: del       | long-tap: delete word forward
 
@@ -52,14 +51,14 @@
         compatible = "zmk,combos";
 
         combo_caps-word {
-            bindings = <&cw>; /* Label: CAPS WORD*/
-            key-positions = <L_SHFT R_SHFT>;
+            bindings = <&cw>;
+            key-positions = <16 19>;
             slow-release;
         };
 
         combo_cancel-caps {
-            bindings = <KEY_CXL>; /* Label: CANCEL CAPS*/
-            key-positions = <L_CTRL R_CTRL>;
+            bindings = <&kp K_CANCEL>;
+            key-positions = <14 21>;
             slow-release;
         };
     };
