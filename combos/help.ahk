@@ -5,23 +5,23 @@ SetWorkingDir %A_ScriptDir% ; Ensures a consistent starting directory.
 
 $F16::
     Gui, Add, Picture, w1000 h334 , ../.github/images/0-layer.png
-    Gui, Show, w1020 h354, Layer Default
+    Gui, Show, w1020 h354, Default Layer
 return
 
 $F17::
     Gui, Add, Picture, w1000 h334 , ../.github/images/1-layer.png
-    Gui, Show, w1020 h354, Layer Default
+    Gui, Show, w1020 h354, Dev Layer
 return
 
 $F18::
     Gui, Add, Picture, w1000 h334 , ../.github/images/2-layer.png
-    Gui, Show, w1020 h354, Layer Default
+    Gui, Show, w1020 h354, Actions and Numbers Layer
 return
 
 $F19::
     Gui, Add, Picture, w1000 h334 , ../.github/images/3-layer.png
-    Gui, Show, w1020 h354, Layer Default
+    Gui, Show, w1020 h354, Settings Layer
 return
 
 GuiClose:
-ExitApp
+    Gui, Destroy
