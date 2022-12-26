@@ -21,6 +21,11 @@
 #define AYN  2
 #define STG  3
 
+#define H_DEF  F16
+#define H_DEV  F17
+#define H_AYN  F18
+#define H_STG  F19
+
 #define F_DEF  F20
 #define F_DEV  F21
 #define F_AYN  F22
@@ -60,6 +65,34 @@
             bindings = <&kp K_CANCEL>;
             key-positions = <14 21>;
             slow-release;
+        };
+
+        combo_help-DEF {
+            bindings = <&kp H_DEF>;
+            key-positions = <13 22>;
+            slow-release;
+            layer = <DEF>
+        };
+
+        combo_help-DEV {
+            bindings = <&kp H_DEV>;
+            key-positions = <13 22>;
+            slow-release;
+            layer = <DEV>
+        };
+
+        combo_help-AYN {
+            bindings = <&kp H_AYN>;
+            key-positions = <13 22>;
+            slow-release;
+            layer = <AYN>
+        };
+
+        combo_help-STG {
+            bindings = <&kp H_STG>;
+            key-positions = <13 22>;
+            slow-release;
+            layer = <STG>
         };
     };
 

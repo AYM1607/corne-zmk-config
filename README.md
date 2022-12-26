@@ -64,8 +64,9 @@ Icons used to describe some modifiers and actions
 | <kbd>F2</kbd>   | <kbd>⇪⏎</kbd>                           | Rename (like macOS)                                   |
 | <kbd>▷</kbd>   | <kbd>⇪↹</kbd>                            | left (terminal autocompletion)                        |
 | <kbd>🄰</kbd>   | <kbd>⇧</kbd>+<kbd>⌫</kbd>               | Caps lock                                             |
-| <kbd>⇧⇧</kbd>  | <kbd>L⇧</kbd>+<kbd>L⇧</kbd>              | [Caps word](https://zmk.dev/docs/behaviors/caps-word) |
-| <kbd>^^</kbd>  | <kbd>L^</kbd>+<kbd>L^</kbd>              | Cancel caps                                           |
+| <kbd>⇧⇧</kbd>  | <kbd>L⇧</kbd>+<kbd>R⇧</kbd>              | [Caps word](https://zmk.dev/docs/behaviors/caps-word) |
+| <kbd>^^</kbd>  | <kbd>L^</kbd>+<kbd>R^</kbd>              | Cancel caps                                           |
+| <kbd>❖❖</kbd>  | <kbd>L❖</kbd>+<kbd>R❖</kbd>              | Open current layout help                              |
 
 ### Layouts
 

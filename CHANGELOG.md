@@ -1,4 +1,10 @@
-# 1.0.0
+# CHANGELOG
+
+## 1.0.1
+
+- Open current layout image <kbd>L❖</kbd>+<kbd>R❖</kbd> as help with AHK
+
+## 1.0.0
 
 - Designed with Colemak DHm layout to be used on Windows
 - Use AHK for Unicode sequences because buggy results with ZMK
