@@ -58,8 +58,8 @@ Icons used to describe some modifiers and actions
 | Label           | Combinations                            | Actions                                               |
 | --------------: | --------------------------------------: | ----------------------------------------------------- |
 | <kbd>⌫</kbd>   |                                         | Backspace                                             |
-| <kbd>⌦</kbd>   | <kbd>⇧</kbd>+<kbd>⌫</kbd>              | Delete                                                |
 | <kbd>\|⌫</kbd> | <kbd>⇪⌫</kbd>                          | Delete word backward                                  |
+| <kbd>⌦</kbd>   | <kbd>⇧</kbd>+<kbd>⌫</kbd>              | Delete                                                |
 | <kbd>⌦\|</kbd> | <kbd>⇧</kbd>+<kbd>⇪⌫</kbd>             | Delete word forward                                   |
 | <kbd>F2</kbd>   | <kbd>⇪⏎</kbd>                           | Rename (like macOS)                                   |
 | <kbd>▷</kbd>   | <kbd>⇪↹</kbd>                            | left (terminal autocompletion)                        |
@@ -80,46 +80,25 @@ Letters, accents for Spanish language and quick shortcuts for most used symbols 
 | Label        | Combinations                                        |
 | :----------: | --------------------------------------------------: |
 | <kbd>á</kbd> | <kbd>⌥</kbd>+<kbd>a</kbd>                           |
-| <kbd>Á</kbd> | <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>a</kbd>              |
+| <kbd>Á</kbd> | <kbd>❖</kbd>+<kbd>⌥</kbd>+<kbd>a</kbd>              |
 | <kbd>é</kbd> | <kbd>⌥</kbd>+<kbd>e</kbd>                           |
-| <kbd>É</kbd> | <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>e</kbd>              |
+| <kbd>É</kbd> | <kbd>❖</kbd>+<kbd>⌥</kbd>+<kbd>e</kbd>              |
 | <kbd>í</kbd> | <kbd>⌥</kbd>+<kbd>i</kbd>                           |
-| <kbd>Í</kbd> | <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>i</kbd>              |
+| <kbd>Í</kbd> | <kbd>❖</kbd>+<kbd>⌥</kbd>+<kbd>i</kbd>              |
 | <kbd>ó</kbd> | <kbd>⌥</kbd>+<kbd>o</kbd>                           |
-| <kbd>Ó</kbd> | <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>o</kbd>              |
+| <kbd>Ó</kbd> | <kbd>❖</kbd>+<kbd>⌥</kbd>+<kbd>o</kbd>              |
 | <kbd>ú</kbd> | <kbd>⌥</kbd>+<kbd>u</kbd>                           |
-| <kbd>Ú</kbd> | <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>u</kbd>              |
-| <kbd>ü</kbd> | <kbd>⌥</kbd>+<kbd>⇪u</kbd>                          |
-| <kbd>Ü</kbd> | <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>⇪u</kbd>             |
+| <kbd>Ú</kbd> | <kbd>❖</kbd>+<kbd>⌥</kbd>+<kbd>u</kbd>              |
+| <kbd>ü</kbd> | <kbd>^</kbd>+<kbd>u</kbd>                          |
+| <kbd>Ü</kbd> | <kbd>❖</kbd>+<kbd>^</kbd>+<kbd>u</kbd>             |
 | <kbd>ñ</kbd> | <kbd>⌥</kbd>+<kbd>n</kbd>                           |
-| <kbd>Ñ</kbd> | <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>n</kbd>              |
+| <kbd>Ñ</kbd> | <kbd>❖</kbd>+<kbd>⌥</kbd>+<kbd>n</kbd>              |
 
 ##### Symbols
 
 | Label         | Combinations                                        |
 | :-----------: | --------------------------------------------------: |
 | <kbd>@</kbd>  | <kbd>⌥</kbd>+<kbd>q</kbd>                          |
-| <kbd>;</kbd>  | <kbd>⇧</kbd>+<kbd>,</kbd>                           |
-| <kbd>:</kbd>  | <kbd>⇧</kbd>+<kbd>.</kbd>                           |
-| <kbd>+</kbd>  | <kbd>⇧</kbd>+<kbd>-</kbd>                           |
-| <kbd>=</kbd>  | <kbd>⌥</kbd>+<kbd>-</kbd>                          |
-| <kbd>*</kbd>  | <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>-</kbd>             |
-| <kbd>&</kbd>  | <kbd>⇧</kbd>+<kbd>/</kbd>                           |
-| <kbd>?</kbd>  | <kbd>⌥</kbd>+<kbd>/</kbd>                          |
-| <kbd>\|</kbd> | <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>/</kbd>             |
-| <kbd>"</kbd>  | <kbd>⇧</kbd>+<kbd>'</kbd>                           |
-| <kbd>`</kbd>  | <kbd>⌥</kbd>+<kbd>'</kbd>                          |
-| <kbd>~</kbd>  | <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>'</kbd>             |
-
-##### Auto Brackets
-
-| Label | Combinations                                        | Action                       |
-| :---: | --------------------------------------------------: | ---------------------------- |
-| {░}   | <kbd>{}</kbd>                                       | Curly brackets               |
-| (░)   | <kbd>⇧</kbd>+<kbd>{}</kbd>                          | Round brackets (parenthesis) |
-| [░]   | <kbd>⌥</kbd>+<kbd>{}</kbd>                          | Square brackets              |
-| </░>  | <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>{}</kbd>             | Angular brackets for HTML  |
-| <░/>  | <kbd>⇧</kbd>+<kbd>^</kbd>+<kbd>{}</kbd>             | Angular brackets for React  |
 
 #### 1. Dev
 
@@ -129,17 +108,19 @@ Symbols and dev shortcuts for JS/TS.
 
 ##### Symbols
 
-| Label | Combinations                                      |
-| :-: | --------------------------------------------------: |
-| <kbd>€</kbd>  | <kbd>⌥</kbd>+<kbd>$</kbd>                 |
-| <kbd>°</kbd>  | <kbd>⌥</kbd>+<kbd>#</kbd>                 |
-| <kbd>ª</kbd>  | <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>#</kbd>    |
-| <kbd>«</kbd>  | <kbd>⇧</kbd>+<kbd><</kbd>                 |
-| <kbd>»</kbd>  | <kbd>⇧</kbd>+<kbd>></kbd>                 |
-| <kbd><=</kbd> | <kbd>⌥</kbd>+<kbd><</kbd>                |
-| <kbd>>=</kbd> | <kbd>⌥</kbd>+<kbd>></kbd>                |
-| <kbd>¡</kbd>  | <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>!</kbd>   |
-| <kbd>¿</kbd>  | <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>?</kbd>   |
+| Label           | Combinations                              |
+| :-------------: | ----------------------------------------: |
+| <kbd>°</kbd>    | <kbd>^</kbd>+<kbd>#</kbd>                 |
+| <kbd>ª</kbd>    | <kbd>❖</kbd>+<kbd>^</kbd>+<kbd>#</kbd>   |
+| <kbd>€</kbd>    | <kbd>⌥</kbd>+<kbd>$</kbd>                |
+| <kbd>«</kbd>    | <kbd>❖</kbd>+<kbd>^</kbd>+<kbd><</kbd>   |
+| <kbd>»</kbd>    | <kbd>❖</kbd>+<kbd>^</kbd>+<kbd>></kbd>   |
+| <kbd><=</kbd>   | <kbd>⌥</kbd>+<kbd><</kbd>                |
+| <kbd>>=</kbd>   | <kbd>⌥</kbd>+<kbd>></kbd>                |
+| <kbd>¡</kbd>    | <kbd>❖</kbd>+<kbd>⌥</kbd>+<kbd>!</kbd>   |
+| <kbd>¡░!</kbd>  | <kbd>❖</kbd>+<kbd>^</kbd>+<kbd>!</kbd>   |
+| <kbd>¿</kbd>    | <kbd>❖</kbd>+<kbd>⌥</kbd>+<kbd>?</kbd>   |
+| <kbd>¿░?</kbd>  | <kbd>❖</kbd>+<kbd>^</kbd>+<kbd>?</kbd>   |
 
 ##### JS/TS
 
@@ -167,16 +148,16 @@ Symbols and dev shortcuts for JS/TS.
 
 | Label | Combinations                                        | Action                       |
 | :---: | --------------------------------------------------: | ---------------------------- |
-| </░>  | <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>{}</kbd>             | Angular brackets for HTML  |
-| <░/>  | <kbd>⇧</kbd>+<kbd>^</kbd>+<kbd>{}</kbd>             | Angular brackets for React  |
+| <░/>  | <kbd>❖</kbd>+<kbd>⌥</kbd>+<kbd><</kbd>             | Angular brackets for React  |
+| </░>  | <kbd>❖</kbd>+<kbd>⌥</kbd>+<kbd>></kbd>              | Angular brackets for HTML  |
 
 ##### Browser DevTools
 
-| Label          | Combinations                                        | Action                      |
-| -----------: | --------------------------------------------------: | --------------------------- |
-| <kbd>↻</kbd> | <kbd>↻</kbd>                                        | Refresh                     |
-| <kbd>⟳</kbd> | <kbd>⇧</kbd>+<kbd>↻</kbd>                           | Hard refresh (clean cache) |
-| <kbd>⩸</kbd> | <kbd>⌥</kbd>+<kbd>↻</kbd>                           | Open DevTools              |
+| Label        | Combinations                 | Action                      |
+| -----------: | ---------------------------: | --------------------------- |
+| <kbd>↻</kbd> | <kbd>↻</kbd>                 | Refresh                     |
+| <kbd>⟳</kbd> | <kbd>⇧</kbd>+<kbd>↻</kbd>   | Hard refresh (clean cache) |
+| <kbd>⩸</kbd> |                             | Open DevTools              |
 
 #### 2. Actions/Numbers
 
@@ -187,19 +168,21 @@ Quick navigation actions and numbers.
 ##### Navigation
 
 | Label          | Combination                | Action               |
-| ------------: | -------------------------- | -------------------- |
-| <kbd>△</kbd>  |                            | Up                   |
-| <kbd>▽</kbd>  |                            | Down                 |
-| <kbd>◁</kbd>  |                            | Left                 |
-| <kbd>▷</kbd>  |                            | Right                |
-| <kbd>⤒</kbd>  | <kbd>⌥</kbd>+<kbd>△</kbd> | Beginning of document |
-| <kbd>⤓</kbd>  | <kbd>⌥</kbd>+<kbd>▽</kbd> | End of document       |
-| <kbd>⇤</kbd>  | <kbd>⌥</kbd>+<kbd>◁</kbd> | Beginning of line     |
-| <kbd>⇥</kbd>  | <kbd>⌥</kbd>+<kbd>▷</kbd> | End of line           |
-| <kbd>⇺</kbd>  |                            | Prev Tab              |
-| <kbd>⇻</kbd>  |                            | Next Tab              |
-| <kbd>⎗</kbd>  | <kbd>⇧</kbd>+<kbd>⇺</kbd> | Prev desktop          |
-| <kbd>⎘</kbd>  | <kbd>⇧</kbd>+<kbd>⇻</kbd> | Next desktop          |
+| ------------: | --------------------------------------- | -------------------- |
+| <kbd>△</kbd>  |                                        | Up                   |
+| <kbd>▽</kbd>  |                                        | Down                 |
+| <kbd>◁</kbd>  |                                        | Left                 |
+| <kbd>▷</kbd>  |                                        | Right                |
+| <kbd>⤒</kbd>  | <kbd>❖</kbd>+<kbd>⇧</kbd>+<kbd>△</kbd> | Beginning of document |
+| <kbd>⤓</kbd>  | <kbd>❖</kbd>+<kbd>⇧</kbd>+<kbd>▽</kbd> | End of document       |
+| <kbd>⇤</kbd>  | <kbd>❖</kbd>+<kbd>⇧</kbd>+<kbd>◁</kbd> | Beginning of line     |
+| <kbd>⇥</kbd>  | <kbd>❖</kbd>+<kbd>⇧</kbd>+<kbd>▷</kbd> | End of line           |
+| <kbd>⇞</kbd>  | <kbd>❖</kbd>+<kbd>^</kbd>+<kbd>△</kbd> | Page up               |
+| <kbd>⇟</kbd>  | <kbd>❖</kbd>+<kbd>^</kbd>+<kbd>▽</kbd> | Page down             |
+| <kbd>⇺</kbd>  |                                         | Prev Tab              |
+| <kbd>⇻</kbd>  |                                         | Next Tab              |
+| <kbd>⎗</kbd>  | <kbd>⇧</kbd>+<kbd>⇺</kbd>              | Prev desktop          |
+| <kbd>⎘</kbd>  | <kbd>⇧</kbd>+<kbd>⇻</kbd>              | Next desktop          |
 
 ##### Actions
 
@@ -226,15 +209,18 @@ Dedicated to Bluetooth and media controls.
 
 | Label           | Action                   |
 | --------------: |  ----------------------- |
-| <kbd>BT⏮️</kbd> | Prev device              |
-| <kbd>BT⏭️</kbd> | Next device              |
-| <kbd>BT#️⃣</kbd> | Jump to #️⃣ device        |
-| <kbd>BT❌</kbd> | Clear current device     |
+| <kbd>B⏮️</kbd> | Prev device              |
+| <kbd>B⏭️</kbd> | Next device              |
+| <kbd>B#️⃣</kbd> | Jump to #️⃣ device        |
+| <kbd>B❌</kbd> | Clear current device      |
 | <kbd>🔎+</kbd>  | Zoom in                  |
 | <kbd>🔎R</kbd>  | Zoom reset               |
 | <kbd>🔎-</kbd>  | Zoom out                 |
-| <kbd>🔅</kbd>   | Bright down              |
-| <kbd>🔆</kbd>   | Bright up                |
+| <kbd>🔊+</kbd>  | Volume up                |
+| <kbd>🔈M</kbd>   | Mute                     |
+| <kbd>🔉-</kbd>   | Volume down              |
+| <kbd>🔅</kbd>    | Bright down              |
+| <kbd>🔆</kbd>    | Bright up                |
 
 ##### Media
 
@@ -318,9 +304,23 @@ Once you make changes to your keymap, you can download the firmware from the git
 
 ## AHK
 
-Create shortcuts to all scripts with `.ahk` extension inside `combos` folder.
+### Prerequisites
+
+- Download and install [AutoHotKey](https://www.autohotkey.com/)
+
+### Scripts
+
+Create shortcuts to all scripts with `.ahk` extension located inside `combos` folder.
 
 Press <kbd>❖</kbd>+<kbd>r</kbd> and run this command `shell:startup`. Move shortcuts to this folder to run the scripts at startup.
+
+### Notifications
+
+Near to current mouse positions will show notifications about:
+
+- CapsLock (On/Off)
+- Changing to a layer
+- Momentary layer activation
 
 ⇧ [Back to menu](#menu)
 
@@ -338,6 +338,7 @@ Press <kbd>❖</kbd>+<kbd>r</kbd> and run this command `shell:startup`. Move sho
 - [ZMK Docs](https://zmk.dev/docs) - Modern, open source keyboard firmware
 - [Keymap Editor](https://nickcoutsos.github.io/keymap-editor) - GUI ZMK Keymap Editor
 - [Colemak Mods](https://colemakmods.github.io/mod-dh/keyboards.html#matrix-keyboards) - Colemak-DH for a non-traditional, ergonomic keyboard
+- [AutoHotKey](https://www.autohotkey.com/) - The ultimate automation scripting language for Windows
 
 ### Versioning
 
