@@ -26,13 +26,3 @@ Menu, Tray, Icon, icons/ahk-blue.ico
 #^u:: Send {Asc 0220}                  ; Win+Ctrl+u   Ü
  !n:: Send {Asc 0241}                  ;      Alt+n   ñ
 #!n:: Send {Asc 0209}                  ;  Win+Alt+n   Ñ
-
-; Symbols
-  !q:: Send {@}                        ;       Alt+q  @
-+!#/:: Send {Asc 0191}                 ;   Win+Alt+?  ¿
-^+#/:: Send {Asc 0191}{Asc 63}{left 1} ;  Win+Ctrl+?  ¿?
-+!#1:: Send {Asc 0161}                 ;   Win+Alt+!  ¡
-^+#1:: Send {Asc 0161}{Asc 33}{left 1} ;  Win+Ctrl+!  ¡!
-^+#,:: Send {Asc 0171}                 ;  Win+Ctrl+<  «
-^+#.:: Send {Asc 0187}                 ;  Win+Ctrl+>  »
- !+4:: Send {Asc 0128}                 ;       Alt+$  €

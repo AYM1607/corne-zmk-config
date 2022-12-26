@@ -130,8 +130,9 @@ Symbols and dev shortcuts for JS/TS.
 
 | Label | Combinations                                      |
 | :-: | --------------------------------------------------: |
-| <kbd>€</kbd>  | <kbd>⇧</kbd>+<kbd>$</kbd>                 |
-| <kbd>ª</kbd>  | <kbd>⇧</kbd>+<kbd>°</kbd>                 |
+| <kbd>€</kbd>  | <kbd>⌥</kbd>+<kbd>$</kbd>                 |
+| <kbd>°</kbd>  | <kbd>⌥</kbd>+<kbd>#</kbd>                 |
+| <kbd>ª</kbd>  | <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>#</kbd>    |
 | <kbd>«</kbd>  | <kbd>⇧</kbd>+<kbd><</kbd>                 |
 | <kbd>»</kbd>  | <kbd>⇧</kbd>+<kbd>></kbd>                 |
 | <kbd><=</kbd> | <kbd>⌥</kbd>+<kbd><</kbd>                |

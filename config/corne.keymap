@@ -67,7 +67,6 @@
     };
 
     macros {
-        #include "macros/num.dtsi"
         #include "macros/dev.dtsi"
     };
 
