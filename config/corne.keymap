@@ -55,45 +55,8 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_caps-word {
-            bindings = <&cw>;
-            key-positions = <16 19>;
-            slow-release;
-        };
-
-        combo_cancel-caps {
-            bindings = <&kp K_CANCEL>;
-            key-positions = <14 21>;
-            slow-release;
-        };
-
-        combo_help-DEF {
-            bindings = <&kp H_DEF>;
-            key-positions = <13 22>;
-            slow-release;
-            layer = <DEF>;
-        };
-
-        combo_help-DEV {
-            bindings = <&kp H_DEV>;
-            key-positions = <13 22>;
-            slow-release;
-            layer = <DEV>;
-        };
-
-        combo_help-AYN {
-            bindings = <&kp H_AYN>;
-            key-positions = <13 22>;
-            slow-release;
-            layer = <AYN>;
-        };
-
-        combo_help-STG {
-            bindings = <&kp H_STG>;
-            key-positions = <13 22>;
-            slow-release;
-            layer = <STG>;
-        };
+        #include "combos/shared.dtsi"
+        #include "combos/help.dtsi"
     };
 
     macros {

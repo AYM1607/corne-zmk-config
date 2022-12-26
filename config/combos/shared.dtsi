@@ -1,0 +1,11 @@
+combo_caps-word {
+    bindings = <&cw>;
+    key-positions = <16 19>;
+    slow-release;
+};
+
+combo_cancel-caps {
+    bindings = <&kp K_CANCEL>;
+    key-positions = <14 21>;
+    slow-release;
+};
