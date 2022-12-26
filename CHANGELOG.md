@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## 1.0.1
+## 1.1.0
 
 - Open current layout image <kbd>L❖</kbd>+<kbd>R❖</kbd> as help with AHK
 
