@@ -323,6 +323,10 @@ Near to current mouse positions will show notifications about:
 - Changing to a layer
 - Momentary layer activation
 
+### Help
+
+Open a help window with an image of the current layer
+
 ⇧ [Back to menu](#menu)
 
 ---
