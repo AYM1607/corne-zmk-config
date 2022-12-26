@@ -1,11 +1,3 @@
-mp_kn: morph_key_numbers {
-    compatible = "zmk,behavior-mod-morph";
-    label = "° ª";
-    #binding-cells = <0>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&m_nd>, <&m_no>;
-};
-
 mp_kn_f1: morph_key_numbers_f1 {
     compatible = "zmk,behavior-mod-morph";
     label = "1 F1";
