@@ -22,7 +22,7 @@ mo_AYNDEF_to_DEV: behavior_mo_to {
     #binding-cells = <2>;
     flavor = "hold-preferred";
     tapping-term-ms = <200>;
-    bindings = <&mo_AYN_to_DEF>, <&toDEV>;
+    bindings = <&mo_AYN_to_DEF>, <&to_DEV>;
 };
 
 mo_AYNDEF_to_AYN: behavior_mo_to {
@@ -31,7 +31,7 @@ mo_AYNDEF_to_AYN: behavior_mo_to {
     #binding-cells = <2>;
     flavor = "hold-preferred";
     tapping-term-ms = <200>;
-    bindings = <&mo_AYN_to_DEF>, <&toAYN>;
+    bindings = <&mo_AYN_to_DEF>, <&to_AYN>;
 };
 
 mo_STGDEF_to_STG: behavior_mo_to {
@@ -40,5 +40,5 @@ mo_STGDEF_to_STG: behavior_mo_to {
     #binding-cells = <2>;
     flavor = "hold-preferred";
     tapping-term-ms = <200>;
-    bindings = <&mo_STG_to_DEF>, <&toSTG>;
+    bindings = <&mo_STG_to_DEF>, <&to_STG>;
 };
