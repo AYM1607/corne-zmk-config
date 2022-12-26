@@ -23,6 +23,7 @@ This is a WIP layout based on Colemak DHm for using on Windows (with **en-US** l
   - [Reset](#reset)
   - [Configure](#configure)
   - [Led Indicators](#led-indicators)
+- [AHK](#ahk)
 - [About](#about)
 
 ---
@@ -37,7 +38,7 @@ Icons used to describe some modifiers and actions
 
 | Label | Description |
 | :-: | ----------- |
-| <kbd>◆</kbd> | Win/GUI |
+| <kbd>❖</kbd> | Win/Cmd |
 | <kbd>⌃</kbd> | Control |
 | <kbd>⌥</kbd> | Alt |
 | <kbd>⇧</kbd> | Shift |
@@ -310,6 +311,16 @@ Once you make changes to your keymap, you can download the firmware from the git
 | Blue   | Pulsing slowly | bootloader mode (enter by double pressing reset button) |
 | Blue   | Flashing fast  | halves are paring each other                            |
 | Orange |                | Charging                                                |
+
+⇧ [Back to menu](#menu)
+
+---
+
+## AHK
+
+Create shortcuts to all scripts with `.ahk` extension inside `combos` folder.
+
+Press <kbd>❖</kbd>+<kbd>r</kbd> and run this command `shell:startup`. Move shortcuts to this folder to run the scripts at startup.
 
 ⇧ [Back to menu](#menu)
 
