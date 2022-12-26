@@ -7,20 +7,11 @@ mo_to: behavior_mo_to {
     bindings = <&mo>, <&to>;
 };
 
-to_kp: behavior_to_kp {
+to_DEF_kp: behavior_to_kp {
     compatible = "zmk,behavior-hold-tap";
     label = "to_kp";
     #binding-cells = <2>;
     flavor = "hold-preferred";
     tapping-term-ms = <200>;
-    bindings = <&to>, <&kp>;
-};
-
-mo_kp: behavior_to_kp {
-    compatible = "zmk,behavior-hold-tap";
-    label = "mo_kp";
-    #binding-cells = <2>;
-    flavor = "hold-preferred";
-    tapping-term-ms = <200>;
-    bindings = <&mo>, <&kp>;
+    bindings = <&to_DEF>, <&kp>;
 };
