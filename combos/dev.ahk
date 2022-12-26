@@ -22,6 +22,6 @@ Menu, Tray, Icon, icons/ahk-yellow.ico
  !+\::Send {|}{|}{=}                   ;      Alt+|  ||=   Logical OR Assignment
  !+/::Send {?}{?}{=}                   ;      Alt+?  ??=   Nullish Coalescing Assignment
  !+,::Send {<}{=}                      ;      Alt+<  <=    Less than or equal to
-#!+,:: Send {<}{/}{>}{left 2}          ;  Win+Alt+<  <░/>  React Component Tag
+#!+,::Send {<}{/}{>}{left 2}           ;  Win+Alt+<  <░/>  React Component Tag
  !+.::Send {>}{=}                      ;      Alt+>  >=    Greater than or equal to
 #+!.::Send {<}{/}{>}{left 1}           ;  Win+Alt+>  </░>  HTML Close Tag
