@@ -6,4 +6,4 @@
 - Added AHK layer change notifications
 - Added accents, JS/TS shortcuts with ZMK and AHK
 - AHK shortcuts use <kbd>win</kbd>+<kbd>⌥</kbd> or <kbd>win</kbd>+<kbd>^</kbd> to avoid previous shortcuts collisions
-- Navigation on left hand, giving the right hand free for using mouse or touch pad
+- Navigation on the left hand, giving the right hand free for using the mouse or touchpad
