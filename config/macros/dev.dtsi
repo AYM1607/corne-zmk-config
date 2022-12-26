@@ -1,21 +1,3 @@
-m_ba_h: macro_brackets_angle_html {
-    compatible = "zmk,behavior-macro";
-    label = "</░>";
-    #binding-cells = <0>;
-    bindings =
-        <&kp LT &kp FSLH &kp GT>,
-        <&kp LEFT>;
-};
-
-m_ba_r: macro_brackets_angle_react {
-    compatible = "zmk,behavior-macro";
-    label = "<░/>";
-    #binding-cells = <0>;
-    bindings =
-        <&kp LT &kp FSLH &kp GT>,
-        <&kp LEFT &kp LEFT>;
-};
-
 m_bs: macro_brackets_square {
     compatible = "zmk,behavior-macro";
     label = "[░]";
@@ -43,44 +25,12 @@ m_br: macro_brackets_round {
         <&kp LEFT>;
 };
 
-m_ltoe: macro_less_than_or_equal {
-    compatible = "zmk,behavior-macro";
-    label = "<=";
-    #binding-cells = <0>;
-    bindings =
-        <&kp LT &kp EQUAL>;
-};
-
-m_gtoe: macro_greater_than_or_equal {
-    compatible = "zmk,behavior-macro";
-    label = ">=";
-    #binding-cells = <0>;
-    bindings =
-        <&kp GT &kp EQUAL>;
-};
-
 m_d_eo: macro_dev_exponentiation_operator {
     compatible = "zmk,behavior-macro";
     label = "**";
     #binding-cells = <0>;
     bindings =
         <&kp ASTRK &kp ASTRK>;
-};
-
-m_d_mao: macro_dev_multiplication_assignment_operator {
-    compatible = "zmk,behavior-macro";
-    label = "*=";
-    #binding-cells = <0>;
-    bindings =
-        <&kp ASTRK &kp EQUAL>;
-};
-
-m_d_dao: macro_dev_division_assignment_operator {
-    compatible = "zmk,behavior-macro";
-    label = "/=";
-    #binding-cells = <0>;
-    bindings =
-        <&kp FSLH &kp EQUAL>;
 };
 
 m_d_io: macro_dev_increment_operator {
@@ -97,22 +47,6 @@ m_d_do: macro_dev_decrement_operator {
     #binding-cells = <0>;
     bindings =
         <&kp MINUS &kp MINUS>;
-};
-
-m_d_sao: macro_dev_subtraction_assignment_operator {
-    compatible = "zmk,behavior-macro";
-    label = "-=";
-    #binding-cells = <0>;
-    bindings =
-        <&kp MINUS &kp EQUAL>;
-};
-
-m_d_se: macro_dev_strict_equal {
-    compatible = "zmk,behavior-macro";
-    label = "===";
-    #binding-cells = <0>;
-    bindings =
-        <&kp EQUAL &kp EQUAL &kp EQUAL>;
 };
 
 m_d_a: macro_dev_arrow {
@@ -137,14 +71,6 @@ m_d_lo: macro_dev_logical_or {
     #binding-cells = <0>;
     bindings =
         <&kp PIPE &kp PIPE>;
-};
-
-m_d_loao: macro_dev_logical_or_assignment_operator {
-    compatible = "zmk,behavior-macro";
-    label = "||=";
-    #binding-cells = <0>;
-    bindings =
-        <&kp PIPE &kp PIPE &kp EQUAL>;
 };
 
 m_d_cqm: macro_close_question_mark {
@@ -182,14 +108,6 @@ m_d_nco: macro_nullish_coalescing_operator {
         <&kp QMARK &kp QMARK>;
 };
 
-m_d_ncao: macro_dev_nullish_coalescing_assignment_operator {
-    compatible = "zmk,behavior-macro";
-    label = "??=";
-    #binding-cells = <0>;
-    bindings =
-        <&kp QMARK &kp QMARK &kp EQUAL>;
-};
-
 m_d_ce: macro_close_exclamation {
     compatible = "zmk,behavior-macro";
     label = "¡";
@@ -206,12 +124,4 @@ m_d_bo: macro_boolean_operator {
     #binding-cells = <0>;
     bindings =
         <&kp EXCL &kp EXCL>;
-};
-
-m_d_si: macro_dev_strict_inequality {
-    compatible = "zmk,behavior-macro";
-    label = "!==";
-    #binding-cells = <0>;
-    bindings =
-        <&kp EXCL &kp EQUAL &kp EQUAL>;
 };

@@ -11,25 +11,22 @@ Menu, Tray, Icon, icons/ahk-yellow.ico
 ; + Shift
 ; # Win
 
-!+7::Send {&}{&}{=}                           ; Alt+&         &&=         Logical And Assignment
-!+=::Send {+}{=}                              ; Alt++         +=          Addition Assignment
+  !-::Send {+}{=}                              ; Alt++         +=          Addition Assignment
+ !+=::Send {-}{=}                              ; Alt+-         -=          Subtraction Assignment
+ !+8::Send {+}{=}                              ; Alt+*         *=          Multiply Assignment
+  !/::Send {/}{=}                              ; Alt+/         /=          Division Assignment
+  !=::Send {=}{=}{=}                           ; Alt+=         ===         Strict Equality
+ !+1::Send {!}{=}{=}                           ; Alt+!         !==         Strict Inequality
+ !+7::Send {&}{&}{=}                           ; Alt+&         &&=         Logical And Assignment
+ !+\::Send {|}{|}{=}                           ; Alt+|         ||=         Logical OR Assignment
+ !+/::Send {?}{?}{=}                           ; Alt+?         ??=         Nullish Coalescing Assignment
+ !+,::Send {<}{=}                              ; Alt+<         <=          Less than or equal to
+#!+,:: Send {<}{/}{>}{left 2}                  ; Win+Alt+<     <░/>        React Component Tag
+ !+.::Send {>}{=}                              ; Alt+>         >=          Greater than or equal to
+#+!.::Send {<}{/}{>}{left 1}                   ; Win+Alt+>     </░>        HTML Close Tag
 
 
-
-; !7::Send {&}{&}                             ; Alt+7         &&          Logical AND
-; !8::Send {*}{*}                             ; Alt+8         **          Math Power
-; !9::Send {=}{>}                             ; Alt+9         =>          Arrow
 ; !+9:: Send {(}{)}{space}{=}{>}              ; Shift+Alt+9   () =>       Arrow Function, implicit return
 ; !^9:: Send {(}{)}{space}{=}{>}{space}{{}{}} ; Ctrl+Alt+9    () => {}    Arrow Function, explicit return
-; !\::Send {|}{|}                             ; Alt+\         ||          Logical OR
-; !+\::Send {|}{|}{=}                         ; Shift+Alt+\   ||=         OR Assignment
-; !=:: Send {=}{=}{=}                         ; Alt+=         ===         Strict Equality
-; !+=:: Send {!}{=}{=}                        ; Shift+Alt+=   !==         Strict Inequality
-; !,:: Send {<}{/}{>}{left 1}                 ; Alt+,         </>         HTML Close Tag
-; !^,:: Send {<}{/}{>}{left 2}                ; Ctrl+Alt+,    </>         React Component Tag
 ; !.:: Send {?}{.}                            ; Alt+.         ?.          Optional Chaining
-; !+,:: Send {<}{=}                           ; Shift+Alt+,   <=          Less than or equal to
-; !+.:: Send {>}{=}                           ; Shift+Alt+.   >=          Greater than or equal to
 ; !+;:: Send {?}{:}{left 1}                   ; Shift+Alt+;   ?:          Ternary Operator
-; !/:: Send {?}{?}                            ; Alt+/         ??          Nullish Coalescing
-; !+/:: Send {?}{?}{=}                        ; Shift+Alt+/   ??=         Nullish Coalescing Assignment

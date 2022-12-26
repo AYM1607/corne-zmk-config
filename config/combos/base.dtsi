@@ -1,9 +1,3 @@
-combo_base_at_alt {
-    bindings = <&kp AT>; /* Label: @ */
-    key-positions = <1 R_THUMB>;
-    layers = <DEF>;
-};
-
 combo_base_quotes_alt {
     bindings = <&mp_kq_alt>; /* Label: ` ~ */
     key-positions = <36 R_THUMB>;
@@ -25,12 +19,5 @@ combo_base_logic_alt {
 combo_base_brackets_alt {
     bindings = <&mp_kb_alt>; /* Label: [] </░> */
     key-positions = <35 L_THUMB>;
-    layers = <DEF>;
-};
-
-combo_base_brackets_angular_ctrl_shift {
-    bindings = <&m_ba_r>; /* Label: <░/> */
-    key-positions = <35 L_CTRL L_SHFT>;
-    slow-release;
     layers = <DEF>;
 };

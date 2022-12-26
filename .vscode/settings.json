@@ -46,6 +46,7 @@
         "Sweept",
         "zmkfirmware"
     ],
+    "editor.fontLigatures": false,
     "markdownlint.config": {
         "MD033": false
     },
