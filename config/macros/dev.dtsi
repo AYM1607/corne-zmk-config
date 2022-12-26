@@ -91,14 +91,6 @@ m_d_io: macro_dev_increment_operator {
         <&kp PLUS &kp PLUS>;
 };
 
-m_d_aao: macro_dev_addition_assignment_operator {
-    compatible = "zmk,behavior-macro";
-    label = "+=";
-    #binding-cells = <0>;
-    bindings =
-        <&kp PLUS &kp EQUAL>;
-};
-
 m_d_do: macro_dev_decrement_operator {
     compatible = "zmk,behavior-macro";
     label = "--";
@@ -137,14 +129,6 @@ m_d_la: macro_dev_logical_and {
     #binding-cells = <0>;
     bindings =
         <&kp AMPS &kp AMPS>;
-};
-
-m_d_laao: macro_dev_logical_and_assignment_operator {
-    compatible = "zmk,behavior-macro";
-    label = "&&=";
-    #binding-cells = <0>;
-    bindings =
-        <&kp AMPS &kp AMPS &kp EQUAL>;
 };
 
 m_d_lo: macro_dev_logical_or {

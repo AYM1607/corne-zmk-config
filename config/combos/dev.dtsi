@@ -1,15 +1,3 @@
-combo_dev_increment {
-    bindings = <&m_d_aao>; /* Label: += */
-    key-positions = <4 R_THUMB>;
-    layers = <DEV>;
-};
-
-combo_dev_logical_and {
-    bindings = <&m_d_laao>; /* Label: &&= */
-    key-positions = <13 R_THUMB>;
-    layers = <DEV>;
-};
-
 combo_dev_equal {
     bindings = <&m_d_se>; /* Label: === */
     key-positions = <16 R_THUMB>;

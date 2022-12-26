@@ -10,8 +10,6 @@ Menu, Tray, Icon, icons/ahk-blue.ico
 ; ! Alt
 ; + Shift
 ; # Win
-; < Left
-; > Right
 
 ; Accents
  !a:: Send {Asc 0225}                  ;      Alt+a   á
