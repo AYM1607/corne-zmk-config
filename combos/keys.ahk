@@ -40,7 +40,9 @@ Menu, Tray, Icon, icons/ahk-blue.ico
  !+4:: Send {Asc 0128}                 ;      Alt+$  €
 
 ; Navigation
-   !#Up:: Send {RControl Home}         ;  Win+Alt+△  ⤒  Beginning of document
- !#Down:: Send {RControl End}          ;  Win+Alt+▽  ⤓  End of document
- !#Left:: Send {Home}                  ;  Win+Alt+◁  ⇤  Beginning of line
-!#Right:: Send {End}                   ;  Win+Alt+▷  ⇥  End of line
+   $!#Up:: Send ^{Home}                ;   Win+Alt+△  ⤒  Beginning of document
+ $!#Down:: Send ^{End}                 ;   Win+Alt+▽  ⤓  End of document
+ $!#Left:: Send {Home}                 ;   Win+Alt+◁  ⇤  Beginning of line
+$!#Right:: Send {End}                  ;   Win+Alt+▷  ⇥  End of line
+   $^#Up:: Send {PgUp}                 ;  Ctrl+Alt+△  ⇞  Pager Up
+ $^#Down:: Send {PgDn}                 ;  Ctrl+Alt+▽  ⇟  Page Down
