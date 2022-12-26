@@ -18,12 +18,12 @@
 /* Layers */
 #define DEF  0
 #define DEV  1
-#define A&N  2
+#define A_N  2
 #define STG  3
 
 #define F_DEF  F20
 #define F_DEV  F21
-#define F_A&N  F22
+#define F_A_N  F22
 #define F_STG  F23
 
 /* Shared Keys */
@@ -86,9 +86,9 @@
             #define B21  &hm RCTRL  I
             #define B22  &hm RCMD   O
 
-            #define B37  &mo_to A&N DEV
-            #define B38  &mo_to A&N DEV
-            #define B39  &mo_to A&N A&N
+            #define B37  &mo_to A_N DEV
+            #define B38  &mo_to A_N DEV
+            #define B39  &mo_to A_N A_N
             #define B41  &mo_to STG STG
 
             label = "DEFAULT";
@@ -112,7 +112,7 @@
             #define D22  &hm_d_rcmd RCMD    0
 
             #define D38  &to DEF
-            #define D39  &to A&N
+            #define D39  &to A_N
 
             label = "DEV";
             bindings = <
@@ -148,7 +148,7 @@
 
             label = "ACTIONS / NUMBERS";
             bindings = <
-    KEY_ESC         A01  &mp_a_prev    &kp UP  &mp_A&Next        A05            &kp KP_PLUS  &mp_kn_f9  &mp_kn_f10  &mp_kn_f11  &mp_kn_f12       &mp_bd
+    KEY_ESC         A01  &mp_a_prev    &kp UP  &mp_a_next        A05            &kp KP_PLUS  &mp_kn_f9  &mp_kn_f10  &mp_kn_f11  &mp_kn_f12       &mp_bd
      &mp_bc         A13         A14       A15         A16        A17                &mp_k_m        A19         A20         A21         A22      KEY_RET
     KEY_TAB    KEY_UNDO     KEY_CUT  KEY_COPY   KEY_PASTE   KEY_REDO                 &kp N0  &mp_kn_f1   &mp_kn_f2   &mp_kn_f3   &mp_kn_f4  &key_repeat
                                        &mp_kn     KEY_SPC        A38                    A39    KEY_SPC     &kp DOT
@@ -165,7 +165,7 @@
     KEY_ESC  &none    &bt BT_PRV    &bt BT_CLR    &bt BT_NXT   ZOOM_IN          &kp C_VOL_UP         &none     &kp C_STOP       &none  &none  &none
       &none  &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  ZOOM_RST            &kp C_MUTE    &kp C_PREV       &kp C_PP  &kp C_NEXT  &none  &none
       &none  &none  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 5  ZOOM_OUT          &kp C_VOL_DN      &kp C_RW  &kp C_SHUFFLE    &kp C_FF  &none  &none
-                                       KEY_SPC   &kp C_BRI_DN   &to DEF               &to DEV  &kp C_BRI_UP        &to A&N
+                                       KEY_SPC   &kp C_BRI_DN   &to DEF               &to DEV  &kp C_BRI_UP        &to A_N
             >;
         };
     };
