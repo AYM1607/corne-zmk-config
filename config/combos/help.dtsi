@@ -12,11 +12,11 @@ combo_help-DEV {
     layers = <DEV>;
 };
 
-combo_help-AYN {
-    bindings = <&kp H_AYN>;
+combo_help-AXN {
+    bindings = <&kp H_AXN>;
     key-positions = <13 22>;
     slow-release;
-    layers = <AYN>;
+    layers = <AXN>;
 };
 
 combo_help-STG {

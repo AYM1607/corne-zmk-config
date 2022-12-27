@@ -18,17 +18,17 @@
 /* Layers */
 #define DEF  0
 #define DEV  1
-#define AYN  2
+#define AXN  2
 #define STG  3
 
 #define H_DEF  F16
 #define H_DEV  F17
-#define H_AYN  F18
+#define H_AXN  F18
 #define H_STG  F19
 
 #define F_DEF  F20
 #define F_DEV  F21
-#define F_AYN  F22
+#define F_AXN  F22
 #define F_STG  F23
 
 /* Shared Keys */
@@ -79,8 +79,8 @@
             #define B22  &hm RCMD   O
 
             #define B36  &mo_STGDEF_to_STG  0 0
-            #define B38  &mo_AYNDEF_to_DEV  0 0
-            #define B39  &mo_AYNDEF_to_AYN  0 0
+            #define B38  &mo_AXNDEF_to_DEV  0 0
+            #define B39  &mo_AXNDEF_to_AXN  0 0
             #define B41  &mp_kq
 
             label = "DEFAULT";
@@ -103,8 +103,8 @@
             #define D21  &hm        RCTRL   RBKT
             #define D22  &hm_d_rcmd RCMD    0
 
-            #define D38  &mo_AYNDEV_to_DEF  0 0
-            #define D39  &mo_AYNDEV_to_AYN  0 0
+            #define D38  &mo_AXNDEV_to_DEF  0 0
+            #define D39  &mo_AXNDEV_to_AXN  0 0
 
             label = "DEV";
             bindings = <
@@ -129,7 +129,7 @@
             #define A21  &hm_n_rctrl RCTRL  0
             #define A22  &hm_n_rcmd  RCMD   0
 
-            #define A36  &mo_STGAYN_to_STG  0 0
+            #define A36  &mo_STGAXN_to_STG  0 0
             #define A38  &to_DEF
             #define A39  &to_DEV
 

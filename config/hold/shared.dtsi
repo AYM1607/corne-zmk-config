@@ -7,22 +7,22 @@ to_DEF_kp: behavior_to_kp {
     bindings = <&to_DEF>, <&kp>;
 };
 
-mo_AYNDEF_to_DEV: hold_mo_AYNDEF_to_DEV {
+mo_AXNDEF_to_DEV: hold_mo_AXNDEF_to_DEV {
     compatible = "zmk,behavior-hold-tap";
-    label = "mo_AYN_DEF_to_DEV";
+    label = "mo_AXN_DEF_to_DEV";
     #binding-cells = <2>;
     flavor = "hold-preferred";
     tapping-term-ms = <200>;
-    bindings = <&mo_AYN_to_DEF>, <&to_DEV>;
+    bindings = <&mo_AXN_to_DEF>, <&to_DEV>;
 };
 
-mo_AYNDEF_to_AYN: hold_mo_AYNDEF_to_AYN {
+mo_AXNDEF_to_AXN: hold_mo_AXNDEF_to_AXN {
     compatible = "zmk,behavior-hold-tap";
-    label = "mo_AYN_DEF_to_AYN";
+    label = "mo_AXN_DEF_to_AXN";
     #binding-cells = <2>;
     flavor = "hold-preferred";
     tapping-term-ms = <200>;
-    bindings = <&mo_AYN_to_DEF>, <&to_AYN>;
+    bindings = <&mo_AXN_to_DEF>, <&to_AXN>;
 };
 
 mo_STGDEF_to_STG: hold_mo_STGDEF_to_STG {
@@ -34,29 +34,29 @@ mo_STGDEF_to_STG: hold_mo_STGDEF_to_STG {
     bindings = <&mo_STG_to_DEF>, <&to_STG>;
 };
 
-mo_AYNDEV_to_DEF: hold_mo_AYNDEV_to_DEF {
+mo_AXNDEV_to_DEF: hold_mo_AXNDEV_to_DEF {
     compatible = "zmk,behavior-hold-tap";
-    label = "mo_AYNDEV_to_DEF";
+    label = "mo_AXNDEV_to_DEF";
     #binding-cells = <2>;
     flavor = "hold-preferred";
     tapping-term-ms = <200>;
-    bindings = <&mo_AYN_to_DEV>, <&to_DEF>;
+    bindings = <&mo_AXN_to_DEV>, <&to_DEF>;
 };
 
-mo_AYNDEV_to_AYN: hold_mo_AYNDEV_to_AYN {
+mo_AXNDEV_to_AXN: hold_mo_AXNDEV_to_AXN {
     compatible = "zmk,behavior-hold-tap";
-    label = "mo_AYNDEV_to_AYN";
+    label = "mo_AXNDEV_to_AXN";
     #binding-cells = <2>;
     flavor = "hold-preferred";
     tapping-term-ms = <200>;
-    bindings = <&mo_AYN_to_DEV>, <&to_AYN>;
+    bindings = <&mo_AXN_to_DEV>, <&to_AXN>;
 };
 
-mo_STGAYN_to_STG: hold_mo_STGAYN_to_STG {
+mo_STGAXN_to_STG: hold_mo_STGAXN_to_STG {
     compatible = "zmk,behavior-hold-tap";
-    label = "mo_STG_AYN_to_STG";
+    label = "mo_STG_AXN_to_STG";
     #binding-cells = <2>;
     flavor = "hold-preferred";
     tapping-term-ms = <200>;
-    bindings = <&mo_STG_to_AYN>, <&to_STG>;
+    bindings = <&mo_STG_to_AXN>, <&to_STG>;
 };
