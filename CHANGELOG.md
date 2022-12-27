@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 1.2.0
+
+- Close help image with <kbd>ESC</kbd> key
+- Change notifications from tooltip to Gui with AHK
+
 ## 1.1.0
 
 - Open current layout image <kbd>L❖</kbd>+<kbd>R❖</kbd> as help with AHK
