@@ -12,11 +12,11 @@ This is a WIP layout based on Colemak DHm for using on Windows (with **en-US** l
 
 - [Keyboard](#keyboard)
   - [Conventions](#conventions)
-  - [Layouts](#layouts)
-    - [0. Default](#0-default)
-    - [1. Dev](#1-dev)
-    - [2. Actions/Numbers](#2-actionsnumbers)
-    - [3. Settings](#3-settings)
+  - [Layers](#layers)
+    - [0. DEF](#0-def)
+    - [1. DEV](#1-dev)
+    - [2. AXN](#2-axn)
+    - [3. STG](#3-stg)
 - [Usage](#usage)
   - [Turn on/off](#turn-onoff)
   - [Charge](#charge)
@@ -49,9 +49,12 @@ Icons used to describe some modifiers and actions
 | <kbd>⇪</kbd> | [Hold Tap](https://zmk.dev/docs/behaviors/hold-tap#hold-tap) |
 | <kbd>🔁</kbd> | [Key Repeat](https://zmk.dev/docs/behaviors/key-repeat) |
 
-#### Positional modifiers
+#### Modifiers Conventions
 
-![Key Map](./.github/images/key-map.png)
+![Conventions](./.github/images/conventions.png)
+
+- Black and Blue works with ZMK
+- Magenta and Purple works with AHK
 
 #### Shared Modifiers
 
@@ -66,15 +69,15 @@ Icons used to describe some modifiers and actions
 | <kbd>🄰</kbd>   | <kbd>⇧</kbd>+<kbd>⌫</kbd>               | Caps lock                                             |
 | <kbd>⇧⇧</kbd>  | <kbd>L⇧</kbd>+<kbd>R⇧</kbd>              | [Caps word](https://zmk.dev/docs/behaviors/caps-word) |
 | <kbd>^^</kbd>  | <kbd>L^</kbd>+<kbd>R^</kbd>              | Cancel caps                                           |
-| <kbd>❖❖</kbd>  | <kbd>L❖</kbd>+<kbd>R❖</kbd>              | Open current layout help                              |
+| <kbd>❖❖</kbd>  | <kbd>L❖</kbd>+<kbd>R❖</kbd>            | Open current layout on screen                         |
 
-### Layouts
+### Layers
 
-#### 0. Default
+#### 0. DEF
 
 Letters, accents for Spanish language and quick shortcuts for most used symbols to "avoid" changing layers.
 
-![Base Layer](./.github/images/0-layer.png)
+![DEF Layer](./.github/images/layers/DEF.png)
 
 ##### Spanish
 
@@ -101,11 +104,11 @@ Letters, accents for Spanish language and quick shortcuts for most used symbols 
 | :-----------: | --------------------------------------------------: |
 | <kbd>@</kbd>  | <kbd>⌥</kbd>+<kbd>q</kbd>                          |
 
-#### 1. Dev
+#### 1. DEV
 
 Symbols and dev shortcuts for JS/TS.
 
-![Dev Layer](./.github/images/1-layer.png)
+![DEV Layer](./.github/images/layers/DEV.png)
 
 ##### Symbols
 
@@ -160,11 +163,11 @@ Symbols and dev shortcuts for JS/TS.
 | <kbd>⟳</kbd> | <kbd>⇧</kbd>+<kbd>↻</kbd>   | Hard refresh (clean cache) |
 | <kbd>⩸</kbd> |                             | Open DevTools              |
 
-#### 2. Actions/Numbers
+#### 2. AXN
 
 Quick navigation actions and numbers.
 
-![Actions/Number Layer](./.github/images/2-layer.png)
+![AXN Layer](./.github/images/layers/AXN.png)
 
 ##### Navigation
 
@@ -200,11 +203,11 @@ Quick navigation actions and numbers.
 | <kbd>⏍</kbd> |                            | Paste                |
 | <kbd>⛶</kbd> | <kbd>⇧</kbd>+<kbd>⏍</kbd> | Paste without format |
 
-#### 3. Settings
+#### 3. STG
 
 Dedicated to Bluetooth and media controls.
 
-![Settings](./.github/images/3-layer.png)
+![STG Layer](./.github/images/layers/STG.png)
 
 ##### Actions
 
@@ -245,13 +248,13 @@ Dedicated to Bluetooth and media controls.
 
 There's a small slider switch right underneath the USB-C connector which controls power. The keyboard is **OFF** when the sliders on both halves are on the **left** positions as shown in the following picture:
 
-![Turn off](.github/images/off.jpg)
+![Turn off](.github/images/keyboard/off.jpg)
 
 The keyboard is **ON** when the switch is slided to the **right** on both halves as shown in the following picture (a few blue led flashing fast indicate two halves are paring each other).
 
 Please note that for the halves to connect correctly, the both must be turned on as closely to THE SAME TIME as possible; it's okay if there's one or two seconds of difference but try to keep it to a minimum.
 
-![Turn on](.github/images/on.jpg)
+![Turn on](.github/images/keyboard/on.jpg)
 
 ### Charge
 
@@ -259,7 +262,7 @@ To charge your boards you must put the half you want to charge in the ON positio
 
 You know it's charging if you see an orange led like the one in the following picture. The light turns off when charging is done.
 
-![Charging](.github/images/charging.jpg)
+![Charging](.github/images/keyboard/charging.jpg)
 
 ### Reset
 
@@ -267,7 +270,7 @@ Pressing it once resets the keyboard (power cycle so essentially equivalent to t
 
 Pressing it twice quickly puts into programming mode, if you plug it into your computer it shows up as a USB device instead of a keyboard; you can then drag and drop or copy and paste your firmware file to update your keymap.
 
-![Reset](.github/images/reset.jpg)
+![Reset](.github/images/keyboard/reset.jpg)
 
 ### Configure
 
@@ -317,15 +320,15 @@ Press <kbd>❖</kbd>+<kbd>r</kbd> and run this command `shell:startup`. Move sho
 
 ### Notifications
 
-Near to current mouse positions will show notifications about:
+Screencast mode notifications about:
 
 - CapsLock (On/Off)
-- Changing to a layer
+- When changing a layer
 - Momentary layer activation
 
 ### Help
 
-Open a help window with an image of the current layer
+- Open a window with an image of the current layer
 
 ⇧ [Back to menu](#menu)
 
@@ -344,6 +347,7 @@ Open a help window with an image of the current layer
 - [Keymap Editor](https://nickcoutsos.github.io/keymap-editor) - GUI ZMK Keymap Editor
 - [Colemak Mods](https://colemakmods.github.io/mod-dh/keyboards.html#matrix-keyboards) - Colemak-DH for a non-traditional, ergonomic keyboard
 - [AutoHotKey](https://www.autohotkey.com/) - The ultimate automation scripting language for Windows
+- [Figma](https://www.figma.com/) - The collaborative interface design tool
 
 ### Versioning
 

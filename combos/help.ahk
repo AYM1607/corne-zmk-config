@@ -4,23 +4,23 @@ SendMode Input ; Recommended for new scripts due to its superior speed and relia
 SetWorkingDir %A_ScriptDir% ; Ensures a consistent starting directory.
 
 $F16::
-    Gui, Add, Picture, w1000 h334 , ../.github/images/0-layer.png
-    Gui, Show, w1020 h354, Default Layer
+    Gui, Add, Picture, w740 h350 , ../.github/images/layers/DEF.png
+    Gui, Show, w760 h360, DEF Layer
 return
 
 $F17::
-    Gui, Add, Picture, w1000 h334 , ../.github/images/1-layer.png
-    Gui, Show, w1020 h354, Dev Layer
+    Gui, Add, Picture, w740 h350 , ../.github/images/layers/DEV.png
+    Gui, Show, w760 h360, DEV Layer
 return
 
 $F18::
-    Gui, Add, Picture, w1000 h334 , ../.github/images/2-layer.png
-    Gui, Show, w1020 h354, Actions and Numbers Layer
+    Gui, Add, Picture, w740 h350 , ../.github/images/layers/AXN.png
+    Gui, Show, w760 h360, AXN Layer
 return
 
 $F19::
-    Gui, Add, Picture, w1000 h334 , ../.github/images/3-layer.png
-    Gui, Show, w1020 h354, Settings Layer
+    Gui, Add, Picture, w740 h350 , ../.github/images/layers/STG.png
+    Gui, Show, w760 h360, STG Layer
 return
 
 GuiEscape:

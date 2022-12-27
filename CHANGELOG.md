@@ -4,6 +4,7 @@
 
 - Close help image with <kbd>ESC</kbd> key
 - Change notifications from tooltip to Gui with AHK
+- Improve images with Figma
 
 ## 1.1.0
 
