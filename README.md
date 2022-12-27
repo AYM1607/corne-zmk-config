@@ -330,6 +330,8 @@ Screencast mode notifications about:
 
 - Open a window with an image of the current layer
 
+![Notifications](.github/images/examples/ahk-notifications.gif)
+
 ⇧ [Back to menu](#menu)
 
 ---
