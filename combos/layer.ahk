@@ -3,38 +3,41 @@
 SendMode Input ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir% ; Ensures a consistent starting directory.
 
+ShowMessage(msg)
+{
+    Gui, -Caption +lastfound
+    Gui, Color, 5E43FF
+    Gui, Font, s30 Bold, Verdana
+    Gui, Add, Text, x7 y7 w800 h80 Center c000000 BackgroundTrans, % msg
+    Gui, Add, Text, x7 y13 w800 h80 Center c000000 BackgroundTrans, % msg
+    Gui, Add, Text, x13 y13 w800 h80 Center c000000 BackgroundTrans, % msg
+    Gui, Add, Text, x13 y7 w800 h80 Center c000000 BackgroundTrans, % msg
+    Gui, Add, Text, x10 y10 w800 h80 Center cFFFFFF BackgroundTrans, % msg
+    winset, transcolor, 5E43FF 175
+
+    ; ToolTip, %msg%
+    Gui,Show,w800 h80
+    Sleep, 750 ; SPECIFY DISPLAY TIME (ms)
+    ; ToolTip ; remove
+    Gui, Destroy
+}
+
 $F20::
     Sleep, 10 ; drastically improves reliability on slower systems
-
-    msg := "DEFAULT LAYER"
-    ToolTip, %msg%
-    Sleep, 750 ; SPECIFY DISPLAY TIME (ms)
-    ToolTip ; remove
+    ShowMessage("DEF Layer")
 return
 
 $F21::
     Sleep, 10 ; drastically improves reliability on slower systems
-
-    msg := "DEV LAYER"
-    ToolTip, %msg%
-    Sleep, 750 ; SPECIFY DISPLAY TIME (ms)
-    ToolTip ; remove
+    ShowMessage("DEV Layer")
 return
 
 $F22::
     Sleep, 10 ; drastically improves reliability on slower systems
-
-    msg := "ACTIONS AND NUMBERS LAYER"
-    ToolTip, %msg%
-    Sleep, 750 ; SPECIFY DISPLAY TIME (ms)
-    ToolTip ; remove
+    ShowMessage("AXN Layer")
 return
 
 $F23::
     Sleep, 10 ; drastically improves reliability on slower systems
-
-    msg := "SETTINGS LAYER"
-    ToolTip, %msg%
-    Sleep, 750 ; SPECIFY DISPLAY TIME (ms)
-    ToolTip ; remove
+    ShowMessage("STG Layer")
 return

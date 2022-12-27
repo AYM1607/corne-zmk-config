@@ -23,5 +23,6 @@ $F19::
     Gui, Show, w1020 h354, Settings Layer
 return
 
+GuiEscape:
 GuiClose:
     Gui, Destroy
