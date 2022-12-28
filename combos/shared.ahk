@@ -28,6 +28,7 @@ ShowHelp(img, msg)
     Gui, Color, 0E0E0E
     Gui, Add, Picture, w740 h350 , % img
     Gui, Show, w758 h363, % msg
+    ; winset, transparent, 200
 }
 
 GuiEscape:
