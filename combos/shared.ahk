@@ -26,8 +26,11 @@ ShowHelp(img, msg)
 {
     Gui, -Caption +lastfound
     Gui, Color, 0E0E0E
+    Gui, Margin, 0, 0
     Gui, Add, Picture, w740 h350 , % img
-    Gui, Show, w758 h363, % msg
+    Gui, Show, w740 h350, % msg
+    WinSet, AlwaysOnTop
+    WinSet, Region, 0-0 w740 h350 R15-15
     ; winset, transparent, 200
 }
 
