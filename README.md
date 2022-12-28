@@ -350,6 +350,7 @@ Screencast mode notifications about:
 - [Colemak Mods](https://colemakmods.github.io/mod-dh/keyboards.html#matrix-keyboards) - Colemak-DH for a non-traditional, ergonomic keyboard
 - [AutoHotKey](https://www.autohotkey.com/) - The ultimate automation scripting language for Windows
 - [Figma](https://www.figma.com/) - The collaborative interface design tool
+- [Colemak Club](https://gnusenpai.net/colemakclub/) - Learn Colemak Layout
 
 ### Versioning
 

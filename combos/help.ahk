@@ -3,26 +3,29 @@
 SendMode Input ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir% ; Ensures a consistent starting directory.
 
+ShowHelp(img, msg)
+{
+    Gui, -Caption +lastfound
+    Gui, Color, 0E0E0E
+    Gui, Add, Picture, w740 h350 , % img
+    Gui, Show, w758 h363, % msg
+}
+
 $F16::
-    Gui, Add, Picture, w740 h350 , ../.github/images/layers/DEF.png
-    Gui, Show, w760 h360, DEF Layer
+    ShowHelp("../.github/images/layers/DEF.png", "DEF Layer")
 return
 
 $F17::
-    Gui, Add, Picture, w740 h350 , ../.github/images/layers/DEV.png
-    Gui, Show, w760 h360, DEV Layer
+    ShowHelp("../.github/images/layers/DEV.png", "DEV Layer")
 return
 
 $F18::
-    Gui, Add, Picture, w740 h350 , ../.github/images/layers/AXN.png
-    Gui, Show, w760 h360, AXN Layer
+    ShowHelp("../.github/images/layers/AXN.png", "AXN Layer")
 return
 
 $F19::
-    Gui, Add, Picture, w740 h350 , ../.github/images/layers/STG.png
-    Gui, Show, w760 h360, STG Layer
+    ShowHelp("../.github/images/layers/STG.png", "STG Layer")
 return
 
 GuiEscape:
-GuiClose:
     Gui, Destroy
