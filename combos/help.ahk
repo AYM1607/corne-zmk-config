@@ -3,13 +3,7 @@
 SendMode Input ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir% ; Ensures a consistent starting directory.
 
-ShowHelp(img, msg)
-{
-    Gui, -Caption +lastfound
-    Gui, Color, 0E0E0E
-    Gui, Add, Picture, w740 h350 , % img
-    Gui, Show, w758 h363, % msg
-}
+#include shared.ahk
 
 $F16::
     ShowHelp("../.github/images/layers/DEF.png", "DEF Layer")
