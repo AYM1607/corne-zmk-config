@@ -14,7 +14,7 @@ ShowMessage(msg)
     Gui, Add, Text, x13 y7 w384 h80 Center c0E0E0E BackgroundTrans, % msg
     Gui, Add, Text, x10 y10 w384 h80 Center cFEFEFE BackgroundTrans, % msg
     WinSet, Region, 0-0 w384 h80 R15-15
-    WinSet, transparent, 180
+    ; WinSet, transparent, 180
 
     ; ToolTip, %msg%
     Gui, Show, w384 h80
