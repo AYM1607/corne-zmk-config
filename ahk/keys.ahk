@@ -49,3 +49,4 @@ $!#Right:: Send {End}                  ;   Win+Alt+▷  ⇥  End of line
 
 ; Actions
      ^!f:: Send ^{h}                   ;       Alt+☉  ☊
+    +^!f:: Send ^+{h}                  ; Shift+Alt+☉  ☊ (global)
