@@ -190,10 +190,10 @@ Quick navigation actions and numbers.
 
 ##### Actions
 
-| Label           | Combination                | Action               |
+| Label           | Combination                | Action             |
 | ------------: | -------------------------- | -------------------- |
 | <kbd>ⓘ</kbd> |                            | System Info          |
-| <kbd>⛨</kbd> |                            | Windows Security     |
+| <kbd>⛨</kbd> | <kbd>⇧</kbd>+<kbd>ⓘ</kbd> | Windows Security     |
 | <kbd>▣</kbd> |                            | Print Screen         |
 | <kbd>⎎</kbd> |                            | File Explorer        |
 | <kbd>↶</kbd> |                            | Undo                 |
@@ -201,7 +201,9 @@ Quick navigation actions and numbers.
 | <kbd>⬚</kbd> |                            | Cut                  |
 | <kbd>⿻</kbd> |                            | Copy                 |
 | <kbd>⏍</kbd> |                            | Paste                |
-| <kbd>⛶</kbd> | <kbd>⇧</kbd>+<kbd>⏍</kbd> | Paste without format |
+| <kbd>⛶</kbd> | <kbd>⇧</kbd>+<kbd>⏍</kbd>  | Paste without format |
+| <kbd>☉</kbd> |                             | Find                |
+| <kbd>☊</kbd> | <kbd>⇧</kbd>+<kbd>☉</kbd>  | Replace             |
 
 #### 3. STG
 
@@ -308,29 +310,31 @@ Once you make changes to your keymap, you can download the firmware from the git
 
 ## AHK
 
+![Notifications](.github/images/examples/ahk-notifications.gif)
+
 ### Prerequisites
 
 - Download and install [AutoHotKey](https://www.autohotkey.com/)
 
-### Scripts
+### Startup
 
-Create shortcuts to all scripts with `.ahk` extension located inside `combos` folder.
+To automatically run the scripts at startup:
 
-Press <kbd>❖</kbd>+<kbd>r</kbd> and run this command `shell:startup`. Move shortcuts to this folder to run the scripts at startup.
+- Create shortcuts to `startup.ahk` scripts located inside `ahk` folder
+- Press <kbd>❖</kbd>+<kbd>r</kbd> and run this command `shell:startup`
+- Move the shortcut to this folder
 
 ### Notifications
 
 Screencast mode notifications about:
 
 - CapsLock (On/Off)
-- When changing a layer
-- Momentary layer activation
+- Layer changing
+- Momentary layer activation and deactivation
 
 ### Help
 
 - Open a window with an image of the current layer
-
-![Notifications](.github/images/examples/ahk-notifications.gif)
 
 ⇧ [Back to menu](#menu)
 

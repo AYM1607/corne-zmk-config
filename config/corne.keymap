@@ -62,6 +62,7 @@
     macros {
         #include "macros/shared.dtsi"
         #include "macros/dev.dtsi"
+        #include "macros/settings.dtsi"
     };
 
     keymap {
@@ -83,12 +84,12 @@
             #define B39  &mo_AXNDEF_to_AXN  0 0
             #define B41  &mp_kq
 
-            label = "DEFAULT";
+            label = "DEF";
             bindings = <
-    KEY_ESC  &kp Q  &kp W  &kp F    &kp P  &kp B             &kp J    &kp L     &kp U     &kp Y   &mp_k_m     &mp_bd
-     &mp_bc    B13    B14    B15      B16  &kp G             &kp M      B19       B20       B21       B22    KEY_RET
+    KEY_ESC  &kp Q  &kp W  &kp F    &kp P  &kp B             &kp J    &kp L     &kp U     &kp Y   &mp_k_m    NAV_DEL
+     &mp_bc    B13    B14    B15      B16  &kp G             &kp M      B19       B20       B21       B22   NAV_BSPC
     KEY_TAB  &kp Z  &kp X  &kp C    &kp D  &kp V             &kp K    &kp H  &mp_d_cs  &mp_d_dc  &kp FSLH  &kp EQUAL
-                             B36  KEY_SPC    B38               B39  KEY_SPC       B41
+                             B36  KEY_SPC    B38               B39  KEY_RET       B41
             >;
         };
 
@@ -108,16 +109,16 @@
 
             label = "DEV";
             bindings = <
-    KEY_ESC     &kp AT  &kp POUND  &kp DLLR  &mp_d_p    &kp DQT          &kp TILDE   &mp_d_m  &kp UNDER  &kp PRCNT  &kp CARET     &mp_bd
-     &mp_bc        D13        D14       D15      D16    &kp SQT          &kp GRAVE       D19        D20        D21        D22    KEY_RET
+    KEY_ESC     &kp AT  &kp POUND  &kp DLLR  &mp_d_p    &kp DQT          &kp TILDE   &mp_d_m  &kp UNDER  &kp PRCNT  &kp CARET    NAV_DEL
+     &mp_bc        D13        D14       D15      D16    &kp SQT          &kp GRAVE       D19        D20        D21        D22   NAV_BSPC
     KEY_TAB  &kp LC(R)   &kp LPAR  &kp RPAR  &mp_d_a   &kp BSLH           &kp FSLH  &mp_d_qs     &kp LT     &kp GT   &mp_d_ql    &kp F12
-                                   &mp_d_cs  KEY_SPC        D38                D39   KEY_SPC   &mp_d_dc
+                                   &mp_d_cs  KEY_SPC        D38                D39   KEY_RET   &mp_d_dc
             >;
         };
 
         act_num_layer {
-            #define A01  &kp LG(PAUSE_BREAK)    // tap: system info
-            #define A05  &kp LC(LA(DEL))        // tap: windows security
+            #define A01  &mp_a_system           // tap: system info       | shift: windows security
+            #define A05  &mp_a_find             // tap: find              | alt:   replace
             #define A13  &hm LCMD    PSCRN
             #define A14  &hm LCTRL   LEFT
             #define A15  &hm LALT    DOWN
@@ -139,12 +140,12 @@
             #define KEY_COPY    &kp RC(C)       // tap: copy
             #define KEY_PASTE   &kp RC(V)       // tap: paste     | shift: paste without format
 
-            label = "ACTIONS / NUMBERS";
+            label = "AXN";
             bindings = <
-    KEY_ESC         A01  &mp_a_prev    &kp UP  &mp_a_next        A05            &kp KP_PLUS  &mp_kn_f9  &mp_kn_f10  &mp_kn_f11  &mp_kn_f12       &mp_bd
-     &mp_bc         A13         A14       A15         A16        A17                &mp_k_m        A19         A20         A21         A22      KEY_RET
+    KEY_ESC         A01  &mp_a_prev    &kp UP  &mp_a_next        A05            &kp KP_PLUS  &mp_kn_f9  &mp_kn_f10  &mp_kn_f11  &mp_kn_f12      NAV_DEL
+     &mp_bc         A13         A14       A15         A16        A17                &mp_k_m        A19         A20         A21         A22     NAV_BSPC
     KEY_TAB    KEY_UNDO     KEY_CUT  KEY_COPY   KEY_PASTE   KEY_REDO                 &kp N0  &mp_kn_f1   &mp_kn_f2   &mp_kn_f3   &mp_kn_f4  &key_repeat
-                                          A36     KEY_SPC        A38                    A39    KEY_SPC     &kp DOT
+                                          A36     KEY_SPC        A38                    A39    KEY_RET     &kp DOT
             >;
         };
 
@@ -153,12 +154,12 @@
             #define ZOOM_RST    &kp RC(N0)           // tap: zoom reset
             #define ZOOM_OUT    &kp RC(MINUS)        // tap: zoom out
 
-            label = "SETTINGS";
+            label = "STG";
             bindings = <
-    KEY_ESC  &none    &bt BT_PRV    &bt BT_CLR    &bt BT_NXT   ZOOM_IN          &kp C_VOL_UP         &none     &kp C_STOP       &none  &none  &none
-      &none  &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  ZOOM_RST            &kp C_MUTE    &kp C_PREV       &kp C_PP  &kp C_NEXT  &none  &none
-      &none  &none  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 5  ZOOM_OUT          &kp C_VOL_DN      &kp C_RW  &kp C_SHUFFLE    &kp C_FF  &none  &none
-                                  &kp C_BRI_DN       KEY_SPC   &to_DEF               &to_DEV       KEY_SPC   &kp C_BRI_UP
+    KEY_ESC  &none  &bt BT_PRV    &bt BT_CLR  &bt BT_NXT   ZOOM_IN          &kp C_VOL_UP         &none     &kp C_STOP       &none  &none  &none
+      &none  &none     &m_s_b1       &m_s_b2     &m_s_b3  ZOOM_RST            &kp C_MUTE    &kp C_PREV       &kp C_PP  &kp C_NEXT  &none  &none
+      &none  &none     &m_s_b4       &m_s_b5     &m_s_b6  ZOOM_OUT          &kp C_VOL_DN      &kp C_RW  &kp C_SHUFFLE    &kp C_FF  &none  &none
+                                &kp C_BRI_DN     KEY_SPC   &to_DEF               &to_DEV       KEY_RET   &kp C_BRI_UP
             >;
         };
     };

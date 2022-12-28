@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 2.0.0
+
+- Move return (and hold F2) to right thumb (double space was not used)
+- One key for backspace and another for del
+- Auto change layer to DEF when select a bluetooth device
+- Add find and replace shortcut key on AXN layer
+
 ## 1.2.0
 
 - Close help image with <kbd>ESC</kbd> key

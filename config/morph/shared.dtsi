@@ -15,14 +15,6 @@ cw: caps_word {
     continue-list = <UNDERSCORE MINUS BACKSPACE DEL>;
 };
 
-mp_bd: morph_backspace_del {
-    compatible = "zmk,behavior-mod-morph";
-    label = "BACKSPACE DELETE";
-    #binding-cells = <0>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <NAV_BSPC>, <NAV_DEL>;
-};
-
 mp_bc: morph_backspace_caps {
     compatible = "zmk,behavior-mod-morph";
     label = "BACKSPACE CAPS_LOCK";
