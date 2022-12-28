@@ -21,5 +21,3 @@ $F19::
     ShowHelp("../.github/images/layers/STG.png", "STG Layer")
 return
 
-GuiEscape:
-    Gui, Destroy

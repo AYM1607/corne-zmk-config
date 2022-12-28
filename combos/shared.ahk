@@ -29,3 +29,7 @@ ShowHelp(img, msg)
     Gui, Add, Picture, w740 h350 , % img
     Gui, Show, w758 h363, % msg
 }
+
+GuiEscape:
+GuiClose:
+    Gui, Destroy
