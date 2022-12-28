@@ -21,11 +21,3 @@ mp_a_system: morph_action_system {
     mods = <(MOD_LSFT|MOD_RSFT)>;
     bindings = < &kp LG(PAUSE_BREAK)>, <&kp LC(LA(DEL))>;
 };
-
-mp_a_find: morph_action_system {
-    compatible = "zmk,behavior-mod-morph";
-    label = "☉ ☊";
-    #binding-cells = <0>;
-    mods = <(MOD_LALT|MOD_RALT)>;
-    bindings = < &kp LC(F)>, <&kp LC(H)>;
-};

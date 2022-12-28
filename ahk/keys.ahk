@@ -46,3 +46,6 @@ Menu, Tray, Icon, icons/ahk-blue.ico
 $!#Right:: Send {End}                  ;   Win+Alt+▷  ⇥  End of line
    $^#Up:: Send {PgUp}                 ;  Ctrl+Alt+△  ⇞  Pager Up
  $^#Down:: Send {PgDn}                 ;  Ctrl+Alt+▽  ⇟  Page Down
+
+; Actions
+     ^!f:: Send ^{h}                   ;       Alt+☉  ☊

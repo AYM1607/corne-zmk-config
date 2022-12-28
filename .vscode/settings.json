@@ -50,4 +50,5 @@
     "markdownlint.config": {
         "MD033": false
     },
+    "editor.formatOnSave": false
 }
