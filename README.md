@@ -334,7 +334,7 @@ Screencast mode notifications about:
 
 ### Help
 
-- Open a window with an image of the current layer
+- Open a window with an image of the current layer (close with <kbd>ESC</kbd>)
 
 ⇧ [Back to menu](#menu)
 
