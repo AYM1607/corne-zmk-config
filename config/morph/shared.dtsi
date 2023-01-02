@@ -23,7 +23,7 @@ mp_bc: morph_backspace_caps {
     bindings = <NAV_BSPC>, <&kp CLCK>;
 };
 
-mp_d_cs: morph_dev_comma_semi {
+mp_cs: morph_dev_comma_semi {
     compatible = "zmk,behavior-mod-morph";
     label = ", ;";
     #binding-cells = <0>;
@@ -31,7 +31,7 @@ mp_d_cs: morph_dev_comma_semi {
     bindings = <&kp COMMA>, <&kp SEMI>;
 };
 
-mp_d_dc: morph_dev_dot_colon {
+mp_dc: morph_dev_dot_colon {
     compatible = "zmk,behavior-mod-morph";
     label = ". :";
     #binding-cells = <0>;

@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2.1.1
+
+- Add colon to AXN layer to easy edit date time values
+
 ## 2.0.0
 
 - Move return (and hold F2) to right thumb (double space was not used)
