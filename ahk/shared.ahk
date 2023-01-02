@@ -6,7 +6,7 @@ SetWorkingDir %A_ScriptDir% ; Ensures a consistent starting directory.
 ShowMessage(msg)
 {
     Gui, -Caption +lastfound
-    Gui, Color, 0E0E0E
+    Gui, Color, 344140
     Gui, Font, s30 Bold, Verdana
     Gui, Add, Text, x7 y7 w384 h80 Center c0E0E0E BackgroundTrans, % msg
     Gui, Add, Text, x7 y13 w384 h80 Center c0E0E0E BackgroundTrans, % msg
@@ -26,7 +26,7 @@ ShowMessage(msg)
 ShowHelp(img, msg)
 {
     Gui, -Caption +lastfound
-    Gui, Color, 0E0E0E
+    Gui, Color, 344140
     Gui, Margin, 0, 0
     Gui, Add, Picture, w740 h350 , % img
     Gui, Show, w740 h350, % msg
