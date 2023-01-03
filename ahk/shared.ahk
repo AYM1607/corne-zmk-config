@@ -38,3 +38,4 @@ ShowHelp(img, msg)
 GuiEscape:
 GuiClose:
     Gui, Destroy
+return

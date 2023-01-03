@@ -7,8 +7,5 @@ SetWorkingDir %A_ScriptDir% ; Ensures a consistent starting directory.
 
 ~*CapsLock::
     Sleep, 10 ; drastically improves reliability on slower systems
-
-    msg := ""
-    msg := msg "CapsLock: " (GetKeyState("CapsLock", "T") ? "ON" : "OFF")
-    ShowMessage(msg)
+    ShowMessage("CapsLock: " (GetKeyState("CapsLock", "T") ? "ON" : "OFF"))
 return
