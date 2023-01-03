@@ -44,6 +44,7 @@
         "RSHFT",
         "SHFT",
         "Sweept",
+        "touchpad",
         "zmkfirmware"
     ],
     "editor.fontLigatures": false,

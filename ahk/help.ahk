@@ -6,18 +6,18 @@ SetWorkingDir %A_ScriptDir% ; Ensures a consistent starting directory.
 #include shared.ahk
 
 $F16::
-    ShowHelp("../.github/images/layers/BAS.png", "BAS Layer")
+    ShowHelp("BAS")
 return
 
 $F17::
-    ShowHelp("../.github/images/layers/DEV.png", "DEV Layer")
+    ShowHelp("DEV")
 return
 
 $F18::
-    ShowHelp("../.github/images/layers/AXN.png", "AXN Layer")
+    ShowHelp("AXN")
 return
 
 $F19::
-    ShowHelp("../.github/images/layers/STG.png", "STG Layer")
+    ShowHelp("STG")
 return
 

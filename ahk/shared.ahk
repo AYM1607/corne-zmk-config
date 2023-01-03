@@ -3,9 +3,18 @@
 SendMode Input ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir% ; Ensures a consistent starting directory.
 
-ShowMessage(msg)
+ChangeIcon(lyr)
 {
-    Gui, -Caption +lastfound
+    ico := "../.github/images/icons/" lyr ".png"
+    Menu, Tray, Icon, % ico
+}
+
+ShowMessage(lyr)
+{
+    Gui, Destroy
+    msg := % lyr " Layer"
+
+    Gui, -Caption +LastFound
     Gui, Color, 344140
     Gui, Font, s30 Bold, Verdana
     Gui, Add, Text, x7 y7 w384 h80 Center c0E0E0E BackgroundTrans, % msg
@@ -23,9 +32,14 @@ ShowMessage(msg)
     Gui, Destroy
 }
 
-ShowHelp(img, msg)
+ShowHelp(lyr)
 {
-    Gui, -Caption +lastfound
+    Gui, Destroy
+
+    img := "../.github/images/layers/" lyr ".png"
+    msg := % lyr " Layer"
+
+    Gui, -Caption +LastFound
     Gui, Color, 344140
     Gui, Margin, 0, 0
     Gui, Add, Picture, w740 h350 , % img

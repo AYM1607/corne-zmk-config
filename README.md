@@ -36,8 +36,8 @@ This is a WIP layout based on Colemak DHm for using on Windows (with **en-US** l
 
 Icons used to describe some modifiers and actions
 
-| Label | Description |
-| :-: | ----------- |
+| Label        | Description |
+| :-----------: | ----------- |
 | <kbd>❖</kbd> | Win/Cmd |
 | <kbd>⌃</kbd> | Control |
 | <kbd>⌥</kbd> | Alt |
@@ -58,7 +58,7 @@ Icons used to describe some modifiers and actions
 
 #### Shared Modifiers
 
-| Label           | Combinations                            | Actions                                               |
+| Label           | Windows                                 | Actions                                               |
 | --------------: | --------------------------------------: | ----------------------------------------------------- |
 | <kbd>⌫</kbd>   |                                         | Backspace                                             |
 | <kbd>\|⌫</kbd> | <kbd>⇪⌫</kbd>                          | Delete word backward                                  |
@@ -81,26 +81,26 @@ Letters, accents for Spanish language and quick shortcuts for most used symbols 
 
 ##### Spanish
 
-| Label        | Combinations                                        |
-| :----------: | --------------------------------------------------: |
-| <kbd>á</kbd> | <kbd>⌥</kbd>+<kbd>a</kbd>                           |
-| <kbd>Á</kbd> | <kbd>❖</kbd>+<kbd>⌥</kbd>+<kbd>a</kbd>              |
-| <kbd>é</kbd> | <kbd>⌥</kbd>+<kbd>e</kbd>                           |
-| <kbd>É</kbd> | <kbd>❖</kbd>+<kbd>⌥</kbd>+<kbd>e</kbd>              |
-| <kbd>í</kbd> | <kbd>⌥</kbd>+<kbd>i</kbd>                           |
-| <kbd>Í</kbd> | <kbd>❖</kbd>+<kbd>⌥</kbd>+<kbd>i</kbd>              |
-| <kbd>ó</kbd> | <kbd>⌥</kbd>+<kbd>o</kbd>                           |
-| <kbd>Ó</kbd> | <kbd>❖</kbd>+<kbd>⌥</kbd>+<kbd>o</kbd>              |
-| <kbd>ú</kbd> | <kbd>⌥</kbd>+<kbd>u</kbd>                           |
-| <kbd>Ú</kbd> | <kbd>❖</kbd>+<kbd>⌥</kbd>+<kbd>u</kbd>              |
-| <kbd>ü</kbd> | <kbd>^</kbd>+<kbd>u</kbd>                          |
-| <kbd>Ü</kbd> | <kbd>❖</kbd>+<kbd>^</kbd>+<kbd>u</kbd>             |
-| <kbd>ñ</kbd> | <kbd>⌥</kbd>+<kbd>n</kbd>                           |
-| <kbd>Ñ</kbd> | <kbd>❖</kbd>+<kbd>⌥</kbd>+<kbd>n</kbd>              |
+| Label        | Windows                                 | Android                                               |
+| :----------: | --------------------------------------: | ----------------------------------------------------: |
+| <kbd>á</kbd> | <kbd>⌥</kbd>+<kbd>a</kbd>               | <kbd>⌥</kbd>+<kbd>e</kbd> + <kbd>a</kbd>              |
+| <kbd>Á</kbd> | <kbd>❖</kbd>+<kbd>⌥</kbd>+<kbd>a</kbd> | <kbd>⌥</kbd>+<kbd>e</kbd> + <kbd>⇧</kbd>+<kbd>a</kbd> |
+| <kbd>é</kbd> | <kbd>⌥</kbd>+<kbd>e</kbd>               | <kbd>⌥</kbd>+<kbd>e</kbd> + <kbd>e</kbd>              |
+| <kbd>É</kbd> | <kbd>❖</kbd>+<kbd>⌥</kbd>+<kbd>e</kbd> | <kbd>⌥</kbd>+<kbd>e</kbd> + <kbd>⇧</kbd>+<kbd>e</kbd> |
+| <kbd>í</kbd> | <kbd>⌥</kbd>+<kbd>i</kbd>               | <kbd>⌥</kbd>+<kbd>e</kbd> + <kbd>i</kbd>              |
+| <kbd>Í</kbd> | <kbd>❖</kbd>+<kbd>⌥</kbd>+<kbd>i</kbd> | <kbd>⌥</kbd>+<kbd>e</kbd> + <kbd>⇧</kbd>+<kbd>i</kbd> |
+| <kbd>ó</kbd> | <kbd>⌥</kbd>+<kbd>o</kbd>               | <kbd>⌥</kbd>+<kbd>e</kbd> + <kbd>o</kbd>              |
+| <kbd>Ó</kbd> | <kbd>❖</kbd>+<kbd>⌥</kbd>+<kbd>o</kbd> | <kbd>⌥</kbd>+<kbd>e</kbd> + <kbd>⇧</kbd>+<kbd>o</kbd> |
+| <kbd>ú</kbd> | <kbd>⌥</kbd>+<kbd>u</kbd>               | <kbd>⌥</kbd>+<kbd>e</kbd> + <kbd>u</kbd>              |
+| <kbd>Ú</kbd> | <kbd>❖</kbd>+<kbd>⌥</kbd>+<kbd>u</kbd> | <kbd>⌥</kbd>+<kbd>e</kbd> + <kbd>⇧</kbd>+<kbd>u</kbd> |
+| <kbd>ü</kbd> | <kbd>^</kbd>+<kbd>u</kbd>               | <kbd>⌥</kbd>+<kbd>u</kbd> + <kbd>u</kbd>              |
+| <kbd>Ü</kbd> | <kbd>❖</kbd>+<kbd>^</kbd>+<kbd>u</kbd>  | <kbd>⌥</kbd>+<kbd>u</kbd> + <kbd>⇧</kbd>+<kbd>u</kbd> |
+| <kbd>ñ</kbd> | <kbd>⌥</kbd>+<kbd>n</kbd>               | <kbd>⌥</kbd>+<kbd>n</kbd> + <kbd>n</kbd>              |
+| <kbd>Ñ</kbd> | <kbd>❖</kbd>+<kbd>⌥</kbd>+<kbd>n</kbd> | <kbd>⌥</kbd>+<kbd>n</kbd> + <kbd>⇧</kbd>+<kbd>n</kbd> |
 
 ##### Symbols
 
-| Label         | Combinations                                        |
+| Label         | Windows                                             |
 | :-----------: | --------------------------------------------------: |
 | <kbd>@</kbd>  | <kbd>⌥</kbd>+<kbd>q</kbd>                          |
 
@@ -112,7 +112,7 @@ Symbols and dev shortcuts for JS/TS.
 
 ##### Symbols
 
-| Label           | Combinations                              |
+| Label           | Windows                                   |
 | :-------------: | ----------------------------------------: |
 | <kbd>°</kbd>    | <kbd>^</kbd>+<kbd>#</kbd>                 |
 | <kbd>ª</kbd>    | <kbd>❖</kbd>+<kbd>^</kbd>+<kbd>#</kbd>   |
@@ -128,7 +128,7 @@ Symbols and dev shortcuts for JS/TS.
 
 ##### JS/TS
 
-| Label                                                                                                                       | Combinations                 |
+| Label                                                                                                                       | Windows                 |
 | :-------------------------------------------------------------------------------------------------------------------------: | ---------------------------: |
 | <kbd>[++](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment)</kbd>                      |  <kbd>⇧</kbd>+<kbd>+</kbd>  |
 | <kbd>[+=](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Addition_assignment)</kbd>            |  <kbd>⌥</kbd>+<kbd>+</kbd>  |
@@ -150,18 +150,18 @@ Symbols and dev shortcuts for JS/TS.
 
 ##### Auto Brackets
 
-| Label | Combinations                                        | Action                       |
+| Label | Windows                                             | Action                       |
 | :---: | --------------------------------------------------: | ---------------------------- |
 | <░/>  | <kbd>❖</kbd>+<kbd>⌥</kbd>+<kbd><</kbd>             | Angular brackets for React  |
-| </░>  | <kbd>❖</kbd>+<kbd>⌥</kbd>+<kbd>></kbd>              | Angular brackets for HTML  |
+| </░>  | <kbd>❖</kbd>+<kbd>⌥</kbd>+<kbd>></kbd>             | Angular brackets for HTML  |
 
 ##### Browser DevTools
 
-| Label        | Combinations                 | Action                      |
+| Label        | Windows                      | Action                      |
 | -----------: | ---------------------------: | --------------------------- |
 | <kbd>↻</kbd> | <kbd>↻</kbd>                 | Refresh                     |
 | <kbd>⟳</kbd> | <kbd>⇧</kbd>+<kbd>↻</kbd>   | Hard refresh (clean cache) |
-| <kbd>⩸</kbd> |                             | Open DevTools              |
+| <kbd>⩸</kbd> |                              | Open DevTools              |
 
 #### 2. AXN
 
@@ -171,7 +171,7 @@ Quick navigation actions and numbers.
 
 ##### Navigation
 
-| Label          | Combination                | Action               |
+| Label          | Windows                                | Action               |
 | ------------: | --------------------------------------- | -------------------- |
 | <kbd>△</kbd>  |                                        | Up                   |
 | <kbd>▽</kbd>  |                                        | Down                 |
@@ -190,7 +190,7 @@ Quick navigation actions and numbers.
 
 ##### Actions
 
-| Label           | Combination                | Action             |
+| Label           | Windows                  | Action             |
 | ------------: | -------------------------- | -------------------- |
 | <kbd>ⓘ</kbd> |                            | System Info          |
 | <kbd>⛨</kbd> | <kbd>⇧</kbd>+<kbd>ⓘ</kbd> | Windows Security     |

@@ -3,7 +3,8 @@
 ## 2.1.1
 
 - Add colon to AXN layer to easy edit date time values
-- Rename DEF to BAS layer to easy identify when show the on screen notifications
+- Rename DEF to BAS layer to easy identify when show the on screen
+- Add tray icon to identify current layer
 
 ## 2.0.0
 
