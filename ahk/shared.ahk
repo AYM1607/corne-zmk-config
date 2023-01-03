@@ -6,13 +6,20 @@ SetWorkingDir %A_ScriptDir% ; Ensures a consistent starting directory.
 ChangeIcon(lyr)
 {
     ico := "../.github/images/icons/" lyr ".png"
+    msg := % lyr " Layer"
+
     Menu, Tray, Icon, % ico
+    Menu, Tray, Tip, % msg
 }
 
 ShowMessage(lyr)
 {
     Gui, Destroy
-    msg := % lyr " Layer"
+    if (lyr = "BAS" or lyr = "DEV" or lyr = "AXN" or lyr = "STG") {
+        msg := % lyr " Layer"
+    } else {
+        msg := % lyr
+    }
 
     Gui, -Caption +LastFound
     Gui, Color, 344140
