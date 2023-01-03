@@ -13,7 +13,7 @@ This is a WIP layout based on Colemak DHm for using on Windows (with **en-US** l
 - [Keyboard](#keyboard)
   - [Conventions](#conventions)
   - [Layers](#layers)
-    - [0. DEF](#0-def)
+    - [0. BAS](#0-bas)
     - [1. DEV](#1-dev)
     - [2. AXN](#2-axn)
     - [3. STG](#3-stg)
@@ -73,11 +73,11 @@ Icons used to describe some modifiers and actions
 
 ### Layers
 
-#### 0. DEF
+#### 0. BAS
 
 Letters, accents for Spanish language and quick shortcuts for most used symbols to "avoid" changing layers.
 
-![DEF Layer](./.github/images/layers/DEF.png)
+![BAS Layer](./.github/images/layers/BAS.png)
 
 ##### Spanish
 

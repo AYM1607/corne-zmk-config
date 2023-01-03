@@ -3,12 +3,13 @@
 ## 2.1.1
 
 - Add colon to AXN layer to easy edit date time values
+- Rename DEF to BAS layer to easy identify when show the on screen notifications
 
 ## 2.0.0
 
 - Move return (and hold F2) to right thumb (double space was not used)
 - One key for backspace and another for del
-- Auto change layer to DEF when select a bluetooth device
+- Auto change layer to BAS when select a bluetooth device
 - Add find and replace shortcut key on AXN layer
 
 ## 1.2.0

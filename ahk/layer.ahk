@@ -7,7 +7,7 @@ SetWorkingDir %A_ScriptDir% ; Ensures a consistent starting directory.
 
 $F20::
     Sleep, 10 ; drastically improves reliability on slower systems
-    ShowMessage("DEF Layer")
+    ShowMessage("BAS Layer")
 return
 
 $F21::

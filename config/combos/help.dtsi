@@ -1,8 +1,8 @@
-combo_help-DEF {
-    bindings = <&kp H_DEF>;
+combo_help-BAS {
+    bindings = <&kp H_BAS>;
     key-positions = <13 22>;
     slow-release;
-    layers = <DEF>;
+    layers = <BAS>;
 };
 
 combo_help-DEV {
