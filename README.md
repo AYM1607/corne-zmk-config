@@ -324,17 +324,15 @@ To automatically run the scripts at startup:
 - Press <kbd>❖</kbd>+<kbd>r</kbd> and run this command `shell:startup`
 - Move the shortcut to this folder
 
-### Notifications
+### Indicators
 
-Screencast mode notifications about:
+Screencast mode notifications:
 
 - CapsLock (On/Off)
 - Layer changing
 - Momentary layer activation and deactivation
-
-### Help
-
-- Open a window with an image of the current layer (close with <kbd>ESC</kbd>)
+- Tray icons with current layer
+- Current layer image as helper (close with <kbd>ESC</kbd>)
 
 ⇧ [Back to menu](#menu)
 
