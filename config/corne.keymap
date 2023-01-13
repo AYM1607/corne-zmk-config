@@ -121,7 +121,7 @@
         act_num_layer {
             #define A01  &mp_a_system           // tap: system info       | shift: windows security
             #define A05  &kp LC(F)              // tap: find
-            #define A13  &hm LCMD    LG(LS(S))
+            #define A13  &hm_a_lcmd  LCMD   0
             #define A14  &hm LCTRL   LEFT
             #define A15  &hm LALT    DOWN
             #define A16  &hm LSHFT   RIGHT
