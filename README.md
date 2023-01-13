@@ -190,11 +190,12 @@ Quick navigation actions and numbers.
 
 ##### Actions
 
-| Label           | Windows                  | Action             |
+| Label         | Windows                  | Action               |
 | ------------: | -------------------------- | -------------------- |
 | <kbd>ⓘ</kbd> |                            | System Info          |
 | <kbd>⛨</kbd> | <kbd>⇧</kbd>+<kbd>ⓘ</kbd> | Windows Security     |
 | <kbd>▣</kbd> |                            | Print Screen         |
+| <kbd>⛢</kbd> | <kbd>⇧</kbd>+<kbd>▣</kbd> | Color Picker         |
 | <kbd>⎎</kbd> |                            | File Explorer        |
 | <kbd>↶</kbd> |                            | Undo                 |
 | <kbd>↷</kbd> |                            | Redo                 |
