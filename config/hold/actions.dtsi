@@ -1,4 +1,4 @@
-hm_a_lcmd: behavior_num_rcmd {
+hm_a_lcmd: behavior_action_lcmd {
     compatible = "zmk,behavior-hold-tap";
     label = "hm_a_lcmd";
     #binding-cells = <2>;
