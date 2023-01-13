@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2.1.2
+
+- Fix AHK to work as OSD (On Screen Notification)
+
 ## 2.1.1
 
 - Add colon to AXN layer to easy edit date time values

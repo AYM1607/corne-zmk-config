@@ -21,7 +21,7 @@ ShowMessage(lyr)
         msg := % lyr
     }
 
-    Gui, -Caption +LastFound
+    Gui, -Caption +LastFound +ToolWindow ; +ToolWindow avoids a taskbar button and an alt-tab menu item.
     Gui, Color, 344140
     Gui, Font, s30 Bold, Verdana
     Gui, Add, Text, x7 y7 w384 h80 Center c0E0E0E BackgroundTrans, % msg
@@ -33,7 +33,8 @@ ShowMessage(lyr)
     ; WinSet, transparent, 180
 
     ; ToolTip, %msg%
-    Gui, Show, w384 h80
+    WinSet, AlwaysOnTop
+    Gui, Show, w384 h80 xCenter yCenter NA ; NA shows the window without activating it
     Sleep, 750 ; SPECIFY DISPLAY TIME (ms)
     ; ToolTip ; remove
     Gui, Destroy
@@ -46,11 +47,11 @@ ShowHelp(lyr)
     img := "../.github/images/layers/" lyr ".png"
     msg := % lyr " Layer"
 
-    Gui, -Caption +LastFound
+    Gui, -Caption +LastFound +ToolWindow ; +ToolWindow avoids a taskbar button and an alt-tab menu item.
     Gui, Color, 344140
     Gui, Margin, 0, 0
     Gui, Add, Picture, w740 h350 , % img
-    Gui, Show, w740 h350, % msg
+    Gui, Show, w740 h350 xCenter yCenter, % msg
     WinSet, AlwaysOnTop
     WinSet, Region, 0-0 w740 h350 R15-15
     ; WinSet, transparent, 200
