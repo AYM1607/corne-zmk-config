@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2.2.0
+
+- Replace the PrintScreen action with PowerToys shortcuts
+
 ## 2.1.2
 
 - Fix AHK to work as OSD (On Screen Notification)
