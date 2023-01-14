@@ -165,7 +165,7 @@ Symbols and dev shortcuts for JS/TS.
 
 #### 2. AXN
 
-Quick navigation actions and numbers.
+Quick navigation actions and numbers. Function keys works independently as a sub-layer to avoid shortcuts collisions.
 
 ![AXN Layer](./.github/images/layers/AXN.png)
 

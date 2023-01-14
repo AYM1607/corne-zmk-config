@@ -28,7 +28,7 @@
 #define H_FN   F16
 #define H_STG  F17
 
-#define F_BAS  F19
+#define F_BAS  K19
 #define F_DEV  F20
 #define F_AXN  F21
 #define F_FN   F22
@@ -154,21 +154,21 @@
         };
 
         functions_layer {
-            #define F19  &hm RSHFT  F5
-            #define F20  &hm RALT   F6
-            #define F21  &hm RCTRL  F7
-            #define F22  &hm RCMD   F8
+            #define K19  &hm RSHFT  F5
+            #define K20  &hm RALT   F6
+            #define K21  &hm RCTRL  F7
+            #define K22  &hm RCMD   F8
 
-            #define F36  &to_AXN
-            #define F38  &to_BAS
-            #define F39  &to_DEV
+            #define K36  &to_AXN
+            #define K38  &to_BAS
+            #define K39  &to_DEV
 
             label = "FN";
             bindings = <
     KEY_ESC     &none      &none     &none      &none  &none                  &none   &kp F9  &kp F0  &kp F11  &kp F12      NAV_DEL
-     &mp_bc  &kp LCMD  &kp LCTRL  &kp LALT  &kp LSHFT  &none                  &none      F19     F20      F21      F22     NAV_BSPC
+     &mp_bc  &kp LCMD  &kp LCTRL  &kp LALT  &kp LSHFT  &none                  &none      K19     K20      K21      K22     NAV_BSPC
     KEY_TAB     &none      &none     &none      &none  &none                  &none   &kp F1  &kp F2   &kp F3   &kp F5  &key_repeat
-                                       F36    KEY_SPC    F38                    F39  KEY_RET  &mp_dc
+                                       K36    KEY_SPC    K38                    K39  KEY_RET  &mp_dc
             >;
         };
 
