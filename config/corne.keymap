@@ -129,9 +129,9 @@
             #define A16  &hm LSHFT   RIGHT
             #define A17  &kp LG(E)              // tap: file explorer
 
-            #define A19  &hm RSHFT  4
-            #define A20  &hm RALT   5
-            #define A21  &hm RCTRL  6
+            #define A19  &hm RSHFT  N4
+            #define A20  &hm RALT   N5
+            #define A21  &hm RCTRL  N6
             #define A22  &hm RCMD   EQUAL
 
             #define A36  &mo_FNKAXN_to_FNK    0 0
@@ -167,7 +167,7 @@
             bindings = <
     KEY_ESC     &none      &none     &none      &none  &none                  &none   &kp F9  &kp F10  &kp F11  &kp F12      NAV_DEL
      &mp_bc  &kp LCMD  &kp LCTRL  &kp LALT  &kp LSHFT  &none                  &none      K19      K20      K21      K22     NAV_BSPC
-    KEY_TAB     &none      &none     &none      &none  &none                  &none   &kp F1   &kp F2   &kp F3   &kp F5  &key_repeat
+    KEY_TAB     &none      &none     &none      &none  &none                  &none   &kp F1   &kp F2   &kp F3   &kp F4  &key_repeat
                                        K36    KEY_SPC    K38                    K39  KEY_RET   &mp_dc
             >;
         };
