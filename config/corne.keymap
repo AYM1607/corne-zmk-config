@@ -28,7 +28,7 @@
 #define H_FNK  F16
 #define H_STG  F17
 
-#define F_BAS  K19
+#define F_BAS  F19
 #define F_DEV  F20
 #define F_AXN  F21
 #define F_FNK  F22
