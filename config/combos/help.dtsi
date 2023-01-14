@@ -19,6 +19,13 @@ combo_help-AXN {
     layers = <AXN>;
 };
 
+combo_help-FNK {
+    bindings = <&kp H_FNK>;
+    key-positions = <13 22>;
+    slow-release;
+    layers = <FNK>;
+};
+
 combo_help-STG {
     bindings = <&kp H_STG>;
     key-positions = <13 22>;
