@@ -19,7 +19,7 @@ mp_a_power: morph_action_power {
     label = "▣ ⛢";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&kp LG(LS(S))>, <&kp LG(C)>;
+    bindings = <&kp LG(LS(S))>, <&kp LG(LS(C))>;
 };
 
 mp_a_system: morph_action_system {
