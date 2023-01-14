@@ -15,7 +15,7 @@ ChangeIcon(lyr)
 ShowMessage(lyr)
 {
     Gui, Destroy
-    if (lyr = "BAS" or lyr = "DEV" or lyr = "AXN" or lyr = "STG") {
+    if (lyr = "BAS" or lyr = "DEV" or lyr = "AXN" or lyr = "FNK" or lyr = "STG") {
         msg := % lyr " Layer"
     } else {
         msg := % lyr
