@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 3.0.0
+
+- Move `0` and `=` keys to home row position
+- Create a `FN` sub-layer of `AXN` layer to avoid collisions with another shortcuts
+
 ## 2.2.0
 
 - Replace the PrintScreen action with PowerToys shortcuts

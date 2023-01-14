@@ -5,22 +5,28 @@ SetWorkingDir %A_ScriptDir% ; Ensures a consistent starting directory.
 
 #include shared.ahk
 
-$F20::
+$F19::
     Sleep, 10 ; drastically improves reliability on slower systems
     ChangeIcon("BAS")
     ShowMessage("BAS")
 return
 
-$F21::
+$F20::
     Sleep, 10 ; drastically improves reliability on slower systems
     ChangeIcon("DEV")
     ShowMessage("DEV")
 return
 
-$F22::
+$F21::
     Sleep, 10 ; drastically improves reliability on slower systems
     ChangeIcon("AXN")
     ShowMessage("AXN")
+return
+
+$F22::
+    Sleep, 10 ; drastically improves reliability on slower systems
+    ChangeIcon("FN")
+    ShowMessage("FN")
 return
 
 $F23::

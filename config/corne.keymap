@@ -19,16 +19,19 @@
 #define BAS  0
 #define DEV  1
 #define AXN  2
-#define STG  3
+#define FN   3
+#define STG  4
 
-#define H_BAS  F16
-#define H_DEV  F17
-#define H_AXN  F18
-#define H_STG  F19
+#define H_BAS  F13
+#define H_DEV  F14
+#define H_AXN  F15
+#define H_FN   F16
+#define H_STG  F17
 
-#define F_BAS  F20
-#define F_DEV  F21
-#define F_AXN  F22
+#define F_BAS  F19
+#define F_DEV  F20
+#define F_AXN  F21
+#define F_FN   F22
 #define F_STG  F23
 
 /* Shared Keys */
@@ -50,7 +53,6 @@
 
         #include "hold/shared.dtsi"
         #include "hold/actions.dtsi"
-        #include "hold/num.dtsi"
         #include "hold/dev.dtsi"
     };
 
@@ -127,12 +129,12 @@
             #define A16  &hm LSHFT   RIGHT
             #define A17  &kp LG(E)              // tap: file explorer
 
-            #define A19  &hm_n_rshf  RSHFT  0
-            #define A20  &hm_n_ralt  RALT   0
-            #define A21  &hm_n_rctrl RCTRL  0
-            #define A22  &hm_n_rcmd  RCMD   0
+            #define A19  &hm RSHFT  4
+            #define A20  &hm RALT   5
+            #define A21  &hm RCTRL  6
+            #define A22  &hm RCMD   EQUAL
 
-            #define A36  &mo_STGAXN_to_STG  0 0
+            #define A36  &mo_FNAXN_to_FN    0 0
             #define A38  &to_BAS
             #define A39  &to_DEV
 
@@ -144,10 +146,29 @@
 
             label = "AXN";
             bindings = <
-    KEY_ESC         A01  &mp_a_prev    &kp UP  &mp_a_next        A05            &kp KP_PLUS  &mp_kn_f9  &mp_kn_f10  &mp_kn_f11  &mp_kn_f12      NAV_DEL
-     &mp_bc         A13         A14       A15         A16        A17                &mp_k_m        A19         A20         A21         A22     NAV_BSPC
-    KEY_TAB    KEY_UNDO     KEY_CUT  KEY_COPY   KEY_PASTE   KEY_REDO                 &kp N0  &mp_kn_f1   &mp_kn_f2   &mp_kn_f3   &mp_kn_f4  &key_repeat
-                                          A36     KEY_SPC        A38                    A39    KEY_RET      &mp_dc
+    KEY_ESC       A01  &mp_a_prev    &kp UP  &mp_a_next       A05            &kp KP_PLUS   &kp N7  &kp N8  &kp N9  &kp KP_MULTIPLY      NAV_DEL
+     &mp_bc       A13         A14       A15         A16       A17                 &kp N0      A19     A20     A21              A22     NAV_BSPC
+    KEY_TAB  KEY_UNDO     KEY_CUT  KEY_COPY   KEY_PASTE  KEY_REDO                &mp_k_m   &kp N1  &kp N2  &kp N3    &kp KP_DIVIDE  &key_repeat
+                                        A36     KEY_SPC       A38                    A39  KEY_RET  &mp_dc
+            >;
+        };
+
+        functions_layer {
+            #define F19  &hm RSHFT  F5
+            #define F20  &hm RALT   F6
+            #define F21  &hm RCTRL  F7
+            #define F22  &hm RCMD   F8
+
+            #define F36  &to_AXN
+            #define F38  &to_BAS
+            #define F39  &to_DEV
+
+            label = "FN";
+            bindings = <
+    KEY_ESC     &none      &none     &none      &none  &none                  &none   &kp F9  &kp F0  &kp F11  &kp F12      NAV_DEL
+     &mp_bc  &kp LCMD  &kp LCTRL  &kp LALT  &kp LSHFT  &none                  &none      F19     F20      F21      F22     NAV_BSPC
+    KEY_TAB     &none      &none     &none      &none  &none                  &none   &kp F1  &kp F2   &kp F3   &kp F5  &key_repeat
+                                       F36    KEY_SPC    F38                    F39  KEY_RET  &mp_dc
             >;
         };
 

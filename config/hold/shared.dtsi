@@ -52,11 +52,11 @@ mo_AXNDEV_to_AXN: hold_mo_AXNDEV_to_AXN {
     bindings = <&mo_AXN_to_DEV>, <&to_AXN>;
 };
 
-mo_STGAXN_to_STG: hold_mo_STGAXN_to_STG {
+mo_FNAXN_to_FN: hold_mo_FNAXN_to_FN {
     compatible = "zmk,behavior-hold-tap";
-    label = "mo_STG_AXN_to_STG";
+    label = "mo_FN_AXN_to_FN";
     #binding-cells = <2>;
     flavor = "hold-preferred";
     tapping-term-ms = <200>;
-    bindings = <&mo_STG_to_AXN>, <&to_STG>;
+    bindings = <&mo_FN_to_AXN>, <&to_FN>;
 };

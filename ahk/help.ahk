@@ -5,19 +5,20 @@ SetWorkingDir %A_ScriptDir% ; Ensures a consistent starting directory.
 
 #include shared.ahk
 
-$F16::
+$F13::
     ShowHelp("BAS")
 return
 
-$F17::
+$F14::
     ShowHelp("DEV")
 return
 
-$F18::
+$F15::
+$F16::
     ShowHelp("AXN")
 return
 
-$F19::
+$F17::
     ShowHelp("STG")
 return
 
