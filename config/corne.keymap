@@ -19,19 +19,19 @@
 #define BAS  0
 #define DEV  1
 #define AXN  2
-#define FN   3
+#define FNK  3
 #define STG  4
 
 #define H_BAS  F13
 #define H_DEV  F14
 #define H_AXN  F15
-#define H_FN   F16
+#define H_FNK  F16
 #define H_STG  F17
 
 #define F_BAS  K19
 #define F_DEV  F20
 #define F_AXN  F21
-#define F_FN   F22
+#define F_FNK  F22
 #define F_STG  F23
 
 /* Shared Keys */
@@ -134,7 +134,7 @@
             #define A21  &hm RCTRL  6
             #define A22  &hm RCMD   EQUAL
 
-            #define A36  &mo_FNAXN_to_FN    0 0
+            #define A36  &mo_FNKAXN_to_FNK    0 0
             #define A38  &to_BAS
             #define A39  &to_DEV
 
@@ -163,7 +163,7 @@
             #define K38  &to_BAS
             #define K39  &to_DEV
 
-            label = "FN";
+            label = "FNK";
             bindings = <
     KEY_ESC     &none      &none     &none      &none  &none                  &none   &kp F9  &kp F0  &kp F11  &kp F12      NAV_DEL
      &mp_bc  &kp LCMD  &kp LCTRL  &kp LALT  &kp LSHFT  &none                  &none      K19     K20      K21      K22     NAV_BSPC

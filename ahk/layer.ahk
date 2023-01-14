@@ -25,8 +25,8 @@ return
 
 $F22::
     Sleep, 10 ; drastically improves reliability on slower systems
-    ChangeIcon("FN")
-    ShowMessage("FN")
+    ChangeIcon("FNK")
+    ShowMessage("FNK")
 return
 
 $F23::
