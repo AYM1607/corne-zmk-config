@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 3.1.0
+
+- Helper images were increased to 1.5x
+- Move notifications to the bottom left of the screen
+
 ## 3.0.0
 
 - Move `0` and `=` keys to home row position
