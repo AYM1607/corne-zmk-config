@@ -55,11 +55,9 @@ ShowMessage(lyr)
     xpos := A_ScreenWidth-width-TrayWidth
     ypos := A_ScreenHeight-120-TrayHeight
 
-    ; ToolTip, %msg%
     WinSet, AlwaysOnTop
     Gui, Show, w%width% h%height% x%xpos% y%ypos% NA ; NA shows the window without activating it
     Sleep, 750 ; SPECIFY DISPLAY TIME (ms)
-    ; ToolTip ; remove
     Gui, Destroy
 }
 
