@@ -155,9 +155,9 @@
 
         functions_layer {
             #define K13  &kp LCMD
-            #define K14  &kp LCTRL  HOME
+            #define K14  &hm LCTRL  HOME
             #define K15  &hm LALT   PG_DN
-            #define K16  &kp LSHFT  END
+            #define K16  &hm LSHFT  END
 
             #define K19  &hm RSHFT  F5
             #define K20  &hm RALT   F6
@@ -170,10 +170,10 @@
 
             label = "FNK";
             bindings = <
-    KEY_ESC     &none      &none  &kp PG_UP      &none  &none                  &none   &kp F9  &kp F10  &kp F11  &kp F12      NAV_DEL
-     &mp_bc       K13        K14        K15        K16  &none                  &none      K19      K20      K21      K22     NAV_BSPC
-    KEY_TAB     &none      &none      &none      &none  &none                  &none   &kp F1   &kp F2   &kp F3   &kp F4  &key_repeat
-                                        K36    KEY_SPC    K38                    K39  KEY_RET   &mp_dc
+    KEY_ESC  &none  &none  &kp PG_UP    &none  &none                  &none   &kp F9  &kp F10  &kp F11  &kp F12      NAV_DEL
+     &mp_bc    K13    K14        K15      K16  &none                  &none      K19      K20      K21      K22     NAV_BSPC
+    KEY_TAB  &none  &none      &none    &none  &none                  &none   &kp F1   &kp F2   &kp F3   &kp F4  &key_repeat
+                                 K36  KEY_SPC    K38                    K39  KEY_RET   &mp_dc
             >;
         };
 
