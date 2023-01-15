@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 3.2.0
+
+- Move AHK navigation keys from `AHK` to `FNK` layer
+
 ## 3.1.0
 
 - Helper images were increased to 1.5x
