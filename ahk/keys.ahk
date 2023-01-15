@@ -37,14 +37,6 @@ SetWorkingDir %A_ScriptDir% ; Ensures a consistent starting directory.
 #^+3:: Send {Asc 0170}                 ; Win+Ctrl+#  ª
  !+4:: Send {Asc 0128}                 ;      Alt+$  €
 
-; Navigation
-   $!#Up:: Send ^{Home}                ;   Win+Alt+△  ⤒  Beginning of document
- $!#Down:: Send ^{End}                 ;   Win+Alt+▽  ⤓  End of document
- $!#Left:: Send {Home}                 ;   Win+Alt+◁  ⇤  Beginning of line
-$!#Right:: Send {End}                  ;   Win+Alt+▷  ⇥  End of line
-   $^#Up:: Send {PgUp}                 ;  Ctrl+Alt+△  ⇞  Pager Up
- $^#Down:: Send {PgDn}                 ;  Ctrl+Alt+▽  ⇟  Page Down
-
 ; Actions
      ^!f:: Send ^{h}                   ;       Alt+☉  ☊
     +^!f:: Send ^+{h}                  ; Shift+Alt+☉  ☊ (global)

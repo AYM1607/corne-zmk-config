@@ -177,16 +177,16 @@ Quick navigation actions and numbers. Function keys works independently as a sub
 | <kbd>▽</kbd>  |                                        | Down                 |
 | <kbd>◁</kbd>  |                                        | Left                 |
 | <kbd>▷</kbd>  |                                        | Right                |
-| <kbd>⤒</kbd>  | <kbd>❖</kbd>+<kbd>⇧</kbd>+<kbd>△</kbd> | Beginning of document |
-| <kbd>⤓</kbd>  | <kbd>❖</kbd>+<kbd>⇧</kbd>+<kbd>▽</kbd> | End of document       |
-| <kbd>⇤</kbd>  | <kbd>❖</kbd>+<kbd>⇧</kbd>+<kbd>◁</kbd> | Beginning of line     |
-| <kbd>⇥</kbd>  | <kbd>❖</kbd>+<kbd>⇧</kbd>+<kbd>▷</kbd> | End of line           |
-| <kbd>⇞</kbd>  | <kbd>❖</kbd>+<kbd>^</kbd>+<kbd>△</kbd> | Page up               |
-| <kbd>⇟</kbd>  | <kbd>❖</kbd>+<kbd>^</kbd>+<kbd>▽</kbd> | Page down             |
+| <kbd>⇤</kbd>  |                                         | Beginning of line     |
+| <kbd>⇥</kbd>  |                                         | End of line           |
+| <kbd>⇞</kbd>  |                                         | Page up               |
+| <kbd>⇟</kbd>  |                                         | Page down             |
+| <kbd>⤒</kbd>  | <kbd>^</kbd>+<kbd>⇞</kbd>               | Beginning of document |
+| <kbd>⤓</kbd>  | <kbd>^</kbd>+<kbd>⇟</kbd>               | End of document       |
 | <kbd>⇺</kbd>  |                                         | Prev Tab              |
 | <kbd>⇻</kbd>  |                                         | Next Tab              |
-| <kbd>⎗</kbd>  | <kbd>⇧</kbd>+<kbd>⇺</kbd>              | Prev desktop          |
-| <kbd>⎘</kbd>  | <kbd>⇧</kbd>+<kbd>⇻</kbd>              | Next desktop          |
+| <kbd>⎗</kbd>  | <kbd>⇧</kbd>+<kbd>⇟</kbd>              | Prev desktop          |
+| <kbd>⎘</kbd>  | <kbd>⇧</kbd>+<kbd>⇞</kbd>              | Next desktop          |
 
 ##### Actions
 
