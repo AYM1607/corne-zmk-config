@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 3.2.1
+
+- Fix `AHK` dev shortcuts
+
 ## 3.2.0
 
 - Move AHK navigation keys from `AHK` to `FNK` layer
