@@ -146,9 +146,9 @@
 
             label = "AXN";
             bindings = <
-    KEY_ESC       A01  &mp_a_prev    &kp UP  &mp_a_next       A05            &kp KP_PLUS   &kp N7  &kp N8  &kp N9  &kp KP_MULTIPLY      NAV_DEL
-     &mp_bc       A13         A14       A15         A16       A17                 &kp N0      A19     A20     A21              A22     NAV_BSPC
-    KEY_TAB  KEY_UNDO     KEY_CUT  KEY_COPY   KEY_PASTE  KEY_REDO                &mp_k_m   &kp N1  &kp N2  &kp N3    &kp KP_DIVIDE  &key_repeat
+    KEY_ESC       A01  &mp_a_prev    &kp UP  &mp_a_next       A05            &kp KP_PLUS   &kp N7  &kp N8  &kp N9  &kp KP_MULTIPLY   NAV_DEL
+     &mp_bc       A13         A14       A15         A16       A17                 &kp N0      A19     A20     A21              A22  NAV_BSPC
+    KEY_TAB  KEY_UNDO     KEY_CUT  KEY_COPY   KEY_PASTE  KEY_REDO                &mp_k_m   &kp N1  &kp N2  &kp N3    &kp KP_DIVIDE    &mp_cs
                                         A36     KEY_SPC       A38                    A39  KEY_RET  &mp_dc
             >;
         };
@@ -170,9 +170,9 @@
 
             label = "FNK";
             bindings = <
-    KEY_ESC  &none  &none  &kp PG_UP    &none  &none                  &none   &kp F9  &kp F10  &kp F11  &kp F12      NAV_DEL
-     &mp_bc    K13    K14        K15      K16  &none                  &none      K19      K20      K21      K22     NAV_BSPC
-    KEY_TAB  &none  &none      &none    &none  &none                  &none   &kp F1   &kp F2   &kp F3   &kp F4  &key_repeat
+    KEY_ESC  &none  &none  &kp PG_UP    &none  &none                  &none   &kp F9  &kp F10  &kp F11  &kp F12   NAV_DEL
+     &mp_bc    K13    K14        K15      K16  &none                  &none      K19      K20      K21      K22  NAV_BSPC
+    KEY_TAB  &none  &none      &none    &none  &none                  &none   &kp F1   &kp F2   &kp F3   &kp F4    &mp_cs
                                  K36  KEY_SPC    K38                    K39  KEY_RET   &mp_dc
             >;
         };

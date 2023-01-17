@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 3.3.0
+
+- Remove the key repeat because it was not useful
+
 ## 3.2.1
 
 - Fix `AHK` dev shortcuts
