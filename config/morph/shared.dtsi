@@ -28,7 +28,7 @@ mp_cs: morph_dev_comma_semi {
     label = ", ;";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&kp COMMA>, <&kp SEMI>;
+    bindings = <&kp COMMA>, <&kp SEMICOLON>;
 };
 
 mp_dc: morph_dev_dot_colon {
