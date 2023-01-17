@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 3.4.0
+
+- Add battery indicators for both halves
+
 ## 3.3.0
 
 - Remove the key repeat because it was not useful

@@ -353,11 +353,17 @@ Screencast mode notifications:
 
 - [VS Code](https://code.visualstudio.com/) - Code editing redefined.
 - [ZMK Docs](https://zmk.dev/docs) - Modern, open source keyboard firmware
+  - [ZMK Split Battery](https://github.com/Fukkei/zmk-split-battery)
+  - [ZMK PR Battery BLE](https://github.com/zmkfirmware/zmk/pull/1243)
 - [Keymap Editor](https://nickcoutsos.github.io/keymap-editor) - GUI ZMK Keymap Editor
 - [Colemak Mods](https://colemakmods.github.io/mod-dh/keyboards.html#matrix-keyboards) - Colemak-DH for a non-traditional, ergonomic keyboard
 - [AutoHotKey](https://www.autohotkey.com/) - The ultimate automation scripting language for Windows
 - [Figma](https://www.figma.com/) - The collaborative interface design tool
+
+### Typing
+
 - [Colemak Club](https://gnusenpai.net/colemakclub/) - Learn Colemak Layout
+- [Monkeytype](https://monkeytype.com/) - A minimalistic typing test, featuring many test modes, an account system to save your typing speed history and user configurable features like themes, a smooth caret and more.
 
 ### Versioning
 
