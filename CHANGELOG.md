@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 3.4.2
+
+- Add fix to battery indicators
+
 ## 3.4.1
 
 - Revert battery indicators because is causing `SEMI` act as `COLON`
