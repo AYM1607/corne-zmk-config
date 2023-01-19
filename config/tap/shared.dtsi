@@ -1,7 +1,0 @@
-td_AXNFNK: tap_dance_AXNFNK {
-    compatible = "zmk,behavior-tap-dance";
-    label = "td_AXNFNK";
-    #binding-cells = <0>;
-    tapping-term-ms = <200>;
-    bindings = <&to_AXN>, <&to_FNK>;
-};

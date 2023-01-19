@@ -51,8 +51,6 @@
         #include "morph/num.dtsi"
         #include "morph/dev.dtsi"
 
-        #include "tap/shared.dtsi"
-
         #include "hold/shared.dtsi"
         #include "hold/actions.dtsi"
         #include "hold/dev.dtsi"
