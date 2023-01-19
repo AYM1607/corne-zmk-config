@@ -22,7 +22,7 @@ mo_AXNBAS_to_AXN: hold_mo_AXNBAS_to_AXN {
     #binding-cells = <2>;
     flavor = "hold-preferred";
     tapping-term-ms = <200>;
-    bindings = <&mo_AXN_to_BAS>, <&to_AXN>;
+    bindings = <&mo_AXN_to_BAS>, <&td_AXNFNK>;
 };
 
 mo_STGBAS_to_STG: hold_mo_STGBAS_to_STG {

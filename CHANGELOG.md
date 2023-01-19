@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 3.5.0
+
+- Add tap dance to easy access `FNK` layer
+
 ## 3.4.2
 
 - Add fix to battery indicators
