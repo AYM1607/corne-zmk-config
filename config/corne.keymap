@@ -22,6 +22,14 @@
 #define FNK  3
 #define STG  4
 
+#define F_BTC  F13
+#define F_BT1  F14
+#define F_BT2  F15
+#define F_BT3  F16
+#define F_BT4  F17
+#define F_BT5  F18
+#define F_BT6  F19
+
 #define H_BAS  F13
 #define H_DEV  F14
 #define H_AXN  F15

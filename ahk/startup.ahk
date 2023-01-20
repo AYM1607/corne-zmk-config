@@ -18,6 +18,7 @@ SetWorkingDir %A_ScriptDir%   ;  Ensures a consistent starting directory.
 ; Notifications
 #include caps.ahk
 #include layer.ahk
+#include settings.ahk
 
 ; Help
 #include help.ahk
