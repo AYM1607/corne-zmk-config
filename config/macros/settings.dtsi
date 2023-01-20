@@ -2,13 +2,8 @@ m_s_b1: macro_stg_bluetooth_1 {
     compatible = "zmk,behavior-macro";
     label = "m_s_b1";
     #binding-cells = <0>;
-    bindings
-        = <&macro_press &kp LCTRL>
-        , <&macro_tap &kp F_BT1>
-        , <&macro_pause_for_release>
-        , <&macro_release &kp LCTRL>
-        , <&macro_tap &kp F_BT1>
-        , <&macro_tap &bt BT_SEL 0 &to_BAS>;
+    bindings =
+        <&bt BT_SEL 0 &to_BAS>;
 };
 
 m_s_b2: macro_stg_bluetooth_2 {
