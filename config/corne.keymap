@@ -61,7 +61,7 @@
     combos {
         compatible = "zmk,combos";
 
-        #include "combos/shared.dtsi"
+        #include "combos/base.dtsi"
         #include "combos/help.dtsi"
     };
 

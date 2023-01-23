@@ -2,10 +2,12 @@ combo_caps-word {
     bindings = <&cw_ON>;
     key-positions = <16 19>;
     slow-release;
+    layers = <BAS>;
 };
 
 combo_cancel-caps {
     bindings = <&cw_OFF>;
     key-positions = <14 21>;
     slow-release;
+    layers = <BAS>;
 };
