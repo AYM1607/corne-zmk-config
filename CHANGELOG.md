@@ -3,6 +3,7 @@
 ## 3.5.0
 
 - Added CapsWord notifications
+- Define CapsWord to only work on BAS layer
 
 ## 3.4.2
 
