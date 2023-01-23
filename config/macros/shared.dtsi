@@ -38,6 +38,14 @@ to_STG: to_STG_layer {
         <&to STG &kp F_STG>;
 };
 
+cw_CWR: cw_CWR {
+    compatible = "zmk,behavior-macro";
+    label = "cw_CWR";
+    #binding-cells = <0>;
+    bindings =
+        <&kp H_CWR &cw>;
+};
+
 mo_AXN_to_BAS: momentary_AXN_to_BAS {
     compatible = "zmk,behavior-macro";
     label = "mo_AXN_to_BAS";
