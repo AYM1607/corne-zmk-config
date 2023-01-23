@@ -74,14 +74,30 @@
     keymap {
         compatible = "zmk,keymap";
 
-                default_layer {
-                        bindings = <
-   &kp ESC   &kp Q &kp W &kp F &kp P &kp B   &kp J &kp L  &kp U     &kp Y   &kp EQUAL    &kp BSPC
-   &kp SQT   &kp A &kp R &kp S &hm LCMD T &kp G   &kp M &hm LCMD N  &kp E     &kp I   &kp O       &kp RET
-   &kp TAB &kp Z &kp X &kp C &kp D &kp V   &kp K &kp H  &kp COMMA &kp DOT   &kp SEMI   &kp FSLH
-                  &kp LCMD &kp LSHFT &kp LCTRL   &to SYMBOLS_L &kp SPACE &to NUMBERS_L
-                        >;
-                };
+        base_layer {
+            #define B13  &hm LCMD   A
+            #define B14  &hm LCTRL  R
+            #define B15  &hm LALT   S
+            #define B16  &hm LSHFT  T
+
+            #define B19  &hm RSHFT  N
+            #define B20  &hm RALT   E
+            #define B21  &hm RCTRL  I
+            #define B22  &hm RCMD   O
+
+            #define B36  &mo_STGBAS_to_STG  0 0
+            #define B38  &mo_AXNBAS_to_DEV  0 0
+            #define B39  &mo_AXNBAS_to_AXN  0 0
+            #define B41  &mp_kq
+
+            label = "BAS";
+            bindings = <
+    KEY_ESC  &kp Q  &kp W  &kp F    &kp P  &kp B             &kp J    &kp L   &kp U   &kp Y   &mp_k_m    NAV_DEL
+     &mp_bc    B13    B14    B15      B16  &kp G             &kp M      B19     B20     B21       B22   NAV_BSPC
+    KEY_TAB  &kp Z  &kp X  &kp C    &kp D  &kp V             &kp K    &kp H  &mp_cs  &mp_dc  &kp FSLH  &kp EQUAL
+                             B36  KEY_SPC    B38               B39  KEY_RET     B41
+            >;
+        };
 
         dev_layer {
             #define D13  &hm_d_lcmd LCMD    0
@@ -106,14 +122,38 @@
             >;
         };
 
-                arrows_layer {
-                        bindings = <
-   &kp ESC  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR            &none &none &none &none &none &kp BSPC
-   &none &none   &kp C_PP &kp C_VOL_DN &kp C_VOL_UP &kp C_BRI_UP                     &kp LEFT &kp DOWN &kp UP  &kp RIGHT &none &kp RET
-   &kp TAB &none   &none   &kp C_PREV &kp C_NEXT &kp C_BRI_DN                         &none &none &none &none &none &none
-                    	     &kp LCMD &kp LSHFT   &to DEFAULT_L                        &to SYMBOLS_L &kp SPACE    &to NUMBERS_L
-                        >;
-                };
+        act_num_layer {
+            #define A01  &mp_a_system           // tap: system info       | shift: windows security
+            #define A05  &kp LC(F)              // tap: find
+            #define A13  &hm_a_lcmd  LCMD   0
+            #define A14  &hm LCTRL   LEFT
+            #define A15  &hm LALT    DOWN
+            #define A16  &hm LSHFT   RIGHT
+            #define A17  &kp LG(E)              // tap: file explorer
+
+            #define A19  &hm RSHFT  N4
+            #define A20  &hm RALT   N5
+            #define A21  &hm RCTRL  N6
+            #define A22  &hm RCMD   EQUAL
+
+            #define A36  &mo_FNKAXN_to_FNK    0 0
+            #define A38  &to_BAS
+            #define A39  &to_DEV
+
+            #define KEY_UNDO    &kp RC(Z)       // tap: undo
+            #define KEY_REDO    &kp RC(Y)       // tap: redo
+            #define KEY_CUT     &kp RC(X)       // tap: cut
+            #define KEY_COPY    &kp RC(C)       // tap: copy
+            #define KEY_PASTE   &kp RC(V)       // tap: paste     | shift: paste without format
+
+            label = "AXN";
+            bindings = <
+    KEY_ESC       A01  &mp_a_prev    &kp UP  &mp_a_next       A05            &kp KP_PLUS   &kp N7  &kp N8  &kp N9  &kp KP_MULTIPLY   NAV_DEL
+     &mp_bc       A13         A14       A15         A16       A17                 &kp N0      A19     A20     A21              A22  NAV_BSPC
+    KEY_TAB  KEY_UNDO     KEY_CUT  KEY_COPY   KEY_PASTE  KEY_REDO                &mp_k_m   &kp N1  &kp N2  &kp N3    &kp KP_DIVIDE    &mp_cs
+                                        A36     KEY_SPC       A38                    A39  KEY_RET  &mp_dc
+            >;
+        };
 
         functions_layer {
             #define K13  &kp LCMD
