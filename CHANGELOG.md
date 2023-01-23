@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 3.5.0
+
+- Added CapsWord notifications
+
 ## 3.4.2
 
 - Add fix to battery indicators
