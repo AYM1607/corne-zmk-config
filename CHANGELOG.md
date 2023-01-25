@@ -2,7 +2,7 @@
 
 ## 3.5.1
 
-- Fix CapsWord disable with `KP_MINUS'
+- Fix CapsWord disable with `KP_MINUS`
 
 ## 3.5.0
 
