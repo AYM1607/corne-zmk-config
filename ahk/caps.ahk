@@ -14,5 +14,3 @@ return
     Sleep, 10 ; drastically improves reliability on slower systems
     ShowMessage("CapsWord: OFF")
 return
-
-
