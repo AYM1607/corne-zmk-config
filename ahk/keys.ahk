@@ -33,5 +33,8 @@
  !+4::Send("{U+20AC}")                   ;      Alt+$  €
 
 ; Actions
- ^!f::Send("^{h}")                         ;       Alt+☉  ☊
-+^!f::Send("^+{h}")                        ; Shift+Alt+☉  ☊ (global)
+ ^!f::Send("^{h}")                       ;       Alt+☉  ☊
++^!f::Send("^+{h}")                      ; Shift+Alt+☉  ☊ (global)
+
+; Settings
+ ^+0::Send("^{Numpad0}")                 ;      Ctrl+0  Vscode Zoom Reset
