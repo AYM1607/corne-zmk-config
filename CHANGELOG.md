@@ -3,7 +3,7 @@
 ## 4.0.0
 
 - Update `AHK` scripts to version 2
-- Fix reset zoom shortcut
+- Fix reset zoom shortcut on Vscode
 
 ## 3.5.1
 
