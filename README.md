@@ -324,7 +324,7 @@ Needs [ZMK PR Battery BLE](https://github.com/zmkfirmware/zmk/pull/1243) and [ZM
 
 ### Prerequisites
 
-- Download and install [AutoHotKey](https://www.autohotkey.com/)
+- Download and install [AutoHotKey](https://www.autohotkey.com/) v2
 
 ### Startup
 
@@ -339,6 +339,7 @@ To automatically run the scripts at startup:
 Screencast mode notifications:
 
 - CapsLock (On/Off)
+- CapsWord (On/Off)
 - Layer changing
 - Momentary layer activation and deactivation
 - Tray icons with current layer
@@ -362,7 +363,7 @@ Screencast mode notifications:
   - [ZMK PR Battery BLE](https://github.com/zmkfirmware/zmk/pull/1243)
 - [Keymap Editor](https://nickcoutsos.github.io/keymap-editor) - GUI ZMK Keymap Editor
 - [Colemak Mods](https://colemakmods.github.io/mod-dh/keyboards.html#matrix-keyboards) - Colemak-DH for a non-traditional, ergonomic keyboard
-- [AutoHotKey](https://www.autohotkey.com/) - The ultimate automation scripting language for Windows
+- [AutoHotKey](https://www.autohotkey.com/) v2 - The ultimate automation scripting language for Windows
 - [Figma](https://www.figma.com/) - The collaborative interface design tool
 
 ### Typing

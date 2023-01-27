@@ -181,7 +181,7 @@
 
         settings_layer {
             #define ZOOM_IN     &kp RC(PLUS)         // tap: zoom in
-            #define ZOOM_RST    &kp RC(N0)           // tap: zoom reset
+            #define ZOOM_RST    &kp RC(KP_N0)        // tap: zoom reset
             #define ZOOM_OUT    &kp RC(MINUS)        // tap: zoom out
 
             label = "STG";

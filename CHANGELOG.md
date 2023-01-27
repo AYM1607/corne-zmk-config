@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 4.0.0
+
+- Update `AHK` scripts to version 2
+- Fix reset zoom shortcut
+
 ## 3.5.1
 
 - Fix CapsWord disable with `KP_MINUS`
