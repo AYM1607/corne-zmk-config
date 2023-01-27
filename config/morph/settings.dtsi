@@ -1,0 +1,7 @@
+mp_s_zoom_reset: morph_settings_zoom_reset {
+    compatible = "zmk,behavior-mod-morph";
+    label = "mp_s_zoom_reset";
+    #binding-cells = <0>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+    bindings = <&kp RC(N0)>, <&kp RC(KP_N0)>;
+};
