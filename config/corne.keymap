@@ -52,6 +52,7 @@
         #include "morph/actions.dtsi"
         #include "morph/num.dtsi"
         #include "morph/dev.dtsi"
+        #include "morph/settings.dtsi"
 
         #include "hold/shared.dtsi"
         #include "hold/actions.dtsi"
