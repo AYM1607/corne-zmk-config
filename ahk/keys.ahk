@@ -37,4 +37,6 @@
 +^!f::Send("^+{h}")                      ; Shift+Alt+☉  ☊ (global)
 
 ; Settings
- ^+0::Send("^{Numpad0}")                 ;      Ctrl+0  Vscode Zoom Reset
+#HotIf WinActive("ahk_exe code.exe")
+ ^0::Send("^{Numpad0}")                 ;      Ctrl+0  Zoom Reset
+#HotIf
