@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 5.0.0
+
+- Change shield from `corne` to `swept`
+
 ## 4.0.0
 
 - Update `AHK` scripts to version 2
