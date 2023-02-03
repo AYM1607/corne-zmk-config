@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 5.1.0
+
+- Add momentary `DEV` layer on `BAS`
+
 ## 5.0.0
 
 - Change shield from `corne` to `swept`
