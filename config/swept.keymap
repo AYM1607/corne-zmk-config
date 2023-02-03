@@ -85,10 +85,10 @@
             #define B21  &hm RCTRL  I
             #define B22  &hm RCMD   O
 
-            #define B36  &mo_STGBAS_to_STG  0 0
+            #define B36  &mo_DEVBAS_to_STG  0 0
             #define B38  &mo_AXNBAS_to_DEV  0 0
             #define B39  &mo_AXNBAS_to_AXN  0 0
-            #define B41  &mp_kq
+            #define B41  &mo_DEVBAS_mp_kq   0 0
 
             label = "BAS";
             bindings = <
