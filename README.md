@@ -226,9 +226,9 @@ Dedicated to Bluetooth and media controls.
 | <kbd>🔎+</kbd>  | Zoom in                  |
 | <kbd>🔎R</kbd>  | Zoom reset               |
 | <kbd>🔎-</kbd>  | Zoom out                 |
-| <kbd>🔊+</kbd>  | Volume up                |
-| <kbd>🔈M</kbd>   | Mute                     |
-| <kbd>🔉-</kbd>   | Volume down              |
+| <kbd>🔊</kbd>   | Volume up                |
+| <kbd>🔇</kbd>   | Mute                     |
+| <kbd>🔉</kbd>    | Volume down              |
 | <kbd>🔅</kbd>    | Bright down              |
 | <kbd>🔆</kbd>    | Bright up                |
 

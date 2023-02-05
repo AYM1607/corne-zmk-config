@@ -85,16 +85,18 @@
             #define B21  &hm RCTRL  I
             #define B22  &hm RCMD   O
 
-            #define B36  &mo_DEVBAS_to_STG  0 0
-            #define B38  &mo_AXNBAS_to_DEV  0 0
+            #define B35  &mo_STGBAS_to_STG  0 0
+
+            #define B36  &mo_DEVBAS_to_DEV  0 0
+            #define B38  &mo_AXNBAS_to_FNK  0 0
             #define B39  &mo_AXNBAS_to_AXN  0 0
-            #define B41  &mo_DEVBAS_mp_kq   0 0
+            #define B41  &mo_DEVBAS_to_DEV  0 0
 
             label = "BAS";
             bindings = <
-    KEY_ESC  &kp Q  &kp W  &kp F    &kp P  &kp B             &kp J    &kp L   &kp U   &kp Y   &mp_k_m    NAV_DEL
-     &mp_bc    B13    B14    B15      B16  &kp G             &kp M      B19     B20     B21       B22   NAV_BSPC
-    KEY_TAB  &kp Z  &kp X  &kp C    &kp D  &kp V             &kp K    &kp H  &mp_cs  &mp_dc  &kp FSLH  &kp EQUAL
+    KEY_ESC  &kp Q  &kp W  &kp F    &kp P  &kp B             &kp J    &kp L   &kp U   &kp Y  &mp_k_m    NAV_DEL
+     &mp_bc    B13    B14    B15      B16  &kp G             &kp M      B19     B20     B21      B22   NAV_BSPC
+    KEY_TAB  &kp Z  &kp X  &kp C    &kp D  &kp V             &kp K    &kp H  &mp_cs  &mp_dc   &mp_kq        B35
                              B36  KEY_SPC    B38               B39  KEY_RET     B41
             >;
         };
@@ -136,7 +138,8 @@
             #define A21  &hm RCTRL  N6
             #define A22  &hm RCMD   EQUAL
 
-            #define A36  &mo_FNKAXN_to_FNK    0 0
+            #define A35 &mo_FNKAXN_to_FNK    0 0
+
             #define A38  &to_BAS
             #define A39  &to_DEV
 
@@ -150,8 +153,8 @@
             bindings = <
     KEY_ESC       A01  &mp_a_prev    &kp UP  &mp_a_next       A05            &kp KP_PLUS   &kp N7  &kp N8  &kp N9  &kp KP_MULTIPLY   NAV_DEL
      &mp_bc       A13         A14       A15         A16       A17                 &kp N0      A19     A20     A21              A22  NAV_BSPC
-    KEY_TAB  KEY_UNDO     KEY_CUT  KEY_COPY   KEY_PASTE  KEY_REDO                &mp_k_m   &kp N1  &kp N2  &kp N3    &kp KP_DIVIDE    &mp_cs
-                                        A36     KEY_SPC       A38                    A39  KEY_RET  &mp_dc
+    KEY_TAB  KEY_UNDO     KEY_CUT  KEY_COPY   KEY_PASTE  KEY_REDO                &mp_k_m   &kp N1  &kp N2  &kp N3    &kp KP_DIVIDE       A35
+                                     &mp_cs     KEY_SPC       A38                    A39  KEY_RET  &mp_dc
             >;
         };
 
@@ -186,10 +189,10 @@
 
             label = "STG";
             bindings = <
-    KEY_ESC  &none  &bt BT_PRV    &bt BT_CLR  &bt BT_NXT   ZOOM_IN          &kp C_VOL_UP       &none     &kp C_STOP       &none  &none  &none
-      &none  &none     &m_s_b1       &m_s_b2     &m_s_b3  ZOOM_RST            &kp C_MUTE  &kp C_PREV     &kp C_PP  &kp C_NEXT  &none  &none
-      &none  &none     &m_s_b4       &m_s_b5     &m_s_b6  ZOOM_OUT          &kp C_VOL_DN    &kp C_RW  &kp C_SHUFFLE    &kp C_FF  &none  &none
-                                &kp C_BRI_DN     KEY_SPC   &to_BAS               &to_DEV     KEY_RET   &kp C_BRI_UP
+    KEY_ESC  &none  &bt BT_PRV    &bt BT_CLR  &bt BT_NXT   ZOOM_IN          &kp C_VOL_UP  &kp C_BRI_DN     &kp C_STOP  &kp C_BRI_UP  &none  &none
+      &none  &none     &m_s_b1       &m_s_b2     &m_s_b3  ZOOM_RST            &kp C_MUTE    &kp C_PREV       &kp C_PP    &kp C_NEXT  &none  &none
+      &none  &none     &m_s_b4       &m_s_b5     &m_s_b6  ZOOM_OUT          &kp C_VOL_DN      &kp C_RW  &kp C_SHUFFLE      &kp C_FF  &none  &none
+                                       &none     KEY_SPC   &to_BAS               &to_DEV       KEY_RET          &none
             >;
         };
     };

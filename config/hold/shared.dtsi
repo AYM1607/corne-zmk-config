@@ -7,13 +7,13 @@ to_BAS_kp: behavior_to_kp {
     bindings = <&to_BAS>, <&kp>;
 };
 
-mo_AXNBAS_to_DEV: hold_mo_AXNBAS_to_DEV {
+mo_AXNBAS_to_FNK: hold_mo_AXNBAS_to_FNK {
     compatible = "zmk,behavior-hold-tap";
-    label = "mo_AXNBAS_to_DEV";
+    label = "mo_AXNBAS_to_FNK";
     #binding-cells = <2>;
     flavor = "hold-preferred";
     tapping-term-ms = <200>;
-    bindings = <&mo_AXN_to_BAS>, <&to_DEV>;
+    bindings = <&mo_AXN_to_BAS>, <&to_FNK>;
 };
 
 mo_AXNBAS_to_AXN: hold_mo_AXNBAS_to_AXN {
@@ -25,13 +25,22 @@ mo_AXNBAS_to_AXN: hold_mo_AXNBAS_to_AXN {
     bindings = <&mo_AXN_to_BAS>, <&to_AXN>;
 };
 
-mo_DEVBAS_to_STG: hold_mo_DEVBAS_to_STG {
+mo_STGBAS_to_STG: hold_mo_STGBAS_to_STG {
     compatible = "zmk,behavior-hold-tap";
-    label = "mo_DEVBAS_to_STG";
+    label = "mo_STGBAS_to_STG";
     #binding-cells = <2>;
     flavor = "hold-preferred";
     tapping-term-ms = <200>;
-    bindings = <&mo_DEV_to_BAS>, <&to_STG>;
+    bindings = <&mo_STG_to_BAS>, <&to_STG>;
+};
+
+mo_DEVBAS_to_DEV: hold_mo_DEVBAS_to_DEV {
+    compatible = "zmk,behavior-hold-tap";
+    label = "mo_DEVBAS_to_DEV";
+    #binding-cells = <2>;
+    flavor = "hold-preferred";
+    tapping-term-ms = <200>;
+    bindings = <&mo_DEV_to_BAS>, <&to_DEV>;
 };
 
 mo_AXNDEV_to_BAS: hold_mo_AXNDEV_to_BAS {
@@ -59,13 +68,4 @@ mo_FNKAXN_to_FNK: hold_mo_FNKAXN_to_FNK {
     flavor = "hold-preferred";
     tapping-term-ms = <200>;
     bindings = <&mo_FNK_to_AXN>, <&to_FNK>;
-};
-
-mo_DEVBAS_mp_kq: hold_mo_DEVBAS_mp_kq {
-    compatible = "zmk,behavior-hold-tap";
-    label = "mo_DEVBAS_mp_kq";
-    #binding-cells = <2>;
-    flavor = "hold-preferred";
-    tapping-term-ms = <200>;
-    bindings = <&mo_DEV_to_BAS>, <&mp_kq>;
 };
