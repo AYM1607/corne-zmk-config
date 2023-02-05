@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 5.2.0
+
+- Reorganizing the layers buttons
+
 ## 5.1.0
 
 - Add momentary `DEV` layer on `BAS`
