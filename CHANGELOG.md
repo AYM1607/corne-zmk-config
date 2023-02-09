@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 5.3.0
+
+- Add AHK reset macro
+
 ## 5.2.0
 
 - Reorganizing the layers buttons

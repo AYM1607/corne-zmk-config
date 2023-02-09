@@ -45,3 +45,13 @@ m_s_b6: macro_stg_bluetooth_6 {
     bindings =
         <&bt BT_SEL 5 &to_BAS>;
 };
+
+m_s_reset_ahk: macro_stg_reset_ahk {
+    compatible = "zmk,behavior-macro";
+    label = "m_s_reset_ahk";
+    #binding-cells = <0>;
+    bindings =
+        <&kp LC(LS(DEL))>,
+        <&macro_wait_time 50>,
+        <&kp ESC>;
+};
