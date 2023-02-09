@@ -6,8 +6,8 @@ Persistent
 
 ChangeIcon("KBD")
 
-; #MenuMaskKey vkFF            ;  Unassigned. Avoid Ctrl get stuck
-; #MenuMaskKey vkE8            ;  No Mapping. Avoid Alt get stuck
+; A_MenuMaskKey := "vkFF"          ;  Unassigned. Avoid Ctrl get stuck
+A_MenuMaskKey := "vkE8"            ;  No Mapping. Avoid Alt get stuck
 
 ; Combos
 #Include "keys.ahk"

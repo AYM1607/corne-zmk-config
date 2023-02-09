@@ -231,6 +231,7 @@ Dedicated to Bluetooth and media controls.
 | <kbd>🔉</kbd>    | Volume down              |
 | <kbd>🔅</kbd>    | Bright down              |
 | <kbd>🔆</kbd>    | Bright up                |
+| <kbd>☢</kbd>    | Reset AHK                |
 
 ##### Media
 
