@@ -51,7 +51,6 @@ m_s_reset_ahk: macro_stg_reset_ahk {
     label = "m_s_reset_ahk";
     #binding-cells = <0>;
     bindings =
-        <&kp LC(LA(DEL))>,
-        <&macro_wait_time 50>,
+        <&kp LC(LA(DEL))>
         <&kp ESC>;
 };
