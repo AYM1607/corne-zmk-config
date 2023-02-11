@@ -1,8 +1,0 @@
-hm_a_lcmd: behavior_action_lcmd {
-    compatible = "zmk,behavior-hold-tap";
-    label = "hm_a_lcmd";
-    #binding-cells = <2>;
-    flavor = "hold-preferred";
-    tapping-term-ms = <200>;
-    bindings = <&kp>, <&mp_a_power>;
-};
