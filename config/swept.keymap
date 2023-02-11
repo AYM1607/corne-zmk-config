@@ -54,7 +54,6 @@
         #include "morph/dev.dtsi"
 
         #include "hold/shared.dtsi"
-        #include "hold/actions.dtsi"
         #include "hold/dev.dtsi"
     };
 
@@ -125,13 +124,13 @@
         };
 
         act_num_layer {
-            #define A01  &mp_a_system           // tap: system info       | shift: windows security
-            #define A05  &kp LC(F)              // tap: find
-            #define A13  &hm_a_lcmd  LCMD   0
-            #define A14  &hm LCTRL   LEFT
-            #define A15  &hm LALT    DOWN
-            #define A16  &hm LSHFT   RIGHT
-            #define A17  &kp LG(E)              // tap: file explorer
+            #define A01  &kp LG(LS(C))           // tap: color picker
+            #define A05  &kp LC(F)               // tap: find
+            #define A13  &hm LCMD   LG(LS(S))    //tap: printscreen
+            #define A14  &hm LCTRL  LEFT
+            #define A15  &hm LALT   DOWN
+            #define A16  &hm LSHFT  RIGHT
+            #define A17  &kp LG(E)               // tap: file explorer
 
             #define A19  &hm RSHFT  N4
             #define A20  &hm RALT   N5
@@ -183,17 +182,21 @@
         };
 
         settings_layer {
-            #define S24  &m_s_reset_ahk
+            #define S24  &kp LG(K)
 
-            #define ZOOM_IN     &kp RC(PLUS)         // tap: zoom in
-            #define ZOOM_RST    &kp RC(N0)           // tap: zoom reset
-            #define ZOOM_OUT    &kp RC(MINUS)        // tap: zoom out
+            #define S22  &kp RG(PAUSE_BREAK)
+            #define S23  &kp RG(I)
+            #define S34  &kp RC(RA(DEL))
+
+            #define S05  &kp RC(PLUS)         // tap: zoom in
+            #define S17  &kp RC(N0)           // tap: zoom reset
+            #define S29  &kp RC(MINUS)        // tap: zoom out
 
             label = "STG";
             bindings = <
-    KEY_ESC  &none  &bt BT_PRV    &bt BT_CLR  &bt BT_NXT   ZOOM_IN          &kp C_VOL_UP  &kp C_BRI_DN     &kp C_STOP  &kp C_BRI_UP  &none  &none
-      &none  &none     &m_s_b1       &m_s_b2     &m_s_b3  ZOOM_RST            &kp C_MUTE    &kp C_PREV       &kp C_PP    &kp C_NEXT  &none  &none
-        S24  &none     &m_s_b4       &m_s_b5     &m_s_b6  ZOOM_OUT          &kp C_VOL_DN      &kp C_RW  &kp C_SHUFFLE      &kp C_FF  &none  &none
+    KEY_ESC  &none  &bt BT_PRV    &bt BT_CLR  &bt BT_NXT       S05          &kp C_VOL_UP  &kp C_BRI_DN     &kp C_STOP  &kp C_BRI_UP  &none  &none
+      &none  &none     &m_s_b1       &m_s_b2     &m_s_b3       S17            &kp C_MUTE    &kp C_PREV       &kp C_PP    &kp C_NEXT    S22    S23
+        S24  &none     &m_s_b4       &m_s_b5     &m_s_b6       S29          &kp C_VOL_DN      &kp C_RW  &kp C_SHUFFLE      &kp C_FF    S34  &none
                                        &none     KEY_SPC   &to_BAS               &to_DEV       KEY_RET          &none
             >;
         };

@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 5.4.0
+
+- Remap all settings key and windows shortcut
+
 ## 5.3.0
 
 - Add AHK reset macro

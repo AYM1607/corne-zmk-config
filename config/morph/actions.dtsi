@@ -13,19 +13,3 @@ mp_a_next: morph_action_next {
     mods = <(MOD_LSFT|MOD_RSFT)>;
     bindings = <&kp RC(PG_DN)>, <&kp LC(LG(RIGHT))>;
 };
-
-mp_a_power: morph_action_power {
-    compatible = "zmk,behavior-mod-morph";
-    label = "▣ ⛢";
-    #binding-cells = <0>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&kp LG(LS(S))>, <&kp LG(LS(C))>;
-};
-
-mp_a_system: morph_action_system {
-    compatible = "zmk,behavior-mod-morph";
-    label = "ⓘ ⛨";
-    #binding-cells = <0>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&kp LG(PAUSE_BREAK)>, <&kp LC(LA(DEL))>;
-};
