@@ -184,8 +184,8 @@
         settings_layer {
             #define S24  &kp LG(K)
 
-            #define S22  &kp LG(K)
-            #define S23  &kp LG(I)
+            #define S22  &kp RG(PAUSE_BREAK)
+            #define S23  &kp RG(I)
             #define S34  &kp RC(RA(DEL))
 
             #define ZOOM_IN     &kp RC(PLUS)         // tap: zoom in
