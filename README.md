@@ -195,7 +195,6 @@ Quick navigation actions and numbers. Function keys works independently as a sub
 
 | Label         | Windows                  | Action               |
 | ------------: | -------------------------- | -------------------- |
-
 | <kbd>▣</kbd> |                            | Print Screen         |
 | <kbd>⛢</kbd> |                            | Color Picker         |
 | <kbd>⎎</kbd> |                            | File Explorer        |
