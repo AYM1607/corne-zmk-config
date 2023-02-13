@@ -1,9 +1,5 @@
 # CHANGELOG
 
-## 5.4.1
-
-- Add morph to easy un/comment code from `DEV` layer
-
 ## 5.4.0
 
 - Remap all settings key and windows shortcut
