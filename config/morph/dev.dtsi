@@ -70,3 +70,11 @@ mp_d_ql: morph_dev_question_logical {
     bindings = <&m_d_oco>, <&m_d_cto>;
 };
 
+mp_d_s: morph_dev_slash {
+    compatible = "zmk,behavior-mod-morph";
+    label = "/";
+    #binding-cells = <0>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+    bindings = <&kp FSLH>, <&kp FSLH>;
+};
+
