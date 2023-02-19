@@ -1,23 +1,22 @@
 ﻿#Include "shared.ahk"
 
-$F13::
+^$F19::
 {
     ShowHelp("BAS")
 }
 
-$F14::
+^$F20::
 {
     ShowHelp("DEV")
 }
 
-$F15::
-$F16::
+^$F21::
+^$F22::
 {
     ShowHelp("AXN")
 }
 
-$F17::
+^$F23::
 {
     ShowHelp("STG")
 }
-

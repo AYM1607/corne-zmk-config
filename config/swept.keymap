@@ -16,17 +16,11 @@
 };
 
 /* Layers */
-#define BAS  0
-#define DEV  1
-#define AXN  2
-#define FNK  3
-#define STG  4
-
-#define H_BAS  F13
-#define H_DEV  F14
-#define H_AXN  F15
-#define H_FNK  F16
-#define H_STG  F17
+#define BAS    0
+#define DEV    1
+#define AXN    2
+#define FNK    3
+#define STG    4
 
 #define H_CWR  F18
 
