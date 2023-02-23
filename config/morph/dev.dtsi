@@ -35,7 +35,7 @@ mp_d_s: morph_dev_slash {
     label = "/";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&kp FSLH>, <&kp RA(A)>;
+    bindings = <&kp FSLH>, <&kp RA(RS(A))>;
 };
 
 mp_d_lao: morph_dev_logical_and_operator {
