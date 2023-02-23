@@ -26,5 +26,6 @@
         Send("{U+003C}{U+003E}")
         Send("{U+003C}{U+002F}{U+003E}")
         Send("{left 3}")
+        Send("{Enter 2}{Up}{Tab}")
     }
 #HotIf
