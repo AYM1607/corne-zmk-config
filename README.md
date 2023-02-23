@@ -166,6 +166,13 @@ Symbols and dev shortcuts for JS/TS.
 | <kbd>⟳</kbd> | <kbd>⇧</kbd>+<kbd>↻</kbd>   | Hard refresh (clean cache) |
 | <kbd>⩸</kbd> |                              | Open DevTools              |
 
+##### VS Code
+
+| Label        | Windows                    | Action                |
+| -----------: | -------------------------: | --------------------- |
+| <kbd>/</kbd> | <kbd>⌃</kbd>+<kbd>/</kbd>  | Toggle line comment   |
+| <kbd>/</kbd> | <kbd>⇧</kbd>+<kbd>/</kbd>  | Toggle block comment  |
+
 #### 2. AXN
 
 Quick navigation actions and numbers. Function keys works independently as a sub-layer to avoid shortcuts collisions.
