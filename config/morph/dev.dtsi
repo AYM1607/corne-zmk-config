@@ -30,6 +30,14 @@ mp_d_e: morph_dev_equal {
     bindings = <&kp EQUAL>, <&m_d_a>;
 };
 
+mp_d_s: morph_dev_slash {
+    compatible = "zmk,behavior-mod-morph";
+    label = "/";
+    #binding-cells = <0>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+    bindings = <&kp FSLH>, <&kp RA(RS(A))>;
+};
+
 mp_d_lao: morph_dev_logical_and_operator {
     compatible = "zmk,behavior-mod-morph";
     label = "& &&";
