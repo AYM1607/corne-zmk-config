@@ -27,6 +27,7 @@ This is a WIP layout based on Colemak DHm for using on Windows (with **en-US** l
   - [Led Indicators](#led-indicators)
   - [Battery Indicators](#battery-indicators)
 - [AHK](#ahk)
+- [Recommendations](#recommendations)
 - [About](#about)
 
 ---
@@ -354,6 +355,18 @@ Screencast mode notifications:
 - Momentary layer activation and deactivation
 - Tray icons with current layer
 - Current layer image as helper (close with <kbd>ESC</kbd>)
+
+⇧ [Back to menu](#menu)
+
+---
+
+## Recommendations
+
+### VSCode Extensions
+
+- [Const & Props Snippets](https://marketplace.visualstudio.com/items?itemName=deinsoftware.const-props-snippets)
+- [Arrow Function Snippets](https://marketplace.visualstudio.com/items?itemName=deinsoftware.arrow-function-snippets)
+- [Arrow Function Snippets](https://marketplace.visualstudio.com/items?itemName=deinsoftware.debug-snippets)
 
 ⇧ [Back to menu](#menu)
 
