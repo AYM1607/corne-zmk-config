@@ -93,4 +93,3 @@ ShowHelp(lyr)
         showGui.Destroy()  ; Destroy the about box.
     }
 }
-

@@ -168,10 +168,11 @@ Symbols and dev shortcuts for JS/TS.
 
 ##### VS Code
 
-| Label        | Windows                    | Action                |
-| -----------: | -------------------------: | --------------------- |
-| <kbd>/</kbd> | <kbd>⌃</kbd>+<kbd>/</kbd>  | Toggle line comment   |
-| <kbd>/</kbd> | <kbd>⇧</kbd>+<kbd>/</kbd>  | Toggle block comment  |
+| Label             | Windows                                 | Action                      |
+| ----------------: | --------------------------------------: | --------------------------- |
+| <kbd>//</kbd>     | <kbd>⌃</kbd>+<kbd>/</kbd>               | Toggle line comment         |
+| <kbd>/*░*/</kbd>  | <kbd>⇧</kbd>+<kbd>/</kbd>               | Toggle block comment        |
+| <kbd><>░</></kbd> | <kbd>❖</kbd>+<kbd>^</kbd>+<kbd><</kbd>  | Fragment brackets for React |
 
 #### 2. AXN
 
