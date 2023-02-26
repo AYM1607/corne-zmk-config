@@ -15,10 +15,13 @@
 #!o::Send("{U+00D3}")                    ;  Win+Alt+o  Ó
  !u::Send("{U+00FA}")                    ;      Alt+u  ú
 #!u::Send("{U+00DA}")                    ;  Win+Alt+u  Ú
- ^u::Send("{U+00FC}")                    ;     Ctrl+u  ü
+#HotIf HotIfWinNotActive("ahk_exe code.exe")
+     ^u::Send("{U+00FC}")                ;     Ctrl+u  ü
+#HotIf
 #^u::Send("{U+00DC}")                    ; Win+Ctrl+u  Ü
  !n::Send("{U+00F1}")                    ;      Alt+n  ñ
 #!n::Send("{U+00D1}")                    ;  Win+Alt+n  Ñ
+
 
 ; Symbols
   !q::Send("{U+0040}")                   ;      Alt+q  @
