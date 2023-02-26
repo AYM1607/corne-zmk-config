@@ -20,6 +20,10 @@
  !n::Send("{U+00F1}")                    ;      Alt+n  ñ
 #!n::Send("{U+00D1}")                    ;  Win+Alt+n  Ñ
 
+#HotIf WinActive("ahk_exe code.exe")
+    ^u::^u
+#HotIf
+
 ; Symbols
   !q::Send("{U+0040}")                   ;      Alt+q  @
 #!+/::Send("{U+00BF}")                   ;  Win+Alt+?  ¿
