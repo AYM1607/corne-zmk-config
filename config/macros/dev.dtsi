@@ -11,7 +11,7 @@ m_d_ma: macro_dev_multiplication_assignment {
     label = "=*";
     #binding-cells = <0>;
     bindings =
-        <&kp EQUAL &kp ASTRK>;
+        <&kp ASTRK &kp EQUAL>;
 };
 
 m_d_io: macro_dev_increment_operator {
