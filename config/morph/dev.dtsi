@@ -12,7 +12,7 @@ mp_d_a_alt: morph_dev_asterisk_alt {
     #binding-cells = <0>;
     mods = <(MOD_LALT|MOD_RALT)>;
     bindings = <&mp_d_a>, <&m_d_ma>;
-}
+};
 
 mp_d_p: morph_dev_plus {
     compatible = "zmk,behavior-mod-morph";
