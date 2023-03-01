@@ -3,15 +3,15 @@ mp_d_a: morph_dev_asterisk {
     label = "* **";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&mp_d_a_alt>, <&m_d_eo>;
+    bindings = <&kp ASTRK>, <&m_d_eo>;
 };
 
 mp_d_a_alt: morph_dev_alt {
     compatible = "zmk,behavior-mod-morph";
-    label = "* **";
+    label = "* =*";
     #binding-cells = <0>;
     mods = <(MOD_LALT|MOD_RALT)>;
-    bindings = <&kp ASTRK>, <&m_d_ma>;
+    bindings = <&mp_d_a>, <&m_d_ma>;
 };
 
 mp_d_p: morph_dev_plus {
