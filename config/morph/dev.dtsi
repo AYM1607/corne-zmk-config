@@ -1,4 +1,4 @@
-mp_d_a_shft: morph_dev_asterisk_shft {
+mp_d_a: morph_dev_asterisk {
     compatible = "zmk,behavior-mod-morph";
     label = "* **";
     #binding-cells = <0>;
@@ -6,28 +6,12 @@ mp_d_a_shft: morph_dev_asterisk_shft {
     bindings = <&kp ASTRK>, <&m_d_eo>;
 };
 
-mp_d_a: morph_dev_asterisk_alt {
-    compatible = "zmk,behavior-mod-morph";
-    label = "* =*";
-    #binding-cells = <0>;
-    mods = <(MOD_LALT|MOD_RALT)>;
-    bindings = <&mp_d_a_shft>, <&m_d_ma>;
-};
-
-mp_d_p_shft: morph_dev_plus_shft {
+mp_d_p: morph_dev_plus {
     compatible = "zmk,behavior-mod-morph";
     label = "+ ++";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
     bindings = <&kp PLUS>, <&m_d_io>;
-};
-
-mp_d_p: morph_dev_plus_alt {
-    compatible = "zmk,behavior-mod-morph";
-    label = "+ =+";
-    #binding-cells = <0>;
-    mods = <(MOD_LALT|MOD_RALT)>;
-    bindings = <&mp_d_p_shft>, <&m_d_as>;
 };
 
 mp_d_m: morph_dev_minus {
