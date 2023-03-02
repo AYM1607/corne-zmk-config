@@ -22,6 +22,14 @@ m_d_io: macro_dev_increment_operator {
         <&kp PLUS &kp PLUS>;
 };
 
+m_d_as: macro_dev_addition_assignment {
+    compatible = "zmk,behavior-macro";
+    label = "+=";
+    #binding-cells = <0>;
+    bindings =
+        <&kp PLUS &kp EQUAL>;
+};
+
 m_d_do: macro_dev_decrement_operator {
     compatible = "zmk,behavior-macro";
     label = "--";
