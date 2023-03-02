@@ -29,3 +29,8 @@
         Send("{Enter 2}{Up}{Tab}")
     }
 #HotIf
+
+#HotIf WinActive("ahk_exe Tabby.exe")
+    ^PgUp:: Send("^+{Left}")                      ;  Previous Tab
+    ^PgDn:: Send("^+{Right}")                     ;  Next Tab
+#HotIf
