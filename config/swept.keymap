@@ -157,10 +157,10 @@
             #define K15  &hm LALT   F7
             #define K16  &hm LSHFT  F8
 
-            #define K19  &kp RSHFT  HOME
+            #define K19  &hm RSHFT  HOME
             #define K20  &hm RALT   PG_DN
             #define K21  &hm RCTRL  END
-            #define K22  &hm RCMD
+            #define K22  &kp RCMD
 
             #define K38  &to_BAS
             #define K39  &to_DEV
