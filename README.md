@@ -154,10 +154,10 @@ Symbols and dev shortcuts for JS/TS.
 
 ##### Auto Brackets
 
-| Label | Windows                                             | Action                       |
-| :---: | --------------------------------------------------: | ---------------------------- |
-| <░/>  | <kbd>❖</kbd>+<kbd>⌥</kbd>+<kbd><</kbd>             | Angular brackets for React  |
-| </░>  | <kbd>❖</kbd>+<kbd>⌥</kbd>+<kbd>></kbd>             | Angular brackets for HTML  |
+| Label | Windows                                             | Action          |
+| :---: | --------------------------------------------------: | --------------- |
+| <░/>  | <kbd>❖</kbd>+<kbd>⌥</kbd>+<kbd><</kbd>             | HTML Void Tag   |
+| </░>  | <kbd>❖</kbd>+<kbd>⌥</kbd>+<kbd>></kbd>             | HTML Close Tag  |
 
 ##### Browser DevTools
 
