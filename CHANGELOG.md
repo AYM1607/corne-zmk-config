@@ -5,6 +5,7 @@
 - AHK it getting the `ALT` key stuck frequently, so I decided move from **en-US** to **en-US International** layout.
 - Cleaning up AHK dependency for Spanish accents and JS/TS symbols directly with ZMK. It is not perfect and need some workaround to use some macros that use `=` key and other to avoid VSCode getting stuck with `ALT` key but its better than the problem with AHK
 - Remapping a lot of key, shortcuts and change layer activation. Modifier keys with `WIN+ALt` were removed because are hard to access
+- `AltGr` can be used as modifier because doesn't work like `ALT RIGHT`, so always uses `ALT LEFT`
 
 ## 6.0.0
 
