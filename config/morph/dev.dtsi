@@ -172,19 +172,20 @@ mp_d_loo: morph_dev_logical_or_operator {
 // shift:       ??=
 // alt:         ¿
 // alt+shift:   ??
-mp_d_qs_s: morph_dev_question_symbol_shift {
+mp_d_qs_as: morph_dev_question_symbol_alt_shift {
     compatible = "zmk,behavior-mod-morph";
     label = "? ??";
     #binding-cells = <0>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&kp QMARK>, <&m_d_nco>;
+    mods = <(MOD_LALT)>;
+    bindings = <&m_d_nca>, <&m_d_nco>;
+    keep-mods = <(MOD_LALT)>;
 };
 mp_d_qs_a: morph_dev_question_symbol_alt {
     compatible = "zmk,behavior-mod-morph";
     label = "? ¿";
     #binding-cells = <0>;
     mods = <(MOD_LALT)>;
-    bindings = <&kp LC(LA(FSLH))>, <&mp_d_qs_s>;
+    bindings = <&kp QMARK>, <&kp LC(FSLH)>;
     keep-mods = <(MOD_LALT)>;
 };
 mp_d_qs: morph_dev_question_symbol {
@@ -192,7 +193,8 @@ mp_d_qs: morph_dev_question_symbol {
     label = "? ??=";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&mp_d_qs_a>, <&m_d_nca>;
+    bindings = <&mp_d_qs_a>, <&mp_d_qs_as>;
+    keep-mods = <(MOD_LSFT|MOD_RSFT)>;
 };
 
 // tap:         !

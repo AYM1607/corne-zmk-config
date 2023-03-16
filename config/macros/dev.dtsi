@@ -164,7 +164,7 @@ m_d_nca: macro_nullish_coalescing_assignment {
     #binding-cells = <0>;
     wait-ms = <400>;
     bindings
-        = <&none>
+        = <&none &kp LALT> /* ALT fix for VSCode */
         , <&macro_wait_time 100>
         , <&kp QMARK &kp QMARK &kp EQUAL>;
 };
