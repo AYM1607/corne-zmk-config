@@ -167,7 +167,7 @@ mp_d_loo: morph_dev_logical_or_operator {
     mods = <(MOD_LSFT|MOD_RSFT)>;
     bindings = <&mp_d_loo_a>, <&m_d_loa>;
 };
-???=¿
+
 // tap:         ?
 // shift:       ??=
 // alt:         ¿
