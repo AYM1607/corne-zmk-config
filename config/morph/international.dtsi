@@ -1,0 +1,62 @@
+mp_i_a: morph_a {
+    compatible = "zmk,behavior-mod-morph";
+    label = "a";
+    #binding-cells = <0>;
+    mods = <(MOD_LALT)>;
+    bindings = <&kp A>, <&kp LC(A)>;
+    keep-mods = <(MOD_LALT)>;
+};
+
+mp_i_e: morph_e {
+    compatible = "zmk,behavior-mod-morph";
+    label = "e";
+    #binding-cells = <0>;
+    mods = <(MOD_LALT)>;
+    bindings = <&kp E>, <&kp LC(E)>;
+    keep-mods = <(MOD_LALT)>;
+};
+
+mp_i_i: morph_i {
+    compatible = "zmk,behavior-mod-morph";
+    label = "i";
+    #binding-cells = <0>;
+    mods = <(MOD_LALT)>;
+    bindings = <&kp I>, <&kp LC(I)>;
+    keep-mods = <(MOD_LALT)>;
+};
+
+mp_i_o: morph_o {
+    compatible = "zmk,behavior-mod-morph";
+    label = "o";
+    #binding-cells = <0>;
+    mods = <(MOD_LALT)>;
+    bindings = <&kp O>, <&kp LC(O)>;
+    keep-mods = <(MOD_LALT)>;
+};
+
+mp_i_u: morph_u {
+    compatible = "zmk,behavior-mod-morph";
+    label = "u";
+    #binding-cells = <0>;
+    mods = <(MOD_LALT)>;
+    bindings = <&kp U>, <&kp LC(U)>;
+    keep-mods = <(MOD_LALT)>;
+};
+
+mp_i_n: morph_n {
+    compatible = "zmk,behavior-mod-morph";
+    label = "n";
+    #binding-cells = <0>;
+    mods = <(MOD_LALT)>;
+    bindings = <&kp N>, <&kp LC(N)>;
+    keep-mods = <(MOD_LALT)>;
+};
+
+mp_i_y: morph_y {
+    compatible = "zmk,behavior-mod-morph";
+    label = "y";
+    #binding-cells = <0>;
+    mods = <(MOD_LALT)>;
+    bindings = <&kp Y>, <&kp LC(Y)>;
+    keep-mods = <(MOD_LALT)>;
+};
