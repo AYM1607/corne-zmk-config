@@ -140,8 +140,8 @@ Symbols and dev shortcuts for JS/TS.
 
 | Label            | Windows                                             | Action          |
 | :--------------: | --------------------------------------------------: | --------------- |
-| <kbd><░/></kbd>  | <kbd>❖</kbd>+<kbd>⌥</kbd>+<kbd><</kbd>             | HTML Void Tag   |
-| <kbd></░></kbd>  | <kbd>❖</kbd>+<kbd>⌥</kbd>+<kbd>></kbd>             | HTML Close Tag  |
+| <kbd>< /></kbd>  | <kbd>❖</kbd>+<kbd>⌥</kbd>+<kbd><</kbd>             | HTML Void Tag   |
+| <kbd></ ></kbd>  | <kbd>❖</kbd>+<kbd>⌥</kbd>+<kbd>></kbd>             | HTML Close Tag  |
 
 ##### Browser DevTools
 
@@ -156,7 +156,7 @@ Symbols and dev shortcuts for JS/TS.
 | Label             | Windows                                 | Action                      |
 | ----------------: | --------------------------------------: | --------------------------- |
 | <kbd>//</kbd>     | <kbd>⌃</kbd>+<kbd>/</kbd>               | Toggle line comment         |
-| <kbd>/*░*/</kbd>  | <kbd>⇧</kbd>+<kbd>/</kbd>               | Toggle block comment        |
+| <kbd>/\* \*/</kbd>  | <kbd>⇧</kbd>+<kbd>/</kbd>               | Toggle block comment        |
 
 #### 2. AXN
 
