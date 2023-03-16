@@ -352,6 +352,10 @@ Screencast mode notifications:
 - [Arrow Function Snippets](https://marketplace.visualstudio.com/items?itemName=deinsoftware.arrow-function-snippets)
 - [Arrow Function Snippets](https://marketplace.visualstudio.com/items?itemName=deinsoftware.debug-snippets)
 
+### Package Managers
+
+- [Switch Package Manager](https://www.npmjs.com/package/swpm)
+
 ⇧ [Back to menu](#menu)
 
 ---

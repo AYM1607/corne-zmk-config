@@ -14,7 +14,6 @@ KeyWait "RAlt", "L"            ;  Wait for Alt to be released
 
 ; Combos
 #Include "keys.ahk"
-#Include "dev.ahk"
 
 ; Notifications
 #Include "caps.ahk"
