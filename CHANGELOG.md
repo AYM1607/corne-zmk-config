@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 7.0.0
+
+- AHK it getting the `ALT` key stuck frequently. I've decided move from  Cleaning up AHK dependency for Spanish accents and JS/TS symbols directly with ZMK. It is not perfect and need some workaround to use some macros that use `=` key and other to avoid VSCode getting stuck with `ALT` key
+
 ## 6.0.0
 
 - Move Function keys to Left half to use the mouse withe Right hand while debugging

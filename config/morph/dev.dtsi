@@ -42,7 +42,7 @@ mp_d_a_a: morph_dev_asterisk_alt {
     label = "* **";
     #binding-cells = <0>;
     mods = <(MOD_LALT)>;
-    bindings = <&kp MINUS>, <&m_d_eo>;
+    bindings = <&kp ASTRK>, <&m_d_eo>;
     keep-mods = <(MOD_LALT)>;
 };
 mp_d_a: morph_dev_asterisk {
@@ -61,7 +61,7 @@ mp_d_p_a: morph_dev_plus_alt {
     label = "+ ++";
     #binding-cells = <0>;
     mods = <(MOD_LALT)>;
-    bindings = <&kp MINUS>, <&m_d_do>;
+    bindings = <&kp PLUS>, <&m_d_io>;
     keep-mods = <(MOD_LALT)>;
 };
 mp_d_p: morph_dev_plus {
@@ -69,7 +69,7 @@ mp_d_p: morph_dev_plus {
     label = "+ +=";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&mp_d_p_a>, <&m_d_sa>;
+    bindings = <&mp_d_p_a>, <&m_d_as>;
 };
 
 // tap:         -

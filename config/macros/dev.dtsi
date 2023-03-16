@@ -2,8 +2,10 @@ m_d_eo: macro_dev_exponentiation_operator {
     compatible = "zmk,behavior-macro";
     label = "**";
     #binding-cells = <0>;
+    wait-ms = <400>;
     bindings
         = <&none &kp LALT> /* ALT fix for VSCode */
+        , <&macro_wait_time 100>
         , <&kp ASTRK &kp ASTRK>;
 };
 
@@ -33,8 +35,10 @@ m_d_io: macro_dev_increment_operator {
     compatible = "zmk,behavior-macro";
     label = "++";
     #binding-cells = <0>;
+    wait-ms = <400>;
     bindings
         = <&none &kp LALT> /* ALT fix for VSCode */
+        , <&macro_wait_time 100>
         , <&kp PLUS &kp PLUS>;
 };
 
@@ -86,8 +90,10 @@ m_d_la: macro_dev_logical_and {
     compatible = "zmk,behavior-macro";
     label = "&&";
     #binding-cells = <0>;
+    wait-ms = <400>;
     bindings
         = <&none &kp LALT> /* ALT fix for VSCode */
+        , <&macro_wait_time 100>
         , <&kp AMPS &kp AMPS>;
 };
 
@@ -106,8 +112,10 @@ m_d_lo: macro_dev_logical_or {
     compatible = "zmk,behavior-macro";
     label = "||";
     #binding-cells = <0>;
+    wait-ms = <400>;
     bindings
         = <&none &kp LALT> /* ALT fix for VSCode */
+        , <&macro_wait_time 100>
         , <&kp PIPE &kp PIPE>;
 };
 
@@ -143,8 +151,10 @@ m_d_nco: macro_nullish_coalescing_operator {
     compatible = "zmk,behavior-macro";
     label = "??";
     #binding-cells = <0>;
+    wait-ms = <400>;
     bindings
         = <&none &kp LALT> /* ALT fix for VSCode */
+        , <&macro_wait_time 100>
         , <&kp QMARK &kp QMARK>;
 };
 
@@ -185,8 +195,10 @@ m_d_hvt: macro_dev_html_void_tag {
     compatible = "zmk,behavior-macro";
     label = "<░/>";
     #binding-cells = <0>;
+    wait-ms = <400>;
     bindings
         = <&none &kp LALT> /* ALT fix for VSCode */
+        , <&macro_wait_time 100>
         , <&kp LT &kp FSLH &kp GT>
         , <&kp LEFT &kp LEFT>;
 };
@@ -206,8 +218,10 @@ m_d_hct: macro_dev_html_close_tag {
     compatible = "zmk,behavior-macro";
     label = "</░>";
     #binding-cells = <0>;
+    wait-ms = <400>;
     bindings
         = <&none &kp LALT> /* ALT fix for VSCode */
+        , <&macro_wait_time 100>
         , <&kp LT &kp FSLH &kp GT>
         , <&kp LEFT>;
 };
