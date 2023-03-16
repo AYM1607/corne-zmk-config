@@ -164,7 +164,7 @@ m_d_nca: macro_nullish_coalescing_assignment {
     #binding-cells = <0>;
     wait-ms = <400>;
     bindings
-        = <&none &kp LALT> /* ALT fix for VSCode */
+        = <&none>
         , <&macro_wait_time 100>
         , <&kp QMARK &kp QMARK &kp EQUAL>;
 };
@@ -178,6 +178,17 @@ m_d_se: macro_strict_equality {
         = <&none>
         , <&macro_wait_time 100>
         , <&kp EQUAL &kp EQUAL &kp EQUAL>;
+};
+
+m_d_dno: macro_double_not_operator {
+    compatible = "zmk,behavior-macro";
+    label = "!!";
+    #binding-cells = <0>;
+    wait-ms = <400>;
+    bindings
+        = <&none &kp LALT> /* ALT fix for VSCode */
+        , <&macro_wait_time 100>
+        , <&kp EXCL &kp EXCL>;
 };
 
 m_d_si: macro_strict_inequality {

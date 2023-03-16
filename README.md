@@ -127,11 +127,11 @@ Symbols and dev shortcuts for JS/TS.
 | <kbd>[&&=](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND_assignment)</kbd>        |  <kbd>⇧</kbd>+<kbd>&</kbd>  |
 | <kbd>[\|\|](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR)</kbd>                   |  <kbd>⌥</kbd>+<kbd>\|</kbd>  |
 | <kbd>[\|\|=](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR_assignment)</kbd>       |  <kbd>⇧</kbd>+<kbd>\|</kbd>  |
-| <kbd>[??](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing)</kbd>             |  <kbd>⌥</kbd>+<kbd>?</kbd>  |
+| <kbd>[??](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing)</kbd>             |  <kbd>⌥</kbd>+<kbd>⇧</kbd>+<kbd>?</kbd>  |
 | <kbd>[??=](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_assignment)</kbd> |  <kbd>⇧</kbd>+<kbd>?</kbd>  |
 | <kbd>[=>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)</kbd>                |  <kbd>⌥</kbd>+<kbd>=</kbd>  |
 | <kbd>[===](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Strict_equality)</kbd>               |  <kbd>⇧</kbd>+<kbd>=</kbd>  |
-| <kbd>[!!](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_NOT#double_not_!!)</kbd>      |  <kbd>⌥</kbd>+<kbd>!</kbd>  |
+| <kbd>[!!](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_NOT#double_not_!!)</kbd>      |  <kbd>⌥</kbd>+<kbd>⇧</kbd>+<kbd>!</kbd>  |
 | <kbd>[!==](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Strict_inequality)</kbd>             |  <kbd>⇧</kbd>+<kbd>!</kbd>  |
 | <kbd>[<=](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Less_than_or_equal)</kbd>             | <kbd>⇧</kbd>+<kbd><</kbd>   |
 | <kbd>[>=](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Greater_than_or_equal)</kbd>          | <kbd>⇧</kbd>+<kbd>></kbd>   |

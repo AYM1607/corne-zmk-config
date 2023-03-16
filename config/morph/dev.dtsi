@@ -174,7 +174,7 @@ mp_d_loo: morph_dev_logical_or_operator {
 // alt+shift:   ??
 mp_d_qs_as: morph_dev_question_symbol_alt_shift {
     compatible = "zmk,behavior-mod-morph";
-    label = "? ??";
+    label = "??= ??";
     #binding-cells = <0>;
     mods = <(MOD_LALT)>;
     bindings = <&m_d_nca>, <&m_d_nco>;
@@ -190,7 +190,7 @@ mp_d_qs_a: morph_dev_question_symbol_alt {
 };
 mp_d_qs: morph_dev_question_symbol {
     compatible = "zmk,behavior-mod-morph";
-    label = "? ??=";
+    label = "?";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
     bindings = <&mp_d_qs_a>, <&mp_d_qs_as>;
@@ -200,6 +200,15 @@ mp_d_qs: morph_dev_question_symbol {
 // tap:         !
 // shift:       !==
 // alt:         ¡
+// alt+shift:   !!
+mp_d_es_as: morph_dev_exclamation_symbol_alt_shift {
+    compatible = "zmk,behavior-mod-morph";
+    label = "!== !!";
+    #binding-cells = <0>;
+    mods = <(MOD_LALT)>;
+    bindings = <&m_d_si>, <&m_d_dno>;
+    keep-mods = <(MOD_LALT)>;
+};
 mp_d_es_a: morph_dev_exclamation_symbol_alt {
     compatible = "zmk,behavior-mod-morph";
     label = "! ¡";
@@ -210,10 +219,10 @@ mp_d_es_a: morph_dev_exclamation_symbol_alt {
 };
 mp_d_es: morph_dev_exclamation_symbol {
     compatible = "zmk,behavior-mod-morph";
-    label = "! !==";
+    label = "!";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&mp_d_es_a>, <&m_d_si>;
+    bindings = <&mp_d_es_a>, <&mp_d_es_as>;
 };
 
 // tap:         ?.
