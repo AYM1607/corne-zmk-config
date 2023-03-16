@@ -171,12 +171,20 @@ mp_d_loo: morph_dev_logical_or_operator {
 // tap:         ?
 // shift:       ??=
 // alt:         ¿
+// alt+shift:   ??
+mp_d_qs_s: morph_dev_question_symbol_shift {
+    compatible = "zmk,behavior-mod-morph";
+    label = "? ??";
+    #binding-cells = <0>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+    bindings = <&kp QMARK>, <&m_d_nco>;
+};
 mp_d_qs_a: morph_dev_question_symbol_alt {
     compatible = "zmk,behavior-mod-morph";
     label = "? ¿";
     #binding-cells = <0>;
     mods = <(MOD_LALT)>;
-    bindings = <&kp QMARK>, <&kp LC(FSLH)>;
+    bindings = <&mp_d_qs_s>, <&kp LC(FSLH)>;
     keep-mods = <(MOD_LALT)>;
 };
 mp_d_qs: morph_dev_question_symbol {
