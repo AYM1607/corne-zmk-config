@@ -53,13 +53,6 @@ Icons used to describe some modifiers and actions
 | <kbd>⇪</kbd> | [Hold Tap](https://zmk.dev/docs/behaviors/hold-tap#hold-tap) |
 | <kbd>🔁</kbd> | [Key Repeat](https://zmk.dev/docs/behaviors/key-repeat) |
 
-#### Modifiers Conventions
-
-![Conventions](./.github/images/conventions.png)
-
-- Black and Blue works with ZMK
-- Magenta and Purple works with AHK
-
 #### Shared Modifiers
 
 | Label           | Windows                                 | Actions                                               |
