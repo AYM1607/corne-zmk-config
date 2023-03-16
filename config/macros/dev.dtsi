@@ -153,7 +153,7 @@ m_d_nco: macro_nullish_coalescing_operator {
     #binding-cells = <0>;
     wait-ms = <400>;
     bindings
-        = <&none &kp LALT> /* ALT fix for VSCode */
+        = <&none>
         , <&macro_wait_time 100>
         , <&kp QMARK &kp QMARK>;
 };
@@ -186,7 +186,7 @@ m_d_dno: macro_double_not_operator {
     #binding-cells = <0>;
     wait-ms = <400>;
     bindings
-        = <&none &kp LALT> /* ALT fix for VSCode */
+        = none>
         , <&macro_wait_time 100>
         , <&kp EXCL &kp EXCL>;
 };
