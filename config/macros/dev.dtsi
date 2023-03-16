@@ -105,7 +105,7 @@ m_d_laa: macro_dev_logical_and_assignment {
     bindings
         = <&none>
         , <&macro_wait_time 100>
-        , <&kp AMPS &kp EQUAL>;
+        , <&kp AMPS &kp AMPS &kp EQUAL>;
 };
 
 m_d_lo: macro_dev_logical_or {
@@ -127,7 +127,7 @@ m_d_loa: macro_dev_logical_or_assignment {
     bindings
         = <&none>
         , <&macro_wait_time 100>
-        , <&kp PIPE &kp PIPE>;
+        , <&kp PIPE &kp PIPE &kp EQUAL>;
 };
 
 m_d_cto: macro_conditional_ternary_operator {
