@@ -8,13 +8,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-&mt {
-    flavor = "tap-preferred";
-    tapping-term-ms = <220>;
-    quick-tap-ms = <220>;               // repeat on tap-into-hold
-    hold-trigger-key-positions = <0>;   // tap on interrupt
-};
-
 /* Layers */
 #define BAS    0
 #define DEV    1
@@ -49,6 +42,7 @@
         #include "morph/dev.dtsi"
 
         #include "hold/shared.dtsi"
+        #include "hold/layers.dtsi"
         #include "hold/base.dtsi"
         #include "hold/dev.dtsi"
     };
@@ -61,7 +55,7 @@
     };
 
     macros {
-        #include "macros/shared.dtsi"
+        #include "macros/layers.dtsi"
         #include "macros/international.dtsi"
         #include "macros/dev.dtsi"
         #include "macros/settings.dtsi"

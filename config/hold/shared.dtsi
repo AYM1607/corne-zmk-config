@@ -2,71 +2,15 @@ hm: homerow_mods {
     compatible = "zmk,behavior-hold-tap";
     label = "HOMEROW MODS";
     #binding-cells = <2>;
-    tapping-term-ms = <300>;
-    quick-tap-ms = <200>;
+    tapping-term-ms = <150>;
+    quick-tap-ms = <0>;
     flavor = "tap-preferred";
     bindings = <&kp>, <&kp>;
 };
 
-to_BAS_kp: behavior_to_kp {
-    compatible = "zmk,behavior-hold-tap";
-    label = "to_kp";
-    #binding-cells = <2>;
-    flavor = "hold-preferred";
-    tapping-term-ms = <200>;
-    bindings = <&to_BAS>, <&kp>;
-};
-
-mo_AXNBAS_to_FNK: hold_mo_AXNBAS_to_FNK {
-    compatible = "zmk,behavior-hold-tap";
-    label = "mo_AXNBAS_to_FNK";
-    #binding-cells = <2>;
-    flavor = "hold-preferred";
-    tapping-term-ms = <200>;
-    bindings = <&mo_AXN_to_BAS>, <&to_FNK>;
-};
-
-mo_AXNBAS_to_AXN: hold_mo_AXNBAS_to_AXN {
-    compatible = "zmk,behavior-hold-tap";
-    label = "mo_AXNBAS_to_AXN";
-    #binding-cells = <2>;
-    flavor = "hold-preferred";
-    tapping-term-ms = <200>;
-    bindings = <&mo_AXN_to_BAS>, <&to_AXN>;
-};
-
-mo_DEVBAS_to_DEV: hold_mo_DEVBAS_to_DEV {
-    compatible = "zmk,behavior-hold-tap";
-    label = "mo_DEVBAS_to_DEV";
-    #binding-cells = <2>;
-    flavor = "hold-preferred";
-    tapping-term-ms = <200>;
-    bindings = <&mo_DEV_to_BAS>, <&to_DEV>;
-};
-
-mo_AXNDEV_to_BAS: hold_mo_AXNDEV_to_BAS {
-    compatible = "zmk,behavior-hold-tap";
-    label = "mo_AXNDEV_to_BAS";
-    #binding-cells = <2>;
-    flavor = "hold-preferred";
-    tapping-term-ms = <200>;
-    bindings = <&mo_AXN_to_DEV>, <&to_BAS>;
-};
-
-mo_AXNDEV_to_AXN: hold_mo_AXNDEV_to_AXN {
-    compatible = "zmk,behavior-hold-tap";
-    label = "mo_AXNDEV_to_AXN";
-    #binding-cells = <2>;
-    flavor = "hold-preferred";
-    tapping-term-ms = <200>;
-    bindings = <&mo_AXN_to_DEV>, <&to_AXN>;
-};
-
-mo_FNKAXN_to_FNK: hold_mo_FNKAXN_to_FNK {
-    compatible = "zmk,behavior-hold-tap";
-    label = "mo_FNK_AXN_to_FNK";
-    #binding-cells = <2>;
-    flavor = "hold-preferred";
-    tapping-term-ms = <200>;
-    bindings = <&mo_FNK_to_AXN>, <&to_FNK>;
+&mt {
+    flavor = "tap-preferred";
+    tapping-term-ms = <220>;
+    quick-tap-ms = <220>;               // repeat on tap-into-hold
+    hold-trigger-key-positions = <0>;   // tap on interrupt
 };
