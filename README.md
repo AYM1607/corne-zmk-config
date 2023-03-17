@@ -213,15 +213,19 @@ Dedicated to Bluetooth and media controls.
 | <kbd>B⏭️</kbd> | Next device              |
 | <kbd>B#️⃣</kbd> | Jump to #️⃣ device        |
 | <kbd>B❌</kbd> | Clear current device     |
-| <kbd>🔎+</kbd> | Zoom in                  |
-| <kbd>🔎R</kbd> | Zoom reset               |
-| <kbd>🔎-</kbd> | Zoom out                 |
+| <kbd>Z+</kbd>   | Zoom in                  |
+| <kbd>ZR</kbd>   | Zoom reset               |
+| <kbd>Z-</kbd>   | Zoom out                 |
+| <kbd>M+</kbd>   | Magnifier in             |
+| <kbd>MR</kbd>   | Magnifier reset          |
+| <kbd>M-</kbd>   | Magnifier out            |
 | <kbd>🔊</kbd>  | Volume up                |
 | <kbd>🔇</kbd>  | Mute                     |
 | <kbd>🔉</kbd>   | Volume down             |
 | <kbd>🔅</kbd>  | Bright down              |
 | <kbd>🔆</kbd>  | Bright up                |
 | <kbd>⎉</kbd>   | Connect Quick Action     |
+| <kbd>⎚</kbd>   | Fancy Zones              |
 | <kbd>▤</kbd>   | Task Manager             |
 | <kbd>ⓘ</kbd>   | System Info             |
 | <kbd>⛨</kbd>   | Windows Security        |

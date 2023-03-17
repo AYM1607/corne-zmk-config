@@ -190,12 +190,16 @@
             #define S17  &kp RC(N0)           // tap: zoom reset
             #define S29  &kp RC(MINUS)        // tap: zoom out
 
+            #define S07  &kp RG(EQUAL)        // tap: magnifier in
+            #define S18  &kp RG(ESC)          // tap: magnifier reset
+            #define S30  &kp RG(MINUS)        // tap: magnifier out
+
             label = "STG";
             bindings = <
-       KEY_ESC  &none    &none    &none  &kp C_BRI_DN       S05          &kp C_VOL_UP  &kp C_BRI_UP       &none       &none  S10    S11
-    &bt BT_CLR  &none  &m_s_b1  &m_s_b2       &m_s_b3       S17            &kp C_MUTE    &kp C_PREV    &kp C_PP  &kp C_NEXT  S22    S23
-           S24  &none  &m_s_b4  &m_s_b5       &m_s_b6       S29          &kp C_VOL_DN      &kp C_RW  &kp C_STOP    &kp C_FF  S34  &none
-                                  &none       KEY_SPC   &to_BAS               &to_DEV       KEY_RET       &none
+       KEY_ESC  &none    &none         &none    &none       S05                   S07  &kp C_VOL_DN    &kp C_MUTE  &kp C_VOL_UP  S10    S11
+    &bt BT_CLR  &none  &m_s_b1       &m_s_b2  &m_s_b3       S17                   S18    &kp C_PREV      &kp C_PP    &kp C_NEXT  S22    S23
+           S24  &none  &m_s_b4       &m_s_b5  &m_s_b6       S29                   S30      &kp C_RW    &kp C_STOP      &kp C_FF  S34  &none
+                                &kp C_BRI_DN  KEY_SPC   &to_BAS               &to_DEV       KEY_RET  &kp C_BRI_UP
             >;
         };
     };
