@@ -4,7 +4,7 @@ hm_b_lcmd: behavior_base_lcmd {
     #binding-cells = <2>;
     tapping-term-ms = <300>;
     quick-tap-ms = <200>;
-    flavor = "tap-unless-interrupted";
+    flavor = "hold-preferred";
     global-quick-tap;
     bindings = <&kp>, <&mp_i_a>;
 };
@@ -15,7 +15,7 @@ hm_b_rshf: behavior_base_rshf {
     #binding-cells = <2>;
     tapping-term-ms = <300>;
     quick-tap-ms = <200>;
-    flavor = "tap-unless-interrupted";
+    flavor = "hold-preferred";
     global-quick-tap;
     bindings = <&kp>, <&mp_i_n>;
 };
@@ -26,7 +26,7 @@ hm_b_ralt: behavior_base_ralt {
     #binding-cells = <2>;
     tapping-term-ms = <300>;
     quick-tap-ms = <200>;
-    flavor = "tap-unless-interrupted";
+    flavor = "hold-preferred";
     global-quick-tap;
     bindings = <&kp>, <&mp_i_e>;
 };
@@ -37,7 +37,7 @@ hm_b_rctrl: behavior_base_rctrl {
     #binding-cells = <2>;
     tapping-term-ms = <300>;
     quick-tap-ms = <200>;
-    flavor = "tap-unless-interrupted";
+    flavor = "hold-preferred";
     global-quick-tap;
     bindings = <&kp>, <&mp_i_i>;
 };
@@ -48,7 +48,7 @@ hm_b_rcmd: behavior_base_rcmd {
     #binding-cells = <2>;
     tapping-term-ms = <300>;
     quick-tap-ms = <200>;
-    flavor = "tap-unless-interrupted";
+    flavor = "hold-preferred";
     global-quick-tap;
     bindings = <&kp>, <&mp_i_o>;
 };
