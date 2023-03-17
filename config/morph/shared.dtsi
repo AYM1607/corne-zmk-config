@@ -1,13 +1,3 @@
-hm: homerow_mods {
-    compatible = "zmk,behavior-hold-tap";
-    label = "HOMEROW MODS";
-    #binding-cells = <2>;
-    tapping-term-ms = <300>;
-    quick-tap-ms = <200>;
-    flavor = "tap-preferred";
-    bindings = <&kp>, <&kp>;
-};
-
 cw: caps_word {
     compatible = "zmk,behavior-caps-word";
     label = "CAPS WORD";

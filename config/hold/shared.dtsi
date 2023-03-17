@@ -1,3 +1,13 @@
+hm: homerow_mods {
+    compatible = "zmk,behavior-hold-tap";
+    label = "HOMEROW MODS";
+    #binding-cells = <2>;
+    tapping-term-ms = <300>;
+    quick-tap-ms = <200>;
+    flavor = "tap-preferred";
+    bindings = <&kp>, <&kp>;
+};
+
 to_BAS_kp: behavior_to_kp {
     compatible = "zmk,behavior-hold-tap";
     label = "to_kp";
