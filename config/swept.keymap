@@ -48,7 +48,7 @@
         #include "os/win/morph/num.dtsi"
         #include "os/win/morph/dev.dtsi"
 
-        #include "os/win/hold/shared.dtsi"
+        #include "os/all/hold/shared.dtsi"
         #include "os/win/hold/layers.dtsi"
         #include "os/win/hold/base.dtsi"
         #include "os/win/hold/dev.dtsi"
@@ -57,7 +57,7 @@
     combos {
         compatible = "zmk,combos";
 
-        #include "os/win/combos/base.dtsi"
+        #include "os/all/combos/base.dtsi"
         #include "os/win/combos/help.dtsi"
     };
 
