@@ -10,8 +10,8 @@
 
 /* Global */
 #include "os/all/general.dtsi"
+
 /* Layers */
 #include "os/all/layers.dtsi"
 #include "os/win/keymap.dtsi"
 #include "os/android/keymap.dtsi"
-

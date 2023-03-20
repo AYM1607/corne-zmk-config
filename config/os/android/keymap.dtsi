@@ -40,7 +40,8 @@
             #define B21  &hm_b_rctrl RCTRL  0  //I
             #define B22  &hm_b_rcmd  RCMD   0  //O
 
-            #define B35  &mp_moto    aSTG   aSTG
+            // #define B35  &mp_moto    aSTG   aSTG
+            #define B35  &to aSTG
 
             #define B36  &moto       aDEV   aDEV
             #define B38  &moto       aAXN   aAXN
