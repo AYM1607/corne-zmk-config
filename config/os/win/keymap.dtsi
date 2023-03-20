@@ -140,7 +140,7 @@
             label = "wFNK";
             bindings = <
     KEY_ESC  &kp F9  &kp F10  &kp F11  &kp F12  &none                  &none    &none  &kp PG_UP    &none    &none   NAV_DEL
-     &mp_bc    WK13     WK14     WK15     WK16  &none                  &none      K19       WK20     WK21     WK22  NAV_BSPC
+     &mp_bc    WK13     WK14     WK15     WK16  &none                  &none     WK19       WK20     WK21     WK22  NAV_BSPC
     KEY_TAB  &kp F1   &kp F2   &kp F3   &kp F4  &none                  &none    &none      &none    &none    &none     &none
                                &mp_cs  KEY_SPC   WK38                   WK39  KEY_RET     &mp_dc
             >;
