@@ -1,5 +1,3 @@
-#include "../all/layers.dtsi"
-
 / {
     behaviors {
         #include "../all/morph/shared.dtsi"

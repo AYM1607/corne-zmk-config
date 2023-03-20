@@ -1,5 +1,3 @@
-#include "../all/layers.dtsi"
-
 /* Layers */
 #define H_wCWR  F18
 #define F_wBAS  F19
