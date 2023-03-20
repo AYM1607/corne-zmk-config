@@ -4,7 +4,7 @@ m_ai_g: macro_android_int_grave {
     label = "m_ai_g";
     #binding-cells = <0>;
     bindings =
-        <&kp GRAVE &kp SPACE>;
+        <&kp GRAVE>;
 };
 
 // tap:     ~
@@ -13,7 +13,7 @@ m_ai_t: macro_android_int_tilde {
     label = "m_ai_t";
     #binding-cells = <0>;
     bindings =
-        <&kp TILDE &kp SPACE>;
+        <&kp TILDE>;
 };
 
 // tap:     ^
@@ -22,7 +22,7 @@ m_ai_c: macro_android_int_caret {
     label = "m_ai_c";
     #binding-cells = <0>;
     bindings =
-        <&kp CARET &kp SPACE>;
+        <&kp CARET>;
 };
 
 // tap:     "
@@ -31,14 +31,14 @@ m_ai_d: macro_android_int_double_quote {
     label = "m_ai_d";
     #binding-cells = <0>;
     bindings =
-        <&kp DQT &kp SPACE>;
+        <&kp DQT>;
 };
 
 // tap:     '
 m_ai_s: macro_android_int_single_quote {
     compatible = "zmk,behavior-macro";
-    label = "m_ai_s";
+    label = "m_ai_single";
     #binding-cells = <0>;
     bindings =
-        <&kp SQT &kp SPACE>;
+        <&kp SQT>;
 };

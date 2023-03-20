@@ -1,44 +1,62 @@
-// tap:     `
-m_ai_g: macro_android_int_grave {
-    compatible = "zmk,behavior-macro";
-    label = "m_ai_g";
+mp_ai_a: morph_android_a {
+    compatible = "zmk,behavior-mod-morph";
+    label = "a";
     #binding-cells = <0>;
-    bindings =
-        <&kp GRAVE>;
+    mods = <(MOD_LALT)>;
+    bindings = <&kp A>, <&kp LC(A)>;
+    keep-mods = <(MOD_LALT)>;
 };
 
-// tap:     ~
-m_ai_t: macro_android_int_tilde {
-    compatible = "zmk,behavior-macro";
-    label = "m_ai_t";
+mp_ai_e: morph_android_e {
+    compatible = "zmk,behavior-mod-morph";
+    label = "e";
     #binding-cells = <0>;
-    bindings =
-        <&kp TILDE>;
+    mods = <(MOD_LALT)>;
+    bindings = <&kp E>, <&kp LC(E)>;
+    keep-mods = <(MOD_LALT)>;
 };
 
-// tap:     ^
-m_ai_c: macro_android_int_caret {
-    compatible = "zmk,behavior-macro";
-    label = "m_ai_c";
+mp_ai_i: morph_android_i {
+    compatible = "zmk,behavior-mod-morph";
+    label = "i";
     #binding-cells = <0>;
-    bindings =
-        <&kp CARET>;
+    mods = <(MOD_LALT)>;
+    bindings = <&kp I>, <&kp LC(I)>;
+    keep-mods = <(MOD_LALT)>;
 };
 
-// tap:     "
-m_ai_d: macro_android_int_double_quote {
-    compatible = "zmk,behavior-macro";
-    label = "m_ai_d";
+mp_ai_o: morph_android_o {
+    compatible = "zmk,behavior-mod-morph";
+    label = "o";
     #binding-cells = <0>;
-    bindings =
-        <&kp DQT>;
+    mods = <(MOD_LALT)>;
+    bindings = <&kp O>, <&kp LC(O)>;
+    keep-mods = <(MOD_LALT)>;
 };
 
-// tap:     '
-m_ai_s: macro_android_int_single_quote {
-    compatible = "zmk,behavior-macro";
-    label = "m_ai_single";
+mp_ai_u: morph_android_u {
+    compatible = "zmk,behavior-mod-morph";
+    label = "u";
     #binding-cells = <0>;
-    bindings =
-        <&kp SQT>;
+    mods = <(MOD_LALT)>;
+    bindings = <&kp U>, <&kp LC(U)>;
+    keep-mods = <(MOD_LALT)>;
+};
+
+mp_ai_n: morph_android_n {
+    compatible = "zmk,behavior-mod-morph";
+    label = "n";
+    #binding-cells = <0>;
+    mods = <(MOD_LALT)>;
+    bindings = <&kp N>, <&kp LC(N)>;
+    keep-mods = <(MOD_LALT)>;
+};
+
+mp_ai_y: morph_android_y {
+    compatible = "zmk,behavior-mod-morph";
+    label = "y";
+    #binding-cells = <0>;
+    mods = <(MOD_LALT)>;
+    bindings = <&kp Y>, <&kp LC(Y)>;
+    keep-mods = <(MOD_LALT)>;
 };
