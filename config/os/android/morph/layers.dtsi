@@ -1,0 +1,7 @@
+mp_stg: morph_stg_layer {
+    compatible = "zmk,behavior-mod-morph";
+    label = "mp_stg";
+    #binding-cells = <0>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+    bindings = <&mo_wFNK_to_aBAS>, <&to_wFNK>;
+};

@@ -1,0 +1,62 @@
+to_aBAS_kp: behavior_to_kp {
+    compatible = "zmk,behavior-hold-tap";
+    label = "to_kp";
+    #binding-cells = <2>;
+    flavor = "hold-preferred";
+    tapping-term-ms = <200>;
+    bindings = <&to_aBAS>, <&kp>;
+};
+
+mo_aAXNaBAS_to_aFNK: hold_mo_aAXNaBAS_to_aFNK {
+    compatible = "zmk,behavior-hold-tap";
+    label = "mo_aAXNaBAS_to_aFNK";
+    #binding-cells = <2>;
+    flavor = "hold-preferred";
+    tapping-term-ms = <200>;
+    bindings = <&mo_aAXN_to_aBAS>, <&to_aFNK>;
+};
+
+mo_aAXNaBAS_to_aAXN: hold_mo_aAXNaBAS_to_aAXN {
+    compatible = "zmk,behavior-hold-tap";
+    label = "mo_aAXNaBAS_to_aAXN";
+    #binding-cells = <2>;
+    flavor = "hold-preferred";
+    tapping-term-ms = <200>;
+    bindings = <&mo_aAXN_to_aBAS>, <&to_aAXN>;
+};
+
+mo_aDEVaBAS_to_aDEV: hold_mo_aDEVaBAS_to_aDEV {
+    compatible = "zmk,behavior-hold-tap";
+    label = "mo_aDEVaBAS_to_aDEV";
+    #binding-cells = <2>;
+    flavor = "hold-preferred";
+    tapping-term-ms = <200>;
+    bindings = <&mo_aDEV_to_aBAS>, <&to_aDEV>;
+};
+
+mo_aAXNaDEV_to_aBAS: hold_mo_aAXNaDEV_to_aBAS {
+    compatible = "zmk,behavior-hold-tap";
+    label = "mo_aAXNaDEV_to_aBAS";
+    #binding-cells = <2>;
+    flavor = "hold-preferred";
+    tapping-term-ms = <200>;
+    bindings = <&mo_aAXN_to_aDEV>, <&to_aBAS>;
+};
+
+mo_aAXNaDEV_to_aAXN: hold_mo_aAXNaDEV_to_aAXN {
+    compatible = "zmk,behavior-hold-tap";
+    label = "mo_aAXNaDEV_to_aAXN";
+    #binding-cells = <2>;
+    flavor = "hold-preferred";
+    tapping-term-ms = <200>;
+    bindings = <&mo_aAXN_to_aDEV>, <&to_aAXN>;
+};
+
+mo_aFNKaAXN_to_aFNK: hold_mo_aFNKaAXN_to_aFNK {
+    compatible = "zmk,behavior-hold-tap";
+    label = "mo_aFNK_aAXN_to_aFNK";
+    #binding-cells = <2>;
+    flavor = "hold-preferred";
+    tapping-term-ms = <200>;
+    bindings = <&mo_aFNK_to_aAXN>, <&to_aFNK>;
+};

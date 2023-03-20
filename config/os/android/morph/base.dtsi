@@ -1,0 +1,9 @@
+// tap:     '
+// shift:   "
+mp_kq: morph_key_quote {
+    compatible = "zmk,behavior-mod-morph";
+    label = "mp_kq";
+    #binding-cells = <0>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+    bindings = <&m_i_s>, <&m_i_d>;
+};

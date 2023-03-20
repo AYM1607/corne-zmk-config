@@ -1,0 +1,282 @@
+// tap:         #
+// alt:         °
+mp_d_pound: morph_dev_pound {
+    compatible = "zmk,behavior-mod-morph";
+    label = "mp_d_pound";
+    #binding-cells = <0>;
+    mods = <(MOD_LALT)>;
+    bindings = <&kp POUND>, <&kp LC(LS(SEMICOLON))>;
+    keep-mods = <(MOD_LALT)>;
+};
+
+// tap:         $
+// alt:         €
+mp_d_money: morph_dev_money {
+    compatible = "zmk,behavior-mod-morph";
+    label = "mp_d_money";
+    #binding-cells = <0>;
+    mods = <(MOD_LALT)>;
+    bindings = <&kp DLLR>, <&kp LC(N5)>;
+    keep-mods = <(MOD_LALT)>;
+};
+
+// tap:         [
+// alt:         «
+mp_d_lb: morph_dev_left_brackets {
+    compatible = "zmk,behavior-mod-morph";
+    label = "mp_d_lb";
+    #binding-cells = <0>;
+    mods = <(MOD_LALT)>;
+    bindings = <&kp LBKT>, <&kp LC(LBKT)>;
+    keep-mods = <(MOD_LALT)>;
+};
+
+// tap:         ]
+// alt:         »
+mp_r_lb: morph_dev_right_brackets {
+    compatible = "zmk,behavior-mod-morph";
+    label = "mp_r_lb";
+    #binding-cells = <0>;
+    mods = <(MOD_LALT)>;
+    bindings = <&kp RBKT>, <&kp LC(RBKT)>;
+    keep-mods = <(MOD_LALT)>;
+};
+
+// tap:         *
+// shift:       *=
+// alt:         **
+mp_d_a_a: morph_dev_asterisk_alt {
+    compatible = "zmk,behavior-mod-morph";
+    label = "mp_d_a_a";
+    #binding-cells = <0>;
+    mods = <(MOD_LALT)>;
+    bindings = <&kp ASTRK>, <&m_d_eo>;
+    keep-mods = <(MOD_LALT)>;
+};
+mp_d_a: morph_dev_asterisk {
+    compatible = "zmk,behavior-mod-morph";
+    label = "mp_d_a";
+    #binding-cells = <0>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+    bindings = <&mp_d_a_a>, <&m_d_ma>;
+};
+
+// tap:         +
+// shift:       +=
+// alt:         ++
+mp_d_p_a: morph_dev_plus_alt {
+    compatible = "zmk,behavior-mod-morph";
+    label = "mp_d_p_a";
+    #binding-cells = <0>;
+    mods = <(MOD_LALT)>;
+    bindings = <&kp PLUS>, <&m_d_io>;
+    keep-mods = <(MOD_LALT)>;
+};
+mp_d_p: morph_dev_plus {
+    compatible = "zmk,behavior-mod-morph";
+    label = "mp_d_p";
+    #binding-cells = <0>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+    bindings = <&mp_d_p_a>, <&m_d_as>;
+};
+
+// tap:         -
+// shift:       -=
+// alt:         --
+mp_d_m_a: morph_dev_minus_alt {
+    compatible = "zmk,behavior-mod-morph";
+    label = "mp_d_m_a";
+    #binding-cells = <0>;
+    mods = <(MOD_LALT)>;
+    bindings = <&kp MINUS>, <&m_d_do>;
+    keep-mods = <(MOD_LALT)>;
+};
+mp_d_m: morph_dev_minus {
+    compatible = "zmk,behavior-mod-morph";
+    label = "mp_d_m";
+    #binding-cells = <0>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+    bindings = <&mp_d_m_a>, <&m_d_sa>;
+};
+
+// tap:         =
+// shift:       ===
+// alt:         =>
+mp_d_e_a: morph_dev_equal_alt {
+    compatible = "zmk,behavior-mod-morph";
+    label = "mp_d_e_a";
+    #binding-cells = <0>;
+    mods = <(MOD_LALT)>;
+    bindings = <&kp EQUAL>, <&m_d_a>;
+    keep-mods = <(MOD_LALT)>;
+};
+mp_d_e: morph_dev_equal {
+    compatible = "zmk,behavior-mod-morph";
+    label = "mp_d_e";
+    #binding-cells = <0>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+    bindings = <&mp_d_e_a>, <&m_d_se>;
+};
+
+// tap:         /
+// shift:       /=
+// ctrl:        // line comment
+// alt:         /* block comment *
+mp_d_s_s: morph_dev_slash_shift {
+    compatible = "zmk,behavior-mod-morph";
+    label = "mp_d_s_s";
+    #binding-cells = <0>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+    bindings = <&kp FSLH>, <&m_d_da>;
+};
+mp_d_s: morph_dev_slash {
+    compatible = "zmk,behavior-mod-morph";
+    label = "mp_d_s";
+    #binding-cells = <0>;
+    mods = <(MOD_LALT)>;
+    bindings = <&mp_d_s_s>, <&kp LS(A)>;
+    keep-mods = <(MOD_LALT)>;
+};
+
+// tap:         &
+// shift:       &&=
+// alt:         &&
+mp_d_lao_a: morph_dev_logical_and_operator_alt {
+    compatible = "zmk,behavior-mod-morph";
+    label = "mp_d_lao_a";
+    #binding-cells = <0>;
+    mods = <(MOD_LALT)>;
+    bindings = <&kp AMPS>, <&m_d_la>;
+    keep-mods = <(MOD_LALT)>;
+};
+mp_d_lao: morph_dev_logical_and_operator {
+    compatible = "zmk,behavior-mod-morph";
+    label = "mp_d_lao";
+    #binding-cells = <0>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+    bindings = <&mp_d_lao_a>, <&m_d_laa>;
+};
+
+// tap:         |
+// shift:       ||=
+// alt:         ||
+mp_d_loo_a: morph_dev_logical_or_operator_alt {
+    compatible = "zmk,behavior-mod-morph";
+    label = "mp_d_loo_a";
+    #binding-cells = <0>;
+    mods = <(MOD_LALT)>;
+    bindings = <&kp PIPE>, <&m_d_lo>;
+    keep-mods = <(MOD_LALT)>;
+};
+mp_d_loo: morph_dev_logical_or_operator {
+    compatible = "zmk,behavior-mod-morph";
+    label = "mp_d_loo";
+    #binding-cells = <0>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+    bindings = <&mp_d_loo_a>, <&m_d_loa>;
+};
+
+// tap:         ?
+// shift:       ??=
+// alt:         ¿
+// alt+shift:   ??
+mp_d_qs_as: morph_dev_question_symbol_alt_shift {
+    compatible = "zmk,behavior-mod-morph";
+    label = "mp_d_qs_as";
+    #binding-cells = <0>;
+    mods = <(MOD_LALT)>;
+    bindings = <&m_d_nca>, <&m_d_nco>;
+    keep-mods = <(MOD_LALT)>;
+};
+mp_d_qs_a: morph_dev_question_symbol_alt {
+    compatible = "zmk,behavior-mod-morph";
+    label = "mp_d_qs_a";
+    #binding-cells = <0>;
+    mods = <(MOD_LALT)>;
+    bindings = <&kp QMARK>, <&kp LC(FSLH)>;
+    keep-mods = <(MOD_LALT)>;
+};
+mp_d_qs: morph_dev_question_symbol {
+    compatible = "zmk,behavior-mod-morph";
+    label = "mp_d_qs";
+    #binding-cells = <0>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+    bindings = <&mp_d_qs_a>, <&mp_d_qs_as>;
+    keep-mods = <(MOD_LSFT|MOD_RSFT)>;
+};
+
+// tap:         !
+// shift:       !==
+// alt:         ¡
+// alt+shift:   !!
+mp_d_es_as: morph_dev_exclamation_symbol_alt_shift {
+    compatible = "zmk,behavior-mod-morph";
+    label = "mp_d_es_as";
+    #binding-cells = <0>;
+    mods = <(MOD_LALT)>;
+    bindings = <&m_d_si>, <&m_d_dno>;
+    keep-mods = <(MOD_LALT)>;
+};
+mp_d_es_a: morph_dev_exclamation_symbol_alt {
+    compatible = "zmk,behavior-mod-morph";
+    label = "mp_d_es_a";
+    #binding-cells = <0>;
+    mods = <(MOD_LALT)>;
+    bindings = <&kp EXCL>, <&kp LC(N1)>;
+    keep-mods = <(MOD_LALT)>;
+};
+mp_d_es: morph_dev_exclamation_symbol {
+    compatible = "zmk,behavior-mod-morph";
+    label = "mp_d_es";
+    #binding-cells = <0>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+    bindings = <&mp_d_es_a>, <&mp_d_es_as>;
+};
+
+// tap:         ?.
+// shift:       ?░:░
+mp_d_ql: morph_dev_question_logical {
+    compatible = "zmk,behavior-mod-morph";
+    label = "mp_d_ql";
+    #binding-cells = <0>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+    bindings = <&m_d_oco>, <&m_d_cto>;
+};
+
+// tap:         <
+// shift:       <=
+// alt:         <░/> /* html void tag */
+mp_d_lt_s: morph_dev_lower_than_shift {
+    compatible = "zmk,behavior-mod-morph";
+    label = "mp_d_lt_s";
+    #binding-cells = <0>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+    bindings = <&kp LT>, <&m_d_ltoet>;
+};
+mp_d_lt: morph_dev_lower_than {
+    compatible = "zmk,behavior-mod-morph";
+    label = "mp_d_lt";
+    #binding-cells = <0>;
+    mods = <(MOD_LALT)>;
+    bindings = <&mp_d_lt_s>, <&m_d_hvt>;
+    keep-mods = <(MOD_LALT)>;
+};
+
+// tap:         >
+// shift:       >=
+// alt:         </░> /* html close tag */
+mp_d_gt_s: morph_dev_greater_than_shift {
+    compatible = "zmk,behavior-mod-morph";
+    label = "mp_d_gt_s";
+    #binding-cells = <0>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+    bindings = <&kp GT>, <&m_d_gtoet>;
+};
+mp_d_gt: morph_dev_greater_than {
+    compatible = "zmk,behavior-mod-morph";
+    label = "mp_d_gt";
+    #binding-cells = <0>;
+    mods = <(MOD_LALT)>;
+    bindings = <&mp_d_gt_s>, <&m_d_hct>;
+    keep-mods = <(MOD_LALT)>;
+};

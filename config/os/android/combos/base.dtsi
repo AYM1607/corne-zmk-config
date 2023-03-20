@@ -1,0 +1,13 @@
+combo_android_caps-word {
+    bindings = <&&cw>;
+    key-positions = <16 19>;
+    slow-release;
+    layers = <aBAS>;
+};
+
+combo_android_cancel-caps {
+    bindings = <&cw_OFF>;
+    key-positions = <14 21>;
+    slow-release;
+    layers = <aBAS>;
+};

@@ -24,4 +24,5 @@
 #define NAV_DEL     &mt          LC(DEL)   DEL    // tap: del       | long-tap: delete word forward
 
 #include "os/win/keymap.dtsi"
+#include "os/android/keymap.dtsi"
 

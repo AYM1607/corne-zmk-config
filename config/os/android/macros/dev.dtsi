@@ -1,0 +1,272 @@
+// write: **
+m_d_eo: macro_dev_exponentiation_operator {
+    compatible = "zmk,behavior-macro";
+    label = "m_d_eo";
+    #binding-cells = <0>;
+    wait-ms = <400>;
+    bindings
+        = <&none &kp LALT> /* ALT fix for VSCode */
+        , <&macro_wait_time 100>
+        , <&kp ASTRK &kp ASTRK>;
+};
+
+// write: *=
+m_d_ma: macro_dev_multiplication_assignment {
+    compatible = "zmk,behavior-macro";
+    label = "m_d_ma";
+    #binding-cells = <0>;
+    wait-ms = <400>;
+    bindings
+        = <&none>
+        , <&macro_wait_time 100>
+        , <&kp ASTRK &kp EQUAL>;
+};
+
+// write: /=
+m_d_da: macro_dev_division_assignment {
+    compatible = "zmk,behavior-macro";
+    label = "m_d_da";
+    #binding-cells = <0>;
+    wait-ms = <400>;
+    bindings
+        = <&none>
+        , <&macro_wait_time 100>
+        , <&kp FSLH &kp EQUAL>;
+};
+
+// write: ++
+m_d_io: macro_dev_increment_operator {
+    compatible = "zmk,behavior-macro";
+    label = "m_d_io";
+    #binding-cells = <0>;
+    wait-ms = <400>;
+    bindings
+        = <&none &kp LALT> /* ALT fix for VSCode */
+        , <&macro_wait_time 100>
+        , <&kp PLUS &kp PLUS>;
+};
+
+// write: +=
+m_d_as: macro_dev_addition_assignment {
+    compatible = "zmk,behavior-macro";
+    label = "m_d_as";
+    #binding-cells = <0>;
+    wait-ms = <400>;
+    bindings
+        = <&none>
+        , <&macro_wait_time 100>
+        , <&kp PLUS &kp EQUAL>;
+};
+
+// write: --
+m_d_do: macro_dev_decrement_operator {
+    compatible = "zmk,behavior-macro";
+    label = "m_d_do";
+    #binding-cells = <0>;
+    wait-ms = <400>;
+    bindings
+        = <&none &kp LALT> /* ALT fix for VSCode */
+        , <&macro_wait_time 100>
+        , <&kp MINUS &kp MINUS>;
+};
+
+// write: -=
+m_d_sa: macro_dev_subtraction_assignment {
+    compatible = "zmk,behavior-macro";
+    label = "m_d_sa";
+    #binding-cells = <0>;
+    wait-ms = <400>;
+    bindings
+        = <&none>
+        , <&macro_wait_time 100>
+        , <&kp MINUS &kp EQUAL>;
+};
+
+// write: =>
+m_d_a: macro_dev_arrow {
+    compatible = "zmk,behavior-macro";
+    label = "m_d_a";
+    #binding-cells = <0>;
+    wait-ms = <400>;
+    bindings
+        = <&none &kp LALT> /* ALT fix for VSCode */
+        , <&macro_wait_time 100>
+        , <&kp EQUAL &kp GT>;
+};
+
+// write: &&
+m_d_la: macro_dev_logical_and {
+    compatible = "zmk,behavior-macro";
+    label = "m_d_la";
+    #binding-cells = <0>;
+    wait-ms = <400>;
+    bindings
+        = <&none &kp LALT> /* ALT fix for VSCode */
+        , <&macro_wait_time 100>
+        , <&kp AMPS &kp AMPS>;
+};
+
+// write: &&=
+m_d_laa: macro_dev_logical_and_assignment {
+    compatible = "zmk,behavior-macro";
+    label = "m_d_laa";
+    #binding-cells = <0>;
+    wait-ms = <400>;
+    bindings
+        = <&none>
+        , <&macro_wait_time 100>
+        , <&kp AMPS &kp AMPS &kp EQUAL>;
+};
+
+// write: ||
+m_d_lo: macro_dev_logical_or {
+    compatible = "zmk,behavior-macro";
+    label = "m_d_lo";
+    #binding-cells = <0>;
+    wait-ms = <400>;
+    bindings
+        = <&none &kp LALT> /* ALT fix for VSCode */
+        , <&macro_wait_time 100>
+        , <&kp PIPE &kp PIPE>;
+};
+
+// write: ||=
+m_d_loa: macro_dev_logical_or_assignment {
+    compatible = "zmk,behavior-macro";
+    label = "m_d_loa";
+    #binding-cells = <0>;
+    wait-ms = <400>;
+    bindings
+        = <&none>
+        , <&macro_wait_time 100>
+        , <&kp PIPE &kp PIPE &kp EQUAL>;
+};
+
+// write: ?░:░
+m_d_cto: macro_conditional_ternary_operator {
+    compatible = "zmk,behavior-macro";
+    label = "m_d_cto";
+    #binding-cells = <0>;
+    bindings
+        = <&kp QMARK &kp SPACE &kp SPACE &kp COLON &kp SPACE>
+        , <&kp LEFT &kp LEFT &kp LEFT>;
+};
+
+// write: ?.
+m_d_oco: macro_optional_chaining_operator {
+    compatible = "zmk,behavior-macro";
+    label = "m_d_oco";
+    #binding-cells = <0>;
+    bindings
+        = <&kp QMARK &kp DOT>;
+};
+
+// write: ??
+m_d_nco: macro_nullish_coalescing_operator {
+    compatible = "zmk,behavior-macro";
+    label = "m_d_nco";
+    #binding-cells = <0>;
+    wait-ms = <400>;
+    bindings
+        = <&none>
+        , <&macro_wait_time 100>
+        , <&kp QMARK &kp QMARK>;
+};
+
+// write: ??=
+m_d_nca: macro_nullish_coalescing_assignment {
+    compatible = "zmk,behavior-macro";
+    label = "m_d_nca";
+    #binding-cells = <0>;
+    wait-ms = <400>;
+    bindings
+        = <&none>
+        , <&macro_wait_time 100>
+        , <&kp QMARK &kp QMARK &kp EQUAL>;
+};
+
+// write: ===
+m_d_se: macro_strict_equality {
+    compatible = "zmk,behavior-macro";
+    label = "m_d_se";
+    #binding-cells = <0>;
+    wait-ms = <400>;
+    bindings
+        = <&none>
+        , <&macro_wait_time 100>
+        , <&kp EQUAL &kp EQUAL &kp EQUAL>;
+};
+
+// write: !!
+m_d_dno: macro_double_not_operator {
+    compatible = "zmk,behavior-macro";
+    label = "m_d_dno";
+    #binding-cells = <0>;
+    wait-ms = <400>;
+    bindings
+        = <&none>
+        , <&macro_wait_time 100>
+        , <&kp EXCL &kp EXCL>;
+};
+
+// write: !==
+m_d_si: macro_strict_inequality {
+    compatible = "zmk,behavior-macro";
+    label = "m_d_si";
+    #binding-cells = <0>;
+    wait-ms = <400>;
+    bindings
+        = <&none>
+        , <&macro_wait_time 100>
+        , <&kp EXCL &kp EQUAL &kp EQUAL>;
+};
+
+// write: <░/>
+m_d_hvt: macro_dev_html_void_tag {
+    compatible = "zmk,behavior-macro";
+    label = "m_d_hvt";
+    #binding-cells = <0>;
+    wait-ms = <400>;
+    bindings
+        = <&none &kp LALT> /* ALT fix for VSCode */
+        , <&macro_wait_time 100>
+        , <&kp LT &kp FSLH &kp GT>
+        , <&kp LEFT &kp LEFT>;
+};
+
+// write: <=
+m_d_ltoet: macro_dev_less_than_or_equal_to {
+    compatible = "zmk,behavior-macro";
+    label = "m_d_ltoet";
+    #binding-cells = <0>;
+    wait-ms = <400>;
+    bindings
+        = <&none>
+        , <&macro_wait_time 100>
+        , <&kp LT &kp EQUAL>;
+};
+
+// write: </░>
+m_d_hct: macro_dev_html_close_tag {
+    compatible = "zmk,behavior-macro";
+    label = "m_d_hct";
+    #binding-cells = <0>;
+    wait-ms = <400>;
+    bindings
+        = <&none &kp LALT> /* ALT fix for VSCode */
+        , <&macro_wait_time 100>
+        , <&kp LT &kp FSLH &kp GT>
+        , <&kp LEFT>;
+};
+
+// write: >=
+m_d_gtoet: macro_dev_greater_than_or_equal_to {
+    compatible = "zmk,behavior-macro";
+    label = "m_d_gtoet";
+    #binding-cells = <0>;
+    wait-ms = <400>;
+    bindings
+        = <&none>
+        , <&macro_wait_time 100>
+        , <&kp GT &kp EQUAL>;
+};
