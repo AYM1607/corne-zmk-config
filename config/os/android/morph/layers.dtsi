@@ -1,7 +1,7 @@
-mp_w_stg: morph_win_stg_layer {
+mp_a_stg: morph_android_stg_layer {
     compatible = "zmk,behavior-mod-morph";
-    label = "mp_w_stg";
+    label = "mp_a_stg";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&mo_wSTG_to_wBAS>, <&to_wSTG>;
+    bindings = <&mo aSTG>, <&to aSTG>;
 };

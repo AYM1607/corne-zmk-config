@@ -52,7 +52,7 @@
             #define WB21  &hm_b_rctrl RCTRL  0  //I
             #define WB22  &hm_b_rcmd  RCMD   0  //O
 
-            #define WB35  &mp_stg
+            #define WB35  &mp_w_stg
 
             #define WB36  &mo_wDEVwBAS_to_wDEV  0 0
             #define WB38  &mo_wAXNwBAS_to_wAXN  0 0

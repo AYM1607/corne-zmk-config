@@ -5,14 +5,6 @@ cw: caps_word {
     continue-list = <UNDERSCORE MINUS BACKSPACE DEL>;
 };
 
-mp_moto: morph_moto {
-    compatible = "zmk,behavior-mod-morph";
-    label = "mp_moto";
-    #binding-cells = <0>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&mo>, <&to>;
-};
-
 // tap:     BACKSPACE
 // shift:   CAPS_LOCK
 mp_bc: morph_backspace_caps {
