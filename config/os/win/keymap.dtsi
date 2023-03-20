@@ -1,12 +1,7 @@
+#include "../all/layers.dtsi"
+
 /* Layers */
-#define wBAS    00
-#define wDEV    01
-#define wAXN    02
-#define wFNK    03
-#define wSTG    04
-
 #define H_wCWR   F18
-
 #define F_wBAS  F19
 #define F_wDEV  F20
 #define F_wAXN  F21

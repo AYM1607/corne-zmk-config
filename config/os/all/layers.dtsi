@@ -1,0 +1,13 @@
+/* Windows */
+#define wBAS    00
+#define wDEV    01
+#define wAXN    02
+#define wFNK    03
+#define wSTG    04
+
+/* Android */
+#define aBAS    10
+#define aDEV    11
+#define aAXN    12
+#define aFNK    13
+#define wFNK    14
