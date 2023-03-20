@@ -6,7 +6,7 @@ hm_b_lcmd: behavior_base_lcmd {
     quick-tap-ms = <200>;
     flavor = "hold-preferred";
     global-quick-tap;
-    bindings = <&kp>, <&mp_wi_a>;
+    bindings = <&kp>, <&mp_i_a>;
 };
 
 hm_b_rshf: behavior_base_rshf {
@@ -17,7 +17,7 @@ hm_b_rshf: behavior_base_rshf {
     quick-tap-ms = <200>;
     flavor = "hold-preferred";
     global-quick-tap;
-    bindings = <&kp>, <&mp_wi_n>;
+    bindings = <&kp>, <&mp_i_n>;
 };
 
 hm_b_ralt: behavior_base_ralt {
@@ -28,7 +28,7 @@ hm_b_ralt: behavior_base_ralt {
     quick-tap-ms = <200>;
     flavor = "hold-preferred";
     global-quick-tap;
-    bindings = <&kp>, <&mp_wi_e>;
+    bindings = <&kp>, <&mp_i_e>;
 };
 
 hm_b_rctrl: behavior_base_rctrl {
@@ -39,7 +39,7 @@ hm_b_rctrl: behavior_base_rctrl {
     quick-tap-ms = <200>;
     flavor = "hold-preferred";
     global-quick-tap;
-    bindings = <&kp>, <&mp_wi_i>;
+    bindings = <&kp>, <&mp_i_i>;
 };
 
 hm_b_rcmd: behavior_base_rcmd {
@@ -50,5 +50,5 @@ hm_b_rcmd: behavior_base_rcmd {
     quick-tap-ms = <200>;
     flavor = "hold-preferred";
     global-quick-tap;
-    bindings = <&kp>, <&mp_wi_o>;
+    bindings = <&kp>, <&mp_i_o>;
 };
