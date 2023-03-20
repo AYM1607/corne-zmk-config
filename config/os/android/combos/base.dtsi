@@ -1,5 +1,5 @@
 combo_android_caps-word {
-    bindings = <&&cw>;
+    bindings = <&cw>;
     key-positions = <16 19>;
     slow-release;
     layers = <aBAS>;
