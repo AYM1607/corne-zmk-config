@@ -8,7 +8,7 @@
         #include "../all/morph/base.dtsi"
         #include "morph/int.dtsi"
         #include "morph/actions.dtsi"
-       #include "../all/morph/num.dtsi"
+        #include "../all/morph/num.dtsi"
         #include "morph/dev.dtsi"
 
         #include "../all/hold/shared.dtsi"
