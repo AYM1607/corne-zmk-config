@@ -4,7 +4,7 @@ to_aBAS_kp: behavior_to_kp {
     #binding-cells = <2>;
     flavor = "hold-preferred";
     tapping-term-ms = <200>;
-    bindings = <&to_aBAS>, <&kp>;
+    bindings = <&to aBAS>, <&kp>;
 };
 
 mo_aAXNaBAS_to_aFNK: hold_mo_aAXNaBAS_to_aFNK {
@@ -13,7 +13,7 @@ mo_aAXNaBAS_to_aFNK: hold_mo_aAXNaBAS_to_aFNK {
     #binding-cells = <2>;
     flavor = "hold-preferred";
     tapping-term-ms = <200>;
-    bindings = <&mo_aAXN_to_aBAS>, <&to_aFNK>;
+    bindings = <&mo aAXN>, <&to aFNK>;
 };
 
 mo_aAXNaBAS_to_aAXN: hold_mo_aAXNaBAS_to_aAXN {
@@ -22,7 +22,7 @@ mo_aAXNaBAS_to_aAXN: hold_mo_aAXNaBAS_to_aAXN {
     #binding-cells = <2>;
     flavor = "hold-preferred";
     tapping-term-ms = <200>;
-    bindings = <&mo_aAXN_to_aBAS>, <&to_aAXN>;
+    bindings = <&mo aAXN>, <&to aAXN>;
 };
 
 mo_aDEVaBAS_to_aDEV: hold_mo_aDEVaBAS_to_aDEV {
@@ -31,7 +31,7 @@ mo_aDEVaBAS_to_aDEV: hold_mo_aDEVaBAS_to_aDEV {
     #binding-cells = <2>;
     flavor = "hold-preferred";
     tapping-term-ms = <200>;
-    bindings = <&mo_aDEV_to_aBAS>, <&to_aDEV>;
+    bindings = <&mo aDEV>, <&to aDEV>;
 };
 
 mo_aAXNaDEV_to_aBAS: hold_mo_aAXNaDEV_to_aBAS {
@@ -40,7 +40,7 @@ mo_aAXNaDEV_to_aBAS: hold_mo_aAXNaDEV_to_aBAS {
     #binding-cells = <2>;
     flavor = "hold-preferred";
     tapping-term-ms = <200>;
-    bindings = <&mo_aAXN_to_aDEV>, <&to_aBAS>;
+    bindings = <&mo aAXN>, <&to aBAS>;
 };
 
 mo_aAXNaDEV_to_aAXN: hold_mo_aAXNaDEV_to_aAXN {
@@ -49,7 +49,7 @@ mo_aAXNaDEV_to_aAXN: hold_mo_aAXNaDEV_to_aAXN {
     #binding-cells = <2>;
     flavor = "hold-preferred";
     tapping-term-ms = <200>;
-    bindings = <&mo_aAXN_to_aDEV>, <&to_aAXN>;
+    bindings = <&mo aAXN>, <&to aAXN>;
 };
 
 mo_aFNKaAXN_to_aFNK: hold_mo_aFNKaAXN_to_aFNK {
@@ -58,5 +58,5 @@ mo_aFNKaAXN_to_aFNK: hold_mo_aFNKaAXN_to_aFNK {
     #binding-cells = <2>;
     flavor = "hold-preferred";
     tapping-term-ms = <200>;
-    bindings = <&mo_aFNK_to_aAXN>, <&to_aFNK>;
+    bindings = <&mo aFNK>, <&to aFNK>;
 };
