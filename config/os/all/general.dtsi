@@ -6,6 +6,8 @@
     hold-trigger-key-positions = <0>;   // tap on interrupt
 };
 
+#include "keys.dtsi"
+
 / {
     behaviors {
         #include "../all/morph/shared.dtsi"

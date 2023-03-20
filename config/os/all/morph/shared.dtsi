@@ -13,9 +13,11 @@ mp_moto: morph_moto {
     bindings = <&mo>, <&to>;
 };
 
+// tap:     BACKSPACE
+// shift:   CAPS_LOCK
 mp_bc: morph_backspace_caps {
     compatible = "zmk,behavior-mod-morph";
-    label = "BACKSPACE CAPS_LOCK";
+    label = "mp_bc";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
     bindings = <NAV_BSPC>, <&kp CLCK>;
