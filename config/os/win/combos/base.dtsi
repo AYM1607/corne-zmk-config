@@ -2,12 +2,12 @@ combo_win_caps-word {
     bindings = <&cw_ON>;
     key-positions = <16 19>;
     slow-release;
-    layers = <BAS>;
+    layers = <wBAS>;
 };
 
 combo_win_cancel-caps {
     bindings = <&cw_OFF>;
     key-positions = <14 21>;
     slow-release;
-    layers = <BAS>;
+    layers = <wBAS>;
 };

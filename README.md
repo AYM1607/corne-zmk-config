@@ -15,10 +15,10 @@ This is a WIP layout based on Colemak DHm for using on Windows (with **en-US Int
 - [Keyboard](#keyboard)
   - [Conventions](#conventions)
   - [Layers](#layers)
-    - [0. BAS](#0-bas)
-    - [1. DEV](#1-dev)
-    - [2. AXN](#2-axn)
-    - [3. STG](#3-stg)
+    - [0. wBAS](#0-wbas)
+    - [1. wDEV](#1-wdev)
+    - [2. wAXN](#2-waxn)
+    - [3. wSTG](#3-wstg)
 - [Usage](#usage)
   - [Turn on/off](#turn-onoff)
   - [Charge](#charge)
@@ -70,11 +70,11 @@ Icons used to describe some modifiers and actions
 
 ### Layers
 
-#### 0. BAS
+#### 0. wBAS
 
 Letters, accents for Spanish language and quick shortcuts for most used symbols to "avoid" changing layers.
 
-![BAS Layer](./.github/images/layers/BAS.png)
+![wBAS Layer](./.github/images/layers/wBAS.png)
 
 ##### Spanish
 
@@ -95,11 +95,11 @@ Letters, accents for Spanish language and quick shortcuts for most used symbols 
 | <kbd>ñ</kbd> | <kbd>⌥</kbd>+<kbd>n</kbd>               | <kbd>⌥</kbd>+<kbd>n</kbd> + <kbd>n</kbd>              |
 | <kbd>Ñ</kbd> | <kbd>⇧</kbd>+<kbd>⌥</kbd>+<kbd>n</kbd>  | <kbd>⌥</kbd>+<kbd>n</kbd> + <kbd>⇧</kbd>+<kbd>n</kbd> |
 
-#### 1. DEV
+#### 1. wDEV
 
 Symbols and dev shortcuts for JS/TS.
 
-![DEV Layer](./.github/images/layers/DEV.png)
+![wDEV Layer](./.github/images/layers/wDEV.png)
 
 ##### Symbols
 
@@ -158,11 +158,11 @@ Symbols and dev shortcuts for JS/TS.
 | <kbd>//</kbd>     | <kbd>⌃</kbd>+<kbd>/</kbd>               | Toggle line comment         |
 | <kbd>/\* \*/</kbd>  | <kbd>⇧</kbd>+<kbd>/</kbd>               | Toggle block comment        |
 
-#### 2. AXN
+#### 2. wAXN
 
 Quick navigation actions and numbers. Function keys works independently as a sub-layer to avoid shortcuts collisions.
 
-![AXN Layer](./.github/images/layers/AXN.png)
+![wAXN Layer](./.github/images/layers/wAXN.png)
 
 ##### Navigation
 
@@ -199,11 +199,11 @@ Quick navigation actions and numbers. Function keys works independently as a sub
 | <kbd>☉</kbd> |                             | Find                |
 | <kbd>☊</kbd> | <kbd>⇧</kbd>+<kbd>☉</kbd>  | Replace             |
 
-#### 3. STG
+#### 3. wSTG
 
 Dedicated to Bluetooth and media controls.
 
-![STG Layer](./.github/images/layers/STG.png)
+![wSTG Layer](./.github/images/layers/wSTG.png)
 
 ##### Actions
 

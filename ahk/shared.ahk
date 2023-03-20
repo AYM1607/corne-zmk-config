@@ -1,6 +1,6 @@
 ﻿ChangeIcon(lyr)
 {
-    ico := "../.github/images/icons/" lyr ".png"
+    ico := "../.github/images/icons/w" lyr ".png"
 
 
     if (lyr = "KBD") {
@@ -69,7 +69,7 @@ ShowHelp(lyr)
     showGui := Gui()
     showGui.Hide()
 
-    img := "../.github/images/layers/" . lyr . ".png"
+    img := "../.github/images/layers/w" . lyr . ".png"
     msg := lyr . " Layer"
 
     height := 525

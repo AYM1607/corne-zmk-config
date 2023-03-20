@@ -16,12 +16,12 @@
 };
 
 /* Shared Keys */
-#define KEY_ESC     &to_BAS_kp  0         ESC    // tap: esc       | long-tap: BAS layer
-#define KEY_TAB     &mt         RIGHT     TAB    // tap: tab       | long-tap: right (terminal autocompletion)
-#define KEY_RET     &mt         F2        RET    // tap: return    | long-tap: rename (like macOs)
-#define KEY_SPC     &kp         SPACE
-#define NAV_BSPC    &mt         LC(BSPC)  BSPC   // tap: bspc      | long-tap: delete word backward
-#define NAV_DEL     &mt         LC(DEL)   DEL    // tap: del       | long-tap: delete word forward
+#define KEY_ESC     &to_wBAS_kp  0         ESC    // tap: esc       | long-tap: ww layer
+#define KEY_TAB     &mt          RIGHT     TAB    // tap: tab       | long-tap: right (terminal autocompletion)
+#define KEY_RET     &mt          F2        RET    // tap: return    | long-tap: rename (like macOs)
+#define KEY_SPC     &kp          SPACE
+#define NAV_BSPC    &mt          LC(BSPC)  BSPC   // tap: bspc      | long-tap: delete word backward
+#define NAV_DEL     &mt          LC(DEL)   DEL    // tap: del       | long-tap: delete word forward
 
 #include "os/win/keymap.dtsi"
 

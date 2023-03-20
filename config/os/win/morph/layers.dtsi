@@ -3,5 +3,5 @@ mp_stg: morph_stg_layer {
     label = "mp_stg";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&mo_STG_to_BAS>, <&to_STG>;
+    bindings = <&mo_wSTG_to_wBAS>, <&to_wSTG>;
 };
