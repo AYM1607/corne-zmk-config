@@ -1,8 +1,8 @@
 // tap:     '
 // shift:   "
-mp_kq: morph_key_quote {
+mp_ak_q: morph_android_key_quote {
     compatible = "zmk,behavior-mod-morph";
-    label = "mp_kq";
+    label = "mp_wk_q";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
     bindings = <&m_ai_s>, <&m_ai_d>;
