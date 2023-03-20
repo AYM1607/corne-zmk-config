@@ -1,11 +1,11 @@
-combo_caps-word {
+combo_win_caps-word {
     bindings = <&cw_ON>;
     key-positions = <16 19>;
     slow-release;
     layers = <BAS>;
 };
 
-combo_cancel-caps {
+combo_win_cancel-caps {
     bindings = <&cw_OFF>;
     key-positions = <14 21>;
     slow-release;

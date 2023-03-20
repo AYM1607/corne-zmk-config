@@ -1,32 +1,32 @@
-combo_help-BAS {
+combo_win_help-BAS {
     bindings = <&kp LC(LA(LS(F_BAS)))>;
     key-positions = <13 22>;
     slow-release;
     layers = <BAS>;
 };
 
-combo_help-DEV {
+combo_win_help-DEV {
     bindings = <&kp LC(LA(LS(F_DEV)))>;
     key-positions = <13 22>;
     slow-release;
     layers = <DEV>;
 };
 
-combo_help-AXN {
+combo_win_help-AXN {
     bindings = <&kp LC(LA(LS(F_AXN)))>;
     key-positions = <13 22>;
     slow-release;
     layers = <AXN>;
 };
 
-combo_help-FNK {
+combo_win_help-FNK {
     bindings = <&kp LC(LA(LS(F_FNK)))>;
     key-positions = <13 22>;
     slow-release;
     layers = <FNK>;
 };
 
-combo_help-STG {
+combo_win_help-STG {
     bindings = <&kp LC(LA(LS(F_STG)))>;
     key-positions = <13 22>;
     slow-release;
