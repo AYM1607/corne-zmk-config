@@ -23,7 +23,7 @@
         #include "morph/num.dtsi"
         #include "morph/dev.dtsi"
 
-        #include "../os/all/hold/shared.dtsi"
+        #include "../all/hold/shared.dtsi"
         #include "hold/layers.dtsi"
         #include "hold/base.dtsi"
         #include "hold/dev.dtsi"
