@@ -47,7 +47,7 @@ mp_r_lb: morph_dev_right_brackets {
 // alt:         **
 mp_d_a_a: morph_dev_asterisk_alt {
     compatible = "zmk,behavior-mod-morph";
-    label = "";
+    label = "mp_d_a_a";
     #binding-cells = <0>;
     mods = <(MOD_LALT)>;
     bindings = <&kp ASTRK>, <&m_d_eo>;

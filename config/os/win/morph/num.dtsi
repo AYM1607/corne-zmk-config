@@ -1,6 +1,8 @@
+// tap:     -
+// shift:   _
 mp_k_m: morph_key_minus {
     compatible = "zmk,behavior-mod-morph";
-    label = "- _";
+    label = "mp_k_m";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
     bindings = <&kp MINUS>, <&kp UNDER>;

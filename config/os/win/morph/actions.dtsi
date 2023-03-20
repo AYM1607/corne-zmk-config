@@ -1,14 +1,18 @@
+// tap:     ⇺
+// shift:   ⎗
 mp_a_prev: morph_action_prev {
     compatible = "zmk,behavior-mod-morph";
-    label = "⇺ ⎗";
+    label = "mp_a_prev";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
     bindings = <&kp RC(PG_UP)>, <&kp LC(LG(LEFT))>;
 };
 
+// tap:     ⇻
+// shift:   ⎘
 mp_a_next: morph_action_next {
     compatible = "zmk,behavior-mod-morph";
-    label = "⇻ ⎘";
+    label = "mp_a_next";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
     bindings = <&kp RC(PG_DN)>, <&kp LC(LG(RIGHT))>;

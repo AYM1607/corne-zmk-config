@@ -13,17 +13,21 @@ mp_bc: morph_backspace_caps {
     bindings = <NAV_BSPC>, <&kp CLCK>;
 };
 
+// tap:     ,
+// shift:   ;
 mp_cs: morph_comma_semi {
     compatible = "zmk,behavior-mod-morph";
-    label = ", ;";
+    label = "mp_cs";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
     bindings = <&kp COMMA>, <&kp SEMICOLON>;
 };
 
+// tap:     .
+// shift:   :
 mp_dc: morph_dot_colon {
     compatible = "zmk,behavior-mod-morph";
-    label = ". :";
+    label = "mp_dc";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
     bindings = <&kp DOT>, <&kp COLON>;

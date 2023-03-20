@@ -1,38 +1,43 @@
+// tap:     `
 m_ai_g: macro_android_int_grave {
     compatible = "zmk,behavior-macro";
-    label = "`";
+    label = "m_ai_g";
     #binding-cells = <0>;
     bindings =
         <&kp GRAVE>;
 };
 
+// tap:     ~
 m_ai_t: macro_android_int_tilde {
     compatible = "zmk,behavior-macro";
-    label = "~";
+    label = "m_ai_t";
     #binding-cells = <0>;
     bindings =
         <&kp TILDE>;
 };
 
+// tap:     ^
 m_ai_c: macro_android_int_caret {
     compatible = "zmk,behavior-macro";
-    label = "^";
+    label = "m_ai_c";
     #binding-cells = <0>;
     bindings =
         <&kp CARET>;
 };
 
+// tap:     "
 m_ai_d: macro_android_int_double_quote {
     compatible = "zmk,behavior-macro";
-    label = "''";
+    label = "m_ai_d";
     #binding-cells = <0>;
     bindings =
         <&kp DQT>;
 };
 
+// tap:     '
 m_ai_s: macro_android_int_single_quote {
     compatible = "zmk,behavior-macro";
-    label = "'";
+    label = "m_ai_single";
     #binding-cells = <0>;
     bindings =
         <&kp SQT>;
