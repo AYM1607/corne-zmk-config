@@ -1,4 +1,4 @@
-mp_i_a: morph_a {
+mp_wi_a: morph_win_a {
     compatible = "zmk,behavior-mod-morph";
     label = "a";
     #binding-cells = <0>;
@@ -7,7 +7,7 @@ mp_i_a: morph_a {
     keep-mods = <(MOD_LALT)>;
 };
 
-mp_i_e: morph_e {
+mp_wi_e: morph_win_e {
     compatible = "zmk,behavior-mod-morph";
     label = "e";
     #binding-cells = <0>;
@@ -16,7 +16,7 @@ mp_i_e: morph_e {
     keep-mods = <(MOD_LALT)>;
 };
 
-mp_i_i: morph_i {
+mp_wi_i: morph_win_i {
     compatible = "zmk,behavior-mod-morph";
     label = "i";
     #binding-cells = <0>;
@@ -25,7 +25,7 @@ mp_i_i: morph_i {
     keep-mods = <(MOD_LALT)>;
 };
 
-mp_i_o: morph_o {
+mp_wi_o: morph_win_o {
     compatible = "zmk,behavior-mod-morph";
     label = "o";
     #binding-cells = <0>;
@@ -34,7 +34,7 @@ mp_i_o: morph_o {
     keep-mods = <(MOD_LALT)>;
 };
 
-mp_i_u: morph_u {
+mp_wi_u: morph_win_u {
     compatible = "zmk,behavior-mod-morph";
     label = "u";
     #binding-cells = <0>;
@@ -43,7 +43,7 @@ mp_i_u: morph_u {
     keep-mods = <(MOD_LALT)>;
 };
 
-mp_i_n: morph_n {
+mp_wi_n: morph_win_n {
     compatible = "zmk,behavior-mod-morph";
     label = "n";
     #binding-cells = <0>;
@@ -52,7 +52,7 @@ mp_i_n: morph_n {
     keep-mods = <(MOD_LALT)>;
 };
 
-mp_i_y: morph_y {
+mp_wi_y: morph_win_y {
     compatible = "zmk,behavior-mod-morph";
     label = "y";
     #binding-cells = <0>;

@@ -43,7 +43,7 @@
         #include "os/win/morph/shared.dtsi"
 
         #include "os/win/morph/base.dtsi"
-        #include "os/win/morph/international.dtsi"
+        #include "os/win/morph/int.dtsi"
         #include "os/win/morph/actions.dtsi"
         #include "os/win/morph/num.dtsi"
         #include "os/win/morph/dev.dtsi"
@@ -91,10 +91,10 @@
 
             label = "BAS";
             bindings = <
-    KEY_ESC  &kp Q  &kp W  &kp F    &kp P  &kp B             &kp J    &kp L  &mp_i_u  &mp_i_y  &mp_k_m    NAV_DEL
-     &mp_bc    B13    B14    B15      B16  &kp G             &kp M      B19      B20      B21      B22   NAV_BSPC
-    KEY_TAB  &kp Z  &kp X  &kp C    &kp D  &kp V             &kp K    &kp H   &mp_cs   &mp_dc   &mp_kq        B35
-                             B36  KEY_SPC    B38               B39  KEY_RET      B41
+    KEY_ESC  &kp Q  &kp W  &kp F    &kp P  &kp B             &kp J    &kp L  &mp_wi_u  &mp_wi_y  &mp_k_m    NAV_DEL
+     &mp_bc    B13    B14    B15      B16  &kp G             &kp M      B19       B20       B21      B22   NAV_BSPC
+    KEY_TAB  &kp Z  &kp X  &kp C    &kp D  &kp V             &kp K    &kp H    &mp_cs    &mp_dc   &mp_kq        B35
+                             B36  KEY_SPC    B38               B39  KEY_RET       B41
             >;
         };
 
