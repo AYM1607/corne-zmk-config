@@ -15,7 +15,7 @@
 
 / {
     behaviors {
-        #include "../all/morph/shared.dtsi
+        #include "../all/morph/shared.dtsi"
         #include "morph/layers.dtsi"
         #include "morph/base.dtsi"
         #include "morph/int.dtsi"
