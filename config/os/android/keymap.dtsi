@@ -2,10 +2,10 @@
     behaviors {
         #include "../all/morph/shared.dtsi"
         #include "morph/layers.dtsi"
-        #include "morph/base.dtsi"
+        #include "../all/morph/base.dtsi"
         #include "morph/int.dtsi"
         #include "morph/actions.dtsi"
-        #include "morph/num.dtsi"
+       #include "../all/morph/num.dtsi"
         #include "morph/dev.dtsi"
 
         #include "../all/hold/shared.dtsi"
@@ -50,7 +50,7 @@
 
             label = "aBAS";
             bindings = <
-    KEY_ESC  &kp Q  &kp W  &kp F    &kp P  &kp B             &kp J    &kp L  &mp_i_u  &mp_i_y  &mp_k_m    NAV_DEL
+    KEY_ESC  &kp Q  &kp W  &kp F    &kp P  &kp B             &kp J    &kp L  &mp_ai_u  &mp_ai_y  &mp_k_m    NAV_DEL
      &mp_bc    B13    B14    B15      B16  &kp G             &kp M      B19       B20       B21      B22   NAV_BSPC
     KEY_TAB  &kp Z  &kp X  &kp C    &kp D  &kp V             &kp K    &kp H    &mp_cs    &mp_dc   &mp_kq        B35
                              B36  KEY_SPC    B38               B39  KEY_RET       B41

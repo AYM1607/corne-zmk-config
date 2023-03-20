@@ -5,5 +5,5 @@ mp_kq: morph_key_quote {
     label = "mp_kq";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&m_i_s>, <&m_i_d>;
+    bindings = <&m_wi_s>, <&m_wi_d>;
 };
