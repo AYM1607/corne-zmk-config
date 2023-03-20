@@ -32,7 +32,7 @@
     combos {
         compatible = "zmk,combos";
 
-        #include "../all/combos/base.dtsi"
+        #include "combos/base.dtsi"
         #include "combos/help.dtsi"
     };
 
