@@ -40,32 +40,32 @@
 
 / {
     behaviors {
-        #include "morph/shared.dtsi"
+        #include "os/win/morph/shared.dtsi"
 
-        #include "morph/base.dtsi"
-        #include "morph/international.dtsi"
-        #include "morph/actions.dtsi"
-        #include "morph/num.dtsi"
-        #include "morph/dev.dtsi"
+        #include "os/win/morph/base.dtsi"
+        #include "os/win/morph/international.dtsi"
+        #include "os/win/morph/actions.dtsi"
+        #include "os/win/morph/num.dtsi"
+        #include "os/win/morph/dev.dtsi"
 
-        #include "hold/shared.dtsi"
-        #include "hold/layers.dtsi"
-        #include "hold/base.dtsi"
-        #include "hold/dev.dtsi"
+        #include "os/win/hold/shared.dtsi"
+        #include "os/win/hold/layers.dtsi"
+        #include "os/win/hold/base.dtsi"
+        #include "os/win/hold/dev.dtsi"
     };
 
     combos {
         compatible = "zmk,combos";
 
-        #include "combos/base.dtsi"
-        #include "combos/help.dtsi"
+        #include "os/win/combos/base.dtsi"
+        #include "os/win/combos/help.dtsi"
     };
 
     macros {
-        #include "macros/layers.dtsi"
-        #include "macros/international.dtsi"
-        #include "macros/dev.dtsi"
-        #include "macros/settings.dtsi"
+        #include "os/win/macros/layers.dtsi"
+        #include "os/win/macros/int.dtsi"
+        #include "os/win/macros/dev.dtsi"
+        #include "os/win/macros/settings.dtsi"
     };
 
     keymap {
@@ -114,8 +114,8 @@
 
             label = "DEV";
             bindings = <
-    KEY_ESC     &kp AT  &mp_d_pound  &mp_d_money  &mp_d_p     &m_i_d             &m_i_t   &mp_d_m  &kp UNDER  &kp PRCNT     &m_i_c    NAV_DEL
-     &mp_bc        D13          D14          D15      D16     &m_i_s             &m_i_g       D19        D20        D21        D22   NAV_BSPC
+    KEY_ESC     &kp AT  &mp_d_pound  &mp_d_money  &mp_d_p    &m_wi_d            &m_wi_t   &mp_d_m  &kp UNDER  &kp PRCNT    &m_wi_c    NAV_DEL
+     &mp_bc        D13          D14          D15      D16    &m_wi_s            &m_wi_g       D19        D20        D21        D22   NAV_BSPC
     KEY_TAB  &kp LC(R)     &kp LPAR     &kp RPAR  &mp_d_a   &kp BSLH            &mp_d_s  &mp_d_qs   &mp_d_lt   &mp_d_gt   &mp_d_ql    &kp F12
                                           &mp_cs  KEY_SPC        D38                D39   KEY_RET     &mp_dc
             >;
