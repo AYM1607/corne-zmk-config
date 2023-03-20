@@ -1,43 +1,43 @@
 // tap:     `
-m_i_g: macro_int_grave {
+m_mi_g: macro_mac_int_grave {
     compatible = "zmk,behavior-macro";
-    label = "m_i_g";
+    label = "m_mi_g";
     #binding-cells = <0>;
     bindings =
         <&kp GRAVE>;
 };
 
 // tap:     ~
-m_i_t: macro_int_tilde {
+m_mi_t: macro_mac_int_tilde {
     compatible = "zmk,behavior-macro";
-    label = "m_i_t";
+    label = "m_mi_t";
     #binding-cells = <0>;
     bindings =
         <&kp TILDE>;
 };
 
 // tap:     ^
-m_i_c: macro_int_caret {
+m_mi_c: macro_mac_int_caret {
     compatible = "zmk,behavior-macro";
-    label = "m_i_c";
+    label = "m_mi_c";
     #binding-cells = <0>;
     bindings =
         <&kp CARET>;
 };
 
 // tap:     "
-m_i_d: macro_int_double_quote {
+m_mi_d: macro_mac_int_double_quote {
     compatible = "zmk,behavior-macro";
-    label = "m_i_d";
+    label = "m_mi_d";
     #binding-cells = <0>;
     bindings =
         <&kp DQT>;
 };
 
 // tap:     '
-m_i_s: macro_int_single_quote {
+m_mi_s: macro_mac_int_single_quote {
     compatible = "zmk,behavior-macro";
-    label = "m_i_single";
+    label = "m_mi_single";
     #binding-cells = <0>;
     bindings =
         <&kp SQT>;

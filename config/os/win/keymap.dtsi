@@ -82,8 +82,8 @@
 
             label = "wDEV";
             bindings = <
-    KEY_ESC     &kp AT  &mp_d_pound  &mp_d_money  &mp_d_p     &m_i_d             &m_i_t   &mp_d_m  &kp UNDER  &kp PRCNT    &m_i_c   NAV_DEL
-     &mp_bc       WD13         WD14         WD15     WD16     &m_i_s             &m_i_g      WD19       WD20       WD21      WD22  NAV_BSPC
+    KEY_ESC     &kp AT  &mp_d_pound  &mp_d_money  &mp_d_p    &m_wi_d            &m_wi_t   &mp_d_m  &kp UNDER  &kp PRCNT   &m_wi_c   NAV_DEL
+     &mp_bc       WD13         WD14         WD15     WD16    &m_wi_s            &m_wi_g      WD19       WD20       WD21      WD22  NAV_BSPC
     KEY_TAB  &kp LC(R)     &kp LPAR     &kp RPAR  &mp_d_a   &kp BSLH            &mp_d_s  &mp_d_qs   &mp_d_lt   &mp_d_gt  &mp_d_ql   &kp F12
                                           &mp_cs  KEY_SPC       WD38               WD39   KEY_RET     &mp_dc
             >;
