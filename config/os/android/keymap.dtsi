@@ -1,5 +1,6 @@
 /* Shared Keys */
-#define AKY_ESC  &tokp aBAS  ESC    // tap: esc  | long-tap: BAS layer
+#define AKY_ESC  &tokp aBAS  ESC    // tap: esc     | long-tap: BAS layer
+#define KEY_RET  &mt   F2    RET    // tap: return  | long-tap: rename (like macOs)
 
 / {
     behaviors {
