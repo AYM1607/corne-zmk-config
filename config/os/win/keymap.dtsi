@@ -1,9 +1,9 @@
 /* Layers */
-#define BAS    0
-#define DEV    1
-#define AXN    2
-#define FNK    3
-#define STG    4
+#define BAS    00
+#define DEV    01
+#define AXN    02
+#define FNK    03
+#define STG    04
 
 #define H_CWR  F18
 
@@ -15,8 +15,8 @@
 
 / {
     behaviors {
-        #include "morph/shared.dtsi"
-
+        #include "../all/morph/shared.dtsi
+        #include "morph/layers.dtsi"
         #include "morph/base.dtsi"
         #include "morph/int.dtsi"
         #include "morph/actions.dtsi"

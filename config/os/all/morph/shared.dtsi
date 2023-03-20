@@ -28,11 +28,3 @@ mp_dc: morph_dot_colon {
     mods = <(MOD_LSFT|MOD_RSFT)>;
     bindings = <&kp DOT>, <&kp COLON>;
 };
-
-mp_stg: morph_stg_layer {
-    compatible = "zmk,behavior-mod-morph";
-    label = "mp_stg";
-    #binding-cells = <0>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&mo_STG_to_BAS>, <&to_STG>;
-};
