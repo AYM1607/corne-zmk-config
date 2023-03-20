@@ -46,7 +46,6 @@ mo_aAXN_to_aBAS: momentary_aAXN_to_aBAS {
     tap-ms = <0>;
     bindings
         = <&macro_press &mo aAXN>
-        , <&macro_tap &kp F_aAXN>
         , <&macro_pause_for_release>
         , <&macro_release &mo aAXN>;
 };
@@ -59,10 +58,8 @@ mo_aAXN_to_aDEV: momentary_aAXN_to_aDEV {
     tap-ms = <0>;
     bindings
         = <&macro_press &mo aAXN>
-        , <&macro_tap &kp F_aAXN>
         , <&macro_pause_for_release>
-        , <&macro_release &mo aAXN>
-        , <&macro_tap &kp F_aDEV>;
+        , <&macro_release &mo aAXN>;
 };
 
 mo_aSTG_to_aBAS: momentary_aSTG_to_aBAS {
@@ -73,7 +70,6 @@ mo_aSTG_to_aBAS: momentary_aSTG_to_aBAS {
     tap-ms = <0>;
     bindings
         = <&macro_press &mo aSTG>
-        , <&macro_tap &kp F_aSTG>
         , <&macro_pause_for_release>
         , <&macro_release &mo aSTG>;
 };
@@ -86,7 +82,6 @@ mo_aDEV_to_aBAS: momentary_aDEV_to_aBAS {
     tap-ms = <0>;
     bindings
         = <&macro_press &mo aDEV>
-        , <&macro_tap &kp F_aDEV>
         , <&macro_pause_for_release>
         , <&macro_release &mo aDEV>;
 };
@@ -99,8 +94,6 @@ mo_aFNK_to_aAXN: momentary_aFNK_to_aAXN {
     tap-ms = <0>;
     bindings
         = <&macro_press &mo aFNK>
-        , <&macro_tap &kp F_aFNK>
         , <&macro_pause_for_release>
-        , <&macro_release &mo aFNK>
-        , <&macro_tap &kp F_aAXN>;
+        , <&macro_release &mo aFNK>;
 };

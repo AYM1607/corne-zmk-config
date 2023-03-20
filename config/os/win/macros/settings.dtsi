@@ -35,7 +35,7 @@ m_s_b5: macro_stg_bluetooth_5 {
     label = "m_s_b5";
     #binding-cells = <0>;
     bindings =
-        <&bt BT_SEL 4 &to_wBAS>;
+        <&bt BT_SEL 4 &to_aBAS>;
 };
 
 m_s_b6: macro_stg_bluetooth_6 {
@@ -43,5 +43,5 @@ m_s_b6: macro_stg_bluetooth_6 {
     label = "m_s_b6";
     #binding-cells = <0>;
     bindings =
-        <&bt BT_SEL 5 &to_wBAS>;
+        <&bt BT_SEL 5 &to_aBAS>;
 };

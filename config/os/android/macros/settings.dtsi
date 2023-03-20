@@ -3,7 +3,7 @@ m_s_b1: macro_stg_bluetooth_1 {
     label = "m_s_b1";
     #binding-cells = <0>;
     bindings =
-        <&bt BT_SEL 0 &to_aBAS>;
+        <&bt BT_SEL 0 &to_wBAS>;
 };
 
 m_s_b2: macro_stg_bluetooth_2 {
@@ -11,7 +11,7 @@ m_s_b2: macro_stg_bluetooth_2 {
     label = "m_s_b2";
     #binding-cells = <0>;
     bindings =
-        <&bt BT_SEL 1 &to_aBAS>;
+        <&bt BT_SEL 1 &to_wBAS>;
 };
 
 m_s_b3: macro_stg_bluetooth_3 {
@@ -19,7 +19,7 @@ m_s_b3: macro_stg_bluetooth_3 {
     label = "m_s_b3";
     #binding-cells = <0>;
     bindings =
-        <&bt BT_SEL 2 &to_aBAS>;
+        <&bt BT_SEL 2 &to_wBAS>;
 };
 
 m_s_b4: macro_stg_bluetooth_4 {
@@ -27,7 +27,7 @@ m_s_b4: macro_stg_bluetooth_4 {
     label = "m_s_b4";
     #binding-cells = <0>;
     bindings =
-        <&bt BT_SEL 3 &to_aBAS>;
+        <&bt BT_SEL 3 &to_wBAS>;
 };
 
 m_s_b5: macro_stg_bluetooth_5 {
