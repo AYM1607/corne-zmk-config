@@ -7,3 +7,21 @@ hm: homerow_mods {
     flavor = "hold-preferred";
     bindings = <&kp>, <&kp>;
 };
+
+tokp: behavior_to_kp {
+    compatible = "zmk,behavior-hold-tap";
+    label = "tokp";
+    #binding-cells = <2>;
+    flavor = "hold-preferred";
+    tapping-term-ms = <200>;
+    bindings = <&to>, <&kp>;
+};
+
+moto: behavior_mo_to {
+    compatible = "zmk,behavior-hold-tap";
+    label = "moto";
+    #binding-cells = <2>;
+    flavor = "hold-preferred";
+    tapping-term-ms = <200>;
+    bindings = <&mo>, <&to>;
+};
