@@ -15,6 +15,17 @@
     hold-trigger-key-positions = <0>;   // tap on interrupt
 };
 
+/ {
+    behaviors {
+        #include "os/all/morph/shared.dtsi"
+        #include "os/all/morph/base.dtsi"
+        #include "os/all/morph/num.dtsi"
+
+        #include "os/all/hold/shared.dtsi"
+    };
+};
+
+
 /* Shared Keys */
 #define KEY_SPC   &kp  SPACE
 #define NAV_BSPC  &mt  LC(BSPC)  BSPC   // tap: bspc | long-tap: delete word backward

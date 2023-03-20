@@ -13,15 +13,11 @@
 
 / {
     behaviors {
-        #include "../all/morph/shared.dtsi"
-        #include "../all/morph/base.dtsi"
-        #include "../all/morph/num.dtsi"
         #include "morph/layers.dtsi"
         #include "morph/int.dtsi"
         #include "morph/actions.dtsi"
         #include "morph/dev.dtsi"
 
-        #include "../all/hold/shared.dtsi"
         #include "hold/layers.dtsi"
         #include "hold/base.dtsi"
         #include "hold/dev.dtsi"
