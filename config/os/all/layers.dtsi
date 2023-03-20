@@ -10,4 +10,4 @@
 #define aDEV    11
 #define aAXN    12
 #define aFNK    13
-#define wFNK    14
+#define aFNK    14
