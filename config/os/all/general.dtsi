@@ -1,0 +1,17 @@
+/* Mod Tap */
+&mt {
+    flavor = "tap-preferred";
+    tapping-term-ms = <220>;
+    quick-tap-ms = <220>;               // repeat on tap-into-hold
+    hold-trigger-key-positions = <0>;   // tap on interrupt
+};
+
+/ {
+    behaviors {
+        #include "../all/morph/shared.dtsi"
+        #include "../all/morph/base.dtsi"
+        #include "../all/morph/num.dtsi"
+
+        #include "../all/hold/shared.dtsi"
+    };
+};

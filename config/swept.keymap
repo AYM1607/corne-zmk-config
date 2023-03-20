@@ -8,29 +8,9 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-&mt {
-    flavor = "tap-preferred";
-    tapping-term-ms = <220>;
-    quick-tap-ms = <220>;               // repeat on tap-into-hold
-    hold-trigger-key-positions = <0>;   // tap on interrupt
-};
-
-/ {
-    behaviors {
-        #include "os/all/morph/shared.dtsi"
-        #include "os/all/morph/base.dtsi"
-        #include "os/all/morph/num.dtsi"
-
-        #include "os/all/hold/shared.dtsi"
-    };
-};
-
-
-/* Shared Keys */
-#define KEY_SPC   &kp  SPACE
-#define NAV_BSPC  &mt  LC(BSPC)  BSPC   // tap: bspc | long-tap: delete word backward
-#define NAV_DEL   &mt  LC(DEL)   DEL    // tap: del  | long-tap: delete word forward
-
+/* Global */
+#include "os/all/general.dtsi"
+#include "os/all/keys.dtsi"
 /* Layers */
 #include "os/all/layers.dtsi"
 #include "os/win/keymap.dtsi"
