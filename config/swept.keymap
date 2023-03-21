@@ -52,6 +52,8 @@
     };
 
     macros {
+        #include "os/all/macros/layers.dtsi"
+
         #include "os/windows/macros/layers.dtsi"
         #include "os/windows/macros/int.dtsi"
         #include "os/windows/macros/dev.dtsi"

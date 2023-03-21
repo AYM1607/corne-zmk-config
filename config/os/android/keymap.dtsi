@@ -124,7 +124,7 @@
 
             label = "aSTG";
             bindings = <
-       AKY_ESC  &to wBAS  &m_as_b1       &m_as_b2    &none       AS05                   AS07  &kp C_VOL_DN    &kp C_MUTE  &kp C_VOL_UP  AS10   AS11
+       AKY_ESC  &to_wBAS  &m_as_b1       &m_as_b2    &none       AS05                   AS07  &kp C_VOL_DN    &kp C_MUTE  &kp C_VOL_UP  AS10   AS11
     &bt BT_CLR     &none  &m_as_b3       &m_as_b4    &none       AS17                   AS18    &kp C_PREV      &kp C_PP    &kp C_NEXT  AS22   AS23
           AS24  &to aBAS  &m_as_b5       &m_as_b6    &none       AS29                   AS30      &kp C_RW    &kp C_STOP      &kp C_FF  AS34  &none
                                      &kp C_BRI_DN  KEY_SPC   &to aBAS               &to aDEV       AKY_RET  &kp C_BRI_UP

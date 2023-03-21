@@ -123,10 +123,10 @@
 
             label = "wSTG";
             bindings = <
-       WKY_ESC  &to wBAS  &m_ws_b1       &m_ws_b2    &none       WS05                   WS07  &kp C_VOL_DN    &kp C_MUTE  &kp C_VOL_UP  WS10   WS11
-    &bt BT_CLR     &none  &m_ws_b3       &m_ws_b4    &none       WS17                   WS18    &kp C_PREV      &kp C_PP    &kp C_NEXT  WS22   WS23
-          WS24  &to aBAS  &m_ws_b5       &m_ws_b6    &none       WS29                   WS30      &kp C_RW    &kp C_STOP      &kp C_FF  WS34  &none
-                                     &kp C_BRI_DN  KEY_SPC   &to_wBAS               &to_wDEV       WKY_RET  &kp C_BRI_UP
+       WKY_ESC  &to_wBAS  &m_ws_b1       &m_ws_b2    &none      WS05                   WS07  &kp C_VOL_DN    &kp C_MUTE  &kp C_VOL_UP  WS10   WS11
+    &bt BT_CLR     &none  &m_ws_b3       &m_ws_b4    &none      WS17                   WS18    &kp C_PREV      &kp C_PP    &kp C_NEXT  WS22   WS23
+          WS24  &to aBAS  &m_ws_b5       &m_ws_b6    &none      WS29                   WS30      &kp C_RW    &kp C_STOP      &kp C_FF  WS34  &none
+                                     &kp C_BRI_DN  KEY_SPC  &to_wBAS               &to_wDEV       WKY_RET  &kp C_BRI_UP
             >;
         };
 

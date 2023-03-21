@@ -1,0 +1,7 @@
+to_wBAS: to_wBAS_layer {
+    compatible = "zmk,behavior-macro";
+    label = "to_wBAS";
+    #binding-cells = <0>;
+    bindings =
+        <&to wBAS &kp F_wBAS>;
+};
