@@ -3,17 +3,17 @@
 // alt+shift:   Á
 mp_ai_a_s: morph_android_a_shift {
     compatible = "zmk,behavior-mod-morph";
-    label = "mp_ai_a";
+    label = "mp_ai_a_s";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
     bindings = <&m_ai_a>, <&m_ai_as>;
 };
 mp_ai_a: morph_android_a {
     compatible = "zmk,behavior-mod-morph";
-    label = "mp_ai_a_a";
+    label = "mp_ai_a";
     #binding-cells = <0>;
     mods = <(MOD_LALT)>;
-    bindings = <&kp A>, <&mp_ai_a_a>;
+    bindings = <&kp A>, <&mp_ai_a_s>;
     keep-mods = <(MOD_LALT)>;
 };
 
