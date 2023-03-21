@@ -33,9 +33,9 @@ mp_ad_lb: morph_android_dev_left_brackets {
 
 // tap:         ]
 // alt:         »
-mp_ad_lb: morph_android_dev_right_brackets {
+mp_ad_rb: morph_android_dev_right_brackets {
     compatible = "zmk,behavior-mod-morph";
-    label = "mp_ad_lb";
+    label = "mp_ad_rb";
     #binding-cells = <0>;
     mods = <(MOD_LALT)>;
     bindings = <&kp RBKT>, <&kp LC(RBKT)>;

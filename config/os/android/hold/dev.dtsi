@@ -50,7 +50,7 @@ hm_ad_rctrl: behavior_android_dev_rctrl {
     quick-tap-ms = <200>;
     flavor = "hold-preferred";
     global-quick-tap;
-    bindings = <&kp>, <&mp_ad_lb>;
+    bindings = <&kp>, <&mp_ad_rb>;
 };
 
 hm_ad_rcmd: behavior_android_dev_rcmd {
