@@ -3,8 +3,11 @@ m_ai_a: macro_android_int_a {
     compatible = "zmk,behavior-macro";
     label = "m_ai_a";
     #binding-cells = <0>;
+    wait-ms = <400>;
     bindings
-        = <&kp LA(E)>
+        = <&none>
+        , <&macro_wait_time 100>
+        , <&kp LA(E)>
         , <&kp A>;
 };
 
@@ -13,8 +16,11 @@ m_ai_as: macro_android_int_a_shift {
     compatible = "zmk,behavior-macro";
     label = "m_ai_as";
     #binding-cells = <0>;
+    wait-ms = <400>;
     bindings
-        = <&kp LA(E)>
+        = <&none>
+        , <&macro_wait_time 100>
+        , <&kp LA(E)>
         , <&kp LS(A)>;
 };
 
@@ -23,8 +29,11 @@ m_ai_e: macro_android_int_e {
     compatible = "zmk,behavior-macro";
     label = "m_ai_e";
     #binding-cells = <0>;
+    wait-ms = <400>;
     bindings
-        = <&kp LA(E)>
+        = <&none>
+        , <&macro_wait_time 100>
+        , <&kp LA(E)>
         , <&kp E>;
 };
 
@@ -33,8 +42,11 @@ m_ai_i: macro_android_int_i {
     compatible = "zmk,behavior-macro";
     label = "m_ai_i";
     #binding-cells = <0>;
+    wait-ms = <400>;
     bindings
-        = <&kp LA(E)>
+        = <&none>
+        , <&macro_wait_time 100>
+        , <&kp LA(E)>
         , <&kp I>;
 };
 
@@ -43,8 +55,11 @@ m_ai_o: macro_android_int_o {
     compatible = "zmk,behavior-macro";
     label = "m_ai_o";
     #binding-cells = <0>;
+    wait-ms = <400>;
     bindings
-        = <&kp LA(E)>
+        = <&none>
+        , <&macro_wait_time 100>
+        , <&kp LA(E)>
         , <&kp O>;
 };
 
@@ -53,8 +68,11 @@ m_ai_u: macro_android_int_u {
     compatible = "zmk,behavior-macro";
     label = "m_ai_u";
     #binding-cells = <0>;
+    wait-ms = <400>;
     bindings
-        = <&kp LA(E)>
+        = <&none>
+        , <&macro_wait_time 100>
+        , <&kp LA(E)>
         , <&kp U>;
 };
 
@@ -63,8 +81,11 @@ m_ai_y: macro_android_int_y {
     compatible = "zmk,behavior-macro";
     label = "m_ai_y";
     #binding-cells = <0>;
+    wait-ms = <400>;
     bindings
-        = <&kp LA(U)>
+        = <&none>
+        , <&macro_wait_time 100>
+        , <&kp LA(U)>
         , <&kp U>;
 };
 
@@ -73,8 +94,11 @@ m_ai_n: macro_android_int_n {
     compatible = "zmk,behavior-macro";
     label = "m_ai_n";
     #binding-cells = <0>;
+    wait-ms = <400>;
     bindings
-        = <&kp LA(N)>
+        = <&none>
+        , <&macro_wait_time 100>
+        , <&kp LA(N)>
         , <&kp N>;
 };
 
