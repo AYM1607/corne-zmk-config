@@ -53,10 +53,14 @@
 
             #define WB35  &mp_w_stg
 
-            #define WB36  &mo_wDEVwBAS_to_wDEV  0 0
-            #define WB38  &mo_wAXNwBAS_to_wAXN  0 0
-            #define WB39  &mo_wAXNwBAS_to_wFNK  0 0
-            #define WB41  &mo_wDEVwBAS_to_wDEV  0 0
+            // #define WB36  &mo_wDEVwBAS_to_wDEV  0 0
+            // #define WB38  &mo_wAXNwBAS_to_wAXN  0 0
+            // #define WB39  &mo_wAXNwBAS_to_wFNK  0 0
+            // #define WB41  &mo_wDEVwBAS_to_wDEV  0 0
+            #define WB36 &to wDEV
+            #define WB38 &to wAXN
+            #define WB39 &to wFNK
+            #define WB41 &to wDEV
 
             label = "wBAS";
             bindings = <
