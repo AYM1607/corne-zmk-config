@@ -31,9 +31,9 @@
 
         win_base_layer {
             #define AB13  &hm_ab_lcmd  LCMD   0  //A
-            #define AB14  &hm LCTRL   R
-            #define AB15  &hm LALT    S
-            #define AB16  &hm LSHFT   T
+            #define AB14  &hm LCTRL    R
+            #define AB15  &hm LALT     S
+            #define AB16  &hm LSHFT    T
 
             #define AB19  &hm_ab_rshf  RSHFT  0  //N
             #define AB20  &hm_ab_ralt  LALT   0  //E
@@ -42,10 +42,10 @@
 
             #define AB35  &mp_a_stg
 
-            #define AB36  &moto       aDEV   aDEV
-            #define AB38  &moto       aAXN   aAXN
-            #define AB39  &moto       aAXN   aFNK
-            #define AB41  &moto       aDEV   aDEV
+            #define AB36  &moto        aDEV   aDEV
+            #define AB38  &moto        aAXN   aAXN
+            #define AB39  &moto        aAXN   aFNK
+            #define AB41  &moto        aDEV   aDEV
 
             label = "aBAS";
             bindings = <

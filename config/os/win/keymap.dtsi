@@ -41,9 +41,9 @@
 
         win_base_layer {
             #define WB13  &hm_wb_lcmd  LCMD   0  //A
-            #define WB14  &hm LCTRL   R
-            #define WB15  &hm LALT    S
-            #define WB16  &hm LSHFT   T
+            #define WB14  &hm LCTRL    R
+            #define WB15  &hm LALT     S
+            #define WB16  &hm LSHFT    T
 
             #define WB19  &hm_wb_rshf  RSHFT  0  //N
             #define WB20  &hm_wb_ralt  LALT   0  //E
@@ -68,8 +68,8 @@
 
         win_dev_layer {
             #define WD13  &hm_wd_lcmd  LCMD    0
-            #define WD14  &hm         LCTRL   LBRC
-            #define WD15  &hm         LALT    RBRC
+            #define WD14  &hm          LCTRL   LBRC
+            #define WD15  &hm          LALT    RBRC
             #define WD16  &hm_wd_lshf  LSHFT   0
 
             #define WD19  &hm_wd_rshf  RSHFT   0
