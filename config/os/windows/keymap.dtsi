@@ -25,7 +25,7 @@
             >;
         };
 
-        win_dev_layer {
+        windows_dev_layer {
             #define WD13  &hm_wd_lcmd  LCMD    0
             #define WD14  &hm          LCTRL   LBRC
             #define WD15  &hm          LALT    RBRC
@@ -48,7 +48,7 @@
             >;
         };
 
-        win_act_num_layer {
+        windows_act_num_layer {
             #define WA01  &kp LG(LS(C))           // tap: color picker
             #define WA05  &kp LC(F)               // tap: find
             #define WA13  &hm LCMD   LG(LS(S))    // tap: printscreen
@@ -81,8 +81,7 @@
                                       &mp_cs      KEY_SPC      WA38                   WA39  WKY_RET  &mp_dc
             >;
         };
-
-        win_functions_layer {
+        windows_functions_layer {
             #define WK13  &hm LCMD   F5
             #define WK14  &hm LCTRL  F6
             #define WK15  &hm LALT   F7
@@ -105,7 +104,7 @@
             >;
         };
 
-        win_settings_layer {
+        windows_settings_layer {
             #define WS10  &kp LG(LS(GRAVE))    // tap: fancy zones
             #define WS11  &kp LC(LS(ESC))      // tap: task manager
             #define WS24  &kp LG(K)            // tap: connect quick action
