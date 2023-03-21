@@ -5,16 +5,24 @@
 #define wFNK  3
 #define wSTG  4
 
+/* android */
+#define aBAS  5
+#define aDEV  6
+#define aAXN  7
+#define aFNK  8
+#define aSTG  9
+
 /* macOs */
-#define mBAS 10
-#define mDEV 11
-#define mAXN 12
-#define mFNK 13
-#define mSTG 14
+// #define mBAS  5
+// #define mDEV  6
+// #define mAXN  7
+// #define mFNK  8
+// #define mSTG  9
 
 /* android */
-#define aBAS 20
-#define aDEV 21
-#define aAXN 22
-#define aFNK 23
-#define aSTG 24
+// #define aBAS 10
+// #define aDEV 11
+// #define aAXN 12
+// #define aFNK 13
+// #define aSTG 14
+

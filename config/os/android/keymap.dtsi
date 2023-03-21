@@ -1,35 +1,3 @@
-/* Shared Keys */
-#define AKY_ESC  &tokp  aBAS   ESC  // tap: esc    | long-tap: BAS layer
-#define KEY_RET  &mt    F2     RET  // tap: return | long-tap: rename (like macOs)
-#define KEY_TAB  &mt    RIGHT  TAB  // tap: tab    | long-tap: right (terminal autocompletion)
-
-/ {
-    behaviors {
-        #include "morph/layers.dtsi"
-        #include "morph/base.dtsi"
-        #include "morph/int.dtsi"
-        #include "morph/actions.dtsi"
-        #include "morph/dev.dtsi"
-
-        #include "hold/base.dtsi"
-        #include "hold/dev.dtsi"
-    };
-
-    combos {
-        compatible = "zmk,combos";
-
-        #include "combos/base.dtsi"
-    };
-
-    macros {
-        #include "macros/int.dtsi"
-        #include "macros/dev.dtsi"
-        #include "macros/settings.dtsi"
-    };
-
-    keymap {
-        compatible = "zmk,keymap";
-
         win_base_layer {
             #define AB13  &hm_ab_lcmd  LCMD   0  //A
             #define AB14  &hm LCTRL    R
@@ -52,8 +20,8 @@
             bindings = <
     AKY_ESC  &kp Q  &kp W  &kp F    &kp P  &kp B             &kp J    &kp L  &mp_ai_u  &mp_ai_y   &mp_k_m    NAV_DEL
      &mp_bc   AB13   AB14   AB15     AB16  &kp G             &kp M     AB19      AB20      AB21      AB22   NAV_BSPC
-    KEY_TAB  &kp Z  &kp X  &kp C    &kp D  &kp V             &kp K    &kp H    &mp_cs    &mp_dc  &mp_ak_q       AB35
-                            AB36  KEY_SPC   AB38              AB39  KEY_RET      AB41
+    AKY_TAB  &kp Z  &kp X  &kp C    &kp D  &kp V             &kp K    &kp H    &mp_cs    &mp_dc  &mp_ak_q       AB35
+                            AB36  KEY_SPC   AB38              AB39  AKY_RET      AB41
             >;
         };
 
@@ -75,8 +43,8 @@
             bindings = <
     AKY_ESC     &kp AT  &mp_ad_pound  &mp_ad_money  &mp_ad_p    &m_ai_d             &m_ai_t   &mp_ad_m   &kp UNDER   &kp PRCNT     &m_ai_c    NAV_DEL
      &mp_bc       AD13          AD14          AD15      AD16    &m_ai_s             &m_ai_g       AD19        AD20        AD21        AD22   NAV_BSPC
-    KEY_TAB  &kp LC(R)      &kp LPAR      &kp RPAR  &mp_ad_a   &kp BSLH            &mp_ad_s  &mp_ad_qs   &mp_ad_lt   &mp_ad_gt   &mp_ad_ql    &kp F12
-                                            &mp_cs   KEY_SPC       AD38                AD39    KEY_RET      &mp_dc
+    AKY_TAB  &kp LC(R)      &kp LPAR      &kp RPAR  &mp_ad_a   &kp BSLH            &mp_ad_s  &mp_ad_qs   &mp_ad_lt   &mp_ad_gt   &mp_ad_ql    &kp F12
+                                            &mp_cs   KEY_SPC       AD38                AD39    AKY_RET      &mp_dc
             >;
         };
 
@@ -109,8 +77,8 @@
             bindings = <
     AKY_ESC      AA01  &mp_aa_prev    &kp UP  &mp_aa_next      AA05            &kp KP_PLUS   &kp N7  &kp N8  &kp N9  &kp KP_MULTIPLY   NAV_DEL
      &mp_bc      AA13         AA14      AA15         AA16      AA17                 &kp N0     AA19    AA20    AA21             AA22  NAV_BSPC
-    KEY_TAB  KEY_UNDO      KEY_CUT  KEY_COPY    KEY_PASTE  KEY_REDO                &mp_k_m   &kp N1  &kp N2  &kp N3    &kp KP_DIVIDE      AA35
-                                      &mp_cs      KEY_SPC      AA38                   AA39  KEY_RET  &mp_dc
+    AKY_TAB  KEY_UNDO      KEY_CUT  KEY_COPY    KEY_PASTE  KEY_REDO                &mp_k_m   &kp N1  &kp N2  &kp N3    &kp KP_DIVIDE      AA35
+                                      &mp_cs      KEY_SPC      AA38                   AA39  AKY_RET  &mp_dc
             >;
         };
 
@@ -132,8 +100,8 @@
             bindings = <
     AKY_ESC  &kp F9  &kp F10  &kp F11  &kp F12  &none                  &none    &none  &kp PG_UP    &none    &none   NAV_DEL
      &mp_bc    AK13     AK14     AK15     AK16  &none                  &none     AK19       AK20     AK21     AK22  NAV_BSPC
-    KEY_TAB  &kp F1   &kp F2   &kp F3   &kp F4  &none                  &none    &none      &none    &none    &none     &none
-                               &mp_cs  KEY_SPC   AK38                   AK39  KEY_RET     &mp_dc
+    AKY_TAB  &kp F1   &kp F2   &kp F3   &kp F4  &none                  &none    &none      &none    &none    &none     &none
+                               &mp_cs  KEY_SPC   AK38                   AK39  AKY_RET     &mp_dc
             >;
         };
 
@@ -159,8 +127,7 @@
        AKY_ESC  &to wBAS  &m_as_b1       &m_as_b2    &none       AS05                   AS07  &kp C_VOL_DN    &kp C_MUTE  &kp C_VOL_UP  AS10   AS11
     &bt BT_CLR     &none  &m_as_b3       &m_as_b4    &none       AS17                   AS18    &kp C_PREV      &kp C_PP    &kp C_NEXT  AS22   AS23
           AS24  &to aBAS  &m_as_b5       &m_as_b6    &none       AS29                   AS30      &kp C_RW    &kp C_STOP      &kp C_FF  AS34  &none
-                                     &kp C_BRI_DN  KEY_SPC   &to aBAS               &to aDEV       KEY_RET  &kp C_BRI_UP
+                                     &kp C_BRI_DN  KEY_SPC   &to aBAS               &to aDEV       AKY_RET  &kp C_BRI_UP
             >;
         };
-    };
-};
+

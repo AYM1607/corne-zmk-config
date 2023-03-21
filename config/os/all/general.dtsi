@@ -5,15 +5,3 @@
     quick-tap-ms = <220>;               // repeat on tap-into-hold
     hold-trigger-key-positions = <0>;   // tap on interrupt
 };
-
-#include "layers.dtsi"
-#include "keys.dtsi"
-
-/ {
-    behaviors {
-        #include "../all/morph/shared.dtsi"
-        #include "../all/morph/num.dtsi"
-
-        #include "../all/hold/shared.dtsi"
-    };
-};

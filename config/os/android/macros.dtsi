@@ -1,0 +1,3 @@
+#include "macros/int.dtsi"
+#include "macros/dev.dtsi"
+#include "macros/settings.dtsi"
