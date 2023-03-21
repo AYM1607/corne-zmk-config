@@ -1,9 +1,9 @@
 /* windows */
-#define wBAS  00
-#define wDEV  01
-#define wAXN  02
-#define wFNK  03
-#define wSTG  04
+#define wBAS   0
+#define wDEV   1
+#define wAXN   2
+#define wFNK   3
+#define wSTG   4
 
 /* macOs */
 #define mBAS  10

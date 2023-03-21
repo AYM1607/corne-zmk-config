@@ -7,9 +7,9 @@
 #define F_wSTG  F23
 
 /* Shared Keys */
-#define WKY_ESC  &tokp wBAS   ESC  // tap: esc    | long-tap: BAS layer
-#define KEY_RET  &mt   F2     RET  // tap: return | long-tap: rename (like macOs)
-#define KEY_TAB  &mt   RIGHT  TAB  // tap: tab    | long-tap: right (terminal autocompletion)
+#define WKY_ESC  &tokp  wBAS   ESC  // tap: esc    | long-tap: BAS layer
+#define KEY_RET  &mt    F2     RET  // tap: return | long-tap: rename (like macOs)
+#define KEY_TAB  &mt    RIGHT  TAB  // tap: tab    | long-tap: right (terminal autocompletion)
 
 / {
     behaviors {
