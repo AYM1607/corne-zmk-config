@@ -1,11 +1,3 @@
-/* Layers */
-#define H_wCWR  F18
-#define F_wBAS  F19
-#define F_wDEV  F20
-#define F_wAXN  F21
-#define F_wFNK  F22
-#define F_wSTG  F23
-
 /* Shared Keys */
 #define WKY_ESC  &to_wBAS_kp  0      ESC  // tap: esc    | long-tap: BAS layer
 #define WKY_RET  &mt          F2     RET  // tap: return | long-tap: rename (like macOs)

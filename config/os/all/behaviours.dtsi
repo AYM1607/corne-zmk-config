@@ -1,4 +1,0 @@
-#include "morph/shared.dtsi"
-#include "morph/num.dtsi"
-
-#include "hold/shared.dtsi"

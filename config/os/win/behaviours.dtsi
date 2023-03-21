@@ -1,8 +1,0 @@
-#include "morph/layers.dtsi"
-#include "morph/base.dtsi"
-#include "morph/int.dtsi"
-#include "morph/actions.dtsi"
-#include "morph/dev.dtsi"
-
-#include "hold/base.dtsi"
-#include "hold/dev.dtsi"

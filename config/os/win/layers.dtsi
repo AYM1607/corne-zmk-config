@@ -1,0 +1,14 @@
+/* windows */
+#define wBAS  0
+#define wDEV  1
+#define wAXN  2
+#define wFNK  3
+#define wSTG  4
+
+/* Helpers */
+#define H_wCWR  F18
+#define F_wBAS  F19
+#define F_wDEV  F20
+#define F_wAXN  F21
+#define F_wFNK  F22
+#define F_wSTG  F23

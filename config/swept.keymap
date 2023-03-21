@@ -10,7 +10,8 @@
 
 /* Global */
 #include "os/all/general.dtsi"
-#include "os/all/layers.dtsi"
+#include "os/windows/layers.dtsi"
+#include "os/android/layers.dtsi"
 
 /* Keys */
 #include "os/all/keys.dtsi"
@@ -19,21 +20,42 @@
 
 / {
     behaviors {
-        #include "os/all/behaviours.dtsi"
-        #include "os/win/behaviours.dtsi"
-        #include "os/android/behaviours.dtsi"
+        #include "os/all/morph/shared.dtsi"
+        #include "os/all/morph/num.dtsi"
+        #include "os/win/morph/layers.dtsi"
+        #include "os/win/morph/base.dtsi"
+        #include "os/win/morph/int.dtsi"
+        #include "os/win/morph/actions.dtsi"
+        #include "os/win/morph/dev.dtsi"
+        #include "os/android/morph/layers.dtsi"
+        #include "os/android/morph/base.dtsi"
+        #include "os/android/morph/int.dtsi"
+        #include "os/android/morph/actions.dtsi"
+        #include "os/android/morph/dev.dtsi"
+
+        #include "os/all/hold/shared.dtsi"
+        #include "os/win/hold/base.dtsi"
+        #include "os/win/hold/dev.dtsi"
+        #include "os/android/hold/base.dtsi"
+        #include "os/android/hold/dev.dtsi"
     };
 
     combos {
         compatible = "zmk,combos";
 
-        #include "os/win/combos.dtsi"
-        #include "os/android/combos.dtsi"
+        #include "os/win/combos/base.dtsi"
+        #include "os/win/combos/help.dtsi"
+        #include "os/android/combos/base.dtsi"
     };
 
     macros {
-        #include "os/win/macros.dtsi"
-        #include "os/android/macros.dtsi"
+        #include "os/win/macros/layers.dtsi"
+        #include "os/win/macros/int.dtsi"
+        #include "os/win/macros/dev.dtsi"
+        #include "os/win/macros/settings.dtsi"
+        #include "os/android/macros/int.dtsi"
+        #include "os/android/macros/dev.dtsi"
+        #include "os/android/macros/settings.dtsi"
     };
 
     keymap {
