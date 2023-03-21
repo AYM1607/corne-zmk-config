@@ -3,9 +3,9 @@ m_ai_a: macro_android_int_a {
     compatible = "zmk,behavior-macro";
     label = "m_ai_a";
     #binding-cells = <0>;
-    bindings =
-        <&kp LA(E)>;
-        <&kp A>;
+    bindings
+        = <&kp LA(E)>
+        , <&kp A>;
 };
 
 // tap:     Á
@@ -13,9 +13,9 @@ m_ai_as: macro_android_int_a_shift {
     compatible = "zmk,behavior-macro";
     label = "m_ai_as";
     #binding-cells = <0>;
-    bindings =
-        <&kp LA(E)>;
-        <&kp LS(A)>;
+    bindings
+        = <&kp LA(E)>
+        , <&kp LS(A)>;
 };
 
 // tap:     é
@@ -23,9 +23,9 @@ m_ai_e: macro_android_int_e {
     compatible = "zmk,behavior-macro";
     label = "m_ai_e";
     #binding-cells = <0>;
-    bindings =
-        <&kp LA(E)>;
-        <&kp E>;
+    bindings
+        = <&kp LA(E)>
+        , <&kp E>;
 };
 
 // tap:     í
@@ -33,9 +33,9 @@ m_ai_i: macro_android_int_i {
     compatible = "zmk,behavior-macro";
     label = "m_ai_i";
     #binding-cells = <0>;
-    bindings =
-        <&kp LA(E)>;
-        <&kp I>;
+    bindings
+        = <&kp LA(E)>
+        , <&kp I>;
 };
 
 // tap:     ó
@@ -43,9 +43,9 @@ m_ai_o: macro_android_int_o {
     compatible = "zmk,behavior-macro";
     label = "m_ai_o";
     #binding-cells = <0>;
-    bindings =
-        <&kp LA(E)>;
-        <&kp O>;
+    bindings
+        = <&kp LA(E)>
+        , <&kp O>;
 };
 
 // tap:     ú
@@ -53,9 +53,9 @@ m_ai_u: macro_android_int_u {
     compatible = "zmk,behavior-macro";
     label = "m_ai_u";
     #binding-cells = <0>;
-    bindings =
-        <&kp LA(E)>;
-        <&kp U>;
+    bindings
+        = <&kp LA(E)>
+        , <&kp U>;
 };
 
 // tap:     ü
@@ -63,9 +63,9 @@ m_ai_y: macro_android_int_y {
     compatible = "zmk,behavior-macro";
     label = "m_ai_y";
     #binding-cells = <0>;
-    bindings =
-        <&kp LA(U)>;
-        <&kp U>;
+    bindings
+        = <&kp LA(U)>
+        , <&kp U>;
 };
 
 // tap:     ñ
@@ -73,9 +73,9 @@ m_ai_n: macro_android_int_n {
     compatible = "zmk,behavior-macro";
     label = "m_ai_n";
     #binding-cells = <0>;
-    bindings =
-        <&kp LA(N)>;
-        <&kp N>;
+    bindings
+        = <&kp LA(N)>
+        , <&kp N>;
 };
 
 // tap:     `
