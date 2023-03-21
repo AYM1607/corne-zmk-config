@@ -9,11 +9,11 @@
 #include <dt-bindings/zmk/bt.h>
 
 /* Global */
-#include "general.dtsi"
-#include "layers.dtsi"
+#include "os/all/general.dtsi"
+#include "os/all/layers.dtsi"
 
 /* Keys */
-#include "keys.dtsi"
+#include "os/all/keys.dtsi"
 #include "os/win/keys.dtsi"
 #include "os/android/keys.dtsi"
 
