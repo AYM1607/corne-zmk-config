@@ -12,9 +12,9 @@ mp_ai_a: morph_android_a {
     compatible = "zmk,behavior-mod-morph";
     label = "mp_ai_a";
     #binding-cells = <0>;
-    mods = <(MOD_LALT)>;
+    mods = <(MOD_LALT|MOD_RALT)>;
     bindings = <&kp A>, <&mp_ai_a_s>;
-    // keep-mods = <(MOD_LALT)>;
+    // keep-mods = <(MOD_LALT|MOD_RALT)>;
 };
 
 // tap:         e
@@ -31,52 +31,52 @@ mp_ai_e: morph_android_e {
     compatible = "zmk,behavior-mod-morph";
     label = "e";
     #binding-cells = <0>;
-    mods = <(MOD_LALT)>;
+    mods = <(MOD_LALT|MOD_RALT)>;
     bindings = <&kp E>, <&mp_ai_e_s>;
-    keep-mods = <(MOD_LALT)>;
+    // keep-mods = <(MOD_LALT|MOD_RALT)>;
 };
 
 mp_ai_i: morph_android_i {
     compatible = "zmk,behavior-mod-morph";
     label = "i";
     #binding-cells = <0>;
-    mods = <(MOD_LALT)>;
+    mods = <(MOD_LALT|MOD_RALT)>;
     bindings = <&kp I>, <&m_ai_i>;
-    keep-mods = <(MOD_LALT)>;
+    keep-mods = <(MOD_LALT|MOD_RALT)>;
 };
 
 mp_ai_o: morph_android_o {
     compatible = "zmk,behavior-mod-morph";
     label = "o";
     #binding-cells = <0>;
-    mods = <(MOD_LALT)>;
+    mods = <(MOD_LALT|MOD_RALT)>;
     bindings = <&kp O>, <&m_ai_o>;
-    keep-mods = <(MOD_LALT)>;
+    keep-mods = <(MOD_LALT|MOD_RALT)>;
 };
 
 mp_ai_u: morph_android_u {
     compatible = "zmk,behavior-mod-morph";
     label = "u";
     #binding-cells = <0>;
-    mods = <(MOD_LALT)>;
+    mods = <(MOD_LALT|MOD_RALT)>;
     bindings = <&kp U>, <&m_ai_u>;
-    keep-mods = <(MOD_LALT)>;
+    keep-mods = <(MOD_LALT|MOD_RALT)>;
 };
 
 mp_ai_n: morph_android_n {
     compatible = "zmk,behavior-mod-morph";
     label = "n";
     #binding-cells = <0>;
-    mods = <(MOD_LALT)>;
+    mods = <(MOD_LALT|MOD_RALT)>;
     bindings = <&kp N>, <&m_ai_n>;
-    keep-mods = <(MOD_LALT)>;
+    keep-mods = <(MOD_LALT|MOD_RALT)>;
 };
 
 mp_ai_y: morph_android_y {
     compatible = "zmk,behavior-mod-morph";
     label = "y";
     #binding-cells = <0>;
-    mods = <(MOD_LALT)>;
+    mods = <(MOD_LALT|MOD_RALT)>;
     bindings = <&kp Y>, <&m_ai_y>;
-    keep-mods = <(MOD_LALT)>;
+    keep-mods = <(MOD_LALT|MOD_RALT)>;
 };

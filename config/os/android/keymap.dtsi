@@ -5,7 +5,7 @@
             #define AB16  &hm LSHFT    T
 
             #define AB19  &hm_ab_rshf  RSHFT  0  //N
-            #define AB20  &hm_ab_ralt  LALT   0  //E
+            #define AB20  &hm_ab_ralt  RALT   0  //E
             #define AB21  &hm_ab_rctrl RCTRL  0  //I
             #define AB22  &hm_ab_rcmd  RCMD   0  //O
 
@@ -27,12 +27,12 @@
 
         android_dev_layer {
             #define AD13  &hm_ad_lcmd  LCMD    0
-            #define AD14  &hm         LCTRL   LBRC
-            #define AD15  &hm         LALT    RBRC
+            #define AD14  &hm          LCTRL   LBRC
+            #define AD15  &hm          LALT    RBRC
             #define AD16  &hm_ad_lshf  LSHFT   0
 
             #define AD19  &hm_ad_rshf  RSHFT   0
-            #define AD20  &hm_ad_ralt  LALT    0
+            #define AD20  &hm_ad_ralt  RALT    0
             #define AD21  &hm_ad_rctrl RCTRL   0
             #define AD22  &hm_ad_rcmd  RCMD    0
 
@@ -57,10 +57,10 @@
             #define AA16  &hm    LSHFT  RIGHT
             #define AA17  &kp    LG(E)               // tap: file explorer
 
-            #define AA19  &hm    LSHFT  N4
-            #define AA20  &hm    LALT   N5
-            #define AA21  &hm    LCTRL  N6
-            #define AA22  &hm    LCMD   EQUAL
+            #define AA19  &hm    RSHFT  N4
+            #define AA20  &hm    RALT   N5
+            #define AA21  &hm    RCTRL  N6
+            #define AA22  &hm    RCMD   EQUAL
 
             #define AA35  &moto  aFNK   aFNK
 
@@ -89,7 +89,7 @@
             #define AK16  &hm LSHFT  F8
 
             #define AK19  &hm RSHFT  HOME
-            #define AK20  &hm LALT   PG_DN
+            #define AK20  &hm RALT   PG_DN
             #define AK21  &hm RCTRL  END
             #define AK22  &kp RCMD
 
