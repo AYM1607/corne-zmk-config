@@ -37,6 +37,19 @@ m_ai_e: macro_android_int_e {
         , <&kp E>;
 };
 
+// tap:     É
+m_ai_es: macro_android_int_e {
+    compatible = "zmk,behavior-macro";
+    label = "m_ai_es";
+    #binding-cells = <0>;
+    wait-ms = <400>;
+    bindings
+        = <&none>
+        , <&macro_wait_time 100>
+        , <&kp LA(E)>
+        , <&kp LS(E)>;
+};
+
 // tap:     í
 m_ai_i: macro_android_int_i {
     compatible = "zmk,behavior-macro";

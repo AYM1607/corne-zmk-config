@@ -14,15 +14,25 @@ mp_ai_a: morph_android_a {
     #binding-cells = <0>;
     mods = <(MOD_LALT)>;
     bindings = <&kp A>, <&mp_ai_a_s>;
-    keep-mods = <(MOD_LALT)>;
+    // keep-mods = <(MOD_LALT)>;
 };
 
+// tap:         e
+// alt:         é
+// alt+shift:   É
+mp_ai_e_s: morph_android_e_shift {
+    compatible = "zmk,behavior-mod-morph";
+    label = "mp_ai_e_s";
+    #binding-cells = <0>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+    bindings = <&m_ai_e>, <&m_ai_es>;
+};
 mp_ai_e: morph_android_e {
     compatible = "zmk,behavior-mod-morph";
     label = "e";
     #binding-cells = <0>;
     mods = <(MOD_LALT)>;
-    bindings = <&kp E>, <&m_ai_e>;
+    bindings = <&kp E>, <&mp_ai_e_s>;
     keep-mods = <(MOD_LALT)>;
 };
 
