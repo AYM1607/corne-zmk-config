@@ -7,7 +7,7 @@ m_ai_a: macro_android_int_a {
     bindings
         = <&none>
         , <&macro_wait_time 100>
-        , <&kp LA(E)>
+        , <&kp RA(E)>
         , <&kp A>;
 };
 
@@ -20,8 +20,8 @@ m_ai_as: macro_android_int_a_shift {
     bindings
         = <&none>
         , <&macro_wait_time 100>
-        , <&kp LA(E)>
-        , <&kp LS(A)>;
+        , <&kp RA(E)>
+        , <&kp RS(A)>;
 };
 
 // tap:     é
