@@ -33,9 +33,9 @@ mp_wd_lb: morph_win_dev_left_brackets {
 
 // tap:         ]
 // alt:         »
-mp_wd_lb: morph_win_dev_right_brackets {
+mp_wd_rb: morph_win_dev_right_brackets {
     compatible = "zmk,behavior-mod-morph";
-    label = "mp_wd_lb";
+    label = "mp_wd_rb";
     #binding-cells = <0>;
     mods = <(MOD_LALT)>;
     bindings = <&kp RBKT>, <&kp LC(RBKT)>;

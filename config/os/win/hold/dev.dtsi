@@ -50,7 +50,7 @@ hm_wd_rctrl: behavior_win_dev_rctrl {
     quick-tap-ms = <200>;
     flavor = "hold-preferred";
     global-quick-tap;
-    bindings = <&kp>, <&mp_wd_lb>;
+    bindings = <&kp>, <&mp_wd_rb>;
 };
 
 hm_wd_rcmd: behavior_win_dev_rcmd {
