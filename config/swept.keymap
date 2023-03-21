@@ -31,6 +31,7 @@
         #include "os/windows/morph/dev.dtsi"
         #include "os/windows/hold/base.dtsi"
         #include "os/windows/hold/dev.dtsi"
+        #include "os/windows/hold/layers.dtsi"
 
         #include "os/android/morph/layers.dtsi"
         #include "os/android/morph/base.dtsi"
