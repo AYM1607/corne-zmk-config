@@ -1,8 +1,8 @@
 // tap:     ⇺
 // shift:   ⎗
-mp_a_prev: morph_action_prev {
+mp_wa_prev: morph_win_action_prev {
     compatible = "zmk,behavior-mod-morph";
-    label = "mp_a_prev";
+    label = "mp_wa_prev";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
     bindings = <&kp RC(PG_UP)>, <&kp LC(LG(LEFT))>;
@@ -10,9 +10,9 @@ mp_a_prev: morph_action_prev {
 
 // tap:     ⇻
 // shift:   ⎘
-mp_a_next: morph_action_next {
+mp_wa_next: morph_win_action_next {
     compatible = "zmk,behavior-mod-morph";
-    label = "mp_a_next";
+    label = "mp_wa_next";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
     bindings = <&kp RC(PG_DN)>, <&kp LC(LG(RIGHT))>;

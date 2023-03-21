@@ -1,7 +1,7 @@
 // write: **
-m_d_eo: macro_dev_exponentiation_operator {
+m_wd_eo: macro_win_dev_exponentiation_operator {
     compatible = "zmk,behavior-macro";
-    label = "m_d_eo";
+    label = "m_wd_eo";
     #binding-cells = <0>;
     wait-ms = <400>;
     bindings
@@ -11,9 +11,9 @@ m_d_eo: macro_dev_exponentiation_operator {
 };
 
 // write: *=
-m_d_ma: macro_dev_multiplication_assignment {
+m_wd_ma: macro_win_dev_multiplication_assignment {
     compatible = "zmk,behavior-macro";
-    label = "m_d_ma";
+    label = "m_wd_ma";
     #binding-cells = <0>;
     wait-ms = <400>;
     bindings
@@ -23,9 +23,9 @@ m_d_ma: macro_dev_multiplication_assignment {
 };
 
 // write: /=
-m_d_da: macro_dev_division_assignment {
+m_wd_da: macro_win_dev_division_assignment {
     compatible = "zmk,behavior-macro";
-    label = "m_d_da";
+    label = "m_wd_da";
     #binding-cells = <0>;
     wait-ms = <400>;
     bindings
@@ -35,9 +35,9 @@ m_d_da: macro_dev_division_assignment {
 };
 
 // write: ++
-m_d_io: macro_dev_increment_operator {
+m_wd_io: macro_win_dev_increment_operator {
     compatible = "zmk,behavior-macro";
-    label = "m_d_io";
+    label = "m_wd_io";
     #binding-cells = <0>;
     wait-ms = <400>;
     bindings
@@ -47,9 +47,9 @@ m_d_io: macro_dev_increment_operator {
 };
 
 // write: +=
-m_d_as: macro_dev_addition_assignment {
+m_wd_as: macro_win_dev_addition_assignment {
     compatible = "zmk,behavior-macro";
-    label = "m_d_as";
+    label = "m_wd_as";
     #binding-cells = <0>;
     wait-ms = <400>;
     bindings
@@ -59,9 +59,9 @@ m_d_as: macro_dev_addition_assignment {
 };
 
 // write: --
-m_d_do: macro_dev_decrement_operator {
+m_wd_do: macro_win_dev_decrement_operator {
     compatible = "zmk,behavior-macro";
-    label = "m_d_do";
+    label = "m_wd_do";
     #binding-cells = <0>;
     wait-ms = <400>;
     bindings
@@ -71,9 +71,9 @@ m_d_do: macro_dev_decrement_operator {
 };
 
 // write: -=
-m_d_sa: macro_dev_subtraction_assignment {
+m_wd_sa: macro_win_dev_subtraction_assignment {
     compatible = "zmk,behavior-macro";
-    label = "m_d_sa";
+    label = "m_wd_sa";
     #binding-cells = <0>;
     wait-ms = <400>;
     bindings
@@ -83,9 +83,9 @@ m_d_sa: macro_dev_subtraction_assignment {
 };
 
 // write: =>
-m_d_a: macro_dev_arrow {
+m_wd_a: macro_win_dev_arrow {
     compatible = "zmk,behavior-macro";
-    label = "m_d_a";
+    label = "m_wd_a";
     #binding-cells = <0>;
     wait-ms = <400>;
     bindings
@@ -95,9 +95,9 @@ m_d_a: macro_dev_arrow {
 };
 
 // write: &&
-m_d_la: macro_dev_logical_and {
+m_wd_la: macro_win_dev_logical_and {
     compatible = "zmk,behavior-macro";
-    label = "m_d_la";
+    label = "m_wd_la";
     #binding-cells = <0>;
     wait-ms = <400>;
     bindings
@@ -107,9 +107,9 @@ m_d_la: macro_dev_logical_and {
 };
 
 // write: &&=
-m_d_laa: macro_dev_logical_and_assignment {
+m_wd_laa: macro_win_dev_logical_and_assignment {
     compatible = "zmk,behavior-macro";
-    label = "m_d_laa";
+    label = "m_wd_laa";
     #binding-cells = <0>;
     wait-ms = <400>;
     bindings
@@ -119,9 +119,9 @@ m_d_laa: macro_dev_logical_and_assignment {
 };
 
 // write: ||
-m_d_lo: macro_dev_logical_or {
+m_wd_lo: macro_win_dev_logical_or {
     compatible = "zmk,behavior-macro";
-    label = "m_d_lo";
+    label = "m_wd_lo";
     #binding-cells = <0>;
     wait-ms = <400>;
     bindings
@@ -131,9 +131,9 @@ m_d_lo: macro_dev_logical_or {
 };
 
 // write: ||=
-m_d_loa: macro_dev_logical_or_assignment {
+m_wd_loa: macro_win_dev_logical_or_assignment {
     compatible = "zmk,behavior-macro";
-    label = "m_d_loa";
+    label = "m_wd_loa";
     #binding-cells = <0>;
     wait-ms = <400>;
     bindings
@@ -143,9 +143,9 @@ m_d_loa: macro_dev_logical_or_assignment {
 };
 
 // write: ?░:░
-m_d_cto: macro_conditional_ternary_operator {
+m_wd_cto: macro_conditional_ternary_operator {
     compatible = "zmk,behavior-macro";
-    label = "m_d_cto";
+    label = "m_wd_cto";
     #binding-cells = <0>;
     bindings
         = <&kp QMARK &kp SPACE &kp SPACE &kp COLON &kp SPACE>
@@ -153,18 +153,18 @@ m_d_cto: macro_conditional_ternary_operator {
 };
 
 // write: ?.
-m_d_oco: macro_optional_chaining_operator {
+m_wd_oco: macro_optional_chaining_operator {
     compatible = "zmk,behavior-macro";
-    label = "m_d_oco";
+    label = "m_wd_oco";
     #binding-cells = <0>;
     bindings
         = <&kp QMARK &kp DOT>;
 };
 
 // write: ??
-m_d_nco: macro_nullish_coalescing_operator {
+m_wd_nco: macro_nullish_coalescing_operator {
     compatible = "zmk,behavior-macro";
-    label = "m_d_nco";
+    label = "m_wd_nco";
     #binding-cells = <0>;
     wait-ms = <400>;
     bindings
@@ -174,9 +174,9 @@ m_d_nco: macro_nullish_coalescing_operator {
 };
 
 // write: ??=
-m_d_nca: macro_nullish_coalescing_assignment {
+m_wd_nca: macro_nullish_coalescing_assignment {
     compatible = "zmk,behavior-macro";
-    label = "m_d_nca";
+    label = "m_wd_nca";
     #binding-cells = <0>;
     wait-ms = <400>;
     bindings
@@ -186,9 +186,9 @@ m_d_nca: macro_nullish_coalescing_assignment {
 };
 
 // write: ===
-m_d_se: macro_strict_equality {
+m_wd_se: macro_strict_equality {
     compatible = "zmk,behavior-macro";
-    label = "m_d_se";
+    label = "m_wd_se";
     #binding-cells = <0>;
     wait-ms = <400>;
     bindings
@@ -198,9 +198,9 @@ m_d_se: macro_strict_equality {
 };
 
 // write: !!
-m_d_dno: macro_double_not_operator {
+m_wd_dno: macro_double_not_operator {
     compatible = "zmk,behavior-macro";
-    label = "m_d_dno";
+    label = "m_wd_dno";
     #binding-cells = <0>;
     wait-ms = <400>;
     bindings
@@ -210,9 +210,9 @@ m_d_dno: macro_double_not_operator {
 };
 
 // write: !==
-m_d_si: macro_strict_inequality {
+m_wd_si: macro_strict_inequality {
     compatible = "zmk,behavior-macro";
-    label = "m_d_si";
+    label = "m_wd_si";
     #binding-cells = <0>;
     wait-ms = <400>;
     bindings
@@ -222,9 +222,9 @@ m_d_si: macro_strict_inequality {
 };
 
 // write: <░/>
-m_d_hvt: macro_dev_html_void_tag {
+m_wd_hvt: macro_win_dev_html_void_tag {
     compatible = "zmk,behavior-macro";
-    label = "m_d_hvt";
+    label = "m_wd_hvt";
     #binding-cells = <0>;
     wait-ms = <400>;
     bindings
@@ -235,9 +235,9 @@ m_d_hvt: macro_dev_html_void_tag {
 };
 
 // write: <=
-m_d_ltoet: macro_dev_less_than_or_equal_to {
+m_wd_ltoet: macro_win_dev_less_than_or_equal_to {
     compatible = "zmk,behavior-macro";
-    label = "m_d_ltoet";
+    label = "m_wd_ltoet";
     #binding-cells = <0>;
     wait-ms = <400>;
     bindings
@@ -247,9 +247,9 @@ m_d_ltoet: macro_dev_less_than_or_equal_to {
 };
 
 // write: </░>
-m_d_hct: macro_dev_html_close_tag {
+m_wd_hct: macro_win_dev_html_close_tag {
     compatible = "zmk,behavior-macro";
-    label = "m_d_hct";
+    label = "m_wd_hct";
     #binding-cells = <0>;
     wait-ms = <400>;
     bindings
@@ -260,9 +260,9 @@ m_d_hct: macro_dev_html_close_tag {
 };
 
 // write: >=
-m_d_gtoet: macro_dev_greater_than_or_equal_to {
+m_wd_gtoet: macro_win_dev_greater_than_or_equal_to {
     compatible = "zmk,behavior-macro";
-    label = "m_d_gtoet";
+    label = "m_wd_gtoet";
     #binding-cells = <0>;
     wait-ms = <400>;
     bindings

@@ -30,17 +30,17 @@
         compatible = "zmk,keymap";
 
         win_base_layer {
-            #define AB13  &hm_b_lcmd  LCMD   0  //A
+            #define AB13  &hm_ab_lcmd  LCMD   0  //A
             #define AB14  &hm LCTRL   R
             #define AB15  &hm LALT    S
             #define AB16  &hm LSHFT   T
 
-            #define AB19  &hm_b_rshf  RSHFT  0  //N
-            #define AB20  &hm_b_ralt  LALT   0  //E
-            #define AB21  &hm_b_rctrl RCTRL  0  //I
-            #define AB22  &hm_b_rcmd  RCMD   0  //O
+            #define AB19  &hm_ab_rshf  RSHFT  0  //N
+            #define AB20  &hm_ab_ralt  LALT   0  //E
+            #define AB21  &hm_ab_rctrl RCTRL  0  //I
+            #define AB22  &hm_ab_rcmd  RCMD   0  //O
 
-            #define AB35  &mp_a_stg
+            #define AB35  &mp_aa_stg
 
             #define AB36  &moto       aDEV   aDEV
             #define AB38  &moto       aAXN   aAXN
@@ -57,25 +57,25 @@
         };
 
         win_dev_layer {
-            #define AD13  &hm_d_lcmd  LCMD    0
+            #define AD13  &hm_ad_lcmd  LCMD    0
             #define AD14  &hm         LCTRL   LBRC
             #define AD15  &hm         LALT    RBRC
-            #define AD16  &hm_d_lshf  LSHFT   0
+            #define AD16  &hm_ad_lshf  LSHFT   0
 
-            #define AD19  &hm_d_rshf  RSHFT   0
-            #define AD20  &hm_d_ralt  LALT    0
-            #define AD21  &hm_d_rctrl RCTRL   0
-            #define AD22  &hm_d_rcmd  RCMD    0
+            #define AD19  &hm_ad_rshf  RSHFT   0
+            #define AD20  &hm_ad_ralt  LALT    0
+            #define AD21  &hm_ad_rctrl RCTRL   0
+            #define AD22  &hm_ad_rcmd  RCMD    0
 
             #define AD38  &moto       aAXN    aBAS
             #define AD39  &moto       aAXN    aAXN
 
             label = "aDEV";
             bindings = <
-    AKY_ESC     &kp AT  &mp_d_pound  &mp_d_money  &mp_d_p    &m_ai_d            &m_ai_t   &mp_d_m  &kp UNDER  &kp PRCNT    &m_ai_c    NAV_DEL
-     &mp_bc       AD13         AD14         AD15     AD16    &m_ai_s            &m_ai_g      AD19       AD20       AD21       AD22   NAV_BSPC
-    KEY_TAB  &kp LC(R)     &kp LPAR     &kp RPAR  &mp_d_a   &kp BSLH            &mp_d_s  &mp_d_qs   &mp_d_lt   &mp_d_gt   &mp_d_ql    &kp F12
-                                          &mp_cs  KEY_SPC       AD38               AD39   KEY_RET     &mp_dc
+    AKY_ESC     &kp AT  &mp_ad_pound  &mp_ad_money  &mp_ad_p    &m_ai_d             &m_ai_t   &mp_ad_m   &kp UNDER   &kp PRCNT     &m_ai_c    NAV_DEL
+     &mp_bc       AD13          AD14          AD15      AD16    &m_ai_s             &m_ai_g       AD19        AD20        AD21        AD22   NAV_BSPC
+    KEY_TAB  &kp LC(R)      &kp LPAR      &kp RPAR  &mp_ad_a   &kp BSLH            &mp_ad_s  &mp_ad_qs   &mp_ad_lt   &mp_ad_gt   &mp_ad_ql    &kp F12
+                                            &mp_cs   KEY_SPC       AD38                AD39    KEY_RET      &mp_dc
             >;
         };
 
@@ -106,10 +106,10 @@
 
             label = "aAXN";
             bindings = <
-    AKY_ESC      AA01  &mp_a_prev    &kp UP  &mp_a_next      AA05            &kp KP_PLUS   &kp N7  &kp N8  &kp N9  &kp KP_MULTIPLY   NAV_DEL
-     &mp_bc      AA13        AA14      AA15        AA16      AA17                 &kp N0     AA19    AA20    AA21             AA22  NAV_BSPC
-    KEY_TAB  KEY_UNDO     KEY_CUT  KEY_COPY   KEY_PASTE  KEY_REDO                &mp_k_m   &kp N1  &kp N2  &kp N3    &kp KP_DIVIDE      AA35
-                                     &mp_cs     KEY_SPC      AA38                   AA39  KEY_RET  &mp_dc
+    AKY_ESC      AA01  &mp_aa_prev    &kp UP  &mp_aa_next      AA05            &kp KP_PLUS   &kp N7  &kp N8  &kp N9  &kp KP_MULTIPLY   NAV_DEL
+     &mp_bc      AA13         AA14      AA15         AA16      AA17                 &kp N0     AA19    AA20    AA21             AA22  NAV_BSPC
+    KEY_TAB  KEY_UNDO      KEY_CUT  KEY_COPY    KEY_PASTE  KEY_REDO                &mp_k_m   &kp N1  &kp N2  &kp N3    &kp KP_DIVIDE      AA35
+                                      &mp_cs      KEY_SPC      AA38                   AA39  KEY_RET  &mp_dc
             >;
         };
 

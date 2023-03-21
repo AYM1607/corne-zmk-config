@@ -1,6 +1,6 @@
-hm_b_lcmd: behavior_base_lcmd {
+hm_ab_lcmd: behavior_android_base_lcmd {
     compatible = "zmk,behavior-hold-tap";
-    label = "hm_b_lcmd";
+    label = "hm_ab_lcmd";
     #binding-cells = <2>;
     tapping-term-ms = <300>;
     quick-tap-ms = <200>;
@@ -9,9 +9,9 @@ hm_b_lcmd: behavior_base_lcmd {
     bindings = <&kp>, <&mp_ai_a>;
 };
 
-hm_b_rshf: behavior_base_rshf {
+hm_ab_rshf: behavior_android_base_rshf {
     compatible = "zmk,behavior-hold-tap";
-    label = "hm_b_rshf";
+    label = "hm_ab_rshf";
     #binding-cells = <2>;
     tapping-term-ms = <300>;
     quick-tap-ms = <200>;
@@ -20,9 +20,9 @@ hm_b_rshf: behavior_base_rshf {
     bindings = <&kp>, <&mp_ai_n>;
 };
 
-hm_b_ralt: behavior_base_ralt {
+hm_ab_ralt: behavior_android_base_ralt {
     compatible = "zmk,behavior-hold-tap";
-    label = "hm_b_ralt";
+    label = "hm_ab_ralt";
     #binding-cells = <2>;
     tapping-term-ms = <300>;
     quick-tap-ms = <200>;
@@ -31,9 +31,9 @@ hm_b_ralt: behavior_base_ralt {
     bindings = <&kp>, <&mp_ai_e>;
 };
 
-hm_b_rctrl: behavior_base_rctrl {
+hm_ab_rctrl: behavior_android_base_rctrl {
     compatible = "zmk,behavior-hold-tap";
-    label = "hm_b_rctrl";
+    label = "hm_ab_rctrl";
     #binding-cells = <2>;
     tapping-term-ms = <300>;
     quick-tap-ms = <200>;
@@ -42,9 +42,9 @@ hm_b_rctrl: behavior_base_rctrl {
     bindings = <&kp>, <&mp_ai_i>;
 };
 
-hm_b_rcmd: behavior_base_rcmd {
+hm_ab_rcmd: behavior_android_base_rcmd {
     compatible = "zmk,behavior-hold-tap";
-    label = "hm_b_rcmd";
+    label = "hm_ab_rcmd";
     #binding-cells = <2>;
     tapping-term-ms = <300>;
     quick-tap-ms = <200>;

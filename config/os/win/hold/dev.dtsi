@@ -1,65 +1,65 @@
-hm_d_lcmd: behavior_dev_lcmd {
+hm_wd_lcmd: behavior_win_dev_lcmd {
     compatible = "zmk,behavior-hold-tap";
-    label = "hm_d_lcmd";
+    label = "hm_wd_lcmd";
     #binding-cells = <2>;
     tapping-term-ms = <300>;
     quick-tap-ms = <200>;
     flavor = "hold-preferred";
     global-quick-tap;
-    bindings = <&kp>, <&mp_d_lao>;
+    bindings = <&kp>, <&mp_wd_lao>;
 };
 
-hm_d_lshf: behavior_dev_lshf {
+hm_wd_lshf: behavior_win_dev_lshf {
     compatible = "zmk,behavior-hold-tap";
-    label = "hm_d_lshf";
+    label = "hm_wd_lshf";
     #binding-cells = <2>;
     tapping-term-ms = <300>;
     quick-tap-ms = <200>;
     flavor = "hold-preferred";
     global-quick-tap;
-    bindings = <&kp>, <&mp_d_e>;
+    bindings = <&kp>, <&mp_wd_e>;
 };
 
-hm_d_rshf: behavior_dev_rshf {
+hm_wd_rshf: behavior_win_dev_rshf {
     compatible = "zmk,behavior-hold-tap";
-    label = "hm_d_rshf";
+    label = "hm_wd_rshf";
     #binding-cells = <2>;
     tapping-term-ms = <300>;
     quick-tap-ms = <200>;
     flavor = "hold-preferred";
     global-quick-tap;
-    bindings = <&kp>, <&mp_d_es>;
+    bindings = <&kp>, <&mp_wd_es>;
 };
 
-hm_d_ralt: behavior_dev_ralt {
+hm_wd_ralt: behavior_win_dev_ralt {
     compatible = "zmk,behavior-hold-tap";
-    label = "hm_d_ralt";
+    label = "hm_wd_ralt";
     #binding-cells = <2>;
     tapping-term-ms = <300>;
     quick-tap-ms = <200>;
     flavor = "hold-preferred";
     global-quick-tap;
-    bindings = <&kp>, <&mp_d_lb>;
+    bindings = <&kp>, <&mp_wd_lb>;
 };
 
-hm_d_rctrl: behavior_dev_rctrl {
+hm_wd_rctrl: behavior_win_dev_rctrl {
     compatible = "zmk,behavior-hold-tap";
-    label = "hm_d_rctrl";
+    label = "hm_wd_rctrl";
     #binding-cells = <2>;
     tapping-term-ms = <300>;
     quick-tap-ms = <200>;
     flavor = "hold-preferred";
     global-quick-tap;
-    bindings = <&kp>, <&mp_r_lb>;
+    bindings = <&kp>, <&mp_wd_lb>;
 };
 
-hm_d_rcmd: behavior_dev_rcmd {
+hm_wd_rcmd: behavior_win_dev_rcmd {
     compatible = "zmk,behavior-hold-tap";
-    label = "hm_d_rcmd";
+    label = "hm_wd_rcmd";
     #binding-cells = <2>;
     tapping-term-ms = <300>;
     quick-tap-ms = <200>;
     flavor = "hold-preferred";
     global-quick-tap;
-    bindings = <&kp>, <&mp_d_loo>;
+    bindings = <&kp>, <&mp_wd_loo>;
 };

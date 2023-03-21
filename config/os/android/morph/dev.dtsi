@@ -1,8 +1,8 @@
 // tap:         #
 // alt:         °
-mp_d_pound: morph_dev_pound {
+mp_ad_pound: morph_android_dev_pound {
     compatible = "zmk,behavior-mod-morph";
-    label = "mp_d_pound";
+    label = "mp_ad_pound";
     #binding-cells = <0>;
     mods = <(MOD_LALT)>;
     bindings = <&kp POUND>, <&kp LC(LS(SEMICOLON))>;
@@ -11,9 +11,9 @@ mp_d_pound: morph_dev_pound {
 
 // tap:         $
 // alt:         €
-mp_d_money: morph_dev_money {
+mp_ad_money: morph_android_dev_money {
     compatible = "zmk,behavior-mod-morph";
-    label = "mp_d_money";
+    label = "mp_ad_money";
     #binding-cells = <0>;
     mods = <(MOD_LALT)>;
     bindings = <&kp DLLR>, <&kp LC(N5)>;
@@ -22,9 +22,9 @@ mp_d_money: morph_dev_money {
 
 // tap:         [
 // alt:         «
-mp_d_lb: morph_dev_left_brackets {
+mp_ad_lb: morph_android_dev_left_brackets {
     compatible = "zmk,behavior-mod-morph";
-    label = "mp_d_lb";
+    label = "mp_ad_lb";
     #binding-cells = <0>;
     mods = <(MOD_LALT)>;
     bindings = <&kp LBKT>, <&kp LC(LBKT)>;
@@ -33,9 +33,9 @@ mp_d_lb: morph_dev_left_brackets {
 
 // tap:         ]
 // alt:         »
-mp_r_lb: morph_dev_right_brackets {
+mp_ad_lb: morph_android_dev_right_brackets {
     compatible = "zmk,behavior-mod-morph";
-    label = "mp_r_lb";
+    label = "mp_ad_lb";
     #binding-cells = <0>;
     mods = <(MOD_LALT)>;
     bindings = <&kp RBKT>, <&kp LC(RBKT)>;
@@ -45,163 +45,163 @@ mp_r_lb: morph_dev_right_brackets {
 // tap:         *
 // shift:       *=
 // alt:         **
-mp_d_a_a: morph_dev_asterisk_alt {
+mp_ad_a_a: morph_android_dev_asterisk_alt {
     compatible = "zmk,behavior-mod-morph";
-    label = "mp_d_a_a";
+    label = "mp_ad_a_a";
     #binding-cells = <0>;
     mods = <(MOD_LALT)>;
-    bindings = <&kp ASTRK>, <&m_d_eo>;
+    bindings = <&kp ASTRK>, <&m_ad_eo>;
     keep-mods = <(MOD_LALT)>;
 };
-mp_d_a: morph_dev_asterisk {
+mp_ad_a: morph_android_dev_asterisk {
     compatible = "zmk,behavior-mod-morph";
-    label = "mp_d_a";
+    label = "mp_ad_a";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&mp_d_a_a>, <&m_d_ma>;
+    bindings = <&mp_ad_a_a>, <&m_ad_ma>;
 };
 
 // tap:         +
 // shift:       +=
 // alt:         ++
-mp_d_p_a: morph_dev_plus_alt {
+mp_ad_p_a: morph_android_dev_plus_alt {
     compatible = "zmk,behavior-mod-morph";
-    label = "mp_d_p_a";
+    label = "mp_ad_p_a";
     #binding-cells = <0>;
     mods = <(MOD_LALT)>;
-    bindings = <&kp PLUS>, <&m_d_io>;
+    bindings = <&kp PLUS>, <&m_ad_io>;
     keep-mods = <(MOD_LALT)>;
 };
-mp_d_p: morph_dev_plus {
+mp_ad_p: morph_android_dev_plus {
     compatible = "zmk,behavior-mod-morph";
-    label = "mp_d_p";
+    label = "mp_ad_p";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&mp_d_p_a>, <&m_d_as>;
+    bindings = <&mp_ad_p_a>, <&m_ad_as>;
 };
 
 // tap:         -
 // shift:       -=
 // alt:         --
-mp_d_m_a: morph_dev_minus_alt {
+mp_ad_m_a: morph_android_dev_minus_alt {
     compatible = "zmk,behavior-mod-morph";
-    label = "mp_d_m_a";
+    label = "mp_ad_m_a";
     #binding-cells = <0>;
     mods = <(MOD_LALT)>;
-    bindings = <&kp MINUS>, <&m_d_do>;
+    bindings = <&kp MINUS>, <&m_ad_do>;
     keep-mods = <(MOD_LALT)>;
 };
-mp_d_m: morph_dev_minus {
+mp_ad_m: morph_android_dev_minus {
     compatible = "zmk,behavior-mod-morph";
-    label = "mp_d_m";
+    label = "mp_ad_m";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&mp_d_m_a>, <&m_d_sa>;
+    bindings = <&mp_ad_m_a>, <&m_ad_sa>;
 };
 
 // tap:         =
 // shift:       ===
 // alt:         =>
-mp_d_e_a: morph_dev_equal_alt {
+mp_ad_e_a: morph_android_dev_equal_alt {
     compatible = "zmk,behavior-mod-morph";
-    label = "mp_d_e_a";
+    label = "mp_ad_e_a";
     #binding-cells = <0>;
     mods = <(MOD_LALT)>;
-    bindings = <&kp EQUAL>, <&m_d_a>;
+    bindings = <&kp EQUAL>, <&m_ad_a>;
     keep-mods = <(MOD_LALT)>;
 };
-mp_d_e: morph_dev_equal {
+mp_ad_e: morph_android_dev_equal {
     compatible = "zmk,behavior-mod-morph";
-    label = "mp_d_e";
+    label = "mp_ad_e";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&mp_d_e_a>, <&m_d_se>;
+    bindings = <&mp_ad_e_a>, <&m_ad_se>;
 };
 
 // tap:         /
 // shift:       /=
 // ctrl:        // line comment
 // alt:         /* block comment *
-mp_d_s_s: morph_dev_slash_shift {
+mp_ad_s_s: morph_android_dev_slash_shift {
     compatible = "zmk,behavior-mod-morph";
-    label = "mp_d_s_s";
+    label = "mp_ad_s_s";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&kp FSLH>, <&m_d_da>;
+    bindings = <&kp FSLH>, <&m_ad_da>;
 };
-mp_d_s: morph_dev_slash {
+mp_ad_s: morph_android_dev_slash {
     compatible = "zmk,behavior-mod-morph";
-    label = "mp_d_s";
+    label = "mp_ad_s";
     #binding-cells = <0>;
     mods = <(MOD_LALT)>;
-    bindings = <&mp_d_s_s>, <&kp LS(A)>;
+    bindings = <&mp_ad_s_s>, <&kp LS(A)>;
     keep-mods = <(MOD_LALT)>;
 };
 
 // tap:         &
 // shift:       &&=
 // alt:         &&
-mp_d_lao_a: morph_dev_logical_and_operator_alt {
+mp_ad_lao_a: morph_android_dev_logical_and_operator_alt {
     compatible = "zmk,behavior-mod-morph";
-    label = "mp_d_lao_a";
+    label = "mp_ad_lao_a";
     #binding-cells = <0>;
     mods = <(MOD_LALT)>;
-    bindings = <&kp AMPS>, <&m_d_la>;
+    bindings = <&kp AMPS>, <&m_ad_la>;
     keep-mods = <(MOD_LALT)>;
 };
-mp_d_lao: morph_dev_logical_and_operator {
+mp_ad_lao: morph_android_dev_logical_and_operator {
     compatible = "zmk,behavior-mod-morph";
-    label = "mp_d_lao";
+    label = "mp_ad_lao";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&mp_d_lao_a>, <&m_d_laa>;
+    bindings = <&mp_ad_lao_a>, <&m_ad_laa>;
 };
 
 // tap:         |
 // shift:       ||=
 // alt:         ||
-mp_d_loo_a: morph_dev_logical_or_operator_alt {
+mp_ad_loo_a: morph_android_dev_logical_or_operator_alt {
     compatible = "zmk,behavior-mod-morph";
-    label = "mp_d_loo_a";
+    label = "mp_ad_loo_a";
     #binding-cells = <0>;
     mods = <(MOD_LALT)>;
-    bindings = <&kp PIPE>, <&m_d_lo>;
+    bindings = <&kp PIPE>, <&m_ad_lo>;
     keep-mods = <(MOD_LALT)>;
 };
-mp_d_loo: morph_dev_logical_or_operator {
+mp_ad_loo: morph_android_dev_logical_or_operator {
     compatible = "zmk,behavior-mod-morph";
-    label = "mp_d_loo";
+    label = "mp_ad_loo";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&mp_d_loo_a>, <&m_d_loa>;
+    bindings = <&mp_ad_loo_a>, <&m_ad_loa>;
 };
 
 // tap:         ?
 // shift:       ??=
 // alt:         ¿
 // alt+shift:   ??
-mp_d_qs_as: morph_dev_question_symbol_alt_shift {
+mp_ad_qs_as: morph_android_dev_question_symbol_alt_shift {
     compatible = "zmk,behavior-mod-morph";
-    label = "mp_d_qs_as";
+    label = "mp_ad_qs_as";
     #binding-cells = <0>;
     mods = <(MOD_LALT)>;
-    bindings = <&m_d_nca>, <&m_d_nco>;
+    bindings = <&m_ad_nca>, <&m_ad_nco>;
     keep-mods = <(MOD_LALT)>;
 };
-mp_d_qs_a: morph_dev_question_symbol_alt {
+mp_ad_qs_a: morph_android_dev_question_symbol_alt {
     compatible = "zmk,behavior-mod-morph";
-    label = "mp_d_qs_a";
+    label = "mp_ad_qs_a";
     #binding-cells = <0>;
     mods = <(MOD_LALT)>;
     bindings = <&kp QMARK>, <&kp LC(FSLH)>;
     keep-mods = <(MOD_LALT)>;
 };
-mp_d_qs: morph_dev_question_symbol {
+mp_ad_qs: morph_android_dev_question_symbol {
     compatible = "zmk,behavior-mod-morph";
-    label = "mp_d_qs";
+    label = "mp_ad_qs";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&mp_d_qs_a>, <&mp_d_qs_as>;
+    bindings = <&mp_ad_qs_a>, <&mp_ad_qs_as>;
     keep-mods = <(MOD_LSFT|MOD_RSFT)>;
 };
 
@@ -209,74 +209,74 @@ mp_d_qs: morph_dev_question_symbol {
 // shift:       !==
 // alt:         ¡
 // alt+shift:   !!
-mp_d_es_as: morph_dev_exclamation_symbol_alt_shift {
+mp_ad_es_as: morph_android_dev_exclamation_symbol_alt_shift {
     compatible = "zmk,behavior-mod-morph";
-    label = "mp_d_es_as";
+    label = "mp_ad_es_as";
     #binding-cells = <0>;
     mods = <(MOD_LALT)>;
-    bindings = <&m_d_si>, <&m_d_dno>;
+    bindings = <&m_ad_si>, <&m_ad_dno>;
     keep-mods = <(MOD_LALT)>;
 };
-mp_d_es_a: morph_dev_exclamation_symbol_alt {
+mp_ad_es_a: morph_android_dev_exclamation_symbol_alt {
     compatible = "zmk,behavior-mod-morph";
-    label = "mp_d_es_a";
+    label = "mp_ad_es_a";
     #binding-cells = <0>;
     mods = <(MOD_LALT)>;
     bindings = <&kp EXCL>, <&kp LC(N1)>;
     keep-mods = <(MOD_LALT)>;
 };
-mp_d_es: morph_dev_exclamation_symbol {
+mp_ad_es: morph_android_dev_exclamation_symbol {
     compatible = "zmk,behavior-mod-morph";
-    label = "mp_d_es";
+    label = "mp_ad_es";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&mp_d_es_a>, <&mp_d_es_as>;
+    bindings = <&mp_ad_es_a>, <&mp_ad_es_as>;
 };
 
 // tap:         ?.
 // shift:       ?░:░
-mp_d_ql: morph_dev_question_logical {
+mp_ad_ql: morph_android_dev_question_logical {
     compatible = "zmk,behavior-mod-morph";
-    label = "mp_d_ql";
+    label = "mp_ad_ql";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&m_d_oco>, <&m_d_cto>;
+    bindings = <&m_ad_oco>, <&m_ad_cto>;
 };
 
 // tap:         <
 // shift:       <=
 // alt:         <░/> /* html void tag */
-mp_d_lt_s: morph_dev_lower_than_shift {
+mp_ad_lt_s: morph_android_dev_lower_than_shift {
     compatible = "zmk,behavior-mod-morph";
-    label = "mp_d_lt_s";
+    label = "mp_ad_lt_s";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&kp LT>, <&m_d_ltoet>;
+    bindings = <&kp LT>, <&m_ad_ltoet>;
 };
-mp_d_lt: morph_dev_lower_than {
+mp_ad_lt: morph_android_dev_lower_than {
     compatible = "zmk,behavior-mod-morph";
-    label = "mp_d_lt";
+    label = "mp_ad_lt";
     #binding-cells = <0>;
     mods = <(MOD_LALT)>;
-    bindings = <&mp_d_lt_s>, <&m_d_hvt>;
+    bindings = <&mp_ad_lt_s>, <&m_ad_hvt>;
     keep-mods = <(MOD_LALT)>;
 };
 
 // tap:         >
 // shift:       >=
 // alt:         </░> /* html close tag */
-mp_d_gt_s: morph_dev_greater_than_shift {
+mp_ad_gt_s: morph_android_dev_greater_than_shift {
     compatible = "zmk,behavior-mod-morph";
-    label = "mp_d_gt_s";
+    label = "mp_ad_gt_s";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&kp GT>, <&m_d_gtoet>;
+    bindings = <&kp GT>, <&m_ad_gtoet>;
 };
-mp_d_gt: morph_dev_greater_than {
+mp_ad_gt: morph_android_dev_greater_than {
     compatible = "zmk,behavior-mod-morph";
-    label = "mp_d_gt";
+    label = "mp_ad_gt";
     #binding-cells = <0>;
     mods = <(MOD_LALT)>;
-    bindings = <&mp_d_gt_s>, <&m_d_hct>;
+    bindings = <&mp_ad_gt_s>, <&m_ad_hct>;
     keep-mods = <(MOD_LALT)>;
 };

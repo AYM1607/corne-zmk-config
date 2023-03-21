@@ -1,7 +1,7 @@
 // write: **
-m_d_eo: macro_dev_exponentiation_operator {
+m_ad_eo: macro_android_dev_exponentiation_operator {
     compatible = "zmk,behavior-macro";
-    label = "m_d_eo";
+    label = "m_ad_eo";
     #binding-cells = <0>;
     wait-ms = <400>;
     bindings
@@ -11,9 +11,9 @@ m_d_eo: macro_dev_exponentiation_operator {
 };
 
 // write: *=
-m_d_ma: macro_dev_multiplication_assignment {
+m_ad_ma: macro_android_dev_multiplication_assignment {
     compatible = "zmk,behavior-macro";
-    label = "m_d_ma";
+    label = "m_ad_ma";
     #binding-cells = <0>;
     wait-ms = <400>;
     bindings
@@ -23,9 +23,9 @@ m_d_ma: macro_dev_multiplication_assignment {
 };
 
 // write: /=
-m_d_da: macro_dev_division_assignment {
+m_ad_da: macro_android_dev_division_assignment {
     compatible = "zmk,behavior-macro";
-    label = "m_d_da";
+    label = "m_ad_da";
     #binding-cells = <0>;
     wait-ms = <400>;
     bindings
@@ -35,9 +35,9 @@ m_d_da: macro_dev_division_assignment {
 };
 
 // write: ++
-m_d_io: macro_dev_increment_operator {
+m_ad_io: macro_android_dev_increment_operator {
     compatible = "zmk,behavior-macro";
-    label = "m_d_io";
+    label = "m_ad_io";
     #binding-cells = <0>;
     wait-ms = <400>;
     bindings
@@ -47,9 +47,9 @@ m_d_io: macro_dev_increment_operator {
 };
 
 // write: +=
-m_d_as: macro_dev_addition_assignment {
+m_ad_as: macro_android_dev_addition_assignment {
     compatible = "zmk,behavior-macro";
-    label = "m_d_as";
+    label = "m_ad_as";
     #binding-cells = <0>;
     wait-ms = <400>;
     bindings
@@ -59,9 +59,9 @@ m_d_as: macro_dev_addition_assignment {
 };
 
 // write: --
-m_d_do: macro_dev_decrement_operator {
+m_ad_do: macro_android_dev_decrement_operator {
     compatible = "zmk,behavior-macro";
-    label = "m_d_do";
+    label = "m_ad_do";
     #binding-cells = <0>;
     wait-ms = <400>;
     bindings
@@ -71,9 +71,9 @@ m_d_do: macro_dev_decrement_operator {
 };
 
 // write: -=
-m_d_sa: macro_dev_subtraction_assignment {
+m_ad_sa: macro_android_dev_subtraction_assignment {
     compatible = "zmk,behavior-macro";
-    label = "m_d_sa";
+    label = "m_ad_sa";
     #binding-cells = <0>;
     wait-ms = <400>;
     bindings
@@ -83,9 +83,9 @@ m_d_sa: macro_dev_subtraction_assignment {
 };
 
 // write: =>
-m_d_a: macro_dev_arrow {
+m_ad_a: macro_android_dev_arrow {
     compatible = "zmk,behavior-macro";
-    label = "m_d_a";
+    label = "m_ad_a";
     #binding-cells = <0>;
     wait-ms = <400>;
     bindings
@@ -95,9 +95,9 @@ m_d_a: macro_dev_arrow {
 };
 
 // write: &&
-m_d_la: macro_dev_logical_and {
+m_ad_la: macro_android_dev_logical_and {
     compatible = "zmk,behavior-macro";
-    label = "m_d_la";
+    label = "m_ad_la";
     #binding-cells = <0>;
     wait-ms = <400>;
     bindings
@@ -107,9 +107,9 @@ m_d_la: macro_dev_logical_and {
 };
 
 // write: &&=
-m_d_laa: macro_dev_logical_and_assignment {
+m_ad_laa: macro_android_dev_logical_and_assignment {
     compatible = "zmk,behavior-macro";
-    label = "m_d_laa";
+    label = "m_ad_laa";
     #binding-cells = <0>;
     wait-ms = <400>;
     bindings
@@ -119,9 +119,9 @@ m_d_laa: macro_dev_logical_and_assignment {
 };
 
 // write: ||
-m_d_lo: macro_dev_logical_or {
+m_ad_lo: macro_android_dev_logical_or {
     compatible = "zmk,behavior-macro";
-    label = "m_d_lo";
+    label = "m_ad_lo";
     #binding-cells = <0>;
     wait-ms = <400>;
     bindings
@@ -131,9 +131,9 @@ m_d_lo: macro_dev_logical_or {
 };
 
 // write: ||=
-m_d_loa: macro_dev_logical_or_assignment {
+m_ad_loa: macro_android_dev_logical_or_assignment {
     compatible = "zmk,behavior-macro";
-    label = "m_d_loa";
+    label = "m_ad_loa";
     #binding-cells = <0>;
     wait-ms = <400>;
     bindings
@@ -143,9 +143,9 @@ m_d_loa: macro_dev_logical_or_assignment {
 };
 
 // write: ?░:░
-m_d_cto: macro_conditional_ternary_operator {
+m_ad_cto: macro_conditional_ternary_operator {
     compatible = "zmk,behavior-macro";
-    label = "m_d_cto";
+    label = "m_ad_cto";
     #binding-cells = <0>;
     bindings
         = <&kp QMARK &kp SPACE &kp SPACE &kp COLON &kp SPACE>
@@ -153,18 +153,18 @@ m_d_cto: macro_conditional_ternary_operator {
 };
 
 // write: ?.
-m_d_oco: macro_optional_chaining_operator {
+m_ad_oco: macro_optional_chaining_operator {
     compatible = "zmk,behavior-macro";
-    label = "m_d_oco";
+    label = "m_ad_oco";
     #binding-cells = <0>;
     bindings
         = <&kp QMARK &kp DOT>;
 };
 
 // write: ??
-m_d_nco: macro_nullish_coalescing_operator {
+m_ad_nco: macro_nullish_coalescing_operator {
     compatible = "zmk,behavior-macro";
-    label = "m_d_nco";
+    label = "m_ad_nco";
     #binding-cells = <0>;
     wait-ms = <400>;
     bindings
@@ -174,9 +174,9 @@ m_d_nco: macro_nullish_coalescing_operator {
 };
 
 // write: ??=
-m_d_nca: macro_nullish_coalescing_assignment {
+m_ad_nca: macro_nullish_coalescing_assignment {
     compatible = "zmk,behavior-macro";
-    label = "m_d_nca";
+    label = "m_ad_nca";
     #binding-cells = <0>;
     wait-ms = <400>;
     bindings
@@ -186,9 +186,9 @@ m_d_nca: macro_nullish_coalescing_assignment {
 };
 
 // write: ===
-m_d_se: macro_strict_equality {
+m_ad_se: macro_strict_equality {
     compatible = "zmk,behavior-macro";
-    label = "m_d_se";
+    label = "m_ad_se";
     #binding-cells = <0>;
     wait-ms = <400>;
     bindings
@@ -198,9 +198,9 @@ m_d_se: macro_strict_equality {
 };
 
 // write: !!
-m_d_dno: macro_double_not_operator {
+m_ad_dno: macro_double_not_operator {
     compatible = "zmk,behavior-macro";
-    label = "m_d_dno";
+    label = "m_ad_dno";
     #binding-cells = <0>;
     wait-ms = <400>;
     bindings
@@ -210,9 +210,9 @@ m_d_dno: macro_double_not_operator {
 };
 
 // write: !==
-m_d_si: macro_strict_inequality {
+m_ad_si: macro_strict_inequality {
     compatible = "zmk,behavior-macro";
-    label = "m_d_si";
+    label = "m_ad_si";
     #binding-cells = <0>;
     wait-ms = <400>;
     bindings
@@ -222,9 +222,9 @@ m_d_si: macro_strict_inequality {
 };
 
 // write: <░/>
-m_d_hvt: macro_dev_html_void_tag {
+m_ad_hvt: macro_android_dev_html_void_tag {
     compatible = "zmk,behavior-macro";
-    label = "m_d_hvt";
+    label = "m_ad_hvt";
     #binding-cells = <0>;
     wait-ms = <400>;
     bindings
@@ -235,9 +235,9 @@ m_d_hvt: macro_dev_html_void_tag {
 };
 
 // write: <=
-m_d_ltoet: macro_dev_less_than_or_equal_to {
+m_ad_ltoet: macro_android_dev_less_than_or_equal_to {
     compatible = "zmk,behavior-macro";
-    label = "m_d_ltoet";
+    label = "m_ad_ltoet";
     #binding-cells = <0>;
     wait-ms = <400>;
     bindings
@@ -247,9 +247,9 @@ m_d_ltoet: macro_dev_less_than_or_equal_to {
 };
 
 // write: </░>
-m_d_hct: macro_dev_html_close_tag {
+m_ad_hct: macro_android_dev_html_close_tag {
     compatible = "zmk,behavior-macro";
-    label = "m_d_hct";
+    label = "m_ad_hct";
     #binding-cells = <0>;
     wait-ms = <400>;
     bindings
@@ -260,9 +260,9 @@ m_d_hct: macro_dev_html_close_tag {
 };
 
 // write: >=
-m_d_gtoet: macro_dev_greater_than_or_equal_to {
+m_ad_gtoet: macro_android_dev_greater_than_or_equal_to {
     compatible = "zmk,behavior-macro";
-    label = "m_d_gtoet";
+    label = "m_ad_gtoet";
     #binding-cells = <0>;
     wait-ms = <400>;
     bindings

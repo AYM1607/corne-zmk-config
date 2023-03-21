@@ -1,65 +1,65 @@
-hm_d_lcmd: behavior_dev_lcmd {
+hm_ad_lcmd: behavior_android_dev_lcmd {
     compatible = "zmk,behavior-hold-tap";
-    label = "hm_d_lcmd";
+    label = "hm_ad_lcmd";
     #binding-cells = <2>;
     tapping-term-ms = <300>;
     quick-tap-ms = <200>;
     flavor = "hold-preferred";
     global-quick-tap;
-    bindings = <&kp>, <&mp_d_lao>;
+    bindings = <&kp>, <&mp_ad_lao>;
 };
 
-hm_d_lshf: behavior_dev_lshf {
+hm_ad_lshf: behavior_android_dev_lshf {
     compatible = "zmk,behavior-hold-tap";
-    label = "hm_d_lshf";
+    label = "hm_ad_lshf";
     #binding-cells = <2>;
     tapping-term-ms = <300>;
     quick-tap-ms = <200>;
     flavor = "hold-preferred";
     global-quick-tap;
-    bindings = <&kp>, <&mp_d_e>;
+    bindings = <&kp>, <&mp_ad_e>;
 };
 
-hm_d_rshf: behavior_dev_rshf {
+hm_ad_rshf: behavior_android_dev_rshf {
     compatible = "zmk,behavior-hold-tap";
-    label = "hm_d_rshf";
+    label = "hm_ad_rshf";
     #binding-cells = <2>;
     tapping-term-ms = <300>;
     quick-tap-ms = <200>;
     flavor = "hold-preferred";
     global-quick-tap;
-    bindings = <&kp>, <&mp_d_es>;
+    bindings = <&kp>, <&mp_ad_es>;
 };
 
-hm_d_ralt: behavior_dev_ralt {
+hm_ad_ralt: behavior_android_dev_ralt {
     compatible = "zmk,behavior-hold-tap";
-    label = "hm_d_ralt";
+    label = "hm_ad_ralt";
     #binding-cells = <2>;
     tapping-term-ms = <300>;
     quick-tap-ms = <200>;
     flavor = "hold-preferred";
     global-quick-tap;
-    bindings = <&kp>, <&mp_d_lb>;
+    bindings = <&kp>, <&mp_ad_lb>;
 };
 
-hm_d_rctrl: behavior_dev_rctrl {
+hm_ad_rctrl: behavior_android_dev_rctrl {
     compatible = "zmk,behavior-hold-tap";
-    label = "hm_d_rctrl";
+    label = "hm_ad_rctrl";
     #binding-cells = <2>;
     tapping-term-ms = <300>;
     quick-tap-ms = <200>;
     flavor = "hold-preferred";
     global-quick-tap;
-    bindings = <&kp>, <&mp_r_lb>;
+    bindings = <&kp>, <&mp_ad_lb>;
 };
 
-hm_d_rcmd: behavior_dev_rcmd {
+hm_ad_rcmd: behavior_android_dev_rcmd {
     compatible = "zmk,behavior-hold-tap";
-    label = "hm_d_rcmd";
+    label = "hm_ad_rcmd";
     #binding-cells = <2>;
     tapping-term-ms = <300>;
     quick-tap-ms = <200>;
     flavor = "hold-preferred";
     global-quick-tap;
-    bindings = <&kp>, <&mp_d_loo>;
+    bindings = <&kp>, <&mp_ad_loo>;
 };
