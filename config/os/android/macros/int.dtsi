@@ -72,7 +72,7 @@ m_ai_is: macro_android_int_i_shift {
     bindings
         = <&none>
         , <&macro_wait_time 100>
-        , <&kp LA(I)>
+        , <&kp LA(E)>
         , <&kp LS(I)>;
 };
 
@@ -98,7 +98,7 @@ m_ai_os: macro_android_int_o_shift {
     bindings
         = <&none>
         , <&macro_wait_time 100>
-        , <&kp LA(O)>
+        , <&kp LA(E)>
         , <&kp LS(O)>;
 };
 
@@ -124,7 +124,7 @@ m_ai_us: macro_android_int_u_shift {
     bindings
         = <&none>
         , <&macro_wait_time 100>
-        , <&kp LA(U)>
+        , <&kp LA(E)>
         , <&kp LS(U)>;
 };
 
