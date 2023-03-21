@@ -38,7 +38,7 @@ m_ai_e: macro_android_int_e {
 };
 
 // tap:     É
-m_ai_es: macro_android_int_e {
+m_ai_es: macro_android_int_e_shift {
     compatible = "zmk,behavior-macro";
     label = "m_ai_es";
     #binding-cells = <0>;
@@ -63,6 +63,19 @@ m_ai_i: macro_android_int_i {
         , <&kp I>;
 };
 
+// tap:     Í
+m_ai_is: macro_android_int_i_shift {
+    compatible = "zmk,behavior-macro";
+    label = "m_ai_is";
+    #binding-cells = <0>;
+    wait-ms = <400>;
+    bindings
+        = <&none>
+        , <&macro_wait_time 100>
+        , <&kp LA(I)>
+        , <&kp LS(I)>;
+};
+
 // tap:     ó
 m_ai_o: macro_android_int_o {
     compatible = "zmk,behavior-macro";
@@ -74,6 +87,19 @@ m_ai_o: macro_android_int_o {
         , <&macro_wait_time 100>
         , <&kp LA(E)>
         , <&kp O>;
+};
+
+// tap:     Ó
+m_ai_os: macro_android_int_o_shift {
+    compatible = "zmk,behavior-macro";
+    label = "m_ai_os";
+    #binding-cells = <0>;
+    wait-ms = <400>;
+    bindings
+        = <&none>
+        , <&macro_wait_time 100>
+        , <&kp LA(O)>
+        , <&kp LS(O)>;
 };
 
 // tap:     ú
@@ -89,6 +115,19 @@ m_ai_u: macro_android_int_u {
         , <&kp U>;
 };
 
+// tap:     Ú
+m_ai_us: macro_android_int_u_shift {
+    compatible = "zmk,behavior-macro";
+    label = "m_ai_us";
+    #binding-cells = <0>;
+    wait-ms = <400>;
+    bindings
+        = <&none>
+        , <&macro_wait_time 100>
+        , <&kp LA(U)>
+        , <&kp LS(U)>;
+};
+
 // tap:     ü
 m_ai_y: macro_android_int_y {
     compatible = "zmk,behavior-macro";
@@ -102,6 +141,19 @@ m_ai_y: macro_android_int_y {
         , <&kp U>;
 };
 
+// tap:     Ü
+m_ai_ys: macro_android_int_y_shift {
+    compatible = "zmk,behavior-macro";
+    label = "m_ai_ys";
+    #binding-cells = <0>;
+    wait-ms = <400>;
+    bindings
+        = <&none>
+        , <&macro_wait_time 100>
+        , <&kp LA(U)>
+        , <&kp LS(U)>;
+};
+
 // tap:     ñ
 m_ai_n: macro_android_int_n {
     compatible = "zmk,behavior-macro";
@@ -113,6 +165,19 @@ m_ai_n: macro_android_int_n {
         , <&macro_wait_time 100>
         , <&kp LA(N)>
         , <&kp N>;
+};
+
+// tap:     Ñ
+m_ai_ns: macro_android_int_n_shift {
+    compatible = "zmk,behavior-macro";
+    label = "m_ai_ns";
+    #binding-cells = <0>;
+    wait-ms = <400>;
+    bindings
+        = <&none>
+        , <&macro_wait_time 100>
+        , <&kp LA(N)>
+        , <&kp LS(N)>;
 };
 
 // tap:     `
