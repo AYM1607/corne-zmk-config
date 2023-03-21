@@ -15,27 +15,28 @@
 
 /* Keys */
 #include "os/all/keys.dtsi"
-#include "os/win/keys.dtsi"
+#include "os/windows/keys.dtsi"
 #include "os/android/keys.dtsi"
 
 / {
     behaviors {
         #include "os/all/morph/shared.dtsi"
         #include "os/all/morph/num.dtsi"
-        #include "os/win/morph/layers.dtsi"
-        #include "os/win/morph/base.dtsi"
-        #include "os/win/morph/int.dtsi"
-        #include "os/win/morph/actions.dtsi"
-        #include "os/win/morph/dev.dtsi"
+        #include "os/all/hold/shared.dtsi"
+
+        #include "os/windows/morph/layers.dtsi"
+        #include "os/windows/morph/base.dtsi"
+        #include "os/windows/morph/int.dtsi"
+        #include "os/windows/morph/actions.dtsi"
+        #include "os/windows/morph/dev.dtsi"
+        #include "os/windows/hold/base.dtsi"
+        #include "os/windows/hold/dev.dtsi"
+
         #include "os/android/morph/layers.dtsi"
         #include "os/android/morph/base.dtsi"
         #include "os/android/morph/int.dtsi"
         #include "os/android/morph/actions.dtsi"
         #include "os/android/morph/dev.dtsi"
-
-        #include "os/all/hold/shared.dtsi"
-        #include "os/win/hold/base.dtsi"
-        #include "os/win/hold/dev.dtsi"
         #include "os/android/hold/base.dtsi"
         #include "os/android/hold/dev.dtsi"
     };
@@ -43,16 +44,18 @@
     combos {
         compatible = "zmk,combos";
 
-        #include "os/win/combos/base.dtsi"
-        #include "os/win/combos/help.dtsi"
+        #include "os/windows/combos/base.dtsi"
+        #include "os/windows/combos/help.dtsi"
+
         #include "os/android/combos/base.dtsi"
     };
 
     macros {
-        #include "os/win/macros/layers.dtsi"
-        #include "os/win/macros/int.dtsi"
-        #include "os/win/macros/dev.dtsi"
-        #include "os/win/macros/settings.dtsi"
+        #include "os/windows/macros/layers.dtsi"
+        #include "os/windows/macros/int.dtsi"
+        #include "os/windows/macros/dev.dtsi"
+        #include "os/windows/macros/settings.dtsi"
+
         #include "os/android/macros/int.dtsi"
         #include "os/android/macros/dev.dtsi"
         #include "os/android/macros/settings.dtsi"
@@ -61,7 +64,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        #include "os/win/keymap.dtsi"
+        #include "os/windows/keymap.dtsi"
         #include "os/android/keymap.dtsi"
     };
 };
