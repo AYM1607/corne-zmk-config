@@ -1,20 +1,20 @@
 // tap:         a
-// shift:       Á
 // alt:         á
-mp_ai_a_a: morph_android_a_alt {
-    compatible = "zmk,behavior-mod-morph";
-    label = "mp_ai_a_a";
-    #binding-cells = <0>;
-    mods = <(MOD_LALT)>;
-    bindings = <&kp A>, <&m_ai_a>;
-    keep-mods = <(MOD_LALT)>;
-};
-mp_ai_a: morph_android_a {
+// alt+shift:   Á
+mp_ai_a_s: morph_android_a_shift {
     compatible = "zmk,behavior-mod-morph";
     label = "mp_ai_a";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&mp_ai_a_a>, <&m_ai_as>;
+    bindings = <&m_ai_a>, <&m_ai_as>;
+};
+mp_ai_a: morph_android_a {
+    compatible = "zmk,behavior-mod-morph";
+    label = "mp_ai_a_a";
+    #binding-cells = <0>;
+    mods = <(MOD_LALT)>;
+    bindings = <&kp A>, <&mp_ai_a_a>;
+    keep-mods = <(MOD_LALT)>;
 };
 
 mp_ai_e: morph_android_e {
