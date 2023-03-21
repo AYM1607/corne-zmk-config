@@ -16,8 +16,4 @@
 
         #include "../all/hold/shared.dtsi"
     };
-
-    macros {
-        #include "macros/settings.dtsi"
-    };
 };

@@ -1,20 +1,20 @@
 /* windows */
-#define wBAS   0
-#define wDEV   1
-#define wAXN   2
-#define wFNK   3
-#define wSTG   4
+#define wBAS  0
+#define wDEV  1
+#define wAXN  2
+#define wFNK  3
+#define wSTG  4
 
 /* macOs */
-#define mBAS  10
-#define mDEV  11
-#define mAXN  12
-#define mFNK  13
-#define mSTG  14
+#define mBAS 10
+#define mDEV 11
+#define mAXN 12
+#define mFNK 13
+#define mSTG 14
 
 /* android */
-#define aBAS  20
-#define aDEV  21
-#define aAXN  22
-#define aFNK  23
-#define aSTG  24
+#define aBAS 20
+#define aDEV 21
+#define aAXN 22
+#define aFNK 23
+#define aSTG 24
