@@ -6,6 +6,7 @@
     hold-trigger-key-positions = <0>;   // tap on interrupt
 };
 
+#include "layers.dtsi"
 #include "keys.dtsi"
 
 / {
