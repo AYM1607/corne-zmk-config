@@ -1,4 +1,4 @@
-        win_base_layer {
+        android_base_layer {
             #define AB13  &hm_ab_lcmd  LCMD   0  //A
             #define AB14  &hm LCTRL    R
             #define AB15  &hm LALT     S
