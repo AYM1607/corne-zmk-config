@@ -40,7 +40,7 @@
             #define AB21  &hm_ab_rctrl RCTRL  0  //I
             #define AB22  &hm_ab_rcmd  RCMD   0  //O
 
-            #define AB35  &mp_aa_stg
+            #define AB35  &mp_a_stg
 
             #define AB36  &moto       aDEV   aDEV
             #define AB38  &moto       aAXN   aAXN
