@@ -58,7 +58,7 @@ mp_ai_n: morph_android_n {
     label = "n";
     #binding-cells = <0>;
     mods = <(MOD_LALT)>;
-    bindings = <&kp N>, <m_ai_n>;
+    bindings = <&kp N>, <&m_ai_n>;
     keep-mods = <(MOD_LALT)>;
 };
 
@@ -67,6 +67,6 @@ mp_ai_y: morph_android_y {
     label = "y";
     #binding-cells = <0>;
     mods = <(MOD_LALT)>;
-    bindings = <&kp Y>, <m_ai_y>;
+    bindings = <&kp Y>, <&m_ai_y>;
     keep-mods = <(MOD_LALT)>;
 };
