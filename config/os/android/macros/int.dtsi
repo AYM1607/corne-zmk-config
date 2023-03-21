@@ -4,8 +4,8 @@ m_ai_a: macro_android_int_a {
     label = "m_ai_a";
     #binding-cells = <0>;
     bindings =
-        <&kp LA(e)>;
-        <&kp a>;
+        <&kp LA(E)>;
+        <&kp A>;
 };
 
 // tap:     Á
@@ -14,8 +14,8 @@ m_ai_as: macro_android_int_a_shift {
     label = "m_ai_as";
     #binding-cells = <0>;
     bindings =
-        <&kp LA(e)>;
-        <&kp LS(a)>;
+        <&kp LA(E)>;
+        <&kp LS(A)>;
 };
 
 // tap:     é
@@ -24,8 +24,8 @@ m_ai_e: macro_android_int_e {
     label = "m_ai_e";
     #binding-cells = <0>;
     bindings =
-        <&kp LA(e)>;
-        <&kp e>;
+        <&kp LA(E)>;
+        <&kp E>;
 };
 
 // tap:     í
@@ -34,8 +34,8 @@ m_ai_i: macro_android_int_i {
     label = "m_ai_i";
     #binding-cells = <0>;
     bindings =
-        <&kp LA(e)>;
-        <&kp i>;
+        <&kp LA(E)>;
+        <&kp I>;
 };
 
 // tap:     ó
@@ -44,8 +44,8 @@ m_ai_o: macro_android_int_o {
     label = "m_ai_o";
     #binding-cells = <0>;
     bindings =
-        <&kp LA(e)>;
-        <&kp o>;
+        <&kp LA(E)>;
+        <&kp O>;
 };
 
 // tap:     ú
@@ -54,8 +54,8 @@ m_ai_u: macro_android_int_u {
     label = "m_ai_u";
     #binding-cells = <0>;
     bindings =
-        <&kp LA(e)>;
-        <&kp u>;
+        <&kp LA(E)>;
+        <&kp U>;
 };
 
 // tap:     ü
@@ -64,8 +64,8 @@ m_ai_y: macro_android_int_y {
     label = "m_ai_y";
     #binding-cells = <0>;
     bindings =
-        <&kp LA(u)>;
-        <&kp u>;
+        <&kp LA(U)>;
+        <&kp U>;
 };
 
 // tap:     ñ
@@ -74,8 +74,8 @@ m_ai_n: macro_android_int_n {
     label = "m_ai_n";
     #binding-cells = <0>;
     bindings =
-        <&kp LA(n)>;
-        <&kp n>;
+        <&kp LA(N)>;
+        <&kp N>;
 };
 
 // tap:     `
