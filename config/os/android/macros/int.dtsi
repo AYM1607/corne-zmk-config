@@ -186,7 +186,7 @@ m_ai_g: macro_android_int_grave {
     label = "m_ai_g";
     #binding-cells = <0>;
     bindings =
-        <&kp GRAVE &kp SPACE>;
+        <&kp GRAVE>;
 };
 
 // tap:     ~
@@ -195,7 +195,7 @@ m_ai_t: macro_android_int_tilde {
     label = "m_ai_t";
     #binding-cells = <0>;
     bindings =
-        <&kp TILDE &kp SPACE>;
+        <&kp TILDE>;
 };
 
 // tap:     ^
@@ -204,7 +204,7 @@ m_ai_c: macro_android_int_caret {
     label = "m_ai_c";
     #binding-cells = <0>;
     bindings =
-        <&kp CARET &kp SPACE>;
+        <&kp CARET>;
 };
 
 // tap:     "
