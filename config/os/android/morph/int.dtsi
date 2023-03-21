@@ -1,10 +1,20 @@
-mp_ai_a: morph_android_a {
+// tap:         a
+// shift:       Á
+// alt:         á
+mp_ai_a_a: morph_android_a_alt {
     compatible = "zmk,behavior-mod-morph";
-    label = "a";
+    label = "mp_ai_a_a";
     #binding-cells = <0>;
     mods = <(MOD_LALT)>;
-    bindings = <&kp A>, <&kp LC(A)>;
+    bindings = <&kp A>, <&m_ai_a>;
     keep-mods = <(MOD_LALT)>;
+};
+mp_ai_a: morph_android_a {
+    compatible = "zmk,behavior-mod-morph";
+    label = "mp_ai_a";
+    #binding-cells = <0>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+    bindings = <&mp_ai_a_a>, <&m_ai_as>;
 };
 
 mp_ai_e: morph_android_e {
@@ -12,7 +22,7 @@ mp_ai_e: morph_android_e {
     label = "e";
     #binding-cells = <0>;
     mods = <(MOD_LALT)>;
-    bindings = <&kp E>, <&kp LC(E)>;
+    bindings = <&kp E>, <&m_ai_e>;
     keep-mods = <(MOD_LALT)>;
 };
 
@@ -21,7 +31,7 @@ mp_ai_i: morph_android_i {
     label = "i";
     #binding-cells = <0>;
     mods = <(MOD_LALT)>;
-    bindings = <&kp I>, <&kp LC(I)>;
+    bindings = <&kp I>, <&m_ai_i>;
     keep-mods = <(MOD_LALT)>;
 };
 
@@ -30,7 +40,7 @@ mp_ai_o: morph_android_o {
     label = "o";
     #binding-cells = <0>;
     mods = <(MOD_LALT)>;
-    bindings = <&kp O>, <&kp LC(O)>;
+    bindings = <&kp O>, <&m_ai_o>;
     keep-mods = <(MOD_LALT)>;
 };
 
@@ -39,7 +49,7 @@ mp_ai_u: morph_android_u {
     label = "u";
     #binding-cells = <0>;
     mods = <(MOD_LALT)>;
-    bindings = <&kp U>, <&kp LC(U)>;
+    bindings = <&kp U>, <&m_ai_u>;
     keep-mods = <(MOD_LALT)>;
 };
 
@@ -48,7 +58,7 @@ mp_ai_n: morph_android_n {
     label = "n";
     #binding-cells = <0>;
     mods = <(MOD_LALT)>;
-    bindings = <&kp N>, <&kp LC(N)>;
+    bindings = <&kp N>, <m_ai_n>;
     keep-mods = <(MOD_LALT)>;
 };
 
@@ -57,6 +67,6 @@ mp_ai_y: morph_android_y {
     label = "y";
     #binding-cells = <0>;
     mods = <(MOD_LALT)>;
-    bindings = <&kp Y>, <&kp LC(Y)>;
+    bindings = <&kp Y>, <m_ai_y>;
     keep-mods = <(MOD_LALT)>;
 };
