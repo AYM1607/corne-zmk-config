@@ -2,8 +2,8 @@ hm: homerow_mods {
     compatible = "zmk,behavior-hold-tap";
     label = "HOMEROW MODS";
     #binding-cells = <2>;
-    tapping-term-ms = <250>;
-    quick-tap-ms = <200>;
+    tapping-term-ms = <HP_TAPPING>;
+    quick-tap-ms = <HP_QUICK_TAP>;
     flavor = "hold-preferred";
     bindings = <&kp>, <&kp>;
 };
@@ -12,8 +12,8 @@ tokp: behavior_to_kp {
     compatible = "zmk,behavior-hold-tap";
     label = "tokp";
     #binding-cells = <2>;
+    tapping-term-ms = <HP_TAPPING>;
     flavor = "hold-preferred";
-    tapping-term-ms = <200>;
     bindings = <&to>, <&kp>;
 };
 
@@ -21,7 +21,7 @@ moto: behavior_mo_to {
     compatible = "zmk,behavior-hold-tap";
     label = "moto";
     #binding-cells = <2>;
+    tapping-term-ms = <HP_TAPPING>;
     flavor = "hold-preferred";
-    tapping-term-ms = <200>;
     bindings = <&mo>, <&to>;
 };

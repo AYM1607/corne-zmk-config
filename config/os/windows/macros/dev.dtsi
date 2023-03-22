@@ -3,10 +3,10 @@ m_wd_eo: macro_win_dev_exponentiation_operator {
     compatible = "zmk,behavior-macro";
     label = "m_wd_eo";
     #binding-cells = <0>;
-    wait-ms = <400>;
+    wait-ms = <MC_WAIT_START>;
     bindings
         = <&none &kp LALT> /* ALT fix for VSCode */
-        , <&macro_wait_time 100>
+        , <&macro_wait_time MC_WAIT>
         , <&kp ASTRK &kp ASTRK>;
 };
 
@@ -15,10 +15,10 @@ m_wd_ma: macro_win_dev_multiplication_assignment {
     compatible = "zmk,behavior-macro";
     label = "m_wd_ma";
     #binding-cells = <0>;
-    wait-ms = <400>;
+    wait-ms = <MC_WAIT_START>;
     bindings
         = <&none>
-        , <&macro_wait_time 100>
+        , <&macro_wait_time MC_WAIT>
         , <&kp ASTRK &kp EQUAL>;
 };
 
@@ -27,10 +27,10 @@ m_wd_da: macro_win_dev_division_assignment {
     compatible = "zmk,behavior-macro";
     label = "m_wd_da";
     #binding-cells = <0>;
-    wait-ms = <400>;
+    wait-ms = <MC_WAIT_START>;
     bindings
         = <&none>
-        , <&macro_wait_time 100>
+        , <&macro_wait_time MC_WAIT>
         , <&kp FSLH &kp EQUAL>;
 };
 
@@ -39,10 +39,10 @@ m_wd_io: macro_win_dev_increment_operator {
     compatible = "zmk,behavior-macro";
     label = "m_wd_io";
     #binding-cells = <0>;
-    wait-ms = <400>;
+    wait-ms = <MC_WAIT_START>;
     bindings
         = <&none &kp LALT> /* ALT fix for VSCode */
-        , <&macro_wait_time 100>
+        , <&macro_wait_time MC_WAIT>
         , <&kp PLUS &kp PLUS>;
 };
 
@@ -51,10 +51,10 @@ m_wd_as: macro_win_dev_addition_assignment {
     compatible = "zmk,behavior-macro";
     label = "m_wd_as";
     #binding-cells = <0>;
-    wait-ms = <400>;
+    wait-ms = <MC_WAIT_START>;
     bindings
         = <&none>
-        , <&macro_wait_time 100>
+        , <&macro_wait_time MC_WAIT>
         , <&kp PLUS &kp EQUAL>;
 };
 
@@ -63,10 +63,10 @@ m_wd_do: macro_win_dev_decrement_operator {
     compatible = "zmk,behavior-macro";
     label = "m_wd_do";
     #binding-cells = <0>;
-    wait-ms = <400>;
+    wait-ms = <MC_WAIT_START>;
     bindings
         = <&none &kp LALT> /* ALT fix for VSCode */
-        , <&macro_wait_time 100>
+        , <&macro_wait_time MC_WAIT>
         , <&kp MINUS &kp MINUS>;
 };
 
@@ -75,10 +75,10 @@ m_wd_sa: macro_win_dev_subtraction_assignment {
     compatible = "zmk,behavior-macro";
     label = "m_wd_sa";
     #binding-cells = <0>;
-    wait-ms = <400>;
+    wait-ms = <MC_WAIT_START>;
     bindings
         = <&none>
-        , <&macro_wait_time 100>
+        , <&macro_wait_time MC_WAIT>
         , <&kp MINUS &kp EQUAL>;
 };
 
@@ -87,10 +87,10 @@ m_wd_a: macro_win_dev_arrow {
     compatible = "zmk,behavior-macro";
     label = "m_wd_a";
     #binding-cells = <0>;
-    wait-ms = <400>;
+    wait-ms = <MC_WAIT_START>;
     bindings
         = <&none &kp LALT> /* ALT fix for VSCode */
-        , <&macro_wait_time 100>
+        , <&macro_wait_time MC_WAIT>
         , <&kp EQUAL &kp GT>;
 };
 
@@ -99,10 +99,10 @@ m_wd_la: macro_win_dev_logical_and {
     compatible = "zmk,behavior-macro";
     label = "m_wd_la";
     #binding-cells = <0>;
-    wait-ms = <400>;
+    wait-ms = <MC_WAIT_START>;
     bindings
         = <&none &kp LALT> /* ALT fix for VSCode */
-        , <&macro_wait_time 100>
+        , <&macro_wait_time MC_WAIT>
         , <&kp AMPS &kp AMPS>;
 };
 
@@ -111,10 +111,10 @@ m_wd_laa: macro_win_dev_logical_and_assignment {
     compatible = "zmk,behavior-macro";
     label = "m_wd_laa";
     #binding-cells = <0>;
-    wait-ms = <400>;
+    wait-ms = <MC_WAIT_START>;
     bindings
         = <&none>
-        , <&macro_wait_time 100>
+        , <&macro_wait_time MC_WAIT>
         , <&kp AMPS &kp AMPS &kp EQUAL>;
 };
 
@@ -123,10 +123,10 @@ m_wd_lo: macro_win_dev_logical_or {
     compatible = "zmk,behavior-macro";
     label = "m_wd_lo";
     #binding-cells = <0>;
-    wait-ms = <400>;
+    wait-ms = <MC_WAIT_START>;
     bindings
         = <&none &kp LALT> /* ALT fix for VSCode */
-        , <&macro_wait_time 100>
+        , <&macro_wait_time MC_WAIT>
         , <&kp PIPE &kp PIPE>;
 };
 
@@ -135,10 +135,10 @@ m_wd_loa: macro_win_dev_logical_or_assignment {
     compatible = "zmk,behavior-macro";
     label = "m_wd_loa";
     #binding-cells = <0>;
-    wait-ms = <400>;
+    wait-ms = <MC_WAIT_START>;
     bindings
         = <&none>
-        , <&macro_wait_time 100>
+        , <&macro_wait_time MC_WAIT>
         , <&kp PIPE &kp PIPE &kp EQUAL>;
 };
 
@@ -166,10 +166,10 @@ m_wd_nco: macro_nullish_coalescing_operator {
     compatible = "zmk,behavior-macro";
     label = "m_wd_nco";
     #binding-cells = <0>;
-    wait-ms = <400>;
+    wait-ms = <MC_WAIT_START>;
     bindings
         = <&none>
-        , <&macro_wait_time 100>
+        , <&macro_wait_time MC_WAIT>
         , <&kp QMARK &kp QMARK>;
 };
 
@@ -178,10 +178,10 @@ m_wd_nca: macro_nullish_coalescing_assignment {
     compatible = "zmk,behavior-macro";
     label = "m_wd_nca";
     #binding-cells = <0>;
-    wait-ms = <400>;
+    wait-ms = <MC_WAIT_START>;
     bindings
         = <&none>
-        , <&macro_wait_time 100>
+        , <&macro_wait_time MC_WAIT>
         , <&kp QMARK &kp QMARK &kp EQUAL>;
 };
 
@@ -190,10 +190,10 @@ m_wd_se: macro_strict_equality {
     compatible = "zmk,behavior-macro";
     label = "m_wd_se";
     #binding-cells = <0>;
-    wait-ms = <400>;
+    wait-ms = <MC_WAIT_START>;
     bindings
         = <&none>
-        , <&macro_wait_time 100>
+        , <&macro_wait_time MC_WAIT>
         , <&kp EQUAL &kp EQUAL &kp EQUAL>;
 };
 
@@ -202,10 +202,10 @@ m_wd_dno: macro_double_not_operator {
     compatible = "zmk,behavior-macro";
     label = "m_wd_dno";
     #binding-cells = <0>;
-    wait-ms = <400>;
+    wait-ms = <MC_WAIT_START>;
     bindings
         = <&none>
-        , <&macro_wait_time 100>
+        , <&macro_wait_time MC_WAIT>
         , <&kp EXCL &kp EXCL>;
 };
 
@@ -214,10 +214,10 @@ m_wd_si: macro_strict_inequality {
     compatible = "zmk,behavior-macro";
     label = "m_wd_si";
     #binding-cells = <0>;
-    wait-ms = <400>;
+    wait-ms = <MC_WAIT_START>;
     bindings
         = <&none>
-        , <&macro_wait_time 100>
+        , <&macro_wait_time MC_WAIT>
         , <&kp EXCL &kp EQUAL &kp EQUAL>;
 };
 
@@ -226,10 +226,10 @@ m_wd_hvt: macro_win_dev_html_void_tag {
     compatible = "zmk,behavior-macro";
     label = "m_wd_hvt";
     #binding-cells = <0>;
-    wait-ms = <400>;
+    wait-ms = <MC_WAIT_START>;
     bindings
         = <&none &kp LALT> /* ALT fix for VSCode */
-        , <&macro_wait_time 100>
+        , <&macro_wait_time MC_WAIT>
         , <&kp LT &kp FSLH &kp GT>
         , <&kp LEFT &kp LEFT>;
 };
@@ -239,10 +239,10 @@ m_wd_ltoet: macro_win_dev_less_than_or_equal_to {
     compatible = "zmk,behavior-macro";
     label = "m_wd_ltoet";
     #binding-cells = <0>;
-    wait-ms = <400>;
+    wait-ms = <MC_WAIT_START>;
     bindings
         = <&none>
-        , <&macro_wait_time 100>
+        , <&macro_wait_time MC_WAIT>
         , <&kp LT &kp EQUAL>;
 };
 
@@ -251,10 +251,10 @@ m_wd_hct: macro_win_dev_html_close_tag {
     compatible = "zmk,behavior-macro";
     label = "m_wd_hct";
     #binding-cells = <0>;
-    wait-ms = <400>;
+    wait-ms = <MC_WAIT_START>;
     bindings
         = <&none &kp LALT> /* ALT fix for VSCode */
-        , <&macro_wait_time 100>
+        , <&macro_wait_time MC_WAIT>
         , <&kp LT &kp FSLH &kp GT>
         , <&kp LEFT>;
 };
@@ -264,9 +264,9 @@ m_wd_gtoet: macro_win_dev_greater_than_or_equal_to {
     compatible = "zmk,behavior-macro";
     label = "m_wd_gtoet";
     #binding-cells = <0>;
-    wait-ms = <400>;
+    wait-ms = <MC_WAIT_START>;
     bindings
         = <&none>
-        , <&macro_wait_time 100>
+        , <&macro_wait_time MC_WAIT>
         , <&kp GT &kp EQUAL>;
 };

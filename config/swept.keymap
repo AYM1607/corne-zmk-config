@@ -9,6 +9,7 @@
 #include <dt-bindings/zmk/bt.h>
 
 /* Global */
+#include "os/all/times.dtsi"
 #include "os/all/general.dtsi"
 #include "os/windows/layers.dtsi"
 #include "os/android/layers.dtsi"
