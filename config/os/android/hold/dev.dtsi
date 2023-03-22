@@ -9,28 +9,6 @@ hm_ad_lcmd: behavior_android_dev_lcmd {
     bindings = <&kp>, <&mp_ad_lao>;
 };
 
-hm_ad_lctrl: behavior_android_dev_lctrl {
-    compatible = "zmk,behavior-hold-tap";
-    label = "hm_ad_lctrl";
-    #binding-cells = <2>;
-    tapping-term-ms = <HP_TAPPING>;
-    quick-tap-ms = <HP_QUICK_TAP>;
-    flavor = "hold-preferred";
-    global-quick-tap;
-    bindings = <&kp>, <&mp_ad_rb>;
-};
-
-hm_ad_lalt: behavior_android_dev_lalt {
-    compatible = "zmk,behavior-hold-tap";
-    label = "hm_ad_lalt";
-    #binding-cells = <2>;
-    tapping-term-ms = <HP_TAPPING>;
-    quick-tap-ms = <HP_QUICK_TAP>;
-    flavor = "hold-preferred";
-    global-quick-tap;
-    bindings = <&kp>, <&mp_ad_lb>;
-};
-
 hm_ad_lshf: behavior_android_dev_lshf {
     compatible = "zmk,behavior-hold-tap";
     label = "hm_ad_lshf";
@@ -51,6 +29,28 @@ hm_ad_rshf: behavior_android_dev_rshf {
     flavor = "hold-preferred";
     global-quick-tap;
     bindings = <&kp>, <&mp_ad_es>;
+};
+
+hm_ad_ralt: behavior_android_dev_ralt {
+    compatible = "zmk,behavior-hold-tap";
+    label = "hm_ad_ralt";
+    #binding-cells = <2>;
+    tapping-term-ms = <HP_TAPPING>;
+    quick-tap-ms = <HP_QUICK_TAP>;
+    flavor = "hold-preferred";
+    global-quick-tap;
+    bindings = <&kp>, <&mp_ad_lb>;
+};
+
+hm_ad_rctrl: behavior_android_dev_rctrl {
+    compatible = "zmk,behavior-hold-tap";
+    label = "hm_ad_rctrl";
+    #binding-cells = <2>;
+    tapping-term-ms = <HP_TAPPING>;
+    quick-tap-ms = <HP_QUICK_TAP>;
+    flavor = "hold-preferred";
+    global-quick-tap;
+    bindings = <&kp>, <&mp_ad_rb>;
 };
 
 hm_ad_rcmd: behavior_android_dev_rcmd {

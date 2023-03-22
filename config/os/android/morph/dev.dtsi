@@ -22,23 +22,23 @@ mp_ad_money: morph_android_dev_money {
 
 // tap:         [
 // alt:         «
-mp_ad_lb: morph_android_dev_left_brace {
+mp_ad_lb: morph_android_dev_left_brackets {
     compatible = "zmk,behavior-mod-morph";
     label = "mp_ad_lb";
     #binding-cells = <0>;
     mods = <(MOD_LALT)>;
-    bindings = <&kp LBRC>, <&kp LC(LBRC)>;
+    bindings = <&kp LBKT>, <&kp LC(LBKT)>;
     keep-mods = <(MOD_LALT)>;
 };
 
 // tap:         ]
 // alt:         »
-mp_ad_rb: morph_android_dev_right_brace {
+mp_ad_rb: morph_android_dev_right_brackets {
     compatible = "zmk,behavior-mod-morph";
     label = "mp_ad_rb";
     #binding-cells = <0>;
     mods = <(MOD_LALT)>;
-    bindings = <&kp RBRC>, <&kp LC(RBRC)>;
+    bindings = <&kp RBKT>, <&kp LC(RBKT)>;
     keep-mods = <(MOD_LALT)>;
 };
 
