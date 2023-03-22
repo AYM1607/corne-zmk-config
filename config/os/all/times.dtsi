@@ -1,7 +1,12 @@
-#define HP_TAPPING    250
-#define HP_QUICK_TAP  200
+/* Mod Tap */
 #define MT_TAPPING    220
-#define MT_QUICK_TAP  220
+#define MT_QUICK_TAP  200
+
+/* Hold Tap Preferred */
+#define HP_TAPPING    220
+#define HP_QUICK_TAP  200
+
+/* Macro */
 #define MC_WAIT_START 400
 #define MC_WAIT       100
 #define MC_LAYERS       0

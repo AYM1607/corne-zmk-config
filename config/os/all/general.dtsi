@@ -1,7 +1,7 @@
 /* Mod Tap */
 &mt {
-    flavor = "tap-preferred";
     tapping-term-ms = <MT_TAPPING>;
     quick-tap-ms = <MT_QUICK_TAP>;      // repeat on tap-into-hold
+    flavor = "tap-preferred";
     hold-trigger-key-positions = <0>;   // tap on interrupt
 };
