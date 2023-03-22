@@ -2,7 +2,7 @@ hm_ad_lcmd: behavior_android_dev_lcmd {
     compatible = "zmk,behavior-hold-tap";
     label = "hm_ad_lcmd";
     #binding-cells = <2>;
-    tapping-term-ms = <300>;
+    tapping-term-ms = <250>;
     quick-tap-ms = <200>;
     flavor = "hold-preferred";
     global-quick-tap;
@@ -13,7 +13,7 @@ hm_ad_lshf: behavior_android_dev_lshf {
     compatible = "zmk,behavior-hold-tap";
     label = "hm_ad_lshf";
     #binding-cells = <2>;
-    tapping-term-ms = <300>;
+    tapping-term-ms = <250>;
     quick-tap-ms = <200>;
     flavor = "hold-preferred";
     global-quick-tap;
@@ -24,7 +24,7 @@ hm_ad_rshf: behavior_android_dev_rshf {
     compatible = "zmk,behavior-hold-tap";
     label = "hm_ad_rshf";
     #binding-cells = <2>;
-    tapping-term-ms = <300>;
+    tapping-term-ms = <250>;
     quick-tap-ms = <200>;
     flavor = "hold-preferred";
     global-quick-tap;
@@ -35,7 +35,7 @@ hm_ad_ralt: behavior_android_dev_ralt {
     compatible = "zmk,behavior-hold-tap";
     label = "hm_ad_ralt";
     #binding-cells = <2>;
-    tapping-term-ms = <300>;
+    tapping-term-ms = <250>;
     quick-tap-ms = <200>;
     flavor = "hold-preferred";
     global-quick-tap;
@@ -46,7 +46,7 @@ hm_ad_rctrl: behavior_android_dev_rctrl {
     compatible = "zmk,behavior-hold-tap";
     label = "hm_ad_rctrl";
     #binding-cells = <2>;
-    tapping-term-ms = <300>;
+    tapping-term-ms = <250>;
     quick-tap-ms = <200>;
     flavor = "hold-preferred";
     global-quick-tap;
@@ -57,7 +57,7 @@ hm_ad_rcmd: behavior_android_dev_rcmd {
     compatible = "zmk,behavior-hold-tap";
     label = "hm_ad_rcmd";
     #binding-cells = <2>;
-    tapping-term-ms = <300>;
+    tapping-term-ms = <250>;
     quick-tap-ms = <200>;
     flavor = "hold-preferred";
     global-quick-tap;
