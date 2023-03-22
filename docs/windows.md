@@ -2,7 +2,7 @@
 
 This is a WIP layout based on Colemak DHm for using on Windows (with **en-US International** layout on host) that includes Spanish accents, and complemented with easy access to development symbols and JS/TS shortcuts.
 
-![US International](./.github/images/layout/US-International.png)
+![US International](/.github/images/layout/US-International.png)
 
 ---
 
@@ -61,7 +61,7 @@ Icons used to describe some modifiers and actions
 
 Letters, accents for Spanish language and quick shortcuts for most used symbols to "avoid" changing layers.
 
-![BAS Layer](./.github/images/layers/wBAS.png)
+![BAS Layer](/.github/images/layers/wBAS.png)
 
 #### Spanish
 
@@ -88,7 +88,7 @@ Letters, accents for Spanish language and quick shortcuts for most used symbols 
 
 Symbols and dev shortcuts for JS/TS.
 
-![DEV Layer](./.github/images/layers/wDEV.png)
+![DEV Layer](/.github/images/layers/wDEV.png)
 
 #### Symbols
 
@@ -153,7 +153,7 @@ Symbols and dev shortcuts for JS/TS.
 
 Quick navigation actions and numbers. Function keys works independently as a sub-layer to avoid shortcuts collisions.
 
-![AXN Layer](./.github/images/layers/wAXN.png)
+![AXN Layer](/.github/images/layers/wAXN.png)
 
 #### Navigation
 
@@ -196,7 +196,7 @@ Quick navigation actions and numbers. Function keys works independently as a sub
 
 Dedicated to Bluetooth and media controls.
 
-![STG Layer](./.github/images/layers/wSTG.png)
+![STG Layer](/.github/images/layers/wSTG.png)
 
 #### Actions
 

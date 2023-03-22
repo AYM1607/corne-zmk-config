@@ -4,9 +4,7 @@ ZMK configuration for [swept-crkbd](https://github.com/AYM1607/swept-crkbd/) als
 
 ![Front](.github/images/keyboard/front.jpg)
 
-This is a WIP layout based on Colemak DHm for using on Windows (with **en-US International** layout) and Android (with **en-US** layout) that includes Spanish accents, and complemented with easy access to development symbols and JS/TS shortcuts.
-
-![US International](.github/images/layout/US-International.png)
+This is a WIP layout based on Colemak DHm that includes Spanish accents, and complemented with easy access to development symbols and JS/TS shortcuts.
 
 ---
 
