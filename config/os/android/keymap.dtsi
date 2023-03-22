@@ -27,8 +27,8 @@
 
         android_dev_layer {
             #define AD13  &hm_ad_lcmd  LCMD    0
-            #define AD14  &hm_ad_lctrl LCTRL   0
-            #define AD15  &hm_ad_lalt  LALT    0
+            #define AD14  &hm_ad_lctrl LCTRL   LBRC
+            #define AD15  &hm_ad_lalt  LALT    RBRC
             #define AD16  &hm_ad_lshf  LSHFT   0
 
             #define AD19  &hm_ad_rshf  RSHFT   0
