@@ -20,7 +20,7 @@ mp_ad_money: morph_android_dev_money {
     keep-mods = <(MOD_LALT)>;
 };
 
-// tap:         [
+// tap:         (
 // alt:         «
 mp_ad_lb: morph_android_dev_left_brace {
     compatible = "zmk,behavior-mod-morph";
@@ -31,7 +31,7 @@ mp_ad_lb: morph_android_dev_left_brace {
     keep-mods = <(MOD_LALT)>;
 };
 
-// tap:         ]
+// tap:         )
 // alt:         »
 mp_ad_rb: morph_android_dev_right_brace {
     compatible = "zmk,behavior-mod-morph";
