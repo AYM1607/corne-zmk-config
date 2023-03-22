@@ -1,6 +1,6 @@
 // tap:         #
 // alt:         °
-mp_wd_pound: morph_win_dev_pound {
+mp_wd_pound: morph_windows_dev_pound {
     compatible = "zmk,behavior-mod-morph";
     label = "mp_wd_pound";
     #binding-cells = <0>;
@@ -11,7 +11,7 @@ mp_wd_pound: morph_win_dev_pound {
 
 // tap:         $
 // alt:         €
-mp_wd_money: morph_win_dev_money {
+mp_wd_money: morph_windows_dev_money {
     compatible = "zmk,behavior-mod-morph";
     label = "mp_wd_money";
     #binding-cells = <0>;
@@ -22,7 +22,7 @@ mp_wd_money: morph_win_dev_money {
 
 // tap:         [
 // alt:         «
-mp_wd_lb: morph_win_dev_left_brackets {
+mp_wd_lb: morph_windows_dev_left_brackets {
     compatible = "zmk,behavior-mod-morph";
     label = "mp_wd_lb";
     #binding-cells = <0>;
@@ -33,7 +33,7 @@ mp_wd_lb: morph_win_dev_left_brackets {
 
 // tap:         ]
 // alt:         »
-mp_wd_rb: morph_win_dev_right_brackets {
+mp_wd_rb: morph_windows_dev_right_brackets {
     compatible = "zmk,behavior-mod-morph";
     label = "mp_wd_rb";
     #binding-cells = <0>;
@@ -45,7 +45,7 @@ mp_wd_rb: morph_win_dev_right_brackets {
 // tap:         *
 // shift:       *=
 // alt:         **
-mp_wd_a_a: morph_win_dev_asterisk_alt {
+mp_wd_a_a: morph_windows_dev_asterisk_alt {
     compatible = "zmk,behavior-mod-morph";
     label = "mp_wd_a_a";
     #binding-cells = <0>;
@@ -53,7 +53,7 @@ mp_wd_a_a: morph_win_dev_asterisk_alt {
     bindings = <&kp ASTRK>, <&m_wd_eo>;
     keep-mods = <(MOD_LALT)>;
 };
-mp_wd_a: morph_win_dev_asterisk {
+mp_wd_a: morph_windows_dev_asterisk {
     compatible = "zmk,behavior-mod-morph";
     label = "mp_wd_a";
     #binding-cells = <0>;
@@ -64,7 +64,7 @@ mp_wd_a: morph_win_dev_asterisk {
 // tap:         +
 // shift:       +=
 // alt:         ++
-mp_wd_p_a: morph_win_dev_plus_alt {
+mp_wd_p_a: morph_windows_dev_plus_alt {
     compatible = "zmk,behavior-mod-morph";
     label = "mp_wd_p_a";
     #binding-cells = <0>;
@@ -72,7 +72,7 @@ mp_wd_p_a: morph_win_dev_plus_alt {
     bindings = <&kp PLUS>, <&m_wd_io>;
     keep-mods = <(MOD_LALT)>;
 };
-mp_wd_p: morph_win_dev_plus {
+mp_wd_p: morph_windows_dev_plus {
     compatible = "zmk,behavior-mod-morph";
     label = "mp_wd_p";
     #binding-cells = <0>;
@@ -83,7 +83,7 @@ mp_wd_p: morph_win_dev_plus {
 // tap:         -
 // shift:       -=
 // alt:         --
-mp_wd_m_a: morph_win_dev_minus_alt {
+mp_wd_m_a: morph_windows_dev_minus_alt {
     compatible = "zmk,behavior-mod-morph";
     label = "mp_wd_m_a";
     #binding-cells = <0>;
@@ -91,7 +91,7 @@ mp_wd_m_a: morph_win_dev_minus_alt {
     bindings = <&kp MINUS>, <&m_wd_do>;
     keep-mods = <(MOD_LALT)>;
 };
-mp_wd_m: morph_win_dev_minus {
+mp_wd_m: morph_windows_dev_minus {
     compatible = "zmk,behavior-mod-morph";
     label = "mp_wd_m";
     #binding-cells = <0>;
@@ -102,7 +102,7 @@ mp_wd_m: morph_win_dev_minus {
 // tap:         =
 // shift:       ===
 // alt:         =>
-mp_wd_e_a: morph_win_dev_equal_alt {
+mp_wd_e_a: morph_windows_dev_equal_alt {
     compatible = "zmk,behavior-mod-morph";
     label = "mp_wd_e_a";
     #binding-cells = <0>;
@@ -110,7 +110,7 @@ mp_wd_e_a: morph_win_dev_equal_alt {
     bindings = <&kp EQUAL>, <&m_wd_a>;
     keep-mods = <(MOD_LALT)>;
 };
-mp_wd_e: morph_win_dev_equal {
+mp_wd_e: morph_windows_dev_equal {
     compatible = "zmk,behavior-mod-morph";
     label = "mp_wd_e";
     #binding-cells = <0>;
@@ -122,14 +122,14 @@ mp_wd_e: morph_win_dev_equal {
 // shift:       /=
 // ctrl:        // line comment
 // alt:         /* block comment *
-mp_wd_s_s: morph_win_dev_slash_shift {
+mp_wd_s_s: morph_windows_dev_slash_shift {
     compatible = "zmk,behavior-mod-morph";
     label = "mp_wd_s_s";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
     bindings = <&kp FSLH>, <&m_wd_da>;
 };
-mp_wd_s: morph_win_dev_slash {
+mp_wd_s: morph_windows_dev_slash {
     compatible = "zmk,behavior-mod-morph";
     label = "mp_wd_s";
     #binding-cells = <0>;
@@ -141,7 +141,7 @@ mp_wd_s: morph_win_dev_slash {
 // tap:         &
 // shift:       &&=
 // alt:         &&
-mp_wd_lao_a: morph_win_dev_logical_and_operator_alt {
+mp_wd_lao_a: morph_windows_dev_logical_and_operator_alt {
     compatible = "zmk,behavior-mod-morph";
     label = "mp_wd_lao_a";
     #binding-cells = <0>;
@@ -149,7 +149,7 @@ mp_wd_lao_a: morph_win_dev_logical_and_operator_alt {
     bindings = <&kp AMPS>, <&m_wd_la>;
     keep-mods = <(MOD_LALT)>;
 };
-mp_wd_lao: morph_win_dev_logical_and_operator {
+mp_wd_lao: morph_windows_dev_logical_and_operator {
     compatible = "zmk,behavior-mod-morph";
     label = "mp_wd_lao";
     #binding-cells = <0>;
@@ -160,7 +160,7 @@ mp_wd_lao: morph_win_dev_logical_and_operator {
 // tap:         |
 // shift:       ||=
 // alt:         ||
-mp_wd_loo_a: morph_win_dev_logical_or_operator_alt {
+mp_wd_loo_a: morph_windows_dev_logical_or_operator_alt {
     compatible = "zmk,behavior-mod-morph";
     label = "mp_wd_loo_a";
     #binding-cells = <0>;
@@ -168,7 +168,7 @@ mp_wd_loo_a: morph_win_dev_logical_or_operator_alt {
     bindings = <&kp PIPE>, <&m_wd_lo>;
     keep-mods = <(MOD_LALT)>;
 };
-mp_wd_loo: morph_win_dev_logical_or_operator {
+mp_wd_loo: morph_windows_dev_logical_or_operator {
     compatible = "zmk,behavior-mod-morph";
     label = "mp_wd_loo";
     #binding-cells = <0>;
@@ -180,7 +180,7 @@ mp_wd_loo: morph_win_dev_logical_or_operator {
 // shift:       ??=
 // alt:         ¿
 // alt+shift:   ??
-mp_wd_qs_as: morph_win_dev_question_symbol_alt_shift {
+mp_wd_qs_as: morph_windows_dev_question_symbol_alt_shift {
     compatible = "zmk,behavior-mod-morph";
     label = "mp_wd_qs_as";
     #binding-cells = <0>;
@@ -188,7 +188,7 @@ mp_wd_qs_as: morph_win_dev_question_symbol_alt_shift {
     bindings = <&m_wd_nca>, <&m_wd_nco>;
     keep-mods = <(MOD_LALT)>;
 };
-mp_wd_qs_a: morph_win_dev_question_symbol_alt {
+mp_wd_qs_a: morph_windows_dev_question_symbol_alt {
     compatible = "zmk,behavior-mod-morph";
     label = "mp_wd_qs_a";
     #binding-cells = <0>;
@@ -196,7 +196,7 @@ mp_wd_qs_a: morph_win_dev_question_symbol_alt {
     bindings = <&kp QMARK>, <&kp LC(FSLH)>;
     keep-mods = <(MOD_LALT)>;
 };
-mp_wd_qs: morph_win_dev_question_symbol {
+mp_wd_qs: morph_windows_dev_question_symbol {
     compatible = "zmk,behavior-mod-morph";
     label = "mp_wd_qs";
     #binding-cells = <0>;
@@ -209,7 +209,7 @@ mp_wd_qs: morph_win_dev_question_symbol {
 // shift:       !==
 // alt:         ¡
 // alt+shift:   !!
-mp_wd_es_as: morph_win_dev_exclamation_symbol_alt_shift {
+mp_wd_es_as: morph_windows_dev_exclamation_symbol_alt_shift {
     compatible = "zmk,behavior-mod-morph";
     label = "mp_wd_es_as";
     #binding-cells = <0>;
@@ -217,7 +217,7 @@ mp_wd_es_as: morph_win_dev_exclamation_symbol_alt_shift {
     bindings = <&m_wd_si>, <&m_wd_dno>;
     keep-mods = <(MOD_LALT)>;
 };
-mp_wd_es_a: morph_win_dev_exclamation_symbol_alt {
+mp_wd_es_a: morph_windows_dev_exclamation_symbol_alt {
     compatible = "zmk,behavior-mod-morph";
     label = "mp_wd_es_a";
     #binding-cells = <0>;
@@ -225,7 +225,7 @@ mp_wd_es_a: morph_win_dev_exclamation_symbol_alt {
     bindings = <&kp EXCL>, <&kp LC(N1)>;
     keep-mods = <(MOD_LALT)>;
 };
-mp_wd_es: morph_win_dev_exclamation_symbol {
+mp_wd_es: morph_windows_dev_exclamation_symbol {
     compatible = "zmk,behavior-mod-morph";
     label = "mp_wd_es";
     #binding-cells = <0>;
@@ -235,7 +235,7 @@ mp_wd_es: morph_win_dev_exclamation_symbol {
 
 // tap:         ?.
 // shift:       ?░:░
-mp_wd_ql: morph_win_dev_question_logical {
+mp_wd_ql: morph_windows_dev_question_logical {
     compatible = "zmk,behavior-mod-morph";
     label = "mp_wd_ql";
     #binding-cells = <0>;
@@ -246,14 +246,14 @@ mp_wd_ql: morph_win_dev_question_logical {
 // tap:         <
 // shift:       <=
 // alt:         <░/> /* html void tag */
-mp_wd_lt_s: morph_win_dev_lower_than_shift {
+mp_wd_lt_s: morph_windows_dev_lower_than_shift {
     compatible = "zmk,behavior-mod-morph";
     label = "mp_wd_lt_s";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
     bindings = <&kp LT>, <&m_wd_ltoet>;
 };
-mp_wd_lt: morph_win_dev_lower_than {
+mp_wd_lt: morph_windows_dev_lower_than {
     compatible = "zmk,behavior-mod-morph";
     label = "mp_wd_lt";
     #binding-cells = <0>;
@@ -265,14 +265,14 @@ mp_wd_lt: morph_win_dev_lower_than {
 // tap:         >
 // shift:       >=
 // alt:         </░> /* html close tag */
-mp_wd_gt_s: morph_win_dev_greater_than_shift {
+mp_wd_gt_s: morph_windows_dev_greater_than_shift {
     compatible = "zmk,behavior-mod-morph";
     label = "mp_wd_gt_s";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
     bindings = <&kp GT>, <&m_wd_gtoet>;
 };
-mp_wd_gt: morph_win_dev_greater_than {
+mp_wd_gt: morph_windows_dev_greater_than {
     compatible = "zmk,behavior-mod-morph";
     label = "mp_wd_gt";
     #binding-cells = <0>;

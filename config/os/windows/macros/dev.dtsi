@@ -1,5 +1,5 @@
 // action: **
-m_wd_eo: macro_win_dev_exponentiation_operator {
+m_wd_eo: macro_windows_dev_exponentiation_operator {
     compatible = "zmk,behavior-macro";
     label = "m_wd_eo";
     #binding-cells = <0>;
@@ -11,7 +11,7 @@ m_wd_eo: macro_win_dev_exponentiation_operator {
 };
 
 // action: *=
-m_wd_ma: macro_win_dev_multiplication_assignment {
+m_wd_ma: macro_windows_dev_multiplication_assignment {
     compatible = "zmk,behavior-macro";
     label = "m_wd_ma";
     #binding-cells = <0>;
@@ -23,7 +23,7 @@ m_wd_ma: macro_win_dev_multiplication_assignment {
 };
 
 // action: /=
-m_wd_da: macro_win_dev_division_assignment {
+m_wd_da: macro_windows_dev_division_assignment {
     compatible = "zmk,behavior-macro";
     label = "m_wd_da";
     #binding-cells = <0>;
@@ -35,7 +35,7 @@ m_wd_da: macro_win_dev_division_assignment {
 };
 
 // action: ++
-m_wd_io: macro_win_dev_increment_operator {
+m_wd_io: macro_windows_dev_increment_operator {
     compatible = "zmk,behavior-macro";
     label = "m_wd_io";
     #binding-cells = <0>;
@@ -47,7 +47,7 @@ m_wd_io: macro_win_dev_increment_operator {
 };
 
 // action: +=
-m_wd_as: macro_win_dev_addition_assignment {
+m_wd_as: macro_windows_dev_addition_assignment {
     compatible = "zmk,behavior-macro";
     label = "m_wd_as";
     #binding-cells = <0>;
@@ -59,7 +59,7 @@ m_wd_as: macro_win_dev_addition_assignment {
 };
 
 // action: --
-m_wd_do: macro_win_dev_decrement_operator {
+m_wd_do: macro_windows_dev_decrement_operator {
     compatible = "zmk,behavior-macro";
     label = "m_wd_do";
     #binding-cells = <0>;
@@ -71,7 +71,7 @@ m_wd_do: macro_win_dev_decrement_operator {
 };
 
 // action: -=
-m_wd_sa: macro_win_dev_subtraction_assignment {
+m_wd_sa: macro_windows_dev_subtraction_assignment {
     compatible = "zmk,behavior-macro";
     label = "m_wd_sa";
     #binding-cells = <0>;
@@ -83,7 +83,7 @@ m_wd_sa: macro_win_dev_subtraction_assignment {
 };
 
 // action: =>
-m_wd_a: macro_win_dev_arrow {
+m_wd_a: macro_windows_dev_arrow {
     compatible = "zmk,behavior-macro";
     label = "m_wd_a";
     #binding-cells = <0>;
@@ -95,7 +95,7 @@ m_wd_a: macro_win_dev_arrow {
 };
 
 // action: &&
-m_wd_la: macro_win_dev_logical_and {
+m_wd_la: macro_windows_dev_logical_and {
     compatible = "zmk,behavior-macro";
     label = "m_wd_la";
     #binding-cells = <0>;
@@ -107,7 +107,7 @@ m_wd_la: macro_win_dev_logical_and {
 };
 
 // action: &&=
-m_wd_laa: macro_win_dev_logical_and_assignment {
+m_wd_laa: macro_windows_dev_logical_and_assignment {
     compatible = "zmk,behavior-macro";
     label = "m_wd_laa";
     #binding-cells = <0>;
@@ -119,7 +119,7 @@ m_wd_laa: macro_win_dev_logical_and_assignment {
 };
 
 // action: ||
-m_wd_lo: macro_win_dev_logical_or {
+m_wd_lo: macro_windows_dev_logical_or {
     compatible = "zmk,behavior-macro";
     label = "m_wd_lo";
     #binding-cells = <0>;
@@ -131,7 +131,7 @@ m_wd_lo: macro_win_dev_logical_or {
 };
 
 // action: ||=
-m_wd_loa: macro_win_dev_logical_or_assignment {
+m_wd_loa: macro_windows_dev_logical_or_assignment {
     compatible = "zmk,behavior-macro";
     label = "m_wd_loa";
     #binding-cells = <0>;
@@ -222,7 +222,7 @@ m_wd_si: macro_strict_inequality {
 };
 
 // action: <░/>
-m_wd_hvt: macro_win_dev_html_void_tag {
+m_wd_hvt: macro_windows_dev_html_void_tag {
     compatible = "zmk,behavior-macro";
     label = "m_wd_hvt";
     #binding-cells = <0>;
@@ -235,7 +235,7 @@ m_wd_hvt: macro_win_dev_html_void_tag {
 };
 
 // action: <=
-m_wd_ltoet: macro_win_dev_less_than_or_equal_to {
+m_wd_ltoet: macro_windows_dev_less_than_or_equal_to {
     compatible = "zmk,behavior-macro";
     label = "m_wd_ltoet";
     #binding-cells = <0>;
@@ -247,7 +247,7 @@ m_wd_ltoet: macro_win_dev_less_than_or_equal_to {
 };
 
 // action: </░>
-m_wd_hct: macro_win_dev_html_close_tag {
+m_wd_hct: macro_windows_dev_html_close_tag {
     compatible = "zmk,behavior-macro";
     label = "m_wd_hct";
     #binding-cells = <0>;
@@ -260,7 +260,7 @@ m_wd_hct: macro_win_dev_html_close_tag {
 };
 
 // action: >=
-m_wd_gtoet: macro_win_dev_greater_than_or_equal_to {
+m_wd_gtoet: macro_windows_dev_greater_than_or_equal_to {
     compatible = "zmk,behavior-macro";
     label = "m_wd_gtoet";
     #binding-cells = <0>;

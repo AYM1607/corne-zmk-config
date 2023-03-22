@@ -1,6 +1,6 @@
 // tap:     ⇺
 // shift:   ⎗
-mp_wa_prev: morph_win_action_prev {
+mp_wa_prev: morph_windows_action_prev {
     compatible = "zmk,behavior-mod-morph";
     label = "mp_wa_prev";
     #binding-cells = <0>;
@@ -10,7 +10,7 @@ mp_wa_prev: morph_win_action_prev {
 
 // tap:     ⇻
 // shift:   ⎘
-mp_wa_next: morph_win_action_next {
+mp_wa_next: morph_windows_action_next {
     compatible = "zmk,behavior-mod-morph";
     label = "mp_wa_next";
     #binding-cells = <0>;

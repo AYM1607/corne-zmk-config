@@ -1,4 +1,4 @@
-hm_wd_lcmd: behavior_win_dev_lcmd {
+hm_wd_lcmd: behavior_windows_dev_lcmd {
     compatible = "zmk,behavior-hold-tap";
     label = "hm_wd_lcmd";
     #binding-cells = <2>;
@@ -9,7 +9,7 @@ hm_wd_lcmd: behavior_win_dev_lcmd {
     bindings = <&kp>, <&mp_wd_lao>;
 };
 
-hm_wd_lshf: behavior_win_dev_lshf {
+hm_wd_lshf: behavior_windows_dev_lshf {
     compatible = "zmk,behavior-hold-tap";
     label = "hm_wd_lshf";
     #binding-cells = <2>;
@@ -20,7 +20,7 @@ hm_wd_lshf: behavior_win_dev_lshf {
     bindings = <&kp>, <&mp_wd_e>;
 };
 
-hm_wd_rshf: behavior_win_dev_rshf {
+hm_wd_rshf: behavior_windows_dev_rshf {
     compatible = "zmk,behavior-hold-tap";
     label = "hm_wd_rshf";
     #binding-cells = <2>;
@@ -31,7 +31,7 @@ hm_wd_rshf: behavior_win_dev_rshf {
     bindings = <&kp>, <&mp_wd_es>;
 };
 
-hm_wd_ralt: behavior_win_dev_ralt {
+hm_wd_ralt: behavior_windows_dev_ralt {
     compatible = "zmk,behavior-hold-tap";
     label = "hm_wd_ralt";
     #binding-cells = <2>;
@@ -42,7 +42,7 @@ hm_wd_ralt: behavior_win_dev_ralt {
     bindings = <&kp>, <&mp_wd_lb>;
 };
 
-hm_wd_rctrl: behavior_win_dev_rctrl {
+hm_wd_rctrl: behavior_windows_dev_rctrl {
     compatible = "zmk,behavior-hold-tap";
     label = "hm_wd_rctrl";
     #binding-cells = <2>;
@@ -53,7 +53,7 @@ hm_wd_rctrl: behavior_win_dev_rctrl {
     bindings = <&kp>, <&mp_wd_rb>;
 };
 
-hm_wd_rcmd: behavior_win_dev_rcmd {
+hm_wd_rcmd: behavior_windows_dev_rcmd {
     compatible = "zmk,behavior-hold-tap";
     label = "hm_wd_rcmd";
     #binding-cells = <2>;

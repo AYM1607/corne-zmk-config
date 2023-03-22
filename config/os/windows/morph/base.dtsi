@@ -1,6 +1,6 @@
 // tap:     '
 // shift:   "
-mp_wk_q: morph_win_key_quote {
+mp_wk_q: morph_windows_key_quote {
     compatible = "zmk,behavior-mod-morph";
     label = "mp_wk_q";
     #binding-cells = <0>;

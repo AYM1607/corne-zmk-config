@@ -1,4 +1,4 @@
-mp_w_stg: morph_win_stg_layer {
+mp_w_stg: morph_windows_stg_layer {
     compatible = "zmk,behavior-mod-morph";
     label = "mp_w_stg";
     #binding-cells = <0>;

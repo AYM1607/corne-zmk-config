@@ -1,5 +1,5 @@
 // action:     `
-m_mi_g: macro_mac_int_grave {
+m_mi_g: macro_macos_int_grave {
     compatible = "zmk,behavior-macro";
     label = "m_mi_g";
     #binding-cells = <0>;
@@ -8,7 +8,7 @@ m_mi_g: macro_mac_int_grave {
 };
 
 // action:     ~
-m_mi_t: macro_mac_int_tilde {
+m_mi_t: macro_macos_int_tilde {
     compatible = "zmk,behavior-macro";
     label = "m_mi_t";
     #binding-cells = <0>;
@@ -17,7 +17,7 @@ m_mi_t: macro_mac_int_tilde {
 };
 
 // action:     ^
-m_mi_c: macro_mac_int_caret {
+m_mi_c: macro_macos_int_caret {
     compatible = "zmk,behavior-macro";
     label = "m_mi_c";
     #binding-cells = <0>;
@@ -26,7 +26,7 @@ m_mi_c: macro_mac_int_caret {
 };
 
 // action:     "
-m_mi_d: macro_mac_int_double_quote {
+m_mi_d: macro_macos_int_double_quote {
     compatible = "zmk,behavior-macro";
     label = "m_mi_d";
     #binding-cells = <0>;
@@ -35,7 +35,7 @@ m_mi_d: macro_mac_int_double_quote {
 };
 
 // action:     '
-m_mi_s: macro_mac_int_single_quote {
+m_mi_s: macro_macos_int_single_quote {
     compatible = "zmk,behavior-macro";
     label = "m_mi_single";
     #binding-cells = <0>;
