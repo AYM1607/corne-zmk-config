@@ -98,10 +98,10 @@ Symbols and dev shortcuts for JS/TS.
 | :-------------: | ----------------------------------------: |
 | <kbd>°</kbd>    | <kbd>⌥</kbd>+<kbd>#</kbd>                |
 | <kbd>€</kbd>    | <kbd>⌥</kbd>+<kbd>$</kbd>                |
-| <kbd>«</kbd>    | <kbd>⌥</kbd>++<kbd>[</kbd>               |
-| <kbd>»</kbd>    | <kbd>⌥</kbd>++<kbd>]</kbd>               |
-| <kbd>¡</kbd>    | <kbd>⌥</kbd>+<kbd>!</kbd>                |
-| <kbd>¿</kbd>    | <kbd>⌥</kbd>+<kbd>?</kbd>                |
+| <kbd>«</kbd>    | <kbd>⌥</kbd>++<kbd>{</kbd>               |
+| <kbd>»</kbd>    | <kbd>⌥</kbd>++<kbd>}</kbd>               |
+| <kbd>¡</kbd>    | **Not available**                         |
+| <kbd>¿</kbd>    | **Not available**                         |
 
 #### JS/TS
 
