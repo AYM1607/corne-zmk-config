@@ -63,7 +63,7 @@ Icons used to describe some modifiers and actions
 
 Letters, accents for Spanish language and quick shortcuts for most used symbols to "avoid" changing layers.
 
-![BAS Layer](/.github/images/layers/wBAS.png)
+![BAS Layer](/.github/images/layers/android/BAS.png)
 
 #### Spanish
 
@@ -90,7 +90,7 @@ Letters, accents for Spanish language and quick shortcuts for most used symbols 
 
 Symbols and dev shortcuts for JS/TS.
 
-![DEV Layer](/.github/images/layers/wDEV.png)
+![DEV Layer](/.github/images/layers/android/DEV.png)
 
 #### Symbols
 
@@ -107,25 +107,25 @@ Symbols and dev shortcuts for JS/TS.
 
 | Label                                                                                                                       | Shortcut                     | Action |
 | :-------------------------------------------------------------------------------------------------------------------------: | ---------------------------: | ----- |
-| <kbd>[++](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment)</kbd>                      |  <kbd>⌥</kbd>+<kbd>+</kbd>  | Increment |
-| <kbd>[+=](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Addition_assignment)</kbd>            |  <kbd>⇧</kbd>+<kbd>+</kbd>  | Addition Assignment |
-| <kbd>[--](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Decrement)</kbd>                      |  <kbd>⌥</kbd>+<kbd>-</kbd>  | Decrement |
-| <kbd>[-=](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Subtraction_assignment)</kbd>         |  <kbd>⇧</kbd>+<kbd>-</kbd>  | Subtraction Assignment |
-| <kbd>[**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Exponentiation)</kbd>                 |  <kbd>⌥</kbd>+<kbd>*</kbd>  | Exponentiation |
-| <kbd>[*=](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Multiplication_assignment)</kbd>      |  <kbd>⇧</kbd>+<kbd>*</kbd>  | Multiplication Assignment |
-| <kbd>[/=](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Division_assignment)</kbd>            |  <kbd>⇧</kbd>+<kbd>/</kbd>  | Division Assignment |
-| <kbd>[&&](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND)</kbd>                    |  <kbd>⌥</kbd>+<kbd>&</kbd>  | Logical And |
-| <kbd>[&&=](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND_assignment)</kbd>        |  <kbd>⇧</kbd>+<kbd>&</kbd>  | Logical And Assignment |
-| <kbd>[\|\|](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR)</kbd>                   |  <kbd>⌥</kbd>+<kbd>\|</kbd>  | Logical Or |
-| <kbd>[\|\|=](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR_assignment)</kbd>       |  <kbd>⇧</kbd>+<kbd>\|</kbd>  | Logical Or Assignment |
-| <kbd>[??](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing)</kbd>             |  <kbd>⌥</kbd>+<kbd>⇧</kbd>+<kbd>?</kbd>  | Nullish Coalescing |
-| <kbd>[??=](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_assignment)</kbd> |  <kbd>⇧</kbd>+<kbd>?</kbd>  | Nullish Coalescing Assignment |
-| <kbd>[=>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)</kbd>                |  <kbd>⌥</kbd>+<kbd>=</kbd>  | Arrow Function |
-| <kbd>[===](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Strict_equality)</kbd>               |  <kbd>⇧</kbd>+<kbd>=</kbd>  | Strict Equality |
-| <kbd>[!!](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_NOT#double_not_!!)</kbd>      |  <kbd>⌥</kbd>+<kbd>⇧</kbd>+<kbd>!</kbd>  | Double Not (Boolean) |
-| <kbd>[!==](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Strict_inequality)</kbd>             |  <kbd>⇧</kbd>+<kbd>!</kbd>  | Strict Inequality |
-| <kbd>[<=](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Less_than_or_equal)</kbd>             | <kbd>⇧</kbd>+<kbd><</kbd>   | Less Than or Equal|
-| <kbd>[>=](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Greater_than_or_equal)</kbd>          | <kbd>⇧</kbd>+<kbd>></kbd>   | Greater Than or Equal |
+| <kbd>[++](https://developer.mozilla.org/en-US/docs/android/eb/JavaScript/Reference/Operators/Increment)</kbd>                      |  <kbd>⌥</kbd>+<kbd>+</kbd>  | Increment |
+| <kbd>[+=](https://developer.mozilla.org/en-US/docs/android/eb/JavaScript/Reference/Operators/Addition_assignment)</kbd>            |  <kbd>⇧</kbd>+<kbd>+</kbd>  | Addition Assignment |
+| <kbd>[--](https://developer.mozilla.org/en-US/docs/android/eb/JavaScript/Reference/Operators/Decrement)</kbd>                      |  <kbd>⌥</kbd>+<kbd>-</kbd>  | Decrement |
+| <kbd>[-=](https://developer.mozilla.org/en-US/docs/android/eb/JavaScript/Reference/Operators/Subtraction_assignment)</kbd>         |  <kbd>⇧</kbd>+<kbd>-</kbd>  | Subtraction Assignment |
+| <kbd>[**](https://developer.mozilla.org/en-US/docs/android/eb/JavaScript/Reference/Operators/Exponentiation)</kbd>                 |  <kbd>⌥</kbd>+<kbd>*</kbd>  | Exponentiation |
+| <kbd>[*=](https://developer.mozilla.org/en-US/docs/android/eb/JavaScript/Reference/Operators/Multiplication_assignment)</kbd>      |  <kbd>⇧</kbd>+<kbd>*</kbd>  | Multiplication Assignment |
+| <kbd>[/=](https://developer.mozilla.org/en-US/docs/android/eb/JavaScript/Reference/Operators/Division_assignment)</kbd>            |  <kbd>⇧</kbd>+<kbd>/</kbd>  | Division Assignment |
+| <kbd>[&&](https://developer.mozilla.org/en-US/docs/android/eb/JavaScript/Reference/Operators/Logical_AND)</kbd>                    |  <kbd>⌥</kbd>+<kbd>&</kbd>  | Logical And |
+| <kbd>[&&=](https://developer.mozilla.org/en-US/docs/android/eb/JavaScript/Reference/Operators/Logical_AND_assignment)</kbd>        |  <kbd>⇧</kbd>+<kbd>&</kbd>  | Logical And Assignment |
+| <kbd>[\|\|](https://developer.mozilla.org/en-US/docs/android/eb/JavaScript/Reference/Operators/Logical_OR)</kbd>                   |  <kbd>⌥</kbd>+<kbd>\|</kbd>  | Logical Or |
+| <kbd>[\|\|=](https://developer.mozilla.org/en-US/docs/android/eb/JavaScript/Reference/Operators/Logical_OR_assignment)</kbd>       |  <kbd>⇧</kbd>+<kbd>\|</kbd>  | Logical Or Assignment |
+| <kbd>[??](https://developer.mozilla.org/en-US/docs/android/eb/JavaScript/Reference/Operators/Nullish_coalescing)</kbd>             |  <kbd>⌥</kbd>+<kbd>⇧</kbd>+<kbd>?</kbd>  | Nullish Coalescing |
+| <kbd>[??=](https://developer.mozilla.org/en-US/docs/android/eb/JavaScript/Reference/Operators/Nullish_coalescing_assignment)</kbd> |  <kbd>⇧</kbd>+<kbd>?</kbd>  | Nullish Coalescing Assignment |
+| <kbd>[=>](https://developer.mozilla.org/en-US/docs/android/eb/JavaScript/Reference/Functions/Arrow_functions)</kbd>                |  <kbd>⌥</kbd>+<kbd>=</kbd>  | Arrow Function |
+| <kbd>[===](https://developer.mozilla.org/en-US/docs/android/eb/JavaScript/Reference/Operators/Strict_equality)</kbd>               |  <kbd>⇧</kbd>+<kbd>=</kbd>  | Strict Equality |
+| <kbd>[!!](https://developer.mozilla.org/en-US/docs/android/eb/JavaScript/Reference/Operators/Logical_NOT#double_not_!!)</kbd>      |  <kbd>⌥</kbd>+<kbd>⇧</kbd>+<kbd>!</kbd>  | Double Not (Boolean) |
+| <kbd>[!==](https://developer.mozilla.org/en-US/docs/android/eb/JavaScript/Reference/Operators/Strict_inequality)</kbd>             |  <kbd>⇧</kbd>+<kbd>!</kbd>  | Strict Inequality |
+| <kbd>[<=](https://developer.mozilla.org/en-US/docs/android/eb/JavaScript/Reference/Operators/Less_than_or_equal)</kbd>             | <kbd>⇧</kbd>+<kbd><</kbd>   | Less Than or Equal|
+| <kbd>[>=](https://developer.mozilla.org/en-US/docs/android/eb/JavaScript/Reference/Operators/Greater_than_or_equal)</kbd>          | <kbd>⇧</kbd>+<kbd>></kbd>   | Greater Than or Equal |
 
 #### Auto Brackets
 
@@ -155,7 +155,7 @@ Symbols and dev shortcuts for JS/TS.
 
 Quick navigation actions and numbers. Function keys works independently as a sub-layer to avoid shortcuts collisions.
 
-![AXN Layer](/.github/images/layers/wAXN.png)
+![AXN Layer](/.github/images/layers/android/AXN.png)
 
 #### Navigation
 
@@ -198,7 +198,7 @@ Quick navigation actions and numbers. Function keys works independently as a sub
 
 Dedicated to Bluetooth and media controls.
 
-![STG Layer](/.github/images/layers/wSTG.png)
+![STG Layer](/.github/images/layers/android/STG.png)
 
 #### Actions
 
