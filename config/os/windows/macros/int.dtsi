@@ -1,4 +1,4 @@
-// tap:     `
+// action:     `
 m_wi_g: macro_win_int_grave {
     compatible = "zmk,behavior-macro";
     label = "m_wi_g";
@@ -7,7 +7,7 @@ m_wi_g: macro_win_int_grave {
         <&kp GRAVE &kp SPACE>;
 };
 
-// tap:     ~
+// action:     ~
 m_wi_t: macro_win_int_tilde {
     compatible = "zmk,behavior-macro";
     label = "m_wi_t";
@@ -16,7 +16,7 @@ m_wi_t: macro_win_int_tilde {
         <&kp TILDE &kp SPACE>;
 };
 
-// tap:     ^
+// action:     ^
 m_wi_c: macro_win_int_caret {
     compatible = "zmk,behavior-macro";
     label = "m_wi_c";
@@ -25,7 +25,7 @@ m_wi_c: macro_win_int_caret {
         <&kp CARET &kp SPACE>;
 };
 
-// tap:     "
+// action:     "
 m_wi_d: macro_win_int_double_quote {
     compatible = "zmk,behavior-macro";
     label = "m_wi_d";
@@ -34,7 +34,7 @@ m_wi_d: macro_win_int_double_quote {
         <&kp DQT &kp SPACE>;
 };
 
-// tap:     '
+// action:     '
 m_wi_s: macro_win_int_single_quote {
     compatible = "zmk,behavior-macro";
     label = "m_wi_s";

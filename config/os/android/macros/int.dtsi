@@ -1,4 +1,4 @@
-// tap:     á
+// action:     á
 m_ai_a: macro_android_int_a {
     compatible = "zmk,behavior-macro";
     label = "m_ai_a";
@@ -11,7 +11,7 @@ m_ai_a: macro_android_int_a {
         , <&kp A>;
 };
 
-// tap:     Á
+// action:     Á
 m_ai_as: macro_android_int_a_shift {
     compatible = "zmk,behavior-macro";
     label = "m_ai_as";
@@ -24,7 +24,7 @@ m_ai_as: macro_android_int_a_shift {
         , <&kp RS(A)>;
 };
 
-// tap:     é
+// action:     é
 m_ai_e: macro_android_int_e {
     compatible = "zmk,behavior-macro";
     label = "m_ai_e";
@@ -37,7 +37,7 @@ m_ai_e: macro_android_int_e {
         , <&kp E>;
 };
 
-// tap:     É
+// action:     É
 m_ai_es: macro_android_int_e_shift {
     compatible = "zmk,behavior-macro";
     label = "m_ai_es";
@@ -50,7 +50,7 @@ m_ai_es: macro_android_int_e_shift {
         , <&kp LS(E)>;
 };
 
-// tap:     í
+// action:     í
 m_ai_i: macro_android_int_i {
     compatible = "zmk,behavior-macro";
     label = "m_ai_i";
@@ -63,7 +63,7 @@ m_ai_i: macro_android_int_i {
         , <&kp I>;
 };
 
-// tap:     Í
+// action:     Í
 m_ai_is: macro_android_int_i_shift {
     compatible = "zmk,behavior-macro";
     label = "m_ai_is";
@@ -76,7 +76,7 @@ m_ai_is: macro_android_int_i_shift {
         , <&kp LS(I)>;
 };
 
-// tap:     ó
+// action:     ó
 m_ai_o: macro_android_int_o {
     compatible = "zmk,behavior-macro";
     label = "m_ai_o";
@@ -89,7 +89,7 @@ m_ai_o: macro_android_int_o {
         , <&kp O>;
 };
 
-// tap:     Ó
+// action:     Ó
 m_ai_os: macro_android_int_o_shift {
     compatible = "zmk,behavior-macro";
     label = "m_ai_os";
@@ -102,7 +102,7 @@ m_ai_os: macro_android_int_o_shift {
         , <&kp LS(O)>;
 };
 
-// tap:     ú
+// action:     ú
 m_ai_u: macro_android_int_u {
     compatible = "zmk,behavior-macro";
     label = "m_ai_u";
@@ -115,7 +115,7 @@ m_ai_u: macro_android_int_u {
         , <&kp U>;
 };
 
-// tap:     Ú
+// action:     Ú
 m_ai_us: macro_android_int_u_shift {
     compatible = "zmk,behavior-macro";
     label = "m_ai_us";
@@ -128,7 +128,7 @@ m_ai_us: macro_android_int_u_shift {
         , <&kp LS(U)>;
 };
 
-// tap:     ü
+// action:     ü
 m_ai_y: macro_android_int_y {
     compatible = "zmk,behavior-macro";
     label = "m_ai_y";
@@ -141,7 +141,7 @@ m_ai_y: macro_android_int_y {
         , <&kp U>;
 };
 
-// tap:     Ü
+// action:     Ü
 m_ai_ys: macro_android_int_y_shift {
     compatible = "zmk,behavior-macro";
     label = "m_ai_ys";
@@ -154,7 +154,7 @@ m_ai_ys: macro_android_int_y_shift {
         , <&kp LS(U)>;
 };
 
-// tap:     ñ
+// action:     ñ
 m_ai_n: macro_android_int_n {
     compatible = "zmk,behavior-macro";
     label = "m_ai_n";
@@ -167,7 +167,7 @@ m_ai_n: macro_android_int_n {
         , <&kp N>;
 };
 
-// tap:     Ñ
+// action:     Ñ
 m_ai_ns: macro_android_int_n_shift {
     compatible = "zmk,behavior-macro";
     label = "m_ai_ns";
@@ -180,7 +180,7 @@ m_ai_ns: macro_android_int_n_shift {
         , <&kp LS(N)>;
 };
 
-// tap:     `
+// action:     `
 m_ai_g: macro_android_int_grave {
     compatible = "zmk,behavior-macro";
     label = "m_ai_g";
@@ -189,7 +189,7 @@ m_ai_g: macro_android_int_grave {
         <&kp GRAVE>;
 };
 
-// tap:     ~
+// action:     ~
 m_ai_t: macro_android_int_tilde {
     compatible = "zmk,behavior-macro";
     label = "m_ai_t";
@@ -198,7 +198,7 @@ m_ai_t: macro_android_int_tilde {
         <&kp TILDE>;
 };
 
-// tap:     ^
+// action:     ^
 m_ai_c: macro_android_int_caret {
     compatible = "zmk,behavior-macro";
     label = "m_ai_c";
@@ -207,7 +207,7 @@ m_ai_c: macro_android_int_caret {
         <&kp CARET>;
 };
 
-// tap:     "
+// action:     "
 m_ai_d: macro_android_int_double_quote {
     compatible = "zmk,behavior-macro";
     label = "m_ai_d";
@@ -216,7 +216,7 @@ m_ai_d: macro_android_int_double_quote {
         <&kp DQT>;
 };
 
-// tap:     '
+// action:     '
 m_ai_s: macro_android_int_single_quote {
     compatible = "zmk,behavior-macro";
     label = "m_ai_single";
