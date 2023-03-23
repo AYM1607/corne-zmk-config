@@ -7,7 +7,6 @@ hm_wb_lcmd: behavior_windows_base_lcmd {
     flavor = "hold-preferred";
     global-quick-tap;
     bindings = <&kp>, <&mp_wi_a>;
-    hold-trigger-key-positions = KEYS_RIGHT;
 };
 
 hm_wb_rshf: behavior_windows_base_rshf {
@@ -19,7 +18,6 @@ hm_wb_rshf: behavior_windows_base_rshf {
     flavor = "hold-preferred";
     global-quick-tap;
     bindings = <&kp>, <&mp_wi_n>;
-    hold-trigger-key-positions = KEYS_LEFT;
 };
 
 hm_wb_ralt: behavior_windows_base_ralt {
@@ -31,7 +29,6 @@ hm_wb_ralt: behavior_windows_base_ralt {
     flavor = "hold-preferred";
     global-quick-tap;
     bindings = <&kp>, <&mp_wi_e>;
-    hold-trigger-key-positions = KEYS_LEFT;
 };
 
 hm_wb_rctrl: behavior_windows_base_rctrl {
@@ -43,7 +40,6 @@ hm_wb_rctrl: behavior_windows_base_rctrl {
     flavor = "hold-preferred";
     global-quick-tap;
     bindings = <&kp>, <&mp_wi_i>;
-    hold-trigger-key-positions = KEYS_LEFT;
 };
 
 hm_wb_rcmd: behavior_windows_base_rcmd {
@@ -55,5 +51,4 @@ hm_wb_rcmd: behavior_windows_base_rcmd {
     flavor = "hold-preferred";
     global-quick-tap;
     bindings = <&kp>, <&mp_wi_o>;
-    hold-trigger-key-positions = KEYS_LEFT;
 };
