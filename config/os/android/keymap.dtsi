@@ -1,8 +1,8 @@
         android_base_layer {
             #define AB13  &hm_ab_lcmd  LCMD   0  //A
-            #define AB14  &hm LCTRL    R
-            #define AB15  &hm LALT     S
-            #define AB16  &hm LSHFT    T
+            #define AB14  &hml         LCTRL  R
+            #define AB15  &hml         LALT   S
+            #define AB16  &hml         LSHFT  T
 
             #define AB19  &hm_ab_rshf  RSHFT  0  //N
             #define AB20  &hm_ab_ralt  RALT   0  //E
@@ -27,8 +27,8 @@
 
         android_dev_layer {
             #define AD13  &hm_ad_lcmd  LCMD    0
-            #define AD14  &hm          LCTRL   LBRC
-            #define AD15  &hm          LALT    RBRC
+            #define AD14  &hml         LCTRL   LBRC
+            #define AD15  &hml         LALT    RBRC
             #define AD16  &hm_ad_lshf  LSHFT   0
 
             #define AD19  &hm_ad_rshf  RSHFT   0
@@ -51,16 +51,16 @@
         android_act_num_layer {
             #define AA01  &kp    LG(LS(C))           // tap: color picker
             #define AA05  &kp    LC(F)               // tap: find
-            #define AA13  &hm    LCMD   LG(LS(S))    // tap: printscreen
-            #define AA14  &hm    LCTRL  LEFT
-            #define AA15  &hm    LALT   DOWN
-            #define AA16  &hm    LSHFT  RIGHT
+            #define AA13  &hml   LCMD   LG(LS(S))    // tap: printscreen
+            #define AA14  &hml   LCTRL  LEFT
+            #define AA15  &hml   LALT   DOWN
+            #define AA16  &hml   LSHFT  RIGHT
             #define AA17  &kp    LG(E)               // tap: file explorer
 
-            #define AA19  &hm    RSHFT  N4
-            #define AA20  &hm    RALT   N5
-            #define AA21  &hm    RCTRL  N6
-            #define AA22  &hm    RCMD   EQUAL
+            #define AA19  &hmr   RSHFT  N4
+            #define AA20  &hmr   RALT   N5
+            #define AA21  &hmr   RCTRL  N6
+            #define AA22  &hmr   RCMD   EQUAL
 
             #define AA35  &moto  aFNK   aFNK
 
@@ -83,15 +83,15 @@
         };
 
         android_functions_layer {
-            #define AK13  &hm LCMD   F5
-            #define AK14  &hm LCTRL  F6
-            #define AK15  &hm LALT   F7
-            #define AK16  &hm LSHFT  F8
+            #define AK13  &hml  LCMD   F5
+            #define AK14  &hml  LCTRL  F6
+            #define AK15  &hml  LALT   F7
+            #define AK16  &hml  LSHFT  F8
 
-            #define AK19  &hm RSHFT  HOME
-            #define AK20  &hm RALT   PG_DN
-            #define AK21  &hm RCTRL  END
-            #define AK22  &kp RCMD
+            #define AK19  &hmr  RSHFT  HOME
+            #define AK20  &hmr  RALT   PG_DN
+            #define AK21  &hmr  RCTRL  END
+            #define AK22  &kp   RCMD
 
             #define AK38  &to aBAS
             #define AK39  &to aDEV
