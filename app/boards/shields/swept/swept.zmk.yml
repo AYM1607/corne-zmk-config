@@ -4,11 +4,10 @@ name: Swept
 type: shield
 url: https://github.com/AYM1607/swept-crkbd/
 requires: [pro_micro]
-exposes: [nice_view_header]
+exposes: [i2c_oled]
 features:
   - keys
   - display
 siblings:
   - swept_left
   - swept_right
-  
