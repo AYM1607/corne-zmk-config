@@ -1,8 +1,8 @@
         windows_base_layer {
             #define WB13  &hm_wb_lcmd  LCMD   0  //A
-            #define WB14  &hml         LCTRL    R
-            #define WB15  &hml         LALT     S
-            #define WB16  &hml         LSHFT    T
+            #define WB14  &hm LCTRL    R
+            #define WB15  &hm LALT     S
+            #define WB16  &hm LSHFT    T
 
             #define WB19  &hm_wb_rshf  RSHFT  0  //N
             #define WB20  &hm_wb_ralt  LALT   0  //E
@@ -27,8 +27,8 @@
 
         windows_dev_layer {
             #define WD13  &hm_wd_lcmd  LCMD    0
-            #define WD14  &hml         LCTRL   LBRC
-            #define WD15  &hml         LALT    RBRC
+            #define WD14  &hm          LCTRL   LBRC
+            #define WD15  &hm          LALT    RBRC
             #define WD16  &hm_wd_lshf  LSHFT   0
 
             #define WD19  &hm_wd_rshf  RSHFT   0
@@ -49,18 +49,18 @@
         };
 
         windows_act_num_layer {
-            #define WA01  &kp   LG(LS(C))           // tap: color picker
-            #define WA05  &kp   LC(F)               // tap: find
-            #define WA13  &hml  LCMD   LG(LS(S))    // tap: printscreen
-            #define WA14  &hml  LCTRL  LEFT
-            #define WA15  &hml  LALT   DOWN
-            #define WA16  &hml  LSHFT  RIGHT
-            #define WA17  &kp   LG(E)               // tap: file explorer
+            #define WA01  &kp LG(LS(C))           // tap: color picker
+            #define WA05  &kp LC(F)               // tap: find
+            #define WA13  &hm LCMD   LG(LS(S))    // tap: printscreen
+            #define WA14  &hm LCTRL  LEFT
+            #define WA15  &hm LALT   DOWN
+            #define WA16  &hm LSHFT  RIGHT
+            #define WA17  &kp LG(E)               // tap: file explorer
 
-            #define WA19  &hmr  LSHFT  N4
-            #define WA20  &hmr  LALT   N5
-            #define WA21  &hmr  LCTRL  N6
-            #define WA22  &hmr  LCMD   EQUAL
+            #define WA19  &hm LSHFT  N4
+            #define WA20  &hm LALT   N5
+            #define WA21  &hm LCTRL  N6
+            #define WA22  &hm LCMD   EQUAL
 
             #define WA35 &mo_wFNKwAXN_to_wFNK    0 0
 
@@ -82,15 +82,15 @@
             >;
         };
         windows_functions_layer {
-            #define WK13  &hml  LCMD   F5
-            #define WK14  &hml  LCTRL  F6
-            #define WK15  &hml  LALT   F7
-            #define WK16  &hml  LSHFT  F8
+            #define WK13  &hm LCMD   F5
+            #define WK14  &hm LCTRL  F6
+            #define WK15  &hm LALT   F7
+            #define WK16  &hm LSHFT  F8
 
-            #define WK19  &hmr  RSHFT  HOME
-            #define WK20  &hmr  LALT   PG_DN
-            #define WK21  &hmr  RCTRL  END
-            #define WK22  &kp   RCMD
+            #define WK19  &hm RSHFT  HOME
+            #define WK20  &hm LALT   PG_DN
+            #define WK21  &hm RCTRL  END
+            #define WK22  &kp RCMD
 
             #define WK38  &to_wBAS
             #define WK39  &to_wDEV

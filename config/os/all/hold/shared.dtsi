@@ -8,28 +8,6 @@ hm: homerow_mods {
     bindings = <&kp>, <&kp>;
 };
 
-hml: homerow_mods_left {
-    compatible = "zmk,behavior-hold-tap";
-    label = "HOMEROW MODS";
-    #binding-cells = <2>;
-    tapping-term-ms = <HP_TAPPING>;
-    quick-tap-ms = <HP_QUICK_TAP>;
-    flavor = "hold-preferred";
-    bindings = <&kp>, <&kp>;
-    hold-trigger-key-positions = KEYS_RIGHT;
-};
-
-hmr: homerow_mods_right {
-    compatible = "zmk,behavior-hold-tap";
-    label = "HOMEROW MODS";
-    #binding-cells = <2>;
-    tapping-term-ms = <HP_TAPPING>;
-    quick-tap-ms = <HP_QUICK_TAP>;
-    flavor = "hold-preferred";
-    bindings = <&kp>, <&kp>;
-    hold-trigger-key-positions = KEYS_LEFT;
-};
-
 tokp: behavior_to_kp {
     compatible = "zmk,behavior-hold-tap";
     label = "tokp";
