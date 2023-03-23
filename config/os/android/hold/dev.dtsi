@@ -7,6 +7,7 @@ hm_ad_lcmd: behavior_android_dev_lcmd {
     flavor = "hold-preferred";
     global-quick-tap;
     bindings = <&kp>, <&mp_ad_lao>;
+    hold-trigger-key-positions = KEYS_RIGHT;
 };
 
 hm_ad_lshf: behavior_android_dev_lshf {
@@ -18,6 +19,7 @@ hm_ad_lshf: behavior_android_dev_lshf {
     flavor = "hold-preferred";
     global-quick-tap;
     bindings = <&kp>, <&mp_ad_e>;
+    hold-trigger-key-positions = KEYS_RIGHT;
 };
 
 hm_ad_rshf: behavior_android_dev_rshf {
@@ -29,6 +31,7 @@ hm_ad_rshf: behavior_android_dev_rshf {
     flavor = "hold-preferred";
     global-quick-tap;
     bindings = <&kp>, <&mp_ad_es>;
+    hold-trigger-key-positions = KEYS_LEFT;
 };
 
 hm_ad_ralt: behavior_android_dev_ralt {
@@ -40,6 +43,7 @@ hm_ad_ralt: behavior_android_dev_ralt {
     flavor = "hold-preferred";
     global-quick-tap;
     bindings = <&kp>, <&mp_ad_lb>;
+    hold-trigger-key-positions = KEYS_LEFT;
 };
 
 hm_ad_rctrl: behavior_android_dev_rctrl {
@@ -51,6 +55,7 @@ hm_ad_rctrl: behavior_android_dev_rctrl {
     flavor = "hold-preferred";
     global-quick-tap;
     bindings = <&kp>, <&mp_ad_rb>;
+    hold-trigger-key-positions = KEYS_LEFT;
 };
 
 hm_ad_rcmd: behavior_android_dev_rcmd {
@@ -62,4 +67,5 @@ hm_ad_rcmd: behavior_android_dev_rcmd {
     flavor = "hold-preferred";
     global-quick-tap;
     bindings = <&kp>, <&mp_ad_loo>;
+    hold-trigger-key-positions = KEYS_LEFT;
 };

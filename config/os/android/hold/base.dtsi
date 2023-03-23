@@ -7,6 +7,7 @@ hm_ab_lcmd: behavior_android_base_lcmd {
     flavor = "hold-preferred";
     global-quick-tap;
     bindings = <&kp>, <&mp_ai_a>;
+    hold-trigger-key-positions = KEYS_RIGHT;
 };
 
 hm_ab_rshf: behavior_android_base_rshf {
@@ -18,6 +19,7 @@ hm_ab_rshf: behavior_android_base_rshf {
     flavor = "hold-preferred";
     global-quick-tap;
     bindings = <&kp>, <&mp_ai_n>;
+    hold-trigger-key-positions = KEYS_LEFT;
 };
 
 hm_ab_ralt: behavior_android_base_ralt {
@@ -29,6 +31,7 @@ hm_ab_ralt: behavior_android_base_ralt {
     flavor = "hold-preferred";
     global-quick-tap;
     bindings = <&kp>, <&mp_ai_e>;
+    hold-trigger-key-positions = KEYS_LEFT;
 };
 
 hm_ab_rctrl: behavior_android_base_rctrl {
@@ -40,6 +43,7 @@ hm_ab_rctrl: behavior_android_base_rctrl {
     flavor = "hold-preferred";
     global-quick-tap;
     bindings = <&kp>, <&mp_ai_i>;
+    hold-trigger-key-positions = KEYS_LEFT;
 };
 
 hm_ab_rcmd: behavior_android_base_rcmd {
@@ -51,4 +55,5 @@ hm_ab_rcmd: behavior_android_base_rcmd {
     flavor = "hold-preferred";
     global-quick-tap;
     bindings = <&kp>, <&mp_ai_o>;
+    hold-trigger-key-positions = KEYS_LEFT;
 };
