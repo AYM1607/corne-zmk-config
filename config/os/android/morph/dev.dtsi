@@ -90,25 +90,18 @@ MORPH_KSA(
     &m_ad_a     // alt:    =>
 )
 
-// tap:         /
-// shift:       /=
-// ctrl:        // line comment
-// alt:         /* block comment *
-mp_ad_s_s: morph_android_dev_slash_shift {
-    compatible = "zmk,behavior-mod-morph";
-    label = "mp_ad_s_s";
-    #binding-cells = <0>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&kp FSLH>, <&m_ad_da>;
-};
-mp_ad_s: morph_android_dev_slash {
-    compatible = "zmk,behavior-mod-morph";
-    label = "mp_ad_s";
-    #binding-cells = <0>;
-    mods = <(MOD_LALT)>;
-    bindings = <&mp_ad_s_s>, <&kp LS(A)>;
-    keep-mods = <(MOD_LALT)>;
-};
+// mp_aDEV_s
+MORPH_KAS(
+    a,
+    DEV,
+    s,
+    slash,
+    MOD_LALT|MOD_RALT,
+    &kp FSLH,   // tap:    /
+                // ctrl:   // line comment
+    &kp LS(A),  // alt:    /* block comment */
+    &m_ad_da    // shift:  /=
+)
 
 // tap:         &
 // shift:       &&=

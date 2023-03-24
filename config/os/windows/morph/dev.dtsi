@@ -90,25 +90,18 @@ MORPH_KSA(
     &m_wd_a     // alt:    =>
 )
 
-// tap:         /
-// shift:       /=
-// ctrl:        // line comment
-// alt:         /* block comment *
-mp_wd_s_s: morph_windows_dev_slash_shift {
-    compatible = "zmk,behavior-mod-morph";
-    label = "mp_wd_s_s";
-    #binding-cells = <0>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&kp FSLH>, <&m_wd_da>;
-};
-mp_wd_s: morph_windows_dev_slash {
-    compatible = "zmk,behavior-mod-morph";
-    label = "mp_wd_s";
-    #binding-cells = <0>;
-    mods = <(MOD_LALT)>;
-    bindings = <&mp_wd_s_s>, <&kp LS(A)>;
-    keep-mods = <(MOD_LALT)>;
-};
+// mp_wDEV_s
+MORPH_KAS(
+    w,
+    DEV,
+    s,
+    slash,
+    MOD_LALT,
+    &kp FSLH,   // tap:    /
+                // ctrl:   // line comment
+    &kp LS(A),  // alt:    /* block comment */
+    &m_wd_da    // shift:  /=
+)
 
 // tap:         &
 // shift:       &&=
