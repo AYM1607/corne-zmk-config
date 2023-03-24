@@ -10,4 +10,3 @@
 #define MC_WAIT_START 400
 #define MC_WAIT       100
 #define MC_LAYERS       0
-

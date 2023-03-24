@@ -18,9 +18,9 @@
 
             label = "wBAS";
             bindings = <
-    WKY_ESC  &kp Q  &kp W  &kp F    &kp P  &kp B             &kp J    &kp L  &mp_wi_u  &mp_wi_y   &mp_k_m    NAV_DEL
-     &mp_bc   WB13   WB14   WB15     WB16  &kp G             &kp M     WB19      WB20      WB21      WB22   NAV_BSPC
-    WKY_TAB  &kp Z  &kp X  &kp C    &kp D  &kp V             &kp K    &kp H    &mp_cs    &mp_dc  &mp_wk_q       WB35
+    WKY_ESC  &kp Q  &kp W  &kp F    &kp P  &kp B             &kp J    &kp L  &mp_wi_u  &mp_wi_y   &mp_k_m   NAV_DEL
+     &mp_bc   WB13   WB14   WB15     WB16  &kp G             &kp M     WB19      WB20      WB21      WB22  NAV_BSPC
+    WKY_TAB  &kp Z  &kp X  &kp C    &kp D  &kp V             &kp K    &kp H    &mp_cs    &mp_dc  &mp_wk_q      WB35
                             WB36  KEY_SPC   WB38              WB39  WKY_RET      WB41
             >;
         };
@@ -41,10 +41,10 @@
 
             label = "wDEV";
             bindings = <
-    WKY_ESC     &kp AT  &mp_wd_pound  &mp_wd_money  &mp_wd_p    &m_wi_d             &m_wi_t   &mp_wd_m   &kp UNDER   &kp PRCNT    &m_wi_c   NAV_DEL
-     &mp_bc       WD13          WD14          WD15      WD16    &m_wi_s             &m_wi_g       WD19        WD20        WD21       WD22  NAV_BSPC
-    WKY_TAB  &kp LC(R)      &kp LPAR      &kp RPAR  &mp_wd_a   &kp BSLH            &mp_wd_s  &mp_wd_qs   &mp_wd_lt   &mp_wd_gt  &mp_wd_ql   &kp F12
-                                            &mp_cs   KEY_SPC       WD38                WD39    WKY_RET      &mp_dc
+    WKY_ESC     &kp AT  &mp_wd_pound  &mp_wd_money  &mp_wd_p   &m_wi_d             &m_wi_t   &mp_wd_m   &kp UNDER  &kp PRCNT    &m_wi_c   NAV_DEL
+     &mp_bc       WD13          WD14          WD15      WD16   &m_wi_s             &m_wi_g       WD19        WD20       WD21       WD22  NAV_BSPC
+    WKY_TAB  &kp LC(R)      &kp LPAR      &kp RPAR  &mp_wd_a  &kp BSLH            &mp_wd_s  &mp_wd_qs   &mp_wd_lt  &mp_wd_gt  &mp_wd_ql   &kp F12
+                                            &mp_cs   KEY_SPC      WD38                WD39    WKY_RET      &mp_dc
             >;
         };
 
@@ -97,9 +97,9 @@
 
             label = "wFNK";
             bindings = <
-    WKY_ESC  &kp F9  &kp F10  &kp F11  &kp F12  &none                  &none    &none  &kp PG_UP    &none    &none   NAV_DEL
-     &mp_bc    WK13     WK14     WK15     WK16  &none                  &none     WK19       WK20     WK21     WK22  NAV_BSPC
-    WKY_TAB  &kp F1   &kp F2   &kp F3   &kp F4  &none                  &none    &none      &none    &none    &none     &none
+    WKY_ESC  &kp F9  &kp F10  &kp F11  &kp F12  &none                  &none    &none  &kp PG_UP  &none  &none   NAV_DEL
+     &mp_bc    WK13     WK14     WK15     WK16  &none                  &none     WK19       WK20   WK21   WK22  NAV_BSPC
+    WKY_TAB  &kp F1   &kp F2   &kp F3   &kp F4  &none                  &none    &none      &none  &none  &none     &none
                                &mp_cs  KEY_SPC   WK38                   WK39  WKY_RET     &mp_dc
             >;
         };
@@ -123,10 +123,10 @@
 
             label = "wSTG";
             bindings = <
-       WKY_ESC  &to_wBAS  &m_s_b1       &m_s_b2    &none      WS05                   WS07  &kp C_VOL_DN    &kp C_MUTE  &kp C_VOL_UP  WS10   WS11
-    &bt BT_CLR     &none  &m_s_b3       &m_s_b4    &none      WS17                   WS18    &kp C_PREV      &kp C_PP    &kp C_NEXT  WS22   WS23
-          WS24  &to aBAS  &m_s_b5       &m_s_b6    &none      WS29                   WS30      &kp C_RW    &kp C_STOP      &kp C_FF  WS34  &none
-                                   &kp C_BRI_DN  KEY_SPC  &to_wBAS               &to_wDEV       WKY_RET  &kp C_BRI_UP
+       WKY_ESC  &none  &m_s_b1       &m_s_b2    &none      WS05                   WS07  &kp C_VOL_DN    &kp C_MUTE  &kp C_VOL_UP  WS10   WS11
+    &bt BT_CLR  &none  &m_s_b3       &m_s_b4    &none      WS17                   WS18    &kp C_PREV      &kp C_PP    &kp C_NEXT  WS22   WS23
+          WS24  &none  &m_s_b5       &m_s_b6    &none      WS29                   WS30      &kp C_RW    &kp C_STOP      &kp C_FF  WS34  &none
+                                &kp C_BRI_DN  KEY_SPC  &to_wBAS               &to_wDEV       WKY_RET  &kp C_BRI_UP
             >;
         };
 
