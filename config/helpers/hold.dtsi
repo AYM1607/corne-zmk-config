@@ -1,12 +1,11 @@
 #define MOTO_HOLD_LABEL(LABEL) #LABEL
-
-#define MOTO_HOLD(OS, MO, CB, TO) \
-  mo_##OS##MO##OS##CB##_to_##OS##TO: hold_mo_##OS##MO##OS##CB##_to_##OS##TO { \
-      compatible = "zmk,behavior-hold-tap"; \
-      label=MOTO_HOLD_LABEL(mo_##OS##MO##OS##CB##_to_##OS##TO) \
-      #binding-cells = <2>; \
-      tapping-term-ms = <HP_TAPPING>; \
-      flavor = "hold-preferred"; \
-      bindings = <&mo_##OS##MO##_to_##OS##CB>, <&to_##OS##TO>; \
+#define MOTO_HOLD(OS, MO, CB, TO)                                            \
+  mo_##OS##MO##OS##CB##_to_##OS##TO : hold_mo_##OS##MO##OS##CB##_to_##OS##TO \
+  {                                                                          \
+    compatible = "zmk,behavior-hold-tap";                                    \
+    label = MOTO_HOLD_LABEL(mo_##OS##MO##OS##CB##_to_##OS##TO);              \
+    #binding - cells = < 2>;                                                 \
+    tapping - term - ms = <HP_TAPPING>;                                      \
+    flavor = "hold-preferred";                                               \
+    bindings = <&mo_##OS##MO##_to_##OS##CB>, <&to_##OS##TO>;                 \
   };
-
