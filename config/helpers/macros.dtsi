@@ -9,7 +9,7 @@
   };
 
 #define MOTO_MACRO(OS, MO, TO)                                  \
-  mo_##OS##MO##_to_##OS##TO: momentary_##OS##MO##_to_##OS##TO { \
+  mo_##OS##MO##_to_##OS##TO##: momentary_##OS##MO##_to_##OS##TO { \
       compatible = "zmk,behavior-macro";                        \
       label = MACRO_LABEL(mo_##OS##MO#_to_##OS##TO);            \
       #binding-cells = <0>;                                     \
