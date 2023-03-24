@@ -9,38 +9,38 @@ MORPH_KA(
     &kp LC(LS(SEMICOLON))  // alt:  °
 )
 
-// tap:         $
-// alt:         €
-mp_wd_money: morph_windows_dev_money {
-    compatible = "zmk,behavior-mod-morph";
-    label = "mp_wd_money";
-    #binding-cells = <0>;
-    mods = <(MOD_LALT)>;
-    bindings = <&kp DLLR>, <&kp LC(N5)>;
-    keep-mods = <(MOD_LALT)>;
-};
+//mp_wDEV_money
+MORPH_KA(
+    w,
+    DEV,
+    money,
+    money,
+    MOD_LALT,
+    &kp DLLR,   // tap:  $
+    &kp LC(N5)  // alt:  €
+)
 
-// tap:         [
-// alt:         «
-mp_wd_lb: morph_windows_dev_left_brackets {
-    compatible = "zmk,behavior-mod-morph";
-    label = "mp_wd_lb";
-    #binding-cells = <0>;
-    mods = <(MOD_LALT)>;
-    bindings = <&kp LBKT>, <&kp LC(LBKT)>;
-    keep-mods = <(MOD_LALT)>;
-};
+//mp_wDEV_lb
+MORPH_KA(
+    w,
+    DEV,
+    lb,
+    left_brackets,
+    MOD_LALT,
+    &kp LBKT,     // tap:  [
+    &kp LC(LBKT)  // alt:  «
+)
 
-// tap:         ]
-// alt:         »
-mp_wd_rb: morph_windows_dev_right_brackets {
-    compatible = "zmk,behavior-mod-morph";
-    label = "mp_wd_rb";
-    #binding-cells = <0>;
-    mods = <(MOD_LALT)>;
-    bindings = <&kp RBKT>, <&kp LC(RBKT)>;
-    keep-mods = <(MOD_LALT)>;
-};
+//mp_wDEV_rb
+MORPH_KA(
+    w,
+    DEV,
+    rb,
+    right_brackets,
+    MOD_LALT|MOD_RALT,
+    &kp RBKT,     // tap:  ]
+    &kp LC(RBKT)  // alt:  »
+)
 
 // mp_wDEV_a
 MORPH_KSA(

@@ -31,16 +31,16 @@ MORPH_KA(
     &kp LC(LBKT)  // alt:  «
 )
 
-// tap:         ]
-// alt:         »
-mp_ad_rb: morph_android_dev_right_brackets {
-    compatible = "zmk,behavior-mod-morph";
-    label = "mp_ad_rb";
-    #binding-cells = <0>;
-    mods = <(MOD_LALT)>;
-    bindings = <&kp RBKT>, <&kp LC(RBKT)>;
-    keep-mods = <(MOD_LALT)>;
-};
+//mp_aDEV_rb
+MORPH_KA(
+    a,
+    DEV,
+    rb,
+    right_brackets,
+    MOD_LALT|MOD_RALT,
+    &kp RBKT,     // tap:  ]
+    &kp LC(RBKT)  // alt:  »
+)
 
 // mp_aDEV_a
 MORPH_KSA(
