@@ -47,10 +47,10 @@
         bindings = <&mp_##OS##LYR##_##NAME##_a>, <KS>;          \
     };
 
-#define MORPH_KA(OS, LYR, DESC, MODS, KEY, KA)    \
-    mp_##OS##LYR##_##DESC: morph_##OS##LYR##_##DESC {   \
+#define MORPH_KA(OS, LYR, NAME, DESC, MODS, KEY, KA)    \
+    mp_##OS##LYR##_##NAME: morph_##OS##LYR##_##DESC {   \
         compatible = "zmk,behavior-mod-morph";          \
-        label = LABEL_STRINGIFY(mp_##OS##LYR##_##DESC); \
+        label = LABEL_STRINGIFY(mp_##OS##LYR##_##NAME); \
         #binding-cells = <0>;                           \
         mods = <(MODS)>;                                \
         bindings = <KEY>, <KA>;                         \

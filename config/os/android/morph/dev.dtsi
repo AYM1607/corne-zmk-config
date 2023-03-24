@@ -3,32 +3,33 @@ MORPH_KA(
     a,
     DEV,
     pound,
+    pound,
     MOD_LALT|MOD_RALT,
     &kp POUND,             // tap:  #
     &kp LC(LS(SEMICOLON))  // alt:  °
 )
 
-// tap:         $
-// alt:         €
-mp_ad_money: morph_android_dev_money {
-    compatible = "zmk,behavior-mod-morph";
-    label = "mp_ad_money";
-    #binding-cells = <0>;
-    mods = <(MOD_LALT)>;
-    bindings = <&kp DLLR>, <&kp LC(N5)>;
-    keep-mods = <(MOD_LALT)>;
-};
+//mp_aDEV_money
+MORPH_KA(
+    a,
+    DEV,
+    money,
+    money,
+    MOD_LALT|MOD_RALT,
+    &kp DLLR,   // tap:  $
+    &kp LC(N5)  // alt:  €
+)
 
-// tap:         [
-// alt:         «
-mp_ad_lb: morph_android_dev_left_brackets {
-    compatible = "zmk,behavior-mod-morph";
-    label = "mp_ad_lb";
-    #binding-cells = <0>;
-    mods = <(MOD_LALT)>;
-    bindings = <&kp LBKT>, <&kp LC(LBKT)>;
-    keep-mods = <(MOD_LALT)>;
-};
+//mp_aDEV_lb
+MORPH_KA(
+    a,
+    DEV,
+    lb,
+    left_brackets,
+    MOD_LALT|MOD_RALT,
+    &kp LBKT,     // tap:  [
+    &kp LC(LBKT)  // alt:  «
+)
 
 // tap:         ]
 // alt:         »
