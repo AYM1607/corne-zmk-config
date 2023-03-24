@@ -1,13 +1,12 @@
-// tap:         #
-// alt:         °
-mp_ad_pound: morph_android_dev_pound {
-    compatible = "zmk,behavior-mod-morph";
-    label = "mp_ad_pound";
-    #binding-cells = <0>;
-    mods = <(MOD_LALT)>;
-    bindings = <&kp POUND>, <&kp LC(LS(SEMICOLON))>;
-    keep-mods = <(MOD_LALT)>;
-};
+//mp_aDEV_pound
+MORPH_KA(
+    a,
+    DEV,
+    pound,
+    MOD_LALT|MOD_RALT,
+    &kp POUND,             // tap:  #
+    &kp LC(LS(SEMICOLON))  // alt:  °
+)
 
 // tap:         $
 // alt:         €
@@ -43,7 +42,7 @@ mp_ad_rb: morph_android_dev_right_brackets {
 };
 
 // mp_aDEV_a
-MORPH_SA(
+MORPH_KSA(
     a,
     DEV,
     a,
@@ -55,7 +54,7 @@ MORPH_SA(
 )
 
 // mp_aDEV_p
-MORPH_SA(
+MORPH_KSA(
     a,
     DEV,
     p,
@@ -163,7 +162,7 @@ mp_ad_loo: morph_android_dev_logical_or_operator {
 };
 
 // mp_aDEV_qs
-MORPH_ASS(
+MORPH_KASAS(
     a,
     DEV,
     qs,
@@ -176,7 +175,7 @@ MORPH_ASS(
 )
 
 // mp_aDEV_es
-MORPH_ASS(
+MORPH_KASAS(
     a,
     DEV,
     es,

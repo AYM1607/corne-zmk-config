@@ -1,13 +1,12 @@
-// tap:         #
-// alt:         °
-mp_wd_pound: morph_windows_dev_pound {
-    compatible = "zmk,behavior-mod-morph";
-    label = "mp_wd_pound";
-    #binding-cells = <0>;
-    mods = <(MOD_LALT)>;
-    bindings = <&kp POUND>, <&kp LC(LS(SEMICOLON))>;
-    keep-mods = <(MOD_LALT)>;
-};
+//mp_wDEV_pound
+MORPH_KA(
+    w,
+    DEV,
+    pound,
+    MOD_LALT,
+    &kp POUND,             // tap:  #
+    &kp LC(LS(SEMICOLON))  // alt:  °
+)
 
 // tap:         $
 // alt:         €
@@ -43,7 +42,7 @@ mp_wd_rb: morph_windows_dev_right_brackets {
 };
 
 // mp_wDEV_a
-MORPH_SA(
+MORPH_KSA(
     w,
     DEV,
     a,
@@ -55,7 +54,7 @@ MORPH_SA(
 )
 
 // mp_wDEV_p
-MORPH_SA(
+MORPH_KSA(
     w,
     DEV,
     p,
@@ -66,24 +65,17 @@ MORPH_SA(
     &m_wd_io   // alt:    ++
 )
 
-// tap:         -
-// shift:       -=
-// alt:         --
-mp_wd_m_a: morph_windows_dev_minus_alt {
-    compatible = "zmk,behavior-mod-morph";
-    label = "mp_wd_m_a";
-    #binding-cells = <0>;
-    mods = <(MOD_LALT)>;
-    bindings = <&kp MINUS>, <&m_wd_do>;
-    keep-mods = <(MOD_LALT)>;
-};
-mp_wd_m: morph_windows_dev_minus {
-    compatible = "zmk,behavior-mod-morph";
-    label = "mp_wd_m";
-    #binding-cells = <0>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&mp_wd_m_a>, <&m_wd_sa>;
-};
+// mp_wDEV_m
+MORPH_KSA(
+    w,
+    DEV,
+    m,
+    minus,
+    MOD_LALT,
+    &kp MINUS,  // tap:    -
+    &m_wd_sa,  // shift:  -=
+    &m_wd_do   // alt:    --
+)
 
 // tap:         =
 // shift:       ===
@@ -163,7 +155,7 @@ mp_wd_loo: morph_windows_dev_logical_or_operator {
 };
 
 // mp_wDEV_qs
-MORPH_ASS(
+MORPH_KASAS(
     w,
     DEV,
     qs,
@@ -176,7 +168,7 @@ MORPH_ASS(
 )
 
 // mp_wDEV_es
-MORPH_ASS(
+MORPH_KASAS(
     w,
     DEV,
     es,
