@@ -1,10 +1,14 @@
-to_wDEV: to_wDEV_layer {
+#include "../../../config/helpers/win.h"
+
+TO_LAYER(w, DEV)
+
+/* to_wDEV: to_wDEV_layer {
     compatible = "zmk,behavior-macro";
     label = "to_wDEV";
     #binding-cells = <0>;
     bindings =
         <&to wDEV &kp F_wDEV>;
-};
+}; */
 
 to_wAXN: to_wAXN_layer {
     compatible = "zmk,behavior-macro";
