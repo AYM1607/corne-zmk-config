@@ -53,6 +53,7 @@
     },
     "editor.formatOnSave": false,
     "files.associations": {
-        "*.dtsi": "cpp"
+        "*.dtsi": "cpp",
+        "*.keymap": "cpp"
     }
 }
