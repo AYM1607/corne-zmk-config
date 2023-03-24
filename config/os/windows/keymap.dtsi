@@ -4,10 +4,10 @@
             #define WB15  &hm LALT     S
             #define WB16  &hm LSHFT    T
 
-            #define WB19  &hm_wb_rshf  RSHFT  0  //N
-            #define WB20  &hm_wb_ralt  LALT   0  //E
-            #define WB21  &hm_wb_rctrl RCTRL  0  //I
-            #define WB22  &hm_wb_rcmd  RCMD   0  //O
+            #define WB19  &hm_wBAS_RS  RSHFT  0  //N
+            #define WB20  &hm_wBAS_RA  LALT   0  //E
+            #define WB21  &hm_wBAS_RC  RCTRL  0  //I
+            #define WB22  &hm_wBAS_RG  RCMD   0  //O
 
             #define WB35  &mp_w_stg
 
@@ -26,15 +26,15 @@
         };
 
         windows_dev_layer {
-            #define WD13  &hm_wd_lcmd  LCMD    0
+            #define WD13  &hm_wDEV_LC  LCMD    0
             #define WD14  &hm          LCTRL   LBRC
             #define WD15  &hm          LALT    RBRC
-            #define WD16  &hm_wd_lshf  LSHFT   0
+            #define WD16  &hm_wDEV_LS  LSHFT   0
 
-            #define WD19  &hm_wd_rshf  RSHFT   0
-            #define WD20  &hm_wd_ralt  LALT    0
-            #define WD21  &hm_wd_rctrl RCTRL   0
-            #define WD22  &hm_wd_rcmd  RCMD    0
+            #define WD19  &hm_wDEV_RS  RSHFT   0
+            #define WD20  &hm_wDEV_RA  LALT    0
+            #define WD21  &hm_wDEV_RC  RCTRL   0
+            #define WD22  &hm_wDEV_RG  RCMD    0
 
             #define WD38  &mo_wAXNwDEV_to_wBAS  0 0
             #define WD39  &mo_wAXNwDEV_to_wAXN  0 0
