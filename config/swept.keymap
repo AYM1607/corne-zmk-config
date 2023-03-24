@@ -45,7 +45,9 @@
         #include "os/android/hold/base.dtsi"
         #include "os/android/hold/dev.dtsi"
     };
+};
 
+/ {
     combos {
         compatible = "zmk,combos";
 
@@ -54,7 +56,9 @@
 
         #include "os/android/combos/base.dtsi"
     };
+};
 
+/ {
     macros {
         #include "os/all/macros/layers.dtsi"
         #include "os/all/macros/settings.dtsi"
@@ -66,7 +70,9 @@
         #include "os/android/macros/int.dtsi"
         #include "os/android/macros/dev.dtsi"
     };
+};
 
+/ {
     keymap {
         compatible = "zmk,keymap";
 
