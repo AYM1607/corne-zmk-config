@@ -1,4 +1,4 @@
-HR_HOLD(a, BAS, LC, mp_ai_a)
+HR_HOLD(a, BAS, LG, mp_ai_a)
 HR_HOLD(a, BAS, RS, mp_ai_n)
 HR_HOLD(a, BAS, RA, mp_ai_e)
 HR_HOLD(a, BAS, RC, mp_ai_i)
