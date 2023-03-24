@@ -42,24 +42,17 @@ mp_wd_rb: morph_windows_dev_right_brackets {
     keep-mods = <(MOD_LALT)>;
 };
 
-// tap:         *
-// shift:       *=
-// alt:         **
-mp_wd_a_a: morph_windows_dev_asterisk_alt {
-    compatible = "zmk,behavior-mod-morph";
-    label = "mp_wd_a_a";
-    #binding-cells = <0>;
-    mods = <(MOD_LALT)>;
-    bindings = <&kp ASTRK>, <&m_wd_eo>;
-    keep-mods = <(MOD_LALT)>;
-};
-mp_wd_a: morph_windows_dev_asterisk {
-    compatible = "zmk,behavior-mod-morph";
-    label = "mp_wd_a";
-    #binding-cells = <0>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&mp_wd_a_a>, <&m_wd_ma>;
-};
+// mp_wDEV_a
+MORPH_SA(
+    w,
+    DEV,
+    a,
+    asterisk,
+    MOD_LALT,
+    &kp ASTRK,  // tap:    *
+    &m_wd_ma,   // shift:  *=
+    &m_wd_eo    // alt:    **
+)
 
 // tap:         +
 // shift:       +=
