@@ -1,9 +1,8 @@
 #define MOTO_HOLD(OS, MO, CB, TO) \
-  mo_##OS##MO##OS##CB_to_##OS##TO: hold_mo_##OS##MO##OS##CB_to_##OS##TO { \
+  mo_##OS##MO##OS##CB##_to_##OS##TO: hold_mo_##OS##MO##OS##CB##_to_##OS##TO { \
       compatible = "zmk,behavior-hold-tap"; \
-      label = "mo_##OS##MO##OS##CB_to_##OS##TO"; \
       #binding-cells = <2>; \
       tapping-term-ms = <HP_TAPPING>; \
       flavor = "hold-preferred"; \
-      bindings = <&mo_##OS##MO_to_##OS##CB>, <&to_##OS##TO>; \
+      bindings = <&mo_##OS##MO##_to_##OS##CB>, <&to_##OS##TO>; \
   };
