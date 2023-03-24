@@ -103,24 +103,17 @@ MORPH_KAS(
     &m_wd_da    // shift:  /=
 )
 
-// tap:         &
-// shift:       &&=
-// alt:         &&
-mp_wd_lao_a: morph_windows_dev_logical_and_operator_alt {
-    compatible = "zmk,behavior-mod-morph";
-    label = "mp_wd_lao_a";
-    #binding-cells = <0>;
-    mods = <(MOD_LALT)>;
-    bindings = <&kp AMPS>, <&m_wd_la>;
-    keep-mods = <(MOD_LALT)>;
-};
-mp_wd_lao: morph_windows_dev_logical_and_operator {
-    compatible = "zmk,behavior-mod-morph";
-    label = "mp_wd_lao";
-    #binding-cells = <0>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&mp_wd_lao_a>, <&m_wd_laa>;
-};
+// mp_wDEV_lao
+MORPH_KSA(
+    w,
+    DEV,
+    lao,
+    logical_and_operator,
+    MOD_LALT,
+    &kp AMPS,   // tap:    &
+    &m_wd_laa,  // shift:  &&=
+    &m_wd_la    // alt:    &&
+)
 
 // tap:         |
 // shift:       ||=

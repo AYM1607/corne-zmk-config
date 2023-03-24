@@ -103,24 +103,17 @@ MORPH_KAS(
     &m_ad_da    // shift:  /=
 )
 
-// tap:         &
-// shift:       &&=
-// alt:         &&
-mp_ad_lao_a: morph_android_dev_logical_and_operator_alt {
-    compatible = "zmk,behavior-mod-morph";
-    label = "mp_ad_lao_a";
-    #binding-cells = <0>;
-    mods = <(MOD_LALT)>;
-    bindings = <&kp AMPS>, <&m_ad_la>;
-    keep-mods = <(MOD_LALT)>;
-};
-mp_ad_lao: morph_android_dev_logical_and_operator {
-    compatible = "zmk,behavior-mod-morph";
-    label = "mp_ad_lao";
-    #binding-cells = <0>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&mp_ad_lao_a>, <&m_ad_laa>;
-};
+// mp_aDEV_lao
+MORPH_KSA(
+    a,
+    DEV,
+    lao,
+    logical_and_operator,
+    MOD_LALT|MOD_RALT,
+    &kp AMPS,   // tap:    &
+    &m_ad_laa,  // shift:  &&=
+    &m_ad_la    // alt:    &&
+)
 
 // tap:         |
 // shift:       ||=
