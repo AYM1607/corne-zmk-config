@@ -23,20 +23,6 @@
 #include "helpers/actions/win.dtsi"
 
 / {
-    macros {
-        #include "os/all/macros/layers.dtsi"
-        #include "os/all/macros/settings.dtsi"
-
-        #include "os/windows/macros/layers.dtsi"
-        #include "os/windows/macros/int.dtsi"
-        #include "os/windows/macros/dev.dtsi"
-
-        #include "os/android/macros/int.dtsi"
-        #include "os/android/macros/dev.dtsi"
-    };
-};
-
-/ {
     behaviors {
         #include "os/all/morph/shared.dtsi"
         #include "os/all/morph/num.dtsi"
@@ -69,6 +55,20 @@
         #include "os/windows/combos/help.dtsi"
 
         #include "os/android/combos/base.dtsi"
+    };
+};
+
+/ {
+    macros {
+        #include "os/all/macros/layers.dtsi"
+        #include "os/all/macros/settings.dtsi"
+
+        #include "os/windows/macros/layers.dtsi"
+        #include "os/windows/macros/int.dtsi"
+        #include "os/windows/macros/dev.dtsi"
+
+        #include "os/android/macros/int.dtsi"
+        #include "os/android/macros/dev.dtsi"
     };
 };
 
