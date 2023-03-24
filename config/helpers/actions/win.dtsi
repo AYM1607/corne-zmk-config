@@ -1,17 +1,23 @@
-#define TO_LAYER_EXT(OS, NAME) \
-  to_##OS##NAME: to_##OS##NAME_layer { \
+#define TO_LAYER(OS, TO) \
+  to_##OS##TO: to_##OS##TO_layer { \
       compatible = "zmk,behavior-macro"; \
-      label = "to_##OS##NAME"; \
+      label = "to_##OS##TO"; \
       #binding-cells = <0>; \
       bindings = \
-          <&to OS##NAME &kp F_##OS##NAME>; \
+          <&to OS##TO &kp F_##OS##TO>; \
   };
 
-#define TO_LAYER(OS, NAME) \
-  to_##OS##NAME: to_##OS##NAME_layer { \
-      compatible = "zmk,behavior-macro"; \
-      label = "to_##OS##NAME"; \
-      #binding-cells = <0>; \
-      bindings = \
-          <&to OS##NAME>; \
+#define MOTO_LAYER(OS, MO, TO) \
+  mo_##OS##MO_to_##OS##TO: momentary_##OS##MO_to_##OS##TO {
+      compatible = "zmk,behavior-macro";
+      label = "mo_##OS##MO_to_##OS##TO";
+      #binding-cells = <0>;
+      wait-ms = <MC_LAYERS>;
+      tap-ms = <MC_LAYERS>;
+      bindings
+          = <&macro_press &mo ##OS##MO>
+          , <&macro_tap &kp F_##OS##MO>
+          , <&macro_pause_for_release>
+          , <&macro_release &mo ##OS##MO>
+          , <&macro_tap &kp F_##OS##TO>;
   };
