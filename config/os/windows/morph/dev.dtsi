@@ -205,33 +205,16 @@ mp_wd_qs: morph_windows_dev_question_symbol {
     keep-mods = <(MOD_LSFT|MOD_RSFT)>;
 };
 
-// tap:         !
-// shift:       !==
-// alt:         ¡
-// alt+shift:   !!
-mp_wd_es_as: morph_windows_dev_exclamation_symbol_alt_shift {
-    compatible = "zmk,behavior-mod-morph";
-    label = "mp_wd_es_as";
-    #binding-cells = <0>;
-    mods = <(MOD_LALT)>;
-    bindings = <&m_wd_si>, <&m_wd_dno>;
-    keep-mods = <(MOD_LALT)>;
-};
-mp_wd_es_a: morph_windows_dev_exclamation_symbol_alt {
-    compatible = "zmk,behavior-mod-morph";
-    label = "mp_wd_es_a";
-    #binding-cells = <0>;
-    mods = <(MOD_LALT)>;
-    bindings = <&kp EXCL>, <&kp LC(N1)>;
-    keep-mods = <(MOD_LALT)>;
-};
-mp_wd_es: morph_windows_dev_exclamation_symbol {
-    compatible = "zmk,behavior-mod-morph";
-    label = "mp_wd_es";
-    #binding-cells = <0>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&mp_wd_es_a>, <&mp_wd_es_as>;
-};
+MORPH_ASS(
+    w,
+    DEV,
+    es,
+    exclamation_symbol,
+    &kp EXCL,    // tap:         !
+    &kp LC(N1),  // alt:         ¡
+    &m_wd_si,    // shift:       !==
+    &m_wd_dno    // alt+shift:   !!
+)
 
 // tap:         ?.
 // shift:       ?░:░

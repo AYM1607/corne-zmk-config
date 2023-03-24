@@ -22,6 +22,7 @@
 /* Helpers */
 #include "helpers/macros.dtsi"
 #include "helpers/hold.dtsi"
+#include "helpers/morph.dtsi"
 
 / {
     macros {
