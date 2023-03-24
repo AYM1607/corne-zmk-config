@@ -176,62 +176,27 @@ mp_ad_loo: morph_android_dev_logical_or_operator {
     bindings = <&mp_ad_loo_a>, <&m_ad_loa>;
 };
 
-// tap:         ?
-// shift:       ??=
-// alt:         ¿
-// alt+shift:   ??
-mp_ad_qs_as: morph_android_dev_question_symbol_alt_shift {
-    compatible = "zmk,behavior-mod-morph";
-    label = "mp_ad_qs_as";
-    #binding-cells = <0>;
-    mods = <(MOD_LALT)>;
-    bindings = <&m_ad_nca>, <&m_ad_nco>;
-    keep-mods = <(MOD_LALT)>;
-};
-mp_ad_qs_a: morph_android_dev_question_symbol_alt {
-    compatible = "zmk,behavior-mod-morph";
-    label = "mp_ad_qs_a";
-    #binding-cells = <0>;
-    mods = <(MOD_LALT)>;
-    bindings = <&kp QMARK>, <&kp LC(FSLH)>;
-    keep-mods = <(MOD_LALT)>;
-};
-mp_ad_qs: morph_android_dev_question_symbol {
-    compatible = "zmk,behavior-mod-morph";
-    label = "mp_ad_qs";
-    #binding-cells = <0>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&mp_ad_qs_a>, <&mp_ad_qs_as>;
-    keep-mods = <(MOD_LSFT|MOD_RSFT)>;
-};
+MORPH_ASS(
+    a,
+    DEV,
+    qs,
+    question_symbol,
+    &kp QMARK,     // tap:         ?
+    &kp LC(FSLH),  // alt:         ¿
+    &m_ad_nca,     // shift:       ??=
+    &m_ad_nco      // alt+shift:   ??
+)
 
-// tap:         !
-// shift:       !==
-// alt:         ¡
-// alt+shift:   !!
-mp_ad_es_as: morph_android_dev_exclamation_symbol_alt_shift {
-    compatible = "zmk,behavior-mod-morph";
-    label = "mp_ad_es_as";
-    #binding-cells = <0>;
-    mods = <(MOD_LALT)>;
-    bindings = <&m_ad_si>, <&m_ad_dno>;
-    keep-mods = <(MOD_LALT)>;
-};
-mp_ad_es_a: morph_android_dev_exclamation_symbol_alt {
-    compatible = "zmk,behavior-mod-morph";
-    label = "mp_ad_es_a";
-    #binding-cells = <0>;
-    mods = <(MOD_LALT)>;
-    bindings = <&kp EXCL>, <&kp LC(N1)>;
-    keep-mods = <(MOD_LALT)>;
-};
-mp_ad_es: morph_android_dev_exclamation_symbol {
-    compatible = "zmk,behavior-mod-morph";
-    label = "mp_ad_es";
-    #binding-cells = <0>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&mp_ad_es_a>, <&mp_ad_es_as>;
-};
+MORPH_ASS(
+    a,
+    DEV,
+    es,
+    exclamation_symbol,
+    &kp EXCL,    // tap:         !
+    &kp LC(N1),  // alt:         ¡
+    &m_ad_si,    // shift:       !==
+    &m_ad_dno    // alt+shift:   !!
+)
 
 // tap:         ?.
 // shift:       ?░:░

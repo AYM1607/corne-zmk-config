@@ -179,8 +179,8 @@ mp_wd_loo: morph_windows_dev_logical_or_operator {
 MORPH_ASS(
     w,
     DEV,
-    es,
-    exclamation_symbol,
+    qs,
+    question_symbol,
     &kp QMARK,     // tap:         ?
     &kp LC(FSLH),  // alt:         ¿
     &m_wd_nca,     // shift:       ??=
@@ -190,8 +190,8 @@ MORPH_ASS(
 MORPH_ASS(
     w,
     DEV,
-    qs,
-    question_symbol,
+    es,
+    exclamation_symbol,
     &kp EXCL,    // tap:         !
     &kp LC(N1),  // alt:         ¡
     &m_wd_si,    // shift:       !==

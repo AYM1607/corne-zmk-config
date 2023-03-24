@@ -41,10 +41,10 @@
 
             label = "aDEV";
             bindings = <
-    AKY_ESC     &kp AT  &mp_ad_pound  &mp_ad_money  &mp_ad_p   &m_ai_d             &m_ai_t   &mp_ad_m  &kp UNDER  &kp PRCNT    &m_ai_c   NAV_DEL
-     &mp_bc       AD13          AD14          AD15      AD16   &m_ai_s             &m_ai_g       AD19       AD20       AD21       AD22  NAV_BSPC
-    AKY_TAB  &kp LC(R)      &kp LPAR      &kp RPAR  &mp_ad_a  &kp BSLH            &mp_ad_s  &mp_ad_qs  &mp_ad_lt  &mp_ad_gt  &mp_ad_ql   &kp F12
-                                            &mp_cs   KEY_SPC      AD38                AD39    AKY_RET     &mp_dc
+    AKY_ESC     &kp AT  &mp_ad_pound  &mp_ad_money  &mp_ad_p   &m_ai_d             &m_ai_t     &mp_ad_m  &kp UNDER  &kp PRCNT    &m_ai_c   NAV_DEL
+     &mp_bc       AD13          AD14          AD15      AD16   &m_ai_s             &m_ai_g         AD19       AD20       AD21       AD22  NAV_BSPC
+    AKY_TAB  &kp LC(R)      &kp LPAR      &kp RPAR  &mp_ad_a  &kp BSLH            &mp_ad_s  &mp_aDEV_qs  &mp_ad_lt  &mp_ad_gt  &mp_ad_ql   &kp F12
+                                            &mp_cs   KEY_SPC      AD38                AD39      AKY_RET     &mp_dc
             >;
         };
 

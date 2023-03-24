@@ -1,6 +1,6 @@
 HR_HOLD(a, DEV, LG, mp_ad_lao)
 HR_HOLD(a, DEV, LS, mp_ad_e)
-HR_HOLD(a, DEV, RS, mp_ad_es)
+HR_HOLD(a, DEV, RS, mp_aDEV_es)
 HR_HOLD(a, DEV, RA, mp_ad_lb)
 HR_HOLD(a, DEV, RC, mp_ad_rb)
 HR_HOLD(a, DEV, RG, mp_ad_loo)
