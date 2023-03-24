@@ -190,8 +190,8 @@ MORPH_ASS(
 MORPH_ASS(
     w,
     DEV,
-    es,
-    exclamation_symbol,
+    qs,
+    question_symbol,
     &kp EXCL,    // tap:         !
     &kp LC(N1),  // alt:         ¡
     &m_wd_si,    // shift:       !==
