@@ -1,13 +1,16 @@
-hm_wb_lcmd: behavior_windows_base_lcmd {
-    compatible = "zmk,behavior-hold-tap";
-    label = "hm_wb_lcmd";
-    #binding-cells = <2>;
-    tapping-term-ms = <HP_TAPPING>;
-    quick-tap-ms = <HP_QUICK_TAP>;
-    flavor = "hold-preferred";
-    global-quick-tap;
-    bindings = <&kp>, <&mp_wi_a>;
-};
+HR_HOLD(w, BAS, LCMD, mp_wi_a)
+
+
+// hm_wb_lcmd: behavior_windows_base_lcmd {
+//     compatible = "zmk,behavior-hold-tap";
+//     label = "hm_wb_lcmd";
+//     #binding-cells = <2>;
+//     tapping-term-ms = <HP_TAPPING>;
+//     quick-tap-ms = <HP_QUICK_TAP>;
+//     flavor = "hold-preferred";
+//     global-quick-tap;
+//     bindings = <&kp>, <&mp_wi_a>;
+// };
 
 hm_wb_rshf: behavior_windows_base_rshf {
     compatible = "zmk,behavior-hold-tap";
