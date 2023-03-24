@@ -8,57 +8,8 @@ to_wBAS_kp: behavior_to_kp {
 };
 
 MOTO_HOLD(w, AXN, BAS, FNK)
-
-// mo_wAXNwBAS_to_wFNK: hold_mo_wAXNwBAS_to_wFNK {
-//     compatible = "zmk,behavior-hold-tap";
-//     label = "mo_wAXNwBAS_to_wFNK";
-//     #binding-cells = <2>;
-//     tapping-term-ms = <HP_TAPPING>;
-//     flavor = "hold-preferred";
-//     bindings = <&mo_wAXN_to_wBAS>, <&to_wFNK>;
-// };
-
-mo_wAXNwBAS_to_wAXN: hold_mo_wAXNwBAS_to_wAXN {
-    compatible = "zmk,behavior-hold-tap";
-    label = "mo_wAXNwBAS_to_wAXN";
-    #binding-cells = <2>;
-    tapping-term-ms = <HP_TAPPING>;
-    flavor = "hold-preferred";
-    bindings = <&mo_wAXN_to_wBAS>, <&to_wAXN>;
-};
-
-mo_wDEVwBAS_to_wDEV: hold_mo_wDEVwBAS_to_wDEV {
-    compatible = "zmk,behavior-hold-tap";
-    label = "mo_wDEVwBAS_to_wDEV";
-    #binding-cells = <2>;
-    tapping-term-ms = <HP_TAPPING>;
-    flavor = "hold-preferred";
-    bindings = <&mo_wDEV_to_wBAS>, <&to_wDEV>;
-};
-
-mo_wAXNwDEV_to_wBAS: hold_mo_wAXNwDEV_to_wBAS {
-    compatible = "zmk,behavior-hold-tap";
-    label = "mo_wAXNwDEV_to_wBAS";
-    #binding-cells = <2>;
-    tapping-term-ms = <HP_TAPPING>;
-    flavor = "hold-preferred";
-    bindings = <&mo_wAXN_to_wDEV>, <&to_wBAS>;
-};
-
-mo_wAXNwDEV_to_wAXN: hold_mo_wAXNwDEV_to_wAXN {
-    compatible = "zmk,behavior-hold-tap";
-    label = "mo_wAXNwDEV_to_wAXN";
-    #binding-cells = <2>;
-    tapping-term-ms = <HP_TAPPING>;
-    flavor = "hold-preferred";
-    bindings = <&mo_wAXN_to_wDEV>, <&to_wAXN>;
-};
-
-mo_wFNKwAXN_to_wFNK: hold_mo_wFNKwAXN_to_wFNK {
-    compatible = "zmk,behavior-hold-tap";
-    label = "mo_wFNK_wAXN_to_wFNK";
-    #binding-cells = <2>;
-    tapping-term-ms = <HP_TAPPING>;
-    flavor = "hold-preferred";
-    bindings = <&mo_wFNK_to_wAXN>, <&to_wFNK>;
-};
+MOTO_HOLD(w, AXN, BAS, AXN)
+MOTO_HOLD(w, DEV, BAS, DEV)
+MOTO_HOLD(w, AXN, DEV, BAS)
+MOTO_HOLD(w, AXN, DEV, AXN)
+MOTO_HOLD(w, FNK, AXN, FNK)
