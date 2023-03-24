@@ -3,6 +3,7 @@ MORPH_KA(
     w,
     DEV,
     pound,
+    pound,
     MOD_LALT,
     &kp POUND,             // tap:  #
     &kp LC(LS(SEMICOLON))  // alt:  °
