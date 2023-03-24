@@ -74,28 +74,21 @@ MORPH_KSA(
     minus,
     MOD_LALT,
     &kp MINUS,  // tap:    -
-    &m_wd_sa,  // shift:  -=
-    &m_wd_do   // alt:    --
+    &m_wd_sa,   // shift:  -=
+    &m_wd_do    // alt:    --
 )
 
-// tap:         =
-// shift:       ===
-// alt:         =>
-mp_wd_e_a: morph_windows_dev_equal_alt {
-    compatible = "zmk,behavior-mod-morph";
-    label = "mp_wd_e_a";
-    #binding-cells = <0>;
-    mods = <(MOD_LALT)>;
-    bindings = <&kp EQUAL>, <&m_wd_a>;
-    keep-mods = <(MOD_LALT)>;
-};
-mp_wd_e: morph_windows_dev_equal {
-    compatible = "zmk,behavior-mod-morph";
-    label = "mp_wd_e";
-    #binding-cells = <0>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&mp_wd_e_a>, <&m_wd_se>;
-};
+// mp_wDEV_e
+MORPH_KSA(
+    w,
+    DEV,
+    e,
+    equal,
+    MOD_LALT,
+    &kp EQUAL,  // tap:    =
+    &m_wd_se,   // shift:  ===
+    &m_wd_a     // alt:    =>
+)
 
 // tap:         /
 // shift:       /=

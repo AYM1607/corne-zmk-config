@@ -66,43 +66,29 @@ MORPH_KSA(
     &m_ad_io   // alt:    ++
 )
 
-// tap:         -
-// shift:       -=
-// alt:         --
-mp_ad_m_a: morph_android_dev_minus_alt {
-    compatible = "zmk,behavior-mod-morph";
-    label = "mp_ad_m_a";
-    #binding-cells = <0>;
-    mods = <(MOD_LALT)>;
-    bindings = <&kp MINUS>, <&m_ad_do>;
-    keep-mods = <(MOD_LALT)>;
-};
-mp_ad_m: morph_android_dev_minus {
-    compatible = "zmk,behavior-mod-morph";
-    label = "mp_ad_m";
-    #binding-cells = <0>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&mp_ad_m_a>, <&m_ad_sa>;
-};
+// mp_aDEV_m
+MORPH_KSA(
+    a,
+    DEV,
+    m,
+    minus,
+    MOD_LALT|MOD_RALT,
+    &kp MINUS,  // tap:    -
+    &m_ad_sa,   // shift:  -=
+    &m_ad_do    // alt:    --
+)
 
-// tap:         =
-// shift:       ===
-// alt:         =>
-mp_ad_e_a: morph_android_dev_equal_alt {
-    compatible = "zmk,behavior-mod-morph";
-    label = "mp_ad_e_a";
-    #binding-cells = <0>;
-    mods = <(MOD_LALT)>;
-    bindings = <&kp EQUAL>, <&m_ad_a>;
-    keep-mods = <(MOD_LALT)>;
-};
-mp_ad_e: morph_android_dev_equal {
-    compatible = "zmk,behavior-mod-morph";
-    label = "mp_ad_e";
-    #binding-cells = <0>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&mp_ad_e_a>, <&m_ad_se>;
-};
+// mp_aDEV_e
+MORPH_KSA(
+    a,
+    DEV,
+    e,
+    equal,
+    MOD_LALT|MOD_RALT,
+    &kp EQUAL,  // tap:    =
+    &m_ad_se,   // shift:  ===
+    &m_ad_a     // alt:    =>
+)
 
 // tap:         /
 // shift:       /=
