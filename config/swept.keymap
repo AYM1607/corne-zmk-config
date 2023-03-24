@@ -20,6 +20,7 @@
 #include "os/android/keys.dtsi"
 
 /* Helpers */
+#include "helpers/general.dtsi"
 #include "helpers/macros.dtsi"
 #include "helpers/hold.dtsi"
 #include "helpers/morph.dtsi"

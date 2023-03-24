@@ -1,9 +1,7 @@
-#define MORPH_LABEL(LABEL) #LABEL
-
 #define MORPH_ASS(OS, LYR, NAME, DESC, MODS, KEY, KA, KS, KAS)                  \
     mp_##OS##LYR##_##NAME##_as: morph_##OS##LYR##_##DESC##_alt_shift {          \
         compatible = "zmk,behavior-mod-morph";                                  \
-        label = MORPH_LABEL(mp_##OS##LYR##_##NAME##_as);                        \
+        label = LABEL_STRINGIFY(mp_##OS##LYR##_##NAME##_as);                        \
         #binding-cells = <0>;                                                   \
         mods = <(MODS)>;                                                        \
         bindings = <KS>, <KAS>;                                                 \
@@ -11,7 +9,7 @@
     };                                                                          \
     mp_##OS##LYR##_##NAME##_a: morph_##OS##LYR##_##DESC##_alt {                 \
         compatible = "zmk,behavior-mod-morph";                                  \
-        label = MORPH_LABEL(mp_##OS##LYR##_##NAME##_a);                         \
+        label = LABEL_STRINGIFY(mp_##OS##LYR##_##NAME##_a);                         \
         #binding-cells = <0>;                                                   \
         mods = <(MODS)>;                                                        \
         bindings = <KEY>, <KA>;                                                 \
@@ -19,7 +17,7 @@
     };                                                                          \
     mp_##OS##LYR##_##NAME: morph_##OS##LYR##_##DESC {                           \
         compatible = "zmk,behavior-mod-morph";                                  \
-        label = MORPH_LABEL(mp_##OS##LYR##_##NAME);                             \
+        label = LABEL_STRINGIFY(mp_##OS##LYR##_##NAME);                             \
         #binding-cells = <0>;                                                   \
         mods = <(MOD_LSFT|MOD_RSFT)>;                                           \
         bindings = <&mp_##OS##LYR##_##NAME##_a>, <&mp_##OS##LYR##_##NAME##_as>; \
@@ -28,7 +26,7 @@
 #define MORPH_SA(OS, LYR, NAME, DESC, MODS, KEY, KS, KA)        \
     mp_##OS##LYR##_##NAME##_a: morph_##OS##LYR##_##DESC##_alt { \
         compatible = "zmk,behavior-mod-morph";                  \
-        label = MORPH_LABEL(mp_##OS##LYR##_##NAME##_a);         \
+        label = LABEL_STRINGIFY(mp_##OS##LYR##_##NAME##_a);         \
         #binding-cells = <0>;                                   \
         mods = <(MODS)>;                                        \
         bindings = <KEY>, <KA>;                                 \
@@ -36,7 +34,7 @@
     };                                                          \
     mp_##OS##LYR##_##NAME: morph_##OS##LYR##_##DESC {           \
         compatible = "zmk,behavior-mod-morph";                  \
-        label = MORPH_LABEL(mp_##OS##LYR##_##NAME);             \
+        label = LABEL_STRINGIFY(mp_##OS##LYR##_##NAME);             \
         #binding-cells = <0>;                                   \
         mods = <(MOD_LSFT|MOD_RSFT)>;                           \
         bindings = <&mp_##OS##LYR##_##NAME##_a>, <KS>;          \
