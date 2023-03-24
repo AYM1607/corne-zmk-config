@@ -2,7 +2,7 @@
 #define TO_MACRO(OS, TO)                      \
   to_##OS##TO: to_##OS##TO_layer {            \
       compatible = "zmk,behavior-macro";      \
-      label = TO_MACRO_LABEL.(to_##OS##TO);   \
+      label = TO_MACRO_LABEL(to_##OS##TO);    \
       #binding-cells = <0>;                   \
       bindings = <&to OS##TO &kp F_##OS##TO>; \
   };
