@@ -8,7 +8,7 @@
 #define MOTO_HOLD(OS, MO, CB, TO)                                             \
   mo_##OS##MO##OS##CB##_to_##OS##TO: hold_mo_##OS##MO##OS##CB##_to_##OS##TO { \
       compatible = "zmk,behavior-hold-tap";                                   \
-      label=LABEL_STRINGIFY(mo_##OS##MO##OS##CB##_to_##OS##TO);                    \
+      label=LABEL_STRINGIFY(mo_##OS##MO##OS##CB##_to_##OS##TO);               \
       #binding-cells = <2>;                                                   \
       tapping-term-ms = <HP_TAPPING>;                                         \
       flavor = "hold-preferred";                                              \
@@ -18,7 +18,7 @@
 #define HR_HOLD(OS, LYR, MOD, MP)                   \
   hm_##OS##LYR##_##MOD: hold_hm_##OS##LYR##_##MOD { \
       compatible = "zmk,behavior-hold-tap";         \
-      label=LABEL_STRINGIFY(hm_##OS##LYR##_##MOD);       \
+      label=LABEL_STRINGIFY(hm_##OS##LYR##_##MOD);  \
       #binding-cells = <2>;                         \
       tapping-term-ms = <HP_TAPPING>;               \
       quick-tap-ms = <HP_QUICK_TAP>;                \
