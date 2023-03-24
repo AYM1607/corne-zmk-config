@@ -19,6 +19,9 @@
 #include "os/windows/keys.dtsi"
 #include "os/android/keys.dtsi"
 
+/* Helpers */
+#include "config/helpers/actions/win.h"
+
 / {
     behaviors {
         #include "os/all/morph/shared.dtsi"
