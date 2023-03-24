@@ -1,3 +1,10 @@
+/*
+*
+* Copyright (c) 2023 Camilo Martinez (Equiman)
+* SPDX-License-Identifier: MIT
+*
+*/
+
 #define MOTO_HOLD(OS, MO, CB, TO)                                             \
   mo_##OS##MO##OS##CB##_to_##OS##TO: hold_mo_##OS##MO##OS##CB##_to_##OS##TO { \
       compatible = "zmk,behavior-hold-tap";                                   \

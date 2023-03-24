@@ -1,3 +1,10 @@
+/*
+*
+* Copyright (c) 2023 Camilo Martinez (Equiman)
+* SPDX-License-Identifier: MIT
+*
+*/
+
 #define MORPH_ASS(OS, LYR, NAME, DESC, MODS, KEY, KA, KS, KAS)                  \
     mp_##OS##LYR##_##NAME##_as: morph_##OS##LYR##_##DESC##_alt_shift {          \
         compatible = "zmk,behavior-mod-morph";                                  \

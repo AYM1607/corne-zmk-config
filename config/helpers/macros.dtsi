@@ -1,3 +1,10 @@
+/*
+*
+* Copyright (c) 2023 Camilo Martinez (Equiman)
+* SPDX-License-Identifier: MIT
+*
+*/
+
 #define TO_MACRO(OS, TO)                      \
   to_##OS##TO##: to_##OS##TO##_layer {        \
       compatible = "zmk,behavior-macro";      \
