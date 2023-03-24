@@ -1,6 +1,6 @@
+#include "../../config/helpers/actions/win.h"
+
 TO_LAYER(w, DEV)
-// TO_LAYER(w, AXN)
-// TO_LAYER(w, FNK)
 
 /* to_wDEV: to_wDEV_layer {
     compatible = "zmk,behavior-macro";
