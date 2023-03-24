@@ -8,17 +8,17 @@
       bindings = <&to OS##TO &kp F_##OS##TO>; \
   };
 
-#define MOTO_MACRO(OS, MO, TO)                                  \
+#define MOTO_MACRO(OS, MO, TO)                                    \
   mo_##OS##MO##_to_##OS##TO##: momentary_##OS##MO##_to_##OS##TO { \
-      compatible = "zmk,behavior-macro";                        \
-      label = MACRO_LABEL(mo_##OS##MO#_to_##OS##TO);            \
-      #binding-cells = <0>;                                     \
-      wait-ms = <MC_LAYERS>;                                    \
-      tap-ms = <MC_LAYERS>;                                     \
-      bindings                                                  \
-          = <&macro_press &mo OS##MO>                           \
-          , <&macro_tap &kp F_##OS##MO>                         \
-          , <&macro_pause_for_release>                          \
-          , <&macro_release &mo OS##MO>                         \
-          , <&macro_tap &kp F_##OS##TO>;                        \
+      compatible = "zmk,behavior-macro";                          \
+      label = MACRO_LABEL(mo_##OS##MO##_to_##OS##TO);             \
+      #binding-cells = <0>;                                       \
+      wait-ms = <MC_LAYERS>;                                      \
+      tap-ms = <MC_LAYERS>;                                       \
+      bindings                                                    \
+          = <&macro_press &mo OS##MO>                             \
+          , <&macro_tap &kp F_##OS##MO>                           \
+          , <&macro_pause_for_release>                            \
+          , <&macro_release &mo OS##MO>                           \
+          , <&macro_tap &kp F_##OS##TO>;                          \
   };
