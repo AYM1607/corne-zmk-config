@@ -1,6 +1,6 @@
-// HR_HOLD(w, BAS, LCMD, mp_wi_a)
+// HR_HOLD(w, BAS, LC, mp_wi_a)
 
-// hm_wBAS_LCMD: behavior_windows_base_lcmd {
+// hm_wBAS_LCMD: hold_hm_wBAS_LCMD {
 //     compatible = "zmk,behavior-hold-tap";
 //     label="hm_wBAS_LCMD";
 //     #binding-cells = <2>;
