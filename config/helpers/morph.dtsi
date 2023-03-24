@@ -25,7 +25,7 @@
         bindings = <&mp_##OS##LYR##_##NAME##_a>, <&mp_##OS##LYR##_##NAME##_as>; \
     };
 
-#define MORPH_SA(OS, LYR, NAME, MODS, DESC, KEY, KS, KA)        \
+#define MORPH_SA(OS, LYR, NAME, DESC, MODS, KEY, KS, KA)        \
     mp_##OS##LYR##_##NAME##_a: morph_##OS##LYR##_##DESC##_alt { \
         compatible = "zmk,behavior-mod-morph";                  \
         label = MORPH_LABEL(mp_##OS##LYR##_##NAME##_a);         \
