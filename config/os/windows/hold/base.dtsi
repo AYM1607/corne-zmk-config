@@ -8,8 +8,7 @@ hm_wBAS_LCMD: hold_hm_wBAS_LCMD {
     quick-tap-ms = <HP_QUICK_TAP>;
     flavor = "hold-preferred";
     global-quick-tap;
-    bindings = <&kp>,
-    <&mp_wi_a>;
+    bindings = <&kp>, <&mp_wi_a>;
 };
 
 // hm_wb_lcmd: behavior_windows_base_lcmd {
