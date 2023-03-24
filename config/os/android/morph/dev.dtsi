@@ -115,24 +115,17 @@ MORPH_KSA(
     &m_ad_la    // alt:    &&
 )
 
-// tap:         |
-// shift:       ||=
-// alt:         ||
-mp_ad_loo_a: morph_android_dev_logical_or_operator_alt {
-    compatible = "zmk,behavior-mod-morph";
-    label = "mp_ad_loo_a";
-    #binding-cells = <0>;
-    mods = <(MOD_LALT)>;
-    bindings = <&kp PIPE>, <&m_ad_lo>;
-    keep-mods = <(MOD_LALT)>;
-};
-mp_ad_loo: morph_android_dev_logical_or_operator {
-    compatible = "zmk,behavior-mod-morph";
-    label = "mp_ad_loo";
-    #binding-cells = <0>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&mp_ad_loo_a>, <&m_ad_loa>;
-};
+// mp_aDEV_loo
+MORPH_KSA(
+    a,
+    DEV,
+    loo,
+    logical_or_operator,
+    MOD_LALT|MOD_RALT,
+    &kp PIPE,   // tap:    |
+    &m_ad_loa,  // shift:  ||=
+    &m_ad_lo    // alt:    ||
+)
 
 // mp_aDEV_qs
 MORPH_KASAS(
@@ -160,50 +153,36 @@ MORPH_KASAS(
     &m_ad_dno    // alt+shift:  !!
 )
 
-// tap:         ?.
-// shift:       ?░:░
-mp_ad_ql: morph_android_dev_question_logical {
-    compatible = "zmk,behavior-mod-morph";
-    label = "mp_ad_ql";
-    #binding-cells = <0>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&m_ad_oco>, <&m_ad_cto>;
-};
+//mp_aDEV_ql
+MORPH_KS(
+    a,
+    DEV,
+    ql,
+    question_logical,
+    &m_ad_oco,  // tap:    ?.
+    &m_ad_cto   // shift:  ?░:░
+)
 
-// tap:         <
-// shift:       <=
-// alt:         <░/> /* html void tag */
-mp_ad_lt_s: morph_android_dev_lower_than_shift {
-    compatible = "zmk,behavior-mod-morph";
-    label = "mp_ad_lt_s";
-    #binding-cells = <0>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&kp LT>, <&m_ad_ltoet>;
-};
-mp_ad_lt: morph_android_dev_lower_than {
-    compatible = "zmk,behavior-mod-morph";
-    label = "mp_ad_lt";
-    #binding-cells = <0>;
-    mods = <(MOD_LALT)>;
-    bindings = <&mp_ad_lt_s>, <&m_ad_hvt>;
-    keep-mods = <(MOD_LALT)>;
-};
+// mp_aDEV_lt
+MORPH_KAS(
+    a,
+    DEV,
+    lt,
+    lower_than,
+    MOD_LALT|MOD_RALT,
+    &kp LT,      // tap:    <
+    &m_ad_hvt,   // alt:    <░/> /* html void tag */
+    &m_ad_ltoet  // shift:  <=
+)
 
-// tap:         >
-// shift:       >=
-// alt:         </░> /* html close tag */
-mp_ad_gt_s: morph_android_dev_greater_than_shift {
-    compatible = "zmk,behavior-mod-morph";
-    label = "mp_ad_gt_s";
-    #binding-cells = <0>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&kp GT>, <&m_ad_gtoet>;
-};
-mp_ad_gt: morph_android_dev_greater_than {
-    compatible = "zmk,behavior-mod-morph";
-    label = "mp_ad_gt";
-    #binding-cells = <0>;
-    mods = <(MOD_LALT)>;
-    bindings = <&mp_ad_gt_s>, <&m_ad_hct>;
-    keep-mods = <(MOD_LALT)>;
-};
+// mp_aDEV_gt
+MORPH_KAS(
+    a,
+    DEV,
+    gt,
+    greater_than,
+    MOD_LALT|MOD_RALT,
+    &kp GT,      // tap:    >
+    &m_ad_hct,   // alt:    </░> /* html close tag */
+    &m_ad_gtoet  // shift:  >=
+)

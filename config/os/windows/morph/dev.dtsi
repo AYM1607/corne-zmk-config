@@ -115,24 +115,17 @@ MORPH_KSA(
     &m_wd_la    // alt:    &&
 )
 
-// tap:         |
-// shift:       ||=
-// alt:         ||
-mp_wd_loo_a: morph_windows_dev_logical_or_operator_alt {
-    compatible = "zmk,behavior-mod-morph";
-    label = "mp_wd_loo_a";
-    #binding-cells = <0>;
-    mods = <(MOD_LALT)>;
-    bindings = <&kp PIPE>, <&m_wd_lo>;
-    keep-mods = <(MOD_LALT)>;
-};
-mp_wd_loo: morph_windows_dev_logical_or_operator {
-    compatible = "zmk,behavior-mod-morph";
-    label = "mp_wd_loo";
-    #binding-cells = <0>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&mp_wd_loo_a>, <&m_wd_loa>;
-};
+// mp_wDEV_loo
+MORPH_KSA(
+    w,
+    DEV,
+    loo,
+    logical_or_operator,
+    MOD_LALT,
+    &kp PIPE,   // tap:    |
+    &m_wd_loa,  // shift:  ||=
+    &m_wd_lo    // alt:    ||
+)
 
 // mp_wDEV_qs
 MORPH_KASAS(
@@ -160,50 +153,36 @@ MORPH_KASAS(
     &m_wd_dno    // alt+shift:  !!
 )
 
-// tap:         ?.
-// shift:       ?░:░
-mp_wd_ql: morph_windows_dev_question_logical {
-    compatible = "zmk,behavior-mod-morph";
-    label = "mp_wd_ql";
-    #binding-cells = <0>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&m_wd_oco>, <&m_wd_cto>;
-};
+//mp_wDEV_ql
+MORPH_KS(
+    w,
+    DEV,
+    ql,
+    question_logical,
+    &m_wd_oco,  // tap:    ?.
+    &m_wd_cto   // shift:  ?░:░
+)
 
-// tap:         <
-// shift:       <=
-// alt:         <░/> /* html void tag */
-mp_wd_lt_s: morph_windows_dev_lower_than_shift {
-    compatible = "zmk,behavior-mod-morph";
-    label = "mp_wd_lt_s";
-    #binding-cells = <0>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&kp LT>, <&m_wd_ltoet>;
-};
-mp_wd_lt: morph_windows_dev_lower_than {
-    compatible = "zmk,behavior-mod-morph";
-    label = "mp_wd_lt";
-    #binding-cells = <0>;
-    mods = <(MOD_LALT)>;
-    bindings = <&mp_wd_lt_s>, <&m_wd_hvt>;
-    keep-mods = <(MOD_LALT)>;
-};
+// mp_wDEV_lt
+MORPH_KAS(
+    w,
+    DEV,
+    lt,
+    lower_than,
+    MOD_LALT,
+    &kp LT,      // tap:    <
+    &m_wd_hvt,   // alt:    <░/> /* html void tag */
+    &m_wd_ltoet  // shift:  <=
+)
 
-// tap:         >
-// shift:       >=
-// alt:         </░> /* html close tag */
-mp_wd_gt_s: morph_windows_dev_greater_than_shift {
-    compatible = "zmk,behavior-mod-morph";
-    label = "mp_wd_gt_s";
-    #binding-cells = <0>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&kp GT>, <&m_wd_gtoet>;
-};
-mp_wd_gt: morph_windows_dev_greater_than {
-    compatible = "zmk,behavior-mod-morph";
-    label = "mp_wd_gt";
-    #binding-cells = <0>;
-    mods = <(MOD_LALT)>;
-    bindings = <&mp_wd_gt_s>, <&m_wd_hct>;
-    keep-mods = <(MOD_LALT)>;
-};
+// mp_wDEV_gt
+MORPH_KAS(
+    w,
+    DEV,
+    gt,
+    greater_than,
+    MOD_LALT,
+    &kp GT,      // tap:    >
+    &m_wd_hct,   // alt:    </░> /* html close tag */
+    &m_wd_gtoet  // shift:  >=
+)
