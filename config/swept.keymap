@@ -20,7 +20,7 @@
 #include "os/android/keys.dtsi"
 
 /* Helpers */
-#include "config/helpers/actions/win.h"
+#include "helpers/actions/win.h"
 
 / {
     behaviors {
