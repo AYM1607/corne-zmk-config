@@ -55,5 +55,6 @@
     "files.associations": {
         "*.dtsi": "cpp",
         "*.keymap": "cpp"
-    }
+    },
+    "C_Cpp.errorSquiggles": "disabled"
 }
