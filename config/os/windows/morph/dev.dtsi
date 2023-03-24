@@ -176,22 +176,26 @@ mp_wd_loo: morph_windows_dev_logical_or_operator {
     bindings = <&mp_wd_loo_a>, <&m_wd_loa>;
 };
 
+// mp_wDEV_qs
 MORPH_ASS(
     w,
     DEV,
     qs,
     question_symbol,
+    MOD_LALT,
     &kp QMARK,     // tap:         ?
     &kp LC(FSLH),  // alt:         ¿
     &m_wd_nca,     // shift:       ??=
     &m_wd_nco      // alt+shift:   ??
 )
 
+// mp_wDEV_es
 MORPH_ASS(
     w,
     DEV,
     es,
     exclamation_symbol,
+    MOD_LALT,
     &kp EXCL,    // tap:         !
     &kp LC(N1),  // alt:         ¡
     &m_wd_si,    // shift:       !==

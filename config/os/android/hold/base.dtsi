@@ -1,5 +1,5 @@
-HR_HOLD(a, BAS, LG, mp_ai_a)
-HR_HOLD(a, BAS, RS, mp_ai_n)
-HR_HOLD(a, BAS, RA, mp_ai_e)
-HR_HOLD(a, BAS, RC, mp_ai_i)
-HR_HOLD(a, BAS, RG, mp_ai_o)
+HR_HOLD(a, BAS, LG, mp_ai_a) //hm_aBAS_LG
+HR_HOLD(a, BAS, RS, mp_ai_n) //hm_aBAS_RS
+HR_HOLD(a, BAS, RA, mp_ai_e) //hm_aBAS_RA
+HR_HOLD(a, BAS, RC, mp_ai_i) //hm_aBAS_RC
+HR_HOLD(a, BAS, RG, mp_ai_o) //hm_aBAS_RG

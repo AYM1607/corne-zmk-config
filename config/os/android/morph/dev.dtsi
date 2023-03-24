@@ -176,22 +176,26 @@ mp_ad_loo: morph_android_dev_logical_or_operator {
     bindings = <&mp_ad_loo_a>, <&m_ad_loa>;
 };
 
+// mp_aDEV_qs
 MORPH_ASS(
     a,
     DEV,
     qs,
     question_symbol,
+    MOD_LALT|MOD_RALT,
     &kp QMARK,     // tap:         ?
     &kp LC(FSLH),  // alt:         ¿
     &m_ad_nca,     // shift:       ??=
     &m_ad_nco      // alt+shift:   ??
 )
 
+// mp_aDEV_es
 MORPH_ASS(
     a,
     DEV,
     es,
     exclamation_symbol,
+    MOD_LALT|MOD_RALT,
     &kp EXCL,    // tap:         !
     &kp LC(N1),  // alt:         ¡
     &m_ad_si,    // shift:       !==
