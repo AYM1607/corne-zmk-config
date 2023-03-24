@@ -51,5 +51,8 @@
     "markdownlint.config": {
         "MD033": false
     },
-    "editor.formatOnSave": false
+    "editor.formatOnSave": false,
+    "files.associations": {
+        "*.dtsi": "cpp"
+    }
 }
