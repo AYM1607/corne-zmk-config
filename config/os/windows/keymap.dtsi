@@ -26,7 +26,7 @@
         };
 
         windows_dev_layer {
-            #define WD13  &hm_wDEV_LC  LCMD    0
+            #define WD13  &hm_wDEV_LG  LCMD    0
             #define WD14  &hm          LCTRL   LBRC
             #define WD15  &hm          LALT    RBRC
             #define WD16  &hm_wDEV_LS  LSHFT   0
