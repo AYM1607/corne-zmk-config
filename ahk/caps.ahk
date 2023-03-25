@@ -21,6 +21,7 @@ $F18::
     Sleep(10) ; drastically improves reliability on slower systems
     ChangeCapsIcon("CW")
     ShowMessage("CapsWord: ON")
+    Sleep(750 * 3) ; SPECIFY DISPLAY TIME (ms)
     ChangeCapsIcon("OFF")
 }
 
