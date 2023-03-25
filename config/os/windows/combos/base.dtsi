@@ -1,0 +1,13 @@
+combo_wCW_on {
+    bindings = <&cw_ON>;
+    key-positions = <16 19>;
+    slow-release;
+    layers = <wBAS>;
+};
+
+combo_wCW_off {
+    bindings = <&cw_OFF>;
+    key-positions = <14 21>;
+    slow-release;
+    layers = <wBAS>;
+};

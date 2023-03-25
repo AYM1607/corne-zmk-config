@@ -68,9 +68,10 @@
     combos {
         compatible = "zmk,combos";
 
-        #include "os/all/combos/base.dtsi"
-
+        #include "os/windows/combos/base.dtsi"
         #include "os/windows/combos/help.dtsi"
+
+        #include "os/android/combos/base.dtsi"
     };
 };
 
