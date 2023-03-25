@@ -108,7 +108,7 @@ Needs [ZMK PR Battery BLE](https://github.com/zmkfirmware/zmk/pull/1243) and [ZM
 
 To automatically run the scripts at startup:
 
-- Create shortcuts to `startup.ahk` scripts located inside `ahk` folder
+- Create shortcuts to `startup.ahk` and `caps.ahk` scripts located inside `ahk` folder
 - Press <kbd>❖</kbd>+<kbd>r</kbd> and run this command `shell:startup`
 - Move the shortcut to this folder
 

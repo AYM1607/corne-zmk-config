@@ -4,19 +4,12 @@ SetWorkingDir(A_ScriptDir)     ;  Ensures a consistent starting directory.
 #SingleInstance force
 Persistent
 
-ChangeIcon("KBD")
-
-; Fix to stuck keys
-A_MenuMaskKey := "vkFF"        ;  Unassigned. Avoid Ctrl get stuck
-; A_MenuMaskKey := "vkE8"      ;  No Mapping. Avoid Alt get stuck
-KeyWait "RControl", "L"        ;  Wait for Control to be released
-KeyWait "RAlt", "L"            ;  Wait for Alt to be released
+ChangeLayerIcon("KBD")
 
 ; Combos
 #Include "keys.ahk"
 
 ; Notifications
-#Include "caps.ahk"
 #Include "layer.ahk"
 
 ; Help

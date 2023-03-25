@@ -1,6 +1,17 @@
-﻿ChangeIcon(lyr)
+﻿ChangeCapsIcon(status)
 {
-    ico := "../.github/images/icons/windows/" lyr ".png"
+    ico := "../.github/images/icons/windows/caps/" status ".png"
+
+    if FileExist(ico) {
+        TraySetIcon(ico)
+    } else {
+        TraySetIcon("*")
+    }
+}
+
+ChangeLayerIcon(lyr)
+{
+    ico := "../.github/images/icons/windows/layers/" lyr ".png"
 
     if (lyr = "KBD") {
         msg := "Waiting..."
@@ -9,8 +20,8 @@
     }
 
     if FileExist(ico) {
-        A_IconTip := msg
         TraySetIcon(ico)
+        A_IconTip := msg
     } else {
         TraySetIcon("*")
         A_IconTip := "Waiting..."
