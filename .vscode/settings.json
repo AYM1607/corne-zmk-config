@@ -56,5 +56,6 @@
         "*.dtsi": "cpp",
         "*.keymap": "cpp"
     },
-    "C_Cpp.errorSquiggles": "disabled"
+    "C_Cpp.errorSquiggles": "disabled",
+    "screencastMode.onlyKeyboardShortcuts": false
 }

@@ -2,7 +2,6 @@
 {
     ico := "../.github/images/icons/windows/" lyr ".png"
 
-
     if (lyr = "KBD") {
         msg := "Waiting..."
     } else {
