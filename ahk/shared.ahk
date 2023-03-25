@@ -9,8 +9,11 @@
     }
 
     if FileExist(ico) {
-        TraySetIcon(ico)
         A_IconTip := msg
+        TraySetIcon(ico)
+    } else {
+        TraySetIcon("*")
+        A_IconTip := "Waiting..."
     }
 }
 
