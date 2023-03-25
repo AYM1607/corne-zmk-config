@@ -8,8 +8,10 @@
         msg := lyr . " Layer"
     }
 
-    TraySetIcon(ico)
-    A_IconTip := msg
+    if FileExist(ico) {
+        TraySetIcon(ico)
+        A_IconTip := msg
+    }
 }
 
 GetMessage(lyr)
