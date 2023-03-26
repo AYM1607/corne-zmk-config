@@ -33,7 +33,7 @@
                 default_layer {
 			label = "DEF";
                         bindings = <
-   &kp ESC   &kp Q &kp W &kp F &kp P &kp B   &kp J &kp L  &kp U     &kp Y   &kp EQUAL    &hm DEL BSPC
+   &kp ESC   &kp Q &kp W &kp F &kp P &kp B   &kp J &kp L  &kp U     &kp Y   &kp EQUAL    &kp BSPC
    &kp SQT   &kp A &kp R &kp S &hm LCMD T &kp G   &kp M &hm LCMD N  &kp E     &kp I   &kp O       &kp RET
    &kp TAB &kp Z &kp X &kp C &kp D &kp V   &kp K &kp H  &kp COMMA &kp DOT   &kp SEMI   &kp FSLH 
                   &kp LCMD &kp LSHFT &kp LCTRL   &to SYMBOLS_L &kp SPACE &to NUMBERS_L
@@ -63,7 +63,7 @@
                 numbers_layer {
 			label = "NUM";
                         bindings = <
-   &kp ESC  &none &none &none &none &none                 &none &hm F7 N7      &hm F8 N8      &hm F9 N9 &none &kp BSPC
+   &kp ESC  &none &none &none &none &none                 &none &hm F7 N7      &hm F8 N8      &hm F9 N9 &none &hm DEL BSPC
    &none   &none &none   &none   &kp STAR &kp PLUS           &kp EQUAL &hm F4 N4      &hm F5 N5      &hm F6 N6 &hm F12 DOT &kp RET
    &kp TAB &none   &none   &none      &kp FSLH &kp MINUS       &hm F10 N0		&hm F1 N1      &hm F2 N2      &hm F3 N3 &kp COMMA &to ARROWS_L
                     	     &kp LCMD &kp LSHFT   &to DEFAULT_L  &to SYMBOLS_L &kp SPACE    &none
