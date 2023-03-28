@@ -11,10 +11,10 @@
 
             #define WB35  &mp_w_stg
 
-            #define WB36  &mo_wDEVwBAS_to_wDEV  0 0
-            #define WB38  &mo_wAXNwBAS_to_wAXN  0 0
-            #define WB39  &mo_wAXNwBAS_to_wFNK  0 0
-            #define WB41  &mo_wDEVwBAS_to_wDEV  0 0
+            #define WB36  &mo_wDEVwBAS_to_wDEV  0  0
+            #define WB38  &mo_wAXNwBAS_to_wAXN  0  0
+            #define WB39  &mo_wAXNwBAS_to_wFNK  0  0
+            #define WB41  &mo_wDEVwBAS_to_wDEV  0  0
 
             label = "wBAS";
             bindings = <
@@ -36,8 +36,8 @@
             #define WD21  &hm_wDEV_RC  RCTRL   0
             #define WD22  &hm_wDEV_RG  RCMD    0
 
-            #define WD38  &mo_wAXNwDEV_to_wBAS  0 0
-            #define WD39  &mo_wAXNwDEV_to_wAXN  0 0
+            #define WD38  &mo_wAXNwDEV_to_wBAS  0  0
+            #define WD39  &mo_wAXNwDEV_to_wAXN  0  0
 
             label = "wDEV";
             bindings = <
@@ -62,7 +62,7 @@
             #define WA21  &hm LCTRL  N6
             #define WA22  &hm LCMD   EQUAL
 
-            #define WA35 &mo_wFNKwAXN_to_wFNK    0 0
+            #define WA35  &mo_wFNKwAXN_to_wFNK    0 0
 
             #define WA38  &to_wBAS
             #define WA39  &to_wDEV

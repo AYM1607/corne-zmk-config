@@ -3,11 +3,11 @@ TO_MACRO(w, AXN)  //to_wAXN
 TO_MACRO(w, FNK)  //to_wFNK
 TO_MACRO(w, STG)  //to_wSTG
 
-MOTO_MACRO(w, AXN, BAS)  //mo_wAXN_to_BAS
-MOTO_MACRO(w, AXN, DEV)  //mo_wAXN_to_DEV
-MOTO_MACRO(w, STG, BAS)  //mo_wSTG_to_BAS
-MOTO_MACRO(w, DEV, BAS)  //mo_wDEV_to_BAS
-MOTO_MACRO(w, FNK, AXN)  //mo_wFNK_to_AXN
+MOTO_MACRO(w, AXN, BAS)  //mo_wAXN_to_wBAS
+MOTO_MACRO(w, AXN, DEV)  //mo_wAXN_to_wDEV
+MOTO_MACRO(w, STG, BAS)  //mo_wSTG_to_wBAS
+MOTO_MACRO(w, DEV, BAS)  //mo_wDEV_to_wBAS
+MOTO_MACRO(w, FNK, AXN)  //mo_wFNK_to_wAXN
 
 cw_wON: cw_wON {
     compatible = "zmk,behavior-macro";

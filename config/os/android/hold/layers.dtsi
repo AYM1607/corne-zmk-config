@@ -6,3 +6,10 @@ to_aBAS_kp: behavior_to_aBAS_kp {
     flavor = "hold-preferred";
     bindings = <&to_aBAS>, <&kp>;
 };
+
+MOTO_HOLD(a, AXN, BAS, FNK) //mo_aAXNaBAS_to_aFNK
+MOTO_HOLD(a, AXN, BAS, AXN) //mo_aAXNaBAS_to_aAXN
+MOTO_HOLD(a, DEV, BAS, DEV) //mo_aDEVaBAS_to_aDEV
+MOTO_HOLD(a, AXN, DEV, BAS) //mo_aAXNaDEV_to_aBAS
+MOTO_HOLD(a, AXN, DEV, AXN) //mo_aAXNaDEV_to_aAXN
+MOTO_HOLD(a, FNK, AXN, FNK) //mo_aFNKaAXN_to_aFNK

@@ -11,10 +11,10 @@
 
             #define AB35  &mp_a_stg
 
-            #define AB36  &moto        aDEV   aDEV
-            #define AB38  &moto        aAXN   aAXN
-            #define AB39  &moto        aAXN   aFNK
-            #define AB41  &moto        aDEV   aDEV
+            #define AB36  &mo_aDEVaBAS_to_aDEV  0  0
+            #define AB38  &mo_aAXNaBAS_to_aAXN  0  0
+            #define AB39  &mo_aAXNaBAS_to_aFNK  0  0
+            #define AB41  &mo_aDEVaBAS_to_aDEV  0  0
 
             label = "aBAS";
             bindings = <
@@ -33,11 +33,11 @@
 
             #define AD19  &hm_aDEV_RS  RSHFT   0
             #define AD20  &hm_aDEV_RA  RALT    0
-            #define AD21  &hm_aDEV_RC RCTRL   0
+            #define AD21  &hm_aDEV_RC  RCTRL   0
             #define AD22  &hm_aDEV_RG  RCMD    0
 
-            #define AD38  &moto       aAXN    aBAS
-            #define AD39  &moto       aAXN    aAXN
+            #define AD38  &mo_aAXNaDEV_to_aBAS  0  0
+            #define AD39  &mo_aAXNaDEV_to_aAXN  0  0
 
             label = "aDEV";
             bindings = <
@@ -62,10 +62,10 @@
             #define AA21  &hm    RCTRL  N6
             #define AA22  &hm    RCMD   EQUAL
 
-            #define AA35  &moto  aFNK   aFNK
+            #define AA35  &mo_aFNKaAXN_to_aFNK    0 0
 
-            #define AA38  &to    aBAS
-            #define AA39  &to    aDEV
+            #define AA38  &to_aBAS
+            #define AA39  &to_aDEV
 
             #define KEY_UNDO    &kp RC(Z)       // tap: undo
             #define KEY_REDO    &kp RC(Y)       // tap: redo
