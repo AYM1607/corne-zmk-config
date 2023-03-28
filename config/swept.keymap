@@ -34,6 +34,7 @@
         #include "os/windows/macros/int.dtsi"
         #include "os/windows/macros/dev.dtsi"
 
+        #include "os/android/macros/layers.dtsi"
         #include "os/android/macros/int.dtsi"
         #include "os/android/macros/dev.dtsi"
     };
