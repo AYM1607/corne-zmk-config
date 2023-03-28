@@ -98,10 +98,9 @@ MORPH_KAS(
     slash,
     MOD_LALT,
     &kp FSLH,   // tap:    /
-                // ctrl:   // line comment
     &kp LS(A),  // alt:    /* block comment */
     &m_wd_da    // shift:  /=
-)
+)               // ctrl:   // line comment
 
 // mp_wDEV_lao
 MORPH_KSA(
