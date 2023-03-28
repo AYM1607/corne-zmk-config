@@ -16,7 +16,7 @@ This is a WIP layout based on Colemak DHm for using on Android (with **en-US** l
   - [DEV](#dev)
   - [AXN](#axn)
   - [STG](#stg)
-- [Automate](#automate)
+- [Notifications](#notifications)
 
 ---
 
@@ -241,7 +241,7 @@ Dedicated to Bluetooth and media controls.
 
 ---
 
-## Automate
+## Notifications
 
 ![Notifications](/.github/images/examples/automate-notifications.gif)
 
