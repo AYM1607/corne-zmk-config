@@ -8,7 +8,7 @@ cw_aON: cw_aON {
     label = "cw_aON";
     #binding-cells = <0>;
     bindings =
-        <&kp LG(LC(H_wCWR)) &cw>;
+        <&kp LC(LG(H_wCWR)) &cw>;
 };
 
 cw_aOFF: cw_wOFF {
@@ -16,5 +16,5 @@ cw_aOFF: cw_wOFF {
     label = "cw_aOFF";
     #binding-cells = <0>;
     bindings =
-        <&kp LG(LA(H_wCWR)) &kp K_CANCEL>;
+        <&kp LA(LG(H_wCWR)) &kp K_CANCEL>;
 };
