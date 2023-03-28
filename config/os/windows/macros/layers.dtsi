@@ -9,17 +9,17 @@ MOTO_MACRO(w, STG, BAS)  //mo_wSTG_to_BAS
 MOTO_MACRO(w, DEV, BAS)  //mo_wDEV_to_BAS
 MOTO_MACRO(w, FNK, AXN)  //mo_wFNK_to_AXN
 
-cw_ON: cw_ON {
+cw_wON: cw_wON {
     compatible = "zmk,behavior-macro";
-    label = "cw_ON";
+    label = "cw_wON";
     #binding-cells = <0>;
     bindings =
         <&kp H_wCWR &cw>;
 };
 
-cw_OFF: cw_OFF {
+cw_wOFF: cw_wOFF {
     compatible = "zmk,behavior-macro";
-    label = "cw_OFF";
+    label = "cw_wOFF";
     #binding-cells = <0>;
     bindings =
         <&kp LC(H_wCWR) &kp K_CANCEL>;
