@@ -243,9 +243,7 @@ Dedicated to Bluetooth and media controls.
 
 ## Automate
 
-<!-- TODO: Update image showing android image -->
-
-![Notifications](/.github/images/examples/ahk-notifications.gif)
+![Notifications](/.github/images/examples/automate-notifications.gif)
 
 ### Prerequisites
 
