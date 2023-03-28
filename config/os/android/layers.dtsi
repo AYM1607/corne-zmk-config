@@ -14,7 +14,7 @@
 
 
 /* Helpers */
-#define H_aCWR  X
+#define H_aCWR  LG(X)
 #define F_aBAS  LG(LS(B))
 #define F_aDEV  LG(LS(D))
 #define F_aAXN  LG(LS(A))
