@@ -14,7 +14,7 @@ This is a WIP layout based on Colemak DHm for using on Windows (with **en-US Int
   - [DEV](dev)
   - [AXN](axn)
   - [STG](stg)
-- [Nofifications](#notifications)
+- [Notifications](#notifications)
 - [Battery Indicators](#battery-indicators)
 
 ---
@@ -240,7 +240,7 @@ Dedicated to Bluetooth and media controls.
 
 ---
 
-## Nofifications
+## Notifications
 
 ![Notifications](/.github/images/examples/ahk-notifications.gif)
 
