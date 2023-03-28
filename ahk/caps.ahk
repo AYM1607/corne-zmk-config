@@ -21,6 +21,7 @@ $F18::
     Sleep(10) ; drastically improves reliability on slower systems
     ChangeCapsIcon("CW")
     ShowMessage("CapsWord: ON")
+    ; TODO: identify if key was pressed using shift and then shof OFF icon
     Sleep(750 * 3) ; SPECIFY DISPLAY TIME (ms)
     ChangeCapsIcon("OFF")
 }
