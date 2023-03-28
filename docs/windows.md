@@ -14,6 +14,7 @@ This is a WIP layout based on Colemak DHm for using on Windows (with **en-US Int
   - [DEV](dev)
   - [AXN](axn)
   - [STG](stg)
+- [AHK](#ahk)
 
 ---
 
@@ -233,5 +234,46 @@ Dedicated to Bluetooth and media controls.
 | <kbd>⏭️</kbd> | Next         |
 | <kbd>⏩</kbd> | Fast Forward |
 | <kbd>🔀</kbd> | Shuffle      |
+
+⇧ [Back to menu](#menu)
+
+---
+
+## AHK
+
+![Notifications](/.github/images/examples/ahk-notifications.gif)
+
+### Prerequisites
+
+- Download and install [AutoHotKey](https://www.autohotkey.com/) v2
+
+### Startup
+
+To automatically run the scripts at startup:
+
+- Create shortcuts to `startup.ahk` and `caps.ahk` scripts located inside `host/windows/ahk` folder
+- Press <kbd>❖</kbd>+<kbd>r</kbd> and run this command `shell:startup`
+- Move the shortcut to this folder
+
+### Indicators
+
+Screencast mode notifications:
+
+- CapsLock (On/Off)
+- CapsWord (On/Off)
+- Layer changing
+- Momentary layer activation and deactivation
+- Tray icons with current layer
+- Current layer image as helper (close with <kbd>ESC</kbd>)
+
+⇧ [Back to menu](#menu)
+
+---
+
+## Battery Indicators
+
+![Battery](/.github/images/examples/battery.png)
+
+Needs [ZMK PR Battery BLE](https://github.com/zmkfirmware/zmk/pull/1243) and [ZMK Split Battery](https://github.com/Fukkei/zmk-split-battery)
 
 ⇧ [Back to menu](#menu)

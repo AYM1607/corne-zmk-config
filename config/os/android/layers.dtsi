@@ -11,3 +11,12 @@
 // #define aAXN 12
 // #define aFNK 13
 // #define aSTG 14
+
+
+/* Helpers */
+#define H_aCWR  X
+#define F_aBAS  B
+#define F_aDEV  D
+#define F_aAXN  A
+#define F_aFNK  F
+#define F_aSTG  S

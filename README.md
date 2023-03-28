@@ -20,7 +20,6 @@ This is a WIP layout based on Colemak DHm that includes Spanish accents, and com
   - [Configure](#configure)
   - [Led Indicators](#led-indicators)
   - [Battery Indicators](#battery-indicators)
-- [AHK](#ahk)
 - [Recommendations](#recommendations)
 - [About](#about)
 
@@ -85,45 +84,6 @@ Once you make changes to your keymap, you can download the firmware from the git
 | Blue   | Pulsing slowly | bootloader mode (enter by double pressing reset button) |
 | Blue   | Flashing fast  | halves are paring each other                            |
 | Orange |                | Charging                                                |
-
-### Battery Indicators
-
-![Battery](.github/images/examples/battery.png)
-
-Needs [ZMK PR Battery BLE](https://github.com/zmkfirmware/zmk/pull/1243) and [ZMK Split Battery](https://github.com/Fukkei/zmk-split-battery)
-
-⇧ [Back to menu](#menu)
-
----
-
-## AHK
-
-![Notifications](.github/images/examples/ahk-notifications.gif)
-
-### Prerequisites
-
-- Download and install [AutoHotKey](https://www.autohotkey.com/) v2
-
-### Startup
-
-To automatically run the scripts at startup:
-
-- Create shortcuts to `startup.ahk` and `caps.ahk` scripts located inside `ahk` folder
-- Press <kbd>❖</kbd>+<kbd>r</kbd> and run this command `shell:startup`
-- Move the shortcut to this folder
-
-### Indicators
-
-Screencast mode notifications:
-
-- CapsLock (On/Off)
-- CapsWord (On/Off)
-- Layer changing
-- Momentary layer activation and deactivation
-- Tray icons with current layer
-- Current layer image as helper (close with <kbd>ESC</kbd>)
-
-⇧ [Back to menu](#menu)
 
 ---
 

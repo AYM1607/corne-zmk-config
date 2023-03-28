@@ -16,6 +16,7 @@ This is a WIP layout based on Colemak DHm for using on Android (with **en-US** l
   - [DEV](#dev)
   - [AXN](#axn)
   - [STG](#stg)
+- [Automate](#automate)
 
 ---
 
@@ -235,5 +236,34 @@ Dedicated to Bluetooth and media controls.
 | <kbd>⏭️</kbd> | Next         |
 | <kbd>⏩</kbd> | Fast Forward |
 | <kbd>🔀</kbd> | Shuffle      |
+
+⇧ [Back to menu](#menu)
+
+---
+
+## Automate
+
+<!-- TODO: Update image showing android image -->
+
+![Notifications](/.github/images/examples/ahk-notifications.gif)
+
+### Prerequisites
+
+- Download and install [Automate](https://play.google.com/store/apps/details?id=com.llamalab.automate)
+
+### Flows
+
+- Import the `Swept Layer.flo` and `Swept Layer.flo` flows located inside `host/android/automate` folder
+- Add asked permissions
+- Under `Flow > Settings > Privileges` menu check the `collect all the text you type` option
+
+### Indicators
+
+Toast notifications:
+
+- CapsLock (On/Off)
+- CapsWord (On/Off)
+- Layer changing
+- Momentary layer activation and deactivation
 
 ⇧ [Back to menu](#menu)
