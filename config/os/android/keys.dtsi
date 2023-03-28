@@ -1,4 +1,4 @@
 /* Shared Keys */
-#define AKY_ESC  &tokp  aBAS   ESC  // tap: esc    | long-tap: BAS layer
-#define AKY_RET  &mt    F2     RET  // tap: return | long-tap: rename (like macOs)
-#define AKY_TAB  &mt    RIGHT  TAB  // tap: tab    | long-tap: right (terminal autocompletion)
+#define AKY_ESC  &to_aBAS_kp  0      ESC  // tap: esc    | long-tap: BAS layer
+#define AKY_RET  &mt          F2     RET  // tap: return | long-tap: rename (like macOs)
+#define AKY_TAB  &mt          RIGHT  TAB  // tap: tab    | long-tap: right (terminal autocompletion)

@@ -1,0 +1,8 @@
+to_aBAS_kp: behavior_to_aBAS_kp {
+    compatible = "zmk,behavior-hold-tap";
+    label = "to_aBAS_kp";
+    #binding-cells = <2>;
+    tapping-term-ms = <HP_TAPPING>;
+    flavor = "hold-preferred";
+    bindings = <&to_aBAS>, <&kp>;
+};
