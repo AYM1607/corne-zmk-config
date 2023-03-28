@@ -148,7 +148,9 @@ m_ad_cto: macro_conditional_ternary_operator {
     label = "m_ad_cto";
     #binding-cells = <0>;
     bindings
-        = <&kp QMARK &kp SPACE &kp SPACE &kp COLON &kp SPACE>
+        = <&none>
+        , <&macro_wait_time MC_WAIT>
+        , <&kp QMARK &kp SPACE &kp SPACE &kp COLON &kp SPACE>
         , <&kp LEFT &kp LEFT &kp LEFT>;
 };
 

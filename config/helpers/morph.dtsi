@@ -53,14 +53,14 @@
         label = LABEL_STRINGIFY(mp_##OS##LYR##_##NAME##_s);       \
         #binding-cells = <0>;                                     \
         mods = <(MOD_LSFT|MOD_RSFT)>;                             \
-        bindings = <&kp FSLH>, <&m_ad_da>;                        \
+        bindings = <KEY>, <KS>;                                   \
     };                                                            \
     mp_##OS##LYR##_##NAME: morph_##OS##LYR##_##DESC {             \
         compatible = "zmk,behavior-mod-morph";                    \
         label = LABEL_STRINGIFY(mp_##OS##LYR##_##NAME);           \
         #binding-cells = <0>;                                     \
         mods = <(MOD_LALT)>;                                      \
-        bindings = <&mp_##OS##LYR##_##NAME##_s>, <&kp LS(A)>;     \
+        bindings = <&mp_##OS##LYR##_##NAME##_s>, <KA>;            \
         keep-mods = <(MOD_LALT)>;                                 \
     };
 
