@@ -20,9 +20,9 @@
       compatible = "zmk,behavior-hold-tap";         \
       label=LABEL_STRINGIFY(hm_##OS##LYR##_##MOD);  \
       #binding-cells = <2>;                         \
-      tapping-term-ms = <HP_TAPPING>;               \
-      quick-tap-ms = <HP_QUICK_TAP>;                \
-      flavor = "hold-preferred";                    \
+      tapping-term-ms = <HR_TAPPING>;               \
+      quick-tap-ms = <HR_QUICK_TAP>;                \
+      flavor = HR_FLAVOR;                           \
       global-quick-tap;                             \
       bindings = <&kp>, <&MP>;                      \
   };
