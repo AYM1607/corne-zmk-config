@@ -23,6 +23,5 @@
       tapping-term-ms = <HR_TAPPING>;               \
       quick-tap-ms = <HR_QUICK_TAP>;                \
       flavor = HR_FLAVOR;                           \
-      global-quick-tap;                             \
       bindings = <&kp>, <&MP>;                      \
   };
