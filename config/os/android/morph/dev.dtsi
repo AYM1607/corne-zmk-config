@@ -1,47 +1,3 @@
-//mp_aDEV_pound
-MORPH_KA(
-    a,
-    DEV,
-    pound,
-    pound,
-    MOD_LALT|MOD_RALT,
-    &kp POUND,             // tap:  #
-    &kp LC(LS(SEMICOLON))  // alt:  °
-)
-
-//mp_aDEV_money
-MORPH_KA(
-    a,
-    DEV,
-    money,
-    money,
-    MOD_LALT|MOD_RALT,
-    &kp DLLR,   // tap:  $
-    &kp LC(N5)  // alt:  €
-)
-
-//mp_aDEV_lb
-MORPH_KA(
-    a,
-    DEV,
-    lb,
-    left_brackets,
-    MOD_LALT|MOD_RALT,
-    &kp LBKT,     // tap:  [
-    &kp LC(LBKT)  // alt:  «
-)
-
-//mp_aDEV_rb
-MORPH_KA(
-    a,
-    DEV,
-    rb,
-    right_brackets,
-    MOD_LALT|MOD_RALT,
-    &kp RBKT,     // tap:  ]
-    &kp LC(RBKT)  // alt:  »
-)
-
 // mp_aDEV_a
 MORPH_KSA(
     a,
@@ -98,7 +54,7 @@ MORPH_KAS(
     slash,
     MOD_LALT|MOD_RALT,
     &kp FSLH,   // tap:    /
-    &kp LS(A),  // alt:    /* block comment */
+    &m_ad_bc,   // alt:    /* block comment */
     &m_ad_da    // shift:  /=
 )               // ctrl:   // line comment
 
@@ -134,7 +90,7 @@ MORPH_KASAS(
     question_symbol,
     MOD_LALT|MOD_RALT,
     &kp QMARK,     // tap:        ?
-    &kp LC(FSLH),  // alt:        ¿
+    &none,         // alt:
     &m_ad_nca,     // shift:      ??=
     &m_ad_nco      // alt+shift:  ??
 )
@@ -147,7 +103,7 @@ MORPH_KASAS(
     exclamation_symbol,
     MOD_LALT|MOD_RALT,
     &kp EXCL,    // tap:        !
-    &kp LC(N1),  // alt:        ¡
+    &none,       // alt:
     &m_ad_si,    // shift:      !==
     &m_ad_dno    // alt+shift:  !!
 )

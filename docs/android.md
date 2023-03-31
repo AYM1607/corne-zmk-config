@@ -93,17 +93,6 @@ Symbols and dev shortcuts for JS/TS.
 
 ![DEV Layer](/.github/images/layers/android/DEV.png)
 
-#### Symbols
-
-| Label           | Shortcut                                  |
-| :-------------: | ----------------------------------------: |
-| <kbd>°</kbd>    | <kbd>⌥</kbd>+<kbd>#</kbd>                |
-| <kbd>€</kbd>    | <kbd>⌥</kbd>+<kbd>$</kbd>                |
-| <kbd>«</kbd>    | <kbd>⌥</kbd>++<kbd>[</kbd>               |
-| <kbd>»</kbd>    | <kbd>⌥</kbd>++<kbd>]</kbd>               |
-| <kbd>¡</kbd>    | <kbd>⌥</kbd>+<kbd>!</kbd>                |
-| <kbd>¿</kbd>    | <kbd>⌥</kbd>+<kbd>?</kbd>                |
-
 #### JS/TS
 
 | Label                                                                                                                       | Shortcut                     | Action |
@@ -140,14 +129,13 @@ Symbols and dev shortcuts for JS/TS.
 | Label        | Shortcut                     | Action                      |
 | -----------: | ---------------------------: | --------------------------- |
 | <kbd>↻</kbd> | <kbd>↻</kbd>                 | Refresh                     |
-| <kbd>⟳</kbd> | <kbd>⇧</kbd>+<kbd>↻</kbd>   | Hard refresh (clean cache) |
-| <kbd>⩸</kbd> |                              | Open DevTools              |
+| <kbd>⟳</kbd> | <kbd>⇧</kbd>+<kbd>↻</kbd>   | Hard refresh (clean cache)  |
 
 #### VS Code
 
-| Label             | Shortcut                                | Action                      |
-| ----------------: | --------------------------------------: | --------------------------- |
-| <kbd>//</kbd>     | <kbd>⌃</kbd>+<kbd>/</kbd>               | Toggle line comment         |
+| Label               | Shortcut                                | Action                      |
+| ------------------: | --------------------------------------: | --------------------------- |
+| <kbd>//</kbd>       | <kbd>⌃</kbd>+<kbd>/</kbd>               | Toggle line comment         |
 | <kbd>/\* \*/</kbd>  | <kbd>⇧</kbd>+<kbd>/</kbd>               | Toggle block comment        |
 
 ⇧ [Back to menu](#menu)

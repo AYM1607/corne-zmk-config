@@ -144,9 +144,9 @@ Symbols and dev shortcuts for JS/TS.
 
 #### VS Code
 
-| Label             | Shortcut                                | Action                      |
-| ----------------: | --------------------------------------: | --------------------------- |
-| <kbd>//</kbd>     | <kbd>⌃</kbd>+<kbd>/</kbd>               | Toggle line comment         |
+| Label               | Shortcut                                | Action                      |
+| ------------------: | --------------------------------------: | --------------------------- |
+| <kbd>//</kbd>       | <kbd>⌃</kbd>+<kbd>/</kbd>               | Toggle line comment         |
 | <kbd>/\* \*/</kbd>  | <kbd>⇧</kbd>+<kbd>/</kbd>               | Toggle block comment        |
 
 ⇧ [Back to menu](#menu)

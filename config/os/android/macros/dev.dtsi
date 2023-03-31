@@ -272,3 +272,15 @@ m_ad_gtoet: macro_android_dev_greater_than_or_equal_to {
         , <&macro_wait_time MC_WAIT>
         , <&kp GT &kp EQUAL>;
 };
+
+// action: /* block comment */
+m_ad_bc: macro_android_dev_block_comment {
+    compatible = "zmk,behavior-macro";
+    label = "m_ad_bc";
+    #binding-cells = <0>;
+    wait-ms = <MC_WAIT_START>;
+    bindings
+        = <&none>
+        , <&macro_wait_time MC_WAIT>
+        , <&kp LC(LS(A))>;
+};
