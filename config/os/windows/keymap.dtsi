@@ -115,7 +115,7 @@
 
             #define WS04  &kp LG(LS(C))        // tap: color picker
             #define WS05  &kp RC(PLUS)         // tap: zoom in
-            #define WA16  &kp LG(LS(S))        // tap: printscreen
+            #define WS16  &kp LG(LS(S))        // tap: printscreen
             #define WS17  &kp RC(N0)           // tap: zoom reset
             #define WS28  &kp LG(E)            // tap: file explorer
             #define WS29  &kp RC(MINUS)        // tap: zoom out
