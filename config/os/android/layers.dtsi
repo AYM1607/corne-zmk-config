@@ -14,9 +14,9 @@
 
 
 /* Helpers */
-#define H_aCWR  LG(X)
-#define F_aBAS  LG(LS(B))
-#define F_aDEV  LG(LS(D))
-#define F_aAXN  LG(LS(A))
-#define F_aFNK  LG(LS(F))
-#define F_aSTG  LG(LS(S))
+#define H_aCWR  LG(LS(F6))
+#define F_aBAS  LG(LS(F7))
+#define F_aDEV  LG(LS(F8))
+#define F_aAXN  LG(LS(F9))
+#define F_aFNK  LG(LS(F10))
+#define F_aSTG  LG(LS(F11))

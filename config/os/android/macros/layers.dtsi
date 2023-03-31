@@ -17,7 +17,7 @@ cw_aON: cw_aON {
         <&kp LC(H_aCWR) &cw>;
 };
 
-cw_aOFF: cw_wOFF {
+cw_aOFF: cw_aOFF {
     compatible = "zmk,behavior-macro";
     label = "cw_aOFF";
     #binding-cells = <0>;

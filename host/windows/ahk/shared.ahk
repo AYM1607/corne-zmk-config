@@ -84,7 +84,7 @@ ShowHelp(lyr)
     showGui := Gui()
     showGui.Hide()
 
-    img := "../.github/images/layers/windows/" . lyr . ".png"
+    img := "../../../.github/images/layers/windows/" . lyr . ".png"
     msg := lyr . " Layer"
 
     height := 525
