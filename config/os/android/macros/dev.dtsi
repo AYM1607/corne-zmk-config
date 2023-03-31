@@ -280,7 +280,7 @@ m_ad_bc: macro_android_dev_block_comment {
     #binding-cells = <0>;
     wait-ms = <MC_WAIT_START>;
     bindings
-        = <&none>
+        = <&none &kp LALT> /* ALT fix for VSCode */
         , <&macro_wait_time MC_WAIT>
         , <&kp LC(LS(A))>;
 };
