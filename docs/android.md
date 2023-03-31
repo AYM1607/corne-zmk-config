@@ -202,7 +202,6 @@ Dedicated to Bluetooth and media controls.
 | <kbd>▤</kbd>    | Apps                     |
 | <kbd>⍰</kbd>   | Shortcuts               |
 
-
 #### Media
 
 | Label         | Action       |
