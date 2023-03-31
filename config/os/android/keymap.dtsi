@@ -108,7 +108,8 @@
         android_settings_layer {
             #define AS10  &kp LG(LS(GRAVE))    // tap: fancy zones
             #define AS11  &kp LC(LS(ESC))      // tap: task manager
-            #define AS24  &kp LG(K)            // tap: connect quick action
+            #define AS12  &kp LG(K)            // tap: connect quick action
+            #define AS24  &bt BT_CLR           // tap: clear Bluetooth
 
             #define AS22  &kp RG(PAUSE_BREAK)  // tap: system info
             #define AS23  &kp RG(I)            // tap: windows settings
@@ -124,9 +125,9 @@
 
             label = "aSTG";
             bindings = <
-       AKY_ESC  &none  &m_s_b1  &m_s_b2    &none      AS05                   AS07  &kp K_VOL_DN    &kp K_MUTE  &kp K_VOL_UP  AS10   AS11
-    &bt BT_CLR  &none  &m_s_b3  &m_s_b4    &none      AS17                   AS18    &kp K_PREV      &kp K_PP    &kp K_NEXT  AS22   AS23
-          AS24  &none  &m_s_b5  &m_s_b6    &none      AS29                   AS30         &none    &kp K_STOP         &none  AS34  &none
+       AKY_ESC  &m_s_b1  &m_s_b2  &none    &none      AS05                   AS07  &kp K_VOL_DN    &kp K_MUTE  &kp K_VOL_UP  AS10   AS11
+          AS12  &m_s_b3  &m_s_b4  &none    &none      AS17                   AS18    &kp K_PREV      &kp K_PP    &kp K_NEXT  AS22   AS23
+          AS24  &m_s_b5  &m_s_b6  &none    &none      AS29                   AS30         &none    &kp K_STOP         &none  AS34  &none
                            &kp C_BRI_DN  KEY_SPC  &to_aBAS               &to_aDEV       AKY_RET  &kp C_BRI_UP
             >;
         };

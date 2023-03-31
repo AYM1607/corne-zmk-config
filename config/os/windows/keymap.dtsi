@@ -107,7 +107,8 @@
         windows_settings_layer {
             #define WS10  &kp LG(LS(GRAVE))    // tap: fancy zones
             #define WS11  &kp LC(LS(ESC))      // tap: task manager
-            #define WS24  &kp LG(K)            // tap: connect quick action
+            #define WS12  &kp LG(K)            // tap: connect quick action
+            #define WS24  &bt BT_CLR           // tap: clear Bluetooth
 
             #define WS22  &kp RG(PAUSE_BREAK)  // tap: system info
             #define WS23  &kp RG(I)            // tap: windows settings
@@ -123,10 +124,10 @@
 
             label = "wSTG";
             bindings = <
-       WKY_ESC  &none  &m_s_b1       &m_s_b2    &none      WS05                   WS07  &kp C_VOL_DN    &kp C_MUTE  &kp C_VOL_UP  WS10   WS11
-    &bt BT_CLR  &none  &m_s_b3       &m_s_b4    &none      WS17                   WS18    &kp C_PREV      &kp C_PP    &kp C_NEXT  WS22   WS23
-          WS24  &none  &m_s_b5       &m_s_b6    &none      WS29                   WS30      &kp C_RW    &kp C_STOP      &kp C_FF  WS34  &none
-                                &kp C_BRI_DN  KEY_SPC  &to_wBAS               &to_wDEV       WKY_RET  &kp C_BRI_UP
+       WKY_ESC  &m_s_b1  &m_s_b2  &none    &none      WS05                   WS07  &kp C_VOL_DN    &kp C_MUTE  &kp C_VOL_UP  WS10   WS11
+          WS12  &m_s_b3  &m_s_b4  &none    &none      WS17                   WS18    &kp C_PREV      &kp C_PP    &kp C_NEXT  WS22   WS23
+          WS24  &m_s_b5  &m_s_b6  &none    &none      WS29                   WS30      &kp C_RW    &kp C_STOP      &kp C_FF  WS34  &none
+                           &kp C_BRI_DN  KEY_SPC  &to_wBAS               &to_wDEV       WKY_RET  &kp C_BRI_UP
             >;
         };
 
