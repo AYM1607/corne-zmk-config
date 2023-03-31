@@ -111,7 +111,7 @@
             #define AS12  &kp LG(K)            // tap: shortcuts
             #define AS24  &bt BT_CLR           // tap: clear Bluetooth
 
-            #define AS22  &kp LG(NAV_BSPC)     // tap: back
+            #define AS22  &kp LG(BSPC)         // tap: back
             #define AS23  &kp LG(FSLH)         // tap: keyboard shortcuts
             #define AS34  &kp LG(RET)          // tap: home
 
