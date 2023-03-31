@@ -202,7 +202,7 @@ Dedicated to Bluetooth and media controls.
 | <kbd>⌂</kbd>    | Home                     |
 | <kbd>⇦</kbd>    | Back                     |
 | <kbd>⛬</kbd>   | Notifications            |
-| <kbd>▤</kbd>   | Recents                  |
+| <kbd>▤</kbd>   | Apps                     |
 | <kbd>⍰</kbd>   | Shortcuts               |
 
 #### Media
