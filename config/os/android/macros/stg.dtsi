@@ -10,15 +10,3 @@ m_as_a: macro_android_stg_a {
         , <&kp LG(RET)>
         , <&kp LC(A)>;
 };
-
-// action:     back
-m_si_b: macro_android_stg_b {
-    compatible = "zmk,behavior-macro";
-    label = "m_si_b";
-    #binding-cells = <0>;
-    wait-ms = <MC_WAIT_START>;
-    bindings
-        = <&none>
-        , <&macro_wait_time MC_WAIT>
-        , <&kp LG(BSPC)>;
-};

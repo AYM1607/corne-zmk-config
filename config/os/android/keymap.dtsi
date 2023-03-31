@@ -113,9 +113,8 @@
             #define AS12  &kp LG(K)            // tap: shortcuts
             #define AS24  &bt BT_CLR           // tap: clear Bluetooth
 
-            #define AS22  &m_si_b              // tap: back
+            #define AS22  &kp LG(RET)          // tap: home
             #define AS23  &kp LG(FSLH)         // tap: keyboard shortcuts
-            #define AS34  &kp LG(RET)          // tap: home
 
             #define AS04  &kp LG(B)            // tap: browser
             #define AS05  &kp LCMD             // tap: assist
@@ -126,9 +125,9 @@
 
             label = "aSTG";
             bindings = <
-       AKY_ESC  &m_s_b1  &m_s_b2  &none     AS04      AS05                  &none  &kp K_VOL_DN    &kp K_MUTE  &kp K_VOL_UP  AS10   AS11
-          AS12  &m_s_b3  &m_s_b4  &none     AS16      AS17                  &none    &kp K_PREV      &kp K_PP    &kp K_NEXT  AS22   AS23
-          AS24  &m_s_b5  &m_s_b6  &none     AS28      AS29                  &none         &none    &kp K_STOP         &none  AS34  &none
+       AKY_ESC  &m_s_b1  &m_s_b2  &none     AS04      AS05                  &none  &kp K_VOL_DN    &kp K_MUTE  &kp K_VOL_UP   AS10   AS11
+          AS12  &m_s_b3  &m_s_b4  &none     AS16      AS17                  &none    &kp K_PREV      &kp K_PP    &kp K_NEXT   AS22   AS23
+          AS24  &m_s_b5  &m_s_b6  &none     AS28      AS29                  &none         &none    &kp K_STOP         &none  &none  &none
                            &kp C_BRI_DN  KEY_SPC  &to_aBAS               &to_aDEV       AKY_RET  &kp C_BRI_UP
             >;
         };

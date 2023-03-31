@@ -189,8 +189,8 @@ Dedicated to Bluetooth and media controls.
 
 | Label           | Action                   |
 | --------------: |  ----------------------- |
-| <kbd>B#️⃣</kbd> | Jump to #️⃣ device        |
-| <kbd>B❌</kbd> | Clear current device     |
+| <kbd>B#️⃣</kbd>  | Jump to #️⃣ device        |
+| <kbd>B❌</kbd>  | Clear current device     |
 | <kbd>🌐</kbd>   | Browser                 |
 | <kbd>🎤</kbd>   | Assist                  |
 | <kbd>📅</kbd>   | Calendar                 |
@@ -198,10 +198,10 @@ Dedicated to Bluetooth and media controls.
 | <kbd>📧</kbd>   | Mail                     |
 | <kbd>📞</kbd>   | Contacts                 |
 | <kbd>⌂</kbd>    | Home                     |
-| <kbd>⇦</kbd>    | Back                     |
 | <kbd>⛬</kbd>   | Notifications            |
-| <kbd>▤</kbd>   | Apps                     |
+| <kbd>▤</kbd>    | Apps                     |
 | <kbd>⍰</kbd>   | Shortcuts               |
+
 
 #### Media
 
