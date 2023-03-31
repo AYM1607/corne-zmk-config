@@ -67,11 +67,11 @@
             #define AA38  &to_aBAS
             #define AA39  &to_aDEV
 
-            #define KEY_UNDO    &kp K_UNDO        // tap: undo
-            #define KEY_REDO    &kp K_REDO        // tap: redo
-            #define KEY_CUT     &kp K_CUT         // tap: cut
-            #define KEY_COPY    &kp K_COPY        // tap: copy
-            #define KEY_PASTE   &kp K_PASTE       // tap: paste
+            #define KEY_UNDO    &kp RC(Z)       // tap: undo
+            #define KEY_REDO    &kp RC(RS(Z))   // tap: redo
+            #define KEY_CUT     &kp RC(X)       // tap: cut
+            #define KEY_COPY    &kp RC(C)       // tap: copy
+            #define KEY_PASTE   &kp RC(V)       // tap: paste
 
             label = "aAXN";
             bindings = <
