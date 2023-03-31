@@ -4,10 +4,6 @@
 ; + Shift
 ; # Win
 
-; Actions
- !^f::Send("^{h}")                               ;       Alt+☉  ☊
-+!^f::Send("^+{h}")                              ; Shift+Alt+☉  ☊ (global)
-
 ; Settings
 #HotIf WinActive("ahk_exe code.exe")
   ^0::Send("^{Numpad0}")                         ;  Zoom Reset

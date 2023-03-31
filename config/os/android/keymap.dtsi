@@ -49,29 +49,29 @@
         };
 
         android_act_num_layer {
-            #define AA01  &kp    LG(LS(C))           // tap: color picker
-            #define AA05  &kp    LC(F)               // tap: find
-            #define AA13  &hm    LCMD   LG(LS(S))    // tap: printscreen
-            #define AA14  &hm    LCTRL  LEFT
-            #define AA15  &hm    LALT   DOWN
-            #define AA16  &hm    LSHFT  RIGHT
-            #define AA17  &kp    LG(E)               // tap: file explorer
+            #define AA01  &kp  LA(LS(RIGHT))        // tap: expand selection
+            #define AA05  &kp  LC(F)                // tap: find
+            #define AA13  &hm  LCMD   LA(LS(LEFT))  // tap: shrink selection
+            #define AA14  &hm  LCTRL  LEFT
+            #define AA15  &hm  LALT   DOWN
+            #define AA16  &hm  LSHFT  RIGHT
+            #define AA17  &kp  LC(H)                // tap: replace
 
-            #define AA19  &hm    RSHFT  N4
-            #define AA20  &hm    RALT   N5
-            #define AA21  &hm    RCTRL  N6
-            #define AA22  &hm    RCMD   EQUAL
+            #define AA19  &hm  RSHFT  N4
+            #define AA20  &hm  RALT   N5
+            #define AA21  &hm  RCTRL  N6
+            #define AA22  &hm  RCMD   EQUAL
 
             #define AA35  &mo_aFNKaAXN_to_aFNK    0 0
 
             #define AA38  &to_aBAS
             #define AA39  &to_aDEV
 
-            #define KEY_UNDO    &kp LC(Z)       // tap: undo
-            #define KEY_REDO    &kp LC(LS(Z))   // tap: redo
-            #define KEY_CUT     &kp LC(X)       // tap: cut
-            #define KEY_COPY    &kp LC(C)       // tap: copy
-            #define KEY_PASTE   &kp LC(V)       // tap: paste
+            #define KEY_UNDO   &kp LC(Z)       // tap: undo
+            #define KEY_REDO   &kp LC(LS(Z))   // tap: redo
+            #define KEY_CUT    &kp LC(X)       // tap: cut
+            #define KEY_COPY   &kp LC(C)       // tap: copy
+            #define KEY_PASTE  &kp LC(V)       // tap: paste
 
             label = "aAXN";
             bindings = <
@@ -106,28 +106,27 @@
         };
 
         android_settings_layer {
-            #define AS10  &kp LG(LS(GRAVE))    // tap: fancy zones
-            #define AS11  &kp LC(LS(ESC))      // tap: task manager
-            #define AS12  &kp LG(K)            // tap: connect quick action
+            #define AS10  &kp LG(N)            // tap: notifications
+            #define AS11  &kp LA(TAB)          // tap: recents
+            #define AS12  &kp LG(K)            // tap: shortcuts
             #define AS24  &bt BT_CLR           // tap: clear Bluetooth
 
-            #define AS22  &kp RG(PAUSE_BREAK)  // tap: system info
-            #define AS23  &kp RG(I)            // tap: windows settings
-            #define AS34  &kp LC(LA(DEL))      // tap: windows security
+            #define AS22  &kp LG(BSPC)         // tap: back
+            #define AS23  &kp LG(FSLH)         // tap: keyboard shortcuts
+            #define AS34  &kp LG(RET)          // tap: home
 
-            #define AS05  &kp RC(PLUS)         // tap: zoom in
-            #define AS17  &kp RC(N0)           // tap: zoom reset
-            #define AS29  &kp RC(MINUS)        // tap: zoom out
-
-            #define AS07  &kp RG(EQUAL)        // tap: magnifier in
-            #define AS18  &kp RG(ESC)          // tap: magnifier reset
-            #define AS30  &kp RG(MINUS)        // tap: magnifier out
+            #define AS04  &kp LG(B)            // tap: browser
+            #define AS05  &kp LCMD             // tap: assist
+            #define AS16  &kp LG(L)            // tap: calendar
+            #define AS17  &kp LG(P)            // tap: music
+            #define AS28  &kp LG(E)            // tap: mail
+            #define AS29  &kp LG(C)            // tap: contacts
 
             label = "aSTG";
             bindings = <
-       AKY_ESC  &m_s_b1  &m_s_b2  &none    &none      AS05                   AS07  &kp K_VOL_DN    &kp K_MUTE  &kp K_VOL_UP  AS10   AS11
-          AS12  &m_s_b3  &m_s_b4  &none    &none      AS17                   AS18    &kp K_PREV      &kp K_PP    &kp K_NEXT  AS22   AS23
-          AS24  &m_s_b5  &m_s_b6  &none    &none      AS29                   AS30         &none    &kp K_STOP         &none  AS34  &none
+       AKY_ESC  &m_s_b1  &m_s_b2  &none     AS04      AS05                  &none  &kp K_VOL_DN    &kp K_MUTE  &kp K_VOL_UP  AS10   AS11
+          AS12  &m_s_b3  &m_s_b4  &none     AS16      AS17                  &none    &kp K_PREV      &kp K_PP    &kp K_NEXT  AS22   AS23
+          AS24  &m_s_b5  &m_s_b6  &none     AS28      AS29                  &none         &none    &kp K_STOP         &none  AS34  &none
                            &kp C_BRI_DN  KEY_SPC  &to_aBAS               &to_aDEV       AKY_RET  &kp C_BRI_UP
             >;
         };

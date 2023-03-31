@@ -49,29 +49,29 @@
         };
 
         windows_act_num_layer {
-            #define WA01  &kp LG(LS(C))           // tap: color picker
-            #define WA05  &kp LC(F)               // tap: find
-            #define WA13  &hm LCMD   LG(LS(S))    // tap: printscreen
-            #define WA14  &hm LCTRL  LEFT
-            #define WA15  &hm LALT   DOWN
-            #define WA16  &hm LSHFT  RIGHT
-            #define WA17  &kp LG(E)               // tap: file explorer
+            #define WA01  &kp  LA(LS(RIGHT))        // tap: expand selection
+            #define WA05  &kp  LC(F)                // tap: find
+            #define WA13  &hm  LCMD   LA(LS(LEFT))  // tap: shrink selection
+            #define WA14  &hm  LCTRL  LEFT
+            #define WA15  &hm  LALT   DOWN
+            #define WA16  &hm  LSHFT  RIGHT
+            #define WA17  &kp  LC(H)                // tap: replace
 
-            #define WA19  &hm LSHFT  N4
-            #define WA20  &hm LALT   N5
-            #define WA21  &hm LCTRL  N6
-            #define WA22  &hm LCMD   EQUAL
+            #define WA19  &hm  LSHFT  N4
+            #define WA20  &hm  LALT   N5
+            #define WA21  &hm  LCTRL  N6
+            #define WA22  &hm  LCMD   EQUAL
 
             #define WA35  &mo_wFNKwAXN_to_wFNK    0 0
 
             #define WA38  &to_wBAS
             #define WA39  &to_wDEV
 
-            #define KEY_UNDO    &kp RC(Z)       // tap: undo
-            #define KEY_REDO    &kp RC(Y)       // tap: redo
-            #define KEY_CUT     &kp RC(X)       // tap: cut
-            #define KEY_COPY    &kp RC(C)       // tap: copy
-            #define KEY_PASTE   &kp RC(V)       // tap: paste     | shift: paste without format
+            #define KEY_UNDO   &kp RC(Z)       // tap: undo
+            #define KEY_REDO   &kp RC(Y)       // tap: redo
+            #define KEY_CUT    &kp RC(X)       // tap: cut
+            #define KEY_COPY   &kp RC(C)       // tap: copy
+            #define KEY_PASTE  &kp RC(V)       // tap: paste     | shift: paste without format
 
             label = "wAXN";
             bindings = <
@@ -107,15 +107,17 @@
         windows_settings_layer {
             #define WS10  &kp LG(LS(GRAVE))    // tap: fancy zones
             #define WS11  &kp LC(LS(ESC))      // tap: task manager
-            #define WS12  &kp LG(K)            // tap: connect quick action
             #define WS24  &bt BT_CLR           // tap: clear Bluetooth
 
             #define WS22  &kp RG(PAUSE_BREAK)  // tap: system info
             #define WS23  &kp RG(I)            // tap: windows settings
             #define WS34  &kp LC(LA(DEL))      // tap: windows security
 
+            #define WS04  &kp LG(LS(C))        // tap: color picker
             #define WS05  &kp RC(PLUS)         // tap: zoom in
+            #define WA16  &kp LG(LS(S))        // tap: printscreen
             #define WS17  &kp RC(N0)           // tap: zoom reset
+            #define WS28  &kp LG(E)            // tap: file explorer
             #define WS29  &kp RC(MINUS)        // tap: zoom out
 
             #define WS07  &kp RG(EQUAL)        // tap: magnifier in
@@ -124,9 +126,9 @@
 
             label = "wSTG";
             bindings = <
-       WKY_ESC  &m_s_b1  &m_s_b2  &none    &none      WS05                   WS07  &kp C_VOL_DN    &kp C_MUTE  &kp C_VOL_UP  WS10   WS11
-          WS12  &m_s_b3  &m_s_b4  &none    &none      WS17                   WS18    &kp C_PREV      &kp C_PP    &kp C_NEXT  WS22   WS23
-          WS24  &m_s_b5  &m_s_b6  &none    &none      WS29                   WS30      &kp C_RW    &kp C_STOP      &kp C_FF  WS34  &none
+       WKY_ESC  &m_s_b1  &m_s_b2  &none     WS04      WS05                   WS07  &kp C_VOL_DN    &kp C_MUTE  &kp C_VOL_UP  WS10   WS11
+         &none  &m_s_b3  &m_s_b4  &none     WS16      WS17                   WS18    &kp C_PREV      &kp C_PP    &kp C_NEXT  WS22   WS23
+          WS24  &m_s_b5  &m_s_b6  &none     WS28      WS29                   WS30      &kp C_RW    &kp C_STOP      &kp C_FF  WS34  &none
                            &kp C_BRI_DN  KEY_SPC  &to_wBAS               &to_wDEV       WKY_RET  &kp C_BRI_UP
             >;
         };

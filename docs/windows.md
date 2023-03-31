@@ -180,9 +180,8 @@ Quick navigation actions and numbers. Function keys works independently as a sub
 
 | Label         | Shortcut                   | Action               |
 | ------------: | -------------------------- | -------------------- |
-| <kbd>▣</kbd> |                            | Print Screen         |
-| <kbd>⛢</kbd> |                            | Color Picker         |
-| <kbd>⎎</kbd> |                            | File Explorer        |
+| <kbd><|</kbd> |                            | Expand selection     |
+| <kbd>|></kbd> |                            | Shrink selection     |
 | <kbd>↶</kbd> |                            | Undo                 |
 | <kbd>↷</kbd> |                            | Redo                 |
 | <kbd>⬚</kbd> |                            | Cut                  |
@@ -190,7 +189,7 @@ Quick navigation actions and numbers. Function keys works independently as a sub
 | <kbd>⏍</kbd> |                            | Paste                |
 | <kbd>⛶</kbd> | <kbd>⇧</kbd>+<kbd>⏍</kbd>  | Paste without format |
 | <kbd>☉</kbd> |                             | Find                |
-| <kbd>☊</kbd> | <kbd>⇧</kbd>+<kbd>☉</kbd>  | Replace             |
+| <kbd>☊</kbd> |                             | Replace             |
 
 ⇧ [Back to menu](#menu)
 
@@ -202,22 +201,22 @@ Dedicated to Bluetooth and media controls.
 
 #### Actions
 
-| Label           | Action                   |
-| --------------: |  ----------------------- |
+| Label           | Action                  |
+| --------------: |  ---------------------- |
 | <kbd>B#️⃣</kbd> | Jump to #️⃣ device        |
+| <kbd>⎉</kbd>   | Connect Quick Action     |
 | <kbd>B❌</kbd> | Clear current device     |
+| <kbd>▣</kbd>   | Print Screen             |
+| <kbd>⛢</kbd>   | Color Picker             |
+| <kbd>🖿</kbd>   | File Explorer            |
 | <kbd>Z+</kbd>   | Zoom in                  |
 | <kbd>ZR</kbd>   | Zoom reset               |
 | <kbd>Z-</kbd>   | Zoom out                 |
 | <kbd>M+</kbd>   | Magnifier in             |
 | <kbd>MR</kbd>   | Magnifier reset          |
 | <kbd>M-</kbd>   | Magnifier out            |
-| <kbd>🔊</kbd>  | Volume up                |
-| <kbd>🔇</kbd>  | Mute                     |
-| <kbd>🔉</kbd>   | Volume down             |
 | <kbd>🔅</kbd>  | Bright down              |
 | <kbd>🔆</kbd>  | Bright up                |
-| <kbd>⎉</kbd>   | Connect Quick Action     |
 | <kbd>⎚</kbd>   | Fancy Zones              |
 | <kbd>▤</kbd>   | Task Manager             |
 | <kbd>ⓘ</kbd>   | System Info             |
@@ -228,6 +227,9 @@ Dedicated to Bluetooth and media controls.
 
 | Label         | Action       |
 | ------------: |  ----------- |
+| <kbd>🔊</kbd> | Volume up    |
+| <kbd>🔇</kbd> | Mute         |
+| <kbd>🔉</kbd>  | Volume down  |
 | <kbd>⏹️</kbd> | Stop         |
 | <kbd>⏪</kbd> | Fast reverse |
 | <kbd>⏮️</kbd> | Prev         |
