@@ -50,6 +50,8 @@
 
         android_act_num_layer {
             #define AA01  &kp  LA(LS(RIGHT))        // tap: expand selection
+            #define AA02  &kp  LC(LS(TAB))          // tap: prev tab
+            #define AA04  &kp  LC(TAB)              // tap: next tab
             #define AA05  &kp  LC(F)                // tap: find
             #define AA13  &hm  LCMD   LA(LS(LEFT))  // tap: shrink selection
             #define AA14  &hm  LCTRL  LEFT
@@ -75,10 +77,10 @@
 
             label = "aAXN";
             bindings = <
-    AKY_ESC      AA01  &mp_aa_prev    &kp UP  &mp_aa_next      AA05            &kp KP_PLUS   &kp N7  &kp N8  &kp N9  &kp KP_MULTIPLY   NAV_DEL
-     &mp_bc      AA13         AA14      AA15         AA16      AA17                 &kp N0     AA19    AA20    AA21             AA22  NAV_BSPC
-    AKY_TAB  KEY_UNDO      KEY_CUT  KEY_COPY    KEY_PASTE  KEY_REDO                &mp_k_m   &kp N1  &kp N2  &kp N3    &kp KP_DIVIDE      AA35
-                                      &mp_cs      KEY_SPC      AA38                   AA39  AKY_RET  &mp_dc
+    AKY_ESC      AA01     AA02    &kp UP       AA04      AA05            &kp KP_PLUS   &kp N7  &kp N8  &kp N9  &kp KP_MULTIPLY   NAV_DEL
+     &mp_bc      AA13     AA14      AA15       AA16      AA17                 &kp N0     AA19    AA20    AA21             AA22  NAV_BSPC
+    AKY_TAB  KEY_UNDO  KEY_CUT  KEY_COPY  KEY_PASTE  KEY_REDO                &mp_k_m   &kp N1  &kp N2  &kp N3    &kp KP_DIVIDE      AA35
+                                  &mp_cs    KEY_SPC      AA38                   AA39  AKY_RET  &mp_dc
             >;
         };
 
@@ -111,7 +113,7 @@
             #define AS12  &kp LG(K)            // tap: shortcuts
             #define AS24  &bt BT_CLR           // tap: clear Bluetooth
 
-            #define AS22  &kp LG(BSPC)         // tap: back
+            #define AS22  &kp RG(BSPC)         // tap: back
             #define AS23  &kp LG(FSLH)         // tap: keyboard shortcuts
             #define AS34  &kp LG(RET)          // tap: home
 

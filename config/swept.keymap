@@ -58,7 +58,6 @@
         #include "os/android/morph/layers.dtsi"
         #include "os/android/morph/base.dtsi"
         #include "os/android/morph/int.dtsi"
-        #include "os/android/morph/actions.dtsi"
         #include "os/android/morph/dev.dtsi"
         #include "os/android/hold/layers.dtsi"
         #include "os/android/hold/base.dtsi"
