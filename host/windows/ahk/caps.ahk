@@ -5,6 +5,7 @@ SetWorkingDir(A_ScriptDir)     ;  Ensures a consistent starting directory.
 Persistent
 
 ChangeCapsIcon("OFF")
+A_IconTip := "Caps Lock: OFF"
 
 #Include "shared.ahk"
 
