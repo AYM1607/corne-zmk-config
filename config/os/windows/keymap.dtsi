@@ -77,7 +77,7 @@
             bindings = <
     WKY_ESC      WA01  &mp_wa_prev    &kp UP  &mp_wa_next      WA05            &kp KP_PLUS   &kp N7  &kp N8  &kp N9  &kp KP_MULTIPLY   NAV_DEL
      &mp_bc      WA13         WA14      WA15         WA16      WA17                 &kp N0     WA19    WA20    WA21             WA22  NAV_BSPC
-    WKY_TAB  KEY_UNDO      KEY_CUT  KEY_COPY    KEY_PASTE  KEY_REDO                &mp_k_m   &kp N1  &kp N2  &kp N3    &kp KP_DIVIDE     WA35
+    WKY_TAB  KEY_UNDO      KEY_CUT  KEY_COPY    KEY_PASTE  KEY_REDO                &mp_k_m   &kp N1  &kp N2  &kp N3    &kp KP_DIVIDE     &none
                                       &mp_cs      KEY_SPC      WA38                   WA39  WKY_RET  &mp_dc
             >;
         };
