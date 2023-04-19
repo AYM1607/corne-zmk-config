@@ -5,11 +5,3 @@ mp_a_stg: morph_android_stg_layer {
     mods = <(MOD_LSFT|MOD_RSFT)>;
     bindings = <&mo_aSTG_to_aBAS>, <&to_aSTG>;
 };
-
-mp_a_dev: morph_android_dev_layer {
-    compatible = "zmk,behavior-mod-morph";
-    label = "mp_a_DEV";
-    #binding-cells = <0>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = <&mo_aDEV_to_aBAS>, <&to_aDEV>;
-};

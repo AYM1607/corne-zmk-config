@@ -11,10 +11,10 @@
 
             #define WB35  &mp_w_stg
 
-            #define WB36  &mp_w_dev
+            #define WB36  &mo_wDEVwBAS_to_wDEV  0  0
             #define WB38  &mo_wAXNwBAS_to_wAXN  0  0
             #define WB39  &mo_wAXNwBAS_to_wFNK  0  0
-            #define WB41  &mp_w_dev
+            #define WB41  &mo_wDEVwBAS_to_wDEV  0  0
 
             label = "wBAS";
             bindings = <
@@ -62,10 +62,10 @@
             #define WA21  &hm  LCTRL  N6
             #define WA22  &hm  LCMD   EQUAL
 
-            #define WA35  &kp  LG(LC(D))       // new virtual desktop
+            #define WA35  &mo_wFNKwAXN_to_wFNK    0 0
 
             #define WA38  &to_wBAS
-            #define WA39  &mo_wFNKwAXN_to_wFNK    0 0
+            #define WA39  &to_wDEV
 
             #define KEY_UNDO   &kp RC(Z)       // tap: undo
             #define KEY_REDO   &kp RC(Y)       // tap: redo
@@ -77,7 +77,7 @@
             bindings = <
     WKY_ESC      WA01  &mp_wa_prev    &kp UP  &mp_wa_next      WA05            &kp KP_PLUS   &kp N7  &kp N8  &kp N9  &kp KP_MULTIPLY   NAV_DEL
      &mp_bc      WA13         WA14      WA15         WA16      WA17                 &kp N0     WA19    WA20    WA21             WA22  NAV_BSPC
-    WKY_TAB  KEY_UNDO      KEY_CUT  KEY_COPY    KEY_PASTE  KEY_REDO                &mp_k_m   &kp N1  &kp N2  &kp N3    &kp KP_DIVIDE     &none
+    WKY_TAB  KEY_UNDO      KEY_CUT  KEY_COPY    KEY_PASTE  KEY_REDO                &mp_k_m   &kp N1  &kp N2  &kp N3    &kp KP_DIVIDE      WA35
                                       &mp_cs      KEY_SPC      WA38                   WA39  WKY_RET  &mp_dc
             >;
         };
@@ -93,7 +93,7 @@
             #define WK22  &kp RCMD
 
             #define WK38  &to_wBAS
-            #define WK39  &to_wAXN
+            #define WK39  &to_wDEV
 
             label = "wFNK";
             bindings = <
@@ -129,7 +129,7 @@
        WKY_ESC  &m_s_b1  &m_s_b2  &none     WS04      WS05                   WS07  &kp C_VOL_DN    &kp C_MUTE  &kp C_VOL_UP  WS10   WS11
          &none  &m_s_b3  &m_s_b4  &none     WS16      WS17                   WS18    &kp C_PREV      &kp C_PP    &kp C_NEXT  WS22   WS23
           WS24  &m_s_b5  &m_s_b6  &none     WS28      WS29                   WS30      &kp C_RW    &kp C_STOP      &kp C_FF  WS34  &none
-                           &kp C_BRI_DN  KEY_SPC  &to_wBAS               &to_wAXN       WKY_RET  &kp C_BRI_UP
+                           &kp C_BRI_DN  KEY_SPC  &to_wBAS               &to_wDEV       WKY_RET  &kp C_BRI_UP
             >;
         };
 
