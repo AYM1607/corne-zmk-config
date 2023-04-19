@@ -68,9 +68,10 @@ ShowMessage(lyr)
     WinSetRegion("0-0 w" width " h" height " R15-15")
     ; WinSet, transparent, 180
 
-    WinGetPos(, , , &TrayWidth, "ahk_class Shell_TrayWnd")
+    ; WinGetPos(, , , &TrayWidth, "ahk_class Shell_TrayWnd")
     WinGetPos(, , , &TrayHeight, "ahk_class Shell_TrayWnd")
-    xpos := A_ScreenWidth-width-TrayWidth
+    ; xpos := A_ScreenWidth-width-TrayWidth // Left Align
+    xpos := (A_ScreenWidth/2)-(width/2)
     ypos := A_ScreenHeight-120-TrayHeight
 
     WinSetAlwaysOnTop()
