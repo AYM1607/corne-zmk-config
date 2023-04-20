@@ -8,7 +8,7 @@ mp_a_stg: morph_android_stg_layer {
 
 mp_a_dev: morph_android_dev_layer {
     compatible = "zmk,behavior-mod-morph";
-    label = "mp_a_DEV";
+    label = "mp_a_dev";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
     bindings = <&mo_aDEV_to_aBAS>, <&to_aDEV>;
