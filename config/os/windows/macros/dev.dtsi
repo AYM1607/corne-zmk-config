@@ -143,7 +143,7 @@ m_wd_loa: macro_windows_dev_logical_or_assignment {
 };
 
 // action: ?░:░
-m_wd_cto: macro_conditional_ternary_operator {
+m_wd_cto: macro_windows_conditional_ternary_operator {
     compatible = "zmk,behavior-macro";
     label = "m_wd_cto";
     #binding-cells = <0>;

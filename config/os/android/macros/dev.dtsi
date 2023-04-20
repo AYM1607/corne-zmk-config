@@ -143,7 +143,7 @@ m_ad_loa: macro_android_dev_logical_or_assignment {
 };
 
 // action: ?░:░
-m_ad_cto: macro_conditional_ternary_operator {
+m_ad_cto: macro_android_conditional_ternary_operator {
     compatible = "zmk,behavior-macro";
     label = "m_ad_cto";
     #binding-cells = <0>;
