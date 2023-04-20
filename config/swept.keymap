@@ -43,7 +43,7 @@
                 symbols_layer {
 			label = "SYMB";
                         bindings = <
-   &kp ESC    &kp EXCL       &kp AT       &kp HASH       &kp DLLR       &kp PRCNT         &kp CARET   &kp AMPS   &kp STAR &kp MINUS  &none &hm F12 BSPC
+   &kp ESC    &kp EXCL       &kp AT       &kp HASH       &kp DLLR       &kp PRCNT         &kp CARET   &kp AMPS   &kp STAR &kp MINUS  &none &kp BSPC
    &kp GRAVE &none &none &none &none &kp PLUS        &kp HOME &kp LBRC &kp RBRC &kp END &kp BSLH &kp RET
    &kp TAB   &none &none &none &none &kp MINUS        &kp LBKT   &kp LPAR   &kp RPAR &kp RBKT &none &to ARROWS_L
                      &kp LCMD &kp LSHFT &to DEFAULT_L     &none &kp SPACE  &to NUMBERS_L
@@ -63,8 +63,8 @@
                 numbers_layer {
 			label = "NUM";
                         bindings = <
-   &kp ESC  &none &none &none &none &none                 &none &hm F7 N7      &hm F8 N8      &hm F9 N9 &none &kp BSPC
-   &none   &none &none   &none   &kp STAR &kp PLUS           &kp EQUAL &hm F4 N4      &hm F5 N5      &hm F6 N6 &kp DOT &kp RET
+   &kp ESC  &none &none &none &none &none                 &none &hm F7 N7      &hm F8 N8      &hm F9 N9 &none &hm DEL BSPC
+   &none   &none &none   &none   &kp STAR &kp PLUS           &kp EQUAL &hm F4 N4      &hm F5 N5      &hm F6 N6 &hm F12 DOT &kp RET
    &kp TAB &none   &none   &none      &kp FSLH &kp MINUS       &hm F10 N0		&hm F1 N1      &hm F2 N2      &hm F3 N3 &kp COMMA &to ARROWS_L
                     	     &kp LCMD &kp LSHFT   &to DEFAULT_L  &to SYMBOLS_L &kp SPACE    &none
                         >;
