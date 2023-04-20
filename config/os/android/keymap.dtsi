@@ -11,10 +11,10 @@
 
             #define AB35  &mp_a_stg
 
-            #define AB36  &mo_aDEVaBAS_to_aDEV  0  0
+            #define AB36  &mp_a_dev
             #define AB38  &mo_aAXNaBAS_to_aAXN  0  0
             #define AB39  &mo_aAXNaBAS_to_aFNK  0  0
-            #define AB41  &mo_aDEVaBAS_to_aDEV  0  0
+            #define AB41  &mp_a_dev
 
             label = "aBAS";
             bindings = <
@@ -64,10 +64,8 @@
             #define AA21  &hm  RCTRL  N6
             #define AA22  &hm  RCMD   EQUAL
 
-            #define AA35  &mo_aFNKaAXN_to_aFNK    0 0
-
             #define AA38  &to_aBAS
-            #define AA39  &to_aDEV
+            #define AA39  &mo_aFNKaAXN_to_aFNK    0 0
 
             #define KEY_UNDO   &kp LC(Z)       // tap: undo
             #define KEY_REDO   &kp LC(LS(Z))   // tap: redo
@@ -79,7 +77,7 @@
             bindings = <
     AKY_ESC      AA01     AA02    &kp UP       AA04      AA05            &kp KP_PLUS   &kp N7  &kp N8  &kp N9  &kp KP_MULTIPLY   NAV_DEL
      &mp_bc      AA13     AA14      AA15       AA16      AA17                 &kp N0     AA19    AA20    AA21             AA22  NAV_BSPC
-    AKY_TAB  KEY_UNDO  KEY_CUT  KEY_COPY  KEY_PASTE  KEY_REDO                &mp_k_m   &kp N1  &kp N2  &kp N3    &kp KP_DIVIDE      AA35
+    AKY_TAB  KEY_UNDO  KEY_CUT  KEY_COPY  KEY_PASTE  KEY_REDO                &mp_k_m   &kp N1  &kp N2  &kp N3    &kp KP_DIVIDE     &none
                                   &mp_cs    KEY_SPC      AA38                   AA39  AKY_RET  &mp_dc
             >;
         };
@@ -96,7 +94,7 @@
             #define AK22  &kp RCMD
 
             #define AK38  &to_aBAS
-            #define AK39  &to_aDEV
+            #define AK39  &to_aAXN
 
             label = "aFNK";
             bindings = <
@@ -128,7 +126,7 @@
        AKY_ESC  &m_s_b1  &m_s_b2  &none     AS04      AS05                  &none  &kp K_VOL_DN    &kp K_MUTE  &kp K_VOL_UP   AS10   AS11
           AS12  &m_s_b3  &m_s_b4  &none     AS16      AS17                  &none    &kp K_PREV      &kp K_PP    &kp K_NEXT   AS22   AS23
           AS24  &m_s_b5  &m_s_b6  &none     AS28      AS29                  &none         &none    &kp K_STOP         &none  &none  &none
-                           &kp C_BRI_DN  KEY_SPC  &to_aBAS               &to_aDEV       AKY_RET  &kp C_BRI_UP
+                           &kp C_BRI_DN  KEY_SPC  &to_aBAS               &to_aAXN       AKY_RET  &kp C_BRI_UP
             >;
         };
 
