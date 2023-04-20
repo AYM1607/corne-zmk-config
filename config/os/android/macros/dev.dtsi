@@ -155,7 +155,7 @@ m_ad_cto: macro_android_conditional_ternary_operator {
 };
 
 // action: ?.
-m_ad_oco: macro_optional_chaining_operator {
+m_ad_oco: macro_android_optional_chaining_operator {
     compatible = "zmk,behavior-macro";
     label = "m_ad_oco";
     #binding-cells = <0>;
@@ -164,7 +164,7 @@ m_ad_oco: macro_optional_chaining_operator {
 };
 
 // action: ??
-m_ad_nco: macro_nullish_coalescing_operator {
+m_ad_nco: macro_android__nullish_coalescing_operator {
     compatible = "zmk,behavior-macro";
     label = "m_ad_nco";
     #binding-cells = <0>;
@@ -176,7 +176,7 @@ m_ad_nco: macro_nullish_coalescing_operator {
 };
 
 // action: ??=
-m_ad_nca: macro_nullish_coalescing_assignment {
+m_ad_nca: macro_android__nullish_coalescing_assignment {
     compatible = "zmk,behavior-macro";
     label = "m_ad_nca";
     #binding-cells = <0>;
@@ -188,7 +188,7 @@ m_ad_nca: macro_nullish_coalescing_assignment {
 };
 
 // action: ===
-m_ad_se: macro_strict_equality {
+m_ad_se: macro_android__strict_equality {
     compatible = "zmk,behavior-macro";
     label = "m_ad_se";
     #binding-cells = <0>;
@@ -200,7 +200,7 @@ m_ad_se: macro_strict_equality {
 };
 
 // action: !!
-m_ad_dno: macro_double_not_operator {
+m_ad_dno: macro_android__double_not_operator {
     compatible = "zmk,behavior-macro";
     label = "m_ad_dno";
     #binding-cells = <0>;
@@ -212,7 +212,7 @@ m_ad_dno: macro_double_not_operator {
 };
 
 // action: !==
-m_ad_si: macro_strict_inequality {
+m_ad_si: macro_android__strict_inequality {
     compatible = "zmk,behavior-macro";
     label = "m_ad_si";
     #binding-cells = <0>;

@@ -155,7 +155,7 @@ m_wd_cto: macro_windows_conditional_ternary_operator {
 };
 
 // action: ?.
-m_wd_oco: macro_optional_chaining_operator {
+m_wd_oco: macro_windows_optional_chaining_operator {
     compatible = "zmk,behavior-macro";
     label = "m_wd_oco";
     #binding-cells = <0>;
@@ -164,7 +164,7 @@ m_wd_oco: macro_optional_chaining_operator {
 };
 
 // action: ??
-m_wd_nco: macro_nullish_coalescing_operator {
+m_wd_nco: macro_windows_nullish_coalescing_operator {
     compatible = "zmk,behavior-macro";
     label = "m_wd_nco";
     #binding-cells = <0>;
@@ -176,7 +176,7 @@ m_wd_nco: macro_nullish_coalescing_operator {
 };
 
 // action: ??=
-m_wd_nca: macro_nullish_coalescing_assignment {
+m_wd_nca: macro_windows_nullish_coalescing_assignment {
     compatible = "zmk,behavior-macro";
     label = "m_wd_nca";
     #binding-cells = <0>;
@@ -188,7 +188,7 @@ m_wd_nca: macro_nullish_coalescing_assignment {
 };
 
 // action: ===
-m_wd_se: macro_strict_equality {
+m_wd_se: macro_windows_strict_equality {
     compatible = "zmk,behavior-macro";
     label = "m_wd_se";
     #binding-cells = <0>;
@@ -200,7 +200,7 @@ m_wd_se: macro_strict_equality {
 };
 
 // action: !!
-m_wd_dno: macro_double_not_operator {
+m_wd_dno: macro_windows_double_not_operator {
     compatible = "zmk,behavior-macro";
     label = "m_wd_dno";
     #binding-cells = <0>;
@@ -212,7 +212,7 @@ m_wd_dno: macro_double_not_operator {
 };
 
 // action: !==
-m_wd_si: macro_strict_inequality {
+m_wd_si: macro_windows_strict_inequality {
     compatible = "zmk,behavior-macro";
     label = "m_wd_si";
     #binding-cells = <0>;
