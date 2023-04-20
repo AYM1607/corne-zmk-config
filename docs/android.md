@@ -228,7 +228,7 @@ Dedicated to Bluetooth and media controls.
 
 ### Flows
 
-- Import the `Swept Layer.flo` and `Swept Layer.flo` flows located inside `host/android/automate` folder
+- Import the `Corne Layer.flo` and `Corne Layer.flo` flows located inside `host/android/automate` folder
 - Add asked permissions
 - Under `Flow > Settings > Privileges` menu check the `collect all the text you type` option
 

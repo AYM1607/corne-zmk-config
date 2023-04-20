@@ -57,7 +57,7 @@ Pressing it twice quickly puts into programming mode, if you plug it into your c
 
 ### Configure
 
-The wireless version of the Swept use ZMK as their firmware, you can find out more at [ZMK docs](https://zmk.dev/docs)
+The wireless version of the Corne use ZMK as their firmware, you can find out more at [ZMK docs](https://zmk.dev/docs)
 
 These pages will guide you to create your own keymap (follow them after your user-setup) [customization](https://zmk.dev/docs/customization) and [keymaps](https://zmk.dev/docs/features/keymaps)
 
@@ -69,7 +69,7 @@ Once you make changes to your keymap, you can download the firmware from the git
 
 3. "Double tap" the reset button (blue led pulsing slowly), play around with the timing between taps since this might not work the first time. If you have trouble with this step, re-plug your board and try again, you might even need to use a different cable or port on your computer. You know this works if you see a blue light fading on and off coming from the nice nano.
 
-4. After the previous step you should see a new storage device in your computer called nice!nano, as shown in the picture below. Drag and drop (or copy and paste) the firmware file `swept_left-nice_nano_v2-zmk.uf2` which you should have generated and downloaded by following the guides linked above.
+4. After the previous step you should see a new storage device in your computer called nice!nano, as shown in the picture below. Drag and drop (or copy and paste) the firmware file `corne_left-nice_nano_v2-zmk.uf2` which you should have generated and downloaded by following the guides linked above.
 
 5. Wait until the storage device automatically disappears from your computer, this should not take longer than a few seconds.
 
