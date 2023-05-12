@@ -181,8 +181,8 @@ Quick navigation actions and numbers. Function keys works independently as a sub
 
 | Label         | Shortcut                   | Action               |
 | ------------: | -------------------------- | -------------------- |
-| <kbd><|</kbd> |                            | Expand selection     |
-| <kbd>|></kbd> |                            | Shrink selection     |
+| <kbd><\|</kbd> |                            | Expand selection     |
+| <kbd>\|></kbd> |                            | Shrink selection     |
 | <kbd>↶</kbd> |                            | Undo                 |
 | <kbd>↷</kbd> |                            | Redo                 |
 | <kbd>⬚</kbd> |                            | Cut                  |
