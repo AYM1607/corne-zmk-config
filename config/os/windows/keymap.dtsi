@@ -107,6 +107,7 @@
         windows_settings_layer {
             #define WS10  &kp LG(LS(GRAVE))    // tap: fancy zones
             #define WS11  &kp LC(LS(ESC))      // tap: task manager
+            #define WS12  &kp LG(K)            // tap: connect device
             #define WS24  &bt BT_CLR           // tap: clear Bluetooth
 
             #define WS22  &kp RG(PAUSE_BREAK)  // tap: system info
@@ -115,7 +116,7 @@
 
             #define WS04  &kp LG(LS(C))        // tap: color picker
             #define WS05  &kp RC(PLUS)         // tap: zoom in
-            #define WS16  &kp LG(LS(S))        // tap: printscreen
+            #define WS16  &kp LG(LS(S))        // tap: prints creen
             #define WS17  &kp RC(N0)           // tap: zoom reset
             #define WS28  &kp LG(E)            // tap: file explorer
             #define WS29  &kp RC(MINUS)        // tap: zoom out
@@ -127,7 +128,7 @@
             label = "wSTG";
             bindings = <
        WKY_ESC  &m_s_b1  &m_s_b2  &none     WS04      WS05                   WS07  &kp C_VOL_DN    &kp C_MUTE  &kp C_VOL_UP  WS10   WS11
-         &none  &m_s_b3  &m_s_b4  &none     WS16      WS17                   WS18    &kp C_PREV      &kp C_PP    &kp C_NEXT  WS22   WS23
+          WS12  &m_s_b3  &m_s_b4  &none     WS16      WS17                   WS18    &kp C_PREV      &kp C_PP    &kp C_NEXT  WS22   WS23
           WS24  &m_s_b5  &m_s_b6  &none     WS28      WS29                   WS30      &kp C_RW    &kp C_STOP      &kp C_FF  WS34  &none
                            &kp C_BRI_DN  KEY_SPC  &to_wBAS               &to_wAXN       WKY_RET  &kp C_BRI_UP
             >;
