@@ -14,22 +14,24 @@ A_IconTip := "Caps Lock: OFF"
     Sleep(10) ; drastically improves reliability on slower systems
     status := (GetKeyState("CapsLock", "T") ? "ON" : "OFF")
     ChangeCapsIcon(status)
-    ShowMessage("CapsLock: " status)
+    ; ShowMessage("CapsLock: " status)
 }
 
 $F18::
 {
     Sleep(10) ; drastically improves reliability on slower systems
-    ChangeCapsIcon("CW")
-    ShowMessage("CapsWord: ON")
+    ChangeCapsIcon("CW-ON")
+    ; ShowMessage("CapsWord: ON")
     ; TODO: identify if key was pressed using shift and then shof OFF icon
-    Sleep(750 * 3) ; SPECIFY DISPLAY TIME (ms)
+    Sleep(750 * 4) ; SPECIFY DISPLAY TIME (ms)
     ChangeCapsIcon("OFF")
 }
 
 ^$F18::
 {
     Sleep(10) ; drastically improves reliability on slower systems
-    ShowMessage("CapsWord: OFF")
+    ChangeCapsIcon("CW-OFF")
+    ; ShowMessage("CapsWord: OFF")
+    Sleep(750 * 1) ; SPECIFY DISPLAY TIME (ms)
     ChangeCapsIcon("OFF")
 }
