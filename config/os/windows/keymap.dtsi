@@ -62,7 +62,7 @@
             #define WA21  &hm  LCTRL  N6
             #define WA22  &hm  LCMD   EQUAL
 
-            #define WA35  &hm  LG(LC(D))  LG(LC(F4))  // tap: create | hold: close (virtual desktop)
+            #define WA35  &hm  LG(LC(F4))  LG(LC(D))  // tap: create | hold: close (virtual desktop)
 
             #define WA38  &to_wBAS
             #define WA39  &mo_wFNKwAXN_to_wFNK    0 0
