@@ -49,20 +49,20 @@
         };
 
         windows_act_num_layer {
-            #define WA01  &kp  LA(LS(RIGHT))        // tap: expand selection
-            #define WA05  &kp  LC(F)                // tap: find
-            #define WA13  &hm  LCMD   LA(LS(LEFT))  // tap: shrink selection
+            #define WA01  &kp  LA(LS(RIGHT))          // tap: expand selection
+            #define WA05  &kp  LC(F)                  // tap: find
+            #define WA13  &hm  LCMD   LA(LS(LEFT))    // tap: shrink selection
             #define WA14  &hm  LCTRL  LEFT
             #define WA15  &hm  LALT   DOWN
             #define WA16  &hm  LSHFT  RIGHT
-            #define WA17  &kp  LC(H)                // tap: replace
+            #define WA17  &kp  LC(H)                  // tap: replace
 
             #define WA19  &hm  LSHFT  N4
             #define WA20  &hm  LALT   N5
             #define WA21  &hm  LCTRL  N6
             #define WA22  &hm  LCMD   EQUAL
 
-            #define WA35  &kp  LG(LC(D))       // new virtual desktop
+            #define WA35  &hm  LG(LC(D))  LG(LC(F4))  // tap: create | hold: close (virtual desktop)
 
             #define WA38  &to_wBAS
             #define WA39  &mo_wFNKwAXN_to_wFNK    0 0
@@ -81,6 +81,7 @@
                                       &mp_cs      KEY_SPC      WA38                   WA39  WKY_RET  &mp_dc
             >;
         };
+
         windows_functions_layer {
             #define WK13  &hm LCMD   F5
             #define WK14  &hm LCTRL  F6

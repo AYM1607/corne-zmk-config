@@ -173,7 +173,8 @@ Quick navigation actions and numbers. Function keys works independently as a sub
 | <kbd>⇟</kbd>  |                                         | Page down             |
 | <kbd>⇺</kbd>  |                                         | Prev Tab              |
 | <kbd>⇻</kbd>  |                                         | Next Tab              |
-| <kbd>▩</kbd>  |                                        | New desktop           |
+| <kbd>▦</kbd>  |                                        | New virtual desktop   |
+| <kbd>▩</kbd>  |                                        | Close virtual desktop |
 | <kbd>⎗</kbd>  | <kbd>⇧</kbd>+<kbd>⇺</kbd>              | Prev desktop          |
 | <kbd>⎘</kbd>  | <kbd>⇧</kbd>+<kbd>⇻</kbd>              | Next desktop          |
 
