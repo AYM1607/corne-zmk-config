@@ -43,6 +43,7 @@
 
 / {
     behaviors {
+        #include "os/all/morph/layers.dtsi"
         #include "os/all/morph/shared.dtsi"
         #include "os/all/morph/num.dtsi"
         #include "os/all/hold/shared.dtsi"

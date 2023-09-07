@@ -109,7 +109,7 @@
             #define AS10  &kp LG(N)            // tap: notifications
             #define AS11  &m_as_a              // tap: apps
             #define AS12  &kp LG(K)            // tap: shortcuts
-            #define AS24  &bt BT_CLR           // tap: clear Bluetooth
+            #define AS24  &mp_bt_c             // shift-tap: clear Bluetooth
 
             #define AS22  &kp LG(RET)          // tap: home
             #define AS23  &kp LG(FSLH)         // tap: keyboard shortcuts

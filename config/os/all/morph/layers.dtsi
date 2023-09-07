@@ -1,0 +1,7 @@
+mp_bt_c: morph_bluethooth_clear {
+    compatible = "zmk,behavior-mod-morph";
+    label = "mp_bt_c";
+    #binding-cells = <0>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+    bindings = < &none>, <&bt BT_CLR>;
+};

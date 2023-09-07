@@ -109,7 +109,7 @@
             #define WS10  &kp LG(LS(GRAVE))    // tap: fancy zones
             #define WS11  &kp LC(LS(ESC))      // tap: task manager
             #define WS12  &kp LG(K)            // tap: connect device
-            #define WS24  &bt BT_CLR           // tap: clear Bluetooth
+            #define WS24  &mp_bt_c             // shift-tap: clear Bluetooth
 
             #define WS22  &kp RG(PAUSE_BREAK)  // tap: system info
             #define WS23  &kp RG(I)            // tap: windows settings
