@@ -3,5 +3,5 @@ mp_bt_c: morph_bluethooth_clear {
     label = "mp_bt_c";
     #binding-cells = <0>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
-    bindings = < &none>, <&bt BT_CLR>;
+    bindings = <&none>, <&bt BT_CLR>;
 };
