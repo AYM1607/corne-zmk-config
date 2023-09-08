@@ -232,7 +232,6 @@ Dedicated to Bluetooth and media controls.
 - Add asked permissions
 - Under `Flow > Settings > Privileges` menu check the `collect all the text you type` option
 - Run `Corne Caps` and `Corne Layer`
-
 - Under `Settings > Safety > Run on system startup` select `Resume running flows on system startup (boot)`
 
 #### Premium
@@ -241,7 +240,6 @@ Dedicated to Bluetooth and media controls.
 - Under `Settings > Workarounds > Bluetooth tethering workaround` select `Privileged service`
 - Stop `Corne Caps` and `Corne Layer`
 - Run `Corne Watch` (it will watch the keyboard and start or stop `Corne Caps` and `Corne Layer`)
-- Under `Settings > Safety > Run on system startup` select `Resume running flows on system startup (boot)`
 
 ### Indicators
 
