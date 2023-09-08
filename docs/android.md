@@ -228,10 +228,20 @@ Dedicated to Bluetooth and media controls.
 
 ### Flows
 
-- Import the `Corne Watch.flo`, `Corne Cabs.flo` and `Corne Layer.flo` flows located inside `host/android/automate` folder
+- Import the `Corne Caps.flo` and `Corne Layer.flo` flows located inside `host/android/automate` folder
 - Add asked permissions
 - Under `Flow > Settings > Privileges` menu check the `collect all the text you type` option
+- Run `Corne Caps` and `Corne Layer`
+
+- Under `Settings > Safety > Run on system startup` select `Resume running flows on system startup (boot)`
+
+#### Premium
+
+- Import the `Corne Watch.flo` flow located inside `host/android/automate` folder
 - Under `Settings > Workarounds > Bluetooth tethering workaround` select `Privileged service`
+- Stop `Corne Caps` and `Corne Layer`
+- Run `Corne Watch` (it will watch the keyboard and start or stop `Corne Caps` and `Corne Layer`)
+- Under `Settings > Safety > Run on system startup` select `Resume running flows on system startup (boot)`
 
 ### Indicators
 
