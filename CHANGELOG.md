@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 8.1.0
+
+- Updated automate scripts notifications for Android
+
 ## 8.0.0
 
 - Create multiple layers by OS starting with Android
